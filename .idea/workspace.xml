@@ -2,70 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/install-projects.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/license/license.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoload" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cron.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dbindexer" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/django-1.4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/django-dbindexer" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/django-testapp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/djangoappengine" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django-lib/djangotoolbox" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/djangoappengine" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/djangotoolbox" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urls.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/lib/django-autoload/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/.install-django-nonrel.sh.swp" afterPath="$PROJECT_DIR$/lib/.install-django-nonrel.sh.swp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.deps" afterPath="$PROJECT_DIR$/lib/django-autoload/.deps" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/00changelog.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/00changelog.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/branch" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/branch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/cache/branchheads" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/cache/branchheads" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/cache/tags" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/cache/tags" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/dirstate" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/dirstate" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/hgrc" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/hgrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/requires" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/requires" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/00changelog.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/00changelog.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/00manifest.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/00manifest.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/_l_i_c_e_n_s_e.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/_l_i_c_e_n_s_e.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/_m_a_n_i_f_e_s_t.in.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/_m_a_n_i_f_e_s_t.in.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/autoload/____init____.py.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/autoload/____init____.py.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/autoload/middleware.py.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/autoload/middleware.py.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/autoload/models.py.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/autoload/models.py.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/setup.py.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/setup.py.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/~2edeps.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/~2edeps.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/~2ehgeol.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/~2ehgeol.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/data/~2ehgignore.i" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/data/~2ehgignore.i" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/fncache" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/fncache" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/store/undo" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/store/undo" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/undo.bookmarks" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/undo.bookmarks" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/undo.branch" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/undo.branch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/undo.desc" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/undo.desc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hg/undo.dirstate" afterPath="$PROJECT_DIR$/lib/django-autoload/.hg/undo.dirstate" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hgeol" afterPath="$PROJECT_DIR$/lib/django-autoload/.hgeol" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/.hgignore" afterPath="$PROJECT_DIR$/lib/django-autoload/.hgignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/MANIFEST.in" afterPath="$PROJECT_DIR$/lib/django-autoload/MANIFEST.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/autoload/__init__.py" afterPath="$PROJECT_DIR$/lib/django-autoload/autoload/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/autoload/middleware.py" afterPath="$PROJECT_DIR$/lib/django-autoload/autoload/middleware.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/autoload/models.py" afterPath="$PROJECT_DIR$/lib/django-autoload/autoload/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/django-autoload/setup.py" afterPath="$PROJECT_DIR$/lib/django-autoload/setup.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/install-django-nonrel.sh" afterPath="$PROJECT_DIR$/lib/install-django-nonrel.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django-lib/update-django-nonrel.sh" afterPath="$PROJECT_DIR$/lib/update-django-nonrel.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/django-1.4" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/arturo/django" afterPath="$PROJECT_DIR$/projects/arturo/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/django" afterPath="$PROJECT_DIR$/projects/interpegasus/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/magicangel/django" afterPath="$PROJECT_DIR$/projects/magicangel/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/django" afterPath="$PROJECT_DIR$/projects/music/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/nature/django" afterPath="$PROJECT_DIR$/projects/nature/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/news/django" afterPath="$PROJECT_DIR$/projects/news/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/django" afterPath="$PROJECT_DIR$/projects/portfolio/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/recipes/django" afterPath="$PROJECT_DIR$/projects/recipes/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/install-django-nonrel.sh" afterPath="$PROJECT_DIR$/lib/install-django-nonrel.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/install-projects.sh" afterPath="$PROJECT_DIR$/lib/install-projects.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/update-django-nonrel.sh" afterPath="$PROJECT_DIR$/lib/update-django-nonrel.sh" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,28 +33,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="update-django-nonrel.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/update-django-nonrel.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install-django-nonrel.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/install-django-nonrel.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="install-projects.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/install-projects.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="46" selection-start="2598" selection-end="2598" vertical-scroll-proportion="1.8309859">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,6 +58,7 @@
         <option value="$PROJECT_DIR$/django-lib/install-django-nonrel.sh" />
         <option value="$PROJECT_DIR$/license/license.txt" />
         <option value="$PROJECT_DIR$/lib/install-django-nonrel.sh" />
+        <option value="$PROJECT_DIR$/lib/update-django-nonrel.sh" />
         <option value="$PROJECT_DIR$/lib/install-projects.sh" />
       </list>
     </option>
@@ -240,6 +171,7 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="" />
       <created>1359153409548</created>
       <updated>1359153409548</updated>
     </task>
@@ -249,24 +181,24 @@
     <frame x="0" y="22" width="1436" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964029" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.252518" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -323,13 +255,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/license/license.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/update-django-nonrel.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
@@ -346,7 +271,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/install-projects.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="46" selection-start="2598" selection-end="2598" vertical-scroll-proportion="1.8309859">
+        <state line="52" column="43" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/license/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/update-django-nonrel.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/install-django-nonrel.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/arturo/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/arturo/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/install-projects.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
