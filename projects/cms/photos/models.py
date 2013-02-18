@@ -1,5 +1,7 @@
 from django.db import models
-from pages.models import *
+from django.conf import settings
+from pages.models import Page
+
 
 # Create your models here.
 class Photo(models.Model):

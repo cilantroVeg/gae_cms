@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="GUI">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/404.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/404.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/500.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/500.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/delete.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/delete.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/edit_session.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/edit_session.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/enjoy_ok.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/enjoy_ok.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/enjoy_show.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/enjoy_show.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/enjoy_template.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/enjoy_template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/exit.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/exit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/forgot_password.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/forgot_password.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/frontpage.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/frontpage.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/list_available_apps.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/list_available_apps.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/list_available_sessions.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/list_available_sessions.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/movie_logged_in.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/movie_logged_in.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/movie_not_available.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/movie_not_available.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/movie_not_logged_in.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/movie_not_logged_in.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/notification.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/notification.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/signup.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/signup.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/static_template.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/static_template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/template.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification/template_normal.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/template_normal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/index.yaml" afterPath="$PROJECT_DIR$/projects/cms/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/photos/models.py" afterPath="$PROJECT_DIR$/projects/cms/photos/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/pages/models.py" afterPath="$PROJECT_DIR$/projects/interpegasus/pages/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/tasks.py" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/tasks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/urls.py" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/views.py" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/posts/views.py" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/posts/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/notification" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1360289696796" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361220721196" ignored="false" />
+    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361222133887" ignored="false" />
+    <file path="/index.yaml" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361221894929" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +29,40 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../gui/UI/__init__.py">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.15">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="8" selection-start="245" selection-end="253" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#190#233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +75,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gui" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -82,10 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../gui/ui/views.py" />
-        <option value="$PROJECT_DIR$/../gui/gui/urls.py" />
-        <option value="$USER_HOME$/PycharmProjects/UI/UI/settings.py" />
-        <option value="$USER_HOME$/PycharmProjects/UI/gui/fixtures/initial_data.yaml" />
         <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/frontpage.html" />
         <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/forgot_password.html" />
         <option value="$USER_HOME$/PycharmProjects/UI/gui/admin.py" />
@@ -98,6 +97,10 @@
         <option value="$USER_HOME$/PycharmProjects/UI/gui/static/css/style.css" />
         <option value="$USER_HOME$/PycharmProjects/UI/gui/views.py" />
         <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/index.yaml" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
       </list>
     </option>
   </component>
@@ -132,7 +135,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -147,18 +149,141 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../gui" />
     <property name="FullScreen" value="false" />
@@ -195,7 +320,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="gui" />
+      <module name="gae_cms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -217,7 +342,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="UI" />
+      <module name="gae_cms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
@@ -251,7 +376,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="gui" />
+      <module name="gae_cms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -357,11 +482,15 @@
       <created>1360289604853</created>
       <updated>1360289604853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="GUI">
+      <created>1361220724762</created>
+      <updated>1361220724762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -369,10 +498,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2640288" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26330936" sideWeight="0.6701847" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298153" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29757345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -442,14 +571,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/gui/fixtures/initial_data.yaml">
+    <entry file="file://$PROJECT_DIR$/../gui/UI/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="-6.327273" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/templates/gui/forgot_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/tasks.py">
@@ -457,81 +581,67 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/gui/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="32" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/UI/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="1" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/UI/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/../gui/UI/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/templates/ui/notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38626608" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/gui/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="72" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/UI/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/templates/gui/configuration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="29" selection-start="882" selection-end="882" vertical-scroll-proportion="0.5084746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/templates/gui/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="317" selection-end="433" vertical-scroll-proportion="0.021186441">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/templates/gui/front_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="169" selection-end="169" vertical-scroll-proportion="0.14830509">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/gui/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="45" selection-start="5959" selection-end="5959" vertical-scroll-proportion="0.5618915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/templates/gui/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.021582734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/UI/gui/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="793" column="19" selection-start="13330" selection-end="13330" vertical-scroll-proportion="0.7336066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gui/UI/__init__.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="245" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#190#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="257" selection-end="289" vertical-scroll-proportion="0.23126338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.075">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.15">
           <folding />
         </state>
       </provider>
