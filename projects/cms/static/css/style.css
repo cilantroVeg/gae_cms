@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: #ee11dd;
+    color: #f49e31;
     outline: none;
     text-decoration: underline;
     margin: 0;
@@ -28,7 +28,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #ee11dd;
+    color: #f49e31;
 }
 
 p,#content {
@@ -53,24 +53,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    color: #ee11dd;
+    color: #f49e31;
     font-size: 31px;
     line-height: 33px;
 }
 
 h2,h3,h4 {
-    color: #ee11dd;
+    color: #f49e31;
     font-size: 27px;
     line-height: 29px;
 }
 
 h6,h5 {
-    color: #ee11dd;
+    color: #f49e31;
     font-size: 19px;
 }
 
 h6 {
-    color: #ee11dd;
+    color: #f49e31;
 }
 
 #wrapper {
@@ -187,7 +187,7 @@ h6 {
     width: 100%;
     margin: -200px auto 0;
     height: 200px;
-    background: #aabbbb;
+    background: #0c5499;
     position: relative;
 }
 
@@ -777,7 +777,7 @@ label.error { float: none; color: red; padding-left: .5em; vertical-align: botto
 
 
 #red{
-    color:#ee11dd;
+    color:#f49e31;
 }
 #gray{
     color:#aabbbb;
