@@ -1,13 +1,23 @@
-from users.models import User
+from models import *
 from django.contrib import admin
 admin.ModelAdmin.list_per_page = 25
 
-class UserAdmin(admin.ModelAdmin):
+class CategoryAdmin(admin.ModelAdmin):
     #
-    fields = ['email']
+    fields = ['name','parent','allow_replies']
     #
-    list_display = ('id', 'email')
+    list_display = ('id', 'name','parent')
     #
-    search_fields = ('id', 'email')
+    search_fields = ('id', 'name')
 
-admin.site.register(User,UserAdmin)
+admin.site.register(Category,CategoryAdmin)
+
+class PageAdmin(admin.ModelAdmin):
+    #
+    fields = ['category','title','content']
+    #
+    list_display = ('id', 'title')
+    #
+    search_fields = ('title','category')
+
+admin.site.register(Page,PageAdmin)

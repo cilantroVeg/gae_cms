@@ -27,6 +27,16 @@ indexes:
 # automatically uploaded to the admin console when you next deploy
 # your application using appcfg.py.
 
+- kind: pages_category
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: pages_page
+  properties:
+  - name: __key__
+    direction: desc
+
 - kind: users_user
   properties:
   - name: __key__
