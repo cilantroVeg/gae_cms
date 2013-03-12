@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^process_sign_up/', 'users.views.process_sign_up'),
     url(r'^process_create_account/', 'users.views.process_create_account'),
     url(r'^process_forgot_password/', 'users.views.process_forgot_password'),
+    url(r'', include('social_auth.urls')),
 )
 
 
