@@ -37,12 +37,12 @@ indexes:
   - name: __key__
     direction: desc
 
-- kind: users_user
+- kind: photos_photo
   properties:
   - name: __key__
     direction: desc
 
-- kind: photos_photo
+- kind: users_user
   properties:
   - name: __key__
     direction: desc

@@ -26,12 +26,9 @@ INSTALLED_APPS = (
     'dbindexer',
     'django.contrib.admin',
     'users',
-<<<<<<< HEAD
     'social_auth',
-=======
     'pages',
     'photos',
->>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
