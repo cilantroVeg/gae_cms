@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/UI/.idea/UI.iml" filepath="$USER_HOME$/PycharmProjects/UI/.idea/UI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gae_cms.iml" filepath="$PROJECT_DIR$/.idea/gae_cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gui/.idea/gui.iml" filepath="$PROJECT_DIR$/../gui/.idea/gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" />
     </modules>
   </component>
 </project>

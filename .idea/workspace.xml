@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+=======
+    <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/CMS.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
+<<<<<<< HEAD
     <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1363048097101" ignored="false" />
     <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1363048070175" ignored="false" />
+=======
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361223537830" ignored="false" />
+    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361222133887" ignored="false" />
+    <file path="/index.yaml" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361221894929" ignored="false" />
+    <file path="/template.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361225124136" ignored="false" />
+    <file path="/style.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1361225226681" ignored="false" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +39,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,6 +89,12 @@
         <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+=======
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="23" selection-start="3230" selection-end="3230" vertical-scroll-proportion="0.45454547">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
               <folding />
             </state>
           </provider>
@@ -96,6 +118,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/django-lib/install-django-nonrel.sh" />
         <option value="$PROJECT_DIR$/license/license.txt" />
         <option value="$PROJECT_DIR$/lib/install-django-nonrel.sh" />
@@ -104,6 +127,24 @@
         <option value="$PROJECT_DIR$/projects/arturo/app.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+=======
+        <option value="$USER_HOME$/PycharmProjects/UI/gui/admin.py" />
+        <option value="$USER_HOME$/PycharmProjects/UI/gui/models.py" />
+        <option value="$USER_HOME$/PycharmProjects/UI/UI/urls.py" />
+        <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/add_configuration_form.html" />
+        <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/template.html" />
+        <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/signup.html" />
+        <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/configuration_form.html" />
+        <option value="$USER_HOME$/PycharmProjects/UI/gui/static/css/style.css" />
+        <option value="$USER_HOME$/PycharmProjects/UI/gui/views.py" />
+        <option value="$USER_HOME$/PycharmProjects/UI/templates/gui/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/index.yaml" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/css/style.css" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       </list>
     </option>
   </component>
@@ -112,14 +153,14 @@
     <option name="width" value="1436" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -169,6 +210,7 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -187,6 +229,8 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
           </PATH>
         </subPane>
       </pane>
@@ -196,10 +240,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.django.DjangoModulesConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/django" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../local/apache2/pegasus_2.0.0" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -209,16 +255,21 @@
       </PyConsoleSettings>
     </option>
     <option name="myDjangoConsoleState">
-      <PyConsoleSettings />
+      <PyConsoleSettings>
+        <option name="myUseModuleSdk" value="true" />
+      </PyConsoleSettings>
     </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/gae-projects" />
+      <recent name="$PROJECT_DIR$/projects/cms/static/images" />
+      <recent name="$PROJECT_DIR$/../gui" />
+      <recent name="$USER_HOME$/PycharmProjects/UI/templates/gui" />
+      <recent name="$USER_HOME$/PycharmProjects/UI/gui" />
+      <recent name="$USER_HOME$/PycharmProjects/UI/templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.UI">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,6 +288,42 @@
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_cms" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -264,10 +351,35 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="UI" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="UI" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.UI" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -283,7 +395,27 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -291,27 +423,65 @@
       <created>1359153409548</created>
       <updated>1359153409548</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00001" summary="Auth">
       <created>1363048100167</created>
       <updated>1363048100167</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+    <task id="LOCAL-00001" summary="GUI">
+      <created>1360261441983</created>
+      <updated>1360261441983</updated>
+    </task>
+    <task id="LOCAL-00002" summary="GUI">
+      <created>1360289510399</created>
+      <updated>1360289510399</updated>
+    </task>
+    <task id="LOCAL-00003" summary="GUI">
+      <created>1360289572188</created>
+      <updated>1360289572188</updated>
+    </task>
+    <task id="LOCAL-00004" summary="GUI">
+      <created>1360289604853</created>
+      <updated>1360289604853</updated>
+    </task>
+    <task id="LOCAL-00005" summary="GUI">
+      <created>1361220724762</created>
+      <updated>1361220724762</updated>
+    </task>
+    <task id="LOCAL-00006" summary="GUI">
+      <created>1361223540544</created>
+      <updated>1361223540544</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1436" height="878" extended-state="0" />
+<<<<<<< HEAD
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+=======
+    <editor active="false" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26330936" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26330936" sideWeight="0.76649076" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23350923" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29757345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -360,7 +530,11 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Auth" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="GUI" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -374,12 +548,17 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="InterPegasus Projects" />
+<<<<<<< HEAD
     <MESSAGE value="Auth" />
+=======
+    <MESSAGE value="GUI" />
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/license/license.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
@@ -413,17 +592,64 @@
     <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+=======
+    <entry file="file://$PROJECT_DIR$/../gui/UI/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/lib/social_auth/views.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="257" selection-end="289" vertical-scroll-proportion="0.23126338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="91" selection-end="91" vertical-scroll-proportion="0.075">
+          <folding>
+            <element signature="e#29#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.15">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/projects/cms/lib/social_auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.8125">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="-12.0">
@@ -432,22 +658,71 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/tests.py">
+=======
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="245" selection-end="253" vertical-scroll-proportion="0.225">
+          <folding>
+            <element signature="e#190#233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/core_love/app/custom/interpegasus.com/views/layouts/layout.php">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+=======
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/public_html/public/images/interpegasus.com/Pegasus-CMS.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/public_html/public/images/interpegasus.com/sun-green-footer.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/public_html/public/images/interpegasus.com/default-profile.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/public_html/public/images/interpegasus.com/CMS.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete/cms_interpegasus/public_html/public/images/interpegasus.com/CMS.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="34" column="60" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.23376623">
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="43" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.8727016">
+=======
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="23" selection-start="3230" selection-end="3230" vertical-scroll-proportion="0.45454547">
+>>>>>>> fa6cc22f2d3fb953f635ed14f140f7e8c06e09d3
           <folding />
         </state>
       </provider>
