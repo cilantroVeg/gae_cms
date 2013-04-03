@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/../../mobovivo/webapps/notification" vcs="svn" />
   </component>
 </project>

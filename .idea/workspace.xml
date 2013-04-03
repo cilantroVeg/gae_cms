@@ -1,14 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+    <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/ASeriousMan_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/ASeriousMan_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/ASeriousMan_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/ASeriousMan_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/AwayWeGo_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/AwayWeGo_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/AwayWeGo_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/AwayWeGo_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Brothers_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Brothers_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Brothers_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Brothers_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Greenberg_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Greenberg_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Greenberg_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Greenberg_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Icon-50.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Icon-512.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Icon-512.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Left.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Milk_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Milk_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Milk_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Milk_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/PirateRadio_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/PirateRadio_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/PirateRadio_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/PirateRadio_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Right.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/Right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/car/css/images/Thumbs.db" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/car/css/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Traitor_Poster.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Traitor_Poster.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Traitor_Poster.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/img/Traitor_Poster.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/appstore.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/appstore.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/arrow-down.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/arrow-down.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/arrow-up.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/arrow-up.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/background.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-thumb-y.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-thumb-y.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-track-y.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-track-y.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-trackend-y.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/css/images/bg-scrollbar-trackend-y.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/car/css/images/buttons.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/car/css/images/buttons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/changelist-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/changelist-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/changelist-bg_rtl.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/changelist-bg_rtl.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/checkmark.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/checkmark.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/chooser-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/chooser-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/chooser_stacked-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/chooser_stacked-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/default-bg-reverse.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/default-bg-reverse.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/default-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/default-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/deleted-overlay.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/deleted-overlay.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/facebook-logo.jpg" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/facebook-logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/g.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/g.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-no.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-no.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-unknown.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-unknown.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-yes.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon-yes.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/icon.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_addlink.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_addlink.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_alert.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_alert.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_calendar.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_calendar.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_changelink.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_changelink.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_clock.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_clock.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_deletelink.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_deletelink.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_error.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_error.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_searchbox.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_searchbox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_success.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/icon_success.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-delete-8bit.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-delete-8bit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-delete.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-restore-8bit.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-restore-8bit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-restore.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-restore.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-splitter-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/inline-splitter-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/loading.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/login-btn.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/login-btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/logo.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/gis/move_vertex_off.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/gis/move_vertex_off.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/gis/move_vertex_on.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/gis/move_vertex_on.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg-grabber.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg-grabber.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg-reverse.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg-reverse.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/nav-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/p.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/p.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/pattern1.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/pattern1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/register.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/register.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-add.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-add.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-addall.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-addall.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-remove.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-remove.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-removeall.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-removeall.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-search.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector-search.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector_stacked-add.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector_stacked-add.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector_stacked-remove.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/selector_stacked-remove.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/submit.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/submit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-left.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-left.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-left_over.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-left_over.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-right.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-right.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-right_over.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tool-right_over.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-add.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-add.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-add_over.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-add_over.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-arrowright.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-arrowright.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-arrowright_over.gif" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/admin/img/tooltag-arrowright_over.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_flat_55_fbec88_40x100.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_flat_55_fbec88_40x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_75_4d5bc4_1x400.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_75_4d5bc4_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_85_01c78a_1x400.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_85_01c78a_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_gloss-wave_55_ffffff_500x100.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_gloss-wave_55_ffffff_500x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_inset-hard_100_ffffff_1x100.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-bg_inset-hard_100_ffffff_1x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_01c78a_256x240.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_01c78a_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_cd0a0a_256x240.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_ffffff_256x240.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/jqueryui/css/images/ui-icons_ffffff_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/vs.png" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/images/vs.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/GPL LICENSE.txt" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/GPL LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/README.txt" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/index.html" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/css/waterwheel-carousel.css" afterPath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/static/javascript/carrousel/css/waterwheel-carousel.css" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1363049697816" ignored="false" />
-    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1363048070175" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364961076163" ignored="false" />
+    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364960370110" ignored="false" />
+    <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364960175747" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,54 +131,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+        <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.4680851">
+            <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.12765957">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/tests.py">
+      <file leaf-file-name="style_hannibal.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/static/css/style_hannibal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="-12.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/lib/social_auth/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="78" selection-end="143" vertical-scroll-proportion="-4.2">
               <folding />
             </state>
           </provider>
@@ -105,15 +183,18 @@
         <option value="$PROJECT_DIR$/projects/arturo/app.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/handler.wsgi" />
+        <option value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="15" />
     <option name="y" value="22" />
-    <option name="width" value="1436" />
+    <option name="width" value="1367" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -153,39 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
+              <option name="myItemId" value="hannibal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,9 +247,23 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.django.DjangoModulesConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/django" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/static/css" />
+      <recent name="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="Nosetests">
@@ -223,6 +286,21 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,7 +308,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="gae_cms" />
+      <module name="hannibal" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -269,10 +347,19 @@
     <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="SvnFileUrlMappingImpl">
     <option name="myMappingRoots">
       <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+        </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
@@ -281,6 +368,14 @@
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+        </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
           <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
@@ -298,19 +393,24 @@
       <created>1363048100167</created>
       <updated>1363048100167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hannibal">
+      <created>1364961093108</created>
+      <updated>1364961093108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="15" y="22" width="1367" height="878" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26330936" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2672218" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -319,7 +419,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -363,7 +462,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hannibal" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -378,21 +477,12 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="InterPegasus Projects" />
     <MESSAGE value="Auth" />
+    <MESSAGE value="Hannibal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/license/license.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/arturo/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/arturo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -415,42 +505,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.69863015" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/lib/social_auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="-12.0">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="0.42553192" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.021276595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.4680851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/deploy/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/handler.wsgi">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0">
+        <state line="13" column="48" selection-start="532" selection-end="532" vertical-scroll-proportion="0.2888889">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.4680851">
+        <state line="7" column="0" selection-start="78" selection-end="143" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/static/css/style_hannibal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.12765957">
           <folding />
         </state>
       </provider>
