@@ -18,6 +18,7 @@
     <orderEntry type="module" module-name="UI" />
     <orderEntry type="module" module-name="AXSTV" />
     <orderEntry type="module" module-name="hannibal" />
+    <orderEntry type="module" module-name="multimedia" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

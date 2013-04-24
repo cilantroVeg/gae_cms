@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/gae_cms.iml" filepath="$PROJECT_DIR$/.idea/gae_cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gui/.idea/gui.iml" filepath="$PROJECT_DIR$/../gui/.idea/gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/.idea/hannibal.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/.idea/hannibal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/multimedia/.idea/multimedia.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/multimedia/.idea/multimedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" />
     </modules>
   </component>
