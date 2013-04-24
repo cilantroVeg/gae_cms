@@ -13,7 +13,6 @@ class Photo(models.Model):
     url_large = models.URLField()
     created_at = models.DateTimeField(auto_now=True)
 
-
     # ...
     def __unicode__(self):
         return u'%s' % (self.title)
