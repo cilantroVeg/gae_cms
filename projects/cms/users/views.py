@@ -137,3 +137,12 @@ def my_custom_404_view(request):
 def my_custom_500_view(request):
     return render_to_response('template/500.html', {'is_logged_in': is_logged_in(request)},
                               context_instance=RequestContext(request))
+
+# Social Auth
+def logged_in(request):
+    request.session['is_logged_in'] = True
+    return redirect('/', False)
+
+def login_error(request):
+    return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"},
+                              context_instance=RequestContext(request))

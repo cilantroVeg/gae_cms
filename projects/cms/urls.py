@@ -6,9 +6,13 @@ admin.autodiscover()
 handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',
+    # Admin URL's
     url(r'^admin/', include(admin.site.urls)),
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
+
+    # Frontpage
     url('^$', 'users.views.front_page'),
+
     # User Session
     url(r'^enter/', 'users.views.enter'),
     url(r'^exit/', 'users.views.exit_request'),
@@ -17,8 +21,9 @@ urlpatterns = patterns('',
     url(r'^process_create_account/', 'users.views.process_create_account'),
     url(r'^process_forgot_password/', 'users.views.process_forgot_password'),
     url(r'', include('social_auth.urls')),
-    # auth
     (r'', include('django.contrib.auth.urls')),
+    url(r'^logged-in/', 'users.views.logged_in'),
+    url(r'^login-error/', 'users.views.login_error'),
 )
 
 

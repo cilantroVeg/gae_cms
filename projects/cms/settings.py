@@ -82,6 +82,7 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.google.GoogleOAuth2Backend',
     'social_auth.backends.google.GoogleBackend',
     'social_auth.backends.yahoo.YahooBackend',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 import private_keys
@@ -94,11 +95,15 @@ GOOGLE_CONSUMER_SECRET       = ''
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
 
-LOGIN_URL          = '/login-form/'
+LOGIN_URL          = '/enter/'
 LOGIN_REDIRECT_URL = '/logged-in/'
 LOGIN_ERROR_URL    = '/login-error/'
+SOCIAL_AUTH_BACKEND_ERROR_URL = '/login-error/'
 
-
-#SOCIAL_AUTH_USER_MODEL = 'users.models.User'
+SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/logged-in/'
+SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/logged-in/'
+SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
+SOCIAL_AUTH_SESSION_EXPIRATION = False
+SOCIAL_AUTH_RAISE_EXCEPTIONS = False
 
 AUTH_PROFILE_MODULE = 'users.models.UserProfile'
