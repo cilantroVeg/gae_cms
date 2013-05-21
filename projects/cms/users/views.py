@@ -8,6 +8,7 @@ from django.views.decorators.http import require_http_methods
 from django.utils.encoding import *
 from django.utils.hashcompat import md5_constructor, sha_constructor
 
+
 #######################
 # User Related Methods
 #######################
