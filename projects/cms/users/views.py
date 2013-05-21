@@ -1,5 +1,6 @@
 # Create your views here.
 import logging
+import pprint
 from users.models import *
 log = logging.getLogger(__name__)
 from django.shortcuts import render_to_response, get_object_or_404, redirect
@@ -123,6 +124,8 @@ def process_forgot_password(request):
                                   context_instance=RequestContext(request))
 
 def front_page(request):
+    for key, value in request.session.items(): # .iteritems() in Python 2.x
+        pprint.pprint(value)
     if is_logged_in(request) is False:
         return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
