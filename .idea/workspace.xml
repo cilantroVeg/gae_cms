@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369531676594" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369531727398" ignored="false" />
     <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366605948161" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366606646936" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
     <file path="/urls.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366606808627" ignored="false" />
-    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369531559155" ignored="false" />
+    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369532806607" ignored="false" />
     <file path="/style_axstv.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364966099306" ignored="false" />
     <file path="/menu.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971470717" ignored="false" />
     <file path="/case_explorer.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971434893" ignored="false" />
@@ -63,7 +65,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="13" selection-start="3665" selection-end="3665" vertical-scroll-proportion="0.79574466">
+            <state line="84" column="5" selection-start="2869" selection-end="2869" vertical-scroll-proportion="0.36312056">
               <folding />
             </state>
           </provider>
@@ -496,7 +498,11 @@
       <created>1369531678385</created>
       <updated>1369531678385</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Default user Authentication Ok">
+      <created>1369531729806</created>
+      <updated>1369531729806</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -673,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="13" selection-start="3665" selection-end="3665" vertical-scroll-proportion="0.79574466">
+        <state line="84" column="5" selection-start="2869" selection-end="2869" vertical-scroll-proportion="0.36312056">
           <folding />
         </state>
       </provider>

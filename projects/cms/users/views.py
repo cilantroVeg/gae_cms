@@ -41,6 +41,7 @@ def not_found(request):
 
 def exit_request(request):
     logout(request)
+    request.session = None
     return redirect('/', False)
 
 
@@ -81,6 +82,7 @@ def process_sign_up(request):
 
 
 def front_page(request):
+    #pprint.pprint(request.user.email)
     if is_logged_in(request) is False:
         return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
@@ -98,6 +100,9 @@ def my_custom_500_view(request):
                               context_instance=RequestContext(request))
 
 # Social Auth
+def logged_in(request):
+    return redirect('/', False)
+
 def login_error(request):
     return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"},
                               context_instance=RequestContext(request))
