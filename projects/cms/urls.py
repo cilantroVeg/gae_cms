@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     (r'', include('django.contrib.auth.urls')),
     url(r'^logged-in/', 'users.views.logged_in'),
     url(r'^login-error/', 'users.views.login_error'),
+    url(r'^contact/', 'users.views.contact'),
+    url(r'^thanks/', 'users.views.thanks'),
+
 )
 
 

@@ -10,6 +10,9 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
 from django.contrib.auth import login
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
+
 #from django.contrib.auth.models import Group, Permission
 #from django.contrib.contenttypes.models import ContentType
 
@@ -106,3 +109,31 @@ def logged_in(request):
 def login_error(request):
     return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"},
                               context_instance=RequestContext(request))
+
+# Contact Form
+def contact(request):
+    if request.method == 'POST': # If the form has been submitted...
+        form = ContactForm(request.POST) # A form bound to the POST data
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            sender = form.cleaned_data['your_email']
+            recipients = ['contact@interpegasus.com']
+            from django.core.mail import send_mail
+            try:
+                send_mail(subject, message, sender, recipients)
+            except:
+                log.debug("Issue sending email to: " + sender)
+            return HttpResponseRedirect('/thanks/') # Redirect after POST
+    else:
+        try:
+            data = {'your_email': request.user.email}
+        except:
+            data = {}
+        form = ContactForm(initial=data) # An unbound form
+    return render(request, 'users/contact.html', {
+        'form': form,
+        })
+
+def thanks(request):
+    return render(request, 'users/thanks.html')
