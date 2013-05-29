@@ -1,0 +1,1 @@
+for x in *;do mv $x $(echo ${x%*.*});done

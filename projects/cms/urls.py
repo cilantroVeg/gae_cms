@@ -25,6 +25,10 @@ urlpatterns = patterns('',
     url(r'^contact/', 'users.views.contact'),
     url(r'^thanks/', 'users.views.thanks'),
 
+    # Page
+    url(r'^category/manage', 'pages.views.category_form'),
+    url(r'^page/manage', 'pages.views.page_form'),
+
 )
 
 

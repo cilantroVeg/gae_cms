@@ -1,0 +1,16 @@
+{% extends "template/template.html" %}
+
+{% block title %}Contact{% endblock %}
+{% block js %}
+
+{% endblock %}
+{% block content %}
+    <div id="static_content">
+        <h1>Category</h1>
+        <form action="/contact/" method="post">
+            {% csrf_token %}
+            {{ formset }}
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+{% endblock %}
