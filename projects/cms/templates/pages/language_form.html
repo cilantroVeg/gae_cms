@@ -6,11 +6,17 @@
 {% endblock %}
 {% block content %}
     <div id="static_content">
-        <h1>Page</h1>
-        <form action="/contact/" method="post">
+        <h1>Language Form</h1>
+        <form action="/language/manage" method="post">
             {% csrf_token %}
             {{ formset }}
             <input type="submit" value="Submit" />
         </form>
+        <hr />
+        <h1>Language List</h1>
+        {% for entry in language_list %}
+            <i><b>Name:</i></b> {{ entry.name }}
+            <br />
+        {% endfor %}
     </div>
 {% endblock %}

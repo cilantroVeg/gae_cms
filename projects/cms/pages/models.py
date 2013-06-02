@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from users.models import *
 from photos.models import *
+from django.forms import ModelForm
 
 from django.template.defaultfilters import slugify
 
@@ -58,3 +59,19 @@ class Page(models.Model):
     # ...
     class Meta:
         unique_together = ("category", "title")
+
+
+# Forms
+class LanguageForm(ModelForm):
+    class Meta:
+        model = Language
+
+# Forms
+class CategoryForm(ModelForm):
+    class Meta:
+        model = Category
+
+# Forms
+class PageForm(ModelForm):
+    class Meta:
+        model = Page
