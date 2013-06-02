@@ -91,7 +91,7 @@ def front_page(request):
         return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
-        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request)},
+        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request),'is_admin':is_admin_user(request)},
                                   context_instance=RequestContext(request))
 
 # Custom 404 and 500
