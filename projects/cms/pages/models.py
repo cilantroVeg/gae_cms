@@ -5,10 +5,16 @@ from photos.models import *
 
 from django.template.defaultfilters import slugify
 
+class Language(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=64, null=False, blank=False)
+    code = models.CharField(max_length=7, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now=True)
 
 # Create your models here.
 class Category(models.Model):
     id = models.AutoField(primary_key=True)
+    language = models.ForeignKey(Language, null=False, blank=False)
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     slug = models.SlugField()
