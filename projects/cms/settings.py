@@ -9,6 +9,9 @@ from djangoappengine.settings_base import *
 
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+ADMIN_USERS = ['arturo@magicangel.org'] # ,'rosegpeterson@gmail.com']
+
 # Activate django-dbindexer for the default database
 DATABASES['native'] = DATABASES['default']
 DATABASES['default'] = {'ENGINE': 'dbindexer', 'TARGET': 'native'}

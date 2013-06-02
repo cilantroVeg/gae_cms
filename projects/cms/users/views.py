@@ -12,6 +12,7 @@ from django.contrib.auth import logout
 from django.contrib.auth import login
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.conf import settings
 
 #from django.contrib.auth.models import Group, Permission
 #from django.contrib.contenttypes.models import ContentType
@@ -137,3 +138,12 @@ def contact(request):
 
 def thanks(request):
     return render(request, 'users/thanks.html')
+
+def is_admin_user(request):
+    try:
+        if request.user.email in settings.ADMIN_USERS:
+            return True
+        else:
+            return False
+    except:
+        return False

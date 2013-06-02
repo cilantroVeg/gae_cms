@@ -1,117 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="Updates Character">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/locale/de/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/locale/de/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/images/logo_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/images/pet_store_api.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/images/throbber.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/toggle-collapse-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/toggle-collapse-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/toggle-expand-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/toggle-expand-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/images/wordnik_api.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0002_auto__add_field_category_alternate_title__add_field_category_descripti.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0003_auto__add_field_category_thumbnail.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0004_auto__add_field_category_thumbnail_width__add_field_category_thumbnail.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0005_auto__add_field_category_alternate_url.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0006_auto__add_categoryrelation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0007_auto__add_field_category_active.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0008_changed_alternate_url_type.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0009_setdefaultorder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0010_add_field_categoryrelation_category.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0011_move_category_fks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0012_remove_story_field.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/0013_null_category_id.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/management/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/management/commands/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/tests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/actor" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templatetags/admin_tree_list.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/ancestors_ul.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/backbone-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/breadcrumbs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/category_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/category_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templatetags/category_tags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/character" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/dart_tags" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/locale/de/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/locale/de/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/management/commands/drop_category_field.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/episode" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/fields.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/admin/edit_inline/gen_coll_tabular.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/genericcollection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/static/js/genericcollections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/fixtures/genres.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templates/admin/editor/grappelli_tree_editor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templates/admin/editor/grappelli_tree_list_results.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/handlebars-1.0.rc.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/highlight.7.3.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/css/hightlight.default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/image" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/management/commands/import_categories.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/information" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/jquery-1.8.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/jquery.ba-bbq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/jquery.slideto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/jquery.treeTable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/static/editor/jquery.treeTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/jquery.wiggle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/language" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/tests/manager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/fixtures/musicgenres.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/region" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/registration.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/tests/registration.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/remove_extension" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/swagger-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/swagger-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/swagger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/tests/templatetags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/fixtures/test_category_spaces.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/fixtures/test_category_tabs.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templates/admin/editor/tree_editor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/tree_editor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/templates/admin/editor/tree_list_results.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/templates/categories/ul_tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/lib/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/editor/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/API/api-docs/video" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/categories/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/urls.py" afterPath="$PROJECT_DIR$/projects/cms/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+    <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/API/index.html" afterPath="$PROJECT_DIR$/lib/API/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/API/lib/jquery-1.8.0.min.js" afterPath="$PROJECT_DIR$/lib/API/lib/jquery-1.8.0.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369846279957" ignored="false" />
-    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366605948161" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370124924416" ignored="false" />
+    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369969913605" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366606646936" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
     <file path="/urls.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369847128211" ignored="false" />
-    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369848405790" ignored="false" />
+    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369973055616" ignored="false" />
     <file path="/style_axstv.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364966099306" ignored="false" />
     <file path="/menu.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971470717" ignored="false" />
     <file path="/case_explorer.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971434893" ignored="false" />
@@ -130,6 +37,7 @@
     <file path="/russian-tags.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369839080863" ignored="false" />
     <file path="/category_form.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369848188176" ignored="false" />
     <file path="/page_form.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1369848161217" ignored="false" />
+    <file path="/front_page.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370134568181" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,41 +59,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="29" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-9.16">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="10" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.827957">
-              <folding>
-                <element signature="e#26#102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="0" selection-end="377" vertical-scroll-proportion="-5.12">
+            <state line="12" column="39" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.68">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <file leaf-file-name="front_page.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="0" selection-start="4092" selection-end="5039" vertical-scroll-proportion="-2.48">
+            <state line="11" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2496454">
               <folding />
             </state>
           </provider>
@@ -194,34 +80,25 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="47" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-18.56">
+            <state line="29" column="11" selection-start="1011" selection-end="1022" vertical-scroll-proportion="-18.56">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="-5.12">
+            <state line="148" column="20" selection-start="5331" selection-end="5331" vertical-scroll-proportion="-26.36">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/contact.html">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="365" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="18" selection-start="938" selection-end="938" vertical-scroll-proportion="-14.6">
+            <state line="63" column="10" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,22 +122,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/photos/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/api_data/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
         <option value="$PROJECT_DIR$/../gui/gui/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/contact.html" />
         <option value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/page/category_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
       </list>
     </option>
   </component>
@@ -356,6 +233,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="multimedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multimedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -413,6 +314,76 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -425,8 +396,8 @@
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -693,20 +664,22 @@
       <created>1369846283917</created>
       <updated>1369846283917</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="CMS Forms">
+      <created>1369864271239</created>
+      <updated>1369864271239</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="22" width="1367" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16358839" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34367904" sideWeight="0.8364116" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3610901" sideWeight="0.8364116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -715,6 +688,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16358839" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -758,7 +733,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pages Categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMS Forms" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -786,25 +761,12 @@
     <MESSAGE value="Contact Form" />
     <MESSAGE value="Updates Character" />
     <MESSAGE value="Pages Categories" />
+    <MESSAGE value="CMS Forms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/multimedia/movies/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="-3.4117646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="4" selection-start="2757" selection-end="2815" vertical-scroll-proportion="-15.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gui/gui/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3617021" />
@@ -817,44 +779,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/API/api-docs/actor">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.8340425">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.8340425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5219858">
-          <folding />
-        </state>
+        <state line="40" column="35" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.5219858" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.203626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="938" selection-end="938" vertical-scroll-proportion="-14.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-18.56">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.203626" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/contact.html">
@@ -866,40 +806,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="-5.12">
+        <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.18156028">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-9.16">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state line="37" column="29" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="0" selection-end="377" vertical-scroll-proportion="0.18156028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/multimedia/movies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="392" selection-end="424" vertical-scroll-proportion="0.1849711">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="4092" selection-end="5039" vertical-scroll-proportion="-2.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="0" selection-end="377" vertical-scroll-proportion="-5.12">
+        <state line="148" column="20" selection-start="5331" selection-end="5331" vertical-scroll-proportion="-26.36">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.827957">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
+        <state line="63" column="10" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="39" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="11" selection-start="1011" selection-end="1022" vertical-scroll-proportion="-18.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2496454">
+          <folding />
         </state>
       </provider>
     </entry>
