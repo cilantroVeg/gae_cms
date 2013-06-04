@@ -11,6 +11,9 @@ class Language(models.Model):
     name = models.CharField(max_length=64, null=False, blank=False)
     code = models.CharField(max_length=7, null=False, blank=False)
     created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.name )
 
 # Create your models here.
 class Category(models.Model):
@@ -40,7 +43,7 @@ class Category(models.Model):
 class Page(models.Model):
     id = models.AutoField(primary_key=True)
     category = models.ForeignKey(Category, null=False, blank=False)
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, null=False, blank=False)
     title = models.CharField(max_length=256, null=False, blank=False)
     slug = models.SlugField()
     content = models.TextField(null=False, blank=False)
@@ -77,4 +80,4 @@ class CategoryForm(ModelForm):
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ['category', 'title','content']
+        fields = ['category','user', 'title','content']
