@@ -1,16 +1,17 @@
 {% extends "template/template.html" %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Form{% endblock %}
 {% block js %}
 
 {% endblock %}
 {% block content %}
     <div id="static_content">
-        <h1>Category</h1>
-        <form action="/contact/" method="post">
+        <h1>category Form</h1>
+        <form action="/category/manage" method="post">
             {% csrf_token %}
-            {{ formset }}
+            {{ form }}
             <input type="submit" value="Submit" />
         </form>
+        <hr />
     </div>
 {% endblock %}

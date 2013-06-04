@@ -1,13 +1,13 @@
 {% extends "template/template.html" %}
 
-{% block title %}Language List{% endblock %}
+{% block title %}Category List{% endblock %}
 {% block js %}
 
 {% endblock %}
 {% block content %}
     <div id="static_content">
-        <h1>Language List</h1>
-        {% for entry in language_list %}
+        <h1>Category List</h1>
+        {% for entry in category_list %}
             <i><b>Name:</i></b> {{ entry.name }}
             <br />
         {% endfor %}

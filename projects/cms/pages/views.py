@@ -24,24 +24,9 @@ def get_pages_by_category(request):
 def get_page_content(request):
     return True
 
-def page_form(request):
-    if is_admin_user(request):
-        PageFormSet = modelformset_factory(Page)
-        formset = PageFormSet()
-        return render_to_response('pages/page_form.html', {'formset': formset},
-                              context_instance=RequestContext(request))
-
-def category_form(request):
-    if is_admin_user(request):
-        CategoryFormSet = modelformset_factory(Category)
-        formset = CategoryFormSet()
-
-        return render_to_response('pages/category_form.html', {'formset': formset},
-                                  context_instance=RequestContext(request))
 
 def language_form(request):
     if is_admin_user(request):
-        form = LanguageForm()
         if request.method == 'POST':
             form = LanguageForm(request.POST)
             if form.is_valid():
@@ -52,6 +37,36 @@ def language_form(request):
         else:
             form = LanguageForm()
             return render_to_response("pages/language_form.html", {"form": form},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+def category_form(request):
+    if is_admin_user(request):
+        if request.method == 'POST':
+            form = CategoryForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return render_to_response("pages/category_list.html", {"category_list": Category.objects.all()},context_instance=RequestContext(request))
+            else:
+                return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
+        else:
+            form = CategoryForm()
+            return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+def page_form(request):
+    if is_admin_user(request):
+        if request.method == 'POST':
+            form = PageForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return render_to_response("pages/page_list.html", {"page_list": Page.objects.all()},context_instance=RequestContext(request))
+            else:
+                return render_to_response("pages/page_form.html", {"form": form},context_instance=RequestContext(request))
+        else:
+            form = PageForm()
+            return render_to_response("pages/page_form.html", {"form": form},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

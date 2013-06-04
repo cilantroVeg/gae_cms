@@ -40,7 +40,7 @@ class Category(models.Model):
 class Page(models.Model):
     id = models.AutoField(primary_key=True)
     category = models.ForeignKey(Category, null=False, blank=False)
-    user = models.ForeignKey(User, null=False, blank=False)
+    user = models.ForeignKey(User)
     title = models.CharField(max_length=256, null=False, blank=False)
     slug = models.SlugField()
     content = models.TextField(null=False, blank=False)
@@ -71,8 +71,10 @@ class LanguageForm(ModelForm):
 class CategoryForm(ModelForm):
     class Meta:
         model = Category
+        fields = ['language', 'name','parent','allow_replies']
 
 # Forms
 class PageForm(ModelForm):
     class Meta:
         model = Page
+        fields = ['category', 'title','content']
