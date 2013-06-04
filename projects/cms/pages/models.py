@@ -65,6 +65,7 @@ class Page(models.Model):
 class LanguageForm(ModelForm):
     class Meta:
         model = Language
+        fields = ['name', 'code']
 
 # Forms
 class CategoryForm(ModelForm):

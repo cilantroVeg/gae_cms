@@ -41,17 +41,17 @@ def category_form(request):
 
 def language_form(request):
     if is_admin_user(request):
-        LanguageFormSet = modelformset_factory(Language)
+        form = LanguageForm()
         if request.method == 'POST':
-            formset = LanguageFormSet(request.POST, request.FILES)
-            if formset.is_valid():
-                formset.save()
-                return render_to_response("pages/language_form.html", {"formset": formset,"language_list": Language.objects.all()},context_instance=RequestContext(request))
+            form = LanguageForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return render_to_response("pages/language_list.html", {"language_list": Language.objects.all()},context_instance=RequestContext(request))
             else:
-                return render_to_response("pages/language_form.html", {"formset": formset,"language_list": Language.objects.all()},context_instance=RequestContext(request))
+                return render_to_response("pages/language_form.html", {"form": form},context_instance=RequestContext(request))
         else:
-            formset = LanguageFormSet()
-            return render_to_response("pages/language_form.html", {"formset": formset},context_instance=RequestContext(request))
+            form = LanguageForm()
+            return render_to_response("pages/language_form.html", {"form": form},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

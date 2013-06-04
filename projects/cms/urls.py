@@ -29,6 +29,9 @@ urlpatterns = patterns('',
     url(r'^category/manage', 'pages.views.category_form'),
     url(r'^page/manage', 'pages.views.page_form'),
     url(r'^language/manage', 'pages.views.language_form'),
+    url(r'^category/list', 'pages.views.category_form'),
+    url(r'^page/list', 'pages.views.page_form'),
+    url(r'^language/list', 'pages.views.language_form'),
 
 )
 
