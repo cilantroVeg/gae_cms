@@ -15,6 +15,18 @@ class Language(models.Model):
     def __unicode__(self):
         return u'%s' % (self.name )
 
+    # ...
+    class Meta:
+        unique_together = ("name", "code")
+
+class Spreadsheet(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=228, null=False, blank=False, unique=True)
+    created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.name )
+
 # Create your models here.
 class Category(models.Model):
     id = models.AutoField(primary_key=True)
@@ -44,6 +56,7 @@ class Page(models.Model):
     id = models.AutoField(primary_key=True)
     category = models.ForeignKey(Category, null=False, blank=False)
     user = models.ForeignKey(User, null=False, blank=False)
+    spreadsheet = models.ForeignKey(Spreadsheet, null=True, blank=True)
     title = models.CharField(max_length=256, null=False, blank=False)
     slug = models.SlugField()
     content = models.TextField(null=False, blank=False)
@@ -81,3 +94,10 @@ class PageForm(ModelForm):
     class Meta:
         model = Page
         fields = ['category','user', 'title','content']
+
+
+class SpreadsheetForm(forms.Form):
+    file  = forms.FileField(label= "Choose a CSV file to upload")
+
+
+

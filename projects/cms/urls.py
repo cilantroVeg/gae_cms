@@ -32,6 +32,9 @@ urlpatterns = patterns('',
     url(r'^category/list', 'pages.views.category_form'),
     url(r'^page/list', 'pages.views.page_form'),
     url(r'^language/list', 'pages.views.language_form'),
+    
+    url(r'^spreadsheet/manage', 'pages.views.spreadsheet_form'),
+    url(r'^spreadsheet/list', 'pages.views.spreadsheet_form'),
 
 )
 

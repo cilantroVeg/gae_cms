@@ -70,5 +70,17 @@ def page_form(request):
     else:
         return redirect('/', False)
 
-
-
+def spreadsheet_form(request):
+    if is_admin_user(request):
+        if request.method == 'POST':
+            form = SpreadsheetForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all()},context_instance=RequestContext(request))
+            else:
+                return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
+        else:
+            form = SpreadsheetForm()
+            return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
