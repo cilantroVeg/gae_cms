@@ -2,14 +2,30 @@
 
 {% block title %}Language List{% endblock %}
 {% block js %}
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {packages:['table']});
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+            var data = new google.visualization.DataTable();
 
+            data.addColumn('string', 'Language');
+            data.addColumn('string', 'Language Code');
+            data.addColumn('string', 'Manage');
+            data.addRows([
+                {% for entry in language_list %}
+                    ['{{ entry.name }}', '{{ entry.code }}','<a href="/language/manage">Edit</a>|<a href="/language/delete">Delete</a>'],
+                {% endfor %}
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+            table.draw(data, {showRowNumber: true,allowHtml: true});
+        }
+    </script>
 {% endblock %}
 {% block content %}
     <div id="static_content">
         <h1>Language List</h1>
-        {% for entry in language_list %}
-            <i><b>Name:</i></b> {{ entry.name }}
-            <br />
-        {% endfor %}
+        <div id='table_div'></div>
     </div>
 {% endblock %}

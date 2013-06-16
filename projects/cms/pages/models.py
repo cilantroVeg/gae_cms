@@ -21,7 +21,8 @@ class Language(models.Model):
 
 class Spreadsheet(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=228, null=False, blank=False, unique=True)
+    name = models.CharField(max_length=64, null=False, blank=False)
+    file = models.FileField(upload_to='/tmp/')
     created_at = models.DateTimeField(auto_now=True)
     # ...
     def __unicode__(self):
@@ -95,9 +96,10 @@ class PageForm(ModelForm):
         model = Page
         fields = ['category','user', 'title','content']
 
-
-class SpreadsheetForm(forms.Form):
-    file  = forms.FileField(label= "Choose a CSV file to upload")
+#
+class UploadFileForm(forms.Form):
+    name = forms.CharField(max_length=50)
+    file  = forms.FileField()
 
 
 

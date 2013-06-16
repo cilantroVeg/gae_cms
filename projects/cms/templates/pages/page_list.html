@@ -2,14 +2,30 @@
 
 {% block title %}Page List{% endblock %}
 {% block js %}
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {packages:['table']});
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+            var data = new google.visualization.DataTable();
 
+            data.addColumn('string', 'Page');
+            data.addColumn('string', 'Content');
+            data.addColumn('string', 'Manage');
+            data.addRows([
+                {% for entry in page_list %}
+                    ['{{ entry.title }}', '{{ entry.content }}','<a href="/page/manage">Edit</a>|<a href="/page/delete">Delete</a>'],
+                {% endfor %}
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+            table.draw(data, {showRowNumber: true,allowHtml: true});
+        }
+    </script>
 {% endblock %}
 {% block content %}
     <div id="static_content">
         <h1>Page List</h1>
-        {% for entry in page_list %}
-            <i><b>Name:</i></b> {{ entry.title }}
-            <br />
-        {% endfor %}
+        <div id='table_div'></div>
     </div>
 {% endblock %}

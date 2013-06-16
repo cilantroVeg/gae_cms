@@ -12,6 +12,9 @@ from django.http import HttpResponse
 from django.utils import simplejson as json
 from django.forms.models import modelformset_factory
 
+from django.http import HttpResponseRedirect
+from django.shortcuts import render_to_response
+
 def get_category_tree(request):
     return True
 
@@ -40,6 +43,7 @@ def language_form(request):
     else:
         return redirect('/', False)
 
+
 def category_form(request):
     if is_admin_user(request):
         if request.method == 'POST':
@@ -54,6 +58,7 @@ def category_form(request):
             return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
+
 
 def page_form(request):
     if is_admin_user(request):
@@ -70,17 +75,39 @@ def page_form(request):
     else:
         return redirect('/', False)
 
-def spreadsheet_form(request):
+
+def language_list(request):
     if is_admin_user(request):
-        if request.method == 'POST':
-            form = SpreadsheetForm(request.POST)
-            if form.is_valid():
-                form.save()
-                return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all()},context_instance=RequestContext(request))
-            else:
-                return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
-        else:
-            form = SpreadsheetForm()
-            return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
+        return render_to_response("pages/language_list.html", {"language_list": Language.objects.all()},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
+
+
+def category_list(request):
+    if is_admin_user(request):
+        return render_to_response("pages/category_list.html", {"category_list": Category.objects.all()},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+
+def page_list(request):
+    if is_admin_user(request):
+        return render_to_response("pages/page_list.html", {"page_list": Page.objects.all()},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+
+
+def spreadsheet_form(request):
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            instance = Spreadsheet(file_field=request.FILES['file'])
+            instance.save()
+            return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all()},context_instance=RequestContext(request))
+    else:
+        form = UploadFileForm()
+    return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
