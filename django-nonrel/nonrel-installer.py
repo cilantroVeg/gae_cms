@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 import subprocess
 
-def urls_master():
+def get_urls_master():
     urls_master = [
-        "rm -rf django*"
         "git clone https://github.com/django-nonrel/django.git",
         "git clone https://github.com/django-nonrel/djangoappengine.git",
         "git clone https://github.com/django-nonrel/djangotoolbox.git",
@@ -13,25 +12,28 @@ def urls_master():
     ]
     return urls_master
 
-def project_list():
+
+def get_project_list():
     project_list = [
         'cms',
-        'arturo',
-        'interpegasus',
-        'magicangel',
-        'music',
-        'nrwl',
-        'recipes',
-        'yiyask'
+        #'arturo',
+        #'interpegasus',
+        #'magicangel',
+        #'music',
+        #'nrwl',
+        #'recipes',
+        #'yiyask',
+        'django-testapp'
     ]
+    return project_list
 
 
 def main():
-    url_array = urls_master()
+    url_array = get_urls_master()
     for url in url_array:
         subprocess.call(url, shell=True)
 
-    project_list= project_list()
+    project_list = get_project_list()
     subprocess.call("cd ../projects", shell=True)
 
     for project in project_list:
