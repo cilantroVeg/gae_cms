@@ -33,18 +33,5 @@ def main():
     for url in url_array:
         subprocess.call(url, shell=True)
 
-    project_list = get_project_list()
-    subprocess.call("cd ../projects", shell=True)
-
-    for project in project_list:
-        subprocess.call("mkdir " + project, shell=True)
-
-    for project in project_list:
-        subprocess.call("ln -s ../django-nonrel/django/django " + project + "/", shell=True)
-        subprocess.call("ln -s ../django-nonrel/djangotoolbox/djangotoolbox " + project + "/", shell=True)
-        subprocess.call("ln -s ../django-nonrel/django-autoload/autoload " + project + "/", shell=True)
-        subprocess.call("ln -s ../django-nonrel/django-dbindexer/dbindexer " + project + "/", shell=True)
-        subprocess.call("ln -s ../django-nonrel/djangoappengine/djangoappengine " + project + "/", shell=True)
-
 # Installs the base system for django-nonrel
 main()

@@ -88,11 +88,11 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
-import private_keys
-TWITTER_CONSUMER_KEY         = private_keys.IP_TWEET_KEY
-TWITTER_CONSUMER_SECRET      = private_keys.IP_TWEET_SECRET
-FACEBOOK_APP_ID              = private_keys.IP_FACEBOOK_KEY
-FACEBOOK_API_SECRET          = private_keys.IP_FACEBOOK_SECRET
+import access_keys
+TWITTER_CONSUMER_KEY         = access_keys.IP_TWEET_KEY
+TWITTER_CONSUMER_SECRET      = access_keys.IP_TWEET_SECRET
+FACEBOOK_APP_ID              = access_keys.IP_FACEBOOK_KEY
+FACEBOOK_API_SECRET          = access_keys.IP_FACEBOOK_SECRET
 GOOGLE_CONSUMER_KEY          = ''
 GOOGLE_CONSUMER_SECRET       = ''
 GOOGLE_OAUTH2_CLIENT_ID      = ''
