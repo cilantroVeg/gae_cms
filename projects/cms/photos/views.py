@@ -18,4 +18,5 @@ def add_photos_form(page_id):
     return True
 
 def add_photos_form_action(page_id):
+    # upload to clickr
     return True

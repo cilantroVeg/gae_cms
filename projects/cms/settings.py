@@ -97,6 +97,8 @@ GOOGLE_CONSUMER_KEY          = ''
 GOOGLE_CONSUMER_SECRET       = ''
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
+FLICKR_API_KEY = access_keys.FLICKR_KEY
+FLICKR_API_SECRET = access_keys.FLICKR_SEC
 
 LOGIN_URL          = '/enter/'
 LOGIN_REDIRECT_URL = '/logged-in/'
