@@ -7,12 +7,16 @@
 {% block content %}
     <div id="static_content">
         <h1>category Form</h1>
-        <form action="/category/manage" method="post">
+        {%  if id %}
+            <form action="/category/manage/{{ id }}/" method="post">
+        {% else %}
+            <form action="/category/manage/" method="post">
+        {% endif %}
             {% csrf_token %}
             {{ form }}
             <input type="submit" value="Submit" />
         </form>
     </div>
     <hr />
-    <a href="/category/list">Category List</a>
+    <a href="/category/list/">Category List</a>
 {% endblock %}

@@ -52,7 +52,7 @@ def category_form(request, id = None):
         if form.is_valid():
             form.save()
             return redirect('/category/list')
-        return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
+        return render_to_response("pages/category_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
