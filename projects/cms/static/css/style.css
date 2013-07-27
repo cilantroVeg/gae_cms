@@ -682,23 +682,7 @@ hr {
     font-size: 100px;
 }
 
-input[type=text],input[type=password],textarea,select{
-    width:210px;
-    float: left;
-    clear: right;
-}
-input[type=submit]{
-    width:120px;
-    float: none;
-    clear: both;
-}
-label {
-    float:left;
-    min-width: 100px;
-    max-width: 100px;
-    clear: left;
-    margin:5px;
-}
+
 
 #twitter_div, #email_div{
     display:none;
@@ -799,3 +783,17 @@ li{
     list-style-image: none;
     width: 100%;
 }
+
+input, select, textarea,input[type="submit"] {
+    display: block;
+    width: 360px;
+    margin: 7px;
+    padding: 3px;
+}
+
+label {
+    display: block;
+    width: 360px;
+    margin: 7px;
+    padding: 3px;
+}​

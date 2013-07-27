@@ -26,7 +26,8 @@ urlpatterns = patterns('',
     url(r'^thanks/', 'users.views.thanks'),
 
     # Page
-    url(r'^category/manage', 'pages.views.category_form'),
+    url(r'^category/manage/(?P<id>\d+)/$', 'pages.views.category_form'),
+    url(r'^category/manage$', 'pages.views.category_form'),
     url(r'^page/manage', 'pages.views.page_form'),
     url(r'^language/manage', 'pages.views.language_form'),
     url(r'^category/list', 'pages.views.category_list'),

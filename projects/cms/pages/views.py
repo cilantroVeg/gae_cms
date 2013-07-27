@@ -11,6 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from django.utils import simplejson as json
 from django.forms.models import modelformset_factory
+from django.views.generic import TemplateView
 
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
@@ -44,21 +45,16 @@ def language_form(request):
         return redirect('/', False)
 
 
-def category_form(request):
+def category_form(request, id = None):
     if is_admin_user(request):
-        if request.method == 'POST':
-            form = CategoryForm(request.POST)
-            if form.is_valid():
-                form.save()
-                return render_to_response("pages/category_list.html", {"category_list": Category.objects.all()},context_instance=RequestContext(request))
-            else:
-                return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
-        else:
-            form = CategoryForm()
-            return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
+        instance = get_object_or_404(Category, id=id) if id is not None else None
+        form = CategoryForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/category/list')
+        return render_to_response("pages/category_form.html", {"form": form},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
-
 
 def page_form(request):
     if is_admin_user(request):

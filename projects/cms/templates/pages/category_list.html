@@ -14,7 +14,7 @@
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in category_list %}
-                    ['{{ entry.name }}', '{{ entry.parent }}','<a href="/category/manage">Edit</a>|<a href="/category/delete">Delete</a>'],
+                    ['{{ entry.name }}', '{{ entry.parent }}','<a href="/category/manage/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
                 {% endfor %}
             ]);
 
