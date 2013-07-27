@@ -8,9 +8,9 @@
     <div id="static_content">
         <h1>category Form</h1>
         {%  if id %}
-            <form action="/category/manage/{{ id }}/" method="post">
+            <form action="/category/edit/{{ id }}/" method="post">
         {% else %}
-            <form action="/category/manage/" method="post">
+            <form action="/category/new/" method="post">
         {% endif %}
             {% csrf_token %}
             {{ form }}
@@ -18,5 +18,5 @@
         </form>
     </div>
     <hr />
-    <a href="/category/list/">Category List</a>
+    <a href="/categories/">Category List</a>
 {% endblock %}

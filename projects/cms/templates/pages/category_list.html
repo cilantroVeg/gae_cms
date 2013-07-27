@@ -14,7 +14,7 @@
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in category_list %}
-                    ['{{ entry.name }}', '{{ entry.parent }}','<a href="/category/manage/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
+                    ['{{ entry.name }}', '{{ entry.parent }}','<a href="/category/edit/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
                 {% endfor %}
             ]);
 
@@ -28,5 +28,5 @@
         <h1>Category List</h1>
         <div id='table_div'></div>
     </div>
-    <a href="/category/manage">New</a>
+    <a href="/category/new/">New</a>
 {% endblock %}

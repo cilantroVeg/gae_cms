@@ -7,11 +7,16 @@
 {% block content %}
     <div id="static_content">
         <h1>Language Form</h1>
-        <form action="/language/manage" method="post">
+        {%  if id %}
+            <form action="/language/edit/{{ id }}/" method="post">
+        {% else %}
+            <form action="/language/new/" method="post">
+        {% endif %}
             {% csrf_token %}
             {{ form }}
             <input type="submit" value="Submit" />
         </form>
-        <hr />
     </div>
+    <hr />
+    <a href="/categories/">Language List</a>
 {% endblock %}

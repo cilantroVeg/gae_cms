@@ -26,18 +26,28 @@ urlpatterns = patterns('',
     url(r'^thanks/', 'users.views.thanks'),
 
     # Page
-    url(r'^category/manage/(?P<id>\d+)/$', 'pages.views.category_form'),
-    url(r'^category/manage/$', 'pages.views.category_form'),
-    url(r'^page/manage/', 'pages.views.page_form'),
-    url(r'^language/manage/', 'pages.views.language_form'),
-    url(r'^category/list/', 'pages.views.category_list'),
-    url(r'^page/list/', 'pages.views.page_list'),
-    url(r'^language/list/', 'pages.views.language_list'),
-    url(r'^photo/new/', 'photos.views.add_photos_form_action'),
+    url(r'^language/new/$', 'pages.views.language_form'),
+    url(r'^language/edit/(?P<id>\d+)/$', 'pages.views.language_form'),
+    url(r'^language/delete/(?P<id>\d+)/$', 'pages.views.language_delete'),
+    url(r'^languages/', 'pages.views.language_list'),
+
+    url(r'^category/new/$', 'pages.views.category_form'),
+    url(r'^category/edit/(?P<id>\d+)/$', 'pages.views.category_form'),
+    url(r'^category/delete/(?P<id>\d+)/$', 'pages.views.category_delete'),
+    url(r'^categories/', 'pages.views.category_list'),
+
+    url(r'^page/new/$', 'pages.views.page_form'),
+    url(r'^page/edit/(?P<id>\d+)/$', 'pages.views.page_form'),
+    url(r'^page/delete/(?P<id>\d+)/$', 'pages.views.page_delete'),
+    url(r'^pages/', 'pages.views.page_list'),
+    
+    url(r'^photo/new/$', 'photos.views.photo_form'),
+    url(r'^photo/edit/(?P<id>\d+)/$', 'photos.views.photo_form'),
+    url(r'^photo/delete/(?P<id>\d+)/$', 'photos.views.photo_delete'),
+    url(r'^photos/', 'photos.views.photo_list'),
     
     url(r'^spreadsheet/manage', 'pages.views.spreadsheet_form'),
     url(r'^spreadsheet/list', 'pages.views.spreadsheet_form'),
-
 )
 
 

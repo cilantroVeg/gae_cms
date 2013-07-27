@@ -7,17 +7,16 @@
 {% block content %}
     <div id="static_content">
         <h1>Page Form</h1>
-        <form action="/page/manage" method="post">
+        {%  if id %}
+            <form action="/page/edit/{{ id }}/" method="post">
+        {% else %}
+            <form action="/page/new/" method="post">
+        {% endif %}
             {% csrf_token %}
             {{ form }}
             <input type="submit" value="Submit" />
         </form>
-
-        <hr />
-        <form action="/photo/new" method="post">
-            {% csrf_token %}
-            <input type="file" >
-            <input type="submit" value="Submit" />
-        </form>
     </div>
+    <hr />
+    <a href="/categories/">Page List</a>
 {% endblock %}

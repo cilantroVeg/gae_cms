@@ -14,7 +14,7 @@
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in page_list %}
-                    ['{{ entry.title }}', '{{ entry.content }}','<a href="/page/manage">Edit</a>|<a href="/page/delete">Delete</a>'],
+                    ['{{ entry.title }}', '{{ entry.content }}','<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 
