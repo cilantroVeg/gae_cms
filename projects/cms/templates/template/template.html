@@ -69,6 +69,9 @@
 <footer id="footer">
     <div id="footerInner">
         <div id="footerColumn1">
+                {% for entry in categories %}
+                    ['{{ entry.name }}', '{{ entry.parent }}','{{ entry.language }}' ,'<a href="/category/edit/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
+                {% endfor %}
             <h3>InterPegasus.</h3>
 
             <p>

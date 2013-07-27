@@ -77,6 +77,22 @@ class Page(models.Model):
     class Meta:
         unique_together = ("category", "title")
 
+# ...
+class Record(models.Model):
+    id = models.AutoField(primary_key=True)
+    key = models.CharField(max_length=64, null=False, blank=False, unique=True)
+    value = models.TextField(null=False, blank=False)
+    created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.key )
+
+
+# Forms
+class RecordForm(ModelForm):
+    class Meta:
+        model = Record
+        fields = ['key', 'value']
 
 # Forms
 class LanguageForm(ModelForm):

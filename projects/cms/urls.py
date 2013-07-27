@@ -41,6 +41,11 @@ urlpatterns = patterns('',
     url(r'^page/delete/(?P<id>\d+)/$', 'pages.views.page_delete'),
     url(r'^pages/', 'pages.views.page_list'),
     
+    url(r'^record/new/$', 'pages.views.record_form'),
+    url(r'^record/edit/(?P<id>\d+)/$', 'pages.views.record_form'),
+    url(r'^record/delete/(?P<id>\d+)/$', 'pages.views.record_delete'),
+    url(r'^records/', 'pages.views.record_list'),
+    
     #url(r'^photo/new/$', 'photos.views.photo_form'),
     #url(r'^photo/edit/(?P<id>\d+)/$', 'photos.views.photo_form'),
     #url(r'^photo/delete/(?P<id>\d+)/$', 'photos.views.photo_delete'),

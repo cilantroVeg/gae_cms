@@ -16,6 +16,10 @@ from django.views.generic import TemplateView
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 
+# ...as
+def categories():
+    return Category.objects.all()
+
 # ...
 def category_form(request, id = None):
     if is_admin_user(request):
@@ -72,6 +76,8 @@ def language_delete(request, id = None):
     else:
         return redirect('/', False)
     
+    
+    
 # ...
 def page_form(request, id = None):
     if is_admin_user(request):
@@ -100,6 +106,33 @@ def page_delete(request, id = None):
     else:
         return redirect('/', False)
 
+# ...
+def record_form(request, id = None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Record, id=id) if id is not None else None
+        form = RecordForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/records/')
+        return render_to_response("pages/record_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def record_list(request):
+    if is_admin_user(request):
+        return render_to_response("pages/record_list.html", {"record_list": Record.objects.all()},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def record_delete(request, id = None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Record, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/records/')
+    else:
+        return redirect('/', False)
 
 def get_category_tree(request):
     return True

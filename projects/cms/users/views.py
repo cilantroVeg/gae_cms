@@ -1,6 +1,7 @@
 # https://docs.djangoproject.com/en/dev/topics/auth/default/
 import logging
 import pprint
+from pages.views import categories
 from users.models import *
 log = logging.getLogger(__name__)
 from django.contrib.auth.models import User
@@ -88,10 +89,10 @@ def process_sign_up(request):
 def front_page(request):
     #pprint.pprint(request.user.email)
     if is_logged_in(request) is False:
-        return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
+        return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request), 'categories':categories},
                                   context_instance=RequestContext(request))
     else:
-        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request),'is_admin':is_admin_user(request)},
+        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request), 'categories':categories,'is_admin':is_admin_user(request)},
                                   context_instance=RequestContext(request))
 
 # Custom 404 and 500
