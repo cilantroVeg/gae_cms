@@ -2,7 +2,7 @@
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext, loader
 from pages.models import *
-from users.views import *
+from helpers.helpers import *
 from django.core.mail import send_mail
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.cache import never_cache
@@ -16,9 +16,7 @@ from django.views.generic import TemplateView
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 
-# ...as
-def categories():
-    return Category.objects.all()
+
 
 # ...
 def category_form(request, id = None):

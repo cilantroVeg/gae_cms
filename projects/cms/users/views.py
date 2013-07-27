@@ -1,7 +1,7 @@
 # https://docs.djangoproject.com/en/dev/topics/auth/default/
 import logging
 import pprint
-from pages.views import categories
+from helpers.helpers import *
 from users.models import *
 log = logging.getLogger(__name__)
 from django.contrib.auth.models import User
@@ -25,11 +25,7 @@ from django.conf import settings
 #######################
 
 
-def is_logged_in(request):
-    if not request.user.is_authenticated():
-        return False
-    else:
-        return True
+
 
 
 def enter(request):
@@ -89,10 +85,10 @@ def process_sign_up(request):
 def front_page(request):
     #pprint.pprint(request.user.email)
     if is_logged_in(request) is False:
-        return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request), 'categories':categories},
+        return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
-        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request), 'categories':categories,'is_admin':is_admin_user(request)},
+        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request),'is_admin':is_admin_user(request)},
                                   context_instance=RequestContext(request))
 
 # Custom 404 and 500
@@ -139,12 +135,3 @@ def contact(request):
 
 def thanks(request):
     return render(request, 'users/thanks.html')
-
-def is_admin_user(request):
-    try:
-        if request.user.email in settings.ADMIN_USERS:
-            return True
-        else:
-            return False
-    except:
-        return False
