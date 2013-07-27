@@ -11,10 +11,12 @@
 
             data.addColumn('string', 'Page');
             data.addColumn('string', 'Content');
+            data.addColumn('string', 'Category');
+            data.addColumn('string', 'Language');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in page_list %}
-                    ['{{ entry.title }}', '{{ entry.content }}','<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
+                    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}','<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 
@@ -28,6 +30,6 @@
         <h1>Page List</h1>
         <div id='table_div'></div>
     </div>
-    <a href="/page/manage">New</a>
+    <a href="/page/new/">New</a>
 
 {% endblock %}

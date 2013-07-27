@@ -23,7 +23,7 @@ def category_form(request, id = None):
         form = CategoryForm(request.POST or None, instance=instance)
         if form.is_valid():
             form.save()
-            return redirect('/category/list')
+            return redirect('/categories/')
         return render_to_response("pages/category_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -39,7 +39,8 @@ def category_list(request):
 def category_delete(request, id = None):
     if is_admin_user(request):
         instance = get_object_or_404(Category, id=id) if id is not None else None
-        return redirect('/category/list')
+        instance.delete()
+        return redirect('/categories/')
     else:
         return redirect('/', False)
     
@@ -50,7 +51,7 @@ def language_form(request, id = None):
         form = LanguageForm(request.POST or None, instance=instance)
         if form.is_valid():
             form.save()
-            return redirect('/language/list')
+            return redirect('/languages/')
         return render_to_response("pages/language_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -66,7 +67,8 @@ def language_list(request):
 def language_delete(request, id = None):
     if is_admin_user(request):
         instance = get_object_or_404(Language, id=id) if id is not None else None
-        return redirect('/language/list')
+        instance.delete()
+        return redirect('/languages/')
     else:
         return redirect('/', False)
     
@@ -77,7 +79,7 @@ def page_form(request, id = None):
         form = PageForm(request.POST or None, instance=instance)
         if form.is_valid():
             form.save()
-            return redirect('/page/list')
+            return redirect('/pages/')
         return render_to_response("pages/page_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -93,7 +95,8 @@ def page_list(request):
 def page_delete(request, id = None):
     if is_admin_user(request):
         instance = get_object_or_404(Page, id=id) if id is not None else None
-        return redirect('/page/list')
+        instance.delete()
+        return redirect('/pages/')
     else:
         return redirect('/', False)
 

@@ -11,10 +11,11 @@
 
             data.addColumn('string', 'Category');
             data.addColumn('string', 'Parent');
+            data.addColumn('string', 'Language');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in category_list %}
-                    ['{{ entry.name }}', '{{ entry.parent }}','<a href="/category/edit/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
+                    ['{{ entry.name }}', '{{ entry.parent }}','{{ entry.language }}' ,'<a href="/category/edit/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
                 {% endfor %}
             ]);
 
