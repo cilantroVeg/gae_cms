@@ -1,8 +1,5 @@
 from django.conf import settings
 
-# ...
-def categories():
-    return Category.objects.all()
 
 # ...
 def is_logged_in(request):

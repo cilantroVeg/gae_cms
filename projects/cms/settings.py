@@ -53,6 +53,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.media',
     'django.core.context_processors.static',
+    'pages.context_processors.categories',
+    'pages.context_processors.records',
 )
 
 TEMPLATE_LOADERS = (
