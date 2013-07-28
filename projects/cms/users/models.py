@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.contrib.auth.models import User
 from django import forms
-
+from django.forms import ModelForm
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
@@ -24,3 +24,9 @@ class ContactForm(forms.Form):
     subject = forms.CharField(max_length=100)
     message = forms.CharField(widget=forms.Textarea(attrs={'cols': 80, 'rows': 20}))
 
+
+# Forms
+class UserForm(ModelForm):
+    class Meta:
+        model = User
+        fields = ['email']
