@@ -82,9 +82,11 @@ def page_form(request, id = None):
         instance = get_object_or_404(Page, id=id) if id is not None else None
         form = PageForm(request.POST or None, instance=instance)
         if form.is_valid():
-            form.save()
+            page = form.save(commit=False)
+            page.user = request.user
+            page.save()
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
+        return render_to_response("pages/page_form.html", {"form": form,"id":id,"user":request.user.id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

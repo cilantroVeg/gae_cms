@@ -13,10 +13,11 @@
             data.addColumn('string', 'Content');
             data.addColumn('string', 'Category');
             data.addColumn('string', 'Language');
+            data.addColumn('string', 'User');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in page_list %}
-                    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}','<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
+                    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.user }}','<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 

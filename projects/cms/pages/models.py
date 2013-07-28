@@ -110,7 +110,7 @@ class CategoryForm(ModelForm):
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ['category','user', 'title','content']
+        fields = ['category', 'title','content']
 
 #
 class UploadFileForm(forms.Form):
