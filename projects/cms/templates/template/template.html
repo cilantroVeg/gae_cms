@@ -1,9 +1,10 @@
+{% load record-tags %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title> - {% block title %}{% endblock %}</title>
+    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
     <meta name="keywords" content="InterPegasus">
     <meta name="description" content="InterPegasus">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css"
@@ -69,10 +70,10 @@
 <footer id="footer">
     <div id="footerInner">
         <div id="footerColumn1">
-            <h3>InterPegasus.</h3>
+            <h3>{{ 'WEBSITE_NAME'|get_record}}</h3>
 
             <p>
-                InterPegasus’s lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em
+                {{ 'WEBSITE_DESCRIPTION'|get_record}}
             </p>
         </div>
         <div id="footerColumn2">
