@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" afterPath="$PROJECT_DIR$/projects/cms/pages/fixtures/data.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/Google_App_Engine_Spreadsheet_Template.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/photos/models.py" afterPath="$PROJECT_DIR$/projects/cms/photos/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/urls.py" afterPath="$PROJECT_DIR$/projects/cms/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375035590460" ignored="false" />
-    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1374953902441" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375036353676" ignored="false" />
+    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375038028805" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1374951837036" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
     <file path="/urls.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1374941302308" ignored="false" />
-    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375035445883" ignored="false" />
+    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375038319684" ignored="false" />
     <file path="/style_axstv.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364966099306" ignored="false" />
     <file path="/menu.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971470717" ignored="false" />
     <file path="/case_explorer.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971434893" ignored="false" />
@@ -30,7 +30,7 @@
     <file path="/character_tracker.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366687278954" ignored="false" />
     <file path="/character_view.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1365062720814" ignored="false" />
     <file path="/signup.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366600577865" ignored="false" />
-    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375036252180" ignored="false" />
+    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375038294015" ignored="false" />
     <file path="/style_hannibal_final.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366669903444" ignored="false" />
     <file path="/main.js" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366678622589" ignored="false" />
     <file path="/renderer.js" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366685517489" ignored="false" />
@@ -54,8 +54,8 @@
     <file path="$PROJECT_DIR$/../../../local/apache2/www.mobovivo.com/website/HTML/templates/video.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370382728206" ignored="false" />
     <file path="/video.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370380418413" ignored="false" />
     <file path="/file_upload.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370432576103" ignored="false" />
-    <file path="/spreadsheet_list.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370433500155" ignored="false" />
-    <file path="/spreadsheet_form.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370433531137" ignored="false" />
+    <file path="/spreadsheet_list.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375037433288" ignored="false" />
+    <file path="/spreadsheet_form.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375037219907" ignored="false" />
     <file path="/nonrel-installer.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1372696761539" ignored="false" />
     <file path="/app.yaml" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1372699432040" ignored="false" />
     <file path="/private_keys.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1372710231087" ignored="false" />
@@ -91,23 +91,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="48" selection-start="5974" selection-end="5985" vertical-scroll-proportion="-11.486842">
+            <state line="155" column="74" selection-start="5538" selection-end="5538" vertical-scroll-proportion="0.45809248">
               <folding>
                 <element signature="e#26#102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="42" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.35816166">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,16 +105,16 @@
       <file leaf-file-name="spreadsheet_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="1373" selection-end="1373" vertical-scroll-proportion="-6.0">
+            <state line="16" column="67" selection-start="720" selection-end="720" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="53" selection-start="538" selection-end="538" vertical-scroll-proportion="-10.625">
+            <state line="74" column="62" selection-start="2557" selection-end="2557" vertical-scroll-proportion="-3.8552632">
               <folding />
             </state>
           </provider>
@@ -134,26 +123,19 @@
       <file leaf-file-name="spreadsheet_form.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="40" selection-start="806" selection-end="806" vertical-scroll-proportion="-5.6">
+            <state line="28" column="71" selection-start="837" selection-end="837" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="0" selection-end="795" vertical-scroll-proportion="-13.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="136" selection-start="0" selection-end="1436" vertical-scroll-proportion="-11.875">
-              <folding />
+            <state line="120" column="43" selection-start="3556" selection-end="3556" vertical-scroll-proportion="-58.2">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/user_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
@@ -187,11 +167,13 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
+        <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
       </list>
     </option>
   </component>
@@ -295,102 +277,6 @@
               <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -425,11 +311,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/spreadsheet" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/pages" />
       <recent name="$PROJECT_DIR$/projects/cms/users" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/users" />
       <recent name="$PROJECT_DIR$/projects/cms/pages" />
-      <recent name="$PROJECT_DIR$/projects/cms/helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django-nonrel/django-testapp" />
@@ -782,7 +668,11 @@
       <created>1375035591872</created>
       <updated>1375035591872</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Spreadsheet Upload And Processing">
+      <created>1375036357369</created>
+      <updated>1375036357369</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -851,7 +741,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spreadsheet Upload And Processing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -865,7 +755,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Jquery 2" />
     <MESSAGE value="registration" />
     <MESSAGE value="Filter hannibal Data" />
     <MESSAGE value="JIT" />
@@ -890,29 +779,12 @@
     <MESSAGE value="Users" />
     <MESSAGE value="Site name And Description Filter tags" />
     <MESSAGE value="Save user" />
+    <MESSAGE value="Spreadsheet Upload And Processing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/user_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="529" selection-end="529" vertical-scroll-proportion="0.45801526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/templates/hannibal/character_tracker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="39" selection-end="63" vertical-scroll-proportion="0.021645023">
-          <folding>
-            <marker date="1374206078000" expanded="true" signature="-1:-1" placeholder="{% if language == 'en' ... %}" />
-            <marker date="1374206078000" expanded="true" signature="-1:-1" placeholder="{% for t in tracker ... %}" />
-            <marker date="1374206078000" expanded="true" signature="-1:-1" placeholder="{% for i in t.image_array ... %}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/data.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -978,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="806" selection-end="806" vertical-scroll-proportion="-5.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="53" selection-start="538" selection-end="538" vertical-scroll-proportion="-10.625">
@@ -992,27 +857,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="67" selection-start="305" selection-end="305" vertical-scroll-proportion="-5.4">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="71" selection-start="837" selection-end="837" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="62" selection-start="2557" selection-end="2557" vertical-scroll-proportion="-3.8552632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="43" selection-start="3556" selection-end="3556" vertical-scroll-proportion="-58.2">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="1373" selection-end="1373" vertical-scroll-proportion="-6.0">
+        <state line="16" column="67" selection-start="720" selection-end="720" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="48" selection-start="5974" selection-end="5985" vertical-scroll-proportion="-11.486842">
+        <state line="155" column="74" selection-start="5538" selection-end="5538" vertical-scroll-proportion="0.45809248">
           <folding>
             <element signature="e#26#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="42" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.35816166">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

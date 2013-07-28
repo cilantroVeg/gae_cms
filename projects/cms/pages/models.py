@@ -48,7 +48,7 @@ class Category(models.Model):
 class Spreadsheet(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=256)
-    file = models.FileField(upload_to='/tmp/')
+    spreadsheet_file = models.FileField(upload_to='spreadsheets/%Y/%m/%d')
     created_at = models.DateTimeField(auto_now=True)
     # ...
     def __unicode__(self):
@@ -118,7 +118,7 @@ class PageForm(ModelForm):
 class SpreadsheetForm(ModelForm):
     class Meta:
         model = Spreadsheet
-        fields = ['name', 'file']
+        fields = ['name', 'spreadsheet_file']
 
 
 

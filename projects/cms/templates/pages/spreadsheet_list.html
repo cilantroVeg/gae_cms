@@ -9,15 +9,12 @@
         function drawTable() {
             var data = new google.visualization.DataTable();
 
-            data.addColumn('string', 'Spreadsheet');
-            data.addColumn('string', 'Content');
-            data.addColumn('string', 'Category');
-            data.addColumn('string', 'Language');
-            data.addColumn('string', 'User');
+            data.addColumn('string', 'Name');
+            data.addColumn('string', 'Spreadsheet File');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in spreadsheet_list %}
-                    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.user }}','<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
+                    ['{{ entry.name }}', '{{ entry.spreadsheet_file }}', '<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 

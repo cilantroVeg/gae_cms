@@ -149,9 +149,13 @@ def get_page_content(request):
 def spreadsheet_form(request, id = None):
     if is_admin_user(request):
         instance = get_object_or_404(Spreadsheet, id=id) if id is not None else None
-        form = SpreadsheetForm(request.POST or None, instance=instance)
+        form = SpreadsheetForm(request.POST or None, request.FILES or None, instance=instance)
         if form.is_valid():
-            form.save()
+            spreadsheet = form.save(commit=False)
+            spreadsheet.name = request.POST['name']
+            spreadsheet.spreadsheet_file = request.FILES['spreadsheet_file']
+            # Process Spreadsheet
+            spreadsheet.save()
             return redirect('/spreadsheets/')
         return render_to_response("pages/spreadsheet_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
