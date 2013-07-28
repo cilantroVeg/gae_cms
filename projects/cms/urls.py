@@ -46,6 +46,11 @@ urlpatterns = patterns('',
     url(r'^record/delete/(?P<id>\d+)/$', 'pages.views.record_delete'),
     url(r'^records/', 'pages.views.record_list'),
     
+    url(r'^spreadsheet/new/$', 'pages.views.spreadsheet_form'),
+    url(r'^spreadsheet/edit/(?P<id>\d+)/$', 'pages.views.spreadsheet_form'),
+    url(r'^spreadsheet/delete/(?P<id>\d+)/$', 'pages.views.spreadsheet_delete'),
+    url(r'^spreadsheets/', 'pages.views.spreadsheet_list'),
+    
     
     url(r'^user/new/$', 'users.views.user_form'),
     url(r'^user/edit/(?P<id>\d+)/$', 'users.views.user_form'),
@@ -56,9 +61,7 @@ urlpatterns = patterns('',
     #url(r'^photo/edit/(?P<id>\d+)/$', 'photos.views.photo_form'),
     #url(r'^photo/delete/(?P<id>\d+)/$', 'photos.views.photo_delete'),
     #url(r'^photos/', 'photos.views.photo_list'),
-    
-    url(r'^spreadsheet/manage', 'pages.views.spreadsheet_form'),
-    url(r'^spreadsheet/list', 'pages.views.spreadsheet_form'),
+
 )
 
 

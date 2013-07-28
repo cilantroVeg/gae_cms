@@ -2,14 +2,35 @@
 
 {% block title %}Spreadsheet List{% endblock %}
 {% block js %}
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {packages:['table']});
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+            var data = new google.visualization.DataTable();
 
+            data.addColumn('string', 'Spreadsheet');
+            data.addColumn('string', 'Content');
+            data.addColumn('string', 'Category');
+            data.addColumn('string', 'Language');
+            data.addColumn('string', 'User');
+            data.addColumn('string', 'Manage');
+            data.addRows([
+                {% for entry in spreadsheet_list %}
+                    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.user }}','<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
+                {% endfor %}
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+            table.draw(data, {showRowNumber: true,allowHtml: true});
+        }
+    </script>
 {% endblock %}
 {% block content %}
     <div id="static_content">
-        <h1>spreadsheet List</h1>
-        {% for entry in spreadsheet_list %}
-            <i><b>Name:</i></b> {{ entry.name }}
-            <br />
-        {% endfor %}
+        <h1>Spreadsheet List</h1>
+        <div id='table_div'></div>
     </div>
+    <a href="/spreadsheet/new/">New</a>
+
 {% endblock %}

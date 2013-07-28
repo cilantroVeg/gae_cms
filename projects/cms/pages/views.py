@@ -74,8 +74,6 @@ def language_delete(request, id = None):
     else:
         return redirect('/', False)
     
-    
-    
 # ...
 def page_form(request, id = None):
     if is_admin_user(request):
@@ -147,17 +145,30 @@ def get_page_content(request):
     return True
 
 
-from django.http import HttpResponseRedirect
-from django.shortcuts import render
-
-
-def spreadsheet_form(request):
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
+# ...
+def spreadsheet_form(request, id = None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Spreadsheet, id=id) if id is not None else None
+        form = SpreadsheetForm(request.POST or None, instance=instance)
         if form.is_valid():
-            instance = Spreadsheet(file_field=request.FILES['file'])
-            instance.save()
-            return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all()},context_instance=RequestContext(request))
+            form.save()
+            return redirect('/spreadsheets/')
+        return render_to_response("pages/spreadsheet_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
-        form = UploadFileForm()
-    return render_to_response("pages/spreadsheet_form.html", {"form": form},context_instance=RequestContext(request))
+        return redirect('/', False)
+
+# ...
+def spreadsheet_list(request):
+    if is_admin_user(request):
+        return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all()},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def spreadsheet_delete(request, id = None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Spreadsheet, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/spreadsheets/')
+    else:
+        return redirect('/', False)
