@@ -62,6 +62,11 @@ TEMPLATE_LOADERS = (
     #     'django.template.loaders.eggs.Loader',
 )
 
+FILE_UPLOAD_HANDLERS = (
+    "django.core.files.uploadhandler.MemoryFileUploadHandler",
+    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
+)
+
 # This test runner captures stdout and associates tracebacks with their
 # corresponding output. Helps a lot with print-debugging.
 TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
@@ -127,3 +132,8 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.associate_user',
     'social_auth.backends.pipeline.user.update_user_details',
 )
+
+FILE_UPLOAD_MAX_MEMORY_SIZE = 7000000
+# Add to your settings file
+CONTENT_TYPES = ['image', 'video']
+MAX_UPLOAD_SIZE = "7000000"

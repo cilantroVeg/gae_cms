@@ -154,12 +154,18 @@ def spreadsheet_form(request, id = None):
             spreadsheet = form.save(commit=False)
             spreadsheet.name = request.POST['name']
             spreadsheet.spreadsheet_file = request.FILES['spreadsheet_file']
-            # Process Spreadsheet
+            handle_uploaded_file(request.FILES['spreadsheet_file'])
             spreadsheet.save()
             return redirect('/spreadsheets/')
         return render_to_response("pages/spreadsheet_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
+
+# ...
+def handle_uploaded_file(f):
+    with open('/tmp/name.txt', 'wb+') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
 
 # ...
 def spreadsheet_list(request):
