@@ -48,7 +48,10 @@ class Category(models.Model):
 class Spreadsheet(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=256)
-    spreadsheet_file = models.FileField(upload_to='/tmp')
+    spreadsheet_file = models.FileField(upload_to='spreadsheets/')
+    size = models.CharField(max_length=32)
+    # temp_path = models.CharField(max_length=256)
+    # path = models.CharField(max_length=256)
     created_at = models.DateTimeField(auto_now=True)
     # ...
     def __unicode__(self):

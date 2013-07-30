@@ -153,9 +153,10 @@ def spreadsheet_form(request, id = None):
         if form.is_valid():
             spreadsheet = form.save(commit=False)
             spreadsheet.name = request.POST['name']
-            spreadsheet.spreadsheet_file = request.FILES['spreadsheet_file']
-            handle_uploaded_file(request.FILES['spreadsheet_file'])
+            spreadsheet.spreadsheet_file = request.FILES['spreadsheet_file'].name
+            spreadsheet.size = request.FILES['spreadsheet_file'].size
             spreadsheet.save()
+            handle_uploaded_file(request.FILES['spreadsheet_file'])
             return redirect('/spreadsheets/')
         return render_to_response("pages/spreadsheet_form.html", {"form": form,"id":id},context_instance=RequestContext(request))
     else:
@@ -163,9 +164,10 @@ def spreadsheet_form(request, id = None):
 
 # ...
 def handle_uploaded_file(f):
-    with open('/tmp/name.txt', 'wb+') as destination:
-        for chunk in f.chunks():
-            destination.write(chunk)
+    # Iterate through the chunks.
+    f.read()
+    return
+
 
 # ...
 def spreadsheet_list(request):

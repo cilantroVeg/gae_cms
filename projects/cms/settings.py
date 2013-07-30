@@ -77,7 +77,7 @@ TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),)
 ROOT_URLCONF = 'urls'
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
-MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static')
+MEDIA_ROOT = '/tmp'
 STATICFILES_DIRS = (
     os.path.join(os.path.dirname(__file__), 'static'),
 )
@@ -134,6 +134,7 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 7000000
+FILE_UPLOAD_TEMP_DIR = '/tmp'
 # Add to your settings file
 CONTENT_TYPES = ['image', 'video']
 MAX_UPLOAD_SIZE = "7000000"

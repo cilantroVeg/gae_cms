@@ -10,11 +10,12 @@
             var data = new google.visualization.DataTable();
 
             data.addColumn('string', 'Name');
-            data.addColumn('string', 'Spreadsheet File');
+            data.addColumn('string', 'Spreadsheet File Name');
+            data.addColumn('string', 'File Size (Bytes)');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in spreadsheet_list %}
-                    ['{{ entry.name }}', '{{ entry.spreadsheet_file }}', '<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
+                    ['{{ entry.name }}', '{{ entry.spreadsheet_file }}', '{{ entry.size }} bytes', '<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 

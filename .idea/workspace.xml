@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375038452478" ignored="false" />
-    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375038028805" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375187943216" ignored="false" />
+    <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375194527037" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1374951837036" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
     <file path="/urls.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1374941302308" ignored="false" />
-    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375094538687" ignored="false" />
+    <file path="/views.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375195228759" ignored="false" />
     <file path="/style_axstv.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364966099306" ignored="false" />
     <file path="/menu.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971470717" ignored="false" />
     <file path="/case_explorer.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971434893" ignored="false" />
@@ -27,7 +29,7 @@
     <file path="/character_tracker.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366687278954" ignored="false" />
     <file path="/character_view.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1365062720814" ignored="false" />
     <file path="/signup.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366600577865" ignored="false" />
-    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375092963593" ignored="false" />
+    <file path="/models.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375190292086" ignored="false" />
     <file path="/style_hannibal_final.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366669903444" ignored="false" />
     <file path="/main.js" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366678622589" ignored="false" />
     <file path="/renderer.js" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1366685517489" ignored="false" />
@@ -51,7 +53,7 @@
     <file path="$PROJECT_DIR$/../../../local/apache2/www.mobovivo.com/website/HTML/templates/video.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370382728206" ignored="false" />
     <file path="/video.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370380418413" ignored="false" />
     <file path="/file_upload.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1370432576103" ignored="false" />
-    <file path="/spreadsheet_list.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375037433288" ignored="false" />
+    <file path="/spreadsheet_list.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375189631529" ignored="false" />
     <file path="/spreadsheet_form.html" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375092776281" ignored="false" />
     <file path="/nonrel-installer.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1372696761539" ignored="false" />
     <file path="/app.yaml" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1372699432040" ignored="false" />
@@ -88,30 +90,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="36" selection-start="5075" selection-end="6021" vertical-scroll-proportion="-9.74">
-              <folding>
-                <element signature="e#26#102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="136" column="28" selection-start="4587" selection-end="4587" vertical-scroll-proportion="-10.9">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="243" selection-end="831" vertical-scroll-proportion="0.32991204">
+            <state line="168" column="10" selection-start="6030" selection-end="6030" vertical-scroll-proportion="0.54479766">
               <folding />
             </state>
           </provider>
@@ -120,10 +111,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-12.6">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state line="53" column="6" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-18.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,37 +120,8 @@
       <file leaf-file-name="spreadsheet_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="67" selection-start="720" selection-end="720" vertical-scroll-proportion="-10.0">
+            <state line="14" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="-8.75">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="23" selection-start="4688" selection-end="4688" vertical-scroll-proportion="-11.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spreadsheet_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="-12.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="322" selection-end="339" vertical-scroll-proportion="-6.0">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,11 +155,11 @@
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
       </list>
     </option>
   </component>
@@ -281,7 +241,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,8 +249,129 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -685,13 +765,11 @@
     <frame x="12" y="22" width="1424" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23878628" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280116" sideWeight="0.7612137" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33236575" sideWeight="0.7612137" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -700,6 +778,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23878628" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -793,22 +873,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/templates/hannibal/case_explorer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="60" vertical-scroll-proportion="0.021645023">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="347" selection-end="347" vertical-scroll-proportion="-10.2">
-          <folding>
-            <element signature="e#61#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="41" selection-start="261" selection-end="261" vertical-scroll-proportion="0.12987013">
@@ -818,9 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/helpers/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
@@ -851,64 +913,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="322" selection-end="339" vertical-scroll-proportion="-6.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.690583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/notification/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.20962733" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="243" selection-end="831" vertical-scroll-proportion="0.021994134">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="-12.5">
+        <state line="20" column="47" selection-start="622" selection-end="622" vertical-scroll-proportion="0.42492917">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/photos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="23" selection-start="4688" selection-end="4688" vertical-scroll-proportion="-11.8">
-          <folding />
-        </state>
+        <state line="10" column="16" selection-start="322" selection-end="339" vertical-scroll-proportion="0.17021276" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="67" selection-start="720" selection-end="720" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-12.6">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="36" selection-start="5075" selection-end="6021" vertical-scroll-proportion="-9.74">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/APNS/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/HANNIBAL/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="243" selection-end="831" vertical-scroll-proportion="0.32991204">
+        <state line="53" column="6" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-18.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="28" selection-start="4587" selection-end="4587" vertical-scroll-proportion="-10.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="10" selection-start="6030" selection-end="6030" vertical-scroll-proportion="0.54479766">
           <folding />
         </state>
       </provider>
