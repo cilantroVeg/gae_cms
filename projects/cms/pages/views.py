@@ -164,9 +164,9 @@ def spreadsheet_form(request, id = None):
 
 # ...
 def handle_uploaded_file(f):
-    # Iterate through the chunks.
-    f.read()
-    return
+    with open('/tmp/name.txt', 'wb') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
 
 
 # ...
