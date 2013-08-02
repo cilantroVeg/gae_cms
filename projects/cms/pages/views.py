@@ -15,6 +15,8 @@ from django.views.generic import TemplateView
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
+from django.utils.html import *
+
 import pprint
 
 
@@ -216,7 +218,7 @@ def handle_spreadsheet(f, user,spreadsheet):
                                                                                       'allow_replies': True})
                 # Page
                 page, created = Page.objects.get_or_create(category=category, title=page_title, defaults={'user':user})
-                page.content = page_content
+                page.content = strip_tags(page_content)
                 page.spreadsheet = spreadsheet
                 page.save()
 
