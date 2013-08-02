@@ -217,7 +217,7 @@ def handle_spreadsheet(f, user,spreadsheet):
                                                                                       'language': language,
                                                                                       'allow_replies': True})
                 # Page
-                page, created = Page.objects.get_or_create(category=category, title=page_title, defaults={'user':user})
+                page, created = Page.objects.get_or_create(category=category, title=strip_tags(page_title), defaults={'user':user})
                 page.content = strip_tags(page_content)
                 page.spreadsheet = spreadsheet
                 page.save()
