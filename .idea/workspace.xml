@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375451205940" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375451233053" ignored="false" />
     <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375194527037" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375437289708" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
@@ -84,13 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="106" selection-start="8966" selection-end="8966" vertical-scroll-proportion="0.64102566">
-              <folding>
-                <element signature="e#26#102#0" expanded="true" />
-              </folding>
+            <state line="33" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-0.5641026">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,28 +231,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,7 +648,11 @@
       <created>1375451208029</created>
       <updated>1375451208030</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Spreadsheet Upload OK">
+      <created>1375451234810</created>
+      <updated>1375451234810</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -826,13 +805,6 @@
         <state line="27" column="0" selection-start="827" selection-end="827" vertical-scroll-proportion="0.23404256" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="37.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="19" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
@@ -890,6 +862,13 @@
           <folding>
             <element signature="e#26#102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-0.5641026">
+          <folding />
         </state>
       </provider>
     </entry>
