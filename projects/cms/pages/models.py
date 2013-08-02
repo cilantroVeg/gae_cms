@@ -1,10 +1,10 @@
 from django.db import models
 from django.conf import settings
 from users.models import *
-from photos.models import *
 from django.forms import ModelForm
 
 from django.template.defaultfilters import slugify
+
 
 class Language(models.Model):
     id = models.AutoField(primary_key=True)
@@ -37,7 +37,7 @@ class Category(models.Model):
     # ...
     def save(self, *args, **kwargs):
         if not self.id:
-            self.slug = slugify(str(self.parent) +str(' ') + str(self.name))
+            self.slug = slugify(str(self.parent) + str(' ') + str(self.name))
         super(Category, self).save(*args, **kwargs)
 
     # ...
@@ -73,7 +73,7 @@ class Page(models.Model):
     # ...
     def save(self, *args, **kwargs):
         if not self.id:
-            self.slug = slugify(str(self.category) +str(' ') + str(self.title))
+            self.slug = slugify(str(self.category) + str(' ') + str(self.title))
         super(Page, self).save(*args, **kwargs)
 
     # ...
@@ -107,14 +107,14 @@ class LanguageForm(ModelForm):
 class CategoryForm(ModelForm):
     class Meta:
         model = Category
-        fields = ['language', 'name','parent','allow_replies']
+        fields = ['language', 'name', 'parent', 'allow_replies']
 
 # Forms
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ['category', 'title','content']
-        
+        fields = ['category', 'title', 'content']
+
 # Forms
 class SpreadsheetForm(ModelForm):
     class Meta:

@@ -31,7 +31,6 @@ INSTALLED_APPS = (
     'users',
     'social_auth',
     'pages',
-    'photos',
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
@@ -64,7 +63,6 @@ TEMPLATE_LOADERS = (
 
 FILE_UPLOAD_HANDLERS = (
     "django.core.files.uploadhandler.MemoryFileUploadHandler",
-    "django.core.files.uploadhandler.TemporaryFileUploadHandler",
 )
 
 # This test runner captures stdout and associates tracebacks with their
