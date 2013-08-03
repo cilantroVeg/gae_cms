@@ -250,9 +250,11 @@ def image_form(request, id=None):
             image = form.save(commit=False)
             image.name = request.POST['name']
             image.image_file = request.FILES['image_file'].name
-            # Associate With Page
-            image.save()
             image.size = request.FILES['image_file'].size
+            image.save()
+            # Associate With Page
+
+            # Upload
             handle_image(request.FILES['image_file'], request.user, image)
             return redirect('/images/')
         return render_to_response("pages/image_form.html",
@@ -262,14 +264,17 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def handle_image(f, user,image):
+def handle_image(f, user, image):
     import flickrapi
-    api_key = settings.FLICKR_API_KEY
-    api_secret = settings.FLICKR_API_SECRET
-    flickr = flickrapi.FlickrAPI(api_key)
-
+    flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET)
+    (token, frob) = flickr.get_token_part_one(perms='write')
+    if not token: raw_input("Press ENTER after you authorized this program")
+    flickr.get_token_part_two((token, frob))
+    debug('FLICKR DEBUG',flickr)
+    keywords = {'title': image.name, 'description': 'MAF', 'tags': 'MAF', 'is_public':1}
+    response = flickr.upload(filename=f.read(), callback=None, **keywords)
+    debug('RESPONSE DEBUG',response)
     return True
-
 
 # ...
 def image_list(request):
@@ -288,3 +293,12 @@ def image_delete(request, id=None):
         return redirect('/images/')
     else:
         return redirect('/', False)
+
+# ...
+def debug(key,value):
+    import logging
+    logging.getLogger().setLevel(logging.DEBUG)
+    logging.info("*******************************")
+    logging.info(key)
+    logging.info(value)
+    logging.info("*******************************")
