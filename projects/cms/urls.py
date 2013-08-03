@@ -57,10 +57,10 @@ urlpatterns = patterns('',
     url(r'^user/delete/(?P<id>\d+)/$', 'users.views.user_delete'),
     url(r'^users/', 'users.views.user_list'),
     
-    #url(r'^photo/new/$', 'photos.views.photo_form'),
-    #url(r'^photo/edit/(?P<id>\d+)/$', 'photos.views.photo_form'),
-    #url(r'^photo/delete/(?P<id>\d+)/$', 'photos.views.photo_delete'),
-    #url(r'^photos/', 'photos.views.photo_list'),
+    url(r'^image/new/$', 'pages.views.image_form'),
+    url(r'^image/edit/(?P<id>\d+)/$', 'pages.views.image_form'),
+    url(r'^image/delete/(?P<id>\d+)/$', 'pages.views.image_delete'),
+    url(r'^images/', 'pages.views.image_list'),
 
 )
 

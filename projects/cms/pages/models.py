@@ -91,6 +91,37 @@ class Record(models.Model):
         return u'%s' % (self.key )
 
 
+# ...
+class Image(models.Model):
+    id = models.AutoField(primary_key=True)
+    page = models.ForeignKey(Page, null=True)
+    name = models.CharField(max_length=256)
+    image_file = models.FileField(upload_to='images/')
+    size = models.CharField(max_length=32)
+    large_url = models.URLField()
+    medium_url = models.URLField()
+    small_url = models.URLField()
+    thumb_url = models.URLField()
+    original_url = models.URLField()
+    height = models.CharField(max_length=7)
+    width = models.CharField(max_length=7)
+    created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.name )
+
+
+
+# ...
+class Record(models.Model):
+    id = models.AutoField(primary_key=True)
+    key = models.CharField(max_length=64, null=False, blank=False, unique=True)
+    value = models.TextField(null=False, blank=False)
+    created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.key )
+
 # Forms
 class RecordForm(ModelForm):
     class Meta:
@@ -121,5 +152,8 @@ class SpreadsheetForm(ModelForm):
         model = Spreadsheet
         fields = ['name', 'spreadsheet_file']
 
-
-
+# Forms
+class ImageForm(ModelForm):
+    class Meta:
+        model = Image
+        fields = ['name', 'image_file']

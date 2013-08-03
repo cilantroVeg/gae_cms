@@ -240,3 +240,51 @@ def spreadsheet_delete(request, id=None):
         return redirect('/spreadsheets/')
     else:
         return redirect('/', False)
+
+# ...
+def image_form(request, id=None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Image, id=id) if id is not None else None
+        form = ImageForm(request.POST or None, request.FILES or None, instance=instance)
+        if form.is_valid():
+            image = form.save(commit=False)
+            image.name = request.POST['name']
+            image.image_file = request.FILES['image_file'].name
+            # Associate With Page
+            image.save()
+            image.size = request.FILES['image_file'].size
+            handle_image(request.FILES['image_file'], request.user, image)
+            return redirect('/images/')
+        return render_to_response("pages/image_form.html",
+                                  {"form": form, "id": id, 'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def handle_image(f, user,image):
+    import flickrapi
+    api_key = settings.FLICKR_API_KEY
+    api_secret = settings.FLICKR_API_SECRET
+    flickr = flickrapi.FlickrAPI(api_key)
+
+    return True
+
+
+# ...
+def image_list(request):
+    if is_admin_user(request):
+        return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),
+                                                                  'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def image_delete(request, id=None):
+    if is_admin_user(request):
+        instance = get_object_or_404(Image, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/images/')
+    else:
+        return redirect('/', False)
