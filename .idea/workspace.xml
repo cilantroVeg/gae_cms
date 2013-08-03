@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72617b2f-c86a-4cd8-97cf-37bb779b12c0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="6c0d537f-469f-4a61-9867-a292a937f7a6" name="Failed commit: Default" comment="Hannibal" />
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375451233053" ignored="false" />
+    <file path="/Dummy.txt" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375514562823" ignored="false" />
     <file path="/settings.py" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375194527037" ignored="false" />
     <file path="/a.dummy" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1375437289708" ignored="false" />
     <file path="/style_hannibal.css" changelist="72617b2f-c86a-4cd8-97cf-37bb779b12c0" time="1364971376686" ignored="false" />
@@ -86,7 +87,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-0.5641026">
+            <state line="31" column="18" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.17021276">
               <folding />
             </state>
           </provider>
@@ -120,12 +121,12 @@
         <option value="$PROJECT_DIR$/projects/cms/photos/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/index.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/cms/helpers/helpers.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
       </list>
     </option>
   </component>
@@ -244,6 +245,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -254,8 +269,8 @@
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -652,20 +667,22 @@
       <created>1375451234810</created>
       <updated>1375451234810</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Spreadsheet Upload OK">
+      <created>1375452374770</created>
+      <updated>1375452374770</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1424" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15831135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17924528" sideWeight="0.84168863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18214804" sideWeight="0.84168863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -674,6 +691,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15831135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -807,67 +826,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="19" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="37" column="19" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/django/template/defaulttags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1002" column="31" selection-start="35406" selection-end="35406" vertical-scroll-proportion="-4.8">
-          <folding />
-        </state>
+        <state line="1002" column="31" selection-start="35406" selection-end="35406" vertical-scroll-proportion="-4.8" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="538" selection-end="538" vertical-scroll-proportion="0.43515357">
-          <folding />
-        </state>
+        <state line="17" column="53" selection-start="538" selection-end="538" vertical-scroll-proportion="0.43515357" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.15384616">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.15384616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/helpers/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="34" selection-end="162" vertical-scroll-proportion="0.053380784">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="34" selection-end="162" vertical-scroll-proportion="0.053380784" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="89" selection-start="3663" selection-end="3700" vertical-scroll-proportion="0.71794873">
-          <folding />
-        </state>
+        <state line="99" column="89" selection-start="3663" selection-end="3700" vertical-scroll-proportion="0.71794873" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="15" selection-start="1969" selection-end="1980" vertical-scroll-proportion="0.025641026">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="62" column="15" selection-start="1969" selection-end="1980" vertical-scroll-proportion="0.025641026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="106" selection-start="8966" selection-end="8966" vertical-scroll-proportion="0.64102566">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="219" column="106" selection-start="8966" selection-end="8966" vertical-scroll-proportion="0.64102566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-0.5641026">
+        <state line="31" column="18" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.17021276">
           <folding />
         </state>
       </provider>
