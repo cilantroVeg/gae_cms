@@ -91,6 +91,7 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.google.GoogleOAuth2Backend',
     'social_auth.backends.google.GoogleBackend',
     'social_auth.backends.yahoo.YahooBackend',
+    'social_auth.backends.contrib.flickr.FlickrBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -103,6 +104,8 @@ GOOGLE_CONSUMER_KEY          = ''
 GOOGLE_CONSUMER_SECRET       = ''
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
+FLICKR_APP_ID = access_keys.FLICKR_KEY
+FLICKR_API_SECRET = access_keys.FLICKR_SEC
 FLICKR_API_KEY = access_keys.FLICKR_KEY
 FLICKR_API_SECRET = access_keys.FLICKR_SEC
 
@@ -118,6 +121,7 @@ SOCIAL_AUTH_SESSION_EXPIRATION = False
 SOCIAL_AUTH_RAISE_EXCEPTIONS = False
 
 FACEBOOK_EXTENDED_PERMISSIONS = ['email']
+FLICKR_AUTH_EXTRA_ARGUMENTS = {'perms': 'delete'}
 
 AUTH_PROFILE_MODULE = 'users.models.UserProfile'
 

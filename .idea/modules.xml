@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV/.idea/AXSTV.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/axstv/AXSTV/.idea/AXSTV.iml" />
-      <module fileurl="file://$USER_HOME$/PycharmProjects/UI/.idea/UI.iml" filepath="$USER_HOME$/PycharmProjects/UI/.idea/UI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gae_cms.iml" filepath="$PROJECT_DIR$/.idea/gae_cms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../gui/.idea/gui.iml" filepath="$PROJECT_DIR$/../gui/.idea/gui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/hannibal/.idea/hannibal.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/.idea/hannibal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/multimedia/.idea/multimedia.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/multimedia/.idea/multimedia.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/notification/.idea/notification.iml" />
     </modules>
   </component>
 </project>

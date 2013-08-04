@@ -62,6 +62,8 @@ urlpatterns = patterns('',
     url(r'^image/delete/(?P<id>\d+)/$', 'pages.views.image_delete'),
     url(r'^images/', 'pages.views.image_list'),
 
+    # Flickr Callback
+    url(r'^flickr-callback/', 'pages.views.flickr_callback'),
 )
 
 

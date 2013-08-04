@@ -30,3 +30,9 @@ class UserForm(ModelForm):
     class Meta:
         model = User
         fields = ['email']
+
+
+class UserProfileForm(ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['user','profile_picture']

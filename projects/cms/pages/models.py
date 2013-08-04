@@ -96,7 +96,7 @@ class Image(models.Model):
     id = models.AutoField(primary_key=True)
     page = models.ForeignKey(Page, null=True)
     name = models.CharField(max_length=256)
-    image_file = models.FileField(upload_to='images/')
+    image_file = models.ImageField(upload_to='images/')
     size = models.CharField(max_length=32)
     large_url = models.URLField()
     medium_url = models.URLField()
