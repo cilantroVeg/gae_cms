@@ -63,7 +63,6 @@ urlpatterns = patterns('',
     url(r'^images/', 'pages.views.image_list'),
 
     # Flickr Callback
-    url(r'^flickr-callback/', 'pages.views.flickr_callback'),
 )
 
 

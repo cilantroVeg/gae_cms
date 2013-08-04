@@ -16,9 +16,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.utils.html import *
-
 import pprint
-import flickrapi
 
 # ...
 def category_form(request, id=None):
@@ -242,74 +240,64 @@ def spreadsheet_delete(request, id=None):
         return redirect('/', False)
 
 
-# ...
-def handle_flickr_image(f, user, image):
-    # Check for Token
-    try:
-        api_token = Record.objects.get(key='FLICKR_TOKEN').value
-    except:
-        api_token = None
-
-    if api_token:
-        flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, token=api_token)
-    else:
-        flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET)
-        authenticate_url = flickr.web_login_url("write")
-        debug('authenticate_url', authenticate_url)
-        return authenticate_url
-    keywords = {'title': image.name, 'description': 'MAF', 'tags': 'MAF', 'is_public':1, 'format':'xmlnode'}
-    response = flickr.upload(filename=f.read(), callback=None, **keywords)
-    return redirect(authenticate_url, False)
+# # ...
+# def handle_flickr_image(file, user, image):
+#     # Check for Token
+#     api_token = Record.objects.get(key='FLICKR_TOKEN').value
+#     flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, token=api_token)
+#     keywords = {'title': image.name, 'description': 'MAF', 'tags': 'MAF', 'is_public':1, 'format':'xmlnode'}
+#     response = flickr.upload(filename=file.read(), callback=None, **keywords)
+#     return False
 
 
-# ...
-def flickr_callback(request):
-    debug('FROB', request.GET['frob'])
-    flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, store_token=False)
-    token = flickr.get_token(request.GET['frob'])
-    if token:
-        Record(key='FLICKR_TOKEN', value=token).save()
-    debug('FLICKR_TOKEN',token)
-    return redirect('/', False)
+# # ...
+# def flickr_callback(request):
+#     debug('FROB', request.GET['frob'])
+#     flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, store_token=False)
+#     token = flickr.get_token(request.GET['frob'])
+#     if token:
+#         Record(key='FLICKR_TOKEN', value=token).save()
+#     debug('FLICKR_TOKEN',token)
+#     return redirect('/', False)
 
 
 
 
-def require_flickr_auth(view):
-    '''View decorator, redirects users to Flickr when no valid
-    authentication token is available.
-    '''
+# def require_flickr_auth(view):
+#     '''View decorator, redirects users to Flickr when no valid
+#     authentication token is available.
+#     '''
+# 
+#     def protected_view(request, *args, **kwargs):
+#         try:
+#             token = Record.objects.get(key='FLICKR_TOKEN').value
+#         except:
+#             token = None
+# 
+#         f = flickrapi.FlickrAPI(settings.FLICKR_API_KEY,
+#                settings.FLICKR_API_SECRET, token=token,
+#                store_token=False)
+# 
+#         if token:
+#             # We have a token, but it might not be valid
+#             try:
+#                 f.auth_checkToken()
+#             except flickrapi.FlickrError:
+#                 token = None
+# 
+#         if not token:
+#             url = f.web_login_url(perms='write')
+#             return HttpResponseRedirect(url)
+# 
+#         # If the token is valid, we can call the decorated view.
+# 
+#         return view(request, *args, **kwargs)
+# 
+#     return protected_view
+# 
+# 
+# 
 
-    def protected_view(request, *args, **kwargs):
-        try:
-            token = Record.objects.get(key='FLICKR_TOKEN').value
-        except:
-            token = None
-
-        f = flickrapi.FlickrAPI(settings.FLICKR_API_KEY,
-               settings.FLICKR_API_SECRET, token=token,
-               store_token=False)
-
-        if token:
-            # We have a token, but it might not be valid
-            try:
-                f.auth_checkToken()
-            except flickrapi.FlickrError:
-                token = None
-
-        if not token:
-            url = f.web_login_url(perms='write')
-            return HttpResponseRedirect(url)
-
-        # If the token is valid, we can call the decorated view.
-
-        return view(request, *args, **kwargs)
-
-    return protected_view
-
-
-
-@require_flickr_auth
 def image_form(request, id=None):
     if is_admin_user(request):
         instance = get_object_or_404(Image, id=id) if id is not None else None
@@ -320,19 +308,30 @@ def image_form(request, id=None):
             image.image_file = request.FILES['image_file'].name
             image.size = request.FILES['image_file'].size
             image.save()
-            # Associate With Page
-            # Upload
-            flickr_response = handle_flickr_image(request.FILES['image_file'], request.user, image)
-            if flickr_response:
-                return redirect(flickr_response)
-            else:
-                return redirect('/images/')
-        return render_to_response("pages/image_form.html",
+            handle_image_picasa(request.FILES['image_file'])
+            return redirect('/images/')
+        else:
+            return render_to_response("pages/image_form.html",
                                   {"form": form, "id": id, 'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
+
     else:
         return redirect('/', False)
 
+# ...
+def handle_image_picasa(file):
+    import gdata.photos.service
+    import gdata.media
+    import gdata.geo
+
+    gd_client = gdata.photos.service.PhotosService()
+    gd_client.email = settings.PICASA_KEY
+    gd_client.password = settings.PICASA_PASSWORD
+    gd_client.source = 'exampleCo-exampleApp-1'
+    gd_client.ProgrammaticLogin()
+
+
+    return True
 
 # ...
 def image_list(request):

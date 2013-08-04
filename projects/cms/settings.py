@@ -35,6 +35,8 @@ INSTALLED_APPS = (
     'djangoappengine',
 )
 
+
+
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 
 MIDDLEWARE_CLASSES = (
@@ -91,7 +93,6 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.google.GoogleOAuth2Backend',
     'social_auth.backends.google.GoogleBackend',
     'social_auth.backends.yahoo.YahooBackend',
-    'social_auth.backends.contrib.flickr.FlickrBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -104,10 +105,11 @@ GOOGLE_CONSUMER_KEY          = ''
 GOOGLE_CONSUMER_SECRET       = ''
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
-FLICKR_APP_ID = access_keys.FLICKR_KEY
-FLICKR_API_SECRET = access_keys.FLICKR_SEC
 FLICKR_API_KEY = access_keys.FLICKR_KEY
 FLICKR_API_SECRET = access_keys.FLICKR_SEC
+PICASA_KEY = access_keys.PICASA_EMAIL
+PICASA_PASSWORD = access_keys.PICASA_PASSWORD
+
 
 LOGIN_URL          = '/enter/'
 LOGIN_REDIRECT_URL = '/logged-in/'
@@ -121,7 +123,7 @@ SOCIAL_AUTH_SESSION_EXPIRATION = False
 SOCIAL_AUTH_RAISE_EXCEPTIONS = False
 
 FACEBOOK_EXTENDED_PERMISSIONS = ['email']
-FLICKR_AUTH_EXTRA_ARGUMENTS = {'perms': 'delete'}
+
 
 AUTH_PROFILE_MODULE = 'users.models.UserProfile'
 
@@ -135,7 +137,6 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.user.update_user_details',
 )
 
-FILE_UPLOAD_MAX_MEMORY_SIZE = 7000000
 FILE_UPLOAD_TEMP_DIR = '/tmp'
 # Add to your settings file
 CONTENT_TYPES = ['image', 'video']
