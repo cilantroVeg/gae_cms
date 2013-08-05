@@ -329,9 +329,10 @@ def handle_image_picasa(file):
     gd_client.password = settings.PICASA_PASSWORD
     gd_client.source = 'exampleCo-exampleApp-1'
     gd_client.ProgrammaticLogin()
-
-
-    return True
+    photo = gd_client.InsertPhotoSimple('/data/feed/api/user/default/albumid/default', file.name, 'Uploaded using the API.', file, content_type='image/jpeg')
+    # pic = StringIO.StringIO(pic)
+    debug('PHOTO',photo)
+    return photo
 
 # ...
 def image_list(request):
