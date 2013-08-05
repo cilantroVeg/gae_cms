@@ -308,7 +308,7 @@ def image_form(request, id=None):
             image.image_file = request.FILES['image_file'].name
             image.size = request.FILES['image_file'].size
             image.save()
-            handle_image_picasa(request.FILES['image_file'])
+            handle_image_picasa(request.FILES['image_file'], image)
             return redirect('/images/')
         else:
             return render_to_response("pages/image_form.html",
@@ -319,7 +319,7 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def handle_image_picasa(file):
+def handle_image_picasa(file,image):
     import gdata.photos.service
     import gdata.media
     import gdata.geo
@@ -339,6 +339,10 @@ def handle_image_picasa(file):
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
     photo = gd_client.InsertPhotoSimple(album_url, file.name, Record.objects.get(key='WEBSITE_DESCRIPTION').value, file, content_type='image/jpeg')
 
+    image.picasa_photo_id = photo.gphoto_id.text
+    image.picasa_thumb_url = photo.media.thumbnail[0].url
+    image.picasa_photo_url = photo.content.src
+    image.save()
     # pic = StringIO.StringIO(pic)
     debug('PHOTO', photo)
     return photo
