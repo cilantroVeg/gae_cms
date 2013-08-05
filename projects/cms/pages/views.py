@@ -340,7 +340,7 @@ def handle_image_picasa(file):
     photo = gd_client.InsertPhotoSimple(album_url, file.name, Record.objects.get(key='WEBSITE_DESCRIPTION').value, file, content_type='image/jpeg')
 
     # pic = StringIO.StringIO(pic)
-    debug('PHOTO',photo)
+    debug('PHOTO', photo)
     return photo
 
 # ...
