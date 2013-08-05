@@ -312,8 +312,8 @@ def image_form(request, id=None):
             return redirect('/images/')
         else:
             return render_to_response("pages/image_form.html",
-                                  {"form": form, "id": id, 'is_logged_in': is_logged_in(request)},
-                                  context_instance=RequestContext(request))
+                                      {"form": form, "id": id, 'is_logged_in': is_logged_in(request)},
+                                      context_instance=RequestContext(request))
 
     else:
         return redirect('/', False)
@@ -329,7 +329,16 @@ def handle_image_picasa(file):
     gd_client.password = settings.PICASA_PASSWORD
     gd_client.source = 'exampleCo-exampleApp-1'
     gd_client.ProgrammaticLogin()
-    photo = gd_client.InsertPhotoSimple('/data/feed/api/user/default/albumid/default', file.name, 'Uploaded using the API.', file, content_type='image/jpeg')
+
+    try:
+        albums = gd_client.GetUserFeed()
+        album = albums.entry[0]
+    except:
+        album = gd_client.InsertAlbum(title=Record.objects.get(key='WEBSITE_NAME').value, summary=Record.objects.get(key='WEBSITE_DESCRIPTION').value)
+
+    album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
+    photo = gd_client.InsertPhotoSimple(album_url, file.name, Record.objects.get(key='WEBSITE_DESCRIPTION').value, file, content_type='image/jpeg')
+
     # pic = StringIO.StringIO(pic)
     debug('PHOTO',photo)
     return photo
@@ -338,7 +347,7 @@ def handle_image_picasa(file):
 def image_list(request):
     if is_admin_user(request):
         return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),
-                                                                  'is_logged_in': is_logged_in(request)},
+                                                            'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
