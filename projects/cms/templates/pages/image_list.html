@@ -10,15 +10,11 @@
             var data = new google.visualization.DataTable();
 
             data.addColumn('string', 'Name');
-            data.addColumn('string', 'Image File Name');
-            data.addColumn('string', 'File Size (Bytes)');
-            data.addColumn('string', 'Picasa Photo id');
             data.addColumn('string', 'Picasa thumb');
-            data.addColumn('string', 'Picasa photo');
             data.addColumn('string', 'Manage');
             data.addRows([
                 {% for entry in image_list %}
-                    ['{{ entry.name }}', '{{ entry.image_file }}', '{{ entry.size }} bytes', '{{ entry.picasa_photo_id }}', '{{ entry.picasa_thumb_url }}', '{{ entry.picasa_photo_url }}', '<a href="/image/edit/{{ entry.id }}/">Edit</a>|<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
+                    ['{{ entry.name }}', '<a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>', '<a href="/image/edit/{{ entry.id }}/">Edit</a>|<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
                 {% endfor %}
             ]);
 

@@ -17,6 +17,9 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.utils.html import *
 import pprint
+import gdata.photos.service
+import gdata.media
+import gdata.geo
 
 # ...
 def category_form(request, id=None):
@@ -319,16 +322,27 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def handle_image_picasa(file,image):
-    import gdata.photos.service
-    import gdata.media
-    import gdata.geo
-
+def connect_picasa():
     gd_client = gdata.photos.service.PhotosService()
     gd_client.email = settings.PICASA_KEY
     gd_client.password = settings.PICASA_PASSWORD
     gd_client.source = 'exampleCo-exampleApp-1'
     gd_client.ProgrammaticLogin()
+    return gd_client
+
+def delete_picasa_photo(instance):
+    try:
+        gd_client = connect_picasa()
+        photos = gd_client.GetFeed('/data/feed/api/user/%s/albumid/%s?kind=photo' % ('default', instance.picasa_album_id))
+        for photo in photos.entry:
+            if photo.gphoto_id.text == instance.picasa_photo_id:
+                gd_client.Delete(photo)
+    except:
+        return False
+
+# ...
+def handle_image_picasa(file,image):
+    gd_client = connect_picasa()
 
     try:
         albums = gd_client.GetUserFeed()
@@ -339,6 +353,7 @@ def handle_image_picasa(file,image):
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
     photo = gd_client.InsertPhotoSimple(album_url, file.name, Record.objects.get(key='WEBSITE_DESCRIPTION').value, file, content_type='image/jpeg')
 
+    image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text
     image.picasa_thumb_url = photo.media.thumbnail[0].url
     image.picasa_photo_url = photo.content.src
@@ -360,6 +375,7 @@ def image_list(request):
 def image_delete(request, id=None):
     if is_admin_user(request):
         instance = get_object_or_404(Image, id=id) if id is not None else None
+        delete_picasa_photo(instance)
         instance.delete()
         return redirect('/images/')
     else:
