@@ -35,12 +35,14 @@ urlpatterns = patterns('',
     url(r'^category/edit/(?P<id>\d+)/$', 'pages.views.category_form'),
     url(r'^category/delete/(?P<id>\d+)/$', 'pages.views.category_delete'),
     url(r'^categories/', 'pages.views.category_list'),
+    url(r'^(?P<language>\d+)/c/(?P<slug>[-\w]+)/$', 'pages.views.get_category'),
 
     url(r'^page/new/$', 'pages.views.page_form'),
     url(r'^page/edit/(?P<id>\d+)/$', 'pages.views.page_form'),
     url(r'^page/delete/(?P<id>\d+)/$', 'pages.views.page_delete'),
     url(r'^pages/', 'pages.views.page_list'),
-    
+    url(r'^(?P<language>[a-z]{2})/p/(?P<slug>[-\w]+)/$', 'pages.views.get_page'),
+
     url(r'^record/new/$', 'pages.views.record_form'),
     url(r'^record/edit/(?P<id>\d+)/$', 'pages.views.record_form'),
     url(r'^record/delete/(?P<id>\d+)/$', 'pages.views.record_delete'),

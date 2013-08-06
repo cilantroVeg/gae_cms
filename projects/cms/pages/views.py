@@ -381,6 +381,24 @@ def image_delete(request, id=None):
     else:
         return redirect('/', False)
 
+
+# ...
+def get_page(request,language,slug):
+    language = Language.objects.get(code=language)
+    page =  Page.objects.get(slug=slug)
+    debug('PAGE',str(slug))
+    return render_to_response("pages/page_view.html", {"page": page,
+                                                                  'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+
+# ...
+def get_category(request,language,slug):
+    language = Language.objects.get(code=language)
+    category = Category.objects.get(slug=slug, language_id=language.id)
+    return render_to_response("pages/category_view.html", {"category": category,
+                                                                  'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+
 # ...
 def debug(key,value):
     import logging
