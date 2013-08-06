@@ -1,7 +1,6 @@
 - CSS Templates
 - Category Pages Structure
 - Site Map
-- Get data from old sites
 - API
 
 - Bible API
