@@ -37,7 +37,7 @@ class Category(models.Model):
     # ...
     def save(self, *args, **kwargs):
         if not self.id:
-            self.slug = slugify(str(self.parent) + str(' ') + str(self.name))
+            self.slug = slugify(str(self.parent.name) + str(' ') + str(self.name))
         super(Category, self).save(*args, **kwargs)
 
     # ...
@@ -73,7 +73,7 @@ class Page(models.Model):
     # ...
     def save(self, *args, **kwargs):
         if not self.id:
-            self.slug = slugify(str(self.category) + str(' ') + str(self.title))
+            self.slug = slugify(str(self.category.name.encode('utf8')) + str(' ') + str(self.title.encode('utf8')))
         super(Page, self).save(*args, **kwargs)
 
     # ...

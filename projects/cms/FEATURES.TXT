@@ -1,5 +1,15 @@
+- CSS Templates
+- Category Pages Structure
+- Site Map
+- Get data from old sites
+- API
+
+- Bible API
+- User Photo
+- Recipe API
+- NRWL API
+
 Photos Post To:
-- Picasa Web Albums
 - Flickr
 - Tweetpic
 - Tweeter
@@ -13,6 +23,11 @@ API Integration
 - Music
 - Bible
 
-CSS Templates
+Stats New Relic
 
-- User Photo
+Google Analytics
+
+
+SELECT c.name, c.parent_id, s.title, s.content, s.language
+FROM `section_revisions` AS `s` , `categories` AS `c`
+WHERE c.id = s.category_id
