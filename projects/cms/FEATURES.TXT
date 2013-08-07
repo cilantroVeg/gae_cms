@@ -1,8 +1,9 @@
-- CSS Templates
 - Link pages and images.
 - Fix Footer With Navigation Structure. Categories require a page.
-- Site Map
 - API
+- Site Map
+- CSS Templates
+
 
 - Bible API
 - User Photo
