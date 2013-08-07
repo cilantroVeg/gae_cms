@@ -1,5 +1,6 @@
 - CSS Templates
-- Category Pages Structure
+- Link pages and images.
+- Fix Footer With Navigation Structure. Categories require a page.
 - Site Map
 - API
 
