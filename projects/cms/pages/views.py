@@ -1,26 +1,15 @@
 # Create your views here.
 from django.shortcuts import render_to_response, get_object_or_404, redirect
-from django.template import RequestContext, loader
-from pages.models import *
-from helpers.helpers import *
-from django.core.mail import send_mail
-from django.views.decorators.http import require_http_methods
-from django.views.decorators.cache import never_cache
+from django.template import RequestContext
 from django.conf import settings
-from django.views.decorators.csrf import csrf_exempt
-from django.http import HttpResponse
-from django.utils import simplejson as json
-from django.forms.models import modelformset_factory
-from django.views.generic import TemplateView
-from django.core.exceptions import ObjectDoesNotExist
-from django.http import HttpResponseRedirect
-from django.shortcuts import render_to_response
 from django.utils.html import *
-import pprint
 import gdata.photos.service
 import gdata.media
 import gdata.geo
-from django.shortcuts import get_object_or_404
+
+from pages.models import *
+from helpers.helpers import *
+
 # ...
 def category_form(request, id=None):
     if is_admin_user(request):
@@ -188,7 +177,7 @@ def spreadsheet_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def handle_spreadsheet(f, user,spreadsheet):
+def handle_spreadsheet(f, user, spreadsheet):
     import xlrd
 
     workbook = xlrd.open_workbook(file_contents=f.read())
@@ -218,7 +207,7 @@ def handle_spreadsheet(f, user,spreadsheet):
                                                                                       'language': language,
                                                                                       'allow_replies': True})
                 # Page
-                page, created = Page.objects.get_or_create(category=category, title=strip_tags(page_title), defaults={'user':user})
+                page, created = Page.objects.get_or_create(category=category, title=strip_tags(page_title), defaults={'user': user})
                 page.content = strip_tags(page_content)
                 page.spreadsheet = spreadsheet
                 page.save()
@@ -330,6 +319,7 @@ def connect_picasa():
     gd_client.ProgrammaticLogin()
     return gd_client
 
+
 def delete_picasa_photo(instance):
     try:
         gd_client = connect_picasa()
@@ -341,7 +331,7 @@ def delete_picasa_photo(instance):
         return False
 
 # ...
-def handle_image_picasa(file,image):
+def handle_image_picasa(file, image):
     gd_client = connect_picasa()
 
     try:
@@ -383,32 +373,31 @@ def image_delete(request, id=None):
 
 
 # ...
-def page_view(request,language,slug):
-    language = get_object_or_404(Language, code=language)
-    page =  get_object_or_404(Page, slug=slug)
+def page_view(request, language, slug):
+    page = get_object_or_404(Page, slug=slug)
     return render_to_response("pages/page_view.html", {"page": page,
-                                                                  'is_logged_in': is_logged_in(request)},
-                                  context_instance=RequestContext(request))
+                                                       'is_logged_in': is_logged_in(request)},
+                              context_instance=RequestContext(request))
 
 # ...
-def category_view(request,language,slug):
+def category_view(request, language, slug):
     language = get_object_or_404(Language, code=language)
     category = get_object_or_404(Category, slug=slug, language_id=language.id)
     return render_to_response("pages/category_view.html", {"category": category,
-                                                                  'is_logged_in': is_logged_in(request)},
-                                  context_instance=RequestContext(request))
+                                                           'is_logged_in': is_logged_in(request)},
+                              context_instance=RequestContext(request))
 
 # ...
-def image_view(request,language,slug):
-    language = get_object_or_404(Language, code=language)
+def image_view(request, language, slug):
     image = get_object_or_404(Image, slug=slug)
     return render_to_response("pages/image_view.html", {"image": image,
-                                                                  'is_logged_in': is_logged_in(request)},
-                                  context_instance=RequestContext(request))
+                                                        'is_logged_in': is_logged_in(request)},
+                              context_instance=RequestContext(request))
 
 # ...
-def debug(key,value):
+def debug(key, value):
     import logging
+
     logging.getLogger().setLevel(logging.DEBUG)
     logging.info("*******************************")
     logging.info(key)

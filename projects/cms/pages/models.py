@@ -1,11 +1,12 @@
-from django.db import models
-from django.conf import settings
-from users.models import *
-from django.forms import ModelForm
-
-from django.template.defaultfilters import slugify
 from datetime import datetime
+
+from django.db import models
+from django.forms import ModelForm
+from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
+
+from users.models import *
+
 
 class Language(models.Model):
     id = models.AutoField(primary_key=True)
@@ -27,7 +28,7 @@ class Category(models.Model):
     language = models.ForeignKey(Language, null=False, blank=False)
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
-    slug = models.SlugField(unique=True,blank=False,null=False)
+    slug = models.SlugField(unique=True, blank=False, null=False)
     allow_replies = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
 
@@ -62,8 +63,7 @@ class Category(models.Model):
     # ...
     def clean(self):
         if self.parent is None and self.id is None and Category.objects.filter(name=self.name).exists():
-            raise ValidationError("Another Category with name "+self.name+" and no parent already exists")
-
+            raise ValidationError("Another Category with name " + self.name + " and no parent already exists")
 
 
     # ...
@@ -88,7 +88,7 @@ class Page(models.Model):
     user = models.ForeignKey(User, null=False, blank=False)
     spreadsheet = models.ForeignKey(Spreadsheet, null=True, blank=True)
     title = models.CharField(max_length=256, null=False, blank=False)
-    slug = models.SlugField(unique=True,blank=False,null=False)
+    slug = models.SlugField(unique=True, blank=False, null=False)
     content = models.TextField(null=False, blank=False)
     created_at = models.DateTimeField(auto_now=True)
 
@@ -166,7 +166,6 @@ class Image(models.Model):
         else:
             image_exists_1 = Image.objects.filter(slug=slug_1).count()
             image_exists_2 = Image.objects.filter(slug=slug_2).count()
-
 
         if image_exists_1 == False:
             self.slug = slug_1
