@@ -20,7 +20,7 @@ import pprint
 import gdata.photos.service
 import gdata.media
 import gdata.geo
-
+from django.shortcuts import get_object_or_404
 # ...
 def category_form(request, id=None):
     if is_admin_user(request):
@@ -383,18 +383,17 @@ def image_delete(request, id=None):
 
 
 # ...
-def get_page(request,language,slug):
-    language = Language.objects.get(code=language)
-    page =  Page.objects.get(slug=slug)
-    debug('PAGE',str(slug))
+def page_view(request,language,slug):
+    language = get_object_or_404(Language, code=language)
+    page =  get_object_or_404(Page, slug=slug)
     return render_to_response("pages/page_view.html", {"page": page,
                                                                   'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
 
 # ...
-def get_category(request,language,slug):
-    language = Language.objects.get(code=language)
-    category = Category.objects.get(slug=slug, language_id=language.id)
+def category_view(request,language,slug):
+    language = get_object_or_404(Language, code=language)
+    category = get_object_or_404(Category, slug=slug, language_id=language.id)
     return render_to_response("pages/category_view.html", {"category": category,
                                                                   'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))

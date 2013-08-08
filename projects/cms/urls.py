@@ -35,13 +35,19 @@ urlpatterns = patterns('',
     url(r'^category/edit/(?P<id>\d+)/$', 'pages.views.category_form'),
     url(r'^category/delete/(?P<id>\d+)/$', 'pages.views.category_delete'),
     url(r'^categories/', 'pages.views.category_list'),
-    url(r'^(?P<language>\d+)/c/(?P<slug>[-\w]+)/$', 'pages.views.get_category'),
+    url(r'^(?P<language>\d+)/c/(?P<slug>[-\w]+)/$', 'pages.views.category_view'),
 
     url(r'^page/new/$', 'pages.views.page_form'),
     url(r'^page/edit/(?P<id>\d+)/$', 'pages.views.page_form'),
     url(r'^page/delete/(?P<id>\d+)/$', 'pages.views.page_delete'),
     url(r'^pages/', 'pages.views.page_list'),
-    url(r'^(?P<language>[a-z]{2})/p/(?P<slug>[-\w]+)/$', 'pages.views.get_page'),
+    url(r'^(?P<language>[a-z]{2})/(?P<slug>[-\w]+)/$', 'pages.views.page_view'),
+
+    url(r'^image/new/$', 'pages.views.image_form'),
+    url(r'^image/edit/(?P<id>\d+)/$', 'pages.views.image_form'),
+    url(r'^image/delete/(?P<id>\d+)/$', 'pages.views.image_delete'),
+    url(r'^images/', 'pages.views.image_list'),
+    url(r'^(?P<language>[a-z]{2})/i/(?P<slug>[-\w]+)/$', 'pages.views.get_image'),
 
     url(r'^record/new/$', 'pages.views.record_form'),
     url(r'^record/edit/(?P<id>\d+)/$', 'pages.views.record_form'),
@@ -58,13 +64,7 @@ urlpatterns = patterns('',
     url(r'^user/edit/(?P<id>\d+)/$', 'users.views.user_form'),
     url(r'^user/delete/(?P<id>\d+)/$', 'users.views.user_delete'),
     url(r'^users/', 'users.views.user_list'),
-    
-    url(r'^image/new/$', 'pages.views.image_form'),
-    url(r'^image/edit/(?P<id>\d+)/$', 'pages.views.image_form'),
-    url(r'^image/delete/(?P<id>\d+)/$', 'pages.views.image_delete'),
-    url(r'^images/', 'pages.views.image_list'),
 
-    # Flickr Callback
 )
 
 

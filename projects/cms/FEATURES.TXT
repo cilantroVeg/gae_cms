@@ -16,7 +16,8 @@ Photos Post To:
 - Tweeter
 - Facebook
 
-Inline Editing
+- Inline Editing
+- Refactor Organize Code
 
 API Integration
 - Wikipedia
