@@ -399,6 +399,14 @@ def category_view(request,language,slug):
                                   context_instance=RequestContext(request))
 
 # ...
+def image_view(request,language,slug):
+    language = get_object_or_404(Language, code=language)
+    image = get_object_or_404(Image, slug=slug)
+    return render_to_response("pages/image_view.html", {"image": image,
+                                                                  'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+
+# ...
 def debug(key,value):
     import logging
     logging.getLogger().setLevel(logging.DEBUG)

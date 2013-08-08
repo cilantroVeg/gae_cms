@@ -5,6 +5,7 @@ from django.forms import ModelForm
 
 from django.template.defaultfilters import slugify
 from datetime import datetime
+from django.core.exceptions import ValidationError
 
 class Language(models.Model):
     id = models.AutoField(primary_key=True)
@@ -36,22 +37,38 @@ class Category(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
+        if self.parent is None:
+            self.parent = self
+
         slug_1 = slugify(str(self.name))
         slug_2 = slugify(str(self.parent.name) + ' ' + str(self.name))
 
-        exists_1 = Category.objects.filter(slug=slug_1).exclude(id=self.id).count()
-        exists_2 = Category.objects.filter(slug=slug_2).exclude(id=self.id).count()
+        if self.id is not None:
+            category_exists_1 = Category.objects.filter(slug=slug_1, language=self.language).exclude(id=self.id).count()
+            category_exists_2 = Category.objects.filter(slug=slug_2, language=self.language).exclude(id=self.id).count()
+        else:
+            category_exists_1 = Category.objects.filter(slug=slug_1, language=self.language).count()
+            category_exists_2 = Category.objects.filter(slug=slug_2, language=self.language).count()
 
-        if exists_1 == False:
+        if category_exists_1 == False:
             self.slug = slug_1
-        elif exists_2 == False:
+        elif category_exists_2 == False:
             self.slug = slug_2
+        else:
+            raise ValidationError("Another Category with same slug already exists. Please use different name.")
 
         super(Category, self).save(*args, **kwargs)
 
     # ...
+    def clean(self):
+        if self.parent is None and self.id is None and Category.objects.filter(name=self.name).exists():
+            raise ValidationError("Another Category with name "+self.name+" and no parent already exists")
+
+
+
+    # ...
     class Meta:
-        unique_together = ("parent", "name")
+        unique_together = (("language", "parent", "name"))
 
 # ...
 class Spreadsheet(models.Model):
@@ -81,20 +98,23 @@ class Page(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
-        slug_1 = slugify(str(self.name))
-        slug_2 = slugify(str(self.category.name) + ' ' + str(self.name))
+        slug_1 = slugify(str(self.title))
+        slug_2 = slugify(str(self.category.name) + ' ' + str(self.title))
 
-        exists_1 = Page.objects.filter(slug=slug_1).exclude(id=self.id).count()
-        exists_2 = Page.objects.filter(slug=slug_2).exclude(id=self.id).count()
+        if self.id is not None:
+            page_exists_1 = Page.objects.filter(slug=slug_1).exclude(id=self.id).count()
+            page_exists_2 = Page.objects.filter(slug=slug_2).exclude(id=self.id).count()
+        else:
+            page_exists_1 = Page.objects.filter(slug=slug_1).count()
+            page_exists_2 = Page.objects.filter(slug=slug_2).count()
 
-        if exists_1 == False:
+        if page_exists_1 == False:
             self.slug = slug_1
-        elif exists_2 == False:
+        elif page_exists_2 == False:
             self.slug = slug_2
+        else:
+            raise ValidationError("Another page with same slug already exists. Please use different name.")
 
-        super(Category, self).save(*args, **kwargs)
-
-        self.slug = slugify(str(self.category.name.encode('utf8')) + str(' ') + str(self.title.encode('utf8')))
         super(Page, self).save(*args, **kwargs)
 
     # ...
@@ -140,18 +160,20 @@ class Image(models.Model):
         slug_1 = slugify(str(self.name))
         slug_2 = slugify(str(self.name) + datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f"))
 
-        exists_1 = Image.objects.filter(slug=slug_1).exclude(id=self.id).count()
-        exists_2 = Image.objects.filter(slug=slug_2).exclude(id=self.id).count()
+        if self.id is not None:
+            image_exists_1 = Image.objects.filter(slug=slug_1).exclude(id=self.id).count()
+            image_exists_2 = Image.objects.filter(slug=slug_2).exclude(id=self.id).count()
+        else:
+            image_exists_1 = Image.objects.filter(slug=slug_1).count()
+            image_exists_2 = Image.objects.filter(slug=slug_2).count()
 
-        if exists_1 == False:
+
+        if image_exists_1 == False:
             self.slug = slug_1
-        elif exists_2 == False:
+        elif image_exists_2 == False:
             self.slug = slug_2
 
-        super(Category, self).save(*args, **kwargs)
-
-        self.slug = slugify(str(self.category.name.encode('utf8')) + str(' ') + str(self.title.encode('utf8')))
-        super(Page, self).save(*args, **kwargs)
+        super(Image, self).save(*args, **kwargs)
 
 
 # ...
