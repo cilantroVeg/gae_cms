@@ -4,7 +4,7 @@ from django.db import models
 from django.forms import ModelForm
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
-
+import time
 from users.models import *
 
 
@@ -136,7 +136,7 @@ class Record(models.Model):
 class Image(models.Model):
     id = models.AutoField(primary_key=True)
     page = models.ForeignKey(Page, null=True, blank=True)
-    name = models.CharField(max_length=256, blank=False, null=False)
+    name = models.CharField(max_length=256, blank=True, null=True)
     slug = models.SlugField(unique=True, blank=False, null=False)
     image_file = models.FileField(upload_to='images/')
     size = models.CharField(max_length=32)
@@ -154,11 +154,15 @@ class Image(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
+
         if self.name is None:
-            self.name = self.page.title
+            if self.page is None:
+                self.name = self.image_file
+            else:
+                self.name = self.page.title
 
         slug_1 = slugify(str(self.name))
-        slug_2 = slugify(str(self.name) + datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f"))
+        slug_2 = slugify(str(self.name) + str(int(time.time())))
 
         if self.id is not None:
             image_exists_1 = Image.objects.filter(slug=slug_1).exclude(id=self.id).count()

@@ -78,13 +78,24 @@ def language_delete(request, id=None):
 def page_form(request, id=None):
     if is_admin_user(request):
         instance = get_object_or_404(Page, id=id) if id is not None else None
-        form = PageForm(request.POST or None, instance=instance)
-        if form.is_valid():
-            page = form.save(commit=False)
+        page_form = PageForm(request.POST or None, instance=instance)
+        image_form = ImageForm(request.POST or None, request.FILES or None, instance=instance)
+        if page_form.is_valid():
+            page = page_form.save(commit=False)
             page.user = request.user
             page.save()
+
+            if image_form.is_valid():
+                image = image_form.save(commit=False)
+                image.page = page
+                image.name = request.POST['name']
+                image.image_file = request.FILES['image_file'].name
+                image.size = request.FILES['image_file'].size
+                image.save()
+                handle_image_picasa(request.FILES['image_file'], image)
+                return redirect('/images/')
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"form": form, "id": id, "user": request.user.id,
+        return render_to_response("pages/page_form.html", {"page_form": image_form,"image_form": page_form, "id": id, "user": request.user.id,
                                                            'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
