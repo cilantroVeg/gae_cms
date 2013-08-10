@@ -1,0 +1,35 @@
+{% extends "template/template.html" %}
+
+{% block title %}Form{% endblock %}
+{% block js %}
+
+{% endblock %}
+{% block content %}
+<div id="static_content">
+    <h1>category Form</h1>
+    <a href="/categories">Category List</a>
+    <form action="/category/edit/" method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Language</td>
+                <td>Name</td>
+                <td>Parent</td>
+                <td>Allow Replies</td>
+                <td>Order</td>
+            </tr>
+            {% for form in formset %}
+            <tr>
+                {% for item in form %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+<hr />
+<a href="/categories/">Category List</a>
+{% endblock %}

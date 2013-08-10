@@ -31,7 +31,7 @@ class Category(models.Model):
     ('4', '4'),
     ('5', '5'),
     ('6', '6'),
-    ('7', '7'),
+    ('7', '7')
     )
 
     id = models.AutoField(primary_key=True)

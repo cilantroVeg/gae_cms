@@ -786,7 +786,7 @@ li{
 
 input, select, textarea,input[type="submit"] {
     display: block;
-    width: 360px;
+    width: 180px;
     margin: 7px;
     padding: 3px;
 }

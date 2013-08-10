@@ -26,6 +26,22 @@ def category_form(request, id=None):
         return redirect('/', False)
 
 # ...
+def category_formset(request):
+    if is_admin_user(request):
+        CategoryFormSet = formset_factory(CategoryForm)
+        if request.method == 'POST':
+            formset = CategoryFormSet(request.POST)
+            if formset.is_valid():
+                formset.save()
+        else:
+            formset = CategoryFormSet(initial=Category.objects.values())
+        return render_to_response("pages/category_formset.html",
+                                  {"formset": formset, 'is_logged_in': is_logged_in(request)},
+                                  context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
 def category_list(request):
     if is_admin_user(request):
         return render_to_response("pages/category_list.html",

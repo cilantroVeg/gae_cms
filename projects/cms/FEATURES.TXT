@@ -6,9 +6,6 @@
 - Basic API
 - CSS Templates
 
-
-
-
 - Bible API
 - User Photo
 - Recipe API
