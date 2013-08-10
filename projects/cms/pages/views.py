@@ -78,25 +78,27 @@ def language_delete(request, id=None):
 def page_form(request, id=None):
     if is_admin_user(request):
         instance = get_object_or_404(Page, id=id) if id is not None else None
+        if instance:
+            image_array = Image.objects.filter(page=instance)
+        else:
+            image_array = None
         page_form = PageForm(request.POST or None, instance=instance)
-        image_form = ImageForm(request.POST or None, request.FILES or None, instance=instance)
+        image_form_1 = ImageForm(request.POST or None, request.FILES or None, instance=instance)
         if page_form.is_valid():
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
-
-            if image_form.is_valid():
-                image = image_form.save(commit=False)
+            if image_form_1.is_valid():
+                image = image_form_1.save(commit=False)
                 image.page = page
                 image.name = request.POST['name']
                 image.image_file = request.FILES['image_file'].name
                 image.size = request.FILES['image_file'].size
                 image.save()
                 handle_image_picasa(request.FILES['image_file'], image)
-                return redirect('/images/')
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"page_form": image_form,"image_form": page_form, "id": id, "user": request.user.id,
-                                                           'is_logged_in': is_logged_in(request)},
+        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_form_1": image_form_1, "id": id, "user": request.user.id,
+                                                           'image_array':image_array, 'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
