@@ -3,22 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375943329900" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376112587407" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375931101726" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
-    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375943263884" ignored="false" />
-    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375941790799" ignored="false" />
+    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376108512609" ignored="false" />
+    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376117112956" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375938735170" ignored="false" />
     <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826264968" ignored="false" />
     <file path="/access_keys.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657325186" ignored="false" />
@@ -33,13 +32,14 @@
     <file path="/Library/Python/2.7/site-packages/gdata/exif/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041543" ignored="false" />
     <file path="/Library/Python/2.7/site-packages/gdata/calendar/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041543" ignored="false" />
     <file path="/a.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670606080" ignored="false" />
-    <file path="/image_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375676992063" ignored="false" />
+    <file path="/image_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376108975220" ignored="false" />
     <file path="/page_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375762008562" ignored="false" />
     <file path="/category_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375762053603" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/swagger-twitter/html/index.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826247440" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/swagger-twitter/html/api-docs.json" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826274552" ignored="false" />
     <file path="/index.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826235652" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/swagger-twitter/html/api-docs/twitter_search" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375827236803" ignored="false" />
+    <file path="/page_form.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376111509970" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,21 +59,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="34" selection-start="225" selection-end="7465" vertical-scroll-proportion="1.1158798">
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state line="37" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="391" column="0" selection-start="15080" selection-end="15080" vertical-scroll-proportion="-6.8235292">
+            <state line="86" column="57" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.42918456">
               <folding>
                 <element signature="e#26#102#0" expanded="true" />
               </folding>
@@ -81,19 +79,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_list.html">
+      <file leaf-file-name="page_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="143" selection-start="826" selection-end="826" vertical-scroll-proportion="-10.625">
+            <state line="34" column="18" selection-start="1081" selection-end="1081" vertical-scroll-proportion="-21.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
+      <file leaf-file-name="image_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+            <state line="17" column="42" selection-start="715" selection-end="725" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="4" selection-start="0" selection-end="860" vertical-scroll-proportion="-16.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="43" selection-start="5740" selection-end="5740" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,8 +157,9 @@
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
       </list>
     </option>
   </component>
@@ -351,8 +379,8 @@
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../local/apache2/pegasus_2.0.0" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -518,7 +546,19 @@
       <created>1375943332152</created>
       <updated>1375943332152</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Slugify">
+      <created>1375943701035</created>
+      <updated>1375943701035</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Page Image Relationship form">
+      <created>1376109015917</created>
+      <updated>1376109015917</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Page Image Relationship form">
+      <created>1376112589090</created>
+      <updated>1376112589090</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,7 +570,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34788936" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17321688" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -587,7 +627,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slugify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page Image Relationship form" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -607,21 +647,12 @@
     <MESSAGE value="URL Navigation Structure Ok" />
     <MESSAGE value="CSS" />
     <MESSAGE value="Slugify" />
+    <MESSAGE value="Page Image Relationship form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="92" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="275" selection-end="308" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="39" selection-start="2554" selection-end="2573" vertical-scroll-proportion="-17.708334" />
@@ -644,37 +675,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="136" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="136" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="76" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="76" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="25" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/css/magicangel.org.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
@@ -691,27 +712,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="391" column="0" selection-start="15080" selection-end="15080" vertical-scroll-proportion="-6.8235292">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
+        <state line="26" column="4" selection-start="0" selection-end="860" vertical-scroll-proportion="-16.25">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="143" selection-start="826" selection-end="826" vertical-scroll-proportion="-10.625">
+        <state line="17" column="42" selection-start="715" selection-end="725" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1081" selection-end="1081" vertical-scroll-proportion="-21.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="34" selection-start="225" selection-end="7465" vertical-scroll-proportion="1.1158798">
+        <state line="159" column="43" selection-start="5740" selection-end="5740" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="57" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.42918456">
+          <folding>
+            <element signature="e#26#102#0" expanded="true" />
           </folding>
         </state>
       </provider>

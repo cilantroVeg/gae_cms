@@ -6,6 +6,7 @@ from django.utils.html import *
 import gdata.photos.service
 import gdata.media
 import gdata.geo
+from django.forms.formsets import formset_factory
 
 from pages.models import *
 from helpers.helpers import *
@@ -83,21 +84,26 @@ def page_form(request, id=None):
         else:
             image_array = None
         page_form = PageForm(request.POST or None, instance=instance)
-        image_form_1 = ImageForm(request.POST or None, request.FILES or None, instance=instance)
+        ImageFormSet = formset_factory(ImageForm, extra=7)
         if page_form.is_valid():
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
-            if image_form_1.is_valid():
-                image = image_form_1.save(commit=False)
-                image.page = page
-                image.name = request.POST['name']
-                image.image_file = request.FILES['image_file'].name
-                image.size = request.FILES['image_file'].size
-                image.save()
-                handle_image_picasa(request.FILES['image_file'], image)
+            formset = ImageFormSet(request.POST or None, request.FILES or None)
+            for form in formset.forms:
+                try:
+                    image = form.save(commit=False)
+                    image.page = page
+                    image.name = form.cleaned_data['name']
+                    image.image_file = form.cleaned_data['image_file'].name
+                    image.size = form.cleaned_data['image_file'].size
+                    image.save()
+                    handle_image_picasa(form.cleaned_data['image_file'], image)
+                except:
+                    continue
+
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_form_1": image_form_1, "id": id, "user": request.user.id,
+        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id,
                                                            'image_array':image_array, 'is_logged_in': is_logged_in(request)},
                                   context_instance=RequestContext(request))
     else:
