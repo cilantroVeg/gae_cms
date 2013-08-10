@@ -24,11 +24,22 @@ class Language(models.Model):
 
 # Create your models here.
 class Category(models.Model):
+    ORDER = (
+    ('1', '1'),
+    ('2', '2'),
+    ('3', '3'),
+    ('4', '4'),
+    ('5', '5'),
+    ('6', '6'),
+    ('7', '7'),
+    )
+
     id = models.AutoField(primary_key=True)
     language = models.ForeignKey(Language, null=False, blank=False)
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     slug = models.SlugField(unique=True, blank=False, null=False)
+    order = models.SmallIntegerField(null=True, blank=True, choices=ORDER)
     allow_replies = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
 
@@ -205,7 +216,7 @@ class LanguageForm(ModelForm):
 class CategoryForm(ModelForm):
     class Meta:
         model = Category
-        fields = ['language', 'name', 'parent', 'allow_replies']
+        fields = ['language', 'name', 'parent', 'allow_replies', 'order']
 
 # Forms
 class PageForm(ModelForm):

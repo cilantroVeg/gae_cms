@@ -1,3 +1,4 @@
+- Order categories- Formset
 - Fix Footer With Navigation Structure. Categories require a page.
 - Add Menu Structure
 - Site Map
