@@ -20,6 +20,7 @@ Photos Post To:
 - Facebook
 
 - Inline Editing
+- blueimp
 - Refactor Organize Code
 
 API Integration
