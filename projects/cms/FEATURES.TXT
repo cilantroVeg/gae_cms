@@ -1,8 +1,11 @@
-- Link pages and images.
 - Fix Footer With Navigation Structure. Categories require a page.
-- API
+- Add Menu Structure
 - Site Map
+- Frontpage Structure
+- Basic API
 - CSS Templates
+
+
 
 
 - Bible API
@@ -28,8 +31,3 @@ API Integration
 Stats New Relic
 
 Google Analytics
-
-
-SELECT c.name, c.parent_id, s.title, s.content, s.language
-FROM `section_revisions` AS `s` , `categories` AS `c`
-WHERE c.id = s.category_id
