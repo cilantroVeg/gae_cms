@@ -440,17 +440,19 @@ def debug(key, value):
     logging.info(value)
     logging.info("*******************************")
 
-from django.db import transaction
 
-@transaction.commit_on_success
 def delete_all():
     category_array = Category.objects.all()
     page_array = Page.objects.all()
+    ss_array = Spreadsheet.objects.all()
     for page in page_array:
         print page.title
         Page.objects.filter(id=page.id).delete()
-        transaction.commit()
     for category in category_array:
         print category.name
         Category.objects.filter(id=category.id).delete()
-        transaction.commit()
+    for ss in ss_array:
+        print ss.name
+        Spreadsheet.objects.filter(id=ss.id).delete()
+
+
