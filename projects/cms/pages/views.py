@@ -440,10 +440,17 @@ def debug(key, value):
     logging.info(value)
     logging.info("*******************************")
 
-def delete_thirty(model_name):
-    from django.db import transaction
-    query_set = model_name.objects.filter()[:21]
-    for item in query_set:
-        item.delete()
-    with transaction.commit_on_success():
-        delete_thirty(model_name)
+from django.db import transaction
+
+@transaction.commit_on_success
+def delete_all():
+    category_array = Category.objects.all()
+    page_array = Page.objects.all()
+    for page in page_array:
+        print page.title
+        Page.objects.filter(id=page.id).delete()
+        transaction.commit()
+    for category in category_array:
+        print category.name
+        Category.objects.filter(id=category.id).delete()
+        transaction.commit()

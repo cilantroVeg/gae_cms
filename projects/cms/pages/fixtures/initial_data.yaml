@@ -1,0 +1,30 @@
+
+[
+  {
+    "model": "pages.record",
+    "pk": 1,
+    "fields": {
+      "key": "WEBSITE_NAME",
+      "value": "Magic Angel Foundation.",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 2,
+    "fields": {
+      "key": "WEBSITE_DESCRIPTION",
+      "value": "MagicAngel lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em lorem ipsum donror at em.",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 3,
+    "fields": {
+      "key": "FLICKR_TOKEN",
+      "value": "72157634929064772-bc6b567460ce035d",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  }
+]

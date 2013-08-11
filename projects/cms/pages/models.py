@@ -28,10 +28,11 @@ class Category(models.Model):
     ('1', '1'),
     ('2', '2'),
     ('3', '3'),
-    ('4', '4'),
-    ('5', '5'),
-    ('6', '6'),
-    ('7', '7')
+    ('3', '3'),
+    ('3', '3'),
+    ('3', '3'),
+    ('3', '3'),
+
     )
 
     id = models.AutoField(primary_key=True)
@@ -39,7 +40,7 @@ class Category(models.Model):
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     slug = models.SlugField(unique=True, blank=False, null=False)
-    order = models.SmallIntegerField(null=True, blank=True, choices=ORDER)
+    order = models.SmallIntegerField(null=True, blank=True)
     allow_replies = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
 
