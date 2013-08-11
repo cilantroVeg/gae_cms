@@ -40,13 +40,10 @@ class Category(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
-        if self.parent is None:
-            self.parent = self
-
         import re
         name = re.sub(r'\W+', ' ', self.name)
         slug_1 = slugify(str(name))
-        slug_2 = slugify(str(self.parent.name) + ' ' + str(name))
+        slug_2 = slugify(str(name) + ' ' + str(int(time.time())))
 
         if self.id is not None:
             category_exists_1 = Category.objects.filter(slug=slug_1, language=self.language).exclude(id=self.id).count()
