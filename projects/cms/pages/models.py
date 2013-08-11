@@ -6,6 +6,8 @@ from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
 import time
 from users.models import *
+from google.appengine.api import memcache
+
 
 
 class Language(models.Model):
@@ -40,8 +42,8 @@ class Category(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
-        if self.language is None:
-            self.language, created = Language.objects.get_or_create(code='en')
+        memcache.delete('categories')
+
         import re
         name = re.sub(r'\W+', ' ', self.name)
         slug_1 = slugify(str(name))
@@ -101,6 +103,7 @@ class Page(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
+        memcache.delete('pages')
         import re
         title = re.sub(r'\W+', ' ', self.title)
         slug_1 = slugify(str(title))

@@ -14,7 +14,11 @@ def categories(request):
                 parent_id = category.parent.id
             else:
                 parent_id = None
-            categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': category.language.code, 'parent_id': parent_id})
+            if category.language is None:
+                language_code = 'en'
+            else:
+                language_code = category.language.code
+            categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id})
         memcache.add('categories', categories_array)
 
     show_pages = Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
@@ -25,7 +29,11 @@ def categories(request):
             pages = Page.objects.all()
             pages_array = []
             for page in pages:
-                pages_array.append({'title': page.title, 'slug': page.slug, 'category_id': page.category.id, 'language_code': page.category.language.code})
+                if page.category.language is None:
+                    language_code = 'en'
+                else:
+                    language_code = page.category.language.code
+                pages_array.append({'title': page.title, 'slug': page.slug, 'category_id': page.category.id, 'language_code': language_code})
             memcache.add('pages', pages_array)
     else:
         pages = None
