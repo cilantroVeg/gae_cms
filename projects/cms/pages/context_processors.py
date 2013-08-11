@@ -16,14 +16,14 @@ def categories(request):
         categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id})
 
     # ...
-    show_pages = "False" # Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
-    if show_pages.value in ['True', '1', 'true']:
+    show_pages = True # Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
+    if show_pages: #.value in ['True', '1', 'true']:
         pages = Page.objects.all()
         pages_array = []
         for page in pages:
             pages_array.append({'title': page.title, 'slug': page.slug, 'category_id': page.category.id, 'language_code': page.category.language.code})
     else:
-        pages = None
+        pages_array = None
     return {'categories': categories, 'pages': pages_array}
 
 # from google.appengine.api import memcache
