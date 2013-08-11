@@ -4,15 +4,13 @@
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" afterPath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376200407075" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376203577856" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376150653470" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
@@ -46,7 +44,7 @@
     <file path="/template.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376203347756" ignored="false" />
     <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376187640283" ignored="false" />
     <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195997848" ignored="false" />
-    <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376203118131" ignored="false" />
+    <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376205179959" ignored="false" />
     <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376200889818" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,21 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="context_processors.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="123" selection-start="1124" selection-end="1137" vertical-scroll-proportion="-7.647059">
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="38" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.29360464">
+            <state line="22" column="58" selection-start="900" selection-end="900" vertical-scroll-proportion="0.472103">
               <folding />
             </state>
           </provider>
@@ -119,8 +106,8 @@
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
       </list>
     </option>
   </component>
@@ -223,14 +210,6 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.2 (/usr/local/bin/python-32) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -247,154 +226,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,22 +260,6 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -453,6 +268,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-nonrel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -697,7 +516,11 @@
       <created>1376200408747</created>
       <updated>1376200408747</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Template Footer Structure OK&#10;Caching OK">
+      <created>1376203581551</created>
+      <updated>1376203581551</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -766,7 +589,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template Footer Structure OK&#10;Caching OK" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -793,6 +616,7 @@
     <MESSAGE value="Footer OK + Categories OK" />
     <MESSAGE value="Initial Data OK" />
     <MESSAGE value="Initial OK" />
+    <MESSAGE value="Template Footer Structure OK&#10;Caching OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -902,18 +726,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="123" selection-start="1124" selection-end="1137" vertical-scroll-proportion="-7.647059">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="38" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.29360464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="58" selection-start="900" selection-end="900" vertical-scroll-proportion="0.472103">
           <folding />
         </state>
       </provider>
