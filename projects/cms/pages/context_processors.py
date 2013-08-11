@@ -16,7 +16,7 @@ def categories(request):
                 parent_id = None
             categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': category.language.code, 'parent_id': parent_id})
         memcache.add('categories', categories_array)
-    ...
+
     show_pages = Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
     if show_pages.value in ['True', '1', 'true']:
         if memcache.get('pages') is not None:
