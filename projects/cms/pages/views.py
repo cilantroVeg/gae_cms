@@ -30,7 +30,7 @@ def category_form(request, id=None):
 # ...
 def category_formset(request):
     if is_admin_user(request):
-        CategoryFormSet = modelformset_factory(Category, exclude=("slug", ))
+        CategoryFormSet = modelformset_factory(Category, exclude="slug", extra=0)
 
         if request.POST:
             formset = CategoryFormSet(request.POST)
