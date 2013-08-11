@@ -418,7 +418,8 @@ def page_view(request, language, slug):
 def category_view(request, language, slug):
     language = get_object_or_404(Language, code=language)
     category = get_object_or_404(Category, slug=slug, language_id=language.id)
-    return render_to_response("pages/category_view.html", {"category": category,
+    pages = Page.objects.filter(category=category)
+    return render_to_response("pages/category_view.html", {"category": category, "pages":pages,
                                                            'is_logged_in': is_logged_in(request)},
                               context_instance=RequestContext(request))
 
