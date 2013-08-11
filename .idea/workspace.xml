@@ -10,12 +10,12 @@
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376242588280" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376242741897" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376242061062" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
-    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206423079" ignored="false" />
+    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243318155" ignored="false" />
     <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376199545122" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376151762023" ignored="false" />
     <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826264968" ignored="false" />
@@ -85,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="110" selection-start="908" selection-end="952" vertical-scroll-proportion="0.5898876">
+            <state line="43" column="78" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -96,19 +96,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <file leaf-file-name="initial_data.yaml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="118" column="2" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.9241774">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial_data.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="21" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="181" selection-end="224" vertical-scroll-proportion="-3.6">
+              <folding>
+                <element signature="e#61#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="379" selection-end="405" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
@@ -142,12 +152,13 @@
         <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/secondary_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
       </list>
     </option>
   </component>
@@ -364,6 +375,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/pages/fixtures" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/pages" />
       <recent name="$PROJECT_DIR$/projects/cms/static/css" />
       <recent name="$PROJECT_DIR$/projects/cms/static/spreadsheet" />
@@ -626,7 +638,11 @@
       <created>1376242589454</created>
       <updated>1376242589454</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Enable Cache">
+      <created>1376242743410</created>
+      <updated>1376242743410</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -730,13 +746,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="584" selection-end="823" vertical-scroll-proportion="0.34509203">
@@ -774,15 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1043" selection-end="1753" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="17" selection-start="467" selection-end="497" vertical-scroll-proportion="-11.25">
@@ -811,20 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="21" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="50" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
@@ -841,12 +827,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="181" selection-end="224" vertical-scroll-proportion="-3.6">
+          <folding>
+            <element signature="e#61#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="379" selection-end="405" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="110" selection-start="908" selection-end="952" vertical-scroll-proportion="0.5898876">
+        <state line="43" column="78" selection-start="1547" selection-end="1547" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="2" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.9241774">
+          <folding />
         </state>
       </provider>
     </entry>
