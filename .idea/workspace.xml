@@ -4,19 +4,20 @@
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" afterPath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376191048689" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376192748027" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376150653470" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
-    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376192458658" ignored="false" />
+    <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195599822" ignored="false" />
     <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376191148654" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376151762023" ignored="false" />
     <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375826264968" ignored="false" />
@@ -42,9 +43,9 @@
     <file path="/page_form.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376111509970" ignored="false" />
     <file path="/category_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376151734857" ignored="false" />
     <file path="/category_formset.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376165689432" ignored="false" />
-    <file path="/template.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376188017942" ignored="false" />
+    <file path="/template.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376196116386" ignored="false" />
     <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376187640283" ignored="false" />
-    <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376191917557" ignored="false" />
+    <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195997848" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +77,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="446" column="30" selection-start="17383" selection-end="17383" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#26#102#0" expanded="true" />
-              </folding>
+            <state line="10" column="17" selection-start="326" selection-end="353" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,16 +86,34 @@
       <file leaf-file-name="initial_data.yaml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="17" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.0">
+            <state line="106" column="16" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="52" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4244186">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_processors.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="37" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="73" selection-start="3921" selection-end="3921" vertical-scroll-proportion="0.4522472">
+            <state line="38" column="65" selection-start="981" selection-end="986" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -130,14 +147,14 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/css/style.css" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_view.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
       </list>
     </option>
   </component>
@@ -286,6 +303,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -568,7 +633,11 @@
       <created>1376191050262</created>
       <updated>1376191050262</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Initial Data OK">
+      <created>1376192750454</created>
+      <updated>1376192750454</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -696,20 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="25" selection-start="3344" selection-end="3344" vertical-scroll-proportion="-20.541666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="584" selection-end="823" vertical-scroll-proportion="0.34509203">
@@ -754,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="17" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -770,19 +818,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="446" column="30" selection-start="17383" selection-end="17383" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
+        <state line="10" column="17" selection-start="326" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="73" selection-start="3921" selection-end="3921" vertical-scroll-proportion="0.4522472">
+        <state line="38" column="65" selection-start="981" selection-end="986" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="16" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="52" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4244186">
+          <folding />
         </state>
       </provider>
     </entry>

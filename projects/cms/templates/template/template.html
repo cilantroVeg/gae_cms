@@ -78,12 +78,12 @@
         </div>
         <div id="footer-categories">
         {% for main_category in categories %}
-            {% if main_category.parent == None %}
+            {% if main_category.parent.name == 'Root' %}
             <div id="footer-div">
-               <a href="/en/c/{{main_category.slug}}"><h2>{{ main_category.name }}</h2></a></a>
+               <a href="/{{main_category.language.code}}/c/{{main_category.slug}}"><h2>{{ main_category.name }}</h2></a></a>
                 {% for sub_category in categories %}
                     {% if sub_category.parent == main_category %}
-                        <a href="/en/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                        <a href="/{{sub_category.language.code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
                         <br />
                     {% endif %}
                 {% endfor %}

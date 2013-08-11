@@ -25,18 +25,18 @@ class Language(models.Model):
 # Create your models here.
 class Category(models.Model):
     ORDER = (
-    ('1', '1'),
-    ('2', '2'),
-    ('3', '3'),
-    ('3', '3'),
-    ('3', '3'),
-    ('3', '3'),
-    ('3', '3'),
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('3', '3'),
+        ('3', '3'),
+        ('3', '3'),
+        ('3', '3'),
 
     )
 
     id = models.AutoField(primary_key=True)
-    language = models.ForeignKey(Language, null=False, blank=False)
+    language = models.ForeignKey(Language, null=True, blank=False)
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     slug = models.SlugField(unique=True, blank=False, null=False)
@@ -53,8 +53,10 @@ class Category(models.Model):
         if self.parent is None:
             self.parent = self
 
-        slug_1 = slugify(str(self.name))
-        slug_2 = slugify(str(self.parent.name) + ' ' + str(self.name))
+        import re
+        name = re.sub(r'\W+', ' ', self.name)
+        slug_1 = slugify(str(name))
+        slug_2 = slugify(str(self.parent.name) + ' ' + str(name))
 
         if self.id is not None:
             category_exists_1 = Category.objects.filter(slug=slug_1, language=self.language).exclude(id=self.id).count()
@@ -110,8 +112,10 @@ class Page(models.Model):
 
     # ...
     def save(self, *args, **kwargs):
-        slug_1 = slugify(str(self.title))
-        slug_2 = slugify(str(self.category.name) + ' ' + str(self.title))
+        import re
+        title = re.sub(r'\W+', ' ', self.title)
+        slug_1 = slugify(str(title))
+        slug_2 = slugify(str(self.category.name) + ' ' + str(title))
 
         if self.id is not None:
             page_exists_1 = Page.objects.filter(slug=slug_1).exclude(id=self.id).count()
