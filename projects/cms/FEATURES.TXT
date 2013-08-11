@@ -1,8 +1,8 @@
-- Add Menu Structure
-- Site Map
+- CSS Templates
 - Frontpage Structure
 - Basic API
-- CSS Templates
+- Blueimp
+- Inline Editing
 
 - Bible API
 - User Photo

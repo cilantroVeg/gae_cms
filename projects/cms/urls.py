@@ -59,6 +59,8 @@ urlpatterns = patterns('',
     url(r'^spreadsheet/edit/(?P<id>\d+)/$', 'pages.views.spreadsheet_form'),
     url(r'^spreadsheet/delete/(?P<id>\d+)/$', 'pages.views.spreadsheet_delete'),
     url(r'^spreadsheets/', 'pages.views.spreadsheet_list'),
+
+    url(r'^sitemap/', 'pages.views.sitemap'),
     
     
     url(r'^user/new/$', 'users.views.user_form'),

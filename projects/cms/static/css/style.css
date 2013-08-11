@@ -415,7 +415,7 @@ a.my_requestinfo:hover {
     margin-top: 21px;
 }
 
-#footer-div {
+.footer-div {
     float: left;
     clear: none;
     width: 20%;

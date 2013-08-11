@@ -79,8 +79,8 @@
         <div id="footer-categories">
         {% for main_category in categories %}
             {% if main_category.name != 'Root' %}
-            <div id="footer-div">
-               <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h2>{{ main_category.name }}</h2></a></a>
+            <div class="footer-div">
+               <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h5>{{ main_category.name }}</h5></a></a>
                 {% for page in pages %}
                     {% if page.category_id == main_category.id %}
                         <a href="/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
@@ -96,6 +96,8 @@
             </div>
             {% endif %}
         {% endfor %}
+            <div class="footer-div"><h5>Site map</h5>
+            <a href="/sitemap">Site map</a></div>
         </div>
         <div id="footerCopyright">
             <p>
