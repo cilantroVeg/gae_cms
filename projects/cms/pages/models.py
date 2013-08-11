@@ -26,7 +26,7 @@ class Language(models.Model):
 class Category(models.Model):
     ORDER = ((1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'), (6, '6'), (7, '7'))
     id = models.AutoField(primary_key=True)
-    language = models.ForeignKey(Language, null=True, blank=True)
+    language = models.ForeignKey(Language, null=False, blank=False, default=Language.objects.get(code="en").id)
     name = models.CharField(max_length=256, null=False, blank=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     slug = models.SlugField(unique=True, blank=False, null=False)
