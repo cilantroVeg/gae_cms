@@ -10,7 +10,7 @@
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206428401" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206587822" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376150653470" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
@@ -44,7 +44,7 @@
     <file path="/template.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376203347756" ignored="false" />
     <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376187640283" ignored="false" />
     <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195997848" ignored="false" />
-    <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376205179959" ignored="false" />
+    <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206692793" ignored="false" />
     <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376200889818" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
       <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="58" selection-start="900" selection-end="900" vertical-scroll-proportion="0.472103">
+            <state line="15" column="128" selection-start="551" selection-end="551" vertical-scroll-proportion="0.32188842">
               <folding />
             </state>
           </provider>
@@ -609,7 +609,11 @@
       <created>1376206429796</created>
       <updated>1376206429796</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Disable Cache">
+      <created>1376206589487</created>
+      <updated>1376206589487</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -678,7 +682,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template Footer Structure OK&#10;Caching OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disable Cache" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -706,6 +710,7 @@
     <MESSAGE value="Initial Data OK" />
     <MESSAGE value="Initial OK" />
     <MESSAGE value="Template Footer Structure OK&#10;Caching OK" />
+    <MESSAGE value="Disable Cache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -824,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="58" selection-start="900" selection-end="900" vertical-scroll-proportion="0.472103">
+        <state line="15" column="128" selection-start="551" selection-end="551" vertical-scroll-proportion="0.32188842">
           <folding />
         </state>
       </provider>

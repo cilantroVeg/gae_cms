@@ -9,7 +9,11 @@ def categories(request):
             parent_id = category.parent.id
         else:
             parent_id = None
-        categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': category.language.code, 'parent_id': parent_id})
+        if category.language is not None:
+            language_code = category.language.code
+        else:
+            language_code = 'en'
+        categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id})
 
     # ...
     show_pages = Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
