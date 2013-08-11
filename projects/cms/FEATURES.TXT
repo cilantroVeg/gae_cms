@@ -28,3 +28,7 @@ API Integration
 Stats New Relic
 
 Google Analytics
+
+
+README
+python manage.py remote loaddata initial_data.yaml
