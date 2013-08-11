@@ -186,7 +186,7 @@ h6 {
 #footer {
     width: 100%;
     margin: -200px auto 0;
-    height: 200px;
+    min-height: 200px;
     background: #0c5499;
     position: relative;
 }
@@ -399,21 +399,30 @@ a.my_requestinfo:hover {
     position: absolute;
 }
 
-#footerColumn1,#footerColumn2 ,#footerColumn3,#footerColumn4,#footerColumn5 {
+#footer-description{
     float: left;
     clear: none;
     width: 30%;
     padding: 7px;
     margin-top: 21px;
 }
-
-#footerColumn2 ,#footerColumn3,#footerColumn4,#footerColumn5 {
+#footer-categories{
     float: left;
+    left: 30%;
     clear: none;
-    width: 15%;
+    width: 60%;
     padding: 7px;
     margin-top: 21px;
 }
+
+#footer-div {
+    float: left;
+    clear: none;
+    width: 20%;
+    padding: 7px;
+    margin-top: 21px;
+}
+
 
 
 

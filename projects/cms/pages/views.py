@@ -438,3 +438,11 @@ def debug(key, value):
     logging.info(key)
     logging.info(value)
     logging.info("*******************************")
+
+def delete_thirty(model_name):
+    from django.db import transaction
+    query_set = model_name.objects.filter()[:21]
+    for item in query_set:
+        item.delete()
+    with transaction.commit_on_success():
+        delete_thirty(model_name)

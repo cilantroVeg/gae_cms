@@ -69,23 +69,25 @@
 
 <footer id="footer">
     <div id="footerInner">
-        <div id="footerColumn1">
+        <div id="footer-description">
             <h3>{{ 'WEBSITE_NAME'|get_record}}</h3>
 
             <p>
                 {{ 'WEBSITE_DESCRIPTION'|get_record}}
             </p>
         </div>
-        <div id="footerColumn2">
+        <div id="footer-categories">
         {% for main_category in categories %}
             {% if main_category.parent == None %}
-                <h3> {{ main_category.name }} </h3>
+            <div id="footer-div">
+               <a href="/en/c/{{main_category.slug}}"><h2>{{ main_category.name }}</h2></a></a>
                 {% for sub_category in categories %}
                     {% if sub_category.parent == main_category %}
-                        <a href="#">{{ sub_category.name }}</a>
+                        <a href="/en/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
                         <br />
                     {% endif %}
                 {% endfor %}
+            </div>
             {% endif %}
         {% endfor %}
         </div>
