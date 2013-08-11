@@ -16,7 +16,7 @@ def categories(request):
         categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id})
 
     # ...
-    show_pages = False # Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
+    show_pages = "False" # Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
     if show_pages.value in ['True', '1', 'true']:
         pages = Page.objects.all()
         pages_array = []

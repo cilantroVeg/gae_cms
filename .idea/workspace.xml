@@ -10,7 +10,7 @@
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206715041" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376206847540" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376150653470" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
@@ -68,7 +68,7 @@
       <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="611" selection-end="611" vertical-scroll-proportion="0.38626608">
+            <state line="18" column="24" selection-start="613" selection-end="613" vertical-scroll-proportion="0.38626608">
               <folding />
             </state>
           </provider>
@@ -617,7 +617,11 @@
       <created>1376206716319</created>
       <updated>1376206716319</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Disable Cache">
+      <created>1376206849113</created>
+      <updated>1376206849113</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -833,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="611" selection-end="611" vertical-scroll-proportion="0.38626608">
+        <state line="18" column="24" selection-start="613" selection-end="613" vertical-scroll-proportion="0.38626608">
           <folding />
         </state>
       </provider>
