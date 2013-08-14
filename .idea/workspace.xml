@@ -7,12 +7,12 @@
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376459994072" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376460114863" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376449181999" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
@@ -51,7 +51,7 @@
     <file path="/secondary_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243840352" ignored="false" />
     <file path="/sitemap.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246505071" ignored="false" />
     <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376280717841" ignored="false" />
-    <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376459823713" ignored="false" />
+    <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376487935177" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342666679" ignored="false" />
     <file path="/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342614744" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/templates/hannibal/character_tracker.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376344180025" ignored="false" />
@@ -80,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template-magicangel.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="template-magicangel.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="66" selection-start="1995" selection-end="1995" vertical-scroll-proportion="-1.8367347">
+            <state line="118" column="1" selection-start="5452" selection-end="5452" vertical-scroll-proportion="2.63142">
               <folding />
             </state>
           </provider>
@@ -127,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.4860051">
+            <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,8 +188,8 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
       </list>
     </option>
   </component>
@@ -800,7 +800,11 @@
       <created>1376459996259</created>
       <updated>1376459996260</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="CSS">
+      <created>1376460116511</created>
+      <updated>1376460116511</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1015,16 +1019,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="66" selection-start="1995" selection-end="1995" vertical-scroll-proportion="-1.8367347">
+        <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.4860051">
+        <state line="118" column="1" selection-start="5452" selection-end="5452" vertical-scroll-proportion="2.63142">
           <folding />
         </state>
       </provider>
