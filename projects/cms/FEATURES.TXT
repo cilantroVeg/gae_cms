@@ -1,4 +1,5 @@
 - CSS Templates
+SMALLER FRONT SCREEN
 - Frontpage Structure
 - Basic API
 - Blueimp

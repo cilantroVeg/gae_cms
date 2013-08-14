@@ -12,7 +12,7 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="{{ STATIC_URL }}template/maf/css/main.css">
     <link href="{{ STATIC_URL }}template/maf/css/font-awesome.css" rel="stylesheet">
-    <script src="{{ STATIC_URL }}template/maf/js/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/jquery.easing.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/jquery.scrollto.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/slabtext.min.js"></script>
@@ -47,8 +47,13 @@
             <div id="top-nav" class="">
                 <ul id="fixed-nav">
                     <li class="current"><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
+                    {% for main_category in categories %}
+                    {% if main_category.name != 'Root' %}
+                        {% if main_category.parent_id == 1  %}
+                        <li><a href="#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                    {% endfor %}
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -297,9 +302,9 @@
                     <h4>Socialize With Us</h4>
 
                     <div class="social">
-                        <a href="#fb"><i class="icon-facebook-sign"></i></a>
-                        <a href="#fb"><i class="icon-twitter-sign"></i></a>
-                        <a href="#fb"><i class="icon-google-plus-sign"></i></a>
+                        <a href="#fb"><i class="twitter_icon"></i></a>
+                        <a href="#fb"><i class="facebook_icon"></i></a>
+                        <a href="#fb"><i class="googleplus_icon"></i></a>
                     </div>
 
                 </div>
@@ -310,30 +315,42 @@
 </div>
 <!-- End Contact Section -->
 <div id="footer">
-     <div id="footer-categories">
+    <div id="footer-description">
+        <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+        <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+    </div>
+    <div id="footer-categories">
         {% for main_category in categories %}
-            {% if main_category.name != 'Root' %}
+        {% if main_category.name != 'Root' %}
+
+            {% if main_category.parent_id == 1  %}
             <div class="footer-div">
-               <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h5>{{ main_category.name }}</h5></a></a>
+                <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
                 {% for page in pages %}
                     {% if page.category_id == main_category.id %}
-                        <a href="/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
-                        <br />
+                    <a href="/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                    <br />
                     {% endif %}
                 {% endfor %}
                 {% for sub_category in categories %}
                     {% if sub_category.parent_id == main_category.id %}
-                        <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
-                        <br />
+                    <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                    <br />
                     {% endif %}
                 {% endfor %}
             </div>
             {% endif %}
+
+        {% endif %}
         {% endfor %}
-            <div class="footer-div"><h5>Site map</h5>
-            <a href="/sitemap">Site map</a></div>
+        <div class="footer-div">
+            <h4>Site map</h4>
+            <a href="/sitemap">Site map</a>
         </div>
-   <b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b>
+    </div>
+    <div id="copyright">
+    <b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b>
+    </div>
 </div>
 </body>
 </html>
