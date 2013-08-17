@@ -1,4 +1,4 @@
-{% extends "template/template-magicangel-page.html" %}
+{% extends "template/template-magicangel.html" %}
 
 {% block title %}Enter{% endblock %}
 {% block js %}
@@ -20,7 +20,7 @@
         <p class="pintro">
             If you do not already have an existing account please sign up.
         </p>
-        <form id="create_user_form" name="create_user_form" action="/process_create_account/" method="post">
+        <form id="create_user_form" name="create_user_form" action="/process_create_account/" method="post" style="display:none;">
             {% csrf_token %}
             <label for="email">Email</label>
             <input type="text" id="email" name="email"/>
