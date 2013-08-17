@@ -12,16 +12,40 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="{{ STATIC_URL }}template/maf/css/main.css">
     <link href="{{ STATIC_URL }}template/maf/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/jquery.easing.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/jquery.scrollto.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/slabtext.min.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/jquery.nav.js"></script>
     <script src="{{ STATIC_URL }}template/maf/js/main.js"></script>
+    <script src="{{ STATIC_URL }}template/maf/js/admin_panel.js"></script>
+
     {% block js %}{% endblock %}
 </head>
 <!-- To change color change the class "color-1" to "color-2, color-3 ... color-6" -->
+
 <body class="home color-2">
+{% if is_admin %}
+    <div id="menu-tab"></div>
+    <div id="menu-container">
+        <div id="menu-container-top"></div>
+        <div id="menu-container-middle">
+            <ul id="menu">
+            <li><a href="/languages/">Languages</a></li>
+            <li><a href="/categories/">Categories</a></li>
+            <li><a href="/pages/">Pages</a></li>
+            <li><a href="/records/">Records</a></li>
+            <li><a href="/users/">Users</a></li>
+            <li><a href="/spreadsheets/">Spreadsheets</a></li>
+            <li><a href="/images/">Images</a></li>
+        </ul>
+        </div>
+
+        <div id="menu-container-footer"></div>
+    </div>
+{% endif %}
 <div id="microdata">
     <div itemscope itemtype="http://data-vocabulary.org/Organization">
         <h1 itemprop="name">{{ 'WEBSITE_NAME'|get_record}}</h1>
@@ -48,9 +72,9 @@
                     <li class="current"><a href="#home">Home</a></li>
                     {% for main_category in categories %}
                     {% if main_category.name != 'Root' %}
-                        {% if main_category.parent_id == 1  %}
-                        <li><a href="#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                        {% endif %}
+                    {% if main_category.parent_id == 1 %}
+                    <li><a href="#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                     <li><a href="#contact">Contact Us</a></li>
@@ -74,45 +98,54 @@
     </div>
 </div>
 {% for main_category in categories %}
-    {% if main_category.name != 'Root' %}
-        {% if main_category.parent_id == 1  %}
-            <div class="{% cycle 'section' 'section-alt'%}" id="{{main_category.slug}}">
-                <div class="container">
-                    <div class="content">
-                        <div class="row">
-                            <div class="span12">
-                                <div class="title">
-                                        <h2>{{ main_category.name }}</h2>
-                                    <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-                                    <p>title</p>
-                                </div>
-                                <p class="text-center">
-                                    category content | query page
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="span4 i-block">
-                            <i class="icon-mobile-phone"></i>
-                            <h3>Block-A</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                            </div>
-                            <div class="span4 i-block">
-                            <i class="icon-star"></i>
-                            <h3>Block-B</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                            </div>
-                            <div class="span4 i-block">
-                            <i class="icon-thumbs-up-alt"></i>
-                            <h3>Block-C</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                            </div>
-                        </div>
+{% if main_category.name != 'Root' %}
+{% if main_category.parent_id == 1 %}
+<div class="{% cycle 'section' 'section-alt'%}" id="{{main_category.slug}}">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="span12">
+                    <div class="title">
+                        <h2>{{ main_category.name }}</h2>
+
+
+                        {% block content %}{% endblock %}
+                        <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+                        <p>title</p>
                     </div>
+                    <p class="text-center">
+                        category content | query page
+                    </p>
                 </div>
             </div>
-        {% endif %}
-    {% endif %}
+            <div class="row">
+                <div class="span4 i-block">
+                    <i class="icon-mobile-phone"></i>
+
+                    <h3>Block-A</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
+                </div>
+                <div class="span4 i-block">
+                    <i class="icon-star"></i>
+
+                    <h3>Block-B</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
+                </div>
+                <div class="span4 i-block">
+                    <i class="icon-thumbs-up-alt"></i>
+
+                    <h3>Block-C</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endif %}
 {% endfor %}
 
 
@@ -162,29 +195,30 @@
 <div id="footer">
     <div id="footer-description">
         <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+
         <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
     </div>
     <div id="footer-categories">
         {% for main_category in categories %}
         {% if main_category.name != 'Root' %}
 
-            {% if main_category.parent_id == 1  %}
-            <div class="footer-div">
-                <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
-                {% for page in pages %}
-                    {% if page.category_id == main_category.id %}
-                    <a href="/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
-                    <br />
-                    {% endif %}
-                {% endfor %}
-                {% for sub_category in categories %}
-                    {% if sub_category.parent_id == main_category.id %}
-                    <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
-                    <br />
-                    {% endif %}
-                {% endfor %}
-            </div>
+        {% if main_category.parent_id == 1 %}
+        <div class="footer-div">
+            <a href="/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+            {% for page in pages %}
+            {% if page.category_id == main_category.id %}
+            <a href="/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
+            <br/>
             {% endif %}
+            {% endfor %}
+            {% for sub_category in categories %}
+            {% if sub_category.parent_id == main_category.id %}
+            <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+            <br/>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
 
         {% endif %}
         {% endfor %}
@@ -194,7 +228,7 @@
         </div>
     </div>
     <div id="copyright">
-    <b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b>
+        <b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b>
     </div>
 </div>
 </body>

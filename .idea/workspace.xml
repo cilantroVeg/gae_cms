@@ -5,23 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/btn-slide.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/footer-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/handle-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/header-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376687268790" ignored="false" />
-    <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376449181999" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376761251739" ignored="false" />
+    <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376713891914" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619435403" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
     <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376244555688" ignored="false" />
     <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246388742" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246350787" ignored="false" />
-    <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376459779436" ignored="false" />
+    <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376731667104" ignored="false" />
     <file path="/access_keys.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657325186" ignored="false" />
     <file path="/Library/Python/2.7/site-packages/gdata/codesearch/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041542" ignored="false" />
     <file path="/Library/Python/2.7/site-packages/gdata/analytics/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041542" ignored="false" />
@@ -45,14 +54,14 @@
     <file path="/category_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376151734857" ignored="false" />
     <file path="/category_formset.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376199851920" ignored="false" />
     <file path="/template.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246850903" ignored="false" />
-    <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376460103639" ignored="false" />
+    <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376760353379" ignored="false" />
     <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195997848" ignored="false" />
     <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376453519269" ignored="false" />
     <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376200889818" ignored="false" />
     <file path="/secondary_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243840352" ignored="false" />
     <file path="/sitemap.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246505071" ignored="false" />
     <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376280717841" ignored="false" />
-    <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376487935177" ignored="false" />
+    <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376760520165" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342666679" ignored="false" />
     <file path="/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342614744" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/templates/hannibal/character_tracker.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376344180025" ignored="false" />
@@ -62,6 +71,8 @@
     <file path="/case_explorer.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376343229239" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/templates/hannibal/case_explorer_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376344148435" ignored="false" />
     <file path="/case_explorer_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376343567839" ignored="false" />
+    <file path="/admin_panel.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376759266150" ignored="false" />
+    <file path="/main.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376755015751" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,45 +95,16 @@
       <file leaf-file-name="template-magicangel.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="54" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.5521472">
+            <state line="34" column="12" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.022222223">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/main.js">
+      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="11" selection-start="676" selection-end="679" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="context_processors.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1376453569000" expanded="true" signature="101:1590" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initial_data.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="6" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+            <state line="2" column="17" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,27 +113,23 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1376460108000" expanded="true" signature="6564:6928" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.scrollto.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.scrollto.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="630" column="18" selection-start="13038" selection-end="13038" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
+      <file leaf-file-name="handle-bg.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/images/handle-bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_panel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2432" selection-end="2624" vertical-scroll-proportion="0.0">
+            <state line="18" column="14" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,22 +153,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/fixtures/secondary_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/css/style.css" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
-        <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/switcher.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
       </list>
     </option>
   </component>
@@ -321,174 +299,6 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -513,11 +323,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/images" />
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template/maf/css" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/pages" />
-      <recent name="$PROJECT_DIR$/projects/cms/pages/fixtures" />
     </key>
   </component>
   <component name="RunManager">
@@ -809,7 +619,11 @@
       <created>1376488387939</created>
       <updated>1376488387939</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="CSS">
+      <created>1376687313982</created>
+      <updated>1376687313983</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -840,7 +654,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29839882" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30713245" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -934,102 +748,90 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/registration/password_change_done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="0" selection-end="50" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django-nonrel/django-dbindexer/dbindexer/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="147" selection-end="147" vertical-scroll-proportion="0.04366812" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2432" selection-end="2624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="6" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1376453569000" expanded="true" signature="101:1590" placeholder="..." />
-          </folding>
-        </state>
+        <state line="8" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.scrollto.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="11" selection-start="676" selection-end="679" vertical-scroll-proportion="0.0">
+        <state line="31" column="11" selection-start="676" selection-end="679" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="119" selection-end="135" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-interpegasus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="16" selection-start="2155" selection-end="2188" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="0" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.44395924" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.105337076" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="1" selection-start="6928" selection-end="6928" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1376460108000" expanded="true" signature="6564:6928" placeholder="{...}" />
-          </folding>
+        <state line="630" column="18" selection-start="13038" selection-end="13038" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/images/handle-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="54" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.5521472">
+        <state line="34" column="12" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.022222223">
           <folding />
         </state>
       </provider>

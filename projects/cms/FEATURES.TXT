@@ -1,6 +1,7 @@
-- CSS Templates
-SMALLER FRONT SCREEN
 - Frontpage Structure
+- CSS Templates
+- Keep content simple.
+- Detect Language. English default.
 - Basic API
 - Blueimp
 - Inline Editing
