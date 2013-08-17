@@ -86,12 +86,12 @@
 </div>
 <!-- End Header -->
 <!-- Big Full screen Banner -->
-<div class="hero bg-fixed bg-color" id="home">
+<div class="content" id="home">
     <div class="slogan">
         <div class="vcenter container">
             <div class="row">
                 <div class="span12">
-                    <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+                                    {% block content %}{% endblock %}
                 </div>
             </div>
         </div>
@@ -110,6 +110,9 @@
                         <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
                         <p>Read more</p>
                     </div>
+                    <p class="text-center">
+
+                    </p>
                 </div>
             </div>
 
@@ -119,7 +122,7 @@
                 <div class="span4 i-block">
                     <i class="icon-mobile-phone"></i>
                     <hr/>
-                    <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                    <a href="/{{page.language_code}}/{{page.slug}}">{{ sub_category.name }}</a>
                     {% endif %}
                 </div>
                 {% endfor %}

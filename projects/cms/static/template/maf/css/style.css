@@ -365,12 +365,19 @@ div#top-nav #fixed-nav li.current a {
 .i-block{
     text-align: center;
 }
-.i-block i{display: inline-block;margin-bottom: 24px;font-size: 6em; color: #a1a1a1}
+.i-block i{display: inline-block;margin-bottom: 24px;font-size: 6em; color: #a1a1a1;}
+.sun{
+    background-image: url('/static/images/s.png');
+    clear:both;
+    display:block;
+    background-repeat: no-repeat;
+}
 .i-block h3{ color: #a1a1a1;
     font-weight: bold;
     font-size: 1.8em;
     margin-top: 0px;
     margin-bottom: 14px;
+
 }
 /* Dividers ------------------------------------------ */
 .hr-small {
