@@ -1,3 +1,4 @@
+- Blocks
 - Frontpage Structure
 - CSS Templates
 - Keep content simple.
@@ -5,6 +6,7 @@
 - Basic API
 - Blueimp
 - Inline Editing
+- Memcache
 
 - Bible API
 - User Photo

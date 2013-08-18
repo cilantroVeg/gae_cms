@@ -266,6 +266,7 @@ body.color-6 #footer {
     top:0px;
     border-bottom: 1px solid #D6D6D6;
     width: 100%;
+    min-height:100px;
     background: rgba(255, 255, 255, 0.9);
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
@@ -282,6 +283,8 @@ height: 50px;
     margin-bottom: 0px;
     margin-left: 20px;
     float: left;
+    max-width: 280px;
+    text-align: center;
 }
 #logo a{
     color: #333;
@@ -292,13 +295,16 @@ height: 50px;
     margin-left: -12px;
 }
 div#top-nav{
-    margin-top: 13px;
+    top: 30px;
+    right: 50px;
+    position: absolute;
 }
 div#top-nav ul {
 
     font-family: 'Montserrat',  sans-serif;
     float: right;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
 div#top-nav #fluid-nav li, div#top-nav #fixed-nav li {
     display: inline-block;
@@ -527,6 +533,7 @@ hr.grey {
 
     }
 }
+
 @media (max-width: 480px) {
     #logo{
         font-size: 24px;
@@ -568,6 +575,7 @@ hr.grey {
 
 #copyright{
     clear:both;
+    text-align: center;
 }
 
 /* Social Icons*/
@@ -587,6 +595,16 @@ hr.grey {
     height: 60px;
     width: 60px;
     display: block;
+}
+
+.facebook_icon_small{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -143px -4px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-size: 100%;
 }
 
 .googleplus_icon{
@@ -622,7 +640,52 @@ hr.grey {
     background-position: -35px -170px;
     height: 35px;
     width: 80px;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+}
+
+.google_app_engine_icon
+{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -170px -231px;
+    height: 80px;
+    width: 110px;
+    display: inline-block;
+
+}
+
+.facebook_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -228px;
+    height: 25px;
+    width: 150px;
     display: block;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.twitter_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -256px;
+    height: 25px;
+    width: 150px;
+    display: block;
+    border-radius: 4px;
+}
+
+.google_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -283px;
+    height: 25px;
+    width: 150px;
+    display: block;
+    border-radius: 4px;
+
 }
 
 #menu-container {
@@ -674,3 +737,47 @@ hr.grey {
     background-image: url(/static/images/handle-bg.png);
     background-repeat: no-repeat;
 }
+
+#social li{
+    float: right;
+    list-style: none;
+    list-style-image: none;
+    margin:2px;
+}
+#social {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+    clear:none;
+    min-width: 300px;
+    height: 25px;
+    text-align: right;
+}
+
+#share{
+    margin-top: 25px;
+    margin-left: 25px;
+    float: left;
+    clear:none;
+    min-width: 150px;
+    height: 25px;
+}
+
+.addthis_default_style .at15t_compact {
+    margin-right: 4px;
+    background-image: none;
+    width: 0px;
+}
+
+.no-highlight{
+    padding-right: 7px;
+}
+
+#sign_up{
+    display: none;
+}
+
+#copyright a{
+    text-align: center;
+}
+
