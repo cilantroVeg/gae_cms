@@ -661,7 +661,7 @@ hr.grey {
     background-repeat: no-repeat;
     background-position: -2px -228px;
     height: 25px;
-    width: 150px;
+    width: 70px;
     display: block;
     overflow: hidden;
     border-radius: 4px;
@@ -672,7 +672,7 @@ hr.grey {
     background-repeat: no-repeat;
     background-position: -2px -256px;
     height: 25px;
-    width: 150px;
+    width: 70px;
     display: block;
     border-radius: 4px;
 }
@@ -682,7 +682,7 @@ hr.grey {
     background-repeat: no-repeat;
     background-position: -2px -283px;
     height: 25px;
-    width: 150px;
+    width: 70px;
     display: block;
     border-radius: 4px;
 

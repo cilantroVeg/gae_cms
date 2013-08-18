@@ -6,18 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/main.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376779404586" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376846683607" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376780031730" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
@@ -102,7 +98,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="655" column="0" selection-start="13642" selection-end="13642" vertical-scroll-proportion="0.6135266">
+            <state line="663" column="13" selection-start="13834" selection-end="13834" vertical-scroll-proportion="0.39613527">
               <folding />
             </state>
           </provider>
@@ -805,7 +801,11 @@
       <created>1376764401104</created>
       <updated>1376764401104</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="CSS">
+      <created>1376846686487</created>
+      <updated>1376846686488</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -832,6 +832,7 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,7 +847,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1047,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="655" column="0" selection-start="13642" selection-end="13642" vertical-scroll-proportion="0.6135266">
+        <state line="663" column="13" selection-start="13834" selection-end="13834" vertical-scroll-proportion="0.39613527">
           <folding />
         </state>
       </provider>
