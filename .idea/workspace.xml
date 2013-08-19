@@ -5,16 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/gallerControls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/galleryControls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/map.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/quotes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-hor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-vert.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/LICENSE-flexSlider.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/fixed-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/users/fixtures/initial_data.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/respond.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376889062179" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376890450046" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376890423056" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657359292" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
@@ -49,7 +76,7 @@
     <file path="/style.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376890069444" ignored="false" />
     <file path="/data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376195997848" ignored="false" />
     <file path="/context_processors.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376453519269" ignored="false" />
-    <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376200889818" ignored="false" />
+    <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376891375027" ignored="false" />
     <file path="/secondary_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243840352" ignored="false" />
     <file path="/sitemap.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246505071" ignored="false" />
     <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376280717841" ignored="false" />
@@ -104,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/static/css/style.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/switcher.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel-page.html" />
@@ -120,6 +146,7 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/users/fixtures/initial_data.yaml" />
       </list>
     </option>
   </component>
@@ -249,76 +276,6 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -360,11 +317,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/users" />
+      <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template/maf/css" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/images" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/template" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
@@ -691,7 +648,11 @@
       <created>1376889066127</created>
       <updated>1376889066127</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="CSS">
+      <created>1376890451027</created>
+      <updated>1376890451028</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -816,26 +777,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/helpers/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.localscroll-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="40" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" />
@@ -844,11 +785,6 @@
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="34" selection-start="2138" selection-end="2138" vertical-scroll-proportion="-11.911765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="218" selection-end="222" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/access_keys.py">
@@ -915,6 +851,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.4888887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/fixtures/initial_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="213" selection-end="213" vertical-scroll-proportion="0.23174158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6824034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="187" selection-end="198" vertical-scroll-proportion="0.1264045">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
