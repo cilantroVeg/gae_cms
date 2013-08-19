@@ -266,13 +266,13 @@ body.color-6 #footer {
     top:0px;
     border-bottom: 1px solid #D6D6D6;
     width: 100%;
-    min-height:100px;
+    min-height:70px;
+    position: fixed;
+    height: 50px;
     background: rgba(255, 255, 255, 0.9);
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
-position: fixed;
-height: 50px;
-    }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
+}
 #nav-button{
     display: none;
 }
@@ -283,7 +283,11 @@ height: 50px;
     margin-bottom: 0px;
     margin-left: 20px;
     float: left;
-    max-width: 280px;
+    max-width: 200px;
+    text-align: center;
+}
+h2#logo{
+    font-size: 23px;
     text-align: center;
 }
 #logo a{
@@ -295,7 +299,7 @@ height: 50px;
     margin-left: -12px;
 }
 div#top-nav{
-    top: 30px;
+    top: 5px;
     right: 50px;
     position: absolute;
 }
@@ -493,7 +497,7 @@ hr.grey {
     }
     #logo{
         width: 100%;
-        font-size: 26px;
+        font-size: 18px;
         margin-top: 8px;
         text-align: center;
     }
@@ -738,30 +742,46 @@ hr.grey {
     background-repeat: no-repeat;
 }
 
+
+
+#social-container{
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 190px;
+    max-height: 150px;
+    float: left;
+}
+
+#social-container hr{
+    clear: both;
+    width: 90%;
+    text-align: center;
+    margin:3px;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+#share,#social {
+    padding: 2px;
+    float:left;
+    margin-left: 7px;
+    min-width: 190px;
+    height: 30px;
+    text-align: center;
+}
+#share{
+    height: 20px;
+    margin-left: 14px;
+}
 #social li{
-    float: right;
+    float: left;
     list-style: none;
     list-style-image: none;
     margin:2px;
-}
-#social {
-    top: 10px;
-    right: 50px;
-    position: absolute;
-    clear:none;
-    min-width: 300px;
-    height: 25px;
-    text-align: right;
+
 }
 
-#share{
-    margin-top: 25px;
-    margin-left: 25px;
-    float: left;
-    clear:none;
-    min-width: 150px;
-    height: 25px;
-}
 
 .addthis_default_style .at15t_compact {
     margin-right: 4px;
@@ -777,7 +797,16 @@ hr.grey {
     display: none;
 }
 
-#copyright a{
-    text-align: center;
+#copyright li{
+    width: 30%;
+    list-style: none;
+    float: left;
+    clear: none;
+    height: 25px;
 }
 
+#footer-clear{
+    height: 50px;
+    clear: both;
+    width: 100%;
+}

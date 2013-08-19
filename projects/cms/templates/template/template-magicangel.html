@@ -65,39 +65,39 @@
         <div class="row">
             <i id="nav-button" class="icon-circle-arrow-down"></i>
 
-            <h2 id="logo"><a href="/"><span class="highlight">Magic Angel</span> <span class="no-highlight">Foundation</span></a></h2>
+            <h2 id="logo"><a href="/"><span class="highlight">MAGIC ANGEL</span> <span class="no-highlight">FOUNDATION</span></a></h2>
 
-            <div id="share">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                    <a class="addthis_button_facebook"></a>
-                    <a class="addthis_button_twitter"></a>
-                    <a class="addthis_button_tumblr"></a>
-
-                    <a class="addthis_button_email"></a>
-                    <a class="addthis_button_compact"></a>
-                    <a class="addthis_counter addthis_bubble_style"></a>
+            <div id="social-container">
+                <div id="social">
+                    {% if is_logged_in %}
+                    <ul>
+                        <li><a id="header_login" href="/">Welcome {{request.user.first_name}}</a></li>
+                        <li>|</li>
+                        <li><a id="header_login" href="/exit">Log out</a></li>
+                    </ul>
+                    {% else %}
+                    <ul>
+                        <li><a class="facebook_login" href="{% url socialauth_begin 'facebook' %}"></a></li>
+                        <li><a class="twitter_login" href="{% url socialauth_begin 'twitter' %}"></a></li>
+                        <li><a href="/enter">Enter</a></li>
+                    </ul>
+                    {% endif %}
                 </div>
-                <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
-                <!-- AddThis Button END -->
-            </div>
-            <div id="social">
-                {% if is_logged_in %}
-                <ul>
-                    <li><a id="header_login" href="/">Welcome {{request.user.first_name}}</a></li>
-                    <li>|</li>
-                    <li><a id="header_login" href="/exit">Log out</a></li>
-                </ul>
-                {% else %}
-                <ul>
-                    <li><a class="facebook_login" href="{% url socialauth_begin 'facebook' %}"></a></li>
-                    <li><a class="twitter_login" href="{% url socialauth_begin 'twitter' %}"></a></li>
-                    <li><a class="google_login" href="{% url socialauth_begin 'google' %}"></a></li>
-                    <li><a id="sign_up" href="/enter">Sign In / Sign Up</a></li>
-                </ul>
-                {% endif %}
-
+                <hr/>
+                <div id="share">
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style ">
+                        <a class="addthis_button_facebook"></a>
+                        <a class="addthis_button_twitter"></a>
+                        <a class="addthis_button_tumblr"></a>
+                        <a class="addthis_button_email"></a>
+                        <a class="addthis_button_compact"></a>
+                        <a class="addthis_counter addthis_bubble_style"></a>
+                    </div>
+                    <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
+                    <!-- AddThis Button END -->
+                </div>
             </div>
             <div id="top-nav" class="">
                 <ul id="fixed-nav">
@@ -244,11 +244,13 @@
         </div>
     </div>
     <div id="copyright">
-
-        <a href="https://appengine.google.com/"><i class="google_app_engine_icon"></i></a>
-        <a href="https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a>
-        <a  href="http://www.interpegasus.com"><i class="interpegasus_icon"></i></a>
+        <ul>
+            <li><a href="https://appengine.google.com/" class="google_app_engine_icon"></a></li>
+            <li><a href="https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+            <li><a href="http://www.interpegasus.com" class="interpegasus_icon"></a></li>
+        </ul>
     </div>
+    <div id="footer-clear"></div>
 </div>
 </body>
 </html>
