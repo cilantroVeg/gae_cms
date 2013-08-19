@@ -133,32 +133,25 @@
 {% if main_category.name != 'Root' %}
 {% if main_category.parent_id == 1 %}
 <div class="{% cycle 'section' 'section-alt'%}" id="{{main_category.slug}}">
-    Love
     <div class="container">
         <div class="content">
-            <div class="row">
-                <div class="span12">
-                    <div class="title">
-                        <h2>{{ main_category.name }}</h2>
-
-                        <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-                        <p>Read more</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
+            <div><h2>{{ main_category.name }}</h2></div>
+            <div class="columns">
                 {% for sub_category in categories %}
-                {% if sub_category.parent_id == main_category.id %}
-                <div class="span4 i-block">
-                    <i class="icon-mobile-phone"></i>
-                    <hr/>
-                    <a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                    {% if sub_category.parent_id == main_category.id %}
+                        <article class="news oneThird">
+                            <div>
+                                <h3><a href="/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a></h3>
+                                <div class="content">
+                                    <p>Page Description</p>
+                                    <p>Read More</p>
+                                </div>
+                                <div class="readMore"><a href="#" class="btn btnSmall"><span>Read More</span></a></div>
+                            </div>
+                        </article>
                     {% endif %}
-                </div>
                 {% endfor %}
             </div>
-
         </div>
     </div>
 </div>

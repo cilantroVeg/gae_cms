@@ -810,3 +810,82 @@ hr.grey {
     clear: both;
     width: 100%;
 }
+
+/* Columns */
+
+.columns{width:100%	}
+	.columns:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.columns > div,
+	.columns > article{
+		float:left;
+		vertical-align:top;
+	}
+	.columns h2{text-align:left;}
+	.half{
+		width:48.0%;
+		margin:1.3%;
+	}
+	.oneThird{
+		width:32%;
+		margin:1%;
+	}
+	.columns > div:first-child,
+	.columns > article:first-child{margin-left:0;}
+	.oneThird +.oneThird +.oneThird,
+	.threeForth + .oneForth,
+	.oneForth + .half,
+	.half + .half,
+	.half + .oneForth + .oneForth,
+	.last{
+		float:right;
+		margin-right:0;
+	}
+	.oneForth{width:25%;}
+	.threeForth{width:74.5%;}
+	.buttons{
+		width:100%;
+		overflow:hidden;
+		text-align:center;
+		margin:2.5em 0 0
+	}
+	.buttons > span{
+		background:url(../img/sep-vert.gif) no-repeat 50% 50%;
+		display:inline-block;
+		font-size:1.714em;
+		line-height:1.125em;
+		padding:1em 0.75em;
+		margin:0 -1px 0 -2px;
+		background:#;
+	}
+	* +html .buttons > span{margin:0 20px;}
+	.buttons > span em{
+		font-style:normal;
+		display:block;
+		background:#eaeaea;
+	}
+	.imgHolder{
+		display:inline-block;
+		padding:1px;
+		background:#fff;
+		border:6px solid #cecece;
+		margin-bottom:1em;
+		max-width:100%;
+		overflow:hidden;
+
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+	* +html .imgHolder{
+		max-width:93.5%;
+		border-width:3%;
+		padding:0;
+	}
+	.imgHolder img{display:block;}
+	.grey .imgHolder{
+		border-color:#646e7d;
+	}

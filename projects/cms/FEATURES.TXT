@@ -1,17 +1,30 @@
-- Blocks
-- Frontpage Structure
-- CSS Templates
-- Keep content simple.
+M
+- Get structure and pages on category call
+- Implement columns template
+T
 - Detect Language. English default.
-- Basic API
+- Use same template for IP, Yiyask, NRWL, Music, Bible.
+W
+- Migrate content and deploy sites.
+T
+- Basic API. For Bible app.
+F
 - Blueimp
 - Inline Editing
-- Memcache
-
+S
 - Bible API
-- User Photo
+
+M
+- Memcache
+T
 - Recipe API
+W
 - NRWL API
+T
+- Bible iOS App
+F
+- Bible Android App
+
 
 Photos Post To:
 - Flickr
