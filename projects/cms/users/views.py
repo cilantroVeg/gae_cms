@@ -31,12 +31,12 @@ from django.conf import settings
 def enter(request):
     if is_logged_in(request):
         return redirect('/', False)
-    return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
+    return render_to_response('users/signup.html',
                               context_instance=RequestContext(request))
 
 
 def not_found(request):
-    return render_to_response('template/404.html', {'is_logged_in': is_logged_in(request)},
+    return render_to_response('template/404.html',
                               context_instance=RequestContext(request))
 
 
@@ -85,19 +85,19 @@ def process_sign_up(request):
 def front_page(request):
     #pprint.pprint(request.user.email)
     if is_logged_in(request) is False:
-        return render_to_response('users/signup.html', {'is_logged_in': is_logged_in(request)},
+        return render_to_response('users/signup.html',
                                   context_instance=RequestContext(request))
     else:
-        return render_to_response('users/front_page.html', {'is_logged_in': is_logged_in(request),'is_admin':is_admin_user(request)},
+        return render_to_response('users/front_page.html', {,'is_admin':is_admin_user(request)},
                                   context_instance=RequestContext(request))
 
 # Custom 404 and 500
 def my_custom_404_view(request):
-    return render_to_response('template/404.html', {'is_logged_in': is_logged_in(request)},
+    return render_to_response('template/404.html',
                               context_instance=RequestContext(request))
 
 def my_custom_500_view(request):
-    return render_to_response('template/500.html', {'is_logged_in': is_logged_in(request)},
+    return render_to_response('template/500.html',
                               context_instance=RequestContext(request))
 
 # Social Auth
