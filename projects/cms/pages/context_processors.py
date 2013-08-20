@@ -38,16 +38,16 @@ def categories(request):
 # ...
 def is_logged_in(request):
     if not request.user.is_authenticated():
-        return False
+        return {'is_logged_in': False}
     else:
-        return True
+        return {'is_logged_in': True}
 
 # ...
 def is_admin_user(request):
     try:
         if request.user.email in settings.ADMIN_USERS:
-            return True
+            return {'is_admin_user': True}
         else:
-            return False
+            return {'is_admin_user': False}
     except:
-        return False
+        return {'is_admin_user': False}
