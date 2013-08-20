@@ -46,8 +46,6 @@ def category_formset(request):
         return redirect('/', False)
 
 
-
-
 # ...
 def category_list(request):
     if is_admin_user(request):
@@ -127,7 +125,7 @@ def page_form(request, id=None):
 
             return redirect('/pages/')
         return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id,
-                                                           'image_array':image_array},
+                                                           'image_array': image_array},
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -259,7 +257,7 @@ def handle_spreadsheet(f, user, spreadsheet):
 def spreadsheet_list(request):
     if is_admin_user(request):
         return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all(),
-                                                                  },
+        },
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -398,7 +396,7 @@ def handle_image_picasa(file, image):
 def image_list(request):
     if is_admin_user(request):
         return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),
-                                                            },
+        },
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -418,7 +416,7 @@ def image_delete(request, id=None):
 def page_view(request, language, slug):
     page = get_object_or_404(Page, slug=slug)
     return render_to_response("pages/page_view.html", {"page": page,
-                                                       },
+    },
                               context_instance=RequestContext(request))
 
 # ...
@@ -432,15 +430,15 @@ def category_view(request, language, slug):
     language = get_object_or_404(Language, code=language)
     category = get_object_or_404(Category, slug=slug, language_id=language.id)
     pages = Page.objects.filter(category=category)
-    return render_to_response("pages/category_view.html", {"category": category, "pages":pages,
-                                                           },
+    return render_to_response("pages/category_view.html", {"category": category, "pages": pages,
+    },
                               context_instance=RequestContext(request))
 
 # ...
 def image_view(request, language, slug):
     image = get_object_or_404(Image, slug=slug)
     return render_to_response("pages/image_view.html", {"image": image,
-                                                        },
+    },
                               context_instance=RequestContext(request))
 
 # ...

@@ -1,65 +1,43 @@
 {% extends "template/template-magicangel.html" %}
 
-{% block title %}Enter{% endblock %}
-{% block js %}
-<script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
-{% endblock %}
-{% block content %}
-{% if error_message %}
-<p id="my_feedback">
-    {{ error_message }}
-</p>
-{% endif %}
-<div class="steps">
-    <div id="step2">
+{% block title %}Enter{% endblock %}{% block js %}
+<script type = "text/javascript" src = "{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type = "text/javascript" src = "{{STATIC_URL}}javascript/signup.js"></script>{% endblock %}{% block content %}{% if error_message %}<p id = "my_feedback">
+    {{ error_message }} </p>{% endif %}
+<div class = "steps">
+    <div id = "step2">
 
     </div>
-    <div id="step2A_content">
+    <div id = "step2A_content">
         <h6>Sign up:</h6>
-        <p class="pintro">
-            If you do not already have an existing account please sign up.
-        </p>
-        <form id="create_user_form" name="create_user_form" action="/process_create_account/" method="post" style="display:none;">
-            {% csrf_token %}
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email"/>
-            <label for="confirm_email">Confirm Email</label>
-            <input type="text" id="confirm_email" name="confirm_email"/>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"/>
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" name="confirm_password" />
-            <input type="submit" value="Sign up" />
+
+        <p class = "pintro">
+            If you do not already have an existing account please sign up. </p>
+
+        <form id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post" style = "display:none;">
+            {% csrf_token %} <label for = "email">Email</label> <input type = "text" id = "email" name = "email"/> <label for = "confirm_email">Confirm Email</label> <input type = "text" id = "confirm_email" name = "confirm_email"/> <label for = "password">Password</label> <input type = "password" id = "password" name = "password"/> <label for = "confirm_password">Confirm Password</label> <input type = "password" id = "confirm_password" name = "confirm_password"/> <input type = "submit" value = "Sign up"/>
         </form>
         <div>
             <ul>
-                <li><a href="{% url socialauth_begin 'twitter' %}">Login with Twitter</a></li>
-                <li><a href="{% url socialauth_begin 'facebook' %}">Login with Facebook</a></li>
-                <li><a href="{% url socialauth_begin 'google' %}">Login with Google</a></li>
+                <li><a href = "{% url socialauth_begin 'twitter' %}">Login with Twitter</a></li>
+                <li><a href = "{% url socialauth_begin 'facebook' %}">Login with Facebook</a></li>
+                <li><a href = "{% url socialauth_begin 'google' %}">Login with Google</a></li>
             </ul>
         </div>
     </div>
-    <div id="separator"></div>
+    <div id = "separator"></div>
 
-    <div id="step2B_content">
+    <div id = "step2B_content">
         <h6>Sign in:</h6>
-        <p class="pintro">
-            If you have an existing account please signin.
-        </p>
-        <form id="login_user_form" name="login_user_form" action="/process_sign_up/" method="post">
-            {% csrf_token %}
-            <input type="hidden" name="code_2" id="code_2" value="{{code}}" />
-            <label for="email_2">Email</label>
-            <input type="text" id="email_2" name="email_2" />
-            <label for="password_2">Password</label>
-            <input type="password" id="password_2" name="password_2" />
-            <input type="submit" value="Sign up" />
+
+        <p class = "pintro">
+            If you have an existing account please signin. </p>
+
+        <form id = "login_user_form" name = "login_user_form" action = "/process_sign_up/" method = "post">
+            {% csrf_token %} <input type = "hidden" name = "code_2" id = "code_2" value = "{{code}}"/> <label for = "email_2">Email</label> <input type = "text" id = "email_2" name = "email_2"/> <label for = "password_2">Password</label> <input type = "password" id = "password_2" name = "password_2"/> <input type = "submit" value = "Sign up"/>
         </form>
     </div>
 </div>
-<div id="forgot_password">
-    <b>Forgot your password? <a href="/forgot_password">Click here</a> to recover it.</b>
-</div>
-<br />
-{% endblock %}
+<div id = "forgot_password">
+    <b>Forgot your password? <a href = "/forgot_password">Click here</a> to recover it.</b>
+</div><br/>{% endblock %}

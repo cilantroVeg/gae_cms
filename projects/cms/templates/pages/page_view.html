@@ -1,13 +1,11 @@
 {% extends "template/template-magicangel-page.html" %}
 
-{% block title %}Page List{% endblock %}
-{% block js %}
+{% block title %}Page List{% endblock %}{% block js %}
 
-{% endblock %}
-{% block content %}
-    <div id="static_content">
-        <h1>{{ page.title }}</h1>
-        {{ page.content|safe }}
-    </div>
+{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>{{ page.title }}</h1>
+    {{ page.content|safe }}
+</div>
 
 {% endblock %}

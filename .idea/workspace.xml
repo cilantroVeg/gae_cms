@@ -5,23 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/helpers/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/helpers/helpers.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/404.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/500.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/activate.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/activate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/admin.py" afterPath="$PROJECT_DIR$/projects/cms/pages/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/admin.py" afterPath="$PROJECT_DIR$/projects/cms/users/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/arturo-homepage-template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturo-homepage-template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_view.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/category_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/forgot_password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/image_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/language_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/language_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/language_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/login.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/logout.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/logout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/models.py" afterPath="$PROJECT_DIR$/projects/cms/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/music-template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/music-template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_email.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/recipe-template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/recipe-template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/record_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/record_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/record_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/registration_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/registration/registration_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-interpegasus.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-interpegasus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel-page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-nrwl.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-nrwl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/user_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/user_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/user_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376941028410" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377018955565" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376890423056" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377016019943" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
     <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377015625090" ignored="false" />
-    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246388742" ignored="false" />
+    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019438896" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246350787" ignored="false" />
     <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376763631562" ignored="false" />
     <file path="/access_keys.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657325186" ignored="false" />
@@ -35,7 +84,7 @@
     <file path="/Library/Python/2.7/site-packages/gdata/apps/emailsettings/data.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041543" ignored="false" />
     <file path="/Library/Python/2.7/site-packages/gdata/exif/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041543" ignored="false" />
     <file path="/Library/Python/2.7/site-packages/gdata/calendar/__init__.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670041543" ignored="false" />
-    <file path="/a.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375670606080" ignored="false" />
+    <file path="/a.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019224033" ignored="false" />
     <file path="/image_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376108975220" ignored="false" />
     <file path="/page_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375762008562" ignored="false" />
     <file path="/category_view.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376188299331" ignored="false" />
@@ -69,6 +118,9 @@
     <file path="/template-magicangel-page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376763581418" ignored="false" />
     <file path="/helpers.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376793708036" ignored="false" />
     <file path="/auth-buttons.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376805328661" ignored="false" />
+    <file path="/a.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019082102" ignored="false" />
+    <file path="/a.coffee" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019227672" ignored="false" />
+    <file path="/a.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019238417" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,30 +140,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/index.html">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="632" selection-end="632" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="43" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.2183406">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="context_processors.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="20" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0">
+            <state line="139" column="35" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#26#102#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,19 +154,17 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="75" selection-start="1002" selection-end="1002" vertical-scroll-proportion="55.84">
+            <state line="3" column="38" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="12" selection-start="3546" selection-end="3554" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state line="30" column="47" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.5064378">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
-        <option value="$PROJECT_DIR$/projects/cms/helpers/helpers.py" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf/css/auth-buttons.css" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template.html" />
@@ -170,6 +200,8 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
       </list>
     </option>
@@ -359,7 +391,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
@@ -720,7 +752,15 @@
       <created>1376890451027</created>
       <updated>1376890451028</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Context Processors">
+      <created>1377018456962</created>
+      <updated>1377018456962</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Context Processors">
+      <created>1377018957457</created>
+      <updated>1377018957457</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -747,21 +787,21 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3224163" sideWeight="0.9635135" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15283842" sideWeight="0.9635135" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.036486488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.036486488" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -809,7 +849,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Context Processors" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -840,6 +880,7 @@
     <MESSAGE value="Enable Cache" />
     <MESSAGE value="Site Map &#10;Structure" />
     <MESSAGE value="CSS" />
+    <MESSAGE value="Context Processors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -867,13 +908,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="187" selection-end="198" vertical-scroll-proportion="0.1264045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="49" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.0">
-          <folding />
+        <state line="6" column="17" selection-start="187" selection-end="198" vertical-scroll-proportion="0.1264045">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,7 +933,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="20" selection-start="603" selection-end="603" vertical-scroll-proportion="0.24038461">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -909,39 +947,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="12" selection-start="3546" selection-end="3554" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state line="95" column="12" selection-start="3546" selection-end="3554" vertical-scroll-proportion="0.19313304">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="75" selection-start="1002" selection-end="1002" vertical-scroll-proportion="55.84">
+        <state line="58" column="43" selection-start="2004" selection-end="2004" vertical-scroll-proportion="-1.0087336">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="632" selection-end="632" vertical-scroll-proportion="-6.875">
+        <state line="11" column="28" selection-start="632" selection-end="632" vertical-scroll-proportion="0.24444444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="477" selection-end="477" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="35" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#26#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="20" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="43" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.2183406">
+        <state line="30" column="47" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.5064378">
           <folding />
         </state>
       </provider>

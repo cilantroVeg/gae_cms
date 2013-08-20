@@ -1,13 +1,12 @@
-from datetime import datetime
+import time
 
 from django.db import models
 from django.forms import ModelForm
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
-import time
+
 from users.models import *
 from google.appengine.api import memcache
-
 
 
 class Language(models.Model):
@@ -45,6 +44,7 @@ class Category(models.Model):
         memcache.delete('categories')
 
         import re
+
         name = re.sub(r'\W+', ' ', self.name)
         slug_1 = slugify(str(name))
         slug_2 = slugify(str(name) + ' ' + str(int(time.time())))
@@ -107,6 +107,7 @@ class Page(models.Model):
     def save(self, *args, **kwargs):
         memcache.delete('pages')
         import re
+
         title = re.sub(r'\W+', ' ', self.title)
         slug_1 = slugify(str(title))
         slug_2 = slugify(str(self.category.name) + ' ' + str(title))

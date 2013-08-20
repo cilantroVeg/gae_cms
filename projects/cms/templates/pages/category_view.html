@@ -1,14 +1,11 @@
 {% extends "template/template-magicangel-page.html" %}
 
-{% block title %}Category List{% endblock %}
-{% block js %}
+{% block title %}Category List{% endblock %}{% block js %}
 
-{% endblock %}
-{% block content %}
-    <div id="static_content">
-        <h1>{{ category.name|safe}}</h1>
-        {% for page in pages %}
-            <div><a href="/en/{{ page.slug }}">{{ page.title }}</a></div>
-        {% endfor %}
-    </div>
-{% endblock %}
+{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>{{ category.name|safe}}</h1>
+    {% for page in pages %}
+    <div><a href = "/en/{{ page.slug }}">{{ page.title }}</a></div>
+    {% endfor %}
+</div>{% endblock %}

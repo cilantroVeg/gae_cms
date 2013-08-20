@@ -1,5 +1,7 @@
-from models import *
 from django.contrib import admin
+
+from models import *
+
 
 admin.ModelAdmin.list_per_page = 25
 
