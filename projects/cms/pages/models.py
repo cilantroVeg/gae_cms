@@ -93,8 +93,10 @@ class Page(models.Model):
     user = models.ForeignKey(User, null=False, blank=False)
     spreadsheet = models.ForeignKey(Spreadsheet, null=True, blank=True)
     title = models.CharField(max_length=256, null=False, blank=False)
+    headline = models.CharField(max_length=256, null=False, blank=False)
     slug = models.SlugField(unique=True, blank=False, null=False)
     content = models.TextField(null=False, blank=False)
+    twitter_hashtags = models.CharField(max_length=256, null=False, blank=False)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
@@ -122,6 +124,9 @@ class Page(models.Model):
             self.slug = slug_2
         else:
             raise ValidationError("Another page with same slug already exists. Please use different name.")
+
+        # Headline
+        self.headline = self.content[0:70] + '...'
 
         super(Page, self).save(*args, **kwargs)
 

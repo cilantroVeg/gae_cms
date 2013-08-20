@@ -1,4 +1,5 @@
 from pages.models import *
+from django.conf import settings
 
 from google.appengine.api import memcache
 
@@ -8,7 +9,8 @@ def categories(request):
         categories = memcache.get('categories')
     else:
         categories = Category.objects.all()
-        categories_array = []
+        pages = Page.objects.all()
+        category_array = []
         for category in categories:
             if category.parent is not None:
                 parent_id = category.parent.id
@@ -18,26 +20,33 @@ def categories(request):
                 language_code = 'en'
             else:
                 language_code = category.language.code
-            categories_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id})
-        memcache.add('categories', categories_array)
-
-    show_pages = Record.objects.get(key="SHOW_PAGES_ON_FOOTER")
-    if show_pages.value in ['True', '1', 'true']:
-        if memcache.get('pages') is not None:
-            pages = memcache.get('pages')
-        else:
-            pages = Page.objects.all()
-            pages_array = []
+            # get up to 3 pages for each category and record the count as well.
+            page_array = []
+            page_count = 0
             for page in pages:
-                if page.category.language is None:
-                    language_code = 'en'
-                else:
-                    language_code = page.category.language.code
-                pages_array.append({'title': page.title, 'slug': page.slug, 'category_id': page.category.id, 'language_code': language_code})
-            memcache.add('pages', pages_array)
+                if page_count ==3:
+                    break
+                elif page.category.id == category.id:
+                    page_count++;
+                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+            category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
+
+        memcache.add('categories', category_array)
+    return {'categories': categories}
+
+# ...
+def is_logged_in(request):
+    if not request.user.is_authenticated():
+        return False
     else:
-        pages = None
-    return {'categories': categories, 'pages': pages}
+        return True
 
-
-
+# ...
+def is_admin_user(request):
+    try:
+        if request.user.email in settings.ADMIN_USERS:
+            return True
+        else:
+            return False
+    except:
+        return False
