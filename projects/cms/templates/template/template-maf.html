@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Responsive HTML5/CSS3 template</title>
+    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
     <meta charset = "utf-8"/>
     <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1"/>
     <link rel = "stylesheet" type = "text/css" href = "/static/template/maf2/css/main.css" media = "all"/>
@@ -18,6 +18,7 @@
     <!--[if lt IE 9]>
     <script src = "http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src = "/static/template/maf2/js/respond.min.js"></script>    <![endif]-->
+    {% block js %}{% endblock %}
 </head>
 <body onload = "initialize()">
 {% if is_admin %}
@@ -53,61 +54,50 @@
 </div>
 <div id = "pagewidth">
 <header id = "header">
-        <h2 id = "logo"><a href = "/"><span class = "highlight">MAGIC ANGEL</span> <span class = "no-highlight">FOUNDATION</span></a></h2>
+    <h2 id = "logo"><a href = "/"><span class = "highlight">MAGIC ANGEL</span> <span class = "no-highlight">FOUNDATION</span></a></h2>
 
-        <div id = "social-container">
-            <div id = "social">
-                {% if is_logged_in %}
-                <ul>
-                    <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
-                    <li>|</li>
-                    <li><a id = "header_login" href = "/exit">Log out</a></li>
-                </ul>
-                {% else %}
-                <ul>
-                    <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
-                    <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
-                    <li><a href = "/enter">Enter</a></li>
-                </ul>
-                {% endif %}
-            </div>
-            <hr/>
-            <div id = "share">
-                <!-- AddThis Button BEGIN -->
-                <div class = "addthis_toolbox addthis_default_style ">
-                    <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
-                </div>
-                <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-                <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
-                <!-- AddThis Button END -->
-            </div>
-        </div>
-        <nav id = "top-nav" class = "">
-            <ul id = "fixed-nav">
-                <li class = "current"><a href = "#home">Home</a></li>
-                {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                {% endif %} {% endif %} {% endfor %}
-                <li><a href = "#contactUs">Contact Us</a></li>
+    <div id = "social-container">
+        <div id = "social">
+            {% if is_logged_in %}
+            <ul>
+                <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+                <li>|</li>
+                <li><a id = "header_login" href = "/exit">Log out</a></li>
             </ul>
-        </nav>
+            {% else %}
+            <ul>
+                <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                <li id="register_link"><a href = "#register">Enter</a></li>
+            </ul>
+            {% endif %}
+        </div>
+        <hr/>
+        <div id = "share">
+            <!-- AddThis Button BEGIN -->
+            <div class = "addthis_toolbox addthis_default_style ">
+                <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+            <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
+            <!-- AddThis Button END -->
+        </div>
+    </div>
+    <nav id = "top-nav" class = "">
+        <ul id = "fixed-nav">
+            <li class = "current"><a href = "#home">Home</a></li>
+            {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
+            <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+            {% endif %} {% endif %} {% endfor %}
+            <li><a href = "#contactUs">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
 <div id = "content">
 <section id="home" class = "row">
     <div class = "center">
-        <h1>Responsive HTML5/CSS3 template</h1>
-        <strong class = "subHeading">works well on Desktops, Tablets, and Mobile Phones</strong>
-
-        <div class = "gallery">
-            <ul class = "slides">
-                <li><img src = "img/img-gallery.jpg" alt = "image"/></li>
-                <li><img src = "img/img-gallery2.jpg" alt = "image"/></li>
-                <li><img src = "img/img-gallery3.jpg" alt = "image"/></li>
-            </ul>
-        </div>
-        <div class = "buttons">
-            <a href = "http://webcodebuilder.com/examples/responsive-html5css3-template/responsive-html5css3-template.zip" class = "btn btnGreen"><span>Download Template</span></a> <span><em>or</em></span> <a href = "http://webcodebuilder.com" class = "btn btnBlue"><span>Visit Developers Site</span></a>
-        </div>
+        <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+        <strong class = "subHeading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
     </div>
 </section>
 <section id = "twoColumnLayout" class = "row grey">
@@ -262,11 +252,78 @@
         </div>
     </div>
 </section>
+<section id = "register" class = "row">
+    <div class = "center">
+        <h1>Login / Register</h1>
+        <div class = "columns">
+            <div class = "half">
+                <h4>Login</h4>
+                <form id = "login_user_form" name = "login_user_form" action = "/process_sign_up/" method = "post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "text" id = "email_2" name = "email_2" placeholder = "Your email ..."/>
+                            </div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "password_2" name = "password_2" placeholder = "password ..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <button class = "btnSmall btn submit right">
+                                <span>Login</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <hr />
+
+                <h4>Register</h4>
+                <form id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "text" id = "email" name = "email" placeholder = "Your email ..."/>
+                            </div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "password" name = "password" placeholder = "password ..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "confirm_password" name = "confirm_password" placeholder = "password confirmation..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <button class = "btnSmall btn submit right">
+                                <span>Register</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class = "half">
+                <h4>Register</h4>
+                <ul class="no-bullets">
+                    <li><a class = "facebook_login large_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                    <li><a class = "twitter_login large_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                    <li><a class = "google_login large_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <section id = "contactUs" class = "row grey">
     <div class = "center">
         <h1>Contact Us</h1>
-        <strong class = "subHeading">lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>
-
         <div class = "columns">
             <div class = "half">
                 <form method = "post" action = "contact.php" class = "form contact-form">
@@ -296,7 +353,7 @@
 
                 <div id = "map">
                     <div class = "imgHolder">
-                        <div id = "map_canvas" style = "width:445px; height:392px"></div>
+                        <div id = "map_canvas"></div>
                     </div>
                 </div>
             </div>

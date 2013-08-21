@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/style.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377048035805" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377054663629" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376890423056" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377016019943" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
@@ -73,9 +70,9 @@
     <file path="/a.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377048239780" ignored="false" />
     <file path="/a.coffee" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019227672" ignored="false" />
     <file path="/a.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019238417" ignored="false" />
-    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377026841846" ignored="false" />
-    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377054621340" ignored="false" />
-    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377054293089" ignored="false" />
+    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377057993708" ignored="false" />
+    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377057718416" ignored="false" />
+    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377057962468" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +92,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template-maf.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="334" column="35" selection-start="17647" selection-end="17647" vertical-scroll-proportion="5.688889">
+            <state line="70" column="37" selection-start="3468" selection-end="3481" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="640" selection-end="1308" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="881" column="24" selection-start="18377" selection-end="18377" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="412" selection-end="412" vertical-scroll-proportion="0.23174158">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-magicangel.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="11" selection-start="8611" selection-end="8648" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -134,10 +167,10 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
       </list>
     </option>
   </component>
@@ -279,6 +312,10 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -299,10 +336,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -853,7 +886,11 @@
       <created>1377019670305</created>
       <updated>1377019670305</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="MAF Template">
+      <created>1377054665436</created>
+      <updated>1377054665436</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -880,6 +917,7 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -894,7 +932,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -942,7 +979,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Context Processors" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAF Template" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -974,6 +1011,7 @@
     <MESSAGE value="Site Map &#10;Structure" />
     <MESSAGE value="CSS" />
     <MESSAGE value="Context Processors" />
+    <MESSAGE value="MAF Template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1039,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="0" selection-start="8495" selection-end="10004" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1053,30 +1084,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="332" selection-end="339" vertical-scroll-proportion="0.0">
+        <state line="188" column="11" selection-start="8611" selection-end="8648" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/style.css">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="4" selection-start="725" selection-end="763" vertical-scroll-proportion="-8.235294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="844" column="16" selection-start="28063" selection-end="28063" vertical-scroll-proportion="-25.68">
+        <state line="16" column="0" selection-start="640" selection-end="1308" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="334" column="35" selection-start="17647" selection-end="17647" vertical-scroll-proportion="5.688889">
+        <state line="70" column="37" selection-start="3468" selection-end="3481" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="881" column="24" selection-start="18377" selection-end="18377" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="412" selection-end="412" vertical-scroll-proportion="0.23174158">
           <folding />
         </state>
       </provider>
