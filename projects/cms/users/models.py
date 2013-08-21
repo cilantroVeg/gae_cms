@@ -7,7 +7,6 @@ from django.forms import ModelForm
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
-    #other fields here
     profile_picture = models.URLField()
 
     def __str__(self):

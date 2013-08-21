@@ -90,7 +90,6 @@ def front_page(request):
     else:
         return render_to_response('users/front_page.html',
         context_instance = RequestContext(request))
-
     # Custom 404 and 500
     def my_custom_404_view(request):
         return render_to_response('template/404.html',

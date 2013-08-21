@@ -10,7 +10,6 @@ from django.forms.formsets import formset_factory
 from django.forms.models import modelformset_factory
 
 from pages.models import *
-from helpers.helpers import *
 
 # ...
 def category_form(request, id=None):
