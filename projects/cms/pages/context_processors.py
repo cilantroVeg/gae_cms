@@ -58,8 +58,8 @@ def is_logged_in(request):
 def is_admin_user(request):
     try:
         if request.user.email in settings.ADMIN_USERS:
-            return {'is_admin_user': True}
+            return {'is_admin': True}
         else:
-            return {'is_admin_user': False}
+            return {'is_admin': False}
     except:
-        return {'is_admin_user': False}
+        return {'is_admin': False}
