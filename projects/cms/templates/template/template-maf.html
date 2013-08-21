@@ -52,53 +52,46 @@
     <a href = "http://www.magicangel.org" itemprop = "url">http://www.magicangel.org</a>
 </div>
 <div id = "pagewidth">
-<div id = "header">
-    <div class = "container">
-        <div class = "row">
-            <i id = "nav-button" class = "icon-circle-arrow-down"></i>
+<header id = "header">
+        <h2 id = "logo"><a href = "/"><span class = "highlight">MAGIC ANGEL</span> <span class = "no-highlight">FOUNDATION</span></a></h2>
 
-            <h2 id = "logo"><a href = "/"><span class = "highlight">MAGIC ANGEL</span> <span class = "no-highlight">FOUNDATION</span></a></h2>
-
-            <div id = "social-container">
-                <div id = "social">
-                    {% if is_logged_in %}
-                    <ul>
-                        <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
-                        <li>|</li>
-                        <li><a id = "header_login" href = "/exit">Log out</a></li>
-                    </ul>
-                    {% else %}
-                    <ul>
-                        <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
-                        <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
-                        <li><a href = "/enter">Enter</a></li>
-                    </ul>
-                    {% endif %}
-                </div>
-                <hr/>
-                <div id = "share">
-                    <!-- AddThis Button BEGIN -->
-                    <div class = "addthis_toolbox addthis_default_style ">
-                        <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
-                    </div>
-                    <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-                    <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
-                    <!-- AddThis Button END -->
-                </div>
-            </div>
-            <div id = "top-nav" class = "">
-                <ul id = "fixed-nav">
-                    <li class = "current"><a href = "#home">Home</a></li>
-                    {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                    <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                    {% endif %} {% endif %} {% endfor %}
-                    <li><a href = "#contact">Contact Us</a></li>
+        <div id = "social-container">
+            <div id = "social">
+                {% if is_logged_in %}
+                <ul>
+                    <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+                    <li>|</li>
+                    <li><a id = "header_login" href = "/exit">Log out</a></li>
                 </ul>
+                {% else %}
+                <ul>
+                    <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                    <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                    <li><a href = "/enter">Enter</a></li>
+                </ul>
+                {% endif %}
             </div>
-
+            <hr/>
+            <div id = "share">
+                <!-- AddThis Button BEGIN -->
+                <div class = "addthis_toolbox addthis_default_style ">
+                    <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
+                </div>
+                <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+                <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
+                <!-- AddThis Button END -->
+            </div>
         </div>
-    </div>
-</div>
+        <nav id = "top-nav" class = "">
+            <ul id = "fixed-nav">
+                <li class = "current"><a href = "#home">Home</a></li>
+                {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
+                <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                {% endif %} {% endif %} {% endfor %}
+                <li><a href = "#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+</header>
 <div id = "content">
 <section id="home" class = "row">
     <div class = "center">
@@ -312,9 +305,34 @@
 </section>
 </div>
 <footer id = "footer">
-    <div class = "center">
-        <span class = "copy">Created by <a href = "http://webcodebuilder.com">WebCodeBuilder.com</a></span> Subscribe to our <a href = "http://webcodebuilder.com/feed/">blog</a> and follow us on <a href = "https://twitter.com/#!/webcodebuilder">Twitter</a>
+    <div id = "footer-description">
+        <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+
+        <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
     </div>
+    <div id = "footer-categories">
+        {% for main_category in categories %} {% if main_category.name != 'Root' %}
+
+        {% if main_category.parent_id == 1 %}
+        <div class = "footer-div">
+            <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a> {% for page in pages %} {% if page.category_id == main_category.id %} <a href = "/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a> <br/> {% endif %} {% endfor %} {% for sub_category in categories %} {% if sub_category.parent_id == main_category.id %} <a href = "/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a> <br/> {% endif %} {% endfor %}
+        </div>
+        {% endif %}
+
+        {% endif %} {% endfor %}
+        <div class = "footer-div">
+            <h4>Site map</h4>
+            <a href = "/sitemap">Site map</a>
+        </div>
+    </div>
+    <div id = "copyright">
+        <ul>
+            <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
+            <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+            <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
+        </ul>
+    </div>
+    <div id = "footer-clear"></div>
 </footer>
 </div>
 </body>

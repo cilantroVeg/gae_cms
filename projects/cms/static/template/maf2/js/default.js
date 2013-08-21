@@ -6,7 +6,7 @@ $(document).ready(function() {
             this.parentNode.className += ' active';
         });
         initScrollNav({
-            nav:'#mainNav a'
+            nav:'#top-nav a'
         });
         initialize();
     }
