@@ -13,7 +13,7 @@ from pages.models import *
 
 # ...
 def category_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Category, id=id) if id is not None else None
         form = CategoryForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -28,7 +28,7 @@ def category_form(request, id=None):
 
 # ...
 def category_formset(request):
-    if is_admin_user(request):
+    if is_admin(request):
         CategoryFormSet = modelformset_factory(Category, exclude="slug", extra=0)
 
         if request.POST:
@@ -47,7 +47,7 @@ def category_formset(request):
 
 # ...
 def category_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/category_list.html",
                                   {"category_list": Category.objects.all()},
                                   context_instance=RequestContext(request))
@@ -56,7 +56,7 @@ def category_list(request):
 
 # ...
 def category_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Category, id=id) if id is not None else None
         instance.delete()
         return redirect('/categories/')
@@ -65,7 +65,7 @@ def category_delete(request, id=None):
 
 # ...
 def language_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Language, id=id) if id is not None else None
         form = LanguageForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -79,7 +79,7 @@ def language_form(request, id=None):
 
 # ...
 def language_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/language_list.html",
                                   {"language_list": Language.objects.all()},
                                   context_instance=RequestContext(request))
@@ -88,7 +88,7 @@ def language_list(request):
 
 # ...
 def language_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Language, id=id) if id is not None else None
         instance.delete()
         return redirect('/languages/')
@@ -97,7 +97,7 @@ def language_delete(request, id=None):
 
 # ...
 def page_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Page, id=id) if id is not None else None
         if instance:
             image_array = Image.objects.filter(page=instance)
@@ -131,7 +131,7 @@ def page_form(request, id=None):
 
 # ...
 def page_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/page_list.html",
                                   {"page_list": Page.objects.all()},
                                   context_instance=RequestContext(request))
@@ -140,7 +140,7 @@ def page_list(request):
 
 # ...
 def page_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Page, id=id) if id is not None else None
         instance.delete()
         return redirect('/pages/')
@@ -149,7 +149,7 @@ def page_delete(request, id=None):
 
 # ...
 def record_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Record, id=id) if id is not None else None
         form = RecordForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -163,7 +163,7 @@ def record_form(request, id=None):
 
 # ...
 def record_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/record_list.html",
                                   {"record_list": Record.objects.all()},
                                   context_instance=RequestContext(request))
@@ -172,7 +172,7 @@ def record_list(request):
 
 # ...
 def record_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Record, id=id) if id is not None else None
         instance.delete()
         return redirect('/records/')
@@ -198,7 +198,7 @@ def get_page_content(request):
 
 # ...
 def spreadsheet_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Spreadsheet, id=id) if id is not None else None
         form = SpreadsheetForm(request.POST or None, request.FILES or None, instance=instance)
         if form.is_valid():
@@ -254,7 +254,7 @@ def handle_spreadsheet(f, user, spreadsheet):
 
 # ...
 def spreadsheet_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all(),
         },
                                   context_instance=RequestContext(request))
@@ -263,7 +263,7 @@ def spreadsheet_list(request):
 
 # ...
 def spreadsheet_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Spreadsheet, id=id) if id is not None else None
         instance.delete()
         return redirect('/spreadsheets/')
@@ -330,7 +330,7 @@ def spreadsheet_delete(request, id=None):
 # 
 
 def image_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Image, id=id) if id is not None else None
         form = ImageForm(request.POST or None, request.FILES or None, instance=instance)
         if form.is_valid():
@@ -393,7 +393,7 @@ def handle_image_picasa(file, image):
 
 # ...
 def image_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),
         },
                                   context_instance=RequestContext(request))
@@ -402,7 +402,7 @@ def image_list(request):
 
 # ...
 def image_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(Image, id=id) if id is not None else None
         delete_picasa_photo(instance)
         instance.delete()
@@ -466,3 +466,11 @@ def delete_all():
         Spreadsheet.objects.filter(id=ss.id).delete()
 
 
+def is_admin(request):
+    try:
+        if request.user.email in settings.ADMIN_USERS:
+            return True
+        else:
+            return False
+    except:
+        return False

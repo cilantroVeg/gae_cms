@@ -56,7 +56,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'pages.context_processors.categories',
     'pages.context_processors.is_logged_in',
-    'pages.context_processors.is_admin_user',
+    'pages.context_processors.is_admin',
 )
 
 TEMPLATE_LOADERS = (

@@ -139,7 +139,7 @@ def thanks(request):
 
 # ...
 def user_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(User, id=id) if id is not None else None
         form = UserForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -151,14 +151,14 @@ def user_form(request, id=None):
 
 # ...
 def user_list(request):
-    if is_admin_user(request):
+    if is_admin(request):
         return render_to_response("users/user_list.html", {"user_list": User.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def user_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request):
         instance = get_object_or_404(User, id=id) if id is not None else None
         instance.delete()
         return redirect('/users/')
