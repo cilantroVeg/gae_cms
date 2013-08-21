@@ -100,158 +100,75 @@
         <strong class = "subHeading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
     </div>
 </section>
-<section id = "twoColumnLayout" class = "row grey">
-    <div class = "center">
-        <h1>Two Column Layout</h1>
-        <strong class = "subHeading">lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>
 
-        <div class = "columns">
-            <div class = "half">
-                <div class = "imgHolder alignLeft"><img src = "img/content01.jpg" alt = "image"/></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
+{% for main_category in categories %}
+    {% if main_category.name != 'Root' %}
+        {% if main_category.parent_id == 1 %}
+            <section id = "{{main_category.slug}}" class = "{% cycle 'row' 'row grey'%}">
+                <div class = "center">
+                    <h1>{{main_category.name}}</h1>
+                    {% if main_category.page_count == 1 %}
+                            {% for page in main_category.page_array %}
+                            <h4>{{ page.title}}</h4>
+                            <strong class = "subHeading">{{ page.headline}}</strong>
+                            <a href="/{{page.language_code}}/{{page.slug}}">Read More</a>
+                            {% endfor %}
+                    {% elif main_category.page_count == 2 %}
+                        <div class = "columns">
+                            {% for page in main_category.page_array %}
+                            <div class = "half">
+                                <div class = "imgHolder alignLeft"><img src = "/static/template/maf2/img/content01.jpg" alt = "{{ page.title }}"/></div>
+                                <h4>{{ page.title}}</h4>
+                                <p>{{ page.headline}}</p>
+                                <a href="/{{page.language_code}}/{{page.slug}}">Read More</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% elif main_category.page_count == 3 %}
+                        <div class = "columns">
+                            {% for page in main_category.page_array %}
+                            <article class = "news oneThird">
+                                <div>
+                                    <h3><a href = "#">{{ page.title}}</a></h3>
 
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
-
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis orci, vel iaculis massa sapien sed risus.</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                    <li>adipiscing elit. In luctus, tortor vel</li>
-                </ul>
-                <p>Ut scelerisque, sapien in luctus ultrices, <a href = "#">magna ante convallis</a> orci, vel iaculis massa sapien sed risus.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
-            </div>
-            <div class = "half">
-                <div class = "imgHolder fullWidth"><img src = "img/content02.jpg" alt = "image"/></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id = "threeColumnLayout" class = "row">
-    <div class = "center">
-        <h1>Three Column Layout</h1>
-        <strong class = "subHeading">lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>
-
-        <div class = "columns">
-            <div class = "oneThird">
-                <div class = "imgHolder fullWidth"><img src = "img/content03.jpg" alt = "image"/></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa <a href = "#">tellus elementum</a> nunc, eu pulvinar urna risus a orci.</p>
-
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis orci</p>
-            </div>
-            <div class = "oneThird">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc.</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                    <li>adipiscing elit. In luctus, tortor vel</li>
-                    <li>pharetra, massa tellus elementum nunc</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus. </p>
-
-                <p>In luctus, tortor vel vehicula pharetra, massa tellus. S ss fit amet, consectetur adipiscing elit. </p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus. </p>
-            </div>
-            <div class = "oneThird">
-                <div class = "imgHolder alignLeft"><img src = "img/content05.jpg" alt = "image"/></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar urna risus a orci.</p>
-
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis orci, vel iaculis massa sapien sed risus.</p>
-
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis orci, vel iaculis massa sapien sed risus.</p>
-
-                <p>Ut scelerisque, sapien in luctus ultrices, magna ante convallis orc.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id = "boxes" class = "row grey">
-    <div class = "center">
-        <h1>Information Boxes</h1>
-        <strong class = "subHeading">lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>
-
-        <div class = "columns">
-            <article class = "news oneThird">
-                <div>
-                    <h3><a href = "#">Lorem ipsum dolor</a></h3>
-
-                    <div class = "content">
-                        <a href = "#" class = "imgHolder fullWidth"><img src = "img/img-news01.jpg" alt = ""/></a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class = "readMore"><a href = "#" class = "btn btnSmall"><span>Read More</span></a></div>
+                                    <div class = "content">
+                                        <a href = "#" class = "imgHolder fullWidth"><img src = "/static/template/maf2/img/img-news01.jpg" alt = "{{ page.title }}"/></a>
+                                        <p>{{ page.headline}}</p>
+                                    </div>
+                                    <div class = "readMore"><a href = "/{{page.language_code}}/{{page.slug}}" class = "btn btnSmall"><span>Read More</span></a></div>
+                                </div>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    {% elif main_category.page_count == 4 %}
+                        <div id = "testimonials" class = "gallery">
+                            <ul class = "slides">
+                                <li>
+                                    {% for page in main_category.page_array %}
+                                        {% if forloop.counter == 1 or forloop.counter == 3  %}
+                                        <div class = "row">
+                                        {% endif %}
+                                            <blockquote>
+                                                <q>{{ page.title }}</q>
+                                                <a href="/{{page.language_code}}/{{ page.title}}">Read More</a>
+                                            </blockquote>
+                                        {% if forloop.counter == 1 or forloop.counter == 3  %}
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </li>
+                            </ul>
+                        </div>
+                    {% endif %}
                 </div>
-            </article>
-            <article class = "news oneThird">
-                <div>
-                    <h3><a href = "#">Lorem ipsum dolor</a></h3>
+            </section>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 
-                    <div class = "content">
-                        <a href = "#" class = "imgHolder fullWidth"><img src = "img/img-news01.jpg" alt = ""/></a>
+{% if is_logged_in %}
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class = "readMore"><a href = "#" class = "btn btnSmall"><span>Read More</span></a></div>
-                </div>
-            </article>
-            <article class = "news oneThird">
-                <div>
-                    <h3><a href = "#">Lorem ipsum dolor</a></h3>
-
-                    <div class = "content">
-                        <a href = "#" class = "imgHolder fullWidth"><img src = "img/img-news01.jpg" alt = ""/></a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class = "readMore"><a href = "#" class = "btn btnSmall"><span>Read More</span></a></div>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-<section id = "testiomonialsTab" class = "row">
-    <div class = "center">
-        <h1>Testimonials</h1>
-        <strong class = "subHeading">lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>
-
-        <div id = "testimonials" class = "gallery">
-            <ul class = "slides">
-                <li>
-                    <div class = "row">
-                        <blockquote>
-                            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar </q>
-                        </blockquote>
-                        <blockquote>
-                            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar </q>
-                        </blockquote>
-                    </div>
-                    <div class = "row">
-                        <blockquote>
-                            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar </q>
-                        </blockquote>
-                        <blockquote>
-                            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, massa tellus elementum nunc, eu pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tortor vel vehicula pharetra, mas</q>
-                        </blockquote>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+{% else %}
 <section id = "register" class = "row">
     <div class = "center">
         <h1>Login / Register</h1>
@@ -315,20 +232,21 @@
                 <ul class="no-bullets">
                     <li><a class = "facebook_login large_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
                     <li><a class = "twitter_login large_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
-                    <li><a class = "google_login large_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                    <li><a class = "google_login large_login" href = "{% url socialauth_begin 'google' %}"></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
+{% endif %}
 <section id = "contactUs" class = "row grey">
     <div class = "center">
         <h1>Contact Us</h1>
         <div class = "columns">
             <div class = "half">
-                <form method = "post" action = "contact.php" class = "form contact-form">
+                <form method = "post" action = "#" class = "form contact-form">
                     <fieldset>
-                        <h2>Feedback form</h2>
+                        <h2>Contanct Form</h2>
 
                         <div id = "message"></div>
                         <div class = "formRow">
@@ -368,15 +286,27 @@
         <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
     </div>
     <div id = "footer-categories">
-        {% for main_category in categories %} {% if main_category.name != 'Root' %}
+       {% for main_category in categories %}
+            {% if main_category.name != 'Root' %}
 
-        {% if main_category.parent_id == 1 %}
-        <div class = "footer-div">
-            <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a> {% for page in pages %} {% if page.category_id == main_category.id %} <a href = "/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a> <br/> {% endif %} {% endfor %} {% for sub_category in categories %} {% if sub_category.parent_id == main_category.id %} <a href = "/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a> <br/> {% endif %} {% endfor %}
-        </div>
-        {% endif %}
+                {% if main_category.parent_id == 1 %}
+                <div class = "footer-div">
+                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                    {% for page in main_category.page_array %}
+                            <a href = "/{{page.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                            <br/>
+                    {% endfor %}
+                    {% for sub_category in categories %}
+                        {% if sub_category.parent_id == main_category.id %}
+                            <a href = "/{{sub_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                            <br/>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
 
-        {% endif %} {% endfor %}
+            {% endif %}
+        {% endfor %}
         <div class = "footer-div">
             <h4>Site map</h4>
             <a href = "/sitemap">Site map</a>

@@ -21,15 +21,26 @@ def categories(request):
                 language_code = 'en'
             else:
                 language_code = category.language.code
-                # get up to 3 pages for each category and record the count as well.
+            # get up to 4 pages for each main category
             page_array = []
             page_count = 0
-            for page in pages:
-                if page_count == 3:
-                    break
-                elif page.category.id == category.id:
-                    page_count = page_count + 1;
-                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+            if category.parent.id == 1:
+                for page in pages:
+                    if page_count == 4:
+                        break
+                    elif page.category.id == category.id:
+                        page_count = page_count + 1;
+                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+                if page_count < 4:
+                    for sub_category in categories:
+                        if sub_category.parent.id == category.id:
+                            for page in pages:
+                                if page_count == 4:
+                                    break
+                                elif page.category.id == sub_category.id:
+                                    page_count = page_count + 1;
+                                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
 
         memcache.add('categories', category_array)
