@@ -6,8 +6,8 @@ from google.appengine.api import memcache
 
 # ...
 def categories(request):
-    if memcache.get('categories') is not None:
-        categories = memcache.get('categories')
+    if memcache.get('category_array') is not None:
+        category_array = memcache.get('category_array')
     else:
         categories = Category.objects.all()
         pages = Page.objects.all()
@@ -24,27 +24,28 @@ def categories(request):
             # get up to 4 pages for each main category
             page_array = []
             page_count = 0
-            if category.parent.id == 1:
+            if category.parent is not None and category.parent.id == 1:
+                page_limit = max(category.frontpage_page_limit, 4)
                 for page in pages:
-                    if page_count == 4:
+                    if page_count == page_limit:
                         break
                     elif page.category.id == category.id:
-                        page_count = page_count + 1;
+                        page_count += 1
                         page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
-                if page_count < 4:
+                if page_count < page_limit:
                     for sub_category in categories:
-                        if sub_category.parent.id == category.id:
+                        if sub_category.parent is not None and sub_category.parent.id == category.id:
                             for page in pages:
-                                if page_count == 4:
+                                if page_count == page_limit:
                                     break
                                 elif page.category.id == sub_category.id:
-                                    page_count = page_count + 1;
+                                    page_count += 1
                                     page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
 
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
 
-        memcache.add('categories', category_array)
-    return {'categories': categories}
+        memcache.add('category_array', category_array)
+    return {'categories': category_array}
 
 # ...
 def is_logged_in(request):

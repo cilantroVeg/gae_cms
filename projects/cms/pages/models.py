@@ -26,6 +26,7 @@ class Language(models.Model):
 # Create your models here.
 class Category(models.Model):
     ORDER = ((1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'), (6, '6'), (7, '7'))
+    MAX_COUNT = ((1, '1'), (2, '2'), (3, '3'), (4, '4'))
     id = models.AutoField(primary_key=True)
     language = models.ForeignKey(Language, null=True, blank=True)
     name = models.CharField(max_length=256, null=False, blank=False)
@@ -33,6 +34,7 @@ class Category(models.Model):
     slug = models.SlugField(unique=True, blank=False, null=False)
     order = models.SmallIntegerField(null=True, blank=True, choices=ORDER)
     allow_replies = models.BooleanField(default=False)
+    frontpage_page_limit = models.SmallIntegerField(null=True, blank=True, default=1, choices=MAX_COUNT)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
