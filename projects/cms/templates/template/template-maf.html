@@ -176,7 +176,7 @@
         <h1>Login / Register</h1>
         <div class = "columns">
             <div class = "half">
-                <h4>Login</h4>
+                <h4><a onclick="$('#create_user_form').slideUp();$('#login_user_form').slideDown();">Login</a> | <a onclick="$('#create_user_form').slideDown();$('#login_user_form').slideUp();">Register</a></h4>
                 <form id = "login_user_form" name = "login_user_form" action = "/process_sign_up/" method = "post">
                     <fieldset>
                         {% csrf_token %}
@@ -199,9 +199,7 @@
                     </fieldset>
                 </form>
                 <hr />
-
-                <h4>Register</h4>
-                <form id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post">
+                <form style="display: none" id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post">
                     <fieldset>
                         {% csrf_token %}
                         <div class = "formRow">

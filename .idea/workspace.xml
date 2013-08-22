@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377131582692" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377135746778" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377066762812" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377016019943" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
@@ -72,7 +70,7 @@
     <file path="/a.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019238417" ignored="false" />
     <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377135511798" ignored="false" />
     <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377135120854" ignored="false" />
-    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377134470881" ignored="false" />
+    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377136277719" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,46 +93,18 @@
       <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="9" selection-start="2" selection-end="38" vertical-scroll-proportion="0.0">
+            <state line="1" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="template-maf.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="18" selection-start="4379" selection-end="4388" vertical-scroll-proportion="-9.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.13615733">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="36" selection-start="2708" selection-end="2714" vertical-scroll-proportion="-9.76">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1665" column="1" selection-start="43195" selection-end="43195" vertical-scroll-proportion="-4.7647057">
+            <state line="178" column="189" selection-start="9133" selection-end="9133" vertical-scroll-proportion="0.2888889">
               <folding>
-                <element signature="e#17076#18635#2" expanded="true" />
-                <element signature="e#18722#20265#1" expanded="true" />
+                <element signature="n#style#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,10 +140,10 @@
         <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+        <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
       </list>
     </option>
   </component>
@@ -951,7 +921,11 @@
       <created>1377066708459</created>
       <updated>1377066708459</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Fixes Navigation">
+      <created>1377135748296</created>
+      <updated>1377135748296</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -978,6 +952,7 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -992,7 +967,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1040,7 +1014,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAF Template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes Navigation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1073,6 +1047,7 @@
     <MESSAGE value="CSS" />
     <MESSAGE value="Context Processors" />
     <MESSAGE value="MAF Template" />
+    <MESSAGE value="Fixes Navigation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1137,23 +1112,9 @@
         <state line="475" column="20" selection-start="17168" selection-end="17168" vertical-scroll-proportion="0.9241774" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="2" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="36" selection-start="2708" selection-end="2714" vertical-scroll-proportion="-9.76">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="18" selection-start="4379" selection-end="4388" vertical-scroll-proportion="-9.0">
           <folding />
         </state>
       </provider>
@@ -1172,6 +1133,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.13615733">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="189" selection-start="9133" selection-end="9133" vertical-scroll-proportion="0.2888889">
+          <folding>
+            <element signature="n#style#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

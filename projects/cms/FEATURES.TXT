@@ -1,5 +1,5 @@
 W
-- Fix MAF header and admin section.
+- Fix MAF admin section.
 - Add image slider
 - Detect Language
 
