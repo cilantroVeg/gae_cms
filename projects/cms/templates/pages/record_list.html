@@ -1,4 +1,4 @@
-{% extends "template/template-magicangel-page.html" %}
+{% extends "template/template-maf-page.html" %}
 
 {% block title %}Record List{% endblock %}{% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
@@ -12,11 +12,9 @@
         data.addColumn('string', 'Value');
         data.addColumn('string', 'Manage');
         data.addRows([
-                { % for entry in record_list %
-    }
+                {% for entry in record_list %}
     ['{{ entry.key }}', '{{ entry.value }}', '<a href="/record/edit/{{ entry.id }}/">Edit</a>|<a href="/record/delete/{{ entry.id }}/">Delete</a>'],
-            { % endfor %
-    }
+            {% endfor %}
     ])
     ;
 

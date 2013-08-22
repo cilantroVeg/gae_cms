@@ -1704,8 +1704,8 @@ nav#top-nav #fluid-nav li a, nav#top-nav #fixed-nav li a {
     font-size: 12px;
     border: none;
 }
-nav#top-nav #fluid-nav li a:hover {
-    color: #333;
+nav#top-nav #fluid-nav li a:hover, #register_link a{
+    color: #3498db;
     text-decoration: none;
 
 }
@@ -1718,4 +1718,12 @@ nav#top-nav #fixed-nav li a:hover {
 nav#top-nav #fixed-nav li.current a {
     color: #333;
     padding-bottom: 5px;
+}
+
+#home {
+    min-height: 360px;
+}
+
+#home.row.large{
+    min-height: 720px;
 }

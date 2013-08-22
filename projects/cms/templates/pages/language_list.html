@@ -1,4 +1,4 @@
-{% extends "template/template-magicangel-page.html" %}
+{% extends "template/template-maf-page.html" %}
 
 {% block title %}Language List{% endblock %}{% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
@@ -12,11 +12,9 @@
         data.addColumn('string', 'Language Code');
         data.addColumn('string', 'Manage');
         data.addRows([
-                { % for entry in language_list %
-    }
+                {% for entry in language_list %}
     ['{{ entry.name }}', '{{ entry.code }}', '<a href="/language/edit/{{ entry.id }}/">Edit</a>|<a href="/language/delete/{{ entry.id }}/">Delete</a>'],
-            { % endfor %
-    }
+            {% endfor %}
     ])
     ;
 

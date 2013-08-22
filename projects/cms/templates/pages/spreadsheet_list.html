@@ -1,4 +1,4 @@
-{% extends "template/template-magicangel-page.html" %}
+{% extends "template/template-maf-page.html" %}
 
 {% block title %}Spreadsheet List{% endblock %}{% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
@@ -13,11 +13,9 @@
         data.addColumn('string', 'File Size (Bytes)');
         data.addColumn('string', 'Manage');
         data.addRows([
-                { % for entry in spreadsheet_list %
-    }
+                {% for entry in spreadsheet_list %}
     ['{{ entry.name }}', '{{ entry.spreadsheet_file }}', '{{ entry.size }} bytes', '<a href="/spreadsheet/edit/{{ entry.id }}/">Edit</a>|<a href="/spreadsheet/delete/{{ entry.id }}/">Delete</a>'],
-            { % endfor %
-    }
+            {% endfor %}
     ])
     ;
 

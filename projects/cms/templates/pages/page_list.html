@@ -1,4 +1,4 @@
-{% extends "template/template-magicangel-page.html" %}
+{% extends "template/template-maf-page.html" %}
 
 {% block title %}Page List{% endblock %}{% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
@@ -15,11 +15,9 @@
         data.addColumn('string', 'Slug');
         data.addColumn('string', 'Manage');
         data.addRows([
-                { % for entry in page_list %
-    }
+                {% for entry in page_list %}
     ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
-            { % endfor %
-    }
+            {% endfor %}
     ])
     ;
 
