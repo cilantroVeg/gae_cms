@@ -1,10 +1,11 @@
 $(document).ready(function() {
         jQuery('.gallery').flexslider({controlNav:false});
-        var navItems = jQuery('#mainNav li');
+        var navItems = jQuery('#fixed-nav li');
         navItems.find('a').click(function (){
-            navItems.removeClass('active');
-            this.parentNode.className += ' active';
+            navItems.removeClass('current');
+            this.parentNode.className += ' current';
         });
+
         initScrollNav({
             nav:'#top-nav a'
         });

@@ -1664,3 +1664,58 @@ div.center h1, .subHeading{
     background-image: url(/static/images/handle-bg.png);
     background-repeat: no-repeat;
 }
+
+nav#top-nav #fixed-nav li a:hover {
+    color: #3498db;
+}
+nav#top-nav #fixed-nav li.current a, .active {
+    border-bottom: 3px solid #3498db;
+}
+
+nav#top-nav a{
+    text-decoration: none;
+
+}
+
+nav#top-nav{
+    top: 5px;
+    right: 50px;
+    position: absolute;
+}
+nav#top-nav ul {
+
+    font-family: 'Montserrat',  sans-serif;
+    float: right;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+nav#top-nav #fluid-nav li, nav#top-nav #fixed-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav#top-nav #fluid-nav li:first-child, nav#top-nav #fixed-nav li:first-child  {
+    margin-left: 0;
+}
+nav#top-nav #fluid-nav li a, nav#top-nav #fixed-nav li a {
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+}
+nav#top-nav #fluid-nav li a:hover {
+    color: #333;
+    text-decoration: none;
+
+}
+nav#top-nav #fluid-nav li.current a {
+    color: #faa3a5;
+}
+nav#top-nav #fixed-nav li a:hover {
+    text-decoration: none;
+}
+nav#top-nav #fixed-nav li.current a {
+    color: #333;
+    padding-bottom: 5px;
+}

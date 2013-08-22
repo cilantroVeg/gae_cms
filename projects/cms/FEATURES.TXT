@@ -1,18 +1,19 @@
-M
-- Get structure and pages on category call
-- Implement columns template
-T
-- Detect Language. English default.
-- Use same template for IP, Yiyask, NRWL, Music, Bible.
 W
-- Migrate content and deploy sites.
+- Fix MAF header and admin section.
+- Add image slider
+- Detect Language
+
 T
-- Basic API. For Bible app.
+- Use same template for IP, Yiyask, NRWL, Music, Bible.
+- Migrate content and deploy sites.
+
 F
+- Bible API
+- Basic API. For Bible app.
+
+S
 - Blueimp
 - Inline Editing
-S
-- Bible API
 
 M
 - Memcache
