@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377137581725" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377295348638" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377137681962" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377016019943" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
     <file path="/flickr.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375619872593" ignored="false" />
     <file path="/models.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377064787614" ignored="false" />
-    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377066103516" ignored="false" />
+    <file path="/views.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377147776636" ignored="false" />
     <file path="/urls.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246350787" ignored="false" />
     <file path="/a.dummy" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377137014161" ignored="false" />
     <file path="/access_keys.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1375657325186" ignored="false" />
@@ -48,7 +52,7 @@
     <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376891375027" ignored="false" />
     <file path="/secondary_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243840352" ignored="false" />
     <file path="/sitemap.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246505071" ignored="false" />
-    <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019538173" ignored="false" />
+    <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377147665809" ignored="false" />
     <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376889923249" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342666679" ignored="false" />
     <file path="/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342614744" ignored="false" />
@@ -67,10 +71,11 @@
     <file path="/a.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377048239780" ignored="false" />
     <file path="/a.coffee" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019227672" ignored="false" />
     <file path="/a.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019238417" ignored="false" />
-    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377135511798" ignored="false" />
-    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377137500383" ignored="false" />
-    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377136277719" ignored="false" />
+    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377148430220" ignored="false" />
+    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377148080979" ignored="false" />
+    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377148152742" ignored="false" />
     <file path="/record_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377136895255" ignored="false" />
+    <file path="/craftyslide.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377147955763" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,53 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-maf.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="52" selection-start="4996" selection-end="4996" vertical-scroll-proportion="0.022222223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="425" selection-end="465" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="71" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -107,11 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/record_list.html" />
@@ -121,8 +167,13 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/static/javascript/crafty/css/craftyslide.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
       </list>
     </option>
   </component>
@@ -217,7 +268,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,6 +306,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,11 +344,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/javascript/crafty" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/template" />
       <recent name="$PROJECT_DIR$/projects/cms/users" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template/maf/css" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
@@ -680,7 +731,11 @@
       <created>1377137585446</created>
       <updated>1377137585447</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Fixes Admin">
+      <created>1377137719456</created>
+      <updated>1377137719456</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -707,13 +762,11 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38646287" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23508006" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -722,6 +775,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -809,117 +864,96 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="20" selection-start="3951" selection-end="3984" vertical-scroll-proportion="-53.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="40.791668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/fixed-navigation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/registration/password_change_done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/user_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="710" selection-end="710" vertical-scroll-proportion="0.5344418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/image_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.6413302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="939" selection-end="939" vertical-scroll-proportion="0.44144145">
+        <state line="16" column="0" selection-start="425" selection-end="465" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/language_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="47" selection-start="621" selection-end="621" vertical-scroll-proportion="0.48723897">
-          <folding />
-        </state>
+        <state line="14" column="47" selection-start="621" selection-end="621" vertical-scroll-proportion="0.48723897" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="737" selection-end="737" vertical-scroll-proportion="0.5916473">
-          <folding />
-        </state>
+        <state line="17" column="43" selection-start="737" selection-end="737" vertical-scroll-proportion="0.5916473" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="778" selection-end="778" vertical-scroll-proportion="0.3062645">
-          <folding />
-        </state>
+        <state line="16" column="23" selection-start="778" selection-end="778" vertical-scroll-proportion="0.3062645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="686" selection-end="686" vertical-scroll-proportion="0.52204174">
-          <folding />
-        </state>
+        <state line="15" column="50" selection-start="686" selection-end="686" vertical-scroll-proportion="0.52204174" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="32" selection-start="4867" selection-end="4867" vertical-scroll-proportion="0.25735295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1727" column="19" selection-start="44348" selection-end="44348" vertical-scroll-proportion="0.7569444">
-          <folding>
-            <element signature="e#17076#18635#2" expanded="true" />
-            <element signature="e#18722#20265#1" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.9358974">
+        <state line="33" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="4" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.33236575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="20" selection-start="5968" selection-end="5984" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1725" column="0" selection-start="44311" selection-end="44311" vertical-scroll-proportion="0.8224852" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="8" selection-start="4910" selection-end="4943" vertical-scroll-proportion="0.31288344" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="52" selection-start="4996" selection-end="4996" vertical-scroll-proportion="0.022222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="425" selection-end="465" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="71" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

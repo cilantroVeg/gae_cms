@@ -1,7 +1,19 @@
 {% extends "template/template-maf.html" %}
 
-{% block title %}{% endblock %}{% block js %}
+{% block title %}Welcome{% endblock %}
 
-{% endblock %}{% block content %}
+{% block js %}
 
+{% endblock %}
+
+{% block content %}
+            <div id="slideshow">
+                <ul>
+                    {% for image in image_array %}
+                        <li>
+                            <img src="{{image.picasa_photo_url}}" title="{{image.name}}" />
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
 {% endblock %}

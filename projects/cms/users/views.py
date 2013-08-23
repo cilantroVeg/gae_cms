@@ -80,12 +80,8 @@ def process_sign_up(request):
 
 
 def front_page(request):
-    #pprint.pprint(request.user.email)
-    if is_logged_in(request) is False:
-        return render_to_response('users/signup.html',
-                                  context_instance=RequestContext(request))
-    else:
-        return render_to_response('users/front_page.html',
+    image_array = Image.objects.all()[:7]
+    return render_to_response('users/front_page.html', {'image_array': image_array},
                                   context_instance=RequestContext(request))
 
 # Custom 404 and 500

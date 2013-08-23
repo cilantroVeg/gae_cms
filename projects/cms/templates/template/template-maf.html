@@ -99,6 +99,7 @@
 <section id="home" class = "row">
     <div class = "center">
         <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+        <div>{% block content %}{% endblock %}</div>
         <strong class = "subHeading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
     </div>
 </section>
