@@ -1,7 +1,6 @@
 T
 - Add image slider
-- Detect Language
-- Use factory template for Bible, IP, Yiyask, NRWL, Music.
+]- Use factory template for Bible, IP, Yiyask, NRWL, Music.
 - Migrate content and deploy sites.
 
 F
