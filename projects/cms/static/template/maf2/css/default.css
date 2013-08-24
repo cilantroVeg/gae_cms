@@ -1601,9 +1601,7 @@ header{
     padding-right: 15%;
 }
 
-div.center h1, .subHeading{
-    color: white;
-}
+
 
 #map_canvas{
     width:445px; height:392px
@@ -1726,4 +1724,14 @@ nav#top-nav #fixed-nav li.current a {
 
 #home.row.large{
     min-height: 720px;
+}
+
+strong.subHeading{
+color:white;
+}
+section#home.row div.center h1{
+    color: white;
+    width: 980px;
+    padding-bottom: 10px;
+
 }

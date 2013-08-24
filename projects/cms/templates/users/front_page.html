@@ -7,14 +7,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="flexslider" style="width: 320px; margin: 0 auto; margin-bottom: 35px;">
-    <ul class="slides">
+<div class="flexslider" style="height: 320px; width:480px; margin: 0 auto; margin-bottom: 35px; overflow: hidden;">
+    <ul class="slides" >
         {% for image in image_array %}
         <li>
-            <img src="{{image.picasa_photo_url}}" title="{{image.name}}" style="    width: auto;
+            <img src="{{image.picasa_photo_url}}" title="{{image.name}}" style="
+    width: 100%;
     height: auto;
-    max-width: 100%;
-    max-height: 320px;
+    background-position: center;
     margin: 0 auto;
     vertical-align: middle;"/>
         </li>

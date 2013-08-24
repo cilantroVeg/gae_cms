@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css" afterPath="$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377320980308" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377320995656" ignored="false" />
     <file path="/FEATURES.TXT" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377137681962" ignored="false" />
     <file path="/settings.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377016019943" ignored="false" />
     <file path="/signup.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376764388565" ignored="false" />
@@ -48,7 +53,7 @@
     <file path="/initial_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376891375027" ignored="false" />
     <file path="/secondary_data.yaml" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376243840352" ignored="false" />
     <file path="/sitemap.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376246505071" ignored="false" />
-    <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377320880533" ignored="false" />
+    <file path="/front_page.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377358793422" ignored="false" />
     <file path="/template-magicangel.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376889923249" ignored="false" />
     <file path="$PROJECT_DIR$/../../mobovivo/webapps/hannibal/contests/templatetags/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342666679" ignored="false" />
     <file path="/russian-tags.py" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1376342614744" ignored="false" />
@@ -67,11 +72,12 @@
     <file path="/a.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377048239780" ignored="false" />
     <file path="/a.coffee" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019227672" ignored="false" />
     <file path="/a.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377019238417" ignored="false" />
-    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377319866661" ignored="false" />
-    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377148080979" ignored="false" />
-    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377318423557" ignored="false" />
+    <file path="/default.js" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377358850326" ignored="false" />
+    <file path="/default.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377359830089" ignored="false" />
+    <file path="/template-maf.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377359523215" ignored="false" />
     <file path="/record_list.html" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377136895255" ignored="false" />
     <file path="/craftyslide.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377147955763" ignored="false" />
+    <file path="/flexslider.css" changelist="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" time="1377359152431" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +97,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FEATURES.TXT" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.021067416">
+            <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,8 +109,38 @@
       <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="980" selection-end="980" vertical-scroll-proportion="-5.0">
+            <state line="116" column="31" selection-start="5688" selection-end="5688" vertical-scroll-proportion="-4.285714">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flexslider.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="11" selection-start="935" selection-end="938" vertical-scroll-proportion="8.333333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1733" column="13" selection-start="44405" selection-end="44405" vertical-scroll-proportion="0.9334319">
+              <folding>
+                <element signature="e#17076#18635#2" expanded="true" />
+                <element signature="e#18722#20265#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +148,7 @@
       <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+            <state line="19" column="97" selection-start="0" selection-end="5417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,19 +166,10 @@
       <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="453" selection-end="453" vertical-scroll-proportion="-10.0">
+            <state line="9" column="96" selection-start="232" selection-end="249" vertical-scroll-proportion="-5.625">
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,8 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/record_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/user_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
@@ -183,13 +208,15 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/static/javascript/crafty/css/craftyslide.css" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
+        <option value="$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
       </list>
     </option>
   </component>
@@ -421,6 +448,40 @@
               <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -509,6 +570,40 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -550,13 +645,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/cms/static/template/maf2/js" />
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex" />
+      <recent name="$PROJECT_DIR$/projects/cms/static/template/maf2/js" />
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/crafty" />
       <recent name="$PROJECT_DIR$/projects/cms/templates/template" />
       <recent name="$PROJECT_DIR$/projects/cms/users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
     </key>
   </component>
@@ -953,7 +1049,11 @@
       <created>1377320981625</created>
       <updated>1377320981625</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Fixes Admin">
+      <created>1377320996965</created>
+      <updated>1377320996966</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1082,11 +1182,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="737" selection-end="737" vertical-scroll-proportion="0.5916473" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="23" selection-start="778" selection-end="778" vertical-scroll-proportion="0.3062645" />
@@ -1123,16 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1725" column="0" selection-start="44311" selection-end="44311" vertical-scroll-proportion="0.8224852">
-          <folding>
-            <element signature="e#17076#18635#2" expanded="true" />
-            <element signature="e#18722#20265#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="8" selection-start="4910" selection-end="4943" vertical-scroll-proportion="0.31288344">
@@ -1147,20 +1232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1168,26 +1239,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="97" selection-start="0" selection-end="5417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="453" selection-end="453" vertical-scroll-proportion="-10.0">
+        <state line="9" column="96" selection-start="232" selection-end="249" vertical-scroll-proportion="-5.625">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="980" selection-end="980" vertical-scroll-proportion="-5.0">
+        <state line="116" column="31" selection-start="5688" selection-end="5688" vertical-scroll-proportion="-4.285714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.021067416">
+        <state line="31" column="11" selection-start="935" selection-end="938" vertical-scroll-proportion="8.333333">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1733" column="13" selection-start="44405" selection-end="44405" vertical-scroll-proportion="0.9334319">
+          <folding>
+            <element signature="e#17076#18635#2" expanded="true" />
+            <element signature="e#18722#20265#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

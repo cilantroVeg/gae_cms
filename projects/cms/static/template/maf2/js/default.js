@@ -11,17 +11,13 @@ $(document).ready(function() {
             animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
             initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
             randomize: false,               //Boolean: Randomize slide order
-
-// Usability features
             pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
-            pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+            pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
             useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
             touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
             video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
-
-// Primary Controls
-            controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
-            directionNav: false             //Boolean: Create navigation for previous/next navigation? (true/false)
+            controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+            directionNav: true             //Boolean: Create navigation for previous/next navigation? (true/false)
         });
         jQuery('.gallery').flexslider({
             controlNav:false,
