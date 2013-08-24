@@ -115,9 +115,9 @@ def contact(request):
             message = form.cleaned_data['contact_comment']
             recipients = ['arturo@interpegasus.com']
             from google.appengine.api import mail
-            mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
+
             try:
-                1
+                mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
             except:
                 log.debug("Issue sending email to: " + sender)
             return HttpResponseRedirect('/thanks/')

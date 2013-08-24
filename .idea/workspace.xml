@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/models.py" afterPath="$PROJECT_DIR$/projects/cms/users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/signup.js" afterPath="$PROJECT_DIR$/projects/cms/static/javascript/signup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="17" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.0" vertical-offset="1328" max-vertical-offset="2535">
+            <state line="119" column="121" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.6415094" vertical-offset="1328" max-vertical-offset="2535">
               <folding />
             </state>
           </provider>
@@ -59,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FEATURES.TXT" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.021770682" vertical-offset="0" max-vertical-offset="825">
+            <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -155,9 +146,9 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
-        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
       </list>
     </option>
   </component>
@@ -865,7 +856,11 @@
       <created>1377364082427</created>
       <updated>1377364082427</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Fixes Forms">
+      <created>1377366147300</created>
+      <updated>1377366147300</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1094,13 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="17" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.0" vertical-offset="1328" max-vertical-offset="2535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="51" selection-start="4799" selection-end="4799" vertical-scroll-proportion="-31.96" vertical-offset="1406" max-vertical-offset="2295">
@@ -1110,7 +1098,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.021770682" vertical-offset="0" max-vertical-offset="825">
+        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="121" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.6415094" vertical-offset="1328" max-vertical-offset="2535">
           <folding />
         </state>
       </provider>
