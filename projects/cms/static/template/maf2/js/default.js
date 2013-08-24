@@ -1,4 +1,5 @@
 $(document).ready(function() {
+        jQuery('.gallery').flexslider({controlNav:true});
         var navItems = jQuery('#fixed-nav li');
         navItems.find('a').click(function (){
             navItems.removeClass('current');

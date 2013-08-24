@@ -7,13 +7,13 @@
 {% endblock %}
 
 {% block content %}
-            <div id="slideshow">
-                <ul>
-                    {% for image in image_array %}
-                        <li>
-                            <img src="{{image.picasa_photo_url}}" title="{{image.name}}" />
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+<div class="flexslider">
+    <ul class="slides">
+        {% for image in image_array %}
+        <li>
+            <img src="{{image.picasa_photo_url}}" title="{{image.name}}"/>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}
