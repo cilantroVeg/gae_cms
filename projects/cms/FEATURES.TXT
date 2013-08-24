@@ -1,6 +1,5 @@
 T
-- Add image slider
-]- Use factory template for Bible, IP, Yiyask, NRWL, Music.
+- Use factory template for Bible, IP, Yiyask, NRWL, Music.
 - Migrate content and deploy sites.
 
 F
