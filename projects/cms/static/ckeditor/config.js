@@ -24,7 +24,8 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'others' },
 	];
 
-    config.width = '80%';
+    config.width = '90%';
+    config.height = '360px';
 	// The default plugins included in the basic setup define some buttons that
 	// we don't want too have in a basic editor. We remove them here.
 	config.removeButtons = 'Cut,Copy,Paste,Undo,Redo,Anchor,Underline,Strike,Subscript,Superscript';

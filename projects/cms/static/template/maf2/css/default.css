@@ -1746,3 +1746,28 @@ section#home.row div.center h1{
     color:#ffffff;
     font-size: 21px;
 }
+
+#static_content form input{
+    width: 360px;
+    clear: both;
+    float: none;
+    display: block;
+}
+
+
+#static_content form label{
+    min-width: 360px;
+    clear:both;
+    display: block;
+    color: white;
+}
+
+select {
+    height: 49px;
+    width: 360px;
+    padding: 12px;
+    font-size: 15px;
+    clear: both;
+    position: relative;
+    display: block;
+}

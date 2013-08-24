@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/buttons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/css/table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/admin_panel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.easing.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.localscroll-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.nav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/jquery.scrollto.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf/js/slabtext.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -72,14 +52,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1743" column="25" selection-start="44563" selection-end="44563" vertical-scroll-proportion="0.8668639" vertical-offset="25559" max-vertical-offset="26295">
+            <state line="1771" column="13" selection-start="44993" selection-end="44993" vertical-scroll-proportion="0.0" vertical-offset="25964" max-vertical-offset="26670">
               <folding>
                 <element signature="e#17076#18635#2" expanded="true" />
                 <element signature="e#18722#20265#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/ckeditor/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="4" selection-start="416" selection-end="436" vertical-scroll-proportion="0.2394775" vertical-offset="0" max-vertical-offset="689">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/ckeditor/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="145" selection-end="159" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="300">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,28 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-magicangel.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="3315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="template-maf-page.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="99" column="26" selection-start="4901" selection-end="4901" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="4950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -158,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/language_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" />
@@ -174,6 +162,7 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" />
       </list>
     </option>
   </component>
@@ -313,15 +302,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="maf2" />
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,10 +387,6 @@
               <option name="myItemId" value="maf2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -403,7 +432,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -912,7 +941,11 @@
       <created>1377359873116</created>
       <updated>1377359873116</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Fixes Admin">
+      <created>1377363048918</created>
+      <updated>1377363048918</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -939,6 +972,7 @@
     <frame x="8" y="31" width="1420" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -954,7 +988,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1042,21 +1075,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="97" selection-start="0" selection-end="5417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/front_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="96" selection-start="232" selection-end="249" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="11" selection-start="935" selection-end="938" vertical-scroll-proportion="8.333333" vertical-offset="0" max-vertical-offset="0" />
@@ -1069,7 +1087,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="4" column="35" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
@@ -1137,13 +1157,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="145" selection-end="159" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1743" column="25" selection-start="44563" selection-end="44563" vertical-scroll-proportion="0.8668639" vertical-offset="25559" max-vertical-offset="26295">
+        <state line="1771" column="13" selection-start="44993" selection-end="44993" vertical-scroll-proportion="0.0" vertical-offset="25964" max-vertical-offset="26670">
           <folding>
             <element signature="e#17076#18635#2" expanded="true" />
             <element signature="e#18722#20265#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/ckeditor/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="416" selection-end="436" vertical-scroll-proportion="0.2394775" vertical-offset="0" max-vertical-offset="689">
+          <folding />
         </state>
       </provider>
     </entry>
