@@ -249,19 +249,20 @@
         <h1>Contact Us</h1>
         <div class = "columns">
             <div class = "half">
-                <form method = "post" action = "#" class = "form contact-form">
+                <form id="contact_form" name="contact_form" method = "post" action = "/contact/" class = "form contact-form">
+                    {% csrf_token %}
                     <fieldset>
                         <h2>Contact Form</h2>
 
                         <div id = "message"></div>
                         <div class = "formRow">
-                            <div class = "textField"><input type = "text" name = "contact-name" id = "name" placeholder = "Your name ..."/></div>
+                            <div class = "textField"><input type = "text" name = "contact_name" id = "contact-name" placeholder = "Your name ..."/></div>
                         </div>
                         <div class = "formRow">
-                            <div class = "textField"><input type = "text" name = "contact-email" id = "email" placeholder = "Your Email ..."/></div>
+                            <div class = "textField"><input type = "text" name = "contact_email" id = "contact-email" placeholder = "Your Email ..."/></div>
                         </div>
                         <div class = "formRow">
-                            <div class = "textField"><textarea cols = "20" name = "contact-comment" id = "comment" rows = "4" placeholder = "Your Comment ..."></textarea></div>
+                            <div class = "textField"><textarea cols = "20" name = "contact_comment" id = "contact-comment" rows = "4" placeholder = "Your Comment ..."></textarea></div>
                         </div>
                         <div class = "formRow">
                             <button class = "btnSmall btn submit right">

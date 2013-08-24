@@ -1,5 +1,4 @@
 S
-- Fix register form
 - Fix contant form
 - Use factory template for Bible, IP, Yiyask, NRWL, Music.
 - Migrate content and deploy sites.

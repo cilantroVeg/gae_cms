@@ -108,17 +108,19 @@ def contact(request):
     if request.method == 'POST': # If the form has been submitted...
         form = ContactForm(request.POST) # A form bound to the POST data
         if form.is_valid():
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
-            sender = form.cleaned_data['your_email']
-            recipients = ['contact@interpegasus.com']
-            from django.core.mail import send_mail
 
+            name = form.cleaned_data['contact_name']
+            sender = form.cleaned_data['contact_email']
+            subject = 'Contant Message From ' + name + ': ' + sender
+            message = form.cleaned_data['contact_comment']
+            recipients = ['arturo@interpegasus.com']
+            from google.appengine.api import mail
+            mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
             try:
-                send_mail(subject, message, sender, recipients)
+                1
             except:
                 log.debug("Issue sending email to: " + sender)
-            return HttpResponseRedirect('/thanks/') # Redirect after POST
+            return HttpResponseRedirect('/thanks/')
     else:
         try:
             data = {'your_email': request.user.email}

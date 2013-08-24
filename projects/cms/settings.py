@@ -143,3 +143,6 @@ FILE_UPLOAD_TEMP_DIR = '/tmp'
 # Add to your settings file
 CONTENT_TYPES = ['image', 'video']
 FILE_UPLOAD_MAX_MEMORY_SIZE = 7621440
+
+
+EMAIL_BACKEND = 'djangoappengine.mail.EmailBackend'
