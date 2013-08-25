@@ -107,30 +107,39 @@ def login_error(request):
 def contact(request):
     if request.method == 'POST': # If the form has been submitted...
         form = ContactForm(request.POST) # A form bound to the POST data
-        if form.is_valid():
-
-            name = form.cleaned_data['contact_name']
-            sender = form.cleaned_data['contact_email']
-            subject = 'Contant Message From ' + name + ': ' + sender
-            message = form.cleaned_data['contact_comment']
-            recipients = ['arturo@interpegasus.com']
-            from google.appengine.api import mail
-
+        error_message = message_contains_url(request.POST['contact_comment'])
+        if error_message:
             try:
-                mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
+                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
             except:
-                log.debug("Issue sending email to: " + sender)
-            return HttpResponseRedirect('/thanks/')
+                data = {}
+            # form = ContactForm(initial=data)
+        else:
+            if form.is_valid():
+                name = form.cleaned_data['contact_name']
+                sender = form.cleaned_data['contact_email']
+                subject = 'Contant Message From ' + name + ': ' + sender
+                message = form.cleaned_data['contact_comment']
+                recipients = ['arturo@interpegasus.com']
+                try:
+                    from google.appengine.api import mail
+                    mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
+                except:
+                    log.debug("Issue sending email to: " + sender)
+                return HttpResponseRedirect('/thanks/')
     else:
-        try:
-            data = {'your_email': request.user.email}
-        except:
-            data = {}
-        form = ContactForm(initial=data) # An unbound form
-    return render(request, 'users/contact.html', {
-        'form': form,
-    })
+        form = ContactForm()
+        error_message = ''
+    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
 
+def message_contains_url(message):
+    from django.utils.html import urlize
+    error_message = False
+    message = message.replace(" dot ",".")
+    message = message.replace(" ","")
+    if urlize(message) != message:
+        error_message = 'Please do not include links or emails in the message. Sorry for the inconvenience.'
+    return error_message
 
 def thanks(request):
     return render(request, 'users/thanks.html')

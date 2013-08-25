@@ -3,8 +3,10 @@
 {% block title %}Enter{% endblock %}{% block js %}
 {% endblock %}
 
-{% block content %}{% if error_message %}
-<p id="my_feedback">{{ error_message }} </p>{% endif %}
+{% block content %}
+{% if error_message %}
+<p id="my_feedback">{{ error_message }} </p>
+{% endif %}
 <section id="register">
     <div class="center">
         <h1>Login / Register</h1>
