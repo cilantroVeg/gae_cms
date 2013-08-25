@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,7 +37,16 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="121" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.6415094" vertical-offset="1328" max-vertical-offset="2535">
+            <state line="125" column="49" selection-start="4574" selection-end="4574" vertical-scroll-proportion="0.26557863" vertical-offset="1681" max-vertical-offset="2730">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="379" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7215">
               <folding />
             </state>
           </provider>
@@ -44,72 +55,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="51" selection-start="4799" selection-end="4799" vertical-scroll-proportion="-31.96" vertical-offset="1406" max-vertical-offset="2295">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FEATURES.TXT" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="48" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="19" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="98" selection-start="13683" selection-end="13698" vertical-scroll-proportion="-8.387755" vertical-offset="3549" max-vertical-offset="5055">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/signup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="30" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="945">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="368" selection-end="384" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="11" selection-start="850" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+            <state line="12" column="11" selection-start="424" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
               <folding />
             </state>
           </provider>
@@ -133,21 +79,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" />
         <option value="$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
         <option value="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/projects/cms/static/javascript/signup.js" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/users/contact.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
       </list>
     </option>
@@ -166,31 +112,16 @@
             <id />
           </State>
           <State>
-            <id>Assignment issuesJavaScript</id>
-          </State>
-          <State>
             <id>CSS</id>
           </State>
           <State>
             <id>Code style issuesJavaScript</id>
           </State>
           <State>
-            <id>CoffeeScript</id>
-          </State>
-          <State>
             <id>Control flow issuesJavaScript</id>
           </State>
           <State>
-            <id>DOM issuesJavaScript</id>
-          </State>
-          <State>
             <id>Django</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Google App Engine (Python)</id>
           </State>
           <State>
             <id>JavaScript</id>
@@ -205,7 +136,7 @@
             <id>Portability issues</id>
           </State>
           <State>
-            <id>Probable bugsCoffeeScript</id>
+            <id>Potentially confusing code constructsJavaScript</id>
           </State>
           <State>
             <id>Python</id>
@@ -288,55 +219,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,7 +247,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
@@ -860,7 +743,15 @@
       <created>1377366147300</created>
       <updated>1377366147300</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Fixes Forms">
+      <created>1377366164816</created>
+      <updated>1377366164817</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Fixes Forms">
+      <created>1377453011470</created>
+      <updated>1377453011470</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -991,42 +882,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/magicangel.org.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/nrwl.org.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.4002809" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.06666667" vertical-offset="0" max-vertical-offset="1230">
-          <folding>
-            <element signature="n#style#0;n#form#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1771" column="13" selection-start="44993" selection-end="44993" vertical-scroll-proportion="0.0" vertical-offset="25964" max-vertical-offset="26670">
           <folding>
-            <element signature="e#17076#18635#2" expanded="true" />
-            <element signature="e#18722#20265#1" expanded="true" />
+            <element signature="e#17076#18635#2" expanded="false" />
+            <element signature="e#18722#20265#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1055,43 +916,16 @@
     <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="30" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="945">
-          <folding />
+          <folding>
+            <marker date="1377364573000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1377364573000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/category_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="24" selection-start="368" selection-end="384" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="98" selection-start="13683" selection-end="13698" vertical-scroll-proportion="-8.387755" vertical-offset="3549" max-vertical-offset="5055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="48" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="51" selection-start="4799" selection-end="4799" vertical-scroll-proportion="-31.96" vertical-offset="1406" max-vertical-offset="2295">
           <folding />
         </state>
       </provider>
@@ -1103,9 +937,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="48" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="136" selection-end="215" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="606" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="327" selection-end="327" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="258" column="8" selection-start="0" selection-end="16269" vertical-scroll-proportion="-78.97959" vertical-offset="0" max-vertical-offset="5055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="10" selection-start="5272" selection-end="5272" vertical-scroll-proportion="-16.25" vertical-offset="1200" max-vertical-offset="5025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="424" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="379" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="121" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.6415094" vertical-offset="1328" max-vertical-offset="2535">
+        <state line="125" column="49" selection-start="4574" selection-end="4574" vertical-scroll-proportion="0.26557863" vertical-offset="1681" max-vertical-offset="2730">
           <folding />
         </state>
       </provider>

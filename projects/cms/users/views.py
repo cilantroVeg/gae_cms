@@ -12,6 +12,9 @@ from django.contrib.auth import logout
 from django.contrib.auth import login
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.conf import settings
+from pages.models import Record
+
 
 #from django.contrib.auth.models import Group, Permission
 #from django.contrib.contenttypes.models import ContentType
@@ -116,16 +119,17 @@ def contact(request):
             # form = ContactForm(initial=data)
         else:
             if form.is_valid():
-                name = form.cleaned_data['contact_name']
-                sender = form.cleaned_data['contact_email']
-                subject = 'Contant Message From ' + name + ': ' + sender
-                message = form.cleaned_data['contact_comment']
-                recipients = ['arturo@interpegasus.com']
+                contact_name = form.cleaned_data['contact_name']
+                contact_email = form.cleaned_data['contact_email']
+                contact_comment = form.cleaned_data['contact_comment']
+                subject = 'Contant Message From ' + contact_name + ': ' + contact_email
+                recipients = settings.ADMIN_USERS
+                sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.ADMIN_USERS[0] + ">"
                 try:
                     from google.appengine.api import mail
-                    mail.send_mail(sender='Admin' + " <arturo@magicangel.org>", to=recipients, subject=subject, body=message)
+                    mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
                 except:
-                    log.debug("Issue sending email to: " + sender)
+                    log.debug("Issue sending email from: " + contact_email)
                 return HttpResponseRedirect('/thanks/')
     else:
         form = ContactForm()
