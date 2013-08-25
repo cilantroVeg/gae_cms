@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="Fixes Contact">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+    <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,7 +36,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="93" selection-start="4727" selection-end="4727" vertical-scroll-proportion="0.4706724" vertical-offset="1546" max-vertical-offset="2730">
+            <state line="126" column="117" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.4706724" vertical-offset="1546" max-vertical-offset="2730">
               <folding />
             </state>
           </provider>
@@ -749,7 +749,11 @@
       <created>1377454261061</created>
       <updated>1377454261061</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Fixes Contact">
+      <created>1377473916632</created>
+      <updated>1377473916632</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -996,7 +1000,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="93" selection-start="4727" selection-end="4727" vertical-scroll-proportion="0.4706724" vertical-offset="1546" max-vertical-offset="2730">
+        <state line="126" column="117" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.4706724" vertical-offset="1546" max-vertical-offset="2730">
           <folding />
         </state>
       </provider>
