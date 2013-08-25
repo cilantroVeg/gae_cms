@@ -122,7 +122,7 @@ def contact(request):
                 contact_name = form.cleaned_data['contact_name']
                 contact_email = form.cleaned_data['contact_email']
                 contact_comment = form.cleaned_data['contact_comment']
-                subject = 'Contant Message From ' + contact_name + ': ' + contact_email
+                subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
                 recipients = settings.ADMIN_USERS
                 sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.ADMIN_USERS[0] + ">"
                 try:
