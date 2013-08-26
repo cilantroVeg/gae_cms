@@ -1,1 +1,2 @@
-../cms/indexes.py
+from dbindexer import autodiscover
+autodiscover()

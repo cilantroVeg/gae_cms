@@ -1,1 +1,0 @@
-../cms/manage.py

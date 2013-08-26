@@ -5,23 +5,802 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/AGM/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/bible/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/esc/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/magicangel.org/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/music/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/nrwl.org/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/portfolio/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/yiyask.com/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/AGM/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/bible/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/magicangel.org/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/music/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/nrwl.org/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/portfolio/access_keys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/access_keys.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/autoload" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/dbindexer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/django" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/djangoappengine" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/djangotoolbox" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/agm/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/bible/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/api_data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/pages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/CMS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/MagicAngel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/NavBar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/Pegasus-CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/check-no.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/check-yes.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/cms.interpegasus.footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/default-profile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/google.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/gradient.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/interpegasus_icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/list1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/listblue.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/listblue2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/listgreen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/listyellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/noPhoto.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/nospinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/rss-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/rss.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/secure-payment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/cms.interpegasus.com/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/CMS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/MagicAngel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/NavBar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Pegasus-CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/Photo/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/check-no.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/check-yes.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/default-profile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/gradient.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus-cloud.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus-gradient-blue.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus-gradient.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus-grass.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus.footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/interpegasus_icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/list1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/listblue.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/listblue2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/listgreen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/listyellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/noPhoto.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/nospinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/rss-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/rss.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/secure-payment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/seperator.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.com/sun-green-footer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/CMS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/MagicAngel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/NavBar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/Pegasus-CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/check-no.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/check-yes.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/default-profile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/gradient.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/interpegasus_icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/list1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/listblue.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/listblue2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/listgreen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/listyellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/noPhoto.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/nospinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/rss-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/rss.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/secure-payment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/wiki-nature.com/wiki-nature.com.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/CMS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/MagicAngel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/NavBar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/Pegasus-CMS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/check-no.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/check-yes.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/default-profile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/gradient.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/interpegasus_icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/list.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/list1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/listblue.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/listblue2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/listgreen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/listyellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/noPhoto.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/nospinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/rss-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/rss.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/secure-payment.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/yiyask.com/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/users" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/FEATURES.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/api_data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/autoload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/cron.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/dbindexer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/django" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/djangoappengine" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/djangotoolbox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/index.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/indexes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/pages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/static" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/esc/users" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/music/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/nrwl/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/portfolio/templates" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/autoload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/dbindexer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/django" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/djangoappengine" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/djangotoolbox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask.com/lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/yiyask/templates" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/6/6F443CY7d6hEkJzmNcH43Px4zP8ApD6ZDMZBvLmcpNOkSsORzBT7ZTTfYBZB6ag" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/6/6F443CY7d6hEkJzmNcH43Px4zP8ApD6ZDMZBvLmcpNOkSsORzBT7ZTTfYBZB6ag" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/E/EPxGnKB3Xe6ZtDw5AauBAflvfE56vI1uCtPEti8nGfQHB2WmqqrW2ApQI3IpeaI" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/E/EPxGnKB3Xe6ZtDw5AauBAflvfE56vI1uCtPEti8nGfQHB2WmqqrW2ApQI3IpeaI" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/a/aOUXiMOc0U39Rom2PVDWHThl1Dt328qPkcSdRoxSErfSMurWBDDdInx7fyPmaMS" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/a/aOUXiMOc0U39Rom2PVDWHThl1Dt328qPkcSdRoxSErfSMurWBDDdInx7fyPmaMS" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/f/f5c6SwtbI2NwbFuLcbleEekA6tOoGkpLWMKYwA9ZRG9MH7HZ155sQFOXwiWEtl5" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/f/f5c6SwtbI2NwbFuLcbleEekA6tOoGkpLWMKYwA9ZRG9MH7HZ155sQFOXwiWEtl5" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/l/ldGV4nfQpDW5g55154kBEOa7TcJBO4iq4bgF0y2KvT4UpbggyuvCisWjJ3oUmjU" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/l/ldGV4nfQpDW5g55154kBEOa7TcJBO4iq4bgF0y2KvT4UpbggyuvCisWjJ3oUmjU" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/n/NLenYlq7D93KJIxSR0GOLsFx2zqkt9tBmbSEjO3RiT1t5ibhfArgQaoBrhXD3Sq" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/n/NLenYlq7D93KJIxSR0GOLsFx2zqkt9tBmbSEjO3RiT1t5ibhfArgQaoBrhXD3Sq" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/n/nYZdRqtYcspLbWcPt8vesqPeVOqKxMujVGwc5cHQtFCxJ56ZCK6l35Dg0VO3AK2" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/n/nYZdRqtYcspLbWcPt8vesqPeVOqKxMujVGwc5cHQtFCxJ56ZCK6l35Dg0VO3AK2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/w/wljpvJQyKUHlYL9uQYsK63v8bOmmIkDehnxBzB2rOE8c6b1xqqfzcSoCPwMpHM6" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/w/wljpvJQyKUHlYL9uQYsK63v8bOmmIkDehnxBzB2rOE8c6b1xqqfzcSoCPwMpHM6" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/blobstore/dev~interpegasus-cms/y/y5h0AYJjVwWIynVeg0nlCbfFx4fKQ9EJFVHrBBdj38Ug93ps08HIzYCw8ucp3fn" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/blobstore/dev~interpegasus-cms/y/y5h0AYJjVwWIynVeg0nlCbfFx4fKQ9EJFVHrBBdj38Ug93ps08HIzYCw8ucp3fn" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/maf/FEATURES.TXT" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/api_data/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/api_data/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/api_data/models.py" afterPath="$PROJECT_DIR$/projects/maf/api_data/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/api_data/tests.py" afterPath="$PROJECT_DIR$/projects/maf/api_data/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/api_data/views.py" afterPath="$PROJECT_DIR$/projects/maf/api_data/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/cron.yaml" afterPath="$PROJECT_DIR$/projects/maf/cron.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/index.yaml" afterPath="$PROJECT_DIR$/projects/maf/index.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/indexes.py" afterPath="$PROJECT_DIR$/projects/maf/indexes.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/manage.py" afterPath="$PROJECT_DIR$/projects/maf/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/pages/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/maf/pages/context_processors.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" afterPath="$PROJECT_DIR$/projects/maf/pages/fixtures/initial_data.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/maf/pages/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/templatetags/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/pages/templatetags/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/tests.py" afterPath="$PROJECT_DIR$/projects/maf/pages/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/maf/pages/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/base.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/changelists.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/dashboard.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/forms.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/forms.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/ie.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/ie.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/login.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/login.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/rtl.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/rtl.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/css/widgets.css" afterPath="$PROJECT_DIR$/projects/maf/static/admin/css/widgets.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/arrow-down.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/arrow-down.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/arrow-up.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/arrow-up.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/changelist-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/changelist-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/changelist-bg_rtl.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/changelist-bg_rtl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/chooser-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/chooser-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/chooser_stacked-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/chooser_stacked-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/default-bg-reverse.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/default-bg-reverse.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/default-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/default-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/deleted-overlay.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/deleted-overlay.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon-no.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon-no.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon-unknown.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon-unknown.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon-yes.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon-yes.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_addlink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_addlink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_alert.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_alert.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_calendar.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_calendar.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_changelink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_changelink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_clock.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_clock.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_deletelink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_deletelink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_error.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_error.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_searchbox.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_searchbox.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/icon_success.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/icon_success.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/inline-delete-8bit.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/inline-delete-8bit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/inline-delete.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/inline-delete.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/inline-restore-8bit.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/inline-restore-8bit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/inline-restore.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/inline-restore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/inline-splitter-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/inline-splitter-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/nav-bg-grabber.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/nav-bg-grabber.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/nav-bg-reverse.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/nav-bg-reverse.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/nav-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/nav-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector-addall.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector-addall.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector-remove.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector-remove.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector-removeall.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector-removeall.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector-search.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector-search.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector_stacked-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector_stacked-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/selector_stacked-remove.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/selector_stacked-remove.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tool-left.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tool-left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tool-left_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tool-left_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tool-right.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tool-right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tool-right_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tool-right_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tooltag-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tooltag-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tooltag-add_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tooltag-add_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tooltag-arrowright.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tooltag-arrowright.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/admin/tooltag-arrowright_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/admin/tooltag-arrowright_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/arrow-down.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/arrow-down.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/arrow-up.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/arrow-up.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/changelist-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/changelist-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/changelist-bg_rtl.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/changelist-bg_rtl.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/chooser-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/chooser-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/chooser_stacked-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/chooser_stacked-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/default-bg-reverse.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/default-bg-reverse.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/default-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/default-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/deleted-overlay.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/deleted-overlay.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/gis/move_vertex_off.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/gis/move_vertex_off.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/gis/move_vertex_on.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/gis/move_vertex_on.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon-no.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon-no.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon-unknown.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon-unknown.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon-yes.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon-yes.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_addlink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_addlink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_alert.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_alert.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_calendar.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_calendar.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_changelink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_changelink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_clock.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_clock.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_deletelink.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_deletelink.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_error.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_error.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_searchbox.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_searchbox.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/icon_success.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/icon_success.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/inline-delete-8bit.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/inline-delete-8bit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/inline-delete.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/inline-delete.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/inline-restore-8bit.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/inline-restore-8bit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/inline-restore.png" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/inline-restore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/inline-splitter-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/inline-splitter-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/nav-bg-grabber.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/nav-bg-grabber.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/nav-bg-reverse.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/nav-bg-reverse.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/nav-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/nav-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector-addall.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector-addall.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector-remove.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector-remove.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector-removeall.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector-removeall.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector-search.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector-search.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector_stacked-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector_stacked-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/selector_stacked-remove.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/selector_stacked-remove.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tool-left.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tool-left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tool-left_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tool-left_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tool-right.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tool-right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tool-right_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tool-right_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tooltag-add.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tooltag-add.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tooltag-add_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tooltag-add_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tooltag-arrowright.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tooltag-arrowright.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/img/tooltag-arrowright_over.gif" afterPath="$PROJECT_DIR$/projects/maf/static/admin/img/tooltag-arrowright_over.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/LICENSE-JQUERY.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/SelectBox.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/SelectFilter2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/actions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/actions.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/admin/ordering.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/admin/ordering.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/collapse.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/collapse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/collapse.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/compress.py" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/compress.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/core.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/dateparse.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/dateparse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/getElementsBySelector.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/getElementsBySelector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/inlines.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/inlines.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/jquery.init.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/jquery.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/jquery.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/prepopulate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/prepopulate.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/timeparse.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/timeparse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/projects/maf/static/admin/js/urlify.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/CHANGES.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/README.md" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/adapters/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/build-config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/ckeditor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/contents.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/contents.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/lang/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/fakeobjects/images/spacer.gif" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/fakeobjects/images/spacer.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/icons_hidpi.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/link/images/anchor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/ajax.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/ajax.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/api.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/api.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/appendto.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/appendto.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/inlineall/logo.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/inlineall/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/posteddata.php" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/posteddata.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/sample.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/sample.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/sample.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/sample.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/assets/uilanguages/languages.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/assets/uilanguages/languages.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/datafiltering.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/datafiltering.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/divreplace.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/divreplace.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/inlineall.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/inlineall.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/inlinebycode.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/inlinebycode.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/inlinetextarea.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/inlinetextarea.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/jquery.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/jquery.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/plugins/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/plugins/dialog/dialog.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/plugins/dialog/dialog.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/plugins/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/plugins/enterkey/enterkey.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/plugins/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/plugins/toolbar/toolbar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/plugins/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/readonly.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/readonly.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/replacebyclass.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/replacebyclass.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/replacebycode.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/replacebycode.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/sample.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/sample.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/sample.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/sample.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/sample_posteddata.php" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/sample_posteddata.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/tabindex.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/tabindex.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/uicolor.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/uicolor.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/uilanguages.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/uilanguages.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/samples/xhtmlstyle.html" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/samples/xhtmlstyle.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/dialog_opera.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/dialog_opera.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor_ie.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/icons.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/icons_hidpi.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/arrow.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/close.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/close.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/hidpi/close.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/lock-open.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/lock.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/lock.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/images/refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/skins/moono/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/styles.js" afterPath="$PROJECT_DIR$/projects/maf/static/ckeditor/styles.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/arturo.interpegasus.com.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/arturo.interpegasus.com.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/cms.interpegasus.com.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/cms.interpegasus.com.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/images/bg-scrollbar-thumb-y.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/images/bg-scrollbar-thumb-y.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/images/bg-scrollbar-track-y.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/images/bg-scrollbar-track-y.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/images/bg-scrollbar-trackend-y.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/images/bg-scrollbar-trackend-y.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/interpegasus.com.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/interpegasus.com.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/interpegasus.net.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/interpegasus.net.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/interpegasus.org.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/interpegasus.org.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/magicangel.org.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/magicangel.org.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/nivo-slider.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/nivo-slider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/nrwl.org.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/nrwl.org.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/portfolio.interpegasus.net.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/portfolio.interpegasus.net.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/reset.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/reset.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/scrollbars-black.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/scrollbars-black.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/scrollbars-itunes.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/scrollbars-itunes.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/scrollbars.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/scrollbars.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/style.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_flat_55_999999_40x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_flat_55_999999_40x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_flat_75_aaaaaa_40x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_glass_45_0078ae_1x400.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_glass_45_0078ae_1x400.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_glass_55_f8da4e_1x400.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_glass_55_f8da4e_1x400.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_glass_75_79c9ec_1x400.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_glass_75_79c9ec_1x400.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_gloss-wave_75_2191c0_500x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_gloss-wave_75_2191c0_500x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_0078ae_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_0078ae_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_056b93_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_056b93_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_d8e7f3_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_d8e7f3_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_e0fdff_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_e0fdff_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_f5e175_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_f5e175_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_f7a50d_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_f7a50d_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/images/ui-icons_fcd113_256x240.png" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/images/ui-icons_fcd113_256x240.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/jquery-ui-1.9.2.custom.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/jquery-ui-1.9.2.custom.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/ui/jquery-ui-1.9.2.custom.min.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/ui/jquery-ui-1.9.2.custom.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/wiki-nature.com.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/wiki-nature.com.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/css/yiyask.com.css" afterPath="$PROJECT_DIR$/projects/maf/static/css/yiyask.com.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/CMS.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/CMS.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/CMS.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/CMS.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/CMS.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/CMS.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/MagicAngel.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/MagicAngel.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/NavBar.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/NavBar.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/Pegasus-CMS.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/Pegasus-CMS.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/check-no.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/check-no.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/check-yes.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/check-yes.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/default-profile.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/default-profile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/gradient.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/gradient.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/interpegasus_icons.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/interpegasus_icons.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/list.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/list.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/list1.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/list1.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/listblue.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/listblue.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/listblue2.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/listblue2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/listgreen.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/listgreen.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/listyellow.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/listyellow.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/noPhoto.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/noPhoto.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/nospinner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/nospinner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/rss-green.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/rss-green.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/rss.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/rss.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/secure-payment.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/secure-payment.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/arturo.interpegasus.com/spinner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/spinner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/btn-slide.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/btn-slide.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/footer-bg.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/footer-bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/handle-bg.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/handle-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/header-bg.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/header-bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.net/interpegasus.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/interpegasus.net/interpegasus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.org/interpegasus.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/interpegasus.org/interpegasus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.org/magic-angel-foundation.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/interpegasus.org/magic-angel-foundation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.org/nrwl.org.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/interpegasus.org/nrwl.org.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/interpegasus.org/wiki-nature.com.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/interpegasus.org/wiki-nature.com.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_1.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_2.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_3.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_4.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_5.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_6.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/magic_angel_foundation_7.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/magic_angel_foundation_7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 191.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 191.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 199.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 199.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 200.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 200.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 202(1).jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 202(1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 202.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 202.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 214(1).jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 214(1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 214.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 214.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 227.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 227.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 229.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 229.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 235.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 235.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 266.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 266.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 267.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 267.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 268.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 268.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 272.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/Colombia Trip Feb 09 272.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/magicangel_org.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/magicangel_org.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/magicangel_org_Feb11(1).jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/magicangel_org_Feb11(1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/2009/original/magicangel_org_Feb11.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/2009/original/magicangel_org_Feb11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/big_logo.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/big_logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/1page-header-bg.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/1page-header-bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/banner1.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/banner1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/banner2.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/banner2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/border-bot.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/border-bot.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/border-left.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/border-left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/border-right.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/border-right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/border-top.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/border-top.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/divider.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/divider.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/drawing.svg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/drawing.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/footer-left.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/footer-left.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/footer-right.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/footer-right.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/footer-tail.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/footer-tail.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/header-bg.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/header-bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon-home-act.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon-home-act.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon-home.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon-home.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon-mail.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon-mail.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon-marker.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon-marker.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon-sitemap.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon-sitemap.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon1.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon2.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon3.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon4.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon5.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon6.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon7.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/icon7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/input-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/input-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/left-bot-corner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/left-bot-corner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/left-top-corner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/left-top-corner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/link1-bgd.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/link1-bgd.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/link1-left.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/link1-left.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/link1-right.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/link1-right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/logo.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/logo.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/marker.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/marker.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/nav-act.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/nav-act.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/path3004-2.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/path3004-2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/right-bot-corner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/right-bot-corner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/right-top-corner.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/right-top-corner.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/slogan.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/slogan.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/textarea-bg.gif" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/charity/textarea-bg.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/maf.svg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/maf.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/maf_es.svg" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/maf_es.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/maf_es_top_logo.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/maf_es_top_logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/small_logo.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/small_logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/top_logo.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/magicangel.org/top_logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/nrwl.org/nrwl.org.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/images/nrwl.org/nrwl.org.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/nrwl.org/nrwl.xcf" afterPath="$PROJECT_DIR$/projects/maf/static/images/nrwl.org/nrwl.xcf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/pegasus.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/pegasus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/s.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/s.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/images/t-mobile.png" afterPath="$PROJECT_DIR$/projects/maf/static/images/t-mobile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/analytics.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/analytics.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/aplweb.scrollbars.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/aplweb.scrollbars.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/CHANGELOG.txt" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/CHANGELOG.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/GPL LICENSE.txt" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/GPL LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/README.txt" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/README.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/css/waterwheel-carousel.css" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/css/waterwheel-carousel.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/ASeriousMan_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/ASeriousMan_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/ASeriousMan_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/ASeriousMan_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/AwayWeGo_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/AwayWeGo_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/AwayWeGo_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/AwayWeGo_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Brothers_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Brothers_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Brothers_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Brothers_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Greenberg_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Greenberg_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Greenberg_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Greenberg_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/MenWhoStareAtGoats_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Milk_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Milk_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Milk_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Milk_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/PirateRadio_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/PirateRadio_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/PirateRadio_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/PirateRadio_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Traitor_Poster.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Traitor_Poster.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/img/Traitor_Poster.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/img/Traitor_Poster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/index.html" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/js/jquery-1.6.1.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/js/jquery-1.6.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/js/jquery.waterwheelCarousel.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/js/jquery.waterwheelCarousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/carrousel/js/jquery.waterwheelCarousel.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/carrousel/js/jquery.waterwheelCarousel.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/datetime/jquery-ui-timepicker-addon.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/datetime/jquery-ui-timepicker-addon.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/flexslider.css" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/fonts/flexslider-icon.eot" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/fonts/flexslider-icon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/fonts/flexslider-icon.svg" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/fonts/flexslider-icon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/fonts/flexslider-icon.ttf" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/fonts/flexslider-icon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/fonts/flexslider-icon.woff" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/fonts/flexslider-icon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/images/bg_play_pause.png" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/images/bg_play_pause.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/jquery.flexslider-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/flex/jquery.flexslider.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/flex/jquery.flexslider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/jquery-ui-1.9.2.custom.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/jquery-ui-1.9.2.custom.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/movie_code.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/movie_code.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/n.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/n.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/signup.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/signup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/validator/jquery.validate.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/javascript/validator/jquery.validate.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/Google_App_Engine_Spreadsheet_Template.xlsx" afterPath="$PROJECT_DIR$/projects/maf/static/spreadsheet/Google_App_Engine_Spreadsheet_Template.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/MAF Template.xlsx" afterPath="$PROJECT_DIR$/projects/maf/static/spreadsheet/MAF Template.xlsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello-ie7.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/fontello-ie7.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/fontello.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/prettyPhoto.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/prettyPhoto.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.eot" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/font/fontello.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.svg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/font/fontello.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.ttf" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/font/fontello.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.woff" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/font/fontello.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-01.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/blog_img-01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-02.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/blog_img-02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-03.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/blog_img-03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/favicon.ico" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/grey-cardboard-bg.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/grey-cardboard-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-01.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portfolio-01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-02.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portfolio-02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-03.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portfolio-03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-1.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portrait-1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-2.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portrait-2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-3.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portrait-3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-4.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/portrait-4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/default_thumb.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/default_thumb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/loader.gif" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/loader.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/sprite.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_next.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/sprite_next.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_prev.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/sprite_prev.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_x.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/sprite_x.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_y.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/prettyPhoto/default/sprite_y.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/top-bg.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/top-bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/yellow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow_testimonial.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/img/yellow_testimonial.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/index.html" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/bootstrap.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.localscroll-1.2.7-min.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/jquery.localscroll-1.2.7-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/jquery.prettyPhoto.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.scrollTo-1.4.2-min.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/jquery.scrollTo-1.4.2-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/site.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/interpegasus/js/site.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/contact.php" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/contact.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/css/default.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/fixed-navigation.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/css/fixed-navigation.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/flexslider.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/css/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/css/main.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/normalize.css" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/css/normalize.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet-white.gif" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/bullet-white.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet.gif" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/bullet.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content01.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/content01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content02.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/content02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content03.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/content03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content04.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/content04.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content05.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/content05.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/gallerControls.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/gallerControls.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/galleryControls.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/galleryControls.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-gallery.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery2.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-gallery2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery3.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-gallery3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news01.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-news01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news02.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-news02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news03.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/img-news03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/map.jpg" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/map.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/quotes.png" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/quotes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-hor.gif" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/sep-hor.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-vert.gif" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/img/sep-vert.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/index.html" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/LICENSE-flexSlider.txt" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/js/LICENSE-flexSlider.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/js/default.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/js/jquery.flexslider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/respond.min.js" afterPath="$PROJECT_DIR$/projects/maf/static/template/maf2/js/respond.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/category_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/image_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/language_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/record_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/activate.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/activation_email.txt" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/activation_email.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/activation_email_subject.txt" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/activation_email_subject.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/login.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/logout.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/logout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_done.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_confirm.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_done.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_email.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_email.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_complete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/404.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/500.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/500.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-maf-page.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-maf.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/thanks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/users/user_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/users/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/models.py" afterPath="$PROJECT_DIR$/projects/maf/users/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/templatetags/__init__.py" afterPath="$PROJECT_DIR$/projects/maf/users/templatetags/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/maf/users/templatetags/record-tags.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/tests.py" afterPath="$PROJECT_DIR$/projects/maf/users/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/maf/users/views.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/.gitignore" afterPath="$PROJECT_DIR$/projects/maf/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/__init__.py" afterPath="$PROJECT_DIR$/projects/cms/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/app.yaml" afterPath="$PROJECT_DIR$/projects/maf/app.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/autoload" afterPath="$PROJECT_DIR$/projects/nrwl/autoload" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/cron.yaml" afterPath="$PROJECT_DIR$/projects/cms/cron.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/dbindexer" afterPath="$PROJECT_DIR$/projects/nrwl/dbindexer" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/django" afterPath="$PROJECT_DIR$/projects/nrwl/django" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/djangoappengine" afterPath="$PROJECT_DIR$/projects/nrwl/djangoappengine" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/djangotoolbox" afterPath="$PROJECT_DIR$/projects/nrwl/djangotoolbox" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/index.yaml" afterPath="$PROJECT_DIR$/projects/cms/index.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/indexes.py" afterPath="$PROJECT_DIR$/projects/cms/indexes.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/lib" afterPath="$PROJECT_DIR$/projects/nrwl/lib" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/manage.py" afterPath="$PROJECT_DIR$/projects/cms/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/magicangel.org/urls.py" afterPath="$PROJECT_DIR$/projects/cms/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/.gitignore" afterPath="$PROJECT_DIR$/projects/nrwl/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/nrwl/FEATURES.TXT" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/__init__.py" afterPath="$PROJECT_DIR$/projects/nrwl/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/api_data" afterPath="$PROJECT_DIR$/projects/nrwl/api_data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/app.yaml" afterPath="$PROJECT_DIR$/projects/nrwl/app.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/autoload" afterPath="$PROJECT_DIR$/projects/yiyask/autoload" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/cron.yaml" afterPath="$PROJECT_DIR$/projects/nrwl/cron.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/dbindexer" afterPath="$PROJECT_DIR$/projects/yiyask/dbindexer" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/django" afterPath="$PROJECT_DIR$/projects/yiyask/django" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/djangoappengine" afterPath="$PROJECT_DIR$/projects/yiyask/djangoappengine" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/djangotoolbox" afterPath="$PROJECT_DIR$/projects/yiyask/djangotoolbox" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/index.yaml" afterPath="$PROJECT_DIR$/projects/nrwl/index.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/indexes.py" afterPath="$PROJECT_DIR$/projects/nrwl/indexes.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/lib" afterPath="$PROJECT_DIR$/projects/yiyask/lib" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/manage.py" afterPath="$PROJECT_DIR$/projects/nrwl/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/pages" afterPath="$PROJECT_DIR$/projects/nrwl/pages" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/settings.py" afterPath="$PROJECT_DIR$/projects/nrwl/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/static" afterPath="$PROJECT_DIR$/projects/nrwl/static" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/urls.py" afterPath="$PROJECT_DIR$/projects/nrwl/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/nrwl.org/users" afterPath="$PROJECT_DIR$/projects/nrwl/users" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/.gitignore" afterPath="$PROJECT_DIR$/projects/yiyask/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/yiyask/FEATURES.TXT" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/__init__.py" afterPath="$PROJECT_DIR$/projects/yiyask/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/api_data" afterPath="$PROJECT_DIR$/projects/yiyask/api_data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/app.yaml" afterPath="$PROJECT_DIR$/projects/yiyask/app.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/cron.yaml" afterPath="$PROJECT_DIR$/projects/yiyask/cron.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/index.yaml" afterPath="$PROJECT_DIR$/projects/yiyask/index.yaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/indexes.py" afterPath="$PROJECT_DIR$/projects/yiyask/indexes.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/manage.py" afterPath="$PROJECT_DIR$/projects/yiyask/manage.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/pages" afterPath="$PROJECT_DIR$/projects/yiyask/pages" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/settings.py" afterPath="$PROJECT_DIR$/projects/yiyask/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/static" afterPath="$PROJECT_DIR$/projects/yiyask/static" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/urls.py" afterPath="$PROJECT_DIR$/projects/yiyask/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/yiyask.com/users" afterPath="$PROJECT_DIR$/projects/yiyask/users" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/autoload" afterPath="$PROJECT_DIR$/projects/cms/autoload" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/dbindexer" afterPath="$PROJECT_DIR$/projects/cms/dbindexer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/django" afterPath="$PROJECT_DIR$/projects/cms/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/djangoappengine" afterPath="$PROJECT_DIR$/projects/cms/djangoappengine" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/djangotoolbox" afterPath="$PROJECT_DIR$/projects/cms/djangotoolbox" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/lib" afterPath="$PROJECT_DIR$/projects/cms/lib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/agm/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/bible/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/music/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/portfolio/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/__init__.py" afterPath="$PROJECT_DIR$/projects/agm/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/__init__.py" afterPath="$PROJECT_DIR$/projects/bible/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/__init__.py" afterPath="$PROJECT_DIR$/projects/music/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/__init__.py" afterPath="$PROJECT_DIR$/projects/portfolio/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/app.yaml" afterPath="$PROJECT_DIR$/projects/agm/app.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/app.yaml" afterPath="$PROJECT_DIR$/projects/bible/app.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/app.yaml" afterPath="$PROJECT_DIR$/projects/music/app.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/app.yaml" afterPath="$PROJECT_DIR$/projects/portfolio/app.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/cron.yaml" afterPath="$PROJECT_DIR$/projects/agm/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/cron.yaml" afterPath="$PROJECT_DIR$/projects/bible/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/cron.yaml" afterPath="$PROJECT_DIR$/projects/music/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/cron.yaml" afterPath="$PROJECT_DIR$/projects/portfolio/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/index.yaml" afterPath="$PROJECT_DIR$/projects/agm/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/index.yaml" afterPath="$PROJECT_DIR$/projects/bible/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/index.yaml" afterPath="$PROJECT_DIR$/projects/music/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/index.yaml" afterPath="$PROJECT_DIR$/projects/portfolio/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/indexes.py" afterPath="$PROJECT_DIR$/projects/agm/indexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/indexes.py" afterPath="$PROJECT_DIR$/projects/bible/indexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/indexes.py" afterPath="$PROJECT_DIR$/projects/music/indexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/indexes.py" afterPath="$PROJECT_DIR$/projects/portfolio/indexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/manage.py" afterPath="$PROJECT_DIR$/projects/agm/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/manage.py" afterPath="$PROJECT_DIR$/projects/bible/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/manage.py" afterPath="$PROJECT_DIR$/projects/music/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/manage.py" afterPath="$PROJECT_DIR$/projects/portfolio/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/settings.py" afterPath="$PROJECT_DIR$/projects/agm/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/settings.py" afterPath="$PROJECT_DIR$/projects/bible/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/settings.py" afterPath="$PROJECT_DIR$/projects/music/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/settings.py" afterPath="$PROJECT_DIR$/projects/portfolio/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/agm/urls.py" afterPath="$PROJECT_DIR$/projects/agm/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bible/urls.py" afterPath="$PROJECT_DIR$/projects/bible/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/music/urls.py" afterPath="$PROJECT_DIR$/projects/music/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/portfolio/urls.py" afterPath="$PROJECT_DIR$/projects/portfolio/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -34,7 +813,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/gae_cms$Unittests_in__opt_Documents_interpegasus_gae_cms_projects_cms.coverage" NAME="Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms Coverage Results" MODIFIED="1377362303873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/cms" />
+    <SUITE FILE_PATH="coverage/gae_cms$cms.coverage" NAME="cms Coverage Results" MODIFIED="1377553824742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/gae_cms$Unittests_in__opt_Documents_interpegasus_gae_cms_projects_cms.coverage" NAME="Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms Coverage Results" MODIFIED="1377553659610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/cms" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -47,80 +827,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/AGM/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/bible/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/esc/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/magicangel.org/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/music/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/nrwl.org/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/yiyask.com/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/portfolio/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -138,7 +845,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/license/license.txt" />
         <option value="$PROJECT_DIR$/license/es.txt" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" />
@@ -154,6 +860,7 @@
         <option value="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" />
         <option value="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
         <option value="$PROJECT_DIR$/projects/cms/access_keys.py" />
+        <option value="$PROJECT_DIR$/projects/interpegasus/app.yaml" />
       </list>
     </option>
   </component>
@@ -250,20 +957,6 @@
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -271,30 +964,31 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="120" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="137" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="140" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="931" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="934" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="931" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="133" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="com.jetbrains.appengine.AppEngineModulesConfigurable" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -306,18 +1000,34 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/interpegasus" />
       <recent name="$PROJECT_DIR$/projects/portfolio" />
       <recent name="$PROJECT_DIR$/projects/yiyask.com" />
       <recent name="$PROJECT_DIR$/projects/nrwl.org" />
       <recent name="$PROJECT_DIR$/projects/music" />
-      <recent name="$PROJECT_DIR$/projects/magicangel.org" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms">
+  <component name="RunManager" selected="App Engine server.cms">
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gae_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,33 +1113,32 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in $PROJECT_DIR$/projects/cms" type="tests" factoryName="Unittests">
+    <configuration default="false" name="cms" type="Python.AppEngineServer" factoryName="App Engine server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projects/cms" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="false" />
-      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="gae_cms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/projects/cms" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="false" />
-      <option name="PARAMS" value="./manage.py runserver" />
-      <option name="USE_PARAM" value="true" />
+      <option name="launchJavascriptDebuger" value="true" />
+      <option name="browserUrl" value="http://127.0.0.1:8080/" />
+      <option name="additionalOptions" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms" />
+    <configuration default="false" name="cms JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://127.0.0.1:8080/">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="App Engine server.cms" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.cms JavaScript" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -836,7 +1545,15 @@
       <created>1377483320279</created>
       <updated>1377483320279</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="InterPegasus Template">
+      <created>1377483614623</created>
+      <updated>1377483614623</updated>
+    </task>
+    <task id="LOCAL-00097" summary="InterPegasus Template">
+      <created>1377484107941</created>
+      <updated>1377484107941</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -869,11 +1586,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24599709" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24599709" sideWeight="0.54864866" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45135134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34770888" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -967,24 +1684,14 @@
     <MESSAGE value="InterPegasus Template" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="0" selection-end="21487" vertical-scroll-proportion="0.022222223" vertical-offset="435" max-vertical-offset="6780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="1065" selection-end="1090" vertical-scroll-proportion="0.022222223" vertical-offset="225" max-vertical-offset="5055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/interpegasus/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="521" column="55" selection-start="12013" selection-end="12013" vertical-scroll-proportion="0.5491573" vertical-offset="7424" max-vertical-offset="16365">
           <folding />
@@ -998,35 +1705,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/.gitignore">
+    <entry file="file://$PROJECT_DIR$/projects/maf/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/images/s.png">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/images/s.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="14" selection-start="465" selection-end="465" vertical-scroll-proportion="0.8216292" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/access_keys.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/access_keys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="28" selection-start="266" selection-end="266" vertical-scroll-proportion="0.1474719" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/AGM/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
           <folding />
         </state>
       </provider>
@@ -1045,7 +1738,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/magicangel.org/.gitignore">
+    <entry file="file://$PROJECT_DIR$/projects/cms/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
           <folding />
@@ -1059,14 +1752,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/nrwl.org/.gitignore">
+    <entry file="file://$PROJECT_DIR$/projects/nrwl/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/yiyask.com/.gitignore">
+    <entry file="file://$PROJECT_DIR$/projects/yiyask/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
           <folding />
@@ -1076,6 +1769,27 @@
     <entry file="file://$PROJECT_DIR$/projects/portfolio/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="58" selection-end="58" vertical-scroll-proportion="0.042134833" vertical-offset="0" max-vertical-offset="712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/AGM/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
           <folding />
         </state>
       </provider>
