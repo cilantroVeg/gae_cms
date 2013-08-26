@@ -4,9 +4,75 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="Licence Info">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/users/fixtures/initial_data.yaml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
+    <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/template/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/template/500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/access_keys.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/activate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/activation_email.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/activation_email_subject.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/AGM/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/bible/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/esc/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/magicangel.org/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/music/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/nrwl.org/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/portfolio/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/yiyask.com/app.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_formset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/cron.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/forgot_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/front_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/index.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/indexes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/logout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_done.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_confirm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_done.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/signup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/thanks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_list.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/pages/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/arturo-homepage-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/music-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/recipe-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-interpegasus.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template-nrwl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/users/admin.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/cms/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/500.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/500.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -33,10 +99,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <file leaf-file-name="template-interpegasus.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="39" selection-start="463" selection-end="463" vertical-scroll-proportion="0.252809" vertical-offset="0" max-vertical-offset="2310">
+            <state line="98" column="30" selection-start="4771" selection-end="4771" vertical-scroll-proportion="0.31578946" vertical-offset="1350" max-vertical-offset="7110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="521" column="55" selection-start="12013" selection-end="12026" vertical-scroll-proportion="-6.6666665" vertical-offset="7475" max-vertical-offset="16365">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="16" selection-start="0" selection-end="21487" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="6780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="44" selection-start="1065" selection-end="1090" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="5055">
               <folding />
             </state>
           </provider>
@@ -60,14 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-magicangel.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/projects/cms/static/javascript/signup.js" />
-        <option value="$PROJECT_DIR$/projects/cms/users/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/thanks.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/signup.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/users/contact.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html" />
         <option value="$PROJECT_DIR$/license/license.txt" />
         <option value="$PROJECT_DIR$/license/es.txt" />
@@ -76,6 +161,14 @@
         <option value="$PROJECT_DIR$/projects/cms/FEATURES.TXT" />
         <option value="$PROJECT_DIR$/projects/AGM/users/fixtures/initial_data.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/interpegasus.com/app.yaml" />
+        <option value="$PROJECT_DIR$/projects/interpegasus.com/templates/template/template-maf.html" />
+        <option value="$PROJECT_DIR$/projects/interpegasus.com/templates/pages/category_form.html" />
+        <option value="$PROJECT_DIR$/projects/interpegasus.com/templates/template/500.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/500.html" />
+        <option value="$PROJECT_DIR$/projects/interpegasus.com/templates/template/template-interpegasus.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
       </list>
     </option>
   </component>
@@ -192,7 +285,301 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,11 +633,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/template/maf2/js" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/javascript/crafty" />
-      <recent name="$PROJECT_DIR$/projects/cms/templates/template" />
-      <recent name="$PROJECT_DIR$/projects/cms/users" />
+      <recent name="$PROJECT_DIR$/projects/interpegasus.com" />
+      <recent name="$PROJECT_DIR$/projects/interpegasus.com/static/template" />
+      <recent name="$PROJECT_DIR$/projects/yiyask.com" />
+      <recent name="$PROJECT_DIR$/projects/portfolio" />
+      <recent name="$PROJECT_DIR$/projects/nrwl.org" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
@@ -748,7 +1135,11 @@
       <created>1377476998537</created>
       <updated>1377476998538</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Licence Info">
+      <created>1377477498150</created>
+      <updated>1377477498151</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -778,7 +1169,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -786,7 +1177,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24235807" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24235807" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -881,112 +1272,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="136" selection-end="215" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="606" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="327" selection-end="327" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="8" selection-start="0" selection-end="16269" vertical-scroll-proportion="-78.97959" vertical-offset="0" max-vertical-offset="5055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="10" selection-start="5272" selection-end="5272" vertical-scroll-proportion="-16.25" vertical-offset="1200" max-vertical-offset="5025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="379" selection-end="405" vertical-scroll-proportion="0.2360515" vertical-offset="0" max-vertical-offset="7215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="117" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.4706724" vertical-offset="1546" max-vertical-offset="2730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/license/en.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/license/es.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="83" selection-start="600" selection-end="600" vertical-scroll-proportion="0.16853933" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="231" selection-end="231" vertical-scroll-proportion="0.14888337" vertical-offset="0" max-vertical-offset="26670">
-          <folding>
-            <element signature="e#17076#18635#2" expanded="false" />
-            <element signature="e#18722#20265#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/bible/cron.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/bible/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="245" selection-end="245" vertical-scroll-proportion="0.1994382" vertical-offset="98" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/AGM/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/access_keys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/cron.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="463" selection-end="463" vertical-scroll-proportion="0.252809" vertical-offset="0" max-vertical-offset="2310">
+        <state line="13" column="17" selection-start="508" selection-end="511" vertical-scroll-proportion="-5.6" vertical-offset="55" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.12820514" vertical-offset="60" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="0" selection-end="21487" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="6780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/template-maf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="1065" selection-end="1090" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="5055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="521" column="55" selection-start="12013" selection-end="12026" vertical-scroll-proportion="-6.6666665" vertical-offset="7475" max-vertical-offset="16365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="30" selection-start="4771" selection-end="4771" vertical-scroll-proportion="0.31578946" vertical-offset="1350" max-vertical-offset="7110">
           <folding />
         </state>
       </provider>
