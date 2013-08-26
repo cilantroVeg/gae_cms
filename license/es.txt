@@ -1,0 +1,9 @@
+InterPegasus CMS está sujeto a la siguiente licencia, términos y condiciones.
+
+1. Al utilizar este softare usted está de acuerdo en hacer una donación a una organización benéfica.
+2. Este software es gratuito.
+3. Cualquier trabajo derivado de este software debe mantener la presente licencia.
+4. Este software utiliza módulos de terceros, que están sujetos a sus respectiva(s) licencia(s).
+5. Mediante el uso de este software:
+a) Usted se compromete a evitar la publicación de contenido que vaya en contra de la ley.
+b) Usted se compromete a evitar la publicación de contenidos para adultos y material ofensivo.

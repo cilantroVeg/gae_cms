@@ -1,0 +1,11 @@
+Copyright InterPegasus
+
+InterPegasus CMS is bound by the following license, terms and conditions.
+
+1. By using this softare you agree to make a donation to a charity organization.
+2. This software is free of charge.
+3. Any derivative work from this software should keep this license.
+4. This software uses third party modules, which are bound by its corresponding licenses(s).
+5. By using this software:
+a) You agree to avoid publishing content that is against the law.
+b) You agree to avoid publishing adult content and offensive material.ects.
