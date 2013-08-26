@@ -1,0 +1,332 @@
+{% load record-tags %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
+    <meta charset = "utf-8"/>
+    <meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1"/>
+    <link rel = "stylesheet" type = "text/css" href = "/static/template/maf2/css/main.css" media = "all"/>
+    <link rel = "stylesheet" type = "text/css" href = "/static/javascript/flex/flexslider.css" media = "all"/>
+    <link href = 'http://fonts.googleapis.com/css?family=PT+Sans' rel = 'stylesheet' type = 'text/css'/>
+    <link rel = "stylesheet" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
+    <script src = "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src = "/static/template/maf2/js/jquery.flexslider.js"></script>
+
+    <script src = "/static/template/maf2/js/default.js"></script>
+    <script src = "{{ STATIC_URL }}template/maf/js/jquery.easing.min.js"></script>
+    <script src = "{{ STATIC_URL }}template/maf/js/jquery.scrollto.min.js"></script>
+    <script type = "text/javascript" src = "https://maps.google.com/maps/api/js?sensor=false"></script>
+    <!--[if lt IE 9]>
+    <script src = "http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src = "/static/template/maf2/js/respond.min.js"></script>    <![endif]-->
+    <script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
+    {% block js %}{% endblock %}
+</head>
+<body onload = "initialize()">
+{% if is_admin %}
+<div id = "menu-tab"></div>
+<div id = "menu-container">
+    <div id = "menu-container-top"></div>
+    <div id = "menu-container-middle">
+        <ul id = "menu">
+            <li><a href = "/languages/">Languages</a></li>
+            <li><a href = "/categories/">Categories</a></li>
+            <li><a href = "/pages/">Pages</a></li>
+            <li><a href = "/records/">Records</a></li>
+            <li><a href = "/users/">Users</a></li>
+            <li><a href = "/spreadsheets/">Spreadsheets</a></li>
+            <li><a href = "/images/">Images</a></li>
+        </ul>
+    </div>
+
+    <div id = "menu-container-footer"></div>
+</div>
+{% endif %}
+<div id = "microdata">
+    <div itemscope itemtype = "http://data-vocabulary.org/Organization">
+        <h1 itemprop = "name">{{ 'WEBSITE_NAME'|get_record}}</h1>
+
+        <p itemprop = "description">{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+
+        <p itemprop = "address" itemscope itemtype = "http://data-vocabulary.org/Address">
+            <span itemprop = "country-name">USA.</span> <span itemprop = "tel">1-424-781-3176</span>
+        </p>
+    </div>
+    <a href = "http://www.magicangel.org" itemprop = "url">http://www.magicangel.org</a>
+</div>
+<div id = "pagewidth">
+<header id = "header">
+    <h2 id = "logo"><a href = "/"><span class = "highlight">MAGIC ANGEL</span> <span class = "no-highlight">FOUNDATION</span></a></h2>
+
+    <div id = "social-container">
+        <div id = "social">
+            {% if is_logged_in %}
+            <ul>
+                <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+                <li>|</li>
+                <li><a id = "header_login" href = "/exit">Log out</a></li>
+            </ul>
+            {% else %}
+            <ul>
+                <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                <li id="register_link"><a href = "#register">Enter</a></li>
+            </ul>
+            {% endif %}
+        </div>
+        <hr/>
+        <div id = "share">
+            <!-- AddThis Button BEGIN -->
+            <div class = "addthis_toolbox addthis_default_style ">
+                <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+            <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
+            <!-- AddThis Button END -->
+        </div>
+    </div>
+    <nav id = "top-nav" class = "">
+        <ul id = "fixed-nav">
+            <li class = "current"><a href = "#home">Home</a></li>
+            {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
+            <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+            {% endif %} {% endif %} {% endfor %}
+            <li><a href = "#contactUs">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+<div id = "content">
+<section id="home" class = "row">
+    <div class = "center">
+        <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+        <div>{% block content %}{% endblock %}</div>
+        <strong class = "subHeading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
+    </div>
+</section>
+
+{% for main_category in categories %}
+    {% if main_category.name != 'Root' %}
+        {% if main_category.parent_id == 1 %}
+            <section id = "{{main_category.slug}}" class = "{% cycle 'row' 'row grey'%}">
+                <div class = "center">
+                    <h1>{{main_category.name}}</h1>
+                    {% if main_category.page_count == 1 %}
+                            {% for page in main_category.page_array %}
+                            <h4>{{ page.title}}</h4>
+                            <strong class = "subHeading">{{ page.headline}}</strong>
+                            <a href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
+                            {% endfor %}
+                    {% elif main_category.page_count == 2 %}
+                        <div class = "columns">
+                            {% for page in main_category.page_array %}
+                            <div class = "half">
+                                <div class = "imgHolder alignLeft"><img src = "/static/template/maf2/img/content01.jpg" alt = "{{ page.title }}"/></div>
+                                <h4>{{ page.title}}</h4>
+                                <p>{{ page.headline}}</p>
+                                <a href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% elif main_category.page_count == 3 %}
+                        <div class = "columns">
+                            {% for page in main_category.page_array %}
+                            <article class = "news oneThird">
+                                <div>
+                                    <h3><a href = "#">{{ page.title}}</a></h3>
+
+                                    <div class = "content">
+                                        <a href = "#" class = "imgHolder fullWidth"><img src = "/static/template/maf2/img/img-news01.jpg" alt = "{{ page.title }}"/></a>
+                                        <p>{{ page.headline}}</p>
+                                    </div>
+                                    <div class = "readMore"><a href = "/{{main_category.language_code}}/{{page.slug}}" class = "btn btnSmall"><span>Read More</span></a></div>
+                                </div>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    {% elif main_category.page_count == 4 %}
+                        <div id = "testimonials" class = "gallery">
+                            <ul class = "slides">
+                                <li>
+                                    {% for page in main_category.page_array %}
+                                        {% if forloop.counter == 1 or forloop.counter == 3  %}
+                                        <div class = "row">
+                                        {% endif %}
+                                            <blockquote>
+                                                <q>{{ page.title }}</q>
+                                                <a href="/{{main_category.language_code}}/{{ page.title}}">Read More</a>
+                                            </blockquote>
+                                        {% if forloop.counter == 2 or forloop.counter == 4  %}
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </li>
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% if is_logged_in %}
+
+{% else %}
+<section id = "register" class = "row">
+    <div class = "center">
+        <h1>Login / Register</h1>
+        <div class = "columns">
+            <div class = "half">
+                <h4><a onclick="$('#create_user_form').slideUp();$('#login_user_form').slideDown();">Login</a> | <a onclick="$('#create_user_form').slideDown();$('#login_user_form').slideUp();">Register</a></h4>
+                <form id = "login_user_form" name = "login_user_form" action = "/process_sign_up/" method = "post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "text" id = "email_2" name = "email_2" placeholder = "Your email ..."/>
+                            </div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "password_2" name = "password_2" placeholder = "password ..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <button class = "btnSmall btn submit right">
+                                <span>Login</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <hr />
+                <form style="display: none" id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "text" id = "email" name = "email" placeholder = "Your email ..."/>
+                            </div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "password" name = "password" placeholder = "password ..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <div class = "textField">
+                                <input type = "password" id = "confirm_password" name = "confirm_password" placeholder = "password confirmation..."/>
+                            </div>
+                        </div>
+
+                        <div class = "formRow">
+                            <button class = "btnSmall btn submit right">
+                                <span>Register</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class = "half">
+                <h4>Register</h4>
+                <ul class="no-bullets">
+                    <li><a class = "facebook_login large_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                    <li><a class = "twitter_login large_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                    <li><a class = "google_login large_login" href = "{% url socialauth_begin 'google' %}"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+<section id = "contactUs" class = "row grey">
+    <div class = "center">
+        <h1>Contact Us</h1>
+        <div class = "columns">
+            <div class = "half">
+                <form id="contact_form" name="contact_form" method = "post" action = "/contact/" class = "form contact-form">
+                    {% csrf_token %}
+                    <fieldset>
+                        <h2>Contact Form</h2>
+
+                        <div id = "message"></div>
+                        <div class = "formRow">
+                            <div class = "textField"><input type = "text" name = "contact_name" id = "contact-name" placeholder = "Your name ..."/></div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField"><input type = "text" name = "contact_email" id = "contact-email" placeholder = "Your Email ..."/></div>
+                        </div>
+                        <div class = "formRow">
+                            <div class = "textField"><textarea cols = "20" name = "contact_comment" id = "contact-comment" rows = "4" placeholder = "Your Comment ..."></textarea></div>
+                        </div>
+                        <div class = "formRow">
+                            <button class = "btnSmall btn submit right">
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class = "half">
+                <h2>How to find us</h2>
+
+                <div id = "map">
+                    <div class = "imgHolder">
+                        <div id = "map_canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<footer id = "footer">
+    <div id = "footer-description">
+        <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+
+        <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+    </div>
+    <div id = "footer-categories">
+       {% for main_category in categories %}
+            {% if main_category.name != 'Root' %}
+
+                {% if main_category.parent_id == 1 %}
+                <div class = "footer-div">
+                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                    {% for page in main_category.page_array %}
+                            <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                            <br/>
+                    {% endfor %}
+                    {% for sub_category in categories %}
+                        {% if sub_category.parent_id == main_category.id %}
+                            <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                            <br/>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+            {% endif %}
+        {% endfor %}
+        <div class = "footer-div">
+            <h4>Site map</h4>
+            <a href = "/sitemap">Site map</a>
+        </div>
+    </div>
+    <div id = "copyright">
+        <ul>
+            <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
+            <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+            <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
+        </ul>
+    </div>
+    <div id = "footer-clear"></div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% extends "template/template-maf-page.html" %}
+
+{% block title %}Enter{% endblock %}{% block js %}
+{% endblock %}
+
+{% block content %}
+{% if error_message %}
+<p id="my_feedback">{{ error_message }} </p>
+{% endif %}
+<section id="register">
+    <div class="center">
+        <h1>Login / Register</h1>
+        <div class="columns">
+            <div class="half">
+                <h4><a onclick="$('#create_user_form').slideUp();$('#login_user_form').slideDown();">Login</a> | <a onclick="$('#create_user_form').slideDown();$('#login_user_form').slideUp();">Register</a></h4>
+                <form id="login_user_form" name="login_user_form" action="/process_sign_up/" method="post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class="formRow">
+                            <div class="textField">
+                                <input type="text" id="email_2" name="email_2" placeholder="Your email ..."/>
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="textField">
+                                <input type="password" id="password_2" name="password_2" placeholder="password ..."/>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <button class="btnSmall btn submit right">
+                                <span>Login</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <hr/>
+                <form style="display: none" id="create_user_form" name="create_user_form" action="/process_create_account/" method="post">
+                    <fieldset>
+                        {% csrf_token %}
+                        <div class="formRow">
+                            <div class="textField">
+                                <input type="text" id="email" name="email" placeholder="Your email ..."/>
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="textField">
+                                <input type="password" id="password" name="password" placeholder="password ..."/>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <div class="textField">
+                                <input type="password" id="confirm_password" name="confirm_password" placeholder="password confirmation..."/>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <button class="btnSmall btn submit right">
+                                <span>Register</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="half">
+                <h4>Register</h4>
+                <ul class="no-bullets">
+                    <li><a class="facebook_login large_login" href="{% url socialauth_begin 'facebook' %}"></a></li>
+                    <li><a class="twitter_login large_login" href="{% url socialauth_begin 'twitter' %}"></a></li>
+                    <li><a class="google_login large_login" href="{% url socialauth_begin 'google' %}"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="forgot_password">
+    <b>Forgot your password? <a href="/forgot_password">Click here</a> to recover it.</b>
+</div><br/>{% endblock %}

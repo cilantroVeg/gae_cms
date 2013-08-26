@@ -1,0 +1,30 @@
+{% extends "template/template-interpegasus-page.html" %}
+
+{% block title %}User List{% endblock %}{% block js %}
+<script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
+<script type = 'text/javascript'>
+    google.load('visualization', '1', {packages: ['table']});
+    google.setOnLoadCallback(drawTable);
+    function drawTable() {
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('string', 'Email');
+        data.addColumn('string', 'Manage');
+        data.addRows([
+                {% for entry in user_list %}
+    ['{{ entry.email }}', '<a href="/user/edit/{{ entry.id }}/">Edit</a>|<a href="/user/delete/{{ entry.id }}/">Delete</a>'],
+            {% endfor %}
+    ])
+    ;
+
+    var table = new google.visualization.Table(document.getElementById('table_div'));
+    table.draw(data, {showRowNumber: true, allowHtml: true});
+    }
+</script>{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>User List</h1>
+
+    <div id = 'table_div'></div>
+</div><a href = "/user/new/">New</a>
+
+{% endblock %}
