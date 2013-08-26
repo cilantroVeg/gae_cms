@@ -1,6 +1,5 @@
 S
-- Fix contant form
-- Use factory template for Bible, IP, Yiyask, NRWL, Music.
+- Use factory template for Bible, InterPegasus, Yiyask, NRWL, Music, Portfolio, ESC
 - Migrate content and deploy sites.
 - Bible API Integration
 - Basic API. For Bible app.
