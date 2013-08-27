@@ -1249,3 +1249,150 @@ footer p {
 section, section#team, section#contact, section#portfolio, section#services, section#news{
   padding-top: 5px;
 }
+
+#microdata{
+    display: none;
+}
+
+
+#copyright{
+    clear:both;
+    text-align: center;
+}
+
+/* Social Icons*/
+.twitter_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -6px -4px;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.facebook_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -143px -4px;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.facebook_icon_small{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -143px -4px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-size: 100%;
+}
+
+.googleplus_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -144px -156px;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.email_1_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -212px -4px;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.email_2_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -8px -85px;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.interpegasus_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -35px -170px;
+    height: 35px;
+    width: 80px;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+}
+
+.google_app_engine_icon
+{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -170px -231px;
+    height: 80px;
+    width: 110px;
+    display: inline-block;
+
+}
+
+.facebook_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -228px;
+    height: 25px;
+    width: 70px;
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.twitter_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -256px;
+    height: 25px;
+    width: 70px;
+    display: block;
+    border-radius: 4px;
+}
+
+.google_login{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -2px -283px;
+    height: 25px;
+    width: 70px;
+    display: block;
+    border-radius: 4px;
+
+}
+
+.large_login{
+    width:150px;
+
+}
+
+
+
+footer li{
+    list-style: none;
+    list-style-image: none;
+    float: left;
+    width: 33%;
+}
+
+footer,div.footer-wrapper{
+    background-color: #f0bf00;
+    color: #ffffff;
+}
+
+div.footer-wrapper h2,div.footer-wrapper p,div.footer-wrapper a{
+    background-color: #f0bf00;
+    color: #ffffff;
+}
+div.footer-wrapper h2{
+    font-size: 32px;
+}

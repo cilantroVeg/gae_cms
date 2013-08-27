@@ -438,7 +438,7 @@
                     <textarea class="cform-textarea" cols="20" name="contact_comment" id="contact-comment" rows="4" placeholder="Your Comment ..." title="Your Comment ..."></textarea>
                     </span></div>
                         </div>
-                        <div>`
+                        <div>
                             <input type="submit" value="Send message" class="cform-submit pull-left">
                         </div>
                         <div class="cform-response-output"></div>
@@ -451,11 +451,48 @@
     </div>
     <!-- /.container -->
 </section>
-<hr>
+
 <div class="footer-wrapper">
     <div class="container">
         <footer>
-            <small>&copy; 2013 Inbetwin Network. All rights reserved.</small>
+            <div id = "footer-description">
+                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+                {{ 'WEBSITE_DESCRIPTION'|get_record}}
+            </div>
+            <div id = "footer-categories">
+                {% for main_category in categories %}
+                {% if main_category.name != 'Root' %}
+
+                {% if main_category.parent_id == 1 %}
+                <div class = "footer-div">
+                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                    {% for page in main_category.page_array %}
+                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                    <br/>
+                    {% endfor %}
+                    {% for sub_category in categories %}
+                    {% if sub_category.parent_id == main_category.id %}
+                    <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                    <br/>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% endif %}
+                {% endfor %}
+                <div class = "footer-div">
+                    <h4>Site map</h4>
+                    <a href = "/sitemap">Site map</a>
+                </div>
+            </div>
+            <div id = "copyright">
+                <ul>
+                    <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
+                    <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+                    <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
+                </ul>
+            </div>
         </footer>
     </div>
     <!-- ./container -->
