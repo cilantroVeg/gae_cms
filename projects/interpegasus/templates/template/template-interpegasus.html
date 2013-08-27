@@ -69,6 +69,37 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
 
                 <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/interpegasus.com/InterPegasus-Impact.png"/></a></h1>
+                <div id = "top-social-container">
+                    <div id="add-this">
+
+                        <!-- AddThis Button BEGIN -->
+                        <div class = "addthis_toolbox addthis_default_style ">
+                            <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+                        <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
+                        <!-- AddThis Button END -->
+                    </div>
+                    <div id="login-via-icon">
+                        {% if is_logged_in %}
+
+                        <ul>
+                            <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+                            <li>|</li>
+                            <li><a id = "header_login" href = "/exit">Log out</a></li>
+                        </ul>
+                        {% else %}
+                        <a href = "#register" class="register_link">Enter</a>
+                        <ul class="icon">
+                            <li><a href="{% url socialauth_begin 'facebook' %}" target="_blank" title="Login via faceebook."><i class="icon-facebook-circled"></i></a></li>
+                            <li><a href="{% url socialauth_begin 'twitter' %}" target="_blank" title="Login via twitter."><i class="icon-twitter-circled"></i></a></li>
+                            <li><a href="{% url socialauth_begin 'google' %}" target="_blank" title="Login via google."><i class="icon-gplus-circled"></i></a></li>
+                        </ul>
+                        {% endif %}
+                    </div>
+
+                </div>
+
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <nav class="pull-right nav-collapse collapse">
                     <ul id="menu-main" class="nav">
@@ -80,6 +111,7 @@
                     </ul>
                 </nav>
             </div>
+
             <!-- /.container -->
         </div>
         <!-- /.navbar-inner -->
@@ -91,27 +123,7 @@
 <!-- ******************** HeaderWrap ********************-->
 <div id="headerwrap">
     <header class="clearfix">
-        <h1><span>InterPegasus</span> We make web a beautiful place.</h1>
-
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <h2>Website Comming Soon! Signup for our Newsletter to be updated</h2>
-                    <input type="text" name="your-email" placeholder="you@yourmail.com" class="cform-text" size="40" title="your email"> <input type="submit" value="Notify me" class="cform-submit">
-                </div>
-            </div>
-            <div class="row">
-                <div class="span12">
-                    <ul class="icon">
-                        <li><a href="#" target="_blank"><i class="icon-pinterest-circled"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icon-facebook-circled"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icon-twitter-circled"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icon-gplus-circled"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icon-skype-circled"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> <br />{{ 'WEBSITE_DESCRIPTION'|get_record}}</h1>
     </header>
 </div>
 <!--******************** Feature ********************-->

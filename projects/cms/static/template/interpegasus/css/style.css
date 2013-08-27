@@ -1396,3 +1396,36 @@ div.footer-wrapper h2,div.footer-wrapper p,div.footer-wrapper a{
 div.footer-wrapper h2{
     font-size: 32px;
 }
+
+#top-social-container{
+    float:left;
+    clear:none;
+    margin: 0 10px;
+}
+
+#login-via-icon, div#login-via-icon ul.icon, div#login-via-icon ul li a i{
+    float:left;
+    clear:none;
+    margin: 0;
+    padding:0;
+
+}
+div#login-via-icon ul li a i
+{ max-width: 45px;
+}
+
+
+a.register_link{
+    color: #f0bf00;
+    font-size: 14px;
+    text-decoration: none;
+    float:left;
+    clear:none;
+    padding: 15px 21px;
+}
+
+#add-this{
+    min-height: 31px;
+    margin: 2px 21px;
+    min-width: 250px;
+}
