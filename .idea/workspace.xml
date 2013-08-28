@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/MAF Template.xlsx" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ag.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/cms.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/images/handle-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ip.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/maf.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/yiyask.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -983,7 +988,11 @@
       <created>1377667984161</created>
       <updated>1377667984161</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Content">
+      <created>1377670181492</created>
+      <updated>1377670181493</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1038,7 +1047,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Picasa OK" />
     <MESSAGE value="URL Navigation Structure Ok" />
     <MESSAGE value="Slugify" />
     <MESSAGE value="Page Image Relationship form" />
@@ -1063,7 +1071,8 @@
     <MESSAGE value="InterPegasus Template Contact" />
     <MESSAGE value="InterPegasus Template Footer" />
     <MESSAGE value="InterPegasus Template" />
-    <option name="LAST_COMMIT_MESSAGE" value="InterPegasus Template" />
+    <MESSAGE value="Content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
