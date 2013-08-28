@@ -1,3 +1,4 @@
+'SELECT c.name, s.title, s.content  FROM `section_revisions` as s, `categories`as c WHERE s.category_id = c.id'
 S
 - Use factory template for Bible, InterPegasus, Yiyask, NRWL, Music, Portfolio, ESC
 - Migrate content and deploy sites.

@@ -68,7 +68,7 @@
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
 
-                <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/interpegasus.com/InterPegasus-Impact.png"/></a></h1>
+                <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/interpegasus.com/InterPegasus-logo.png"/></a></h1>
                 <div id = "top-social-container">
                     <div id="add-this">
 
@@ -80,23 +80,22 @@
                         <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
                         <!-- AddThis Button END -->
                     </div>
-                    <div id="login-via-icon">
-                        {% if is_logged_in %}
-
-                        <ul>
-                            <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
-                            <li>|</li>
-                            <li><a id = "header_login" href = "/exit">Log out</a></li>
-                        </ul>
-                        {% else %}
-                        <a href = "#register" class="register_link">Enter</a>
-                        <ul class="icon">
-                            <li><a href="{% url socialauth_begin 'facebook' %}" target="_blank" title="Login via faceebook."><i class="icon-facebook-circled"></i></a></li>
-                            <li><a href="{% url socialauth_begin 'twitter' %}" target="_blank" title="Login via twitter."><i class="icon-twitter-circled"></i></a></li>
-                            <li><a href="{% url socialauth_begin 'google' %}" target="_blank" title="Login via google."><i class="icon-gplus-circled"></i></a></li>
-                        </ul>
-                        {% endif %}
-                    </div>
+        <div id = "social">
+            {% if is_logged_in %}
+            <ul>
+                <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+                <li>|</li>
+                <li><a id = "header_login" href = "/exit">Log out</a></li>
+            </ul>
+            {% else %}
+            <ul>
+                <li><a class = "facebook_login" href = "{% url socialauth_begin 'facebook' %}"></a></li>
+                <li><a class = "twitter_login" href = "{% url socialauth_begin 'twitter' %}"></a></li>
+                <li><a class = "google_login" href = "{% url socialauth_begin 'google' %}"></a></li>
+                <li id="register_link"><a href = "#register">Enter</a></li>
+            </ul>
+            {% endif %}
+        </div>
 
                 </div>
 
@@ -123,8 +122,16 @@
 <!-- ******************** HeaderWrap ********************-->
 <div id="headerwrap">
     <header class="clearfix">
-        <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> <br />{{ 'WEBSITE_DESCRIPTION'|get_record}}</h1>
+        <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> </h1>
+        <h2>{{ 'WEBSITE_DESCRIPTION'|get_record}}</h2>
     </header>
+    <div>
+        <ul class="icon">
+            <li><a href="{% url socialauth_begin 'facebook' %}"  title="Login via faceebook."><i class="icon-facebook-circled"></i></a></li>
+            <li><a href="{% url socialauth_begin 'twitter' %}"  title="Login via twitter."><i class="icon-twitter-circled"></i></a></li>
+            <li><a href="{% url socialauth_begin 'google' %}"  title="Login via google."><i class="icon-gplus-circled"></i></a></li>
+        </ul>
+    </div>
 </div>
 <!--******************** Feature ********************-->
 <div class="scrollblock">

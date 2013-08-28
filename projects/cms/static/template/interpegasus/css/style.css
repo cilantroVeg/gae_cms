@@ -1415,7 +1415,7 @@ div#login-via-icon ul li a i
 }
 
 
-a.register_link{
+a.register_link {
     color: #f0bf00;
     font-size: 14px;
     text-decoration: none;
@@ -1425,7 +1425,20 @@ a.register_link{
 }
 
 #add-this{
-    min-height: 31px;
+    min-height: 25px;
     margin: 2px 21px;
     min-width: 250px;
 }
+
+div#social ul{
+    margin: 0;
+    padding: 0;
+}
+#social li{
+    float: left;
+    clear:none;
+    list-style: none;
+    list-style-image: none;
+    margin:7px;
+}
+
