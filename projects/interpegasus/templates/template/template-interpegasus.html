@@ -28,7 +28,9 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- JQuery -->
+    <link rel = "stylesheet" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
     <script type="text/javascript" src="{{ STATIC_URL }}template/interpegasus/js/jquery.js"></script>
+    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <!-- Load ScrollTo -->
     <script type="text/javascript" src="{{ STATIC_URL }}template/interpegasus/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
@@ -43,7 +45,9 @@
 </head>
 <body>
 {% if is_admin %}
+
 <div id="menu-tab"></div>
+
 <div id="menu-container">
     <div id="menu-container-top"></div>
     <div id="menu-container-middle">
@@ -60,7 +64,8 @@
 
     <div id="menu-container-footer"></div>
 </div>
-{% endif %}<!--******************** NAVBAR ********************-->
+{% endif %}
+<!--******************** NAVBAR ********************-->
 <div class="navbar-wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
