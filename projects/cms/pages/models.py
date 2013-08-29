@@ -99,6 +99,7 @@ class Page(models.Model):
     slug = models.SlugField(unique=True, blank=False, null=False)
     content = models.TextField(null=False, blank=False)
     twitter_hashtags = models.CharField(max_length=256, null=False, blank=False)
+    is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
@@ -193,6 +194,18 @@ class Image(models.Model):
             self.slug = slug_2
 
         super(Image, self).save(*args, **kwargs)
+
+
+# ...
+class Ingredients(models.Model):
+    id = models.AutoField(primary_key=True)
+    page = models.ForeignKey(Page, null=False, blank=False)
+    list = models.TextField(null=False, blank=False)
+    created_at = models.DateTimeField(auto_now=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.key )
+
 
 
 # ...

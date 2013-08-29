@@ -1,8 +1,8 @@
 {% extends "template/template-maf-page.html" %}
 
 {% block title %}Page List{% endblock %}{% block js %}
-<script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
-<script type = 'text/javascript'>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>
     google.load('visualization', '1', {packages: ['table']});
     google.setOnLoadCallback(drawTable);
     function drawTable() {
@@ -15,20 +15,20 @@
         data.addColumn('string', 'Slug');
         data.addColumn('string', 'Manage');
         data.addRows([
-                {% for entry in page_list %}
-    ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
-            {% endfor %}
+    {% for entry in page_list %}
+        ['{{ entry.title }}', '{{ entry.content }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
+    {% endfor %}
     ])
     ;
 
     var table = new google.visualization.Table(document.getElementById('table_div'));
-    table.draw(data, {showRowNumber: true, allowHtml: true});
+        table.draw(data, {showRowNumber: true, allowHtml: true});
     }
 </script>{% endblock %}{% block content %}
-<div id = "static_content">
+<div id="static_content">
     <h1>Page List</h1>
 
-    <div id = 'table_div'></div>
-</div><a href = "/page/new/">New</a>
+    <div id='table_div'></div>
+</div><a href="/page/new/">New</a>
 
 {% endblock %}

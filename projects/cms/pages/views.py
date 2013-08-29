@@ -234,6 +234,10 @@ def handle_spreadsheet(f, user, spreadsheet):
                 page_title = worksheet.cell(i, 3).value
                 page_content = worksheet.cell(i, 4).value
                 image_urls = worksheet.cell(i, 5).value
+                try:
+                    extra = worksheet.cell(i, 6).value
+                except:
+                    extra = None
                 # Language
                 language, language_created = Language.objects.get_or_create(code=language_code,
                                                                             defaults={'name': language_code})
