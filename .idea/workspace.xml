@@ -5,23 +5,875 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="Content">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ag.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/cms.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ip.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/maf.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/spreadsheet/yiyask.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/site_map.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/Google_App_Engine_Spreadsheet_Template.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ag.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/cms.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/ip.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/maf.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/spreadsheet/yiyask.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/1_menu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/1_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/2_menu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/2_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/3_menu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/3_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/4_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/5_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/gallery/6_thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/ajax-loader_dark.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/asterisk_orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/bg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/bgshadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/connoisseur.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/cross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-config-on-tile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-config-on.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-spindown-closed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-spindown-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/dotted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/earth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/elegant-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/empty.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/flickr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/flight.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-social-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-social-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-social-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/images/fotogrph-dark-stairwell.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/fs_img_g_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras2_min.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras3_min.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras4_min.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras_min.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/icon-docs-info.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/jquery_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/jqueryui_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/images/jqueryui_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/mcs_btnDown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/mcs_btnUp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/me.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/myspace.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/images/n33-robot-invader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/nextImgBtn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/pbar-ani.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/images/pbar-ani.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/images/pic07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/images/portfolio06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/prevImgBtn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/rocket.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/sizzlejs_32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/sprites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/images/st-stephens.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/images/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/tick.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/toolbar_fs_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/toolbar_n_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/images/tower-bridge.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/transparent_1x1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/images/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/ui-anim_basic_16x16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/MANIFEST" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/accepted-elements.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/accordion_tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/accordion_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/accordion/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/core/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/effects/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/position/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/widget/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/effects/all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/alt-field.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/animate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/animated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/dialog/animated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/tooltip/animations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/aspect-ratio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/autocomplete_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/bottom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-active.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt-active.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/button/button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/button/button_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/buttonbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/categories.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/collapsible.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/collapsible.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/colorpicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/combobox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/dialog/complex-dialogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/connect-lists-through-tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/connect-lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/constrain-area.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/constrain-movement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/ajax/content1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/ajax/content2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content3-slow.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content4-broken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/core/core.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/core/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/currency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/cursor-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-content.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/custom-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/custom-icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/cycler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/date-formats.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/date-range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/datepicker_dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/datepicker/datepicker_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/decimal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/addClass/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/animate/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/hide/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/removeClass/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/show/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/switchClass/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggle/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggleClass/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/widget/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/delay-start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/delay-start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/delay-start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/demos.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_deprecated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/dialog/dialog_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/dialog_widgets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/display-grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/display-grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/draggable_accordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/draggable_accordion_accordion_tabs_draggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/draggable/draggable_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/dropdown-month-year.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/droppable/droppable_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/easing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/effects/effects.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/effects/effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/effects/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/effects/effects_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/effects/effects_scale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/empty-lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/fillspace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/folding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-social-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/dialog/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/gallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/globalize.culture.de-DE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/globalize.culture.ja-JP.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/globalize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/handle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/helper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/hotelrooms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/hoverintent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/icon-trigger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/accordion/icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/indeterminate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/addClass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/animate/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/hide/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/removeClass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/show/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/switchClass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggleClass/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/widget/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/inline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/items.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.6.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.6.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.6.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.6.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.7.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.8.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.8.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.8.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.8.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.9.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/jquery-1.9.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery-1.9.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-2.0.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery-ui-i18n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery-ui-i18n.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/jquery.mCustomScrollbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/jquery.mCustomScrollbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/jquery.mousewheel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/jquery.simulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.accordion.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.accordion.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.autocomplete.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.autocomplete.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.button.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.button.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.core.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-af.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ar-DZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ar-DZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-az.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-be.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-bs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-cy-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-cy-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-en-AU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-AU.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-en-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-en-NZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-NZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-eo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fr-CA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr-CA.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fr-CH.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr-CH.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-hy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hy.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-km.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-mk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ml.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ms.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-nl-BE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nl-BE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nn.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pt-BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-rm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-rm.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sr-SR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sr-SR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ta.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-CN.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-HK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-HK.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.datepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.datepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.dialog.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.dialog.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.draggable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.droppable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.droppable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-blind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-blind.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-bounce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-bounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-clip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-clip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-drop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-drop.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-explode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-explode.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-fade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-fade.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-fold.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-highlight.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-pulsate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-pulsate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-scale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-scale.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-shake.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-shake.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-slide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-slide.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect-transfer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect-transfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.effect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.effect.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.menu.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.menu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.mouse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.mouse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.position.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.position.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.progressbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.progressbar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.progressbar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.resizable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.resizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.resizable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.resizable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.selectable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.selectable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.selectable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.selectable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.slider.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.slider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.sortable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.sortable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.spinner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.spinner.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.spinner.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.tabs.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.tabs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/jquery.ui.tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/themes/base/minified/jquery.ui.tooltip.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.tooltip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/jquery.ui.widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui/minified/jquery.ui.widget.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/jshint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/label.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/latlong.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/left-sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/localization.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/london.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/manipulation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/max-min.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/maxheight.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/menu/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/menu/menu_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/min-max.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/mobileUI-site-nav-opener-bg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/mobileUI-site-nav-opener-bg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-confirmation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-message.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/mouseover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/multiple-calendars.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/multiple-remote.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/multiple-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/multiple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/no-auto-height.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/no-sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/other-months.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/overflow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/button/performance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/dialog/performance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/photo-manager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/placeholder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/pop-ups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/portfolio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/portlets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/position/position.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/position/position.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/position/position_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/position/position_feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/progressbar/progressbar_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/propagation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/addClass/queue.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/qunit-composite.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/qunit-composite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/external/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/range-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/rangemax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/rangemin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote-jsonp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote-with-cache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/remote_object_array_labels.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/remote_object_array_values.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/autocomplete/remote_string_array.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/resizable/resizable_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/revert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/revert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/right-sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/effects/scale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/selectable/selectable_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/core/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/serialize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/shopping-cart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/show-week.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/side-scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/skel-noscript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/skel-noscript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/skel-noscript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/skel-panels.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/skel-panels.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/skel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/skel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/skel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/slider-vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/slider/slider_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/snap-to-grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/snap-to.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/social-li.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/sortable_accordion_sortable_tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/sortable/sortable_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/spinner/spinner_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/splitbutton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/steps.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-1000px.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-1000px.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-desktop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-desktop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-desktop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrower.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-wide.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/subsuite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/swarminject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/synchronous-resize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/tabs_tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/tabs_test_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/compound/tabs_tooltips.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tabs/data/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/testsuite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/textarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/theme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/tooltip/tooltip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip_events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/tooltip/tooltip_options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/tracking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.accordion.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.autocomplete.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.button.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.core.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.datepicker.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.dialog.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.draggable.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.droppable.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-blind.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-bounce.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-clip.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-drop.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-explode.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-fade.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-fold.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-highlight.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-pulsate.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-scale.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-shake.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-slide.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect-transfer.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.effect.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.menu.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.mouse.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.position.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.progressbar.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.resizable.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.selectable.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.slider.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.sortable.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.spinner.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.tabs.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.tooltip.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/ui.widget.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/vertical.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/video-player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/visual-feedback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/visual/visual.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/widget/widget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/widget/widget_animation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/widget/widget_core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/tests/unit/widget/widget_extend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -52,10 +904,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="53.4" vertical-offset="2850" max-vertical-offset="3900">
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3900">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,7 +913,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="80.52" vertical-offset="2013" max-vertical-offset="2730">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
@@ -72,10 +922,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="-7.78" vertical-offset="3436" max-vertical-offset="7275">
-              <folding>
-                <element signature="e#26#102#0" expanded="true" />
-              </folding>
+            <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="0.0" vertical-offset="3436" max-vertical-offset="7275">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +931,7 @@
       <file leaf-file-name="site_map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/site_map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+            <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -92,7 +940,7 @@
       <file leaf-file-name="page_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -101,7 +949,7 @@
       <file leaf-file-name="category_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="555">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -110,7 +958,7 @@
       <file leaf-file-name="page_list.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.23741007" vertical-offset="0" max-vertical-offset="695">
+            <state line="20" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.43165466" vertical-offset="0" max-vertical-offset="695">
               <folding />
             </state>
           </provider>
@@ -119,7 +967,7 @@
       <file leaf-file-name="record_list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="0" selection-end="48" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="0" column="19" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -128,10 +976,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="675">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -312,72 +1158,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -400,7 +1180,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,14 +1218,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="120" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="137" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/trunk/proxy" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="140" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="931" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="934" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -452,6 +1258,7 @@
       <recent name="$PROJECT_DIR$/projects/portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
     </key>
@@ -502,22 +1309,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="gae_cms" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -540,6 +1331,22 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gae_cms" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -555,6 +1362,9 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -578,9 +1388,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1099,7 +1906,11 @@
       <created>1377670232054</created>
       <updated>1377670232054</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Content">
+      <created>1377778393590</created>
+      <updated>1377778393590</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1131,7 +1942,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24303621" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24303621" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1227,34 +2038,28 @@
     <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="80.52" vertical-offset="2013" max-vertical-offset="2730">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="53.4" vertical-offset="2850" max-vertical-offset="3900">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3900">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="-7.78" vertical-offset="3436" max-vertical-offset="7275">
-          <folding>
-            <element signature="e#26#102#0" expanded="true" />
-          </folding>
+        <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="0.0" vertical-offset="3436" max-vertical-offset="7275">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,14 +2072,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/site_map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
@@ -1288,7 +2093,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.23741007" vertical-offset="0" max-vertical-offset="695">
+        <state line="20" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.43165466" vertical-offset="0" max-vertical-offset="695">
           <folding />
         </state>
       </provider>
