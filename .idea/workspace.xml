@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/footer.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -55,7 +54,7 @@
       <file leaf-file-name="layout.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/maf/static/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="20" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.65909094" vertical-offset="1831" max-vertical-offset="2535">
+            <state line="143" column="16" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.44602272" vertical-offset="1831" max-vertical-offset="2550">
               <folding />
             </state>
           </provider>
@@ -1115,7 +1114,11 @@
       <created>1378182261775</created>
       <updated>1378182261775</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="MAF">
+      <created>1378188724980</created>
+      <updated>1378188724980</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1318,7 +1321,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/static/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="20" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.65909094" vertical-offset="1831" max-vertical-offset="2535">
+        <state line="143" column="16" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.44602272" vertical-offset="1831" max-vertical-offset="2550">
           <folding />
         </state>
       </provider>
