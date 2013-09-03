@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function(){
+
 	$("#create_user_form").validate({
 		rules : {
 			email : {
@@ -22,6 +23,19 @@ $(document).ready(function() {
         }
 	});
 
+	$("#login_user_form").validate({
+		rules : {
+			email_2 : {
+				email : true,
+				required : true
+			},
+			password_2 : {
+				required : true,
+				minlength : 7
+			}
+		}
+	});
+
     $("#contact_form").validate({
 		rules : {
 			contact_email : {
@@ -39,17 +53,6 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#login_user_form").validate({
-		rules : {
-			email_2 : {
-				email : true,
-				required : true
-			},
-			password_2 : {
-				required : true,
-				minlength : 7
-			}
-		}
-	});
+
 
 });

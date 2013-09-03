@@ -1,0 +1,33 @@
+<script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
+<div><h1>Contact Us</h1></div>
+<div class = "half">
+    <form id="contact_form" name="contact_form" method = "post" action = "/contact/" class = "form contact-form">
+        {% csrf_token %}
+        <fieldset>
+            <h2>Contact Form</h2>
+            <input type = "text" name = "contact_name" id = "contact-name" placeholder = "Your name ..."/>
+
+            <input type = "text" name = "contact_email" id = "contact-email" placeholder = "Your Email ..."/>
+
+            <textarea cols = "20" name = "contact_comment" id = "contact-comment" rows = "4" placeholder = "Your Comment ..."></textarea>
+
+            <button class = "btn btn-inverse">
+                <span>Send Message</span>
+            </button>
+
+        </fieldset>
+    </form>
+</div>
+<div class = "half">
+    <h2>How to find us</h2>
+
+    <div id = "map">
+        <div class = "imgHolder">
+            <div id = "map_canvas">
+                <iframe width="100%" height="317" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=mRova+Solutions,+Pune,+Maharashtra&amp;aq=0&amp;oq=mrova&amp;sll=18.815427,76.775144&amp;sspn=14.731137,19.577637&amp;ie=UTF8&amp;hq=mRova+Solutions,&amp;hnear=Pune,+Maharashtra&amp;t=m&amp;ll=47.751676,-122.378773&amp;spn=0.073244,0.132008&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
