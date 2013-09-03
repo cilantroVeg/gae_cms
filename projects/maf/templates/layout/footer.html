@@ -8,7 +8,7 @@
     {% if main_category.name != 'Root' %}
 
     {% if main_category.parent_id == 1 %}
-    <div class="footer-category"><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name|upper }}</h4></a></div>
+    <div class="footer-category"><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></div>
     {% for page in main_category.page_array %}
     <div><a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a></div>
     {% endfor %}
@@ -21,7 +21,7 @@
 
     {% endif %}
     {% endfor %}
-    <h4>Site map</h4>
+    <div class="footer-category">Site map</div>
     <div > <a href = "/sitemap">Site map</a></div>
 </div>
 

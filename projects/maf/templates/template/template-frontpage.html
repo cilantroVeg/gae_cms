@@ -24,20 +24,33 @@
 <!-- To change color change the class "color-2" to "ccolor-2, color-3 ... color-6" -->
 <body class="home color-2">
 {% include "layout/add_this.html" %}
+{% include "layout/microdata.html" %}
 <div id="header">
     <div class="container">
 
         <div class="row">
 
             <i id="nav-button" class="icon-circle-arrow-down"></i>
-            <h2 id="logo"><a href="index.html">Magic Angel <span class="highlight">Foundation</span></a></h2>
-
+            <h2 id="logo"><a href="/">Magic Angel <span class="highlight">Foundation</span></a></h2>
+            <div class="no-bullets-float">
+                {% if is_logged_in %}
+                <ul>
+                    <li>Welcome {{request.user.first_name}}</li>
+                    <li>|</li>
+                    <li><a id = "header_login" href = "/exit">Log out</a></li>
+                </ul>
+                {% endif %}
+            </div>
 
             <div id="top-nav" class="">
                 <ul id="fixed-nav">
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#aboutus">About Us</a></li>
+                    {% if is_logged_in %}
+                    {% else %}
+                    <li><a href = "#enter">Enter</a></li>
+                    {% endif %}
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -51,15 +64,13 @@
     <div class="slogan">
         <div  class="vcenter container">
 
-            <div class="row">
 
-                <div class="span12">
-                    <h1>We Create Beautiful, Intuitive &amp; Powerful Web Applications</h1>
-                </div>
-            </div>
+            <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+
+            <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+
         </div>
     </div>
-
 
 </div>
 <!-- End Full screen banner  -->
@@ -138,98 +149,24 @@
     </div>
 
 </div>
-<!-- End About US -->
-<!-- Features Section -->
-<div class="section section-alt" id="features">
-    <div class="container">
-        <div class="content">
-            <div class="row">
-                <div class="span12">
-                    <div class="title">
-                        <h2>Features</h2>
-                        <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-                        <p>Heading, Buttons &amp; Font Awesome Icons.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="span4">
-                    <h1>Heading h1</h1>
-                    <h2>Heading h2</h2>
-                    <h3>Heading h3</h3>
-                    <h4>Heading h4</h4>
-                    <h5>Heading h5</h5>
-                    <h6>Heading h6</h6>
-                </div>
-                <div class="span8">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                        <tr>
-                            <th>Button</th>
-                            <th>class=""</th>
-                            <th>Description</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><button type="button" class="btn">Default</button></td>
-                            <td><code>btn</code></td>
-                            <td>Standard gray button with gradient</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-primary">Primary</button></td>
-                            <td><code>btn btn-primary</code></td>
-                            <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-info">Info</button></td>
-                            <td><code>btn btn-info</code></td>
-                            <td>Used as an alternative to the default styles</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-success">Success</button></td>
-                            <td><code>btn btn-success</code></td>
-                            <td>Indicates a successful or positive action</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-warning">Warning</button></td>
-                            <td><code>btn btn-warning</code></td>
-                            <td>Indicates caution should be taken with this action</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-danger">Danger</button></td>
-                            <td><code>btn btn-danger</code></td>
-                            <td>Indicates a dangerous or potentially negative action</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-inverse">Inverse</button></td>
-                            <td><code>btn btn-inverse</code></td>
-                            <td>Alternate dark gray button, not tied to a semantic action or use</td>
-                        </tr>
-                        <tr>
-                            <td><button type="button" class="btn btn-link">Link</button></td>
-                            <td><code>btn btn-link</code></td>
-                            <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+{% if is_logged_in %}
 
-            </div>
-        </div>
+{% else %}
+<div class="section" id="enter" >
+    <div class="container">
+        {% include "layout/login_form.html" %}
     </div>
 </div>
-<!-- End Features -->
-<!-- Contact Section -->
-<div class="section" id="contact" >
+{% endif %}
+<div class="section section-alt" id="contact" >
     <div class="container">
         {% include "layout/contact_form.html" %}
     </div>
 </div>
-<!-- End Contact Section -->
 <footer id="footer">
     <div class="container">
         {% include "layout/footer.html" %}
+        {% include "layout/analytics.html" %}
     </div>
 </footer>
 </body>

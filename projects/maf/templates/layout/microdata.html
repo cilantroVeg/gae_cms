@@ -1,0 +1,13 @@
+{% load record-tags %}
+
+<div id = "microdata">
+    <div itemscope itemtype = "http://data-vocabulary.org/Organization">
+        <h1 itemprop = "name">{{ 'WEBSITE_NAME'|get_record}}</h1>
+
+        <p itemprop = "description">{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+
+        <p itemprop = "address" itemscope itemtype = "http://data-vocabulary.org/Address">
+            <span itemprop = "country-name">USA.</span> <span itemprop = "tel">1-424-781-3176</span>
+        </p>
+    </div>
+</div>

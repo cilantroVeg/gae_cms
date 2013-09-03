@@ -30,7 +30,7 @@ $(document).ready(function(){
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,
-        scrollOffset: 73,
+        scrollOffset: 71,
         scrollThreshold: 0.5,
         filter: ':not(.external)',
         begin: function() {
@@ -52,5 +52,7 @@ $(document).ready(function(){
             $top_nav.slideUp();
         }
      })
+
+
 
 });
