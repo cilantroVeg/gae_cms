@@ -5,57 +5,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/LICENSE.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/LICENSE.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/LICENSE.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/README.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/README.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/README.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-active.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-active.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt-active.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt-active.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button-alt.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/button.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/js/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/gallery.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie7.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie7.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie8.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie8.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie9.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/ie9.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/jquery.mCustomScrollbar.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/jquery.mCustomScrollbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/jquery.mCustomScrollbar.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/jquery.mCustomScrollbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/left-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/left-sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/mobileUI-site-nav-opener-bg.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/images/mobileUI-site-nav-opener-bg.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/mobileUI-site-nav-opener-bg.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/images/mobileUI-site-nav-opener-bg.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/nav.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/no-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/no-sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/pop-ups.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/scripts/pop-ups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/portfolio.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/right-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/right-sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/skel-noscript.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/skel-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/skel-noscript.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/skel-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/skel-noscript.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/skel-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/social-li.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/images/ie9/social-li.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-1000px.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-1000px.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-1000px.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-1000px.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-desktop.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-desktop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-desktop.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-desktop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-desktop.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-desktop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-mobile.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-mobile.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style-mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-mobile.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style-mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrow.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrower.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-narrower.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-wide.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style-wide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/ag/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/ag/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/bible/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/nrwl &amp; yiyask/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/portfolio/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/validator/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/signup.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/prettyPhoto.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/grey-cardboard-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/default_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/top-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow_testimonial.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.localscroll-1.2.7-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.prettyPhoto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.scrollTo-1.4.2-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/fixed-navigation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/flexslider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/gallerControls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/galleryControls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/map.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/quotes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-hor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-vert.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/LICENSE-flexSlider.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/respond.min.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/LICENSE.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/README.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/README.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/ie9.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/ie9.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/banner.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/banner.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/bg1.png" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/bg1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/button-hover.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/button-hover.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/button.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/button.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/header-wrapper.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/header-wrapper.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/header.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/header.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/icon-bubble.png" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/icon-bubble.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/mobileUI-site-nav-opener-bg.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/mobileUI-site-nav-opener-bg.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/nav-a-hover.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/nav-a-hover.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/nav-a.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/nav-a.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/skel-noscript.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/skel-noscript.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-1000px.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-1000px.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-desktop.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-desktop.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-mobile.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-mobile.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic1.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic2.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic3.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic4.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic5.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic6.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/html5shiv.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/html5shiv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/jquery.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/skel-panels.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/skel-panels.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/skel.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/skel.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/onecolumn.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/onecolumn.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/threecolumn.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/threecolumn.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/twocolumn1.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/twocolumn2.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -68,7 +131,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/gae_cms$cms.coverage" NAME="cms Coverage Results" MODIFIED="1377553824742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/gae_cms$cms.coverage" NAME="cms Coverage Results" MODIFIED="1378163980971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/gae_cms$Unittests_in__opt_Documents_interpegasus_gae_cms_projects_cms.coverage" NAME="Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms Coverage Results" MODIFIED="1377553659610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/cms" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -82,89 +145,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3900">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="0.0" vertical-offset="3436" max-vertical-offset="7275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site_map.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/site_map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_list.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.43165466" vertical-offset="0" max-vertical-offset="695">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -182,22 +163,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/cms/access_keys.py" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/app.yaml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/js/jquery.localscroll-1.2.7-min.js" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/static/template/maf2/css/default.css" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/FEATURES.TXT" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/template/template-maf.html" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/js/site.js" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/models.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/site_map.html" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_list.html" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/js/signup.js" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/arturo.interpegasus.com/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" />
       </list>
     </option>
   </component>
@@ -293,7 +274,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -362,6 +342,114 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.yiyask.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.nrwl.org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -394,6 +482,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,11 +522,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/template/js" />
+      <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/interpegasus/static/images" />
       <recent name="$PROJECT_DIR$/projects/interpegasus/static/images/interpegasus.com" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/projects/interpegasus" />
-      <recent name="$PROJECT_DIR$/projects/portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/cms/static/template" />
@@ -1096,7 +1185,11 @@
       <created>1377958090858</created>
       <updated>1377958090858</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Templates">
+      <created>1378144310604</created>
+      <updated>1378144310604</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1123,22 +1216,22 @@
     <frame x="0" y="22" width="1436" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24303621" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45135134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34770888" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24303621" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45083013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1186,100 +1279,117 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/js/site.js">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="3" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.65562916" vertical-offset="0" max-vertical-offset="755" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1452" column="17" selection-start="29814" selection-end="29814" vertical-scroll-proportion="0.18767123" vertical-offset="21643" max-vertical-offset="22515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1986" selection-end="1986" vertical-scroll-proportion="-1.25" vertical-offset="450" max-vertical-offset="8280" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/static/template/interpegasus/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="138870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/bible/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/FEATURES.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="218" selection-end="218" vertical-scroll-proportion="0.23841059" vertical-offset="0" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+        <state line="5" column="17222" selection-start="81430" selection-end="81430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
+        <state line="22" column="91" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-4.4" vertical-offset="0" max-vertical-offset="2880">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="49" selection-start="4000" selection-end="4000" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3900">
+        <state line="61" column="94" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.44527736" vertical-offset="618" max-vertical-offset="2880">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="27" selection-start="9963" selection-end="9963" vertical-scroll-proportion="0.0" vertical-offset="3436" max-vertical-offset="7275">
+        <state line="166" column="87" selection-start="6479" selection-end="6479" vertical-scroll-proportion="3.4679666" vertical-offset="0" max-vertical-offset="4080">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/record_list.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="0" selection-end="48" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/onecolumn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/site_map.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/threecolumn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105">
+        <state line="1" column="4" selection-start="20" selection-end="20" vertical-scroll-proportion="0.020891365" vertical-offset="0" max-vertical-offset="3015">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_list.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="585">
+        <state line="123" column="14" selection-start="6104" selection-end="6104" vertical-scroll-proportion="2.5696378" vertical-offset="0" max-vertical-offset="6780">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719">
+        <state line="28" column="47" selection-start="1356" selection-end="1359" vertical-scroll-proportion="-4.3748126" vertical-offset="3338" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.43165466" vertical-offset="0" max-vertical-offset="695">
+        <state line="164" column="217" selection-start="6510" selection-end="6510" vertical-scroll-proportion="-15.96" vertical-offset="1263" max-vertical-offset="4170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="79" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-4.6" vertical-offset="0" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="62" selection-start="2033" selection-end="2036" vertical-scroll-proportion="-2.96" vertical-offset="468" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="61" selection-start="2039" selection-end="2041" vertical-scroll-proportion="0.3328336" vertical-offset="468" max-vertical-offset="3255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="100" selection-start="508" selection-end="508" vertical-scroll-proportion="47.306667" vertical-offset="3638" max-vertical-offset="4305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="109" selection-start="7829" selection-end="7829" vertical-scroll-proportion="1.682159" vertical-offset="978" max-vertical-offset="3555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="89" selection-start="5233" selection-end="5233" vertical-scroll-proportion="0.38022283" vertical-offset="1242" max-vertical-offset="3255">
           <folding />
         </state>
       </provider>
