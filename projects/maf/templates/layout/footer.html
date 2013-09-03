@@ -1,18 +1,34 @@
-<!-- AddThis Smart Layers BEGIN -->
-<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
-<script type="text/javascript">
-  addthis.layers({
-    'theme' : 'gray',
-    'share' : {
-      'position' : 'right',
-      'numPreferredServices' : 4
-    },
-    'follow' : {
-      'services' : []
-    },
-    'whatsnext' : {},
-    'recommended' : {}
-  });
-</script>
-<!-- AddThis Smart Layers END -->
+{% load record-tags %}
+<div id = "footer-content">
+    <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+
+    <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+
+    {% for main_category in categories %}
+    {% if main_category.name != 'Root' %}
+
+    {% if main_category.parent_id == 1 %}
+    <div class="footer-category"><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></div>
+    {% for page in main_category.page_array %}
+    <div><a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a></div>
+    {% endfor %}
+    {% for sub_category in categories %}
+    {% if sub_category.parent_id == main_category.id %}
+    <div> <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a></div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% endif %}
+    {% endfor %}
+    <h4>Site map</h4>
+    <div > <a href = "/sitemap">Site map</a></div>
+</div>
+
+<div id = "copyright">
+    <ul>
+        <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
+        <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+        <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
+    </ul>
+</div>
