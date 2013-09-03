@@ -5,120 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/validator/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/template/js/signup.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/fontello.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/prettyPhoto.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/font/fontello.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/blog_img-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/grey-cardboard-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portfolio-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/portrait-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/default_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/prettyPhoto/default/sprite_y.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/top-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/img/yellow_testimonial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.localscroll-1.2.7-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.prettyPhoto.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/jquery.scrollTo-1.4.2-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/interpegasus/js/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/fixed-navigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet-white.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/bullet.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/content05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/gallerControls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/galleryControls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-gallery3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/img-news03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/map.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/quotes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-hor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/img/sep-vert.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/LICENSE-flexSlider.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/jquery.flexslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/maf2/js/respond.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/LICENSE.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/README.txt" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/README.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/ie9.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/ie9.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/banner.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/banner.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/bg1.png" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/bg1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/button-hover.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/button-hover.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/button.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/button.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/header-wrapper.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/header-wrapper.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/header.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/header.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/icon-bubble.png" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/icon-bubble.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/mobileUI-site-nav-opener-bg.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/mobileUI-site-nav-opener-bg.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/nav-a-hover.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/nav-a-hover.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/images/nav-a.svg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/images/nav-a.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/skel-noscript.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/skel-noscript.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-1000px.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-1000px.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-desktop.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-desktop.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style-mobile.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style-mobile.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic1.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic2.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic3.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic4.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic5.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/images/pic6.jpg" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/images/pic6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/config.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/html5shiv.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/html5shiv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/jquery.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/skel-panels.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/skel-panels.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/js/skel.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/js/skel.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/onecolumn.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/onecolumn.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/threecolumn.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/threecolumn.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/twocolumn1.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/Simple 2/twocolumn2.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/add_this.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/js/main.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -145,7 +41,104 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="13" selection-start="2535" selection-end="2548" vertical-scroll-proportion="-4.14" vertical-offset="948" max-vertical-offset="2310">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-maf.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-maf.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5055">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_this.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/add_this.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="33" selection-start="516" selection-end="516" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="284" column="1" selection-start="6579" selection-end="6579" vertical-scroll-proportion="4.029361" vertical-offset="1927" max-vertical-offset="8115">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="24" selection-start="718" selection-end="718" vertical-scroll-proportion="-7.96" vertical-offset="281" max-vertical-offset="915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.nav.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2772" max-vertical-offset="3420">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.localscroll-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.localscroll-min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.easing.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.easing.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1140">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -163,13 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/static/template/js/signup.js" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/arturo.interpegasus.com/index.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/index.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/simple/index.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/index.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
@@ -179,12 +165,19 @@
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html" />
+        <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/index.html" />
+        <option value="$PROJECT_DIR$/projects/maf/static/template/layout/add_this.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/layout/add_this.html" />
+        <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1436" />
+    <option name="width" value="711" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -320,7 +313,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="maf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,7 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="maf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -360,7 +353,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="maf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -386,67 +379,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www.yiyask.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www.nrwl.org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="maf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -472,7 +405,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.magicangel.org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -522,13 +485,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/maf/static/template/layout" />
+      <recent name="$PROJECT_DIR$/projects/maf/templates/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template/js" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/interpegasus/static/images" />
-      <recent name="$PROJECT_DIR$/projects/interpegasus/static/images/interpegasus.com" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/maf/templates" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template" />
       <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
       <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
@@ -1189,7 +1153,11 @@
       <created>1378144310604</created>
       <updated>1378144310604</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Templates">
+      <created>1378167386612</created>
+      <updated>1378167386612</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1213,21 +1181,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="0" y="22" width="711" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34770888" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34770888" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24303621" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.488045" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45083013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1279,117 +1247,120 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/js/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17222" selection-start="81430" selection-end="81430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn1.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="91" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-4.4" vertical-offset="0" max-vertical-offset="2880">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="730">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/twocolumn2.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="94" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.44527736" vertical-offset="618" max-vertical-offset="2880">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="671">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/index.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="87" selection-start="6479" selection-end="6479" vertical-scroll-proportion="3.4679666" vertical-offset="0" max-vertical-offset="4080">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/LICENSE.txt">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/onecolumn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="638">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/simple2/threecolumn.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="20" selection-end="20" vertical-scroll-proportion="0.020891365" vertical-offset="0" max-vertical-offset="3015">
+        <state line="2" column="6" selection-start="0" selection-end="10707" vertical-scroll-proportion="0.04477612" vertical-offset="0" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/index.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="14" selection-start="6104" selection-end="6104" vertical-scroll-proportion="2.5696378" vertical-offset="0" max-vertical-offset="6780">
+        <state line="77" column="13" selection-start="2535" selection-end="2548" vertical-scroll-proportion="-4.14" vertical-offset="948" max-vertical-offset="2310">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/index.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="1356" selection-end="1359" vertical-scroll-proportion="-4.3748126" vertical-offset="3338" max-vertical-offset="4005">
+        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="217" selection-start="6510" selection-end="6510" vertical-scroll-proportion="-15.96" vertical-offset="1263" max-vertical-offset="4170">
+        <state line="24" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/left-sidebar.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.localscroll-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="79" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-4.6" vertical-offset="0" max-vertical-offset="3255">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.easing.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/jquery.nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3420">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="718" selection-end="718" vertical-scroll-proportion="-7.96" vertical-offset="281" max-vertical-offset="915">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/no-sidebar.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-maf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="62" selection-start="2033" selection-end="2036" vertical-scroll-proportion="-2.96" vertical-offset="468" max-vertical-offset="2790">
+        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5055">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/right-sidebar.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/add_this.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="61" selection-start="2039" selection-end="2041" vertical-scroll-proportion="0.3328336" vertical-offset="468" max-vertical-offset="3255">
+        <state line="17" column="33" selection-start="516" selection-end="516" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/index.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="100" selection-start="508" selection-end="508" vertical-scroll-proportion="47.306667" vertical-offset="3638" max-vertical-offset="4305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="109" selection-start="7829" selection-end="7829" vertical-scroll-proportion="1.682159" vertical-offset="978" max-vertical-offset="3555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.yiyask.com/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="89" selection-start="5233" selection-end="5233" vertical-scroll-proportion="0.38022283" vertical-offset="1242" max-vertical-offset="3255">
+        <state line="284" column="1" selection-start="6579" selection-end="6579" vertical-scroll-proportion="4.029361" vertical-offset="1927" max-vertical-offset="8115">
           <folding />
         </state>
       </provider>
