@@ -13,8 +13,11 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="{{ STATIC_URL }}template/www.magicangel.org/css/main.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.min.js"></script>
+        <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.easing.min.js"></script>
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.scrollto.min.js"></script>
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/slabtext.min.js"></script>
@@ -24,6 +27,7 @@
 </head>
 <!-- To change color change the class "color-2" to "ccolor-2, color-3 ... color-6" -->
 <body class="home color-2">
+{% include "layout/admin.html" %}
 {% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
 <div id="header">
