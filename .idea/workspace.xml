@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/images/magicangel.org/charity/icon6.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/js/main.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/css/style.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.magicangel.org/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,29 +36,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="93" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-32.5" vertical-offset="525" max-vertical-offset="1935">
+            <state line="63" column="51" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.6446043" vertical-offset="497" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css">
+      <file leaf-file-name="one_page_sections.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="17" selection-start="6632" selection-end="6632" vertical-scroll-proportion="-14.96" vertical-offset="3826" max-vertical-offset="8115">
+            <state line="31" column="12" selection-start="1266" selection-end="1266" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js">
+      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="23" selection-start="717" selection-end="717" vertical-scroll-proportion="0.37331536" vertical-offset="203" max-vertical-offset="945">
-              <folding />
+            <state line="10" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/layout/add_this.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/js/signup.js" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-maf.html" />
         <option value="$PROJECT_DIR$/projects/maf/static/template/js/contact.js" />
@@ -99,11 +92,13 @@
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/analytics.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/footer.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
-        <option value="$PROJECT_DIR$/projects/maf/static/css/layout.css" />
         <option value="$PROJECT_DIR$/projects/maf/pages/context_processors.py" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css" />
         <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js" />
+        <option value="$PROJECT_DIR$/projects/maf/static/css/layout.css" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
       </list>
     </option>
   </component>
@@ -267,6 +262,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -289,179 +358,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www.magicangel.org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www.magicangel.org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www.magicangel.org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1203,7 +1104,11 @@
       <created>1378230240071</created>
       <updated>1378230240071</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="MAF">
+      <created>1378268766014</created>
+      <updated>1378268766014</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1236,7 +1141,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33058822" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39529413" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1293,22 +1198,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="7" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="250" selection-end="250" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1050">
-          <folding>
-            <element signature="n#style#0;n#form#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/microdata.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="270">
@@ -1344,25 +1233,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-maf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="20" selection-start="6479" selection-end="6549" vertical-scroll-proportion="-7.4693875" vertical-offset="1569" max-vertical-offset="4125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/static/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="21" selection-start="5791" selection-end="5791" vertical-scroll-proportion="0.0" vertical-offset="3818" max-vertical-offset="4575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="14" selection-start="3675" selection-end="3748" vertical-scroll-proportion="-1.8" vertical-offset="1410" max-vertical-offset="3900">
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1371,7 +1246,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="107" selection-start="1250" selection-end="1258" vertical-scroll-proportion="-4.16" vertical-offset="287" max-vertical-offset="1050">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1390,23 +1265,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="93" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-32.5" vertical-offset="525" max-vertical-offset="1935">
+        <state line="280" column="17" selection-start="6632" selection-end="6632" vertical-scroll-proportion="0.0" vertical-offset="3826" max-vertical-offset="8115">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-maf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="17" selection-start="6632" selection-end="6632" vertical-scroll-proportion="-14.96" vertical-offset="3826" max-vertical-offset="8115">
+        <state line="24" column="4" selection-start="1702" selection-end="1730" vertical-scroll-proportion="0.5332303" vertical-offset="15" max-vertical-offset="4125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="23" selection-start="717" selection-end="717" vertical-scroll-proportion="0.37331536" vertical-offset="203" max-vertical-offset="945">
+        <state line="55" column="18" selection-start="1427" selection-end="1437" vertical-scroll-proportion="-11.56" vertical-offset="536" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="4" selection-start="5881" selection-end="5903" vertical-scroll-proportion="-25.96" vertical-offset="3896" max-vertical-offset="4650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="12" selection-start="1266" selection-end="1266" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="51" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.6446043" vertical-offset="497" max-vertical-offset="1470">
           <folding />
         </state>
       </provider>

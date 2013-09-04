@@ -1,0 +1,32 @@
+{% for main_category in categories %}
+{% if main_category.name != 'Root' %}
+{% if main_category.parent_id == 1 %}
+<div id = "{{main_category.slug}}" class = "{% cycle 'section' 'section section-alt'%}">
+    <div class = "container">
+        <h1>{{main_category.name}}</h1>
+        {% if main_category.page_count == 1 %}
+        {% for page in main_category.page_array %}
+        <h4>{{ page.title}}</h4>
+        <strong class = "subHeading">{{ page.headline}}</strong>
+        <a href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
+        {% endfor %}
+        {% else %}
+        <div class="row">
+            {% for page in main_category.page_array %}
+            {% if forloop.counter <= 3 %}
+            <div class="span4 i-block">
+                <img src="{{ STATIC_URL }}images/magicangel.org/charity/icon{{forloop.counter}}.jpg" />
+                <h6>{{ page.title|truncatechars:21}}</h6>
+                <p>{{ page.headline|truncatechars:41}}</p>
+                <a class = "btn btn-info info-button" href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        <br />
+    </div>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}

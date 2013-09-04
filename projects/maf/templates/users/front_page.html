@@ -3,7 +3,8 @@
 {% block title %}Welcome{% endblock %}
 
 {% block js %}
-
+<link rel = "stylesheet" type = "text/css" href = "{{STATIC_URL}}javascript/flex/flexslider.css" media = "all"/>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/flex/jquery.flexslider-min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -19,6 +20,8 @@
     vertical-align: middle;"/>
         </li>
         {% endfor %}
-    </ul></div>
+    </ul>
+</div>
+
 {% endblock %}
 
