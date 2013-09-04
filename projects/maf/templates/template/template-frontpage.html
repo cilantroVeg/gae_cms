@@ -27,12 +27,10 @@
 {% include "layout/microdata.html" %}
 <div id="header">
     <div class="container">
-
         <div class="row">
-
             <i id="nav-button" class="icon-circle-arrow-down"></i>
             <h2 id="logo"><a href="/">Magic Angel <span class="highlight">Foundation</span></a></h2>
-            <div class="no-bullets-float">
+            <div id="header-enter">
                 {% if is_logged_in %}
                 <ul>
                     <li>Welcome {{request.user.first_name}}</li>
@@ -41,116 +39,69 @@
                 </ul>
                 {% endif %}
             </div>
-
-            <div id="top-nav" class="">
-                <ul id="fixed-nav">
-                    <li class="current"><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
+            <div id = "top-nav" class = "">
+                <ul id = "fixed-nav">
+                    <li class = "current"><a href = "#home">Home</a></li>
+                    {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
+                    <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                    {% endif %} {% endif %} {% endfor %}
                     {% if is_logged_in %}
                     {% else %}
-                    <li><a href = "#enter">Enter</a></li>
+                    <li><a href = "#enter">Log in</a></li>
                     {% endif %}
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href = "#contact">Contact Us</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
-</div><!-- End Header -->
+</div>
+<!-- End Header -->
 <!-- Big Full screen Banner -->
 <div class="hero bg-fixed bg-color" id="home">
-
     <div class="slogan">
-        <div  class="vcenter container">
-
-
+        <div class = "center">
             <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
-
-            <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
-
+            <div>{% block content %}{% endblock %}</div>
+            <strong class = "subHeading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
         </div>
     </div>
-
 </div>
 <!-- End Full screen banner  -->
 <!-- Services Section -->
-<!-- class section-alt is to give a different color please edit css/style.css to change the color -->
-<div class="section section-alt" id="services">
-    <div class="container">
-        <div class="content">
-            <div class="row" >
-                <div class="title">
-                    <h2>Our Services</h2>
-                    <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-                    <p>We develop and market mobile application, websites and ecommerce solutions.</p>
-                </div>
+{% for main_category in categories %}
+{% if main_category.name != 'Root' %}
+{% if main_category.parent_id == 1 %}
+<div id = "{{main_category.slug}}" class = "{% cycle 'section' 'section section-alt'%}">
+    <div class = "container">
+        <h1>{{main_category.name}}</h1>
+        {% if main_category.page_count == 1 %}
+        {% for page in main_category.page_array %}
+        <h4>{{ page.title}}</h4>
+        <strong class = "subHeading">{{ page.headline}}</strong>
+        <a href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
+        {% endfor %}
+        {% else %}
+        <div class="row">
+            {% for page in main_category.page_array %}
+            {% if forloop.counter <= 3 %}
+            <div class="span4 i-block">
+                <img src="{{ STATIC_URL }}images/magicangel.org/charity/icon{{forloop.counter}}.jpg" />
+                <h6>{{ page.title|truncatechars:21}}</h6>
+                <p>{{ page.headline|truncatechars:41}}</p>
+                <a class = "btn btn-info info-button" href="/{{main_category.language_code}}/{{page.slug}}">Read More</a>
             </div>
-            <div class="row">
-                <div class="span4 i-block">
-                    <i class="icon-mobile-phone"></i>
-                    <h3>Block-A</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-                <div class="span4 i-block">
-                    <i class="icon-star"></i>
-                    <h3>Block-B</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-                <div class="span4 i-block">
-                    <i class="icon-thumbs-up-alt"></i>
-                    <h3>Block-C</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-            </div>
-            <div class="hr hr-invisible"></div>
-            <div class="row">
-                <div class="span4 i-block">
-                    <i class="icon-briefcase"></i>
-                    <h3>Block-D</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-                <div class="span4 i-block">
-                    <i class="icon-camera"></i>
-                    <h3>Block-E</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-                <div class="span4 i-block">
-                    <i class="icon-desktop"></i>
-                    <h3>Block-F</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
-                </div>
-            </div>
+            {% endif %}
+            {% endfor %}
         </div>
+        {% endif %}
+        <br />
     </div>
 </div>
-<!-- End Services Section -->
-<!-- About Us section -->
-<div class="section" id="aboutus">
-    <div class="container">
-        <div class="content">
-            <div class="row">
-                <div class="span12">
-                    <div class="title">
-                        <h2>About Us</h2>
-                        <div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-                        <p>The most important thing to us is building products people love.</p>
+{% endif %}
+{% endif %}
+{% endfor %}
 
-                    </div>
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam. Quisque non feugiat erat. Mauris tristique id sem in blandit. Vestibulum pretium convallis orci. Suspendisse in aliquet leo. Donec ultricies fringilla augue, nec accumsan leo euismod et. Quisque non nisl non augue cursus rhoncus vel eget sem. Phasellus sed gravida nisi, ac lacinia dui. Aliquam pretium dapibus orci sed placerat. Nunc in condimentum massa, vitae consectetur ligula. Maecenas consequat in diam ut vulputate. Aenean vel ullamcorper elit.
-                    </p>
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam. Quisque non feugiat erat. Mauris tristique id sem in blandit. Vestibulum pretium convallis orci. Suspendisse in aliquet leo. Donec ultricies fringilla augue, nec accumsan leo euismod et. Quisque non nisl non augue cursus rhoncus vel eget sem. Phasellus sed gravida nisi, ac lacinia dui. Aliquam pretium dapibus orci sed placerat. Nunc in condimentum massa, vitae consectetur ligula. Maecenas consequat in diam ut vulputate. Aenean vel ullamcorper elit.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
 {% if is_logged_in %}
-
 {% else %}
 <div class="section" id="enter" >
     <div class="container">

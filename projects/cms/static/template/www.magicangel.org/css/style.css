@@ -118,31 +118,31 @@ body.color-1 #footer {
 	font-size: 13px;
 	padding: 20px 0 20px 0;
 }
-body.color-2::-moz-selection {background: #3498db; color: #fff; }
-body.color-2::selection {background: #3498db; color: #fff; }
+body.color-2::-moz-selection {background: rgb(82,179, 211); color: #fff; }
+body.color-2::selection {background: rgb(82,179, 211); color: #fff; }
 body.color-2 a{
-	color: #3498db;
+	color: rgb(82,179, 211);
 	text-decoration: none;
-	border-bottom: 1px solid #3498db;
+	border-bottom: 1px solid rgb(82,179, 211);
 }
 body.color-2 div#top-nav #fixed-nav li a:hover {
-	color: #3498db;
+	color: rgb(82,179, 211);
 }
 body.color-2 div#top-nav #fixed-nav li.current a {
-	border-bottom: 3px solid #3498db;
+	border-bottom: 3px solid rgb(82,179, 211);
 }
 body.color-2 .bg-color{
-	background: #3498db;
+	background: rgb(82,179, 211);
 }
 body.color-2 hr {
-	border-bottom: 1px solid #3498db;
+	border-bottom: 1px solid rgb(82,179, 211);
 }
 body.color-2 span.highlight{
-	color: #3498db;
+	color: rgb(82,179, 211);
 }
 body.color-2 #footer {
 	font-weight: bold;
-	background: #3498db;
+	background: rgb(82,179, 211);
 	color: #fff;
 	text-align: center;
 	font-size: 13px;
@@ -277,8 +277,8 @@ body.color-6 #footer {
 	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff, endColorstr=#4Cffffff);
 	position: fixed;
-	height: 70px;
-    max-height: 70px;
+	height: 80px;
+    max-height: 80px;
 }
 #nav-button{
 	display: none;

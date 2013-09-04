@@ -30,7 +30,7 @@ $(document).ready(function(){
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,
-        scrollOffset: 71,
+        scrollOffset: 81,
         scrollThreshold: 0.5,
         filter: ':not(.external)',
         begin: function() {

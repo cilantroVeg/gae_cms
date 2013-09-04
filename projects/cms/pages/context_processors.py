@@ -31,7 +31,7 @@ def categories(request):
                         break
                     elif page.category.id == category.id:
                         page_count += 1
-                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.content})
                 if page_count < page_limit:
                     for sub_category in categories:
                         if sub_category.parent is not None and sub_category.parent.id == category.id:
@@ -40,7 +40,7 @@ def categories(request):
                                     break
                                 elif page.category.id == sub_category.id:
                                     page_count += 1
-                                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.headline})
+                                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.content})
 
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
 
