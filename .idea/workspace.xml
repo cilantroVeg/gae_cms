@@ -5,41 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-maf-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-maf.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/template/404.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/login.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/logout.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/logout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_done.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_done.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/thanks.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/thanks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -1133,7 +1098,11 @@
       <created>1378350885069</created>
       <updated>1378350885069</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="MAF OK">
+      <created>1378351608002</created>
+      <updated>1378351608002</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
