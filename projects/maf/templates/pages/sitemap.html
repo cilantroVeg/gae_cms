@@ -1,0 +1,24 @@
+{% extends "template/template-page.html" %}
+
+{% block title %}Site Map{% endblock %}
+{% block content %}
+<div>
+    {% for main_category in categories %}
+    {% if main_category.name != 'Root' %}
+
+    {% if main_category.parent_id == 1 %}
+    <div><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></div>
+    {% for page in main_category.page_array %}
+    <div><a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a></div>
+    {% endfor %}
+    {% for sub_category in categories %}
+    {% if sub_category.parent_id == main_category.id %}
+    <div> <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a></div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
