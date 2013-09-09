@@ -13,6 +13,7 @@ class Language(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=64, null=False, blank=False)
     code = models.CharField(max_length=7, null=False, blank=False, unique=True)
+    is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
     # ...
     def __unicode__(self):

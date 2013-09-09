@@ -424,7 +424,7 @@ def page_view(request, language, slug):
 
 # ...
 def sitemap(request):
-    return render_to_response("pages/sitemap.html",
+    return render_to_response("pages/sitemap.html", {"language_list": Language.objects.all()},
                               context_instance=RequestContext(request))
 
 
