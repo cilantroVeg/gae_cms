@@ -1,4 +1,6 @@
 S
+- Display Languages in footer
+- Display Categories and Content According to language in URL
 - Use factory template for Bible, InterPegasus, Yiyask, NRWL, Music, Portfolio, ESC
 - Migrate content and deploy sites.
 - Bible API Integration

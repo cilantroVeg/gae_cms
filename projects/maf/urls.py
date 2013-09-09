@@ -12,6 +12,8 @@ urlpatterns = patterns('',
 
     # Frontpage
     url('^$', 'users.views.front_page'),
+    url(r'^(?P<language>[a-z]{2})$', 'users.views.front_page_language'),
+
 
     # User Session
     url(r'^enter/', 'users.views.enter'),
