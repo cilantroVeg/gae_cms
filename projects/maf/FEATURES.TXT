@@ -5,6 +5,7 @@ S
 - Migrate content and deploy sites.
 - Bible API Integration
 - Basic API. For Bible app.
+- Donations
 
 
 M

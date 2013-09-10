@@ -21,7 +21,7 @@ a {
 	-o-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 	transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 }
-a:hover, a:focus { text-decoration: none; border: none; }
+a:hover, a:focus { text-decoration: none; }
 h1,
 h2,
 h3,
