@@ -5,7 +5,7 @@ from google.appengine.api import memcache
 
 
 # ...
-def categories(request, language='en'):
+def categories(request):
     languages = Language.objects.filter(is_enabled=True)
     if memcache.get('category_array') is not None:
         category_array = memcache.get('category_array')
@@ -46,7 +46,7 @@ def categories(request, language='en'):
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
 
         memcache.add('category_array', category_array)
-    return {'categories': category_array, 'languages': languages, 'request_language': language}
+    return {'categories': category_array, 'languages': languages}
 
 # ...
 def is_logged_in(request):

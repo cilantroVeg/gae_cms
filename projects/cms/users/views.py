@@ -82,7 +82,7 @@ def process_sign_up(request):
                                   context_instance=RequestContext(request))
 
 
-def front_page(request, language):
+def front_page(request):
     from django.utils import translation
     thread_language = translation.get_language()
     languages = Language.objects.filter(is_enabled=True)
@@ -94,7 +94,7 @@ def front_page(request, language):
 
 def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
-    return render_to_response('users/front_page.html', {'image_array': image_array}, context_instance=RequestContext(request))
+    return render_to_response('users/front_page.html', {'image_array': image_array, 'request_language': language}, context_instance=RequestContext(request))
 
 
 # Custom 404 and 500
