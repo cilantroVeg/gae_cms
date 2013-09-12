@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -34,44 +31,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/users/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="3120" selection-end="3162" vertical-scroll-proportion="-18.28" vertical-offset="938" max-vertical-offset="3045">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="429" selection-end="429" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="1230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/pages/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="26" selection-end="29" vertical-scroll-proportion="-0.3" vertical-offset="0" max-vertical-offset="7290">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="133" selection-end="133" vertical-scroll-proportion="0.08645533" vertical-offset="0" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1092,7 +1052,11 @@
       <created>1379010266398</created>
       <updated>1379010266398</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Content According To Language In URL In Progress ...">
+      <created>1379010835125</created>
+      <updated>1379010835125</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1125,7 +1089,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38375634" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38375634" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22094509" sideWeight="0.5005314" order="9" side_tool="true" content_ui="tabs" />
@@ -1256,13 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="429" selection-end="429" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="3" selection-start="26" selection-end="29" vertical-scroll-proportion="-0.3" vertical-offset="0" max-vertical-offset="7290">
@@ -1279,7 +1236,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="133" selection-end="133" vertical-scroll-proportion="0.08645533" vertical-offset="0" max-vertical-offset="1020">
+        <state line="7" column="22" selection-start="133" selection-end="133" vertical-scroll-proportion="0.08368201" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="429" selection-end="429" vertical-scroll-proportion="0.29288703" vertical-offset="0" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
