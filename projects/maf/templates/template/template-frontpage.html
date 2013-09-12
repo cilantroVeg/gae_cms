@@ -48,7 +48,9 @@
                 <ul id = "fixed-nav">
                     <li class = "current"><a href = "#home">Home</a></li>
                     {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                    <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                    {% if  main_category.language_code == request_language %}
+                        <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                    {% endif %}
                     {% endif %} {% endif %} {% endfor %}
                     {% if is_logged_in %}
                     {% else %}
