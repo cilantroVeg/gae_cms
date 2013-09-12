@@ -25,7 +25,13 @@
     <div > <a href = "/sitemap">Site map</a></div>
 </div>
 
+
 <div id = "copyright">
+    <div id="languages">
+    {% for language in languages %}
+        <a href="/{{ language.code }}">{{ language.name }}</a>&nbsp;
+    {% endfor %}
+    </div>
     <ul>
         <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
         <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
