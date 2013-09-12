@@ -82,7 +82,7 @@ def process_sign_up(request):
                                   context_instance=RequestContext(request))
 
 
-def front_page(request):
+def front_page(request, language):
     from django.utils import translation
     thread_language = translation.get_language()
     languages = Language.objects.filter(is_enabled=True)
