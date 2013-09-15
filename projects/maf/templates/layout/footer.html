@@ -6,8 +6,8 @@
 
     {% for main_category in categories %}
     {% if main_category.name != 'Root' %}
-
     {% if main_category.parent_id == 1 %}
+    {% if  main_category.language_code == request_language %}
     <div class="footer-category"><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></div>
     {% for page in main_category.page_array %}
     <div><a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a></div>
@@ -18,7 +18,7 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-
+    {% endif %}
     {% endif %}
     {% endfor %}
     <div class="footer-category">Site map</div>
@@ -28,9 +28,9 @@
 
 <div id = "copyright">
     <div id="languages">
-    {% for language in languages %}
+        {% for language in languages %}
         <a href="/{{ language.code }}">{{ language.name }}</a>&nbsp;
-    {% endfor %}
+        {% endfor %}
     </div>
     <ul>
         <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>

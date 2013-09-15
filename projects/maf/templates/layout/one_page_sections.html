@@ -1,6 +1,7 @@
 {% for main_category in categories %}
 {% if main_category.name != 'Root' %}
 {% if main_category.parent_id == 1 %}
+{% if  main_category.language_code == request_language %}
 <div id = "{{main_category.slug}}" class = "{% cycle 'section' 'section section-alt'%}">
     <div class = "container">
         <h1>{{main_category.name}}</h1>
@@ -27,6 +28,7 @@
         <br />
     </div>
 </div>
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}
