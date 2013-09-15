@@ -23,7 +23,18 @@ def translate(key, language_code):
     if language_code == 'es':
         spanish = {
             'Home': 'Inicio',
-
+            'Contact Us': 'Contacto',
+            'Register': 'Registro',
+            'Your email': 'Su Email ...',
+            'Password confirmation': 'Confirmar password ...',
+            'Read More': 'Leer',
+            'Contact Form': 'Forma De Contacto',
+            'Your Name': 'Su Nombre ...',
+            'Your Email': 'Su Email ...',
+            'Your Comment': 'Su Mensaje ...',
+            'Site map': 'Mapa del sitio',
+            'Send Message': 'Enviar',
+            'Magic Angel Foundation': 'FUNDACION ANGEL MAGICO',
         }
         return spanish[key]
     else:
