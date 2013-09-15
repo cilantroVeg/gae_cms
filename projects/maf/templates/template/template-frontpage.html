@@ -46,7 +46,7 @@
             </div>
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
-                    <li class = "current"><a href = "#home">Home</a></li>
+                    <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
                     {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
                     {% if  main_category.language_code == request_language %}
                         <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
