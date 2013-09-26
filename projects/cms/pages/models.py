@@ -142,7 +142,7 @@ class Page(models.Model):
 # ...
 class Record(models.Model):
     id = models.AutoField(primary_key=True)
-    key = models.CharField(max_length=64, null=False, blank=False, unique=True)
+    key = models.CharField(max_length=64, null=False, blank=False, unique=False)
     value = models.TextField(null=False, blank=False)
     language = models.ForeignKey(Language, null=True, blank=True)
     created_at = models.DateTimeField(auto_now=True)
@@ -150,6 +150,9 @@ class Record(models.Model):
     def __unicode__(self):
         return u'%s' % (self.key )
 
+    # ...
+    class Meta:
+        unique_together = ("key", "language")
 
 # ...
 class Image(models.Model):

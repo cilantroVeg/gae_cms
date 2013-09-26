@@ -24,17 +24,20 @@ def get_record(key, language=None):
 def translate(key, language_code):
     if language_code == 'es':
         spanish = {
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top',
-            'Home': 'Top'
+            'Home': 'Inicio',
+            'Contact Us': 'Contacto',
+            'Register': 'Registro',
+            'Your email': 'Su Email ...',
+            'Password confirmation': 'Confirmar password ...',
+            'Read More': 'Leer',
+            'Contact Form': 'Forma De Contacto',
+            'Your Name': 'Su Nombre ...',
+            'Your Email': 'Su Email ...',
+            'Your Comment': 'Su Mensaje ...',
+            'Site map': 'Mapa del sitio',
+            'Send Message': 'Enviar',
+            'Magic Angel Foundation': 'FUNDACION ANGEL MAGICO',
         }
         return spanish[key]
     else:
-        return language_code
+        return key

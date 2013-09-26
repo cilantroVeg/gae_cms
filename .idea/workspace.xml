@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" afterPath="$PROJECT_DIR$/projects/cms/pages/fixtures/initial_data.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/models.py" afterPath="$PROJECT_DIR$/projects/cms/pages/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/templatetags/record-tags.py" afterPath="$PROJECT_DIR$/projects/cms/pages/templatetags/record-tags.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -33,55 +35,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="record-tags.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.88616717" vertical-offset="0" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="2310">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="1560">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="36" selection-start="77" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record-tags.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/users/templatetags/record-tags.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="317" selection-end="1050" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="690">
-              <folding>
-                <element signature="e#61#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -99,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/sitemap.html" />
         <option value="$PROJECT_DIR$/projects/maf/pages/views.py" />
@@ -111,17 +64,17 @@
         <option value="$PROJECT_DIR$/projects/maf/pages/context_processors.py" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/footer.html" />
-        <option value="$PROJECT_DIR$/projects/maf/pages/models.py" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/maf/users/templatetags/record-tags.py" />
         <option value="$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py" />
+        <option value="$PROJECT_DIR$/projects/maf/pages/fixtures/initial_data.yaml" />
+        <option value="$PROJECT_DIR$/projects/maf/pages/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
     <option name="y" value="22" />
-    <option name="width" value="924" />
+    <option name="width" value="1436" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -229,134 +182,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -370,7 +195,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="50" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/hannibal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="39" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="285" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="327" />
@@ -1171,7 +996,11 @@
       <created>1379254170841</created>
       <updated>1379254170842</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Content According To Language In URL In Progress ...">
+      <created>1379263650206</created>
+      <updated>1379263650207</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1195,7 +1024,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="22" width="924" height="878" extended-state="0" />
+    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1203,7 +1032,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36471862" sideWeight="0.42145595" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36420614" sideWeight="0.42145595" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22094509" sideWeight="0.5005314" order="9" side_tool="true" content_ui="tabs" />
@@ -1261,11 +1090,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/language_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="988" selection-end="1007" vertical-scroll-proportion="-9.5" vertical-offset="117" max-vertical-offset="540" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/sitemap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2402746" vertical-offset="0" max-vertical-offset="437" />
@@ -1298,21 +1122,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/pages/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="64" selection-start="5527" selection-end="5527" vertical-scroll-proportion="0.51605505" vertical-offset="1845" max-vertical-offset="3810" />
+        <state line="7" column="22" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3120" selection-end="3151" vertical-scroll-proportion="-0.03267974" vertical-offset="1410" max-vertical-offset="3045">
-          <folding />
-        </state>
+        <state line="94" column="0" selection-start="3120" selection-end="3151" vertical-scroll-proportion="-0.03267974" vertical-offset="1410" max-vertical-offset="3045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html">
@@ -1322,39 +1137,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="1560">
-          <folding />
-        </state>
+        <state line="59" column="21" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="1560" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="2310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="77" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675">
-          <folding />
-        </state>
+        <state line="2" column="36" selection-start="77" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/users/templatetags/record-tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="317" selection-end="1050" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="690">
-          <folding>
-            <element signature="e#61#96#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="0" selection-start="317" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="690" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/pages/fixtures/initial_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="19" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="2205" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/pages/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="79" selection-start="5408" selection-end="5408" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="3855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/templatetags/record-tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.88616717" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
+        <state line="42" column="18" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.81456953" vertical-offset="0" max-vertical-offset="755" />
       </provider>
     </entry>
   </component>
