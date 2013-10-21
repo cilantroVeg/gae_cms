@@ -12,6 +12,12 @@ from django.forms.models import modelformset_factory
 from pages.models import *
 
 # ...
+def delete_cache(request):
+    memcache.delete('category_array')
+    return redirect('/', False)
+
+
+# ...
 def category_form(request, id=None):
     if is_admin_user(request):
         instance = get_object_or_404(Category, id=id) if id is not None else None

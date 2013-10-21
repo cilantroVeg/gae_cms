@@ -70,6 +70,9 @@ urlpatterns = patterns('',
     url(r'^user/delete/(?P<id>\d+)/$', 'users.views.user_delete'),
     url(r'^users/', 'users.views.user_list'),
 
+    url(r'^delete_cache/', 'pages.views.delete_cache'),
+
+
 )
 
 
