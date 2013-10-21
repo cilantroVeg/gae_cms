@@ -52,27 +52,31 @@ $(document).ready(function(){
             $top_nav.slideUp();
         }
     })
+    try{
+        $('.flexslider').flexslider({
+            controlNav:true,
+            direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
+            reverse: false,                 //{NEW} Boolean: Reverse the animation direction
+            animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+            smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
+            startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+            slideshow: true,                //Boolean: Animate slider automatically
+            slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+            animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+            initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
+            randomize: false,               //Boolean: Randomize slide order
+            pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+            pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+            useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
+            touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+            video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+            controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+            directionNav: true             //Boolean: Create navigation for previous/next navigation? (true/false)
+        });
+    }catch (err){
 
-    $('.flexslider').flexslider({
-        controlNav:true,
-        direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
-        reverse: false,                 //{NEW} Boolean: Reverse the animation direction
-        animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
-        smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
-        startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
-        slideshow: true,                //Boolean: Animate slider automatically
-        slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-        animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
-        initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
-        randomize: false,               //Boolean: Randomize slide order
-        pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
-        pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
-        useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
-        touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
-        video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
-        controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
-        directionNav: true             //Boolean: Create navigation for previous/next navigation? (true/false)
-    });
+    }
+
     $("#menu-tab").click(function(){
         if ($("#menu-container").is(':visible')){
             $("#menu-tab").css("marginLeft", "200").animate({
