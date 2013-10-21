@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -1062,7 +1059,11 @@
       <created>1382332227689</created>
       <updated>1382332227690</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Content According To Language In URL In Progress ...">
+      <created>1382333438322</created>
+      <updated>1382333438322</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
