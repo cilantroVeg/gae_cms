@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/lib" afterPath="$PROJECT_DIR$/projects/interpegasus/lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/pages" afterPath="$PROJECT_DIR$/projects/interpegasus/pages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/static" afterPath="$PROJECT_DIR$/projects/interpegasus/static" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/users" afterPath="$PROJECT_DIR$/projects/interpegasus/users" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/urls.py" afterPath="$PROJECT_DIR$/projects/interpegasus/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" afterPath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -51,7 +45,16 @@
       <file leaf-file-name="template-interpegasus.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="546" column="0" selection-start="26376" selection-end="26376" vertical-scroll-proportion="0.9346405" vertical-offset="7761" max-vertical-offset="8280">
+            <state line="526" column="81" selection-start="25855" selection-end="25855" vertical-scroll-proportion="18.138569" vertical-offset="36" max-vertical-offset="8280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-interpegasus-page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="19" selection-start="1065" selection-end="1081" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="5025">
               <folding />
             </state>
           </provider>
@@ -358,6 +361,10 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -381,7 +388,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.interpegasus.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www.interpegasus.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1215,7 +1282,11 @@
       <created>1382333486106</created>
       <updated>1382333486106</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="InterPegasus">
+      <created>1382521276285</created>
+      <updated>1382521276285</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1270,7 +1341,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Initial Data OK" />
     <MESSAGE value="Initial OK" />
     <MESSAGE value="Template Footer Structure OK&#10;Caching OK" />
     <MESSAGE value="Disable Cache" />
@@ -1295,7 +1365,8 @@
     <MESSAGE value="Languages in footer" />
     <MESSAGE value="Content According To Language In URL In Progress ..." />
     <MESSAGE value="Delete Cache Function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete Cache Function" />
+    <MESSAGE value="InterPegasus" />
+    <option name="LAST_COMMIT_MESSAGE" value="InterPegasus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1305,11 +1376,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/static/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="469" selection-end="469" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="5880" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="630" />
@@ -1396,9 +1462,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="19" selection-start="1065" selection-end="1081" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="5025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="546" column="0" selection-start="26376" selection-end="26376" vertical-scroll-proportion="0.9346405" vertical-offset="7761" max-vertical-offset="8280">
+        <state line="526" column="81" selection-start="25855" selection-end="25855" vertical-scroll-proportion="18.138569" vertical-offset="36" max-vertical-offset="8280">
           <folding />
         </state>
       </provider>
