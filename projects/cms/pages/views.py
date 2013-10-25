@@ -424,8 +424,8 @@ def image_delete(request, id=None):
 # ...
 def page_view(request, language, slug):
     page = get_object_or_404(Page, slug=slug)
-    return render_to_response("pages/page_view.html", {"page": page,
-    },
+    image_array = Image.objects.filter(page=page)
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array},
                               context_instance=RequestContext(request))
 
 # ...
