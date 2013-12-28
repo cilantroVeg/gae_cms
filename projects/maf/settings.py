@@ -90,49 +90,25 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/static/'
 
 
-
-
-
 import access_keys
-TWITTER_CONSUMER_KEY         = access_keys.IP_TWEET_KEY
-TWITTER_CONSUMER_SECRET      = access_keys.IP_TWEET_SECRET
-FACEBOOK_APP_ID              = access_keys.IP_FACEBOOK_KEY
-FACEBOOK_API_SECRET          = access_keys.IP_FACEBOOK_SECRET
-GOOGLE_CONSUMER_KEY          = ''
-GOOGLE_CONSUMER_SECRET       = ''
-GOOGLE_OAUTH2_CLIENT_ID      = ''
-GOOGLE_OAUTH2_CLIENT_SECRET  = ''
+SOCIAL_AUTH_TWITTER_KEY = access_keys.IP_TWEET_KEY
+SOCIAL_AUTH_TWITTER_SECRET = access_keys.IP_TWEET_SECRET
+SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = access_keys.IP_GOOGLE_KEY
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = access_keys.IP_GOOGLE_SECRET
+
+
 FLICKR_API_KEY = access_keys.FLICKR_KEY
 FLICKR_API_SECRET = access_keys.FLICKR_SEC
 PICASA_KEY = access_keys.PICASA_EMAIL
 PICASA_PASSWORD = access_keys.PICASA_PASSWORD
 
 
-LOGIN_URL          = '/enter/'
-LOGIN_REDIRECT_URL = '/logged-in/'
-LOGIN_ERROR_URL    = '/login-error/'
-SOCIAL_AUTH_BACKEND_ERROR_URL = '/login-error/'
-
-SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/logged-in/'
-SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/logged-in/'
-SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
-SOCIAL_AUTH_SESSION_EXPIRATION = False
-SOCIAL_AUTH_RAISE_EXCEPTIONS = False
-
-FACEBOOK_EXTENDED_PERMISSIONS = ['email']
-
-
 AUTH_PROFILE_MODULE = 'users.models.UserProfile'
 
 
-SOCIAL_AUTH_PIPELINE = (
-    'social_auth.backends.pipeline.social.social_auth_user',
-    'social_auth.backends.pipeline.associate.associate_by_email',
-    'social_auth.backends.pipeline.user.get_username',
-    'social_auth.backends.pipeline.user.create_user',
-    'social_auth.backends.pipeline.social.associate_user',
-    'social_auth.backends.pipeline.user.update_user_details',
-)
 
 FILE_UPLOAD_TEMP_DIR = '/tmp'
 # Add to your settings file
@@ -155,33 +131,4 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
-LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/done/'
-URL_PATH = ''
-SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
-SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
-SOCIAL_AUTH_GOOGLE_OAUTH_SCOPE = [
-    'https://www.googleapis.com/auth/drive',
-    'https://www.googleapis.com/auth/userinfo.profile'
-]
-# SOCIAL_AUTH_EMAIL_FORM_URL = '/signup-email'
-SOCIAL_AUTH_EMAIL_FORM_HTML = 'email_signup.html'
-SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION = 'example.app.mail.send_validation'
-SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
-# SOCIAL_AUTH_USERNAME_FORM_URL = '/signup-username'
-SOCIAL_AUTH_USERNAME_FORM_HTML = 'username_signup.html'
-
-SOCIAL_AUTH_PIPELINE = (
-    'social.pipeline.social_auth.social_details',
-    'social.pipeline.social_auth.social_uid',
-    'social.pipeline.social_auth.auth_allowed',
-    'social.pipeline.social_auth.social_user',
-    'social.pipeline.user.get_username',
-    'example.app.pipeline.require_email',
-    'social.pipeline.mail.mail_validation',
-    'social.pipeline.user.create_user',
-    'social.pipeline.social_auth.associate_user',
-    'social.pipeline.social_auth.load_extra_data',
-    'social.pipeline.user.user_details'
-)
-
+LOGIN_REDIRECT_URL = '/'
