@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # Admin URL's
     url(r'^admin/', include(admin.site.urls)),
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
+    url('', include('social.apps.django_app.urls', namespace='social')),
 
     # Frontpage
     url('^$', 'users.views.front_page'),
@@ -20,7 +21,6 @@ urlpatterns = patterns('',
     url(r'^exit/', 'users.views.exit_request'),
     url(r'^process_sign_up/', 'users.views.process_sign_up'),
     url(r'^process_create_account/', 'users.views.process_create_account'),
-    url(r'', include('social_auth.urls')),
     (r'', include('django.contrib.auth.urls')),
     url(r'^logged-in/', 'users.views.logged_in'),
     url(r'^login-error/', 'users.views.login_error'),

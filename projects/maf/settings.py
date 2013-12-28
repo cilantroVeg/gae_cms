@@ -29,8 +29,8 @@ INSTALLED_APPS = (
     'autoload',
     'dbindexer',
     'django.contrib.admin',
+    'social.apps.django_app.default',
     'users',
-    'social_auth',
     'pages',
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
@@ -58,6 +58,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'pages.context_processors.categories',
     'pages.context_processors.is_logged_in',
     'pages.context_processors.is_admin',
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
 )
 
 TEMPLATE_LOADERS = (
@@ -89,15 +91,7 @@ MEDIA_URL = '/static/'
 
 
 
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.twitter.TwitterBackend',
-    'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.google.GoogleOAuthBackend',
-    'social_auth.backends.google.GoogleOAuth2Backend',
-    'social_auth.backends.google.GoogleBackend',
-    'social_auth.backends.yahoo.YahooBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
+
 
 import access_keys
 TWITTER_CONSUMER_KEY         = access_keys.IP_TWEET_KEY
@@ -147,3 +141,47 @@ FILE_UPLOAD_MAX_MEMORY_SIZE = 7621440
 
 
 EMAIL_BACKEND = 'djangoappengine.mail.EmailBackend'
+
+
+AUTHENTICATION_BACKENDS = (
+    'social.backends.facebook.FacebookOAuth2',
+    'social.backends.google.GoogleOAuth',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.google.GoogleOpenId',
+    'social.backends.google.GooglePlusAuth',
+    'social.backends.twitter.TwitterOAuth',
+    'social.backends.email.EmailAuth',
+    'social.backends.username.UsernameAuth',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/done/'
+URL_PATH = ''
+SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
+SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
+SOCIAL_AUTH_GOOGLE_OAUTH_SCOPE = [
+    'https://www.googleapis.com/auth/drive',
+    'https://www.googleapis.com/auth/userinfo.profile'
+]
+# SOCIAL_AUTH_EMAIL_FORM_URL = '/signup-email'
+SOCIAL_AUTH_EMAIL_FORM_HTML = 'email_signup.html'
+SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION = 'example.app.mail.send_validation'
+SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
+# SOCIAL_AUTH_USERNAME_FORM_URL = '/signup-username'
+SOCIAL_AUTH_USERNAME_FORM_HTML = 'username_signup.html'
+
+SOCIAL_AUTH_PIPELINE = (
+    'social.pipeline.social_auth.social_details',
+    'social.pipeline.social_auth.social_uid',
+    'social.pipeline.social_auth.auth_allowed',
+    'social.pipeline.social_auth.social_user',
+    'social.pipeline.user.get_username',
+    'example.app.pipeline.require_email',
+    'social.pipeline.mail.mail_validation',
+    'social.pipeline.user.create_user',
+    'social.pipeline.social_auth.associate_user',
+    'social.pipeline.social_auth.load_extra_data',
+    'social.pipeline.user.user_details'
+)
+

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/gae_cms.iml" filepath="$PROJECT_DIR$/.idea/gae_cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers/.idea/swagger-lakers.iml" filepath="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers/.idea/swagger-lakers.iml" />
     </modules>
   </component>
 </project>
