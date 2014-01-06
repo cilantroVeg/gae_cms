@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,13 +62,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.62886596" vertical-offset="850" max-vertical-offset="1335">
+            <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1335">
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6630435" vertical-offset="25" max-vertical-offset="2310">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
@@ -108,6 +115,7 @@
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
         <option value="$PROJECT_DIR$/projects/maf/urls.py" />
+        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
       </list>
     </option>
   </component>
@@ -426,13 +434,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/language_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.130435" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/page_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="19" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-17.130434" vertical-offset="71" max-vertical-offset="555">
@@ -533,10 +534,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.62886596" vertical-offset="850" max-vertical-offset="1335">
+        <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1335">
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6630435" vertical-offset="25" max-vertical-offset="2310">
+          <folding />
         </state>
       </provider>
     </entry>
