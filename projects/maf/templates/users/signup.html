@@ -13,7 +13,7 @@
         <div class="columns">
             <div class="half">
                 <h4><a onclick="$('#create_user_form').slideUp();$('#login_user_form').slideDown();">Login</a> | <a onclick="$('#create_user_form').slideDown();$('#login_user_form').slideUp();">Register</a></h4>
-                <form id="login_user_form" name="login_user_form" action="/en/process_sign_up/" method="post">
+                <form id="login_user_form" name="login_user_form" action="/process_sign_up/" method="post">
                     <fieldset>
                         {% csrf_token %}
                         <div class="formRow">
@@ -75,5 +75,5 @@
     </div>
 </section>
 <div id="forgot_password">
-    <b>Forgot your password? <a href="/en/forgot_password">Click here</a> to recover it.</b>
+    <b>Forgot your password? <a href="/forgot_password">Click here</a> to recover it.</b>
 </div><br/>{% endblock %}

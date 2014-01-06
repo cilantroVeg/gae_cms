@@ -13,9 +13,9 @@
 <div id = "static_content">
     <h1>Page Form</h1>
     {% if id %}
-    <form enctype = "multipart/form-data" action = "/en/page/edit/{{ id }}/" method = "post">
+    <form enctype = "multipart/form-data" action = "/page/edit/{{ id }}/" method = "post">
         {% else %}
-        <form enctype = "multipart/form-data" action = "/en/page/new/" method = "post">
+        <form enctype = "multipart/form-data" action = "/page/new/" method = "post">
             {% endif %} {% csrf_token %} {{ page_form }}
             <hr/>
             {% if image_array %} {% for image in image_array %}
@@ -29,4 +29,4 @@
             <input type = "submit" value = "Submit"/>
         </form>
 </div>
-<hr/><a href = "/en/pages/">Page List</a>{% endblock %}
+<hr/><a href = "/pages/">Page List</a>{% endblock %}

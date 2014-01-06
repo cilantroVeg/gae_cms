@@ -6,10 +6,10 @@
 <div id = "static_content">
     <h1>User Form</h1>
     {% if id %}
-    <form action = "/en/user/edit/{{ id }}/" method = "post">
+    <form action = "/user/edit/{{ id }}/" method = "post">
         {% else %}
-        <form action = "/en/user/new/" method = "post">
+        <form action = "/user/new/" method = "post">
             {% endif %} {% csrf_token %} {{ form }} <input type = "submit" value = "Submit"/>
         </form>
 </div>
-<hr/><a href = "/en/users/">User List</a>{% endblock %}
+<hr/><a href = "/users/">User List</a>{% endblock %}
