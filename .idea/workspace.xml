@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -42,11 +27,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="462">
+            <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.9130435" vertical-offset="0" max-vertical-offset="375">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global_settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/django/conf/global_settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.0" vertical-offset="3788" max-vertical-offset="9105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basehttp.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/django/core/servers/basehttp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.0" vertical-offset="2089" max-vertical-offset="2805">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/simple/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="-6.826087" vertical-offset="248" max-vertical-offset="5295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.62886596" vertical-offset="850" max-vertical-offset="1335">
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +106,8 @@
         <option value="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
-        <option value="$PROJECT_DIR$/projects/maf/urls.py" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
+        <option value="$PROJECT_DIR$/projects/maf/urls.py" />
       </list>
     </option>
   </component>
@@ -168,54 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,17 +379,21 @@
       <created>1388889165180</created>
       <updated>1388889165180</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Localization">
+      <created>1388970988313</created>
+      <updated>1388970988313</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="31" width="1400" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -447,29 +426,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="204" selection-end="204" vertical-scroll-proportion="-5.2173915" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="847" selection-end="847" vertical-scroll-proportion="8.521739" vertical-offset="421" max-vertical-offset="1050">
-          <folding>
-            <element signature="n#style#0;n#form#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/image_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="59" selection-start="610" selection-end="610" vertical-scroll-proportion="-11.086957" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/language_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.130435" vertical-offset="0" max-vertical-offset="300">
@@ -533,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="11" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.55069125" vertical-offset="871" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="55" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.3318078" vertical-offset="485" max-vertical-offset="1500">
@@ -556,8 +505,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="462">
+        <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.9130435" vertical-offset="0" max-vertical-offset="375">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/django/conf/global_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.0" vertical-offset="3788" max-vertical-offset="9105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/django/core/servers/basehttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.0" vertical-offset="2089" max-vertical-offset="2805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/simple/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="-6.826087" vertical-offset="248" max-vertical-offset="5295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.62886596" vertical-offset="850" max-vertical-offset="1335">
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

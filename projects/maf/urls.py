@@ -1,4 +1,5 @@
 from django.conf.urls import *
+from django.views.generic import RedirectView
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -74,6 +75,7 @@ urlpatterns = patterns('',
 
     url(r'^delete_cache/', 'pages.views.delete_cache'),
 
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/simple/favicon.ico'))
 
 )
 
