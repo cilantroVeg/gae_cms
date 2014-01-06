@@ -7,7 +7,7 @@
     <h1>category Form</h1>
     <a href = "/categories">Category List</a>
 
-    <form action = "/category/edit/" method = "post" enctype = "multipart/form-data">
+    <form action = "/en/category/edit/" method = "post" enctype = "multipart/form-data">
         {% csrf_token %} {{ formset.management_form }} {% if formset.errors %} {{ formset.errors }} {% endif %}
         <table>
             <tr>
@@ -29,4 +29,4 @@
         <input type = "submit" value = "Submit"/>
     </form>
 </div>
-<hr/><a href = "/categories/">Category List</a>{% endblock %}
+<hr/><a href = "/en/categories/">Category List</a>{% endblock %}

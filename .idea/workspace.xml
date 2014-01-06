@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="">
+    <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python-social-auth/social/pipeline/picture.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -18,10 +43,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/gae_cms$cms.coverage" NAME="cms Coverage Results" MODIFIED="1378163980971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/gae_cms$Unittests_in__opt_Documents_interpegasus_gae_cms_projects_cms.coverage" NAME="Unittests in /opt/Documents/interpegasus/gae_cms/projects/cms Coverage Results" MODIFIED="1377553659610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projects/cms" />
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -34,19 +55,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+      <file leaf-file-name="contact_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="23" selection-start="4210" selection-end="4210" vertical-scroll-proportion="0.87234044" vertical-offset="1380" max-vertical-offset="2085">
+            <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="2.0" vertical-offset="106" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thanks.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/thanks.html">
+      <file leaf-file-name="image_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/image_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="17" column="59" selection-start="610" selection-end="610" vertical-scroll-proportion="-11.086957" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/language_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.130435" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/page_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="19" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-17.130434" vertical-offset="71" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/record_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="23" selection-start="222" selection-end="222" vertical-scroll-proportion="-5.2173915" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spreadsheet_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="19" selection-start="909" selection-end="909" vertical-scroll-proportion="-14.347826" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="59" selection-start="334" selection-end="334" vertical-scroll-proportion="-7.173913" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgot_password.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="23" selection-start="346" selection-end="346" vertical-scroll-proportion="-6.695652" vertical-offset="71" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -55,7 +130,16 @@
       <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="102" selection-start="3437" selection-end="3437" vertical-scroll-proportion="-22.166666" vertical-offset="518" max-vertical-offset="1260">
+            <state line="77" column="41" selection-start="3602" selection-end="3602" vertical-scroll-proportion="-13.956522" vertical-offset="834" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_form.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/user_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="23" selection-start="220" selection-end="220" vertical-scroll-proportion="0.2733485" vertical-offset="0" max-vertical-offset="439">
               <folding />
             </state>
           </provider>
@@ -80,84 +164,37 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-        <option value="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" />
-        <option value="$PROJECT_DIR$/projects/maf/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" />
-        <option value="$PROJECT_DIR$/projects/maf/static/css/layout.css" />
-        <option value="$PROJECT_DIR$/projects/maf/static/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/maf/static/template/www.magicangel.org/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/urls.py" />
-        <option value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers/html/swagger-ui.js" />
-        <option value="$PROJECT_DIR$/projects/maf/access_keys.py" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
-        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1436" />
-    <option name="height" value="878" />
+    <option name="x" value="18" />
+    <option name="y" value="31" />
+    <option name="width" value="1400" />
+    <option name="height" value="860" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Code style issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Django</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript function metricsJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Portability issues</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -176,6 +213,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,10 +285,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -262,71 +296,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="django-nonrel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="135" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="152" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="289" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="156" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="521" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="950" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="290" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <PyConsoleSettings />
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/maf/templates/pages" />
-      <recent name="$PROJECT_DIR$/projects/maf/templates/layout" />
-      <recent name="$PROJECT_DIR$/projects/maf/static/template/js" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/template/js/uniform" />
-      <recent name="$PROJECT_DIR$/projects/maf/static/template/layout" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/maf/templates" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/template" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/images/icons" />
-      <recent name="$PROJECT_DIR$/projects/cms/static/javascript/flex/images" />
-    </key>
-  </component>
-  <component name="RunManager" selected="App Engine server.cms">
+  <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,22 +373,6 @@
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="gae_cms" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -493,696 +458,45 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="cms" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="gae_cms" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="true" />
-      <option name="browserUrl" value="http://127.0.0.1:8080/" />
-      <option name="additionalOptions" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cms JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://127.0.0.1:8080/">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="App Engine server.cms" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.cms JavaScript" />
-    </list>
+    <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-    <supportedVersion>125</supportedVersion>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/../../mobovivo/webapps/swagger-lakers" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a7ff501-beb5-45ce-8600-9d5bd2205bd6" name="Default" comment="" />
-      <created>1375578069058</created>
-      <updated>1375578069058</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Flickr">
-      <created>1375629668236</created>
-      <updated>1375629668236</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Picasa">
-      <created>1375658134767</created>
-      <updated>1375658134767</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Picasa">
-      <created>1375670375217</created>
-      <updated>1375670375217</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Picasa OK">
-      <created>1375673543281</created>
-      <updated>1375673543281</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Picasa OK">
-      <created>1375673560909</created>
-      <updated>1375673560909</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Picasa OK">
-      <created>1375675471760</created>
-      <updated>1375675471760</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Picasa OK">
-      <created>1375677301428</created>
-      <updated>1375677301428</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Picasa OK">
-      <created>1375760373400</created>
-      <updated>1375760373400</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Picasa OK">
-      <created>1375761070857</created>
-      <updated>1375761070857</updated>
-    </task>
-    <task id="LOCAL-00010" summary="URL Navigation Structure Ok">
-      <created>1375763420715</created>
-      <updated>1375763420715</updated>
-    </task>
-    <task id="LOCAL-00011" summary="CSS">
-      <created>1375848803921</created>
-      <updated>1375848803921</updated>
-    </task>
-    <task id="LOCAL-00012" summary="CSS">
-      <created>1375848906974</created>
-      <updated>1375848906974</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Slugify">
-      <created>1375937296483</created>
-      <updated>1375937296483</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Slugify">
-      <created>1375943332152</created>
-      <updated>1375943332152</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Slugify">
-      <created>1375943701035</created>
-      <updated>1375943701035</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Page Image Relationship form">
-      <created>1376109015917</created>
-      <updated>1376109015917</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Page Image Relationship form">
-      <created>1376112589090</created>
-      <updated>1376112589090</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Page Image Relationship form OK">
-      <created>1376117187458</created>
-      <updated>1376117187458</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Footer...">
-      <created>1376117616437</created>
-      <updated>1376117616437</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Footer...">
-      <created>1376117669697</created>
-      <updated>1376117669697</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Footer...">
-      <created>1376151644810</created>
-      <updated>1376151644810</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Footer...">
-      <created>1376169685055</created>
-      <updated>1376169685055</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Footer OK">
-      <created>1376187835927</created>
-      <updated>1376187835927</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Footer OK + Categories OK">
-      <created>1376188397486</created>
-      <updated>1376188397486</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Initial Data OK">
-      <created>1376191050262</created>
-      <updated>1376191050262</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Initial Data OK">
-      <created>1376192750454</created>
-      <updated>1376192750454</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Initial Data OK">
-      <created>1376196241291</created>
-      <updated>1376196241291</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Initial Data OK">
-      <created>1376199379439</created>
-      <updated>1376199379439</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Initial Data OK">
-      <created>1376199654242</created>
-      <updated>1376199654242</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Initial OK">
-      <created>1376200408747</created>
-      <updated>1376200408747</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Template Footer Structure OK&#10;Caching OK">
-      <created>1376203581551</created>
-      <updated>1376203581551</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Template Footer Structure OK&#10;Caching OK">
-      <created>1376205343095</created>
-      <updated>1376205343095</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Template Footer Structure OK&#10;Caching OK">
-      <created>1376206184866</created>
-      <updated>1376206184866</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Template Footer Structure OK&#10;Caching OK">
-      <created>1376206429796</created>
-      <updated>1376206429796</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Disable Cache">
-      <created>1376206589487</created>
-      <updated>1376206589487</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Disable Cache">
-      <created>1376206716319</created>
-      <updated>1376206716319</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Disable Cache">
-      <created>1376206849113</created>
-      <updated>1376206849113</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Disable Cache">
-      <created>1376206954556</created>
-      <updated>1376206954556</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Disable Cache">
-      <created>1376207089339</created>
-      <updated>1376207089339</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Enable Cache">
-      <created>1376242231814</created>
-      <updated>1376242231814</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Enable Cache">
-      <created>1376242589454</created>
-      <updated>1376242589454</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Enable Cache">
-      <created>1376242743410</created>
-      <updated>1376242743410</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Enable Cache">
-      <created>1376243550740</created>
-      <updated>1376243550740</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Enable Cache">
-      <created>1376244716638</created>
-      <updated>1376244716638</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Site Map &#10;Structure">
-      <created>1376247030261</created>
-      <updated>1376247030261</updated>
-    </task>
-    <task id="LOCAL-00046" summary="CSS">
-      <created>1376449152709</created>
-      <updated>1376449152709</updated>
-    </task>
-    <task id="LOCAL-00047" summary="CSS">
-      <created>1376459996259</created>
-      <updated>1376459996260</updated>
-    </task>
-    <task id="LOCAL-00048" summary="CSS">
-      <created>1376460116511</created>
-      <updated>1376460116511</updated>
-    </task>
-    <task id="LOCAL-00049" summary="CSS">
-      <created>1376488387939</created>
-      <updated>1376488387939</updated>
-    </task>
-    <task id="LOCAL-00050" summary="CSS">
-      <created>1376687313982</created>
-      <updated>1376687313983</updated>
-    </task>
-    <task id="LOCAL-00051" summary="CSS">
-      <created>1376761280492</created>
-      <updated>1376761280493</updated>
-    </task>
-    <task id="LOCAL-00052" summary="CSS">
-      <created>1376763803658</created>
-      <updated>1376763803659</updated>
-    </task>
-    <task id="LOCAL-00053" summary="CSS">
-      <created>1376764401104</created>
-      <updated>1376764401104</updated>
-    </task>
-    <task id="LOCAL-00054" summary="CSS">
-      <created>1376846686487</created>
-      <updated>1376846686488</updated>
-    </task>
-    <task id="LOCAL-00055" summary="CSS">
-      <created>1376847546930</created>
-      <updated>1376847546931</updated>
-    </task>
-    <task id="LOCAL-00056" summary="CSS">
-      <created>1376876398576</created>
-      <updated>1376876398576</updated>
-    </task>
-    <task id="LOCAL-00057" summary="CSS">
-      <created>1376889066127</created>
-      <updated>1376889066127</updated>
-    </task>
-    <task id="LOCAL-00058" summary="CSS">
-      <created>1376890451027</created>
-      <updated>1376890451028</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Context Processors">
-      <created>1377018456962</created>
-      <updated>1377018456962</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Context Processors">
-      <created>1377018957457</created>
-      <updated>1377018957457</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Context Processors">
-      <created>1377019509873</created>
-      <updated>1377019509873</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Context Processors">
-      <created>1377019670305</created>
-      <updated>1377019670305</updated>
-    </task>
-    <task id="LOCAL-00063" summary="MAF Template">
-      <created>1377054665436</created>
-      <updated>1377054665436</updated>
-    </task>
-    <task id="LOCAL-00064" summary="MAF Template">
-      <created>1377058081472</created>
-      <updated>1377058081472</updated>
-    </task>
-    <task id="LOCAL-00065" summary="MAF Template">
-      <created>1377063738406</created>
-      <updated>1377063738406</updated>
-    </task>
-    <task id="LOCAL-00066" summary="MAF Template">
-      <created>1377065379848</created>
-      <updated>1377065379849</updated>
-    </task>
-    <task id="LOCAL-00067" summary="MAF Template">
-      <created>1377065983471</created>
-      <updated>1377065983472</updated>
-    </task>
-    <task id="LOCAL-00068" summary="MAF Template">
-      <created>1377066708459</created>
-      <updated>1377066708459</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Fixes Navigation">
-      <created>1377135748296</created>
-      <updated>1377135748296</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Fixes Navigation">
-      <created>1377136306526</created>
-      <updated>1377136306527</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Fixes Admin">
-      <created>1377137585446</created>
-      <updated>1377137585447</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Fixes Admin">
-      <created>1377137719456</created>
-      <updated>1377137719456</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Fixes Admin">
-      <created>1377295384707</created>
-      <updated>1377295384708</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Fixes Admin">
-      <created>1377319684278</created>
-      <updated>1377319684279</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Fixes Admin">
-      <created>1377320981625</created>
-      <updated>1377320981625</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Fixes Admin">
-      <created>1377320996965</created>
-      <updated>1377320996966</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Fixes Admin">
-      <created>1377359873116</created>
-      <updated>1377359873116</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Fixes Admin">
-      <created>1377363048918</created>
-      <updated>1377363048918</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Fixes Forms">
-      <created>1377364082427</created>
-      <updated>1377364082427</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Fixes Forms">
-      <created>1377366147300</created>
-      <updated>1377366147300</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Fixes Forms">
-      <created>1377366164816</created>
-      <updated>1377366164817</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Fixes Forms">
-      <created>1377453011470</created>
-      <updated>1377453011470</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Fixes Contact">
-      <created>1377453866206</created>
-      <updated>1377453866207</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Fixes Contact">
-      <created>1377454261061</created>
-      <updated>1377454261061</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Fixes Contact">
-      <created>1377473916632</created>
-      <updated>1377473916632</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Fixes Contact">
-      <created>1377474325501</created>
-      <updated>1377474325502</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Licence Info">
-      <created>1377475359129</created>
-      <updated>1377475359129</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Licence Info">
-      <created>1377476998537</created>
-      <updated>1377476998538</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Licence Info">
-      <created>1377477498150</created>
-      <updated>1377477498151</updated>
-    </task>
-    <task id="LOCAL-00090" summary="InterPegasus Template">
-      <created>1377479762233</created>
-      <updated>1377479762234</updated>
-    </task>
-    <task id="LOCAL-00091" summary="InterPegasus Template">
-      <created>1377479791648</created>
-      <updated>1377479791649</updated>
-    </task>
-    <task id="LOCAL-00092" summary="InterPegasus Template">
-      <created>1377479815046</created>
-      <updated>1377479815047</updated>
-    </task>
-    <task id="LOCAL-00093" summary="InterPegasus Template">
-      <created>1377479834677</created>
-      <updated>1377479834677</updated>
-    </task>
-    <task id="LOCAL-00094" summary="InterPegasus Template">
-      <created>1377479849720</created>
-      <updated>1377479849721</updated>
-    </task>
-    <task id="LOCAL-00095" summary="InterPegasus Template">
-      <created>1377483320279</created>
-      <updated>1377483320279</updated>
-    </task>
-    <task id="LOCAL-00096" summary="InterPegasus Template">
-      <created>1377483614623</created>
-      <updated>1377483614623</updated>
-    </task>
-    <task id="LOCAL-00097" summary="InterPegasus Template">
-      <created>1377484107941</created>
-      <updated>1377484107941</updated>
-    </task>
-    <task id="LOCAL-00098" summary="InterPegasus Template">
-      <created>1377554675824</created>
-      <updated>1377554675825</updated>
-    </task>
-    <task id="LOCAL-00099" summary="InterPegasus Template">
-      <created>1377554698776</created>
-      <updated>1377554698776</updated>
-    </task>
-    <task id="LOCAL-00100" summary="InterPegasus Template Contact">
-      <created>1377579210435</created>
-      <updated>1377579210435</updated>
-    </task>
-    <task id="LOCAL-00101" summary="InterPegasus Template Footer">
-      <created>1377580832252</created>
-      <updated>1377580832252</updated>
-    </task>
-    <task id="LOCAL-00102" summary="InterPegasus Template">
-      <created>1377638183349</created>
-      <updated>1377638183349</updated>
-    </task>
-    <task id="LOCAL-00103" summary="InterPegasus Template">
-      <created>1377667037492</created>
-      <updated>1377667037493</updated>
-    </task>
-    <task id="LOCAL-00104" summary="InterPegasus Template">
-      <created>1377667984161</created>
-      <updated>1377667984161</updated>
-    </task>
-    <task id="LOCAL-00105" summary="Content">
-      <created>1377670181492</created>
-      <updated>1377670181493</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Content">
-      <created>1377670232054</created>
-      <updated>1377670232054</updated>
-    </task>
-    <task id="LOCAL-00107" summary="Content">
-      <created>1377778393590</created>
-      <updated>1377778393590</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Templates">
-      <created>1377958090858</created>
-      <updated>1377958090858</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Templates">
-      <created>1378144310604</created>
-      <updated>1378144310604</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Templates">
-      <created>1378167386612</created>
-      <updated>1378167386612</updated>
-    </task>
-    <task id="LOCAL-00111" summary="MAF">
-      <created>1378182261775</created>
-      <updated>1378182261775</updated>
-    </task>
-    <task id="LOCAL-00112" summary="MAF">
-      <created>1378188724980</created>
-      <updated>1378188724980</updated>
-    </task>
-    <task id="LOCAL-00113" summary="MAF">
-      <created>1378188929887</created>
-      <updated>1378188929887</updated>
-    </task>
-    <task id="LOCAL-00114" summary="MAF">
-      <created>1378216797232</created>
-      <updated>1378216797232</updated>
-    </task>
-    <task id="LOCAL-00115" summary="MAF">
-      <created>1378225120176</created>
-      <updated>1378225120177</updated>
-    </task>
-    <task id="LOCAL-00116" summary="MAF">
-      <created>1378230240071</created>
-      <updated>1378230240071</updated>
-    </task>
-    <task id="LOCAL-00117" summary="MAF">
-      <created>1378268766014</created>
-      <updated>1378268766014</updated>
-    </task>
-    <task id="LOCAL-00118" summary="MAF">
-      <created>1378270827684</created>
-      <updated>1378270827685</updated>
-    </task>
-    <task id="LOCAL-00119" summary="MAF OK">
-      <created>1378271755226</created>
-      <updated>1378271755226</updated>
-    </task>
-    <task id="LOCAL-00120" summary="MAF OK">
-      <created>1378272400476</created>
-      <updated>1378272400476</updated>
-    </task>
-    <task id="LOCAL-00121" summary="MAF OK">
-      <created>1378350885069</created>
-      <updated>1378350885069</updated>
-    </task>
-    <task id="LOCAL-00122" summary="MAF OK">
-      <created>1378351608002</created>
-      <updated>1378351608002</updated>
-    </task>
-    <task id="LOCAL-00123" summary="MAF OK">
-      <created>1378528537357</created>
-      <updated>1378528537357</updated>
-    </task>
-    <task id="LOCAL-00124" summary="MAF OK">
-      <created>1378528665332</created>
-      <updated>1378528665332</updated>
-    </task>
-    <task id="LOCAL-00125" summary="MAF OK Site map&#10;">
-      <created>1378620205171</created>
-      <updated>1378620205171</updated>
-    </task>
-    <task id="LOCAL-00126" summary="MAF OK Site map&#10;">
-      <created>1378745960877</created>
-      <updated>1378745960877</updated>
-    </task>
-    <task id="LOCAL-00127" summary="MAF OK Site map&#10;">
-      <created>1378747472017</created>
-      <updated>1378747472017</updated>
-    </task>
-    <task id="LOCAL-00128" summary="MAF OK Site map&#10;">
-      <created>1378800322380</created>
-      <updated>1378800322380</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Languages in footer">
-      <created>1379007330912</created>
-      <updated>1379007330912</updated>
-    </task>
-    <task id="LOCAL-00130" summary="Content According To Language In URL In Progress ...">
-      <created>1379009462633</created>
-      <updated>1379009462633</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Content According To Language In URL In Progress ...">
-      <created>1379010266398</created>
-      <updated>1379010266398</updated>
-    </task>
-    <task id="LOCAL-00132" summary="Content According To Language In URL In Progress ...">
-      <created>1379010835125</created>
-      <updated>1379010835125</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Content According To Language In URL In Progress ...">
-      <created>1379010852307</created>
-      <updated>1379010852307</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Content According To Language In URL In Progress ...">
-      <created>1379250581094</created>
-      <updated>1379250581094</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Content According To Language In URL In Progress ...">
-      <created>1379254170841</created>
-      <updated>1379254170842</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Content According To Language In URL In Progress ...">
-      <created>1379263650206</created>
-      <updated>1379263650207</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Content According To Language In URL In Progress ...">
-      <created>1380236116944</created>
-      <updated>1380236116944</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Content According To Language In URL In Progress ...">
-      <created>1382332227689</created>
-      <updated>1382332227690</updated>
-    </task>
-    <task id="LOCAL-00139" summary="Content According To Language In URL In Progress ...">
-      <created>1382333438322</created>
-      <updated>1382333438322</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Delete Cache Function">
-      <created>1382333486106</created>
-      <updated>1382333486106</updated>
-    </task>
-    <task id="LOCAL-00141" summary="InterPegasus">
-      <created>1382521276285</created>
-      <updated>1382521276285</updated>
-    </task>
-    <task id="LOCAL-00142" summary="InterPegasus">
-      <created>1382521553106</created>
-      <updated>1382521553106</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Social Auth">
-      <created>1388246888925</created>
-      <updated>1388246888925</updated>
-    </task>
-    <option name="localTasksCounter" value="144" />
+      <changelist id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="" />
+      <created>1388881446058</created>
+      <updated>1388881446058</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Django">
+      <created>1388889165180</created>
+      <updated>1388889165180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
+    <frame x="18" y="31" width="1400" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3906685" sideWeight="0.7011494" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27713922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22094509" sideWeight="0.5005314" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45083013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20689656" sideWeight="0.49946865" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29885057" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1192,155 +506,123 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Template Footer Structure OK&#10;Caching OK" />
-    <MESSAGE value="Disable Cache" />
-    <MESSAGE value="Enable Cache" />
-    <MESSAGE value="Site Map &#10;Structure" />
-    <MESSAGE value="CSS" />
-    <MESSAGE value="Context Processors" />
-    <MESSAGE value="MAF Template" />
-    <MESSAGE value="Fixes Navigation" />
-    <MESSAGE value="Fixes Admin" />
-    <MESSAGE value="Fixes Forms" />
-    <MESSAGE value="Fixes Contact" />
-    <MESSAGE value="Licence Info" />
-    <MESSAGE value="InterPegasus Template Contact" />
-    <MESSAGE value="InterPegasus Template Footer" />
-    <MESSAGE value="InterPegasus Template" />
-    <MESSAGE value="Content" />
-    <MESSAGE value="Templates" />
-    <MESSAGE value="MAF" />
-    <MESSAGE value="MAF OK" />
-    <MESSAGE value="MAF OK Site map&#10;" />
-    <MESSAGE value="Languages in footer" />
-    <MESSAGE value="Content According To Language In URL In Progress ..." />
-    <MESSAGE value="Delete Cache Function" />
-    <MESSAGE value="InterPegasus" />
-    <MESSAGE value="Social Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Social Auth" />
+    <MESSAGE value="Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="Django" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="9" selection-start="1752" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2400">
+        <state line="22" column="9" selection-start="793" selection-end="793" vertical-scroll-proportion="-11.086957" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/urls.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="225" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="98" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="37" selection-start="2092" selection-end="2125" vertical-scroll-proportion="-48.0" vertical-offset="0" max-vertical-offset="3435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/app/mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.72" vertical-offset="43" max-vertical-offset="750">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
+        <state line="13" column="31" selection-start="627" selection-end="627" vertical-scroll-proportion="-8.478261" vertical-offset="0" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="72" selection-start="410" selection-end="410" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="1275">
+        <state line="81" column="45" selection-start="3436" selection-end="3436" vertical-scroll-proportion="2.5" vertical-offset="65" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/access_keys.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="190" selection-end="190" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="315">
+        <state line="31" column="19" selection-start="958" selection-end="958" vertical-scroll-proportion="-16.173914" vertical-offset="93" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python-social-auth/examples/django_example/example/app/pipeline.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
+        <state line="8" column="3" selection-start="204" selection-end="204" vertical-scroll-proportion="-5.2173915" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="847" selection-end="847" vertical-scroll-proportion="8.521739" vertical-offset="421" max-vertical-offset="1050">
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="n#style#0;n#form#1;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/thanks.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+        <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="2.0" vertical-offset="106" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/image_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="59" selection-start="610" selection-end="610" vertical-scroll-proportion="-11.086957" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/language_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="482" selection-end="482" vertical-scroll-proportion="-9.130435" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/page_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="19" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-17.130434" vertical-offset="71" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/record_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="222" selection-end="222" vertical-scroll-proportion="-5.2173915" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="909" selection-end="909" vertical-scroll-proportion="-14.347826" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="59" selection-start="334" selection-end="334" vertical-scroll-proportion="-7.173913" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="346" selection-end="346" vertical-scroll-proportion="-6.695652" vertical-offset="71" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="102" selection-start="3437" selection-end="3437" vertical-scroll-proportion="-22.166666" vertical-offset="518" max-vertical-offset="1260">
+        <state line="77" column="41" selection-start="3602" selection-end="3602" vertical-scroll-proportion="-13.956522" vertical-offset="834" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/user_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="23" selection-start="4210" selection-end="4210" vertical-scroll-proportion="0.87234044" vertical-offset="1380" max-vertical-offset="2085">
+        <state line="8" column="23" selection-start="220" selection-end="220" vertical-scroll-proportion="0.2733485" vertical-offset="0" max-vertical-offset="439">
           <folding />
         </state>
       </provider>

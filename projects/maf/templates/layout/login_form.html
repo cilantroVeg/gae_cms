@@ -13,7 +13,7 @@
 
 <div class = "half">
     <h4><a onclick="$('#create_user_form').slideUp();$('#login_user_form').slideDown();">Login</a> | <a onclick="$('#create_user_form').slideDown();$('#login_user_form').slideUp();">Register</a></h4>
-    <form id = "login_user_form" name = "login_user_form" action = "/process_sign_up/" method = "post">
+    <form id = "login_user_form" name = "login_user_form" action = "/en/process_sign_up/" method = "post">
         <fieldset>
             {% csrf_token %}
             <div class = "formRow">
@@ -34,7 +34,7 @@
             </div>
         </fieldset>
     </form>
-    <form style="display: none" id = "create_user_form" name = "create_user_form" action = "/process_create_account/" method = "post">
+    <form style="display: none" id = "create_user_form" name = "create_user_form" action = "/en/process_create_account/" method = "post">
         <fieldset>
             {% csrf_token %}
             <div class = "formRow">

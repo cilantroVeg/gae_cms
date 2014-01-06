@@ -26,9 +26,6 @@ from pages.models import Record
 #######################
 
 
-
-
-
 def enter(request):
     if is_logged_in(request):
         return redirect('/', False)
