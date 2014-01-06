@@ -3,35 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python-social-auth/social/pipeline/picture.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gae_cms.iml" afterPath="$PROJECT_DIR$/.idea/gae_cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/login_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/users/views.py" afterPath="$PROJECT_DIR$/projects/cms/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -481,15 +452,15 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -507,7 +478,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="Django" />
+    <MESSAGE value="Localization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Localization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
