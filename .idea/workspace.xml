@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/layout/social_login.html" afterPath="$PROJECT_DIR$/projects/maf/templates/layout/social_login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -28,16 +31,65 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="12" selection-start="4809" selection-end="4826" vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="2445">
+            <state line="23" column="79" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-frontpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="42" selection-start="3750" selection-end="3756" vertical-scroll-proportion="-7.173913" vertical-offset="780" max-vertical-offset="6225">
+              <folding>
+                <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social_login.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/social_login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="48" selection-start="70" selection-end="70" vertical-scroll-proportion="0.02170767" vertical-offset="0" max-vertical-offset="691">
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/maf/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="10" selection-start="0" selection-end="3876" vertical-scroll-proportion="-21.26087" vertical-offset="786" max-vertical-offset="1500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="7" selection-start="3876" selection-end="3876" vertical-scroll-proportion="-61.304348" vertical-offset="0" max-vertical-offset="1500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="one_page_sections.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -70,13 +122,13 @@
         <option value="$PROJECT_DIR$/projects/interpegasus/settings.py" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/404.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/500.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/layout/social_login.html" />
         <option value="$PROJECT_DIR$/projects/maf/static/template/www.interpegasus.com/css/style.css" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/microdata.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-frontpage.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html" />
-        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
         <option value="$PROJECT_DIR$/projects/maf/app.yaml" />
+        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/layout/social_login.html" />
       </list>
     </option>
   </component>
@@ -206,6 +258,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasuslove" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus-cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,12 +610,16 @@
       <created>1389061892599</created>
       <updated>1389061892599</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Allowed Hosts">
+      <created>1389062187393</created>
+      <updated>1389062187393</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="31" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -492,17 +656,13 @@
     <MESSAGE value="InterPegasus Deployment." />
     <MESSAGE value="MAF" />
     <MESSAGE value="InterPegasus" />
-    <option name="LAST_COMMIT_MESSAGE" value="InterPegasus" />
+    <MESSAGE value="Allowed Hosts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allowed Hosts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="405" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="81" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.5635593" vertical-offset="454" max-vertical-offset="1065" />
@@ -523,13 +683,6 @@
         <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.65217394" vertical-offset="0" max-vertical-offset="300" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="84" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/login_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="94" selection-start="576" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1050">
@@ -544,15 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/social_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="-4.5652175" vertical-offset="0" max-vertical-offset="285">
-          <folding>
-            <element signature="n#style#0;n#ul#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/static/template/www.interpegasus.com/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="326" column="16" selection-start="7629" selection-end="7629" vertical-scroll-proportion="0.3432836" vertical-offset="4637" max-vertical-offset="16365">
@@ -563,9 +707,7 @@
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/microdata.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="43" selection-start="67" selection-end="67" vertical-scroll-proportion="-1.3043479" vertical-offset="0" max-vertical-offset="270">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -576,35 +718,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-frontpage.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="28" selection-start="0" selection-end="18595" vertical-scroll-proportion="-6.7083335" vertical-offset="4133" max-vertical-offset="6225">
-          <folding>
-            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="409" column="0" selection-start="18595" selection-end="18595" vertical-scroll-proportion="0.871612" vertical-offset="5524" max-vertical-offset="6225">
-          <folding>
-            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="12" selection-start="4809" selection-end="4826" vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="2445">
+        <state line="23" column="79" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/app.yaml">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/one_page_sections.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="10" selection-start="0" selection-end="3876" vertical-scroll-proportion="-21.26087" vertical-offset="786" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="7" selection-start="3876" selection-end="3876" vertical-scroll-proportion="-61.304348" vertical-offset="0" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasuslove/template-frontpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="42" selection-start="3750" selection-end="3756" vertical-scroll-proportion="-7.173913" vertical-offset="780" max-vertical-offset="6225">
+          <folding>
+            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/social_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="48" selection-start="70" selection-end="70" vertical-scroll-proportion="0.02170767" vertical-offset="0" max-vertical-offset="691">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
