@@ -149,7 +149,9 @@ SOCIAL_AUTH_PIPELINE = (
 
 LOGIN_REDIRECT_URL = '/'
 
-TEMPLATE_FRONTPAGE = 'template/interpegasus-cms/template-frontpage.html'
-TEMPLATE_PAGE = 'template/interpegasus-cms/template-page.html'
+APP_NAME = 'interpegasus-cms'
 # APP_NAME = 'interpegasuslove'
+TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
+TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
+
 
