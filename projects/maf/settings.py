@@ -2,6 +2,7 @@
 # If you want to use a different backend you have to remove all occurences
 # of "djangoappengine" from this file.
 import sys
+
 for p in ['lib']:   #  ,'lib/openid', 'lib/oauth2', 'lib/httplib2', 'lib/social_auth'
     sys.path.insert(0, p)
 
@@ -147,3 +148,8 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 LOGIN_REDIRECT_URL = '/'
+
+TEMPLATE_FRONTPAGE = 'template/interpegasus-cms/template-frontpage.html'
+TEMPLATE_PAGE = 'template/interpegasus-cms/template-page.html'
+# APP_NAME = 'interpegasuslove'
+

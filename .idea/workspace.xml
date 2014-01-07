@@ -2,59 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_formset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_view.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_view.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/activate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/logout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_done.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_confirm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_done.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/forgot_password.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/front_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/signup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/thanks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_list.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/api_data" afterPath="$PROJECT_DIR$/projects/interpegasus/api_data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/autoload" afterPath="$PROJECT_DIR$/projects/interpegasus/autoload" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/dbindexer" afterPath="$PROJECT_DIR$/projects/interpegasus/dbindexer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/django" afterPath="$PROJECT_DIR$/projects/interpegasus/django" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/djangoappengine" afterPath="$PROJECT_DIR$/projects/interpegasus/djangoappengine" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/djangotoolbox" afterPath="$PROJECT_DIR$/projects/interpegasus/djangotoolbox" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/interpegasus/FEATURES.TXT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/__init__.py" afterPath="$PROJECT_DIR$/projects/interpegasus/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/cron.yaml" afterPath="$PROJECT_DIR$/projects/interpegasus/cron.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/index.yaml" afterPath="$PROJECT_DIR$/projects/interpegasus/index.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/indexes.py" afterPath="$PROJECT_DIR$/projects/interpegasus/indexes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/manage.py" afterPath="$PROJECT_DIR$/projects/interpegasus/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/settings.py" afterPath="$PROJECT_DIR$/projects/interpegasus/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/404.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/500.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/500.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-frontpage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/activate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/category_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/image_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/image_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/language_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/language_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/login.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/logout.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/logout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/page_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_change_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/password_reset_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/record_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/record_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/registration/registration_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/sitemap.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/sitemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/thanks.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/thanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/templates/users/user_list.html" afterPath="$PROJECT_DIR$/projects/maf/templates/users/user_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -77,7 +64,100 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/404.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="24" selection-start="11" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="500.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/500.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-frontpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="11" selection-start="11" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_processors.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="81" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.6600496" vertical-offset="454" max-vertical-offset="1065">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="18" selection-start="4766" selection-end="4784" vertical-scroll-proportion="-22.16" vertical-offset="1711" max-vertical-offset="2415">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/interpegasus/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="29" selection-start="13" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -95,11 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/page_form.html" />
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/record_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/users/contact.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html" />
@@ -108,9 +183,14 @@
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
         <option value="$PROJECT_DIR$/projects/interpegasus/app.yaml" />
         <option value="$PROJECT_DIR$/projects/maf/urls.py" />
+        <option value="$PROJECT_DIR$/projects/maf/settings.py" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/404.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/500.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
+        <option value="$PROJECT_DIR$/projects/maf/templates/users/front_page.html" />
+        <option value="$PROJECT_DIR$/projects/maf/pages/context_processors.py" />
       </list>
     </option>
   </component>
@@ -211,7 +291,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasus" />
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,7 +360,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/maf/templates/template/interpegasus" />
       <recent name="$PROJECT_DIR$/projects/interpegasus" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/maf/templates/template/maf" />
     </key>
   </component>
   <component name="RunManager">
@@ -312,9 +452,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -336,6 +473,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -400,27 +540,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="31" width="1400" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -438,116 +578,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/user_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="220" selection-end="220" vertical-scroll-proportion="0.25974026" vertical-offset="0" max-vertical-offset="462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/contact_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="-0.10244989" vertical-offset="106" max-vertical-offset="555">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-page.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="55" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.3318078" vertical-offset="485" max-vertical-offset="1500">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html">
+    <entry file="file://$PROJECT_DIR$/projects/maf/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="55" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.3318078" vertical-offset="485" max-vertical-offset="1560">
-          <folding />
+        <state line="207" column="36" selection-start="7083" selection-end="7086" vertical-scroll-proportion="127.44" vertical-offset="6291" max-vertical-offset="7380">
+          <folding>
+            <element signature="e#26#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/django/conf/global_settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.33262712" vertical-offset="3788" max-vertical-offset="9105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/django/core/servers/basehttp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.20824742" vertical-offset="2089" max-vertical-offset="2805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/static/template/simple/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="0.3496659" vertical-offset="248" max-vertical-offset="5295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.68041235" vertical-offset="0" max-vertical-offset="2310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.020618556" vertical-offset="10" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus_old/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="13" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/access_keys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.46391752" vertical-offset="0" max-vertical-offset="485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/users/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
+        <state line="98" column="39" selection-start="3454" selection-end="3454" vertical-scroll-proportion="-8.12" vertical-offset="1252" max-vertical-offset="3000">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="1" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.6597938" vertical-offset="835" max-vertical-offset="1320">
+        <state line="82" column="34" selection-start="3401" selection-end="3401" vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/interpegasus/urls.py">
+    <entry file="file://$PROJECT_DIR$/projects/maf/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7525773" vertical-offset="850" max-vertical-offset="1335">
+        <state line="0" column="12" selection-start="12" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="29" selection-start="13" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="18" selection-start="4766" selection-end="4784" vertical-scroll-proportion="-22.16" vertical-offset="1711" max-vertical-offset="2415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="11" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-frontpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/template/interpegasus-cms/template-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="24" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/category_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/pages/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="81" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.6600496" vertical-offset="454" max-vertical-offset="1065">
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

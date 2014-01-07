@@ -46,7 +46,7 @@ def categories(request):
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
 
         memcache.add('category_array', category_array)
-    return {'categories': category_array, 'languages': languages}
+    return {'categories': category_array, 'languages': languages, 'template_frontpage':settings.TEMPLATE_FRONTPAGE,'template_page':settings.TEMPLATE_PAGE}
 
 # ...
 def is_logged_in(request):
