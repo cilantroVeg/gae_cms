@@ -2,8 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/.gaedata/datastore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_formset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/category_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/image_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/language_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/page_view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/record_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/pages/spreadsheet_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/activate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/logout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_done.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_change_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_confirm.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_done.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/password_reset_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/registration/registration_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus-page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/template/template-interpegasus.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/forgot_password.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/front_page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/signup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/thanks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/interpegasus/templates/users/user_list.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/api_data" afterPath="$PROJECT_DIR$/projects/interpegasus/api_data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/autoload" afterPath="$PROJECT_DIR$/projects/interpegasus/autoload" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/dbindexer" afterPath="$PROJECT_DIR$/projects/interpegasus/dbindexer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/django" afterPath="$PROJECT_DIR$/projects/interpegasus/django" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/djangoappengine" afterPath="$PROJECT_DIR$/projects/interpegasus/djangoappengine" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/djangotoolbox" afterPath="$PROJECT_DIR$/projects/interpegasus/djangotoolbox" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/FEATURES.TXT" afterPath="$PROJECT_DIR$/projects/interpegasus/FEATURES.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/__init__.py" afterPath="$PROJECT_DIR$/projects/interpegasus/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/cron.yaml" afterPath="$PROJECT_DIR$/projects/interpegasus/cron.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/index.yaml" afterPath="$PROJECT_DIR$/projects/interpegasus/index.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/indexes.py" afterPath="$PROJECT_DIR$/projects/interpegasus/indexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/manage.py" afterPath="$PROJECT_DIR$/projects/interpegasus/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/interpegasus/settings.py" afterPath="$PROJECT_DIR$/projects/interpegasus/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/urls.py" afterPath="$PROJECT_DIR$/projects/maf/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,64 +77,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.9130435" vertical-offset="0" max-vertical-offset="375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global_settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/django/conf/global_settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.0" vertical-offset="3788" max-vertical-offset="9105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basehttp.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/django/core/servers/basehttp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.0" vertical-offset="2089" max-vertical-offset="2805">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/static/template/simple/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="-6.826087" vertical-offset="248" max-vertical-offset="5295">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1335">
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6630435" vertical-offset="25" max-vertical-offset="2310">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -100,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_formset.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/category_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/image_form.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/pages/language_form.html" />
@@ -114,8 +108,9 @@
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-page.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/template/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/maf/templates/layout/admin.html" />
-        <option value="$PROJECT_DIR$/projects/maf/urls.py" />
         <option value="$PROJECT_DIR$/projects/maf/settings.py" />
+        <option value="$PROJECT_DIR$/projects/interpegasus/app.yaml" />
+        <option value="$PROJECT_DIR$/projects/maf/urls.py" />
       </list>
     </option>
   </component>
@@ -132,7 +127,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -212,7 +207,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django-nonrel" />
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpegasus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,6 +221,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/interpegasus" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -396,7 +400,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="31" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -409,7 +413,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,48 +438,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/page_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-17.130434" vertical-offset="71" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/record_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="222" selection-end="222" vertical-scroll-proportion="-5.2173915" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/pages/spreadsheet_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="909" selection-end="909" vertical-scroll-proportion="-14.347826" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="59" selection-start="334" selection-end="334" vertical-scroll-proportion="-7.173913" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/forgot_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="346" selection-end="346" vertical-scroll-proportion="-6.695652" vertical-offset="71" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="41" selection-start="3602" selection-end="3602" vertical-scroll-proportion="-13.956522" vertical-offset="834" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/templates/users/user_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="23" selection-start="220" selection-end="220" vertical-scroll-proportion="0.25974026" vertical-offset="0" max-vertical-offset="462">
@@ -504,47 +466,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.9130435" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/django/conf/global_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.0" vertical-offset="3788" max-vertical-offset="9105">
+        <state line="263" column="24" selection-start="9385" selection-end="9385" vertical-scroll-proportion="0.33262712" vertical-offset="3788" max-vertical-offset="9105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/django/core/servers/basehttp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.0" vertical-offset="2089" max-vertical-offset="2805">
+        <state line="151" column="34" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.20824742" vertical-offset="2089" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/static/template/simple/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="-6.826087" vertical-offset="248" max-vertical-offset="5295">
+        <state line="27" column="75" selection-start="1251" selection-end="1278" vertical-scroll-proportion="0.3496659" vertical-offset="248" max-vertical-offset="5295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.68041235" vertical-offset="0" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/maf/templates/layout/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="28" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.020618556" vertical-offset="10" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus_old/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="29" selection-start="13" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/access_keys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.46391752" vertical-offset="0" max-vertical-offset="485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/templates/users/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/maf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="61" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1335">
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state line="78" column="1" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.6597938" vertical-offset="835" max-vertical-offset="1320">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/maf/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/interpegasus/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="54" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6630435" vertical-offset="25" max-vertical-offset="2310">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7525773" vertical-offset="850" max-vertical-offset="1335">
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

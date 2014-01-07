@@ -76,7 +76,7 @@ urlpatterns = patterns('',
     url(r'^delete_cache/', 'pages.views.delete_cache'),
 
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/simple/favicon.ico'))
-
+#
 )
 
 

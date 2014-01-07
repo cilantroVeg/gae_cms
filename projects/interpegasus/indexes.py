@@ -1,2 +1,1 @@
-from dbindexer import autodiscover
-autodiscover()
+../maf/indexes.py
