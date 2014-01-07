@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" afterPath="$PROJECT_DIR$/projects/maf/.gaedata/datastore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/app.yaml" afterPath="$PROJECT_DIR$/projects/maf/app.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/maf/settings.py" afterPath="$PROJECT_DIR$/projects/maf/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -449,12 +446,16 @@
       <created>1389061763539</created>
       <updated>1389061763539</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="InterPegasus">
+      <created>1389061892599</created>
+      <updated>1389061892599</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="31" width="1400" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -490,7 +491,8 @@
     <MESSAGE value="IP CMS" />
     <MESSAGE value="InterPegasus Deployment." />
     <MESSAGE value="MAF" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAF" />
+    <MESSAGE value="InterPegasus" />
+    <option name="LAST_COMMIT_MESSAGE" value="InterPegasus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
