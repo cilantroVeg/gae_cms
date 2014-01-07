@@ -21,7 +21,7 @@ AUTOLOAD_SITECONF = 'indexes'
 
 SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 
-ALLOWED_HOSTS = ['www.magicangel.org','magicangel.org']
+ALLOWED_HOSTS = ['www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com']
 
 INSTALLED_APPS = (
 #    'django.contrib.admin',
