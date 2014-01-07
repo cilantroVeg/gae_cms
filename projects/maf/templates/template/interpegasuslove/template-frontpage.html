@@ -44,27 +44,9 @@
     {% block js %}{% endblock %}
 </head>
 <body>
-{% if is_admin %}
+{% include "layout/admin.html" %}
 
-<div id="menu-tab"></div>
-
-<div id="menu-container">
-    <div id="menu-container-top"></div>
-    <div id="menu-container-middle">
-        <ul id="menu">
-            <li><a href="/languages/">Languages</a></li>
-            <li><a href="/categories/">Categories</a></li>
-            <li><a href="/pages/">Pages</a></li>
-            <li><a href="/records/">Records</a></li>
-            <li><a href="/users/">Users</a></li>
-            <li><a href="/spreadsheets/">Spreadsheets</a></li>
-            <li><a href="/images/">Images</a></li>
-        </ul>
-    </div>
-
-    <div id="menu-container-footer"></div>
-</div>
-{% endif %}
+{% include "layout/microdata.html" %}
 <!--******************** NAVBAR ********************-->
 <div class="navbar-wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -76,31 +58,11 @@
                 <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/www.interpegasus.com.com/www.interpegasus.com-logo.png"/></a></h1>
                 <div id = "top-social-container">
                     <div id="add-this">
-
-                        <!-- AddThis Button BEGIN -->
-                        <div class = "addthis_toolbox addthis_default_style ">
-                            <a class = "addthis_button_facebook"></a> <a class = "addthis_button_twitter"></a> <a class = "addthis_button_tumblr"></a> <a class = "addthis_button_email"></a> <a class = "addthis_button_compact"></a> <a class = "addthis_counter addthis_bubble_style"></a>
-                        </div>
-                        <script type = "text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-                        <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e06184358803e3a"></script>
-                        <!-- AddThis Button END -->
+                        {% include "layout/add_this.html" %}
                     </div>
-        <div id = "social">
-            {% if is_logged_in %}
-            <ul>
-                <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
-                <li>|</li>
-                <li><a id = "header_login" href = "/exit">Log out</a></li>
-            </ul>
-            {% else %}
-            <ul>
-                <li><a class = "facebook_login" href = "{% url 'social:begin' 'facebook' %}"></a></li>
-                <li><a class = "twitter_login" href = "{% url 'social:begin' 'twitter' %}"></a></li>
-                <li><a class = "google_login" href = "{% url 'social:begin' 'google-oauth2' %}"></a></li>
-                <li id="register_link"><a href = "#register">Enter</a></li>
-            </ul>
-            {% endif %}
-        </div>
+                    <div id = "social">
+                        {% include "layout/social_login.html" %}
+                    </div>
 
                 </div>
 
@@ -130,13 +92,6 @@
         <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> </h1>
         <h2>{{ 'WEBSITE_DESCRIPTION'|get_record}}</h2>
     </header>
-    <div>
-        <ul class="icon">
-             <li><a href="{% url 'social:begin' 'facebook' %}"  title="Login via faceebook."><i class="icon-facebook-circled"></i></a></li>
-            <li><a href="{% url 'social:begin' 'twitter' %}"  title="Login via twitter."><i class="icon-twitter-circled"></i></a></li>
-            <li><a href="{% url 'social:begin' 'google-oauth2' %}"  title="Login via google."><i class="icon-gplus-circled"></i></a></li>
-        </ul>
-    </div>
 </div>
 <!--******************** Feature ********************-->
 <div class="scrollblock">
@@ -145,11 +100,7 @@
             <div class="row">
                 <div class="span12">
                     <article>
-                        <p>We work to make web a beautiful place.</p>
-
-                        <p>We craft beautiful designs and convert them into</p>
-
-                        <p>fully functional and user-friendy web app.</p>
+                        <h2>{{ 'WEBSITE_DESCRIPTION_SLOGAN'|get_record}}</h2>
                     </article>
                 </div>
                 <!-- ./span12 -->
@@ -171,11 +122,11 @@
                 <div class="mask2"><a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg" alt=""></a></div>
                 <div class="inside">
                     <hgroup>
-                        <h2>Ethan Marcotte Design</h2>
+                        <h2>InterPegasus CMS 2014</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="more-link" href="#">view project</a></div>
+                        <p>InterPegasus CMS is a content management tool that takes the web to the next level. It is designed to run on Google App Engine.</p>
+                        <a class="more-link" href="https://github.com/interpegasus/gae_cms">view project</a></div>
                 </div>
                 <!-- /.inside -->
             </div>
@@ -184,11 +135,11 @@
                 <div class="mask2"><a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg" alt=""></a></div>
                 <div class="inside">
                     <hgroup>
-                        <h2>A Book Apart</h2>
+                        <h2>InterPegasus CMS - PHP Version</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="more-link" href="#">view project</a></div>
+                        <p>Interpegasus CMS PHP version is a complete content management system designed to run in a PHP and Linux environemnt.</p>
+                        <a class="more-link" href="https://github.com/interpegasus/cms">view project</a></div>
                 </div>
                 <!-- /.inside -->
             </div>
@@ -197,10 +148,10 @@
                 <div class="mask2"><a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg" alt=""></a></div>
                 <div class="inside">
                     <hgroup>
-                        <h2>Four Rules for Designers</h2>
+                        <h2>Development</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Interpegasus can deliver projects for the web, iOS and Android platforms. Please contact us to discuss the details about your project.</p>
                         <a class="more-link" href="#">view project</a></div>
                 </div>
                 <!-- /.inside -->
@@ -209,48 +160,7 @@
         </div>
         <!-- /.row -->
 
-        <div class="row">
-            <div class="span4">
-                <div class="mask2"><a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg" alt=""></a></div>
-                <div class="inside">
-                    <hgroup>
-                        <h2>Ethan Marcotte Design</h2>
-                    </hgroup>
-                    <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="more-link" href="#">view project</a></div>
-                </div>
-                <!-- /.inside -->
-            </div>
-            <!-- /.span4 -->
-            <div class="span4">
-                <div class="mask2"><a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg" alt=""></a></div>
-                <div class="inside">
-                    <hgroup>
-                        <h2>A Book Apart</h2>
-                    </hgroup>
-                    <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="more-link" href="#">view project</a></div>
-                </div>
-                <!-- /.inside -->
-            </div>
-            <!-- /.span4 -->
-            <div class="span4">
-                <div class="mask2"><a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg" alt=""></a></div>
-                <div class="inside">
-                    <hgroup>
-                        <h2>Four Rules for Designers</h2>
-                    </hgroup>
-                    <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="more-link" href="#">view project</a></div>
-                </div>
-                <!-- /.inside -->
-            </div>
-            <!-- /.span4 -->
-        </div>
-        <!-- /.row -->
+
     </div>
     <!-- /.container -->
 </section>
@@ -266,51 +176,30 @@
                 <div class="align"><i class="icon-desktop sev_icon"></i></div>
                 <h2>Web design</h2>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>InterPegasus offers web and logo design services. Please contact us about your project.</p>
             </div>
             <!-- /.span3 -->
             <div class="span3">
                 <div class="align"><i class="icon-vector sev_icon"></i></div>
-                <h2>Print Design</h2>
+                <h2>Web Development</h2>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>InterPegasus has expertise delivering web applications on the cloud, including Aamazon Web Services and Heroku. We have expertise on Ruby on Rails, Python and PHP mostly.</p>
             </div>
             <!-- /.span3 -->
             <div class="span3">
                 <div class="align"><i class="icon-basket sev_icon"></i></div>
-                <h2>Ecommerce</h2>
+                <h2>iOS Development</h2>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>Please contact us about your next iOS application project.</p>
             </div>
             <!-- /.span3 -->
             <div class="span3">
                 <div class="align"><i class="icon-mobile-1 sev_icon"></i></div>
-                <h2>Marketing</h2>
+                <h2>Android Development</h2>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>Please contact us about your next android mobile application project.</p>
             </div>
             <!-- /.span3 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</section>
-<hr>
-<!--******************** Testimonials Section ********************-->
-<section id="testimonials" class="single-page hidden-phone">
-    <div class="container">
-        <div class="row">
-            <div class="blockquote-wrapper">
-                <blockquote class="mega">
-                    <div class="span4">
-                        <p class="cite">John Doe &amp; Sons:</p>
-                    </div>
-                    <div class="span8">
-                        <p class="alignright">"We highly appreciate the enthusiasm and creative talent of the people at Legend!"</p>
-                    </div>
-                </blockquote>
-            </div>
-            <!-- /.blockquote-wrapper -->
         </div>
         <!-- /.row -->
     </div>
@@ -318,7 +207,7 @@
 </section>
 <hr>
 <!--******************** News Section ********************-->
-<section id="news" class="single-page scrollblock">
+<section id="news" class="single-page scrollblock" style="display: none;">
     <div class="container">
         <div class="align"><i class="icon-pencil-circled"></i></div>
         <h1>Our Blog</h1>
@@ -381,37 +270,16 @@
         <div class="row">
             <div class="span2 offset1">
                 <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""></div>
-                <h3>Andrew</h3>
+                <h3>Arturo</h3>
 
-                <div class="job-position">web designer</div>
+                <div class="job-position">CEO</div>
             </div>
             <!-- ./span2 -->
             <div class="span2">
                 <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""></div>
-                <h3>Stephen</h3>
+                <h3>Rose</h3>
 
-                <div class="job-position">web developer</div>
-            </div>
-            <!-- ./span2 -->
-            <div class="span2">
-                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-3.jpg" alt=""></div>
-                <h3>Maria</h3>
-
-                <div class="job-position">graphic designer</div>
-            </div>
-            <!-- ./span2 -->
-            <div class="span2">
-                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-4.jpg" alt=""></div>
-                <h3>John</h3>
-
-                <div class="job-position">project manager</div>
-            </div>
-            <!-- ./span2 -->
-            <div class="span2">
-                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""></div>
-                <h3>Ashton</h3>
-
-                <div class="job-position">real owner</div>
+                <div class="job-position">CTO</div>
             </div>
             <!-- ./span2 -->
         </div>
@@ -422,12 +290,7 @@
                 <div class="featurette">
                     <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span></h2>
 
-                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi
-                        traductores.</p>
-
-                    <p>At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.</p>
-
-                    <p>A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>
+                    <p>{{ 'WEBSITE_DESCRIPTION_KNOW_MORE'|get_record}}</p>
                 </div>
                 <!-- /.featurette -->
                 <hr class="featurette-divider">

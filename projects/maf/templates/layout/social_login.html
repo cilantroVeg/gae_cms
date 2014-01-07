@@ -1,0 +1,14 @@
+{% if is_logged_in %}
+<ul>
+    <li><a id = "header_login" href = "/">Welcome {{request.user.first_name}}</a></li>
+    <li>|</li>
+    <li><a id = "header_login" href = "/exit">Log out</a></li>
+</ul>
+{% else %}
+<ul class="icon" style="float:left;clear:none;">
+    <li><a href="{% url 'social:begin' 'facebook' %}"  title="Login via faceebook."><i class="icon-facebook-circled"></i></a></li>
+    <li><a href="{% url 'social:begin' 'twitter' %}"  title="Login via twitter."><i class="icon-twitter-circled"></i></a></li>
+    <li><a href="{% url 'social:begin' 'google-oauth2' %}"  title="Login via google."><i class="icon-gplus-circled"></i></a></li>
+    <li id="register_link"><a href = "#register">Enter</a></li>
+</ul>
+{% endif %}
