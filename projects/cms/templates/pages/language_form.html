@@ -1,0 +1,15 @@
+{% extends "template/template-maf-page.html" %}
+
+{% block title %}Form{% endblock %}{% block js %}
+
+{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>Language Form</h1>
+    {% if id %}
+    <form action = "/language/edit/{{ id }}/" method = "post">
+        {% else %}
+        <form action = "/language/new/" method = "post">
+            {% endif %} {% csrf_token %} {{ form }} <input type = "submit" value = "Submit"/>
+        </form>
+</div>
+<hr/><a href = "/languages/">Language List</a>{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "template/template-maf-page.html" %}
+
+{% block title %}Contact{% endblock %}{% block js %}
+
+{% endblock %}
+{% block content %}
+    {% if error_message %}
+    <p id="my_feedback">{{ error_message }} </p>
+    {% endif %}
+<div id = "static_content">
+    <h1>Contact</h1>
+    <form id="contact_form" name="contact_form" action="/contact/" method="post">{% csrf_token %} {{ form.as_p }} <input type = "submit" value = "Submit"/>
+    </form>
+</div>
+{% endblock %}

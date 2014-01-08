@@ -1,0 +1,159 @@
+#add_this{clear:none;float:right;max-height:40px;padding:0;position:absolute;right:0;top:12px;width:180px;}
+#addthis_services img{margin:.1em;}
+#background-image-opacity{background-color:#FFF;background-image:url(/public/images/cms.interpegasus.com/cms.interpegasus.footer.png);background-position:left bottom;background-repeat:no-repeat;filter:alpha(opacity=40);font-size:larger;height:180px;opacity:0.4px;padding:0;position:relative;}
+#flash_side_bar{width:100%;z-index:-1;}
+#footer{background-color:#069;border-style:outset;border-top:1px solid #069;clear:both;float:left;width:100%;}
+#footer a,#footer-extra p,.layout_top_login label{color:#FFF;}
+#footer h1{text-align:left;text-decoration:none;}
+#footer p{margin:0;padding:1em;}
+#footer p,#footer h1{font:25px RalewayThin, Arial, sans-serif;letter-spacing:-1px;margin:0;padding:0;}
+#footer ul,footer li{list-style-image:none;padding:3px;}
+#footer-content{clear:both;margin-left:25%;margin-right:25%;width:50%;}
+#footer-extra{clear:both;height:49px;text-align:center;width:100%;}
+#frontpage{clear:none;float:left;margin:10px 7px 7px;min-width:200px;padding:7px;width:50%;}
+#header{margin:0;min-width:970px;padding:0;width:100%;}
+#interpegasus_top_logo{clear:none;float:left;padding:0 12px;width:700px;}
+#left-col,#middle-col,#right-col{float:left;margin:7px;text-align:center;width:30%;}
+#login_form_top{clear:none;float:left;}
+#menu{background:#FFF;border-color:#2680a2;border-style:solid none;border-width:1px thin;float:left;list-style:none;margin:0;padding:0;width:100%;}
+#menu a{background:#FFF url(/public/images/interpegasus.com/seperator.gif) bottom right no-repeat;color:#2680a2;display:block;float:left;font-weight:400;margin:0;padding:8px 12px;text-decoration:none;}
+#menu a:hover{background:orange bottom center no-repeat;color:#fff;padding-bottom:8px;}
+#menu li{float:left;margin:0;padding:0;}
+#nivo{clear:none;float:left;margin:0;min-width:340px;padding:0;width:40%;}
+#top_links a{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#006400;border:hidden 0;border-radius:3px;color:#FFF;margin:3px;padding:3px 7px;text-decoration:none;}
+#top_links a:hover{background-color:#f90;}
+#top_links,#register_link{clear:none;float:left;margin-top:21px;width:180px;}
+#welcome_user,#welcome_user a{color:#FFF;font-size:larger;padding:3px;}
+*{border:0;margin:0;padding:0;}
+.after_layout_container{background-color:#069;background-position:bottom;background-repeat:no-repeat;clear:both;height:35px;margin:0 0 -3px;padding:0;}
+.article-container{padding:.3em;}
+.article-container img{border-color:#069;border-style:solid;border-width:1px;}
+.articles{clear:both;overflow:hidden;width:100%;}
+.articles li{float:left;list-style-image:none;list-style-type:none;margin-right:49px;width:254px;}
+.articles li.last{margin:0;}
+.box{background:url(/public/images/magicangel.org/charity/border-top.gif) repeat-x left top #f5f5f5;color:#878787;position:relative;width:100%;}
+.box .border-bot{background:url(/public/images/magicangel.org/charity/border-bot.gif) repeat-x left bottom;}
+.box .border-left{background:url(/public/images/magicangel.org/charity/border-left.gif) repeat-y left top;}
+.box .border-right{background:url(/public/images/magicangel.org/charity/border-right.gif) repeat-y right top;}
+.box .icon{bottom:0;position:absolute;right:-12px;}
+.box .inner{padding:26px 28px 38px 30px;}
+.box .left-bot-corner{background:url(/public/images/magicangel.org/charity/left-bot-corner.gif) no-repeat left bottom;width:100%;}
+.box .left-top-corner{background:url(/public/images/magicangel.org/charity/left-top-corner.gif) no-repeat left top;}
+.box .right-bot-corner{background:url(/public/images/magicangel.org/charity/right-bot-corner.gif) no-repeat right bottom;}
+.box .right-top-corner{background:url(/public/images/magicangel.org/charity/right-top-corner.gif) no-repeat right top;}
+.box img{border-style:none;}
+.box p{min-height:90px;}
+.button{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#006400;border:hidden 0;border-radius:3px;color:#FFF;cursor:crosshair;margin:3px;padding:3px 7px;text-decoration:none;}
+.button,.button:visited,.button:link{background-color:#FFF;border-color:#069;border-style:solid;border-width:1px;color:#069;cursor:pointer;font-weight:700;text-decoration:none;}
+.button:hover{background-color:#f90;border-color:#666;color:#FFF;}
+.col1,.col2,.col3{float:left;overflow:hidden;padding:0 0 1em;position:relative;}
+.colright,.colmid,.colleft{float:left;position:relative;width:100%;}
+.column .col1{left:101%;width:58%;}
+.column .col2{left:22.5%;width:19%;}
+.column .col3{left:83.5%;width:19%;}
+.column .colleft{background:#FFF;border-style:solid;border-width:0 1px;right:60%;}
+.column .colmid{background:#FFF;border-style:solid;border-width:0 1px;right:20%;}
+.column,.column_edit{background:#FFF;}
+.columnContainer{clear:both;float:left;overflow:hidden;position:relative;width:100%;}
+.column_edit .col2{left:2.5%;width:19%;}
+.column_edit .col3{left:83%;width:0;}
+.column_edit .colleft{background:#FFF;border-style:solid;border-width:0 1px;right:80%;}
+.column_edit .colmid{background:#FFF;border-style:solid;border-width:0 1px;right:0;}
+.comment{font-size:90%;padding:.2em;text-align:left;}
+.container_side_bar{clear:both;width:100%;z-index:0;}
+.control_panel img{height:64px;width:64px;}
+.edit_update_delete{clear:both;text-align:right;}
+.edit_update_delete a{color:#FFF;font-size:90%;font-weight:700;padding:.5em 2em;text-decoration:none;}
+.edit_update_delete div{background-color:#995000;float:right;margin:1em .5em .5em;min-width:4em;padding:.5em 0;text-align:center;text-decoration:none;}
+.error{background-color:#FFEBCD;color:#000;}
+.greetMeBox{background-color:#F1FFFF;border-style:solid;border-width:1px;color:#090;margin:1em;padding:1em;text-align:left;}
+.icon_browsers{background-position:-860px -10px;height:30px;margin-top:10px;width:90px;}
+.icon_cms{background-position:-510px -10px;height:30px;width:90px;}
+.icon_cms_power{background-position:-509px -49px;height:31px;width:71px;}
+.icon_domains{background-position:-110px -10px;height:30px;width:90px;}
+.icon_hosting{background-position:-210px -10px;height:30px;width:90px;}
+.icon_lite{background-position:-310px -10px;height:30px;width:90px;}
+.icon_money{background-position:-290px -50px;height:30px;margin-bottom:30px;margin-left:20px;width:60px;}
+.icon_new{background-position:-670px -10px;float:right;height:20px;margin-top:10px;width:50px;}
+.icon_os{background-position:-10px -10px;height:30px;width:90px;}
+.icon_paypal{background-position:-789px -10px;height:30px;margin-bottom:100px;margin-left:20px;width:61px;}
+.icon_pegasus{background-position:-160px -50px;height:40px;width:30px;}
+.icon_pro{background-position:-410px -10px;height:30px;width:90px;}
+.icon_read_more{background-position:-730px -10px;float:right;height:20px;margin-top:10px;width:50px;}
+.icon_rss_lg{background-position:-213px -51px;height:27px;margin-top:7px;width:26px;}
+.icon_spacer_100{background-position:0 -110px;height:1px;width:80px;}
+.icon_spacer_540{background-position:0 -110px;height:1px;width:520px;}
+.icon_spacer_950{background-position:0 -110px;height:1px;width:950px;}
+.icon_valid{background-position:-10px -50px;height:40px;width:70px;}
+.icon_web20{background-position:-610px -10px;height:20px;margin-top:1px;width:50px;}
+.icon_web20,.icon_rss_lg,.icon_valid,.icon_browsers,.icon_read_more,.icon_new,.icon_lite,.icon_pro,.icon_cms,.icon_cms_power,.icon_pegasus,.icon_os,.icon_domains,.icon_hosting,.icon_paypal,.icon_money,.icon_spacer_800,.icon_spacer_540,.icon_spacer_100{background-image:url(/public/images/cms.interpegasus.com/interpegasus_icons.gif);background-repeat:no-repeat;clear:none;float:left;margin:5px 10px;}
+.infoContent{color:#036;font-size:80%;text-align:left;}
+.infoHeader{color:#00A2D1;font-size:80%;text-align:right;}
+.infoMeBox{background-color:#FFC;border-color:#FF0;border-style:solid;border-width:1px;color:#069;margin:1em;padding:1em;text-align:left;}
+.input_image{border-style:none;height:32px;padding:.5em;width:32px;}
+.input_select{height:1.8em;}
+.input_text{height:1.2em;width:8em;}
+.input_text_area{height:5em;width:90%;}
+.input_text_area_contact{height:10em;width:95%;}
+.input_text_category{height:1.2em;width:12em;}
+.input_text_title{height:1.2em;width:24em;}
+.ipegasus .col1{left:101%;width:64%;}
+.ipegasus .col2{left:12.5%;width:7%;}
+.ipegasus .col3{left:95.5%;width:25%;}
+.ipegasus .colleft{background:#FFF;border-style:solid;border-width:0;right:66%;}
+.ipegasus .colmid{background:#FFF;border-color:green;border-style:solid;border-width:0 1px;right:26%;}
+.layout_top_login{background-color:#2580a2;background-repeat:repeat-x;color:#FFF;height:50px;min-width:970px;padding-top:12px;width:100%;}
+.layout_top_login_sky{background-color:#2580a2;background-image:url(/public/images/interpegasus.com/interpegasus-cloud.jpg);background-repeat:repeat-x;height:50px;min-width:970px;padding-top:12px;width:100%;}
+.layout_top_logo{height:100px;min-width:970px;padding:0;width:100%;}
+.layout_top_navigation{background-color:#3CC;margin:0;min-width:970px;padding:0;width:100%;}
+.my_col{background:#f4f4f4;}
+.my_col .col1,.column_edit .col1{left:101%;width:78%;}
+.my_col .col2{left:12.5%;width:9%;}
+.my_col .col3{left:93.5%;width:9%;}
+.my_col .colleft{background:#f4f4f4;right:80%;}
+.my_col .colmid{background:#fff;right:10%;}
+.news{font-size:120%;padding:.5em 1em;}
+.open_id{clear:none;float:left;max-width:49px;position:relative;}
+.rssReader{float:left;padding:0 .5em;width:18em;}
+.sideContainerBody{border-color:#069;border-style:solid;border-width:1px;clear:both;margin-bottom:.5em;padding:.5em 0;text-align:center;vertical-align:middle;}
+.sideContainerHeader{background-color:#069;border-color:#069;border-style:solid;border-width:1px;color:#FFF;font-size:160%;margin-top:.5em;padding:.3em;text-align:center;vertical-align:middle;}
+.three_column{clear:none;float:left;padding:12px;width:270px;}
+.three_column_middle{border-color:#FFF;border-style:solid;border-width:0 1px;clear:none;float:left;padding:12px;width:270px;}
+.trhee_column_center{margin-left:auto;margin-right:auto;padding:0;width:900px;}
+.valid{background-color:#F0FFF0;color:#000;}
+.validateMe{color:red;font-size:80%;padding-left:1em;}
+.validateMeBox{background-color:#FFE3E3;border-style:solid;border-width:1px;color:red;margin:1em;padding:1em;text-align:left;}
+a,a:link,a:visited,a:active{color:#069;text-decoration:underline;}
+a:hover{color:#FC0;}
+body,html{color:#405080;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5em;text-align:left;}
+div,#noMarginPadding,.open_id img{margin:0;padding:0;}
+h1{border-bottom-style:solid;font-size:200%;}
+h1,h2,h3,h4,h5,h6{border-width:1px;clear:both;margin:0;padding:.2em 0;width:100%;}
+h1,h4{border-color:#003486;color:#003486;}
+h2{border-bottom-style:solid;font-size:180%;}
+h2,h5{border-color:#090;color:#090;}
+h3{border-bottom-style:solid;font-size:160%;}
+h3,h6{border-color:#FC0;color:#FC0;}
+h4{font-size:140%;}
+h5{font-size:120%;}
+h6{font-size:100%;}
+hr{background-color:#405080;clear:both;color:#405080;height:1px;margin:.7em;}
+img{border:none;margin:.5em;}
+input,select{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+input,select,textarea{border-color:#069;border-style:solid;border-width:1px;color:#069;margin:.2em;padding:.2em;}
+label,p{color:#069;}
+li{margin-left:2em;margin-top:.2em;padding-left:0;}
+ol{list-style:decimal;list-style-image:none;text-align:left;}
+p{margin:1.2em 0;}
+table.sortable a,.sideContainerHeader a{text-decoration:none;}
+table.sortable img{display:none;}
+table.sortable td{vertical-align:top;}
+table.sortable th{background-color:#FFF;text-align:center;}
+table.sortable tr.even td{background-color:#DBE5F1;}
+table.sortable tr.odd td{background-color:#B8CCE4;}
+td{text-align:left;}
+thead{background-color:#069;color:#FFF;font-weight:700;text-align:center;}
+thead td{text-align:center;}
+ul{background-position:0;background-repeat:no-repeat;list-style-image:url(/public/images/cms.interpegasus.com/list.gif);text-align:left;}
+#add_this_section{text-align:right; padding: 12px; margin: 7px;}
+#add_this_section li,#add_this_section ul{clear:none;float:right;margin: 0;padding: 0;list-style: none;}

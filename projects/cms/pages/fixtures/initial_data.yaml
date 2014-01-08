@@ -1,0 +1,142 @@
+
+[
+  {
+    "model": "pages.language",
+    "pk": 1,
+    "fields": {
+      "name": "English",
+      "code": "en",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 2,
+    "fields": {
+      "name": "Español",
+      "code": "es",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 3,
+    "fields": {
+      "name": "Français",
+      "code": "fr",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 4,
+    "fields": {
+      "name": "Deutsch",
+      "code": "de",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 5,
+    "fields": {
+      "name": "Portuguese",
+      "code": "pt",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 6,
+    "fields": {
+      "name": "Pусский",
+      "code": "ru",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 7,
+    "fields": {
+      "name": "עִברִית",
+      "code": "iw",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.language",
+    "pk": 8,
+    "fields": {
+      "name": "中文",
+      "code": "zh",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 1,
+    "fields": {
+      "key": "WEBSITE_NAME",
+      "language": 1,
+      "value": "Magic Angel Foundation.",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 2,
+    "fields": {
+      "key": "WEBSITE_DESCRIPTION",
+      "language": 1,
+      "value": "Magic Angel Foundation has the goal of helpoing children that live in poverty in Colombia.",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+    {
+    "model": "pages.record",
+    "pk": 1,
+    "fields": {
+      "key": "WEBSITE_NAME",
+      "language": 2,
+      "value": "Fundacion Angel Magico",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 2,
+    "fields": {
+      "key": "WEBSITE_DESCRIPTION",
+      "language": 2,
+      "value": "La Fundacion Angel Magico tiene como objetivo ayudar a ni&ntilde;os que viven en condiciones de pobreza en Colombia.",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 3,
+    "fields": {
+      "key": "FLICKR_TOKEN",
+      "value": "72157634929064772-bc6b567460ce035d",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.record",
+    "pk": 4,
+    "fields": {
+      "key": "SHOW_PAGES_ON_FOOTER",
+      "value": True,
+      "created_at": "2013-08-29 00:00:00"
+    }
+  },
+  {
+    "model": "pages.category",
+    "pk": 1,
+    "fields": {
+      "name": "Root",
+      "slug": "root",
+      "created_at": "2013-08-29 00:00:00"
+    }
+  }
+]
