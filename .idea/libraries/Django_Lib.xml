@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Django Lib">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/projects/agm" />
+      <root url="file://$PROJECT_DIR$/projects/AGM" />
     </CLASSES>
     <SOURCES />
   </library>
