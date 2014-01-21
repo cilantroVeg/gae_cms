@@ -1,95 +1,409 @@
 {% load record-tags %}
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <title>InterPegasus - {% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="HandheldFriendly" content="true">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.magicangel.org/css/main.css">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.min.js"></script>
-        <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.easing.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.scrollto.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/slabtext.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.nav.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/main.js"></script>
+    <!-- Styles -->
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/style.css" rel="stylesheet">
+    <link rel='stylesheet' id='prettyphoto-css' href="{{ STATIC_URL }}template/www.interpegasus.com/css/prettyPhoto.css" type='text/css' media='all'>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 7]>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello-ie7.css" type="text/css" rel="stylesheet"><![endif]--><!-- Google Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --><!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- JQuery -->
+    <link rel = "stylesheet" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.js"></script>
+    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- prettyPhoto Initialization -->
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+    </script>
     {% block js %}{% endblock %}
 </head>
-<!-- To change color change the class "color-2" to "ccolor-2, color-3 ... color-6" -->
-<body class="home color-2">
+<body>
 {% include "layout/admin.html" %}
-{% include "layout/add_this.html" %}
+
 {% include "layout/microdata.html" %}
-<div id="header">
+<!--******************** NAVBAR ********************-->
+<div class="navbar-wrapper">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+
+                <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/www.interpegasus.com.com/www.interpegasus.com-logo.png"/></a></h1>
+                <div id = "top-social-container">
+                    <div id="add-this">
+                        {% include "layout/add_this.html" %}
+                    </div>
+                    <div id = "social">
+                        {% include "layout/social_login.html" %}
+                    </div>
+
+                </div>
+
+                <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                <nav class="pull-right nav-collapse collapse">
+                    <ul id="menu-main" class="nav">
+                        <li><a title="portfolio" href="#portfolio">Portfolio</a></li>
+                        <li><a title="services" href="#services">Services</a></li>
+                        <li><a title="news" href="#news">News</a></li>
+                        <li><a title="team" href="#team">Team</a></li>
+                        <li><a title="contact" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+    </div>
+    <!-- /.navbar -->
+</div>
+<!-- /.navbar-wrapper -->
+<div id="top"></div>
+<!-- ******************** HeaderWrap ********************-->
+<div id="headerwrap">
+    <header class="clearfix">
+        <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> </h1>
+        <h2>{{ 'WEBSITE_DESCRIPTION'|get_record}}</h2>
+    </header>
+</div>
+<!--******************** Feature ********************-->
+<div class="scrollblock">
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <article>
+                       <div>{% block content %}{% endblock %}</div>
+                    </article>
+                </div>
+                <!-- ./span12 -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- ./container -->
+    </section>
+</div>
+<hr>
+<!--******************** Portfolio Section ********************-->
+<section id="portfolio" class="single-page scrollblock">
     <div class="container">
+        <div class="align"><i class="icon-desktop-circled"></i></div>
+        <h1 id="folio-headline">Portfolio...</h1>
+
         <div class="row">
-            <i id="nav-button" class="icon-circle-arrow-down"></i>
-            <h2 id="logo"><a href="/">Magic Angel <span class="highlight">Foundation</span></a></h2>
-            <div id="header-enter">
-                {% if is_logged_in %}
-                <ul>
-                    <li>Welcome {{request.user.first_name}}</li>
-                    <li>|</li>
-                    <li><a id = "header_login" href = "/exit">Log out</a></li>
-                </ul>
-                {% endif %}
+            <div class="span4">
+                <div class="mask2"><a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg" alt=""></a></div>
+                <div class="inside">
+                    <hgroup>
+                        <h2>InterPegasus CMS 2014</h2>
+                    </hgroup>
+                    <div class="entry-content">
+                        <p>InterPegasus CMS is a content management tool that takes the web to the next level. It is designed to run on Google App Engine.</p>
+                        <a class="more-link" href="https://github.com/interpegasus/gae_cms">view project</a></div>
+                </div>
+                <!-- /.inside -->
             </div>
-            <div id = "top-nav" class = "">
-                <ul id = "fixed-nav">
-                    <li class = "current"><a href = "#home">Home</a></li>
-                    {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                    <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                    {% endif %} {% endif %} {% endfor %}
-                    {% if is_logged_in %}
-                    {% else %}
-                    <li><a href = "#enter">Log in</a></li>
+            <!-- /.span4 -->
+            <div class="span4">
+                <div class="mask2"><a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg" alt=""></a></div>
+                <div class="inside">
+                    <hgroup>
+                        <h2>InterPegasus CMS - PHP Version</h2>
+                    </hgroup>
+                    <div class="entry-content">
+                        <p>Interpegasus CMS PHP version is a complete content management system designed to run in a PHP and Linux environemnt.</p>
+                        <a class="more-link" href="https://github.com/interpegasus/cms">view project</a></div>
+                </div>
+                <!-- /.inside -->
+            </div>
+            <!-- /.span4 -->
+            <div class="span4">
+                <div class="mask2"><a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg" alt=""></a></div>
+                <div class="inside">
+                    <hgroup>
+                        <h2>Development</h2>
+                    </hgroup>
+                    <div class="entry-content">
+                        <p>Interpegasus can deliver projects for the web, iOS and Android platforms. Please contact us to discuss the details about your project.</p>
+                        <a class="more-link" href="#">view project</a></div>
+                </div>
+                <!-- /.inside -->
+            </div>
+            <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+
+
+    </div>
+    <!-- /.container -->
+</section>
+<hr>
+<!--******************** Services Section ********************-->
+<section id="services" class="single-page scrollblock">
+    <div class="container">
+        <div class="align"><i class="icon-cog-circled"></i></div>
+        <h1>Services</h1>
+        <!-- Four columns -->
+        <div class="row">
+            <div class="span3">
+                <div class="align"><i class="icon-desktop sev_icon"></i></div>
+                <h2>Web design</h2>
+
+                <p>InterPegasus offers web and logo design services. Please contact us about your project.</p>
+            </div>
+            <!-- /.span3 -->
+            <div class="span3">
+                <div class="align"><i class="icon-vector sev_icon"></i></div>
+                <h2>Web Development</h2>
+
+                <p>InterPegasus has expertise delivering web applications on the cloud, including Aamazon Web Services and Heroku. We have expertise on Ruby on Rails, Python and PHP mostly.</p>
+            </div>
+            <!-- /.span3 -->
+            <div class="span3">
+                <div class="align"><i class="icon-basket sev_icon"></i></div>
+                <h2>iOS Development</h2>
+
+                <p>Please contact us about your next iOS application project.</p>
+            </div>
+            <!-- /.span3 -->
+            <div class="span3">
+                <div class="align"><i class="icon-mobile-1 sev_icon"></i></div>
+                <h2>Android Development</h2>
+
+                <p>Please contact us about your next android mobile application project.</p>
+            </div>
+            <!-- /.span3 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<hr>
+<!--******************** News Section ********************-->
+<section id="news" class="single-page scrollblock" style="display: none;">
+    <div class="container">
+        <div class="align"><i class="icon-pencil-circled"></i></div>
+        <h1>Our Blog</h1>
+        <!-- Three columns -->
+        <div class="row">
+            <article class="span4 post"><img class="img-news" src="img/blog_img-01.jpg" alt="">
+
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> March 17, 2013</p>
+
+                    <h2>A girl running on a road</h2>
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <a href="#" class="more-link">read more</a></div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-02.jpg" alt="">
+
+                <div class="inside">
+                    <p class="post-date">February 28, 2013</p>
+
+                    <h2>A bear sleeping on a tree</h2>
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <a href="#" class="more-link">read more</a></div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-03.jpg" alt="">
+
+                <div class="inside">
+                    <p class="post-date">February 06, 2013</p>
+
+                    <h2>A Panda playing with his baby</h2>
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <a href="#" class="more-link">read more</a></div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        <a href="#" class="btn btn-large">Go to our blog</a></div>
+    <!-- /.container -->
+</section>
+<hr>
+<!--******************** Team Section ********************-->
+<section id="team" class="single-page scrollblock">
+    <div class="container">
+        <div class="align"><i class="icon-group-circled"></i></div>
+        <h1>Meet the team</h1>
+        <!-- Five columns -->
+        <div class="row">
+            <div class="span2 offset1">
+                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""></div>
+                <h3>Arturo</h3>
+
+                <div class="job-position">CEO</div>
+            </div>
+            <!-- ./span2 -->
+            <div class="span2">
+                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""></div>
+                <h3>Rose</h3>
+
+                <div class="job-position">CTO</div>
+            </div>
+            <!-- ./span2 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="span10 offset1">
+                <hr class="featurette-divider">
+                <div class="featurette">
+                    <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span></h2>
+
+                    <p>{{ 'WEBSITE_DESCRIPTION_KNOW_MORE'|get_record}}</p>
+                </div>
+                <!-- /.featurette -->
+                <hr class="featurette-divider">
+            </div>
+            <!-- .span10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!--******************** Contact Section ********************-->
+<section id="contact" class="single-page scrollblock">
+    <div class="container">
+        <div class="align"><i class="icon-mail-2"></i></div>
+        <h1>Contact us now!</h1>
+
+        <div class="row">
+            <div class="span12">
+                <div class="cform" id="theme-form">
+                    <form id="contact_form" name="contact_form" method="post" action="/contact/" class="cform-form">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="span6"> <span class="your-name">
+                    <input type="text" name="contact_name" id="contact-name" placeholder="Your name ..." title="Your name ..." size="40" class="cform-text"/>
+                    </span></div>
+                            <div class="span6"> <span class="your-email">
+                      <input type="text" name="contact_email" id="contact-email" placeholder="Your Email ..." title="Your Email ..." class="cform-text"/>
+                    </span></div>
+                        </div>
+                        <div class="row">
+                            <div class="span12"> <span class="message">
+                    <textarea class="cform-textarea" cols="20" name="contact_comment" id="contact-comment" rows="4" placeholder="Your Comment ..." title="Your Comment ..."></textarea>
+                    </span></div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Send message" class="cform-submit pull-left">
+                        </div>
+                        <div class="cform-response-output"></div>
+                    </form>
+                </div>
+            </div>
+            <!-- ./span12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<div class="footer-wrapper">
+    <div class="container">
+        <footer>
+            <div id = "footer-description">
+                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+                {{ 'WEBSITE_DESCRIPTION'|get_record}}
+            </div>
+            <div id = "footer-categories">
+                {% for main_category in categories %}
+                {% if main_category.name != 'Root' %}
+
+                {% if main_category.parent_id == 1 %}
+                <div class = "footer-div">
+                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                    {% for page in main_category.page_array %}
+                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                    <br/>
+                    {% endfor %}
+                    {% for sub_category in categories %}
+                    {% if sub_category.parent_id == main_category.id %}
+                    <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                    <br/>
                     {% endif %}
-                    <li><a href = "#contact">Contact Us</a></li>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% endif %}
+                {% endfor %}
+                <div class = "footer-div">
+                    <h4>Site map</h4>
+                    <a href = "/sitemap">Site map</a>
+                </div>
+            </div>
+            <div id = "copyright">
+                <ul>
+                    <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
+                    <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+                    <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </div>
+    <!-- ./container -->
 </div>
-<!-- End Header -->
-<!-- Big Full screen Banner -->
-<div class="hero bg-fixed" id="home">
-    <div class="slogan">
-        <div class = "center">
-            <div>{% block content %}{% endblock %}</div>
-        </div>
-    </div>
-</div>
+<!-- Loading the javaScript at the end of the page -->
+<script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/bootstrap.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/site.js"></script>
 
-{% include "layout/one_page_sections.html" %}
+<!--ANALYTICS CODE-->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29231762-1']);
+    _gaq.push(['_setDomainName', 'dzyngiri.com']);
+    _gaq.push(['_trackPageview']);
 
-{% if is_logged_in %}
-{% else %}
-<div class="section" id="enter" >
-    <div class="container">
-        {% include "layout/login_form.html" %}
-    </div>
-</div>
-{% endif %}
-<div class="section section-alt" id="contact" >
-    <div class="container">
-        {% include "layout/contact_form.html" %}
-    </div>
-</div>
-<footer id="footer">
-    <div class="container">
-        {% include "layout/footer.html" %}
-        {% include "layout/analytics.html" %}
-    </div>
-</footer>
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
 </body>
 </html>
