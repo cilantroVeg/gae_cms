@@ -152,7 +152,7 @@ def message_contains_url(message):
     message = message.replace("</a>","")
     message = message.replace(" dot ",".")
     message = message.replace(" ","")
-    if (urlize(message) != message) or message.find('buy') > 0 or message.find('shop') > 0:
+    if (urlize(message) != message) or message.lower().find('buy') > 0 or message.lower().find('shop') > 0:
         error_message = 'Please do not include links or emails in the message. Sorry for the inconvenience.'
     return error_message
 

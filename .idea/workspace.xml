@@ -29,7 +29,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="0" selection-start="5612" selection-end="6182" vertical-scroll-proportion="0.54253834" vertical-offset="1786" max-vertical-offset="3075">
+            <state line="153" column="37" selection-start="5956" selection-end="5956" vertical-scroll-proportion="0.70990235" vertical-offset="1786" max-vertical-offset="3075">
               <folding>
                 <element signature="e#61#75#0" expanded="true" />
               </folding>
@@ -500,7 +500,11 @@
       <created>1390279485733</created>
       <updated>1390279485733</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Contact Form">
+      <created>1390312823139</created>
+      <updated>1390312823139</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,7 +548,8 @@
     <MESSAGE value="Allowed Hosts" />
     <MESSAGE value="InterPegasus" />
     <MESSAGE value="InterPegasus Temaplate Page OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="InterPegasus Temaplate Page OK" />
+    <MESSAGE value="Contact Form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact Form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -647,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="5612" selection-end="6182" vertical-scroll-proportion="0.54253834" vertical-offset="1786" max-vertical-offset="3075">
+        <state line="153" column="37" selection-start="5956" selection-end="5956" vertical-scroll-proportion="0.70990235" vertical-offset="1786" max-vertical-offset="3075">
           <folding>
             <element signature="e#61#75#0" expanded="true" />
           </folding>
