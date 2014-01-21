@@ -146,9 +146,13 @@ def contact(request):
 def message_contains_url(message):
     from django.utils.html import urlize
     error_message = False
+    message = message.replace(" href"," ")
+    message = message.replace(" =","")
+    message = message.replace("<a","")
+    message = message.replace("</a>","")
     message = message.replace(" dot ",".")
     message = message.replace(" ","")
-    if urlize(message) != message:
+    if (urlize(message) != message) or message.find('buy') > 0 or message.find('shop') > 0:
         error_message = 'Please do not include links or emails in the message. Sorry for the inconvenience.'
     return error_message
 
