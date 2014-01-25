@@ -1,0 +1,199 @@
+{% load record-tags %}
+<!DOCTYPE HTML>
+<!--
+	Verti 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>{{ 'WEBSITE_NAME'|get_record}}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css" />
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/config.js"></script>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/skel.min.js"></script>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/skel-panels.min.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/skel-noscript.css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/style.css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 8]><script src="{{ STATIC_URL }}template/www.nrwl.org/js/html5shiv.js"></script><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie7.css" /><![endif]-->
+</head>
+<body class="homepage">
+
+<!-- Header Wrapper -->
+<div id="header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="12u">
+
+                <!-- Header -->
+                <header id="header">
+
+                    <!-- Logo -->
+                    <div id="logo">
+                        <h1><a href="#" id="logo">NRWL</a></h1>
+                        <span>{{ 'WEBSITE_NAME'|get_record}}</span>
+                    </div>
+
+                    <!-- Nav -->
+                    <nav id="nav">
+                        <ul id = "fixed-nav">
+                            <li class = "current_page_item"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
+                            {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
+                            {% if  main_category.language_code == request_language %}
+                            <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                            {% endif %}
+                            {% endif %} {% endif %} {% endfor %}
+                            {% if is_logged_in %}
+                            {% else %}
+                            <li><a href = "#enter">Log in</a></li>
+                            {% endif %}
+                            <li><a href = "#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </header>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Banner Wrapper -->
+<div id="banner-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="12u">
+
+                <!-- Banner -->
+                <div id="banner" class="box">
+
+                    <div>
+                        <div class="row">
+                            <div class="7u">
+                                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+                                <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+                            </div>
+                            <div class="5u">
+                                <ul>
+                                    <li><a href="#" class="button button-big button-icon button-icon-rarrow">Animals</a></li>
+                                    <li><a href="#" class="button button-alt button-big button-icon button-icon-question">Plants</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Wrapper -->
+<div id="features-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="4u">
+
+                <!-- Box -->
+                <section class="box box-feature">
+                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic01.jpg" alt="" /></a>
+                    <div class="inner">
+                        <header>
+                            <h2>Animals</h2>
+                            <span class="byline">Browse Animals</span>
+                        </header>
+                        <p>The animal kingdom is amazing!</p>
+                    </div>
+                </section>
+
+            </div>
+            <div class="4u">
+
+                <!-- Box -->
+                <section class="box box-feature">
+                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic02.jpg" alt="" /></a>
+                    <div class="inner">
+                        <header>
+                            <h2>Plants</h2>
+                            <span class="byline">Browse Plants</span>
+                        </header>
+                        <p>Great information about the plants kingdom!</p>
+                    </div>
+                </section>
+
+            </div>
+            <div class="4u">
+
+                <!-- Box -->
+                <section class="box box-feature last">
+                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic03.jpg" alt="" /></a>
+                    <div class="inner">
+                        <header>
+                            <h2>Protect The Environment</h2>
+                            <span class="byline">Campaigns to protect nature and the planet</span>
+                        </header>
+                        <p>You can help!</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Wrapper -->
+<div id="main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="4u">
+
+                <!-- Sidebar -->
+                <div id="sidebar">
+                    <section class="widget-thumbnails">
+                        <h3>Great Info About The Environment</h3>
+                        <div class="grid">
+                            <div class="row no-collapse half">
+                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic04.jpg" alt="" /></a></div>
+                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic05.jpg" alt="" /></a></div>
+                            </div>
+                            <div class="row no-collapse half">
+                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic06.jpg" alt="" /></a></div>
+                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic07.jpg" alt="" /></a></div>
+                            </div>
+                        </div>
+                        <a href="#" class="button button-icon button-icon-paper">More</a>
+                    </section>
+                </div>
+
+            </div>
+            <div class="8u">
+
+                <!-- Content -->
+                <div id="content">
+                    <section class="last">
+                        <h2>{{ 'WEBSITE_NAME'|get_record}} </h2>
+                        <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Wrapper -->
+<div id="footer-wrapper">
+         {% include "layout/footer2.html" %}
+        {% include "layout/analytics.html" %}
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{% load record-tags %}
+
+<footer id="footer" class="container">
+    <div class="row">
+        <div class="3u">
+
+            <!-- Links -->
+            <section class="widget-links">
+                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+                <ul class="style2">
+                    <li>{{ 'WEBSITE_DESCRIPTION'|get_record}}</li>
+                </ul>
+            </section>
+
+        </div>
+
+        {% for main_category in categories %}
+        {% if main_category.name != 'Root' %}
+        {% if main_category.parent_id == 1 %}
+        {% if  main_category.language_code == request_language %}
+        <div class="3u">
+
+            <!-- Links -->
+            <section class="widget-links">
+                <h2>Categories</h2>
+                <ul class="style2">
+                    <li><a href="/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></li>
+
+                    {% for page in main_category.page_array %}
+                    <li><a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a></li>
+                    {% endfor %}
+                    {% for sub_category in categories %}
+                    {% if sub_category.parent_id == main_category.id %}
+                    <li> <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </section>
+
+        </div>
+
+
+        <div class="3u">
+
+            <!-- Contact -->
+            <section class="widget-contact last">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="#" class="twitter">Twitter</a></li>
+                    <li><a href="#" class="facebook">Facebook</a></li>
+                    <li><a href="#" class="dribbble">Dribbble</a></li>
+                    <li><a href="#" class="googleplus">Google+</a></li>
+                </ul>
+                <p>Shoreline, WA, 98177<br />
+                    Site Coming soon!<br />
+                    </p>
+            </section>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="12u">
+            <div id="copyright">
+                &copy; {{ 'WEBSITE_NAME'|get_record}}. All rights reserved. <a href="http://www.nrwl.org">www.nrwl.org</a> | <a href="http://html5up.net/">HTML5 UP</a>
+            </div>
+        </div>
+    </div>
+</footer>
