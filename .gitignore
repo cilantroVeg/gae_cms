@@ -39,6 +39,7 @@
 Icon?
 ehthumbs.db
 Thumbs.db
-
+.idea/workspace.xml
+projects/.DS_Store
 access_keys.py
 projects/maf/.!14564!.DS_Store

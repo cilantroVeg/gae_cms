@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturoportfolio7/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/musicmatch777/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/yiyask7/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturoportfolio7/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/musicmatch777/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/yiyask7/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturoportfolio7/template-frontpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/musicmatch777/template-frontpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/yiyask7/template-frontpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturoportfolio7/template-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/musicmatch777/template-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/templates/template/yiyask7/template-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -657,7 +636,11 @@
       <created>1390623665702</created>
       <updated>1390623665702</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Templates">
+      <created>1390964423180</created>
+      <updated>1390964423180</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -703,7 +686,8 @@
     <MESSAGE value="InterPegasus Temaplate Page OK" />
     <MESSAGE value="Contact Form" />
     <MESSAGE value="NRWL" />
-    <option name="LAST_COMMIT_MESSAGE" value="NRWL" />
+    <MESSAGE value="Templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

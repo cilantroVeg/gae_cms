@@ -1,5 +1,7 @@
 # Compiled source #
 ###################
+../.DS_Store
+../../.idea/workspace.xml
 *.com
 *.class
 *.dll
