@@ -2,6 +2,292 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/CHANGES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/CHANGES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/adapters/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/build-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/contents.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/lang/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/about/dialogs/about.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/about/dialogs/logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/clipboard/dialogs/paste.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/dialog/dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/fakeobjects/images/spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/link/dialogs/anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/link/dialogs/link.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/link/images/anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/plugins/link/images/hidpi/anchor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/api.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/appendto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/inlineall/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/outputxhtml/outputxhtml.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/sample.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/sample.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/assets/uilanguages/languages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/datafiltering.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/divreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/inlineall.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/inlinebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/inlinetextarea.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/jquery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/plugins/dialog/assets/my_dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/plugins/dialog/dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/plugins/enterkey/enterkey.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/plugins/toolbar/toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/plugins/wysiwygarea/fullpage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/readonly.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/replacebyclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/replacebycode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/sample.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/sample.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/sample_posteddata.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/tabindex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/uicolor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/uilanguages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/samples/xhtmlstyle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/dialog_opera.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor_gecko.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor_ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor_ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/editor_iequirks.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/icons_hidpi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/hidpi/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/hidpi/lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/hidpi/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/hidpi/refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/lock-open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/images/refresh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/skins/moono/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/ckeditor_old/styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/MANIFEST" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/custom-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/fillspace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/hoverintent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/no-auto-height.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/accordion/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/addClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/addClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/animate/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/animate/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/categories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/combobox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/custom-data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/folding.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/jquery_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/jqueryui_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/sizzlejs_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/transparent_1x1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/images/ui-anim_basic_16x16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/london.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/maxheight.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/multiple-remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote-jsonp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote-with-cache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/autocomplete/xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/radio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/splitbutton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/button/toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/alt-field.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/buttonbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/date-formats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/date-range.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/dropdown-month-year.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/icon-trigger.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/inline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/localization.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/min-max.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/multiple-calendars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/other-months.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/datepicker/show-week.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/demos.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/animated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal-message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/dialog/modal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/constrain-movement.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/cursor-style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/handle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/revert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/snap-to.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/draggable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/accepted-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras2_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras3_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras4_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/images/high_tatras_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/photo-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/propagation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/revert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/shopping-cart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/droppable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/easing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/effect/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/hide/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/hide/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-config-on-tile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-config-on.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-spindown-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/demo-spindown-open.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/icon-docs-info.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/images/pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/menu/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/cycler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/earth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/flight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/images/rocket.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/position/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/images/pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/indeterminate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/progressbar/label.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/removeClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/removeClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/animate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/aspect-ratio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/constrain-area.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/max-min.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/snap-to-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/synchronous-resize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/textarea.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/resizable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/selectable/serialize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/show/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/show/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/colorpicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/hotelrooms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/multiple-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/range-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/range.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/rangemax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/rangemin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/side-scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/slider-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/slider/steps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/connect-lists-through-tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/connect-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/empty-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/items.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/placeholder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/sortable/portlets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/currency.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/decimal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/latlong.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/overflow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/spinner/time.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/switchClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/switchClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content3-slow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/ajax/content4-broken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/bottom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/manipulation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/mouseover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tabs/vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggle/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggleClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/toggleClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/ajax/content1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/ajax/content2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/custom-style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/forms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/images/st-stephens.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/images/tower-bridge.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/tracking.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/tooltip/video-player.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/widget/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/cms/static/template/js/jquery-ui/demos/widget/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -221,6 +507,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,29 +838,33 @@
       <created>1391870601197</created>
       <updated>1391870601198</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Big Images - Compilation">
+      <created>1391870827658</created>
+      <updated>1391870827658</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1436" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6717752" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
