@@ -149,8 +149,9 @@ SOCIAL_AUTH_PIPELINE = (
 
 LOGIN_REDIRECT_URL = '/'
 
-APP_NAME = 'happy-planet'
+#APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'interpegasuslove'
+APP_NAME = 'happy-planet'
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
 TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
 
