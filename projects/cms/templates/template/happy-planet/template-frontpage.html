@@ -24,9 +24,13 @@
     </noscript>
     <!--[if lte IE 8]><script src="{{ STATIC_URL }}template/www.nrwl.org/js/html5shiv.js"></script><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie8.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie7.css" /><![endif]-->
+
+    {% block js %}{% endblock %}
 </head>
 <body class="homepage">
-
+{% include "layout/admin.html" %}
+{% include "layout/add_this.html" %}
+{% include "layout/microdata.html" %}
 <!-- Header Wrapper -->
 <div id="header-wrapper">
     <div class="container">
@@ -186,10 +190,15 @@
                 </div>
 
             </div>
+
         </div>
     </div>
 </div>
-
+<div class="section" id="enter" >
+    <div class="container">
+        {% include "layout/login_form.html" %}
+    </div>
+</div>
 <!-- Footer Wrapper -->
 <div id="footer-wrapper">
          {% include "layout/footer2.html" %}
