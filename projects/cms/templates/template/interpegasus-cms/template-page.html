@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
+    <title>{{ 'WEBSITE_NAME'|get_record}} - {{ page.title|truncatechars:21}}</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="HandheldFriendly" content="true">
@@ -47,9 +47,6 @@
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
                     <li class = "current"><a href = "#home">Home</a></li>
-                    {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                    <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                    {% endif %} {% endif %} {% endfor %}
                     {% if is_logged_in %}
                     {% else %}
                     <li><a href = "#enter">Log in</a></li>

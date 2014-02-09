@@ -64,7 +64,7 @@
 .interpegasus_icon{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -35px -170px;
+    background-position: -210px -6px;
     height: 35px;
     width: 80px;
     display: inline-block;
@@ -74,19 +74,27 @@
 {
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -170px -231px;
-    height: 68px;
-    width: 85px;
+    background-position: -33px -628px;
+    height: 70px;
+    width: 240px;
     display: inline-block;
 
+}
+
+a.hand_link:hover{
+    cursor: pointer; cursor: hand;
+}
+
+.large_login{
+    width:195px;
 }
 
 .facebook_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -2px -228px;
-    height: 25px;
-    width: 70px;
+    background-position: -60px -410px;
+    height: 52px;
+    width: 195px;
     display: block;
     overflow: hidden;
     border-radius: 4px;
@@ -95,9 +103,9 @@
 .twitter_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -2px -256px;
-    height: 25px;
-    width: 70px;
+    background-position: -55px -480px;
+    height: 52px;
+    width: 195px;
     display: block;
     border-radius: 4px;
 }
@@ -105,9 +113,9 @@
 .google_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -2px -283px;
-    height: 25px;
-    width: 70px;
+    background-position: -55px -555px;
+    height: 52px;
+    width: 190px;
     display: block;
     border-radius: 4px;
 
@@ -248,10 +256,6 @@ label.error{
 footer#footer{
     border-width: 1px;
     border-top-style: inset;
-}
-
-.large_login{
-    width:150px;
 }
 
 .no-bullets li{
