@@ -131,7 +131,7 @@ def contact(request):
                 contact_comment = form.cleaned_data['contact_comment']
                 subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
                 recipients = settings.ADMIN_USERS
-                sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.CMS_EMAIL[0] + ">"
+                sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
                 try:
                     from google.appengine.api import mail
                     mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)

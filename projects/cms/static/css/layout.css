@@ -92,8 +92,8 @@ a.hand_link:hover{
 .facebook_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -60px -410px;
-    height: 52px;
+    background-position: -60px -412px;
+    height: 42px;
     width: 195px;
     display: block;
     overflow: hidden;
@@ -103,8 +103,8 @@ a.hand_link:hover{
 .twitter_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -55px -480px;
-    height: 52px;
+    background-position: -55px -492px;
+    height: 42px;
     width: 195px;
     display: block;
     border-radius: 4px;
@@ -113,9 +113,9 @@ a.hand_link:hover{
 .google_login{
     background-image: url('/static/images/icons/social_icons.png');
     background-repeat: no-repeat;
-    background-position: -55px -555px;
-    height: 52px;
-    width: 190px;
+    background-position: -55px -570px;
+    height: 42px;
+    width: 195px;
     display: block;
     border-radius: 4px;
 

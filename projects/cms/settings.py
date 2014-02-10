@@ -11,8 +11,9 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-ADMIN_USERS = ['arturo@magicangel.org'] #, 'rosegpeterson@gmail.com']
-CMS_EMAIL = ['cms@magicangel.org']
+DEBUG = False
+ADMIN_USERS = (('Arturo', 'arturo@magicangel.org'), ('Arturo', 'arturo@nrwl.org')) #, 'rosegpeterson@gmail.com']
+SERVER_EMAIL = 'cms@interpegasus.com'
 
 # Activate django-dbindexer for the default database
 DATABASES['native'] = DATABASES['default']
@@ -21,7 +22,7 @@ AUTOLOAD_SITECONF = 'indexes'
 
 SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 
-ALLOWED_HOSTS = ['www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com']
+ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com']
 
 INSTALLED_APPS = (
 #    'django.contrib.admin',
