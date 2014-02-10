@@ -5,7 +5,7 @@ from google.appengine.api import memcache
 
 
 # ...
-def categories(request):
+def categories(request, category=None):
     languages = Language.objects.filter(is_enabled=True)
     if memcache.get('category_array') is not None:
         category_array = memcache.get('category_array')
@@ -22,31 +22,14 @@ def categories(request):
                 language_code = 'en'
             else:
                 language_code = category.language.code
-            # get up to 4 pages for each main category
             page_array = []
-            page_count = 0
-            if category.parent is not None and category.parent.id == 1:
-                page_limit = max(category.frontpage_page_limit, 4)
-                for page in pages:
-                    if page_count == page_limit:
-                        break
-                    elif page.category.id == category.id:
-                        page_count += 1
-                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.content})
-                if page_count < page_limit:
-                    for sub_category in categories:
-                        if sub_category.parent is not None and sub_category.parent.id == category.id:
-                            for page in pages:
-                                if page_count == page_limit:
-                                    break
-                                elif page.category.id == sub_category.id:
-                                    page_count += 1
-                                    page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': page.content})
-
-            category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': page_count})
-
+            for page in pages:
+                    if page.category.id == category.id:
+                        headline = (page.content[:80] + '..') if len(page.content) > 80 else page.content
+                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': headline})
+            category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': len(page_array)})
         memcache.add('category_array', category_array)
-    return {'categories': category_array, 'languages': languages, 'template_frontpage':settings.TEMPLATE_FRONTPAGE,'template_page':settings.TEMPLATE_PAGE}
+    return {'categories': category_array, 'languages': languages, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE}
 
 # ...
 def is_logged_in(request):
