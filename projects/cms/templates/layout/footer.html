@@ -3,6 +3,7 @@
     <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
 
     <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+    <h1>{{request_language}}</h1>
 
     {% for main_category in categories %}
     {% if main_category.name != 'Root' %}

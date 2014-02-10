@@ -3,9 +3,9 @@ from django.conf import settings
 from pages.models import *
 from google.appengine.api import memcache
 
-
 # ...
-def categories(request, category=None):
+def categories(request):
+    # Get Categories For Language From Request
     languages = Language.objects.filter(is_enabled=True)
     if memcache.get('category_array') is not None:
         category_array = memcache.get('category_array')
@@ -41,9 +41,9 @@ def is_logged_in(request):
 # ...
 def is_admin(request):
     try:
-        if request.user.email in settings.ADMIN_USERS:
-            return {'is_admin': True}
-        else:
-            return {'is_admin': False}
+        for admin in settings.ADMIN_USERS:
+            if request.user.email in admin[1]:
+                return {'is_admin': True}
     except:
         return {'is_admin': False}
+    return {'is_admin': False}
