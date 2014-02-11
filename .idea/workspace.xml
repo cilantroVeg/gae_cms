@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="Email Notifications">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/404.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/404.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/500.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/500.html" />
+    <list default="true" id="bc48878c-14e2-4198-a680-f1a39eee4a5b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" afterPath="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/layout/footer.html" afterPath="$PROJECT_DIR$/projects/cms/templates/layout/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,8 +31,28 @@
       <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/layout/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="690">
+            <state line="23" column="16" selection-start="943" selection-end="943" vertical-scroll-proportion="0.50660795" vertical-offset="0" max-vertical-offset="690">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="484" column="20" selection-start="17626" selection-end="17626" vertical-scroll-proportion="-25.08" vertical-offset="6483" max-vertical-offset="7200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_processors.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="67" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,10 +87,10 @@
         <option value="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-page.html" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/users/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/layout/footer.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/context_processors.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/layout/footer.html" />
       </list>
     </option>
   </component>
@@ -155,7 +172,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,6 +332,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,16 +349,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mobovivo/webapps/notification" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="159" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="953" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="155" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="152" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -448,6 +465,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -469,9 +489,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -628,7 +645,11 @@
       <created>1391993838912</created>
       <updated>1391993838912</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Language Categories">
+      <created>1392012729756</created>
+      <updated>1392012729756</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +659,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21239555" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
@@ -646,10 +666,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -678,7 +699,8 @@
     <MESSAGE value="Big Images - Compilation" />
     <MESSAGE value="Socila Icons" />
     <MESSAGE value="Email Notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Email Notifications" />
+    <MESSAGE value="Language Categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Language Categories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -711,72 +733,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="439" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="439" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2565" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="73" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1335">
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="47" column="73" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1335" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="27" selection-start="4039" selection-end="4039" vertical-scroll-proportion="-39.782608" vertical-offset="465" max-vertical-offset="1560">
-          <folding />
-        </state>
+        <state line="92" column="27" selection-start="4039" selection-end="4039" vertical-scroll-proportion="-39.782608" vertical-offset="465" max-vertical-offset="1560" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/layout/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="6" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="0" column="14" selection-start="6" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="155" selection-end="159" vertical-scroll-proportion="0.2112676" vertical-offset="0" max-vertical-offset="1455">
-          <folding />
-        </state>
+        <state line="6" column="66" selection-start="155" selection-end="159" vertical-scroll-proportion="0.2112676" vertical-offset="0" max-vertical-offset="1455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/500.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="427" column="163" selection-start="15854" selection-end="15854" vertical-scroll-proportion="0.0" vertical-offset="6120" max-vertical-offset="7215">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="63" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.0" vertical-offset="1145" max-vertical-offset="3015">
+        <state line="93" column="63" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.0" vertical-offset="1145" max-vertical-offset="3015" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="484" column="20" selection-start="17626" selection-end="17626" vertical-scroll-proportion="-25.08" vertical-offset="6483" max-vertical-offset="7200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+        <state line="7" column="67" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -785,7 +789,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/layout/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="690">
+        <state line="23" column="16" selection-start="943" selection-end="943" vertical-scroll-proportion="0.50660795" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
