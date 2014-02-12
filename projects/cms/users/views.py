@@ -123,7 +123,6 @@ def contact(request):
                 data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
             except:
                 data = {}
-            # form = ContactForm(initial=data)
         else:
             if form.is_valid():
                 contact_name = form.cleaned_data['contact_name']
@@ -132,11 +131,8 @@ def contact(request):
                 subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
                 recipients = settings.ADMIN_USERS
                 sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
-                try:
-                    from google.appengine.api import mail
-                    mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
-                except:
-                    log.debug("Issue sending email from: " + contact_email)
+                from google.appengine.api import mail
+                mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
                 return HttpResponseRedirect('/thanks/')
     else:
         form = ContactForm()
@@ -154,7 +150,7 @@ def message_contains_url(message):
     return error_message
 
 def thanks(request):
-    return render(request, 'users/thanks.html')
+    return render_to_response(request, 'users/thanks.html')
 
 # ...
 def user_form(request, id=None):
