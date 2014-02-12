@@ -129,7 +129,7 @@ def contact(request):
                 contact_email = form.cleaned_data['contact_email']
                 contact_comment = form.cleaned_data['contact_comment']
                 subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
-                recipients = settings.ADMIN_USERS
+                recipients = settings.ADMIN_USERS_EMAILS
                 sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
                 from google.appengine.api import mail
                 mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
