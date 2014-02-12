@@ -133,7 +133,7 @@ def contact(request):
                 sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
                 from google.appengine.api import mail
                 mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
-                return HttpResponseRedirect('/thanks/')
+                return redirect('/thanks/',False)
     else:
         form = ContactForm()
         error_message = ''
