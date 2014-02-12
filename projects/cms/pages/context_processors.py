@@ -5,8 +5,7 @@ from google.appengine.api import memcache
 
 # ...
 def categories(request):
-    # SAVE language in session? Or get Category by language methods
-    # Get Categories For Language From Request
+    # Get All Categories
     languages = Language.objects.filter(is_enabled=True)
     if memcache.get('category_array') is not None:
         category_array = memcache.get('category_array')

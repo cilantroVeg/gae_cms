@@ -6,6 +6,6 @@
 <div id = "static_content">
     <h1>{{ category.name|safe}}</h1>
     {% for page in pages %}
-    <div><a href = "/{{ page.slug }}">{{ page.title }}</a></div>
+    <div><a href = "/{{ request_language }}/{{ page.slug }}">{{ page.title }}</a></div>
     {% endfor %}
 </div>{% endblock %}
