@@ -150,7 +150,7 @@ def message_contains_url(message):
     return error_message
 
 def thanks(request):
-    return render_to_response(request, 'users/thanks.html')
+    return render(request, 'users/thanks.html', {'request_language':'en'})
 
 # ...
 def user_form(request, id=None):
