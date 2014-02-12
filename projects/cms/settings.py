@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DEBUG = False
 ADMIN_USERS = (('Arturo', 'arturo@magicangel.org'), ('Arturo', 'arturo@nrwl.org')) #, 'rosegpeterson@gmail.com']
 ADMIN_USERS_EMAILS = ['arturo@magicangel.org','arturo@nrwl.org']
-SERVER_EMAIL = 'arturo@interpegasus.com'
+SERVER_EMAIL = 'cms@interpegasus.com'
 
 # Activate django-dbindexer for the default database
 DATABASES['native'] = DATABASES['default']
