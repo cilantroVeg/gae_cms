@@ -428,10 +428,13 @@ def page_view(request, language, slug):
     return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array,'request_language': language},context_instance=RequestContext(request))
 
 # ...
+def page_api(request):
+    return render_to_response("pages/page_api.html",context_instance=RequestContext(request))
+
+# ...
 def sitemap(request):
     return render_to_response("pages/sitemap.html", {"language_list": Language.objects.all()},
                               context_instance=RequestContext(request))
-
 
 # ...
 def category_view(request, language, slug):

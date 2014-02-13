@@ -162,5 +162,4 @@ APP_NAME = 'bible-love'
 
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
 TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
-
-
+TEMPLATE_API = 'template/'+APP_NAME+'/template-api.html'
