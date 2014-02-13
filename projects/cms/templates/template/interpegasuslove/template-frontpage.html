@@ -1,13 +1,12 @@
 {% load record-tags %}
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>InterPegasus - {% block title %}{% endblock %}</title>
+    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record}}">
+    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
     <!-- Styles -->
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/style.css" rel="stylesheet">
@@ -45,8 +44,9 @@
 </head>
 <body>
 {% include "layout/admin.html" %}
-
+{% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
+
 <!--******************** NAVBAR ********************-->
 <div class="navbar-wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -348,25 +348,25 @@
             </div>
             <div id = "footer-categories">
                 {% for main_category in categories %}
-                {% if main_category.name != 'Root' %}
+                    {% if main_category.name != 'Root' %}
 
-                {% if main_category.parent_id == 1 %}
-                <div class = "footer-div">
-                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
-                    {% for page in main_category.page_array %}
-                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
-                    <br/>
-                    {% endfor %}
-                    {% for sub_category in categories %}
-                    {% if sub_category.parent_id == main_category.id %}
-                    <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
-                    <br/>
+                        {% if main_category.parent_id == 1 %}
+                            <div class = "footer-div">
+                                <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                                {% for page in main_category.page_array %}
+                                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                                    <br/>
+                                {% endfor %}
+                                {% for sub_category in categories %}
+                                    {% if sub_category.parent_id == main_category.id %}
+                                        <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                                        <br/>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
                     {% endif %}
-                    {% endfor %}
-                </div>
-                {% endif %}
-
-                {% endif %}
                 {% endfor %}
                 <div class = "footer-div">
                     <h4>Site map</h4>
