@@ -42,12 +42,11 @@ def is_logged_in(request):
 # ...
 def is_admin(request):
     try:
-        for admin in settings.ADMIN_USERS_EMAILS:
-            if request.user.email in admin[1]:
-                return True
+        if (request.user.email in settings.ADMIN_USERS_EMAILS):
+            return {'is_admin': True}
     except:
         return {'is_admin': False}
-    return False
+    return {'is_admin': False}
 
 # ...
 def request_language(request,language=''):
