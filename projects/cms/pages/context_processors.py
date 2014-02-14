@@ -2,7 +2,7 @@ from django.conf import settings
 
 from pages.models import *
 from google.appengine.api import memcache
-from django.shortcuts import get_object_or_404
+from django.http import Http404
 
 # ...
 def categories(request):
@@ -50,5 +50,8 @@ def is_admin(request):
 
 # ...
 def request_language(request,language='en'):
-    language = get_object_or_404(Language, code=language)
-    return {'request_language': language.code}
+    language_code = str(request.path)[1:3]
+    if language_code in ('en','es','fr','de','pt','ru','iw','zh'):
+        return {'request_language': language_code}
+    else:
+        raise Http404
