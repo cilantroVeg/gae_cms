@@ -63,6 +63,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'pages.context_processors.categories',
     'pages.context_processors.is_logged_in',
     'pages.context_processors.is_admin',
+    'pages.context_processors.request_language',
     'social.apps.django_app.context_processors.backends',
     'social.apps.django_app.context_processors.login_redirect',
 )

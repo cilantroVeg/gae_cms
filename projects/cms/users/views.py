@@ -91,7 +91,7 @@ def front_page(request):
 
 def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
-    return render_to_response('users/front_page.html', {'image_array': image_array, 'request_language': language}, context_instance=RequestContext(request))
+    return render_to_response('users/front_page.html', {'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 
 # Custom 404 and 500
@@ -135,7 +135,7 @@ def contact(request):
     else:
         form = ContactForm()
         error_message = ''
-    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message,'request_language':'en'})
+    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
 
 def message_contains_url(message):
     from django.utils.html import urlize
@@ -148,11 +148,11 @@ def message_contains_url(message):
     return error_message
 
 def thanks(request):
-    return render(request, 'users/thanks.html', {'request_language':'en'})
+    return render(request, 'users/thanks.html')
 
 # ...
 def user_form(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request)['is_admin']:
         instance = get_object_or_404(User, id=id) if id is not None else None
         form = UserForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -164,27 +164,16 @@ def user_form(request, id=None):
 
 # ...
 def user_list(request):
-    if is_admin_user(request):
+    if is_admin(request)['is_admin']:
         return render_to_response("users/user_list.html", {"user_list": User.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def user_delete(request, id=None):
-    if is_admin_user(request):
+    if is_admin(request)['is_admin']:
         instance = get_object_or_404(User, id=id) if id is not None else None
         instance.delete()
         return redirect('/users/')
     else:
         return redirect('/', False)
-    
-
-# ...
-def is_admin_user(request):
-    try:
-        if request.user.email in settings.ADMIN_USERS:
-            return True
-        else:
-            return False
-    except:
-        return False

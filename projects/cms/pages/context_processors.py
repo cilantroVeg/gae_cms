@@ -2,6 +2,7 @@ from django.conf import settings
 
 from pages.models import *
 from google.appengine.api import memcache
+from django.shortcuts import get_object_or_404
 
 # ...
 def categories(request):
@@ -29,7 +30,7 @@ def categories(request):
                         page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': headline})
             category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': len(page_array)})
         memcache.add('category_array', category_array)
-    return {'categories': category_array, 'languages': languages, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE}
+    return {'categories': category_array, 'languages': languages, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
 def is_logged_in(request):
@@ -41,9 +42,17 @@ def is_logged_in(request):
 # ...
 def is_admin(request):
     try:
-        for admin in settings.ADMIN_USERS:
+        for admin in settings.ADMIN_USERS_EMAILS:
             if request.user.email in admin[1]:
-                return {'is_admin': True}
+                return True
     except:
         return {'is_admin': False}
-    return {'is_admin': False}
+    return False
+
+# ...
+def request_language(request,language=''):
+    if language:
+        language = get_object_or_404(Language, code=language)
+        return {'request_language': language.code}
+    else:
+        return {'request_language': 'en'}
