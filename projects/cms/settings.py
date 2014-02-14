@@ -163,4 +163,4 @@ APP_NAME = 'interpegasus-cms'
 
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
 TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
-TEMPLATE_API = 'template/'+APP_NAME+'/template-api.html'
+TEMPLATE_API = 'template/template-api.html'

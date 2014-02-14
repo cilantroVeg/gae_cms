@@ -49,9 +49,6 @@ def is_admin(request):
     return {'is_admin': False}
 
 # ...
-def request_language(request,language=''):
-    if language:
-        language = get_object_or_404(Language, code=language)
-        return {'request_language': language.code}
-    else:
-        return {'request_language': 'en'}
+def request_language(request,language='en'):
+    language = get_object_or_404(Language, code=language)
+    return {'request_language': language.code}
