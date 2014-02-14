@@ -54,4 +54,5 @@ def request_language(request,language='en'):
     if language_code in ('en','es','fr','de','pt','ru','iw','zh'):
         return {'request_language': language_code}
     else:
-        raise Http404
+        return {'request_language': 'en'}
+        #raise Http404

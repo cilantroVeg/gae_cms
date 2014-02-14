@@ -20,7 +20,7 @@
   <script type="text/javascript">
     $(function () {
       window.swaggerUi = new SwaggerUi({
-      url: "http://swagger-espn.mobovivo.com/api-docs.json",
+      url: "http://127.0.0.1:8000{{ STATIC_URL }}template/API/api-docs.json",
       dom_id: "swagger-ui-container",
       supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
       onComplete: function(swaggerApi, swaggerUi){
@@ -55,11 +55,10 @@
 <body>
 <div id='header'>
   <div class="swagger-ui-wrap">
-    <a id="logo" href="http://espn.mobovivo.com/admin/api_keys" style="font-size: 11px;">API Key - Mobovivo</a>
+    <a id="logo" href="/" style="font-size: 11px;">Home</a>
 
     <form id='api_selector'>
       <div class='input'><input placeholder="http://swagger-espn.mobovivo.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
-      <div class='input'><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"/></div>
       <div class='input'><a id="explore" href="#">Explore</a></div>
     </form>
   </div>
