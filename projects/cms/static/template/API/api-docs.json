@@ -1,25 +1,25 @@
 {
-  "apiVersion": "0.2",
+  "apiVersion": "1.0",
   "swaggerVersion": "1.2",
   "apis": [
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/interpegasus_cms",
+            "path":"http://www.magicangel.org/api-docs/interpegasus_cms",
             "description":"InterPegasus CMS API"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/bible",
+            "path":"http://www.magicangel.org/api-docs/bible",
             "description":"Bible"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/music",
+            "path":"http://www.magicangel.org/api-docs/music",
             "description":"Music"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/nrwl",
+            "path":"http://www.magicangel.org/api-docs/nrwl",
             "description":"Natural Resources And Wildlife Organization"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/recipes",
+            "path":"http://www.magicangel.org/api-docs/recipes",
             "description":"Recipes Yiyask"
         }
   ]
