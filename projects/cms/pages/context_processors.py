@@ -55,4 +55,3 @@ def request_language(request,language='en'):
         return {'request_language': language_code}
     else:
         return {'request_language': 'en'}
-        #raise Http404

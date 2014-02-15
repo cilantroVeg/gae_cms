@@ -96,11 +96,11 @@ def front_page_language(request,language):
 
 # Custom 404 and 500
 def my_custom_404_view(request):
-    return render_to_response('users/404.html')
+    return render_to_response('users/404.html',context_instance=RequestContext(request))
 
 
 def my_custom_500_view(request):
-    return render_to_response('users/500.html')
+    return render_to_response('users/500.html',context_instance=RequestContext(request))
 
 # Social Auth
 def logged_in(request):
