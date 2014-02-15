@@ -3,23 +3,23 @@
   "swaggerVersion": "1.2",
   "apis": [
         {
-            "path":"http://www.magicangel.org/api-docs/interpegasus_cms",
+            "path":"http://www.magicangel.org/static/template/API/api-docs/interpegasus_cms",
             "description":"InterPegasus CMS API"
         },
         {
-            "path":"http://www.magicangel.org/api-docs/bible",
+            "path":"http://www.magicangel.org/static/template/API/api-docs/bible",
             "description":"Bible"
         },
         {
-            "path":"http://www.magicangel.org/api-docs/music",
+            "path":"http://www.magicangel.org/static/template/API/api-docs/music",
             "description":"Music"
         },
         {
-            "path":"http://www.magicangel.org/api-docs/nrwl",
+            "path":"http://www.magicangel.org/static/template/API/api-docs/nrwl",
             "description":"Natural Resources And Wildlife Organization"
         },
         {
-            "path":"http://www.magicangel.org/api-docs/recipes",
+            "path":"http://www.magicangel.org/static/template/API/api-docs/recipes",
             "description":"Recipes Yiyask"
         }
   ]
