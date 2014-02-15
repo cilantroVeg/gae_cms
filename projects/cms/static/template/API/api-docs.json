@@ -3,24 +3,24 @@
   "swaggerVersion": "1.2",
   "apis": [
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/InterPegasus_CMS_API",
+            "path":"http://swagger-espn.mobovivo.com/api-docs/interpegasus_cms",
             "description":"InterPegasus CMS API"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/Bible",
+            "path":"http://swagger-espn.mobovivo.com/api-docs/bible",
             "description":"Bible"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/Music",
+            "path":"http://swagger-espn.mobovivo.com/api-docs/music",
             "description":"Music"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/NRWL",
-            "description":"Natural Resources & Wildlife Organization"
+            "path":"http://swagger-espn.mobovivo.com/api-docs/nrwl",
+            "description":"Natural Resources And Wildlife Organization"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/Recipes",
-            "description":"Recipes"
+            "path":"http://swagger-espn.mobovivo.com/api-docs/recipes",
+            "description":"Recipes Yiyask"
         }
   ]
 }

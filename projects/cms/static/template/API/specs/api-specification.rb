@@ -2,7 +2,7 @@
 # find ./ -name "*.json" -exec sh -c 'mv $0 `basename "$0" .json`' '{}' \;
 
 
-##~ a = source2swagger.namespace("InterPegasus CMS API")
+##~ a = source2swagger.namespace("interpegasus_cms")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -27,7 +27,7 @@ def languages
 end
 
 
-##~ a = source2swagger.namespace("InterPegasus CMS API")
+##~ a = source2swagger.namespace("interpegasus_cms")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -52,7 +52,7 @@ def categories
 end
 
 
-##~ a = source2swagger.namespace("InterPegasus CMS API")
+##~ a = source2swagger.namespace("interpegasus_cms")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -79,7 +79,7 @@ def pages
 end
 
 
-##~ a = source2swagger.namespace("InterPegasus CMS API")
+##~ a = source2swagger.namespace("interpegasus_cms")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -106,7 +106,7 @@ def images
 end
 
 
-##~ a = source2swagger.namespace("Bible")
+##~ a = source2swagger.namespace("bible")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -131,7 +131,7 @@ def books
   return
 end
 
-##~ a = source2swagger.namespace("Bible")
+##~ a = source2swagger.namespace("bible")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -156,7 +156,7 @@ def chapters
   return
 end
 
-##~ a = source2swagger.namespace("NRWL")
+##~ a = source2swagger.namespace("nrwl")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -181,7 +181,7 @@ def chapters
   return
 end
 
-##~ a = source2swagger.namespace("Music")
+##~ a = source2swagger.namespace("music")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -206,7 +206,7 @@ def chapters
   return
 end
 
-##~ a = source2swagger.namespace("Recipes")
+##~ a = source2swagger.namespace("recipes")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
@@ -230,4 +230,3 @@ end
 def chapters
   return
 end
-
