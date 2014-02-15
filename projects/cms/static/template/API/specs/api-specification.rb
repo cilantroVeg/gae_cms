@@ -1,4 +1,4 @@
-# source2swagger -i /Users/arturo/interpegasus/gae_cms/projects/cms/static/template/API/specs/api-spec -e "rb" -c "##~" -o /Users/arturo/interpegasus/gae_cms/projects/cms/static/template/API/api-docs
+# source2swagger -i /Users/arturo/interpegasus/gae_cms/projects/cms/static/template/API/specs/ -e "rb" -c "##~" -o /Users/arturo/interpegasus/gae_cms/projects/cms/static/template/API/api-docs
 # find ./ -name "*.json" -exec sh -c 'mv $0 `basename "$0" .json`' '{}' \;
 
 
