@@ -3,32 +3,24 @@
   "swaggerVersion": "1.2",
   "apis": [
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/information",
-            "description":"API information."
+            "path":"http://swagger-espn.mobovivo.com/api-docs/InterPegasus_CMS_API",
+            "description":"InterPegasus CMS API"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/languages",
-            "description":"Languages."
+            "path":"http://swagger-espn.mobovivo.com/api-docs/Bible",
+            "description":"Bible"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/users",
-            "description":"User operations."
+            "path":"http://swagger-espn.mobovivo.com/api-docs/Music",
+            "description":"Music"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/twitter",
-            "description":"Twitter operations."
+            "path":"http://swagger-espn.mobovivo.com/api-docs/NRWL",
+            "description":"Natural Resources & Wildlife Organization"
         },
         {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/events",
-            "description":"Events in each enabled league."
-        },
-        {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/polls",
-            "description":"Game Questions"
-        },
-        {
-            "path":"http://swagger-espn.mobovivo.com/api-docs/vizrt",
-            "description":"Game Questions"
+            "path":"http://swagger-espn.mobovivo.com/api-docs/Recipes",
+            "description":"Recipes"
         }
   ]
 }
