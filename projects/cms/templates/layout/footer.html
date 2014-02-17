@@ -1,7 +1,7 @@
 {% load record-tags %}
 <div id = "footer-content">
-    <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
-    <p>{{ 'WEBSITE_DESCRIPTION'|get_record}}</p>
+    <h2>{{ 'WEBSITE_NAME'|get_record:request_language}}</h2>
+    <p>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</p>
 
     {% for main_category in categories %}
         {% if main_category.name != 'Root' %}
