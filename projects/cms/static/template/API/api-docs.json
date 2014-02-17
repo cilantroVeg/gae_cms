@@ -21,6 +21,10 @@
         {
             "path":"http://www.magicangel.org/static/template/API/api-docs/recipes",
             "description":"Recipes Yiyask"
+        },
+        {
+            "path":"http://www.magicangel.org/static/template/API/api-docs/news",
+            "description":"News Feed"
         }
   ]
 }
