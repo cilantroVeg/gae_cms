@@ -12,11 +12,6 @@ urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     url('', include('social.apps.django_app.urls', namespace='social')),
 
-    # Frontpage
-    url('^$', 'users.views.front_page'),
-    url(r'^(?P<language>[a-z]{2})$', 'users.views.front_page_language'),
-
-
     # User Session
     url(r'^enter/', 'users.views.enter'),
     url(r'^exit/', 'users.views.exit_request'),
@@ -25,14 +20,19 @@ urlpatterns = patterns('',
     (r'', include('django.contrib.auth.urls')),
     url(r'^logged-in/', 'users.views.logged_in'),
     url(r'^login-error/', 'users.views.login_error'),
-    url(r'^contact/', 'users.views.contact'),
-    url(r'^thanks/', 'users.views.thanks'),
+
 
     # Page
     url(r'^language/new/$', 'pages.views.language_form'),
     url(r'^language/edit/(?P<id>\d+)/$', 'pages.views.language_form'),
     url(r'^language/delete/(?P<id>\d+)/$', 'pages.views.language_delete'),
     url(r'^languages/', 'pages.views.language_list'),
+
+    # Frontpage
+    url('^$', 'pages.views.front_page'),
+    url(r'^(?P<language>[a-z]{2})$', 'pages.views.front_page_language'),
+    url(r'^contact/', 'pages.views.contact'),
+    url(r'^thanks/', 'pages.views.thanks'),
 
     url(r'^category/new/$', 'pages.views.category_form'),
     url(r'^category/edit/(?P<id>\d+)/$', 'pages.views.category_form'),

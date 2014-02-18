@@ -10,7 +10,6 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
 from django.contrib.auth import login
-from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.conf import settings
 from pages.models import Record
@@ -79,28 +78,6 @@ def process_sign_up(request):
                                   context_instance=RequestContext(request))
 
 
-def front_page(request):
-    from django.utils import translation
-    thread_language = translation.get_language()
-    languages = Language.objects.filter(is_enabled=True)
-    for language in languages:
-        if language.code in thread_language:
-            return redirect('/'+language.code, False)
-    return redirect('/en', False)
-
-
-def front_page_language(request,language):
-    image_array = Image.objects.all()[:7]
-    return render_to_response('users/front_page.html', {'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
-
-
-# Custom 404 and 500
-def my_custom_404_view(request):
-    return render_to_response('users/404.html',context_instance=RequestContext(request))
-
-
-def my_custom_500_view(request):
-    return render_to_response('users/500.html',context_instance=RequestContext(request))
 
 # Social Auth
 def logged_in(request):
@@ -110,45 +87,6 @@ def logged_in(request):
 def login_error(request):
     return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"},
                               context_instance=RequestContext(request))
-
-# Contact Form
-def contact(request):
-    if request.method == 'POST': # If the form has been submitted...
-        form = ContactForm(request.POST) # A form bound to the POST data
-        error_message = message_contains_url(request.POST['contact_comment'])
-        if error_message:
-            try:
-                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
-            except:
-                data = {}
-        else:
-            if form.is_valid():
-                contact_name = form.cleaned_data['contact_name']
-                contact_email = form.cleaned_data['contact_email']
-                contact_comment = form.cleaned_data['contact_comment']
-                subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
-                recipients = settings.ADMIN_USERS_EMAILS
-                sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
-                from google.appengine.api import mail
-                mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
-                return redirect('/thanks/',False)
-    else:
-        form = ContactForm()
-        error_message = ''
-    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
-
-def message_contains_url(message):
-    from django.utils.html import urlize
-    import re, string
-    error_message = False
-    # Strip Non Alpha Numeric
-    message = re.sub(r'[^a-zA-Z0-9\.]',' ', message)
-    if (urlize(message) != message) or message.find('buy') > 0 or message.find('shop') > 0:
-        error_message = 'Please do not include links or emails in the message. Sorry for the inconvenience.'
-    return error_message
-
-def thanks(request):
-    return render(request, 'users/thanks.html')
 
 # ...
 def user_form(request, id=None):

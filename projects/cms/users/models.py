@@ -21,12 +21,6 @@ def create_user_profile(sender, instance, created, **kwargs):
 post_save.connect(create_user_profile, sender=User)
 
 
-class ContactForm(forms.Form):
-    contact_email = forms.EmailField()
-    contact_name = forms.CharField(max_length=100)
-    contact_comment = forms.CharField(widget=forms.Textarea(attrs={'cols': 80, 'rows': 20}))
-
-
 # Forms
 class UserForm(ModelForm):
     class Meta:

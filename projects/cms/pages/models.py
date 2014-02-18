@@ -212,6 +212,12 @@ class Record(models.Model):
     class Meta:
         unique_together = ("key", "language")
 
+# ...
+class ContactForm(forms.Form):
+    contact_email = forms.EmailField()
+    contact_name = forms.CharField(max_length=100)
+    contact_comment = forms.CharField(widget=forms.Textarea(attrs={'cols': 80, 'rows': 20}))
+
 
 # Forms
 class RecordForm(ModelForm):
