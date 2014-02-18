@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record}}">
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
     <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
     <!-- Styles -->
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
@@ -89,8 +89,8 @@
 <!-- ******************** HeaderWrap ********************-->
 <div id="headerwrap">
     <header class="clearfix">
-        <h1><span>{{ 'WEBSITE_NAME'|get_record}}</span> </h1>
-        <h2>{{ 'WEBSITE_DESCRIPTION'|get_record}}</h2>
+        <h1><span>{{ 'WEBSITE_NAME'|get_record:request_language}}</span> </h1>
+        <h2>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</h2>
     </header>
 </div>
 <!--******************** Feature ********************-->
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="span12">
                     <article>
-                        <h2>{{ 'WEBSITE_DESCRIPTION_SLOGAN'|get_record}}</h2>
+                        <h2>{{ 'WEBSITE_DESCRIPTION_SLOGAN'|get_record:request_language}}</h2>
                     </article>
                 </div>
                 <!-- ./span12 -->
@@ -290,7 +290,7 @@
                 <div class="featurette">
                     <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span></h2>
 
-                    <p>{{ 'WEBSITE_DESCRIPTION_KNOW_MORE'|get_record}}</p>
+                    <p>{{ 'WEBSITE_DESCRIPTION_KNOW_MORE'|get_record:request_language}}</p>
                 </div>
                 <!-- /.featurette -->
                 <hr class="featurette-divider">
@@ -343,8 +343,8 @@
     <div class="container">
         <footer>
             <div id = "footer-description">
-                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
-                {{ 'WEBSITE_DESCRIPTION'|get_record}}
+                <h2>{{ 'WEBSITE_NAME'|get_record:request_language}}</h2>
+                {{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}
             </div>
             <div id = "footer-categories">
                 {% for main_category in categories %}
@@ -376,7 +376,7 @@
             <div id = "copyright">
                 <ul>
                     <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
-                    <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record}}</b></a></li>
+                    <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record:request_language}}</b></a></li>
                     <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
                 </ul>
             </div>

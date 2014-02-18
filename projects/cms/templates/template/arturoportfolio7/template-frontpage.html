@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- CHANGE THIS TITLE TAG -->
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record}}" />
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}" />
     <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
 
     <!-- media-queries.js -->

@@ -6,9 +6,9 @@
 
             <!-- Links -->
             <section class="widget-links">
-                <h2>{{ 'WEBSITE_NAME'|get_record}}</h2>
+                <h2>{{ 'WEBSITE_NAME'|get_record:request_language}}</h2>
                 <ul class="style2">
-                    <li>{{ 'WEBSITE_DESCRIPTION'|get_record}}</li>
+                    <li>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</li>
                 </ul>
             </section>
 
@@ -65,7 +65,7 @@
     <div class="row">
         <div class="12u">
             <div id="copyright">
-                &copy; {{ 'WEBSITE_NAME'|get_record}}. All rights reserved. <a href="http://www.nrwl.org">www.nrwl.org</a> | <a href="http://html5up.net/">HTML5 UP</a>
+                &copy; {{ 'WEBSITE_NAME'|get_record:request_language}}. All rights reserved. <a href="http://www.nrwl.org">www.nrwl.org</a> | <a href="http://html5up.net/">HTML5 UP</a>
             </div>
         </div>
     </div>

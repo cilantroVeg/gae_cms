@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record}}">
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
     <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}template/www.yiyask.com/stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}template/www.yiyask.com/stylesheets/main.css" />

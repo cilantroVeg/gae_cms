@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>{{ 'WEBSITE_NAME'|get_record}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record}}">
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
     <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
     <meta name="HandheldFriendly" content="true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -67,9 +67,9 @@
 <div class="hero bg-fixed bg-color" id="home">
     <div class="slogan">
         <div class = "center">
-            <h1>{{ 'WEBSITE_NAME'|get_record}}</h1>
+            <h1>{{ 'WEBSITE_NAME'|get_record:request_language}}</h1>
             <div>{% block content %}{% endblock %}</div>
-            <strong class = "sub_heading">{{ 'WEBSITE_DESCRIPTION'|get_record}}</strong>
+            <strong class = "sub_heading">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</strong>
         </div>
     </div>
 </div>

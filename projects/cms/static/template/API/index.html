@@ -55,7 +55,7 @@
 <body>
 <div id='header'>
   <div class="swagger-ui-wrap">
-    <a id="logo" href="/" style="font-size: 11px;">{{ 'WEBSITE_NAME'|get_record}}</a>
+    <a id="logo" href="/" style="font-size: 11px;">{{ 'WEBSITE_NAME'|get_record:request_language}}</a>
 
     <form id='api_selector'>
       <div class='input'><input placeholder="/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
