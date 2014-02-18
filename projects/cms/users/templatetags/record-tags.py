@@ -10,14 +10,13 @@ register = Library()
 
 
 @register.filter
-def get_record(key, language=None):
+def get_record(key, language='es'):
     try:
-        if language is None:
-            return Record.objects.get(key=key).value
-        else:
-            return Record.objects.get(key=key, language_id=language.id).value
+        if language:
+            l = Language.objects.get(code=language)
+            return Record.objects.get(key=key, language=l).value
     except:
-        return 'Key ' + key + ' Not Found'
+        return 'N/A'
 
 
 @register.filter
