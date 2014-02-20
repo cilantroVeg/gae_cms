@@ -1,22 +1,23 @@
-# Create your views here.
+# views.py
+
+import gdata.photos.service
+import gdata.media
+import gdata.geo
+
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from django.conf import settings
 from django.utils.html import *
-import gdata.photos.service
-import gdata.media
-import gdata.geo
 from django.forms.formsets import formset_factory
 from django.forms.models import modelformset_factory
-
 from pages.models import *
 from pages.context_processors import is_admin
 from django.shortcuts import render
+
 # ...
 def delete_cache(request):
     memcache.delete('category_array')
     return redirect('/', False)
-
 
 # ...
 def category_form(request, id=None):
@@ -26,9 +27,7 @@ def category_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/categories/')
-        return render_to_response("pages/category_form.html",
-                                  {"form": form, "id": id},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/category_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -45,19 +44,14 @@ def category_formset(request):
                 return redirect('/categories/')
         else:
             formset = CategoryFormSet(initial=Category.objects.values())
-        return render_to_response("pages/category_formset.html",
-                                  {"formset": formset},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/category_formset.html", {"formset": formset}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
-
 
 # ...
 def category_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/category_list.html",
-                                  {"category_list": Category.objects.all()},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/category_list.html", {"category_list": Category.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -78,18 +72,14 @@ def language_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/languages/')
-        return render_to_response("pages/language_form.html",
-                                  {"form": form, "id": id},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/language_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def language_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/language_list.html",
-                                  {"language_list": Language.objects.all()},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/language_list.html", {"language_list": Language.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -130,18 +120,14 @@ def page_form(request, id=None):
                     continue
 
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id,
-                                                           'image_array': image_array},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def page_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/page_list.html",
-                                  {"page_list": Page.objects.all()},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/page_list.html", {"page_list": Page.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -162,18 +148,14 @@ def record_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/records/')
-        return render_to_response("pages/record_form.html",
-                                  {"form": form, "id": id},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/record_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def record_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/record_list.html",
-                                  {"record_list": Record.objects.all()},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/record_list.html", {"record_list": Record.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -216,9 +198,7 @@ def spreadsheet_form(request, id=None):
             spreadsheet.save()
             handle_spreadsheet(request.FILES['spreadsheet_file'], request.user, spreadsheet)
             return redirect('/spreadsheets/')
-        return render_to_response("pages/spreadsheet_form.html",
-                                  {"form": form, "id": id},
-                                  context_instance=RequestContext(request))
+        return render_to_response("pages/spreadsheet_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -246,8 +226,7 @@ def handle_spreadsheet(f, user, spreadsheet):
                 except:
                     extra = None
                 # Language
-                language, language_created = Language.objects.get_or_create(code=language_code,
-                                                                            defaults={'name': language_code})
+                language, language_created = Language.objects.get_or_create(code=language_code,  defaults={'name': language_code})
                 # Categories
                 parent, parent_created = Category.objects.get_or_create(name=parent_category_name,
                                                                         defaults={'parent': None, 'language': language,
@@ -267,7 +246,7 @@ def handle_spreadsheet(f, user, spreadsheet):
 def spreadsheet_list(request):
     if is_admin(request)['is_admin']:
         return render_to_response("pages/spreadsheet_list.html", {"spreadsheet_list": Spreadsheet.objects.all(),
-        },
+                                                                  },
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -282,63 +261,6 @@ def spreadsheet_delete(request, id=None):
         return redirect('/', False)
 
 
-# # ...
-# def handle_flickr_image(file, user, image):
-#     # Check for Token
-#     api_token = Record.objects.get(key='FLICKR_TOKEN').value
-#     flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, token=api_token)
-#     keywords = {'title': image.name, 'description': 'MAF', 'tags': 'MAF', 'is_public':1, 'format':'xmlnode'}
-#     response = flickr.upload(filename=file.read(), callback=None, **keywords)
-#     return False
-
-
-# # ...
-# def flickr_callback(request):
-#     debug('FROB', request.GET['frob'])
-#     flickr = flickrapi.FlickrAPI(settings.FLICKR_API_KEY, settings.FLICKR_API_SECRET, store_token=False)
-#     token = flickr.get_token(request.GET['frob'])
-#     if token:
-#         Record(key='FLICKR_TOKEN', value=token).save()
-#     debug('FLICKR_TOKEN',token)
-#     return redirect('/', False)
-
-
-
-
-# def require_flickr_auth(view):
-#     '''View decorator, redirects users to Flickr when no valid
-#     authentication token is available.
-#     '''
-# 
-#     def protected_view(request, *args, **kwargs):
-#         try:
-#             token = Record.objects.get(key='FLICKR_TOKEN').value
-#         except:
-#             token = None
-# 
-#         f = flickrapi.FlickrAPI(settings.FLICKR_API_KEY,
-#                settings.FLICKR_API_SECRET, token=token,
-#                store_token=False)
-# 
-#         if token:
-#             # We have a token, but it might not be valid
-#             try:
-#                 f.auth_checkToken()
-#             except flickrapi.FlickrError:
-#                 token = None
-# 
-#         if not token:
-#             url = f.web_login_url(perms='write')
-#             return HttpResponseRedirect(url)
-# 
-#         # If the token is valid, we can call the decorated view.
-# 
-#         return view(request, *args, **kwargs)
-# 
-#     return protected_view
-# 
-# 
-# 
 
 def image_form(request, id=None):
     if is_admin(request)['is_admin']:
@@ -406,7 +328,7 @@ def handle_image_picasa(file, image):
 def image_list(request):
     if is_admin(request)['is_admin']:
         return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),
-        },
+                                                            },
                                   context_instance=RequestContext(request))
     else:
         return redirect('/', False)
@@ -447,7 +369,7 @@ def category_view(request, language, slug):
 def image_view(request, language, slug):
     image = get_object_or_404(Image, slug=slug)
     return render_to_response("pages/image_view.html", {"image": image,
-    },
+                                                        },
                               context_instance=RequestContext(request))
 
 # ...
@@ -504,7 +426,8 @@ def contact(request):
 
 def message_contains_url(message):
     from django.utils.html import urlize
-    import re, string
+    import re
+
     error_message = False
     # Strip Non Alpha Numeric
     message = re.sub(r'[^a-zA-Z0-9\.]',' ', message)

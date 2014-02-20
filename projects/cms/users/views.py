@@ -1,8 +1,9 @@
-# https://docs.djangoproject.com/en/dev/topics/auth/default/
-import logging
-from pages.context_processors import *
+# views.py
 
+# imports
+import logging
 log = logging.getLogger(__name__)
+from pages.context_processors import *
 from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
@@ -10,48 +11,36 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
 from django.contrib.auth import login
-from django.http import HttpResponseRedirect
-from django.conf import settings
-from pages.models import Record
 
+################
+# User Methods
+################
 
-#from django.contrib.auth.models import Group, Permission
-#from django.contrib.contenttypes.models import ContentType
-
-
-
-#######################
-# User Related Methods
-#######################
-
-
+# ...
 def enter(request):
     if is_logged_in(request):
         return redirect('/', False)
-    return render_to_response('users/signup.html',
-                              context_instance=RequestContext(request))
+    return render_to_response('users/signup.html', context_instance=RequestContext(request))
 
-
+# ...
 def not_found(request):
-    return render_to_response('template/404.html',
-                              context_instance=RequestContext(request))
+    return render_to_response('template/404.html',context_instance=RequestContext(request))
 
-
+# ...
 def exit_request(request):
     logout(request)
     request.session = None
     return redirect('/', False)
 
-
+# ...
 @require_http_methods(["POST"])
 def process_create_account(request):
     try:
         u = User.objects.filter(email=request.POST['email'])
     except:
-        u = False # user does not exist in database
+        u = False
     if u:
-        return render_to_response('users/signup.html', {'error_message': "Email is already taken"},
-                                  context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'error_message': "Email is already taken"}, context_instance=RequestContext(request))
     User.objects.create_user(request.POST['email'], request.POST['email'], request.POST['password'])
     user = authenticate(username=request.POST['email'], password=request.POST['password'])
     if user is not None:
@@ -59,10 +48,9 @@ def process_create_account(request):
             login(request, user)
             return redirect('/', False)
     else:
-        return render_to_response('users/signup.html', {'error_message': "Email is already taken"},
-                                  context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'error_message': "Email is already taken"}, context_instance=RequestContext(request))
 
-
+# ...
 @require_http_methods(["POST"])
 def process_sign_up(request):
     username = request.POST['email_2']
@@ -74,19 +62,15 @@ def process_sign_up(request):
             return redirect('/', False)
     else:
         # Return an 'invalid login' error message.
-        return render_to_response('users/signup.html', {'error_message': "Email and Password Don't Match"},
-                                  context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'error_message': "Email and Password Don't Match"}, context_instance=RequestContext(request))
 
-
-
-# Social Auth
+# ...
 def logged_in(request):
     return redirect('/', False)
 
-
+# ...
 def login_error(request):
-    return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"},
-                              context_instance=RequestContext(request))
+    return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"}, context_instance=RequestContext(request))
 
 # ...
 def user_form(request, id=None):

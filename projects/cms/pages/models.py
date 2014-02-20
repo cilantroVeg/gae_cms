@@ -1,12 +1,10 @@
 import time
 
-from django.db import models
-from django.forms import ModelForm
+from google.appengine.api import memcache
+
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
-
 from users.models import *
-from google.appengine.api import memcache
 
 
 class Language(models.Model):

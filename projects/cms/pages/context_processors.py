@@ -1,8 +1,7 @@
-from django.conf import settings
-
-from pages.models import *
 from google.appengine.api import memcache
-from django.http import Http404
+
+from django.conf import settings
+from pages.models import *
 
 # ...
 def categories(request):

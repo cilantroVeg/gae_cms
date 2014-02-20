@@ -4,7 +4,7 @@
 ################
 
 from django.template import Library
-from pages.models import Record, Language
+from pages.models import Record
 
 register = Library()
 
