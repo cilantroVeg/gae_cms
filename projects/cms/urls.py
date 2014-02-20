@@ -85,9 +85,9 @@ urlpatterns = patterns('',
     url(r'^(?P<language>[a-z]{2})/i/(?P<slug>[-\w]+)/$', 'pages.views.image_view'),
 
     url(r'^api/(?P<language_code>[a-z]{2})/languages', 'pages.api.languages'),
-    url(r'^api/(?P<language_code>[a-z]{2})/categories', 'pages.api.languages'),
-    url(r'^api/(?P<language_code>[a-z]{2})/pages', 'pages.api.languages'),
-    url(r'^api/(?P<language_code>[a-z]{2})/images', 'pages.api.languages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/categories', 'pages.api.categories'),
+    url(r'^api/(?P<language_code>[a-z]{2})/pages', 'pages.api.pages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/images', 'pages.api.images'),
 )
 
 handler404 = 'pages.views.my_custom_404_view'
