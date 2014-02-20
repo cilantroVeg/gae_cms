@@ -5,6 +5,8 @@ from pages.models import *
 
 # ...
 def categories(request):
+    # Get categories and languages from API
+
     # Get All Categories
     languages = Language.objects.filter(is_enabled=True)
     if memcache.get('category_array') is not None:
