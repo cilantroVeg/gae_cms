@@ -79,7 +79,15 @@ urlpatterns = patterns('',
 
     # Admin
     url(r'^delete_cache/', 'pages.views.delete_cache'),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/simple/favicon.ico'))
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/simple/favicon.ico')),
+
+    # API InterPegasus CMS
+    url(r'^(?P<language>[a-z]{2})/i/(?P<slug>[-\w]+)/$', 'pages.views.image_view'),
+
+    url(r'^api/(?P<language_code>[a-z]{2})/languages', 'pages.api.languages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/categories', 'pages.api.languages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/pages', 'pages.api.languages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/images', 'pages.api.languages'),
 )
 
 handler404 = 'pages.views.my_custom_404_view'
