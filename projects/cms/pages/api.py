@@ -77,7 +77,6 @@ def pages(request,language_code):
     response_data['pages'] = pages
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
-
 # ...
 def images(request,language_code):
     response_data = {}
