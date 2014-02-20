@@ -97,8 +97,8 @@ def images(request,language_code):
             i['slug'] = image.slug
             i['picasa_photo_url'] = image.picasa_photo_url
             i['picasa_thumb_url'] = image.picasa_thumb_url
-            i['height'] = image.category.name
-            i['width'] = image.category.slug
+            i['height'] = image.height
+            i['width'] = image.width
             i['created_at'] = str(naturalday(image.created_at))
             images.append(i)
     response_data['images'] = images

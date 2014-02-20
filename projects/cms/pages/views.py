@@ -361,7 +361,8 @@ def sitemap(request):
 
 # ...
 def category_view(request, language, slug):
-    category = get_object_or_404(Category, slug=slug, language_id=language.id)
+    language = Language.objects.filter(code=language)[:1]
+    category = get_object_or_404(Category, slug=slug, language_id=language[0].id)
     pages = Page.objects.filter(category=category)
     return render_to_response("pages/category_view.html", {"category": category, "pages": pages},context_instance=RequestContext(request))
 

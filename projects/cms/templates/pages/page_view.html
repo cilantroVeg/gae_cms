@@ -8,9 +8,14 @@
     {{ page.content|safe }}
     <br />
     <hr />
-                    {% for entry in image_array %}
-    ['{{ entry.name }}', '<a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/image/edit/{{ entry.id }}/">Edit</a>|<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
-            {% endfor %}
+    {% for entry in image_array %}
+        {{ entry.name }}
+        <a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>
+        {% if is_admin %}
+            <a href="/image/edit/{{ entry.id }}/">Edit</a>
+            <a href="/image/delete/{{ entry.id }}/">Delete</a>
+        {% endif %}
+    {% endfor %}
 </div>
 
 {% endblock %}

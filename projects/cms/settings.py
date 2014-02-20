@@ -43,7 +43,7 @@ INSTALLED_APPS = (
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 
-CACHE_BACKEND = 'memcached://?timeout=0'
+# CACHE_BACKEND = 'memcached://?timeout=0'
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
@@ -53,11 +53,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
+    # 'django.middleware.cache.UpdateCacheMiddleware',
+    # 'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-CACHE_MIDDLEWARE_SECONDS=60*60*24*7
+# CACHE_MIDDLEWARE_SECONDS=60*60*24*7
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
