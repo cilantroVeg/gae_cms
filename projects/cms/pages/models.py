@@ -33,7 +33,6 @@ class Category(models.Model):
     slug = models.SlugField(unique=True, blank=False, null=False)
     order = models.SmallIntegerField(null=True, blank=True, choices=ORDER)
     allow_replies = models.BooleanField(default=False)
-    frontpage_page_limit = models.SmallIntegerField(null=True, blank=True, default=1, choices=MAX_COUNT)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...

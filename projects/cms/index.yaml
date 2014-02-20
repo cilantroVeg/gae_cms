@@ -32,10 +32,32 @@ indexes:
   - name: __key__
     direction: desc
 
+- kind: pages_category
+  properties:
+  - name: language_id
+  - name: order
+
+- kind: pages_category
+  properties:
+  - name: language_id
+  - name: parent_id
+  - name: order
+
 - kind: pages_page
   properties:
   - name: __key__
     direction: desc
+
+- kind: pages_page
+  properties:
+  - name: category_id
+  - name: is_enabled
+  - name: title
+
+- kind: pages_page
+  properties:
+  - name: is_enabled
+  - name: title
 
 - kind: users_user
   properties:
