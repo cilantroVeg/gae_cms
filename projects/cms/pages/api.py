@@ -29,4 +29,8 @@ def validate_token(request):
 
 # ...
 def validate_language(language_code):
-    return Language.objects.get(code=language_code)
+    try:
+        language = Language.objects.get(code=language_code)
+    except:
+        language = None
+    return language
