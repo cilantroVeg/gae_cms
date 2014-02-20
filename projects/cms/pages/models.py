@@ -1,7 +1,7 @@
 import time
 
 from google.appengine.api import memcache
-
+from django import forms
 from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
 from users.models import *

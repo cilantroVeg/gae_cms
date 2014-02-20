@@ -82,5 +82,5 @@ urlpatterns = patterns('',
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/simple/favicon.ico'))
 )
 
-handler404 = 'users.views.my_custom_404_view'
-handler500 = 'users.views.my_custom_500_view'
+handler404 = 'pages.views.my_custom_404_view'
+handler500 = 'pages.views.my_custom_500_view'
