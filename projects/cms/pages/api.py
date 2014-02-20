@@ -73,7 +73,6 @@ def pages(request,language_code):
             p['category_slug'] = page.category.slug
             p['twitter_hashtags'] = page.twitter_hashtags
             p['created_at'] = str(naturalday(page.created_at))
-
             pages.append(p)
     response_data['pages'] = pages
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
@@ -82,20 +81,29 @@ def pages(request,language_code):
 # ...
 def images(request,language_code):
     response_data = {}
-    if validate_token(request) and validate_language(language_code):
-        languages = []
-        for language in Language.objects.all():
-            l = {}
-            l['name'] = language.name
-            l['code'] = language.code
-            languages.append(l)
-        response_data['languages'] = languages
-        response_data['status'] = 200
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
-    else:
-        response_data['languages'] = None
-        response_data['status'] = 'Please Verify Access Token and Language'
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=422)
+    images = []
+    image_set = []
+    if validate_token(request):
+        if request.REQUEST.get('page_slug', None):
+            pag_slug = Page.objects.filter(slug=request.REQUEST['page_slug'])[:1]
+            if pag_slug:
+                image_set = Image.objects.order_by('name').filter(page_id=pag_slug[0].id)
+        else:
+            image_set = Image.objects.order_by('name')
+        for image in image_set:
+            i = {}
+            i['id'] = image.id
+            i['page_slug'] = image.page.slug if image.page else None
+            i['name'] = image.name
+            i['slug'] = image.slug
+            i['picasa_photo_url'] = image.picasa_photo_url
+            i['picasa_thumb_url'] = image.picasa_thumb_url
+            i['height'] = image.category.name
+            i['width'] = image.category.slug
+            i['created_at'] = str(naturalday(image.created_at))
+            images.append(i)
+    response_data['images'] = images
+    return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 
 

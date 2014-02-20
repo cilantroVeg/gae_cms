@@ -64,7 +64,7 @@ end
 ##~ o.parameters.add :name => "access_token", :description => "access_token", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "query"
 ##~ o.parameters.add :name => "language_code", :description => "language code", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "path"
 ##~ o.parameters.add :name => "page_slug", :description => "page slug", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
-##~ o.parameters.add :name => "category_slug", :description => "get pages in category", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
+##~ o.parameters.add :name => "category_slug", :description => "category slug", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
 
 ##~ a.models["Page"] = {:id => "Page", :properties => {:title => {:type => "string"}, :content => {:type => "string"}}}
 ##~ a.models["PageArray"] = {:id => "PageArray", :properties => {:pages => {:type => "Array", :items =>{:$ref => "Page"} }}}
@@ -90,8 +90,7 @@ end
 ##~ o.set :httpMethod => "GET", :summary => "Get Image", :responseClass => "ImageArray", :nickname => "pegasus", :tags => ["pegasus"], :deprecated => false
 ##~ o.parameters.add :name => "access_token", :description => "access_token", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "query"
 ##~ o.parameters.add :name => "language_code", :description => "language code", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "path"
-##~ o.parameters.add :name => "page", :description => "page slug", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
-##~ o.parameters.add :name => "category", :description => "category name", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
+##~ o.parameters.add :name => "page_slug", :description => "page slug", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
 
 ##~ a.models["Image"] = {:id => "Image", :properties => {:title => {:type => "string"}, :url => {:type => "string"}}}
 ##~ a.models["ImageArray"] = {:id => "ImageArray", :properties => {:images => {:type => "Array", :items =>{:$ref => "Image"} }}}
