@@ -12,7 +12,6 @@
         {{ entry.name }}
         <a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>
         {% if is_admin %}
-            <a href="/image/edit/{{ entry.id }}/">Edit</a>
             <a href="/image/delete/{{ entry.id }}/">Delete</a>
         {% endif %}
     {% endfor %}
