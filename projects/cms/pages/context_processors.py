@@ -5,11 +5,11 @@ from django.conf import settings
 # ...
 def categories(request):
     # Get Request Language
-    request_language = get_request_language(request)["request_language"]
+    request_language = 'en'#get_request_language(request)["request_language"]
     # Get Languages
-    languages = query_api(request_language, 'languages')["languages"]
+    languages = query_api(request_language, 'languages')
     # Get Categories
-    categories = query_api(request_language, 'categories')["categories"]
+    categories = query_api(request_language, 'categories')
     return {'categories': categories, 'languages': languages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
