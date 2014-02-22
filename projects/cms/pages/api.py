@@ -1,10 +1,14 @@
 # Create your views here.
-import json
-import re
 from django.http import HttpResponse
 from django.contrib.humanize.templatetags.humanize import naturalday
 from django.conf import settings
 from pages.models import *
+from google.appengine.api import urlfetch
+import json
+import urllib2
+import urllib
+import json
+import re
 
 # ...
 def languages(request,language_code):
@@ -104,8 +108,6 @@ def images(request,language_code):
     response_data['images'] = images
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
-
-
 # ...
 def validate_token(request):
     return settings.API_ACCESS_TOKEN == request.REQUEST['access_token']
@@ -113,3 +115,19 @@ def validate_token(request):
 # ...
 def validate_language(language_code):
     return Language.objects.filter(code=language_code)[:1]
+
+# ...
+def query_api(language_code, api_request, extra_parameters={}):
+    url = build_url(language_code, api_request, extra_parameters)
+    result = urlfetch.fetch(url)
+    try:
+        data = json.loads(result.content)
+    except:
+        data = None
+    return data
+
+def build_url(language_code, api_request, extra_parameters):
+    url = str(settings.SITE_URL) + '/api/' + str(language_code) + '/' + api_request + '?access_token=' + settings.API_ACCESS_TOKEN
+    for k, v in extra_parameters.iteritems():
+        url = url + '&' + urllib.urlencode(k) + '=' + urllib.urlencode(v)
+    return url

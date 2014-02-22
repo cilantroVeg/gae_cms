@@ -1,37 +1,16 @@
 from google.appengine.api import memcache
-
+from pages.api import *
 from django.conf import settings
-from pages.models import *
 
 # ...
 def categories(request):
-    # Get categories and languages from API
-
-    # Get All Categories
-    languages = Language.objects.filter(is_enabled=True)
-    if memcache.get('category_array') is not None:
-        category_array = memcache.get('category_array')
-    else:
-        categories = Category.objects.all()
-        pages = Page.objects.all()
-        category_array = []
-        for category in categories:
-            if category.parent is not None:
-                parent_id = category.parent.id
-            else:
-                parent_id = None
-            if category.language is None:
-                language_code = 'en'
-            else:
-                language_code = category.language.code
-            page_array = []
-            for page in pages:
-                    if page.category.id == category.id:
-                        headline = (page.content[:80] + '..') if len(page.content) > 80 else page.content
-                        page_array.append({'id': page.id, 'slug': page.slug, 'title': page.title, 'headline': headline})
-            category_array.append({'id': category.id, 'name': category.name, 'slug': category.slug, 'language_code': language_code, 'parent_id': parent_id, 'page_array': page_array, 'page_count': len(page_array)})
-        memcache.add('category_array', category_array)
-    return {'categories': category_array, 'languages': languages, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
+    # Get Request Language
+    request_language = get_request_language(request)["request_language"]
+    # Get Languages
+    languages = query_api(request_language, 'languages')["languages"]
+    # Get Categories
+    categories = query_api(request_language, 'categories')["categories"]
+    return {'categories': categories, 'languages': languages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
 def is_logged_in(request):
@@ -50,7 +29,7 @@ def is_admin(request):
     return {'is_admin': False}
 
 # ...
-def request_language(request,language='en'):
+def get_request_language(request):
     language_code = str(request.path)[1:3]
     if language_code in ('en','es','fr','de','pt','ru','iw','zh'):
         return {'request_language': language_code}

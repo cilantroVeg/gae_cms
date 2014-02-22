@@ -67,7 +67,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'pages.context_processors.categories',
     'pages.context_processors.is_logged_in',
     'pages.context_processors.is_admin',
-    'pages.context_processors.request_language',
     'social.apps.django_app.context_processors.backends',
     'social.apps.django_app.context_processors.login_redirect',
 )
@@ -155,6 +154,26 @@ APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'musicmatch777'
 #APP_NAME = 'yiyask7'
+
+if True:
+    SITE_URL = 'http://127.0.0.1:8000'
+elif APP_NAME == 'interpegasus-cms':
+    SITE_URL = 'http://www.magicangel.org'
+elif APP_NAME == 'interpegasuslove':
+    SITE_URL = 'http://www.interpegasus.com'
+elif APP_NAME == 'happy-planet':
+    SITE_URL = 'http://www.nrwl.org'
+elif APP_NAME == 'arturopegasus7':
+    SITE_URL = 'http://arturo.interpegasus.com'
+elif APP_NAME == 'arturoportfolio7':
+    SITE_URL = 'http://portfolio.interpegasus.com'
+elif APP_NAME == 'bible-love':
+    SITE_URL = 'http://bible-love.appspot.com'
+elif APP_NAME == 'musicmatch777':
+    SITE_URL = 'http://musicmatch777.appspot.com'
+elif APP_NAME == 'yiyask7':
+    SITE_URL = 'http://www.yiyask.com'
+
 
 # templates
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
