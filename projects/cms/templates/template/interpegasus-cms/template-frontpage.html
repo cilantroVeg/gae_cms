@@ -47,14 +47,13 @@
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
                     <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
-                    {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                        {% if  main_category.language_code == request_language %}
-                            <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
+                    {% for c in categories.categories %}
+                        {% if c.parent == None %}
+                            <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
                         {% endif %}
-                    {% endif %} {% endif %} {% endfor %}
-                    {% if is_logged_in %}
-                    {% else %}
-                        <li><a href = "#enter">Log in</a></li>
+                    {% endfor %}
+                    {% if is_logged_in == False %}
+                        <li><a href = "#enter">Log in - Register</a></li>
                     {% endif %}
                     <li><a href = "#contact">Contact Us</a></li>
                 </ul>

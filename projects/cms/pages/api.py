@@ -128,6 +128,5 @@ def query_api(language_code, api_request, extra_parameters={}):
 
 def build_url(language_code, api_request, extra_parameters):
     url = str(settings.SITE_URL) + '/api/' + str(language_code) + '/' + api_request + '?access_token=' + settings.API_ACCESS_TOKEN
-    for k, v in extra_parameters.iteritems():
-        url = url + '&' + urllib.urlencode(k) + '=' + urllib.urlencode(v)
+    url = url + '&' + urllib.urlencode(extra_parameters)
     return url
