@@ -47,7 +47,7 @@
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
                     <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
-                    {% for c in categories.categories %}
+                    {% for c in categories %}
                         {% if c.parent == None %}
                             <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
                         {% endif %}

@@ -1,5 +1,6 @@
 {% for main_category in categories %}
-    {% if main_category.parent_id == None %}
+    {% if main_category.parent == None %}
+        <h1>{{  main_category.name }} - Cool</h1>
         <div id = "{{main_category.slug}}" class = "{% cycle 'section' 'section section-alt'%}">
             <div class = "container">
                 <h1>{{main_category.name}}</h1>

@@ -155,7 +155,7 @@ APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'musicmatch777'
 #APP_NAME = 'yiyask7'
 
-if False:
+if True:
     SITE_URL = 'http://127.0.0.1:8000'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'

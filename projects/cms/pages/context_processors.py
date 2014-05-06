@@ -11,15 +11,11 @@ def categories(request):
     # Get Categories
     categories = query_api(request_language, 'categories')
     pages = []
-    # import pprint
-    # pprint.pprint("DEBUG:")
-    # pprint.pprint(categories)
-    # exit(1)
-    # for c in categories:
-    #     if c.parent == None:
-    #         pages_in_c = query_api(request_language, 'pages', {'category_slug': c.slug})
-    #         pages.append(pages_in_c)
-    return {'categories': categories,  'languages': languages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
+    for c in categories["categories"]:
+        if c["parent"] is None:
+            pages_in_c = query_api(request_language, 'pages', {'category_slug': c["slug"]})
+            pages.append(pages_in_c)
+    return {'categories': categories["categories"],  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
 def is_logged_in(request):
