@@ -48,6 +48,7 @@ def category_formset(request):
     else:
         return redirect('/', False)
 
+
 # ...
 def category_list(request):
     if is_admin(request)['is_admin']:

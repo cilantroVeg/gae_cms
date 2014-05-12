@@ -5,16 +5,18 @@ from django.conf import settings
 # ...
 def categories(request):
     # Get Request Language
-    request_language = 'en'#get_request_language(request)["request_language"]
+    request_language = get_request_language(request)["request_language"]
     # Get Languages
     languages = query_api(request_language, 'languages')
     # Get Categories
     categories = query_api(request_language, 'categories')
-    pages = []
     for c in categories["categories"]:
+        pages = []
         if c["parent"] is None:
             pages_in_c = query_api(request_language, 'pages', {'category_slug': c["slug"]})
-            pages.append(pages_in_c)
+            for p in pages_in_c["pages"]:
+                pages.append(p)
+            c["page_array"] = pages
     return {'categories': categories["categories"],  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
