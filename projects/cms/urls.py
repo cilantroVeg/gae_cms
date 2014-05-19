@@ -71,7 +71,7 @@ urlpatterns = patterns('',
 
     # sitemap
     url(r'^sitemap/', 'pages.views.sitemap'),
-    
+
     # users
     url(r'^user/new/$', 'users.views.user_form'),
     url(r'^user/edit/(?P<id>\d+)/$', 'users.views.user_form'),

@@ -7,9 +7,10 @@ def categories(request):
     # Get Request Language
     request_language = get_request_language(request)["request_language"]
     # Get Languages
-    languages = query_api(request_language, 'languages')
+    languages =  query_api(request_language, 'languages')
     # Get Categories
     categories = query_api(request_language, 'categories')
+    pages = []
     for c in categories["categories"]:
         pages = []
         if c["parent"] is None:

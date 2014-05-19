@@ -357,7 +357,7 @@ def page_api(request):
 
 # ...
 def sitemap(request):
-    return render_to_response("pages/sitemap.html", {"language_list": Language.objects.all()},
+    return render_to_response("pages/sitemap.html", {},
                               context_instance=RequestContext(request))
 
 # ...

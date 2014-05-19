@@ -16,13 +16,13 @@
         {% endif %}
     {% endfor %}
     <div class="footer-category">Site map</div>
-    <div > <a href = "/sitemap">Site map</a></div>
+    <div ><a href = "/sitemap">Site map</a></div>
 </div>
 
 <div id = "copyright">
     <div id="languages">
-        {% for language in languages %}
-            <a href="/{{ language.code }}">{{ language.name }}</a>&nbsp;
+        {% for language in languages.languages %}
+            <a href ="/{{ language.code }}">{{ language.name }}</a>&nbsp;|&nbsp;
         {% endfor %}
     </div>
     <ul>

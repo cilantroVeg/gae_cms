@@ -2,34 +2,29 @@
 
 {% block title %}Site Map{% endblock %}
 {% block content %}
-<div id="sitemap">
-    {% for language in language_list %}
-    <div>
-        <h2>{{language.name}}</h2>
+    <div id="sitemap">
         {% for main_category in categories %}
-            {% if main_category.name != 'Root' %}
-                {% if main_category.parent_id == 1 and main_category.language_code == language.code and language.is_enabled %}
-                    <div>
-                        <h5><a href = "/{{main_category.language_code}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></h5>
-                    </div>
+            {% if main_category.parent == None %}
+                <div>
+                    <h4><a href = "/{{main_category.language}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></h4>
                     {% for page in main_category.page_array %}
-                        <div>
-                            <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
-                        </div>
+                        <div><a href ="/{{main_category.language}}/{{page.slug}}">{{ page.title }}</a></div>
                     {% endfor %}
                     {% for sub_category in categories %}
                         {% if sub_category.parent_id == main_category.id %}
-                        <div>
-                            <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
-                        </div>
+                            <div> <a href ="/{{main_category.language}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a></div>
+                            {% for page in sub_category.page_array %}
+                                <div><a href ="/{{main_category.language}}/{{page.slug}}">{{ page.title }}</a></div>
+                            {% endfor %}
                         {% endif %}
                     {% endfor %}
-                    <br />
-                {% endif %}
+                </div>
             {% endif %}
         {% endfor %}
     </div>
-
+    <div id="language_list">
+    {% for language in languages.languages %}
+        <a href ="/{{ language.code }}">{{ language.name }}</a>&nbsp;|&nbsp;
     {% endfor %}
-</div>
+    </div>
 {% endblock %}
