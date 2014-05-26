@@ -11,14 +11,16 @@ def categories(request):
     # Get Categories
     categories = query_api(request_language, 'categories')
     pages = []
-    for c in categories["categories"]:
-        pages = []
-        if c["parent"] is None:
-            pages_in_c = query_api(request_language, 'pages', {'category_slug': c["slug"]})
-            for p in pages_in_c["pages"]:
-                pages.append(p)
-            c["page_array"] = pages
-    return {'categories': categories["categories"],  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
+    if categories:
+        for c in categories["categories"]:
+            pages = []
+            if c["parent"] is None:
+                pages_in_c = query_api(request_language, 'pages', {'category_slug': c["slug"]})
+                for p in pages_in_c["pages"]:
+                    pages.append(p)
+                c["page_array"] = pages
+        categories = categories["categories"]
+    return {'categories': categories,  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
 def is_logged_in(request):

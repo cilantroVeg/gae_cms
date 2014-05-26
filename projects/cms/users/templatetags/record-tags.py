@@ -16,7 +16,10 @@ def get_record(key, language='en'):
             l = Language.objects.get(code=language)
             return Record.objects.get(key=key, language=l).value
     finally:
-        return Record.objects.get(key=key).value
+        try:
+            return Record.objects.get(key=key).value
+        finally:
+            return None
 
 
 
