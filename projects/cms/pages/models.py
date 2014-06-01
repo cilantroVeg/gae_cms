@@ -210,6 +210,32 @@ class Record(models.Model):
         unique_together = ("key", "language")
 
 # ...
+class ExternalRecordType(models.Model):
+    id = models.AutoField(primary_key=True)
+    source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    source_type_logo = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    language = models.ForeignKey(Language, null=True, blank=True)
+    save_to_db = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now=True)
+
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.source_type )
+
+    # ...
+    class Meta:
+        unique_together = ("source_type", "language")
+
+    # ...
+class ExternalRecord(models.Model):
+    id = models.AutoField(primary_key=True)
+    external_record_type = models.ForeignKey(ExternalRecordType, null=False, blank=False)
+    title = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    text = models.TextField(null=False, blank=False)
+    media_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    created_at = models.DateTimeField(auto_now=True)
+
+# ...
 class ContactForm(forms.Form):
     contact_email = forms.EmailField()
     contact_name = forms.CharField(max_length=100)

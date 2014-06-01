@@ -6,12 +6,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Django Lib" level="project" />
   </component>
-  <component name="PyDocumentationSettings">
-    <option name="myDocStringFormat" value="Plain" />
-  </component>
-  <component name="TestRunnerService">
-    <option name="projectConfiguration" value="Nosetests" />
-    <option name="PROJECT_TEST_RUNNER" value="Nosetests" />
-  </component>
 </module>
 
