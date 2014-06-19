@@ -35,3 +35,38 @@ def get_youtube_data(request):
 
 def get_wiki_data(request):
     return True
+
+def bible_user_select_language(request):
+    # List Languages
+    # http://dbt.io/library/volumelanguagefamily?key=DBT_KEY=audio&v=2
+    return True
+
+def bible_user_select_bible(request):
+    # List Bibles
+    # http://dbt.io/library/volume?key=DBT_KEY=audio&language_family_code=ENG&v=2
+    return True
+
+def bible_get_text():
+    # User Select Text
+    # http://dbt.io/text/verse?key={API-Key}&dam_id=ENGESVN2ET&book_id=Matt&chapter_id=3&v=2
+    return True
+
+def bible_get_audio(request):
+    # List books
+    # http://dbt.io/library/book?key={API-Key}&dam_id=ENGESV&v=2
+    # Location
+    # http://dbt.io/audio/location?key={API-Key}&v=2
+    # Get Audio Path
+    # http://dbt.io/audio/path?key={API-Key}&dam_id=ENGESVN2DA&book_id=Matt&chapter_id=3&v=2
+    return True
+
+
+def bible_get_coyright():
+    # Copyright
+    # http://dbt.io/library/metadata?key={API-Key}&dam_id=ENGESVN2DA&v=2
+    return True
+
+    
+
+
+
