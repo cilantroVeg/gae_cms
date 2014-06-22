@@ -1,12 +1,14 @@
 {% load record-tags %}
 <!DOCTYPE HTML>
 <html lang="en">
+
+
 <head>
     <meta charset="utf-8">
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <title>InterPegasus - Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
-    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <!-- Styles -->
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/style.css" rel="stylesheet">
@@ -17,7 +19,28 @@
     <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    {% block js %}{% endblock %}
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --><!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- JQuery -->
+    <link rel = "stylesheet" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.js"></script>
+    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
+
+
+<link rel = "stylesheet" type = "text/css" href = "{{ STATIC_URL }}javascript/flex/flexslider.css" media = "all"/>
+<script type="text/javascript" src="{{ STATIC_URL }}javascript/flex/jquery.flexslider-min.js"></script>
+
 </head>
 <body>
 {% include "layout/add_this.html" %}
