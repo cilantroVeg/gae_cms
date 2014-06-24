@@ -1,10 +1,11 @@
 {% load record-tags %}
-
 <!DOCTYPE HTML>
 <html lang="en">
+
+
 <head>
     <meta charset="utf-8">
-    <title>InterPegasus - {% block title %}{% endblock %}</title>
+    <title>InterPegasus - Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -35,18 +36,16 @@
     <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
     <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
-    <!-- prettyPhoto Initialization -->
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function () {
-            $("a[rel^='prettyPhoto']").prettyPhoto();
-        });
-    </script>
-    {% block js %}{% endblock %}
+
+
+<link rel = "stylesheet" type = "text/css" href = "{{ STATIC_URL }}javascript/flex/flexslider.css" media = "all"/>
+<script type="text/javascript" src="{{ STATIC_URL }}javascript/flex/jquery.flexslider-min.js"></script>
+
 </head>
 <body>
-{% include "layout/admin.html" %}
-
+{% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
+
 <!--******************** NAVBAR ********************-->
 <div class="navbar-wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -55,7 +54,7 @@
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
 
-                <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/www.interpegasus.com.com/www.interpegasus.com-logo.png"/></a></h1>
+                <h1 class="brand"><a href="#top"><img src="{{ STATIC_URL }}images/pegasus.png"/></a></h1>
                 <div id = "top-social-container">
                     <div id="add-this">
                         {% include "layout/add_this.html" %}
@@ -93,6 +92,7 @@
         <h2>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</h2>
     </header>
 </div>
+{% include "layout/one_page_sections.html" %}
 <!--******************** Feature ********************-->
 <div class="scrollblock">
     <section id="feature">
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="span12">
                     <article>
-                       <div>{% block content %}{% endblock %}</div>
+                        <h2>{{ 'WEBSITE_DESCRIPTION_SLOGAN'|get_record:request_language}}</h2>
                     </article>
                 </div>
                 <!-- ./span12 -->
@@ -268,20 +268,21 @@
         <h1>Meet the team</h1>
         <!-- Five columns -->
         <div class="row">
-            <div class="span2 offset1">
-                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""></div>
-                <h3>Arturo</h3>
+            <div class="span2">
+                </div>
 
-                <div class="job-position">CEO</div>
-            </div>
             <!-- ./span2 -->
             <div class="span2">
-                <div class="teamalign"><img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""></div>
+                <div class="teamalign"><img class="team-thumb img-circle" src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/rose.jpg" alt="Rose"></div>
                 <h3>Rose</h3>
-
                 <div class="job-position">CTO</div>
             </div>
             <!-- ./span2 -->
+            <div class="span2 offset1">
+                <div class="teamalign"><img class="team-thumb img-circle" src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/arturo.jpg" alt="Arturo"></div>
+                <h3>Arturo</h3>
+                <div class="job-position">CEO</div>
+            </div>
         </div>
         <!-- /.row -->
         <div class="row">
@@ -348,25 +349,25 @@
             </div>
             <div id = "footer-categories">
                 {% for main_category in categories %}
-                {% if main_category.name != 'Root' %}
+                    {% if main_category.name != 'Root' %}
 
-                {% if main_category.parent_id == 1 %}
-                <div class = "footer-div">
-                    <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
-                    {% for page in main_category.page_array %}
-                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
-                    <br/>
-                    {% endfor %}
-                    {% for sub_category in categories %}
-                    {% if sub_category.parent_id == main_category.id %}
-                    <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
-                    <br/>
+                        {% if main_category.parent_id == 1 %}
+                            <div class = "footer-div">
+                                <a href = "/{{main_category.language_code}}/c/{{main_category.slug}}"><h4>{{ main_category.name }}</h4></a>
+                                {% for page in main_category.page_array %}
+                                    <a href ="/{{main_category.language_code}}/{{page.slug}}">{{ page.title }}</a>
+                                    <br/>
+                                {% endfor %}
+                                {% for sub_category in categories %}
+                                    {% if sub_category.parent_id == main_category.id %}
+                                        <a href ="/{{main_category.language_code}}/c/{{sub_category.slug}}">{{ sub_category.name }}</a>
+                                        <br/>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
                     {% endif %}
-                    {% endfor %}
-                </div>
-                {% endif %}
-
-                {% endif %}
                 {% endfor %}
                 <div class = "footer-div">
                     <h4>Site map</h4>
@@ -374,12 +375,9 @@
                 </div>
             </div>
             <div id = "copyright">
-                <ul>
-                    <li><a href = "https://appengine.google.com/" class = "google_app_engine_icon"></a></li>
-                    <li><a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record:request_language}}</b></a></li>
-                    <li><a href = "http://www.interpegasus.com" class = "interpegasus_icon"></a></li>
-                </ul>
+                    <a href = "https://www.magicangel.org"><b>&copy; {% now "Y" %} {{ 'WEBSITE_NAME'|get_record:request_language}}</b></a>
             </div>
+        {% include "layout/admin_no_css.html" %}
         </footer>
     </div>
     <!-- ./container -->
