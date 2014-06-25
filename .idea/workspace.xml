@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/app.yaml" afterPath="$PROJECT_DIR$/projects/cms/app.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -28,54 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1733" max-vertical-offset="2955">
-              <caret line="151" column="26" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="26" />
+            <state vertical-scroll-proportion="3.5724235" vertical-offset="0" max-vertical-offset="2655">
+              <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
-              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="1020" max-vertical-offset="6195">
-              <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.25" vertical-offset="777" max-vertical-offset="1515">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.875" vertical-offset="57" max-vertical-offset="6180">
-              <caret line="10" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +58,10 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-page.html" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html" />
       </list>
     </option>
   </component>
@@ -246,7 +206,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasuslove" />
+              <option name="myItemId" value="arturopegasus7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,15 +228,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpegasus-cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,7 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -306,7 +262,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="happy-planet" />
+              <option name="myItemId" value="arturo.interpegasus.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,6 +303,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/cms/static/template/arturo.interpegasus.com" />
       <recent name="$PROJECT_DIR$/projects/cms/static/template/www.interpegasus.com/img/team" />
     </key>
   </component>
@@ -519,7 +498,11 @@
       <created>1403464167110</created>
       <updated>1403464167110</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TEMPLATES OK">
+      <created>1403652905515</created>
+      <updated>1403652905515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -565,7 +548,8 @@
     <MESSAGE value="IP Footer" />
     <MESSAGE value="Bible API" />
     <MESSAGE value="IP" />
-    <option name="LAST_COMMIT_MESSAGE" value="IP" />
+    <MESSAGE value="TEMPLATES OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEMPLATES OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,18 +676,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1733" max-vertical-offset="2955">
-          <caret line="151" column="26" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1733" max-vertical-offset="2970">
+          <caret line="154" column="21" selection-start-line="154" selection-start-column="21" selection-end-line="154" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/arturo.interpegasus.com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="2565">
+          <caret line="19" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.607595" vertical-offset="0" max-vertical-offset="2655">
+          <caret line="19" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/arturopegasus7/template-frontpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5724235" vertical-offset="0" max-vertical-offset="2655">
+          <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
           <folding />
         </state>
       </provider>
