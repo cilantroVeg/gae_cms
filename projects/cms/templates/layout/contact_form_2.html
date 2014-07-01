@@ -1,0 +1,21 @@
+<script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
+<div><h1>Contact Us</h1></div>
+<div class = "half">
+    <form id="contact_form" name="contact_form" method = "post" action = "/contact/" class = "form contact-form">
+        {% csrf_token %}
+        <fieldset>
+            <h2>Contact Form</h2>
+            <input type = "text" name = "contact_name" id = "contact-name" placeholder = "Your name ..."/>
+
+            <input type = "text" name = "contact_email" id = "contact-email" placeholder = "Your Email ..."/>
+
+            <textarea cols = "20" name = "contact_comment" id = "contact-comment" rows = "4" placeholder = "Your Comment ..."></textarea>
+
+            <button class = "btn btn-inverse">
+                <span>Send Message</span>
+            </button>
+
+        </fieldset>
+    </form>
+</div>
