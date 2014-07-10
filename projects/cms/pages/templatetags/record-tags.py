@@ -4,20 +4,23 @@
 ################
 
 from django.template import Library
-from pages.models import Record
+from pages.models import Record, Language
 
 register = Library()
 
 
 @register.filter
-def get_record(key, language=None):
-    try:
-        if language is None:
-            return Record.objects.get(key=key).value
-        else:
-            return Record.objects.get(key=key, language_id=language.id).value
-    except:
-        return 'Key ' + key + ' Not Found'
+def get_record(key, language='en'):
+    if language:
+        l = Language.objects.get(code=language)
+        if l:
+            record = Record.objects.filter(key=key, language=l)
+    else:
+        record = Record.objects.filter(key=key)[0].value
+    if record:
+        return record[0].value
+    else:
+        return None
 
 
 @register.filter
