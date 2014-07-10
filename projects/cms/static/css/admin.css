@@ -8,6 +8,7 @@
     background: transparent;
     float: left;
     display: none;
+    z-index: 10000;
 }
 #menu-tab {
     margin-top: 220px;
@@ -48,6 +49,7 @@
     color: #222222;
     background-image: url(/static/images/handle-bg.png);
     background-repeat: no-repeat;
+    z-index: 10000;
 }
 
 a:hover,a:focus,a{

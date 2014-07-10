@@ -1,4 +1,4 @@
-(function ($) {
+$(document).ready(function(){
     $("#menu-tab").click(function(){
         if ($("#menu-container").is(':visible')){
             $("#menu-tab").css("marginLeft", "200").animate({
