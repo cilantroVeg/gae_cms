@@ -64,7 +64,8 @@ def category_delete(request, id=None):
         return redirect('/categories/')
     else:
         return redirect('/', False)
-
+    
+    
 # ...
 def language_form(request, id=None):
     if is_admin(request)['is_admin']:
@@ -168,7 +169,63 @@ def record_delete(request, id=None):
         return redirect('/records/')
     else:
         return redirect('/', False)
+    
+    
+# ...
+def feed_archive_form(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(FeedArchive, id=id) if id is not None else None
+        form = FeedArchiveForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/feed_archives/')
+        return render_to_response("pages/feed_archive_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
 
+# ...
+def feed_archive_list(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/feed_archive_list.html", {"feed_archive_list": FeedArchive.objects.all()}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def feed_archive_delete(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(FeedArchive, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/feed_archives/')
+    else:
+        return redirect('/', False)
+
+# ...
+def feed_source_form(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(FeedSource, id=id) if id is not None else None
+        form = FeedSourceForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/feed_sources/')
+        return render_to_response("pages/feed_source_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def feed_source_list(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/feed_source_list.html", {"feed_source_list": FeedSource.objects.all()}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def feed_source_delete(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(FeedSource, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/feed_sources/')
+    else:
+        return redirect('/', False)
 
 def get_category_tree(request):
     return True
