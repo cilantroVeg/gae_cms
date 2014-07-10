@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-
     <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
     <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
     <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
@@ -17,7 +16,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.min.js"></script>
     <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.easing.min.js"></script>
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.scrollto.min.js"></script>
     <script src="{{ STATIC_URL }}template/www.magicangel.org/js/slabtext.min.js"></script>
@@ -37,23 +35,23 @@
             <h2 id="logo"><a href="/{{request_language}}">Magic Angel <span class="highlight">Foundation</span></a></h2>
             <div id="header-enter">
                 {% if is_logged_in %}
-                    <ul>
-                        <li>Welcome {{request.user.first_name}}</li>
-                        <li>|</li>
-                        <li><a id = "header_login" href = "/exit">Log out</a></li>
-                    </ul>
+                <ul>
+                    <li>Welcome {{request.user.first_name}}</li>
+                    <li>|</li>
+                    <li><a id = "header_login" href = "/exit">Log out</a></li>
+                </ul>
                 {% endif %}
             </div>
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
                     <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
                     {% for c in categories %}
-                        {% if c.parent == None %}
-                            <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
-                        {% endif %}
+                    {% if c.parent == None %}
+                    <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
+                    {% endif %}
                     {% endfor %}
                     {% if is_logged_in == False %}
-                        <li><a href = "#enter">Log in - Register</a></li>
+                    <li><a href = "#enter">Log in - Register</a></li>
                     {% endif %}
                     <li><a href = "#contact">Contact Us</a></li>
                 </ul>
@@ -77,11 +75,11 @@
 
 {% if is_logged_in %}
 {% else %}
-    <div class="section" id="enter" >
-        <div class="container">
-            {% include "layout/login_form.html" %}
-        </div>
+<div class="section" id="enter" >
+    <div class="container">
+        {% include "layout/login_form.html" %}
     </div>
+</div>
 {% endif %}
 <div class="section section-alt" id="contact" >
     <div class="container">
