@@ -146,8 +146,8 @@ SOCIAL_AUTH_PIPELINE = (
 LOGIN_REDIRECT_URL = '/'
 
 # apps
-APP_NAME = 'interpegasus-cms'
-#APP_NAME = 'interpegasuslove'
+#APP_NAME = 'interpegasus-cms'
+APP_NAME = 'interpegasuslove'
 #APP_NAME = 'happy-planet'
 #APP_NAME = 'arturopegasus7'
 #APP_NAME = 'arturoportfolio7'

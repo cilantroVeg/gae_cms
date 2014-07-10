@@ -107,6 +107,16 @@
 
 }
 
+.pegasus_icon{
+    background-image: url('/static/images/icons/social_icons.png');
+    background-repeat: no-repeat;
+    background-position: -160px -6px;
+    height: 45px;
+    width: 40px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
 /* LABEL */
 label.error{
     color: red;
