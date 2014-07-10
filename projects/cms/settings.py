@@ -191,4 +191,5 @@ elif APP_NAME == 'yiyask7':
 # templates
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'
 TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
+ADMIN_PAGE = 'template/'+APP_NAME+'/template-admin.html'
 TEMPLATE_API = 'template/template-api.html'

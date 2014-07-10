@@ -20,7 +20,7 @@ def categories(request):
                     pages.append(p)
                 c["page_array"] = pages
         categories = categories["categories"]
-    return {'categories': categories,  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE, 'api_page': settings.TEMPLATE_API}
+    return {'categories': categories,  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE,'template_admin': settings.ADMIN_PAGE, 'api_page': settings.TEMPLATE_API}
 
 # ...
 def is_logged_in(request):

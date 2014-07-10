@@ -44,15 +44,7 @@
             </div>
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
-                    {% for c in categories %}
-                    {% if c.parent == None %}
-                    <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                    {% if is_logged_in == False %}
-                    <li><a href = "#enter">Log in - Register</a></li>
-                    {% endif %}
-                    <li><a href = "#contact">Contact Us</a></li>
+                    <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
                 </ul>
             </div>
         </div>
@@ -60,29 +52,11 @@
 </div>
 <!-- End Header -->
 <!-- Big Full screen Banner -->
-<div class="hero bg-fixed bg-color" id="home">
+<div class="hero bg-fixed" id="home">
     <div class="slogan">
         <div class = "center">
-            <h1>{{ 'WEBSITE_NAME'|get_record:request_language}}</h1>
             <div>{% block content %}{% endblock %}</div>
-            <strong class = "sub_heading">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</strong>
         </div>
-    </div>
-</div>
-
-{% include "layout/one_page_sections.html" %}
-
-{% if is_logged_in %}
-{% else %}
-<div class="section" id="enter" >
-    <div class="container">
-        {% include "layout/login_form.html" %}
-    </div>
-</div>
-{% endif %}
-<div class="section section-alt" id="contact" >
-    <div class="container">
-        {% include "layout/contact_form.html" %}
     </div>
 </div>
 <footer id="footer">
