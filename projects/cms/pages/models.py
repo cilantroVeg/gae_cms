@@ -184,17 +184,6 @@ class Image(models.Model):
 
 
 # ...
-class Ingredients(models.Model):
-    id = models.AutoField(primary_key=True)
-    page = models.ForeignKey(Page, null=False, blank=False)
-    list = models.TextField(null=False, blank=False)
-    created_at = models.DateTimeField(auto_now=True)
-    # ...
-    def __unicode__(self):
-        return u'%s' % (self.key )
-
-
-# ...
 class Record(models.Model):
     id = models.AutoField(primary_key=True)
     key = models.CharField(max_length=64, null=False, blank=False, unique=False)
@@ -210,10 +199,11 @@ class Record(models.Model):
         unique_together = ("key", "language")
 
 # ...
-class ExternalRecordType(models.Model):
+class FeedSource(models.Model):
     id = models.AutoField(primary_key=True)
-    source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    source_type_logo = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    feed_source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    feed_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    logo_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
     language = models.ForeignKey(Language, null=True, blank=True)
     save_to_db = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
@@ -227,12 +217,14 @@ class ExternalRecordType(models.Model):
         unique_together = ("source_type", "language")
 
     # ...
-class ExternalRecord(models.Model):
+class FeedArchive(models.Model):
     id = models.AutoField(primary_key=True)
-    external_record_type = models.ForeignKey(ExternalRecordType, null=False, blank=False)
+    feed_source = models.ForeignKey(FeedSource, null=False, blank=False)
     title = models.CharField(max_length=64, null=False, blank=False, unique=False)
     text = models.TextField(null=False, blank=False)
-    media_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    image_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    video_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    audio_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
     created_at = models.DateTimeField(auto_now=True)
 
 # ...

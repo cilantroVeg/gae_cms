@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/style.css" rel="stylesheet">
-    <link rel='stylesheet' id='prettyphoto-css' href="{{ STATIC_URL }}template/www.interpegasus.com/css/prettyPhoto.css" type='text/css' media='all'>
+    <link rel='stylesheet' id='prettyphoto-css' href="{{ STATIC_URL }}template/www.interpegasus.com/css/prettyPhoto.css"
+          type='text/css' media='all'>
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" type="text/css" rel="stylesheet">
     <!--[if lt IE 7]>
-    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello-ie7.css" type="text/css" rel="stylesheet"><![endif]--><!-- Google Web fonts -->
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello-ie7.css" type="text/css" rel="stylesheet">
+    <![endif]--><!-- Google Web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -23,14 +25,17 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- JQuery -->
-    <link rel = "stylesheet" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css">
     <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.js"></script>
-    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <!-- Load ScrollTo -->
-    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript"
+            src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
-    <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "{{ STATIC_URL }}javascript/flex/flexslider.css" media = "all"/>
+    <script type="text/javascript"
+            src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}javascript/flex/flexslider.css" media="all"/>
     <script type="text/javascript" src="{{ STATIC_URL }}javascript/flex/jquery.flexslider-min.js"></script>
 </head>
 <body>
@@ -43,11 +48,11 @@
         <div class="navbar-inner">
             <div class="container">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                <div id = "top-social-container">
+                <div id="top-social-container">
                     <div id="add-this">
                         {% include "layout/add_this.html" %}
                     </div>
-                    <div id = "social">
+                    <div id="social">
                         {% include "layout/social_login.html" %}
                     </div>
 
@@ -77,7 +82,8 @@
 <!-- ******************** HeaderWrap ********************-->
 <div id="headerwrap">
     <header class="clearfix">
-        <h1><span>{{ 'WEBSITE_NAME'|get_record:request_language}}</span> </h1>
+        <h1><span>{{ 'WEBSITE_NAME'|get_record:request_language}}</span></h1>
+
         <h2>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</h2>
     </header>
 </div>
@@ -106,13 +112,15 @@
 
         <div class="row">
             <div class="span4">
-                <div class="mask2"><a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg" alt=""></a></div>
+                <div class="mask2"><a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg"
+                                                                                         alt=""></a></div>
                 <div class="inside">
                     <hgroup>
                         <h2>InterPegasus CMS 2014</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>InterPegasus CMS is a content management tool that takes the web to the next level. It is designed to run on Google App Engine.</p>
+                        <p>InterPegasus CMS is a content management tool that takes the web to the next level. It is
+                            designed to run on Google App Engine.</p>
                         <a class="more-link" href="https://github.com/interpegasus/gae_cms">view project</a>
                     </div>
                 </div>
@@ -120,26 +128,30 @@
             </div>
             <!-- /.span4 -->
             <div class="span4">
-                <div class="mask2"><a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg" alt=""></a></div>
+                <div class="mask2"><a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg"
+                                                                                         alt=""></a></div>
                 <div class="inside">
                     <hgroup>
                         <h2>InterPegasus CMS - PHP Version</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>Interpegasus CMS PHP version is a complete content management system designed to run in a PHP and Linux environemnt.</p>
+                        <p>Interpegasus CMS PHP version is a complete content management system designed to run in a PHP
+                            and Linux environemnt.</p>
                         <a class="more-link" href="https://github.com/interpegasus/cms">view project</a></div>
                 </div>
                 <!-- /.inside -->
             </div>
             <!-- /.span4 -->
             <div class="span4">
-                <div class="mask2"><a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg" alt=""></a></div>
+                <div class="mask2"><a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg"
+                                                                                         alt=""></a></div>
                 <div class="inside">
                     <hgroup>
                         <h2>Development</h2>
                     </hgroup>
                     <div class="entry-content">
-                        <p>Interpegasus can deliver projects for the web, iOS and Android platforms. Please contact us to discuss the details about your project.</p>
+                        <p>Interpegasus can deliver projects for the web, iOS and Android platforms. Please contact us
+                            to discuss the details about your project.</p>
                         <a class="more-link" href="#">view project</a></div>
                 </div>
                 <!-- /.inside -->
@@ -171,7 +183,8 @@
                 <div class="align"><i class="icon-vector sev_icon"></i></div>
                 <h2>Web Development</h2>
 
-                <p>InterPegasus has expertise delivering web applications on the cloud, including Aamazon Web Services and Heroku. We have expertise on Ruby on Rails, Python and PHP mostly.</p>
+                <p>InterPegasus has expertise delivering web applications on the cloud, including Aamazon Web Services
+                    and Heroku. We have expertise on Ruby on Rails, Python and PHP mostly.</p>
             </div>
             <!-- /.span3 -->
             <div class="span3">
@@ -208,7 +221,8 @@
                     <h2>A girl running on a road</h2>
 
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
                         <a href="#" class="more-link">read more</a></div>
                 </div>
                 <!-- /.inside -->
@@ -222,7 +236,8 @@
                     <h2>A bear sleeping on a tree</h2>
 
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
                         <a href="#" class="more-link">read more</a></div>
                 </div>
                 <!-- /.inside -->
@@ -236,7 +251,8 @@
                     <h2>A Panda playing with his baby</h2>
 
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
                         <a href="#" class="more-link">read more</a></div>
                 </div>
                 <!-- /.inside -->
@@ -259,14 +275,20 @@
 
             <!-- ./span2 -->
             <div class="span2">
-                <div class="teamalign"><img class="team-thumb img-circle" src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/rose.jpg" alt="Rose"></div>
+                <div class="teamalign"><img class="team-thumb img-circle"
+                                            src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/rose.jpg"
+                                            alt="Rose"></div>
                 <h3>Rose</h3>
+
                 <div class="job-position">CTO</div>
             </div>
             <!-- ./span2 -->
             <div class="span2 offset1">
-                <div class="teamalign"><img class="team-thumb img-circle" src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/arturo.jpg" alt="Arturo"></div>
+                <div class="teamalign"><img class="team-thumb img-circle"
+                                            src="{{ STATIC_URL }}template/www.interpegasus.com/img/team/arturo.jpg"
+                                            alt="Arturo"></div>
                 <h3>Arturo</h3>
+
                 <div class="job-position">CEO</div>
             </div>
         </div>
@@ -275,7 +297,9 @@
             <div class="span10 offset1">
                 <hr class="featurette-divider">
                 <div class="featurette">
-                    <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span></h2>
+                    <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span>
+                    </h2>
+
                     <p>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</p>
                 </div>
                 <!-- /.featurette -->
@@ -300,15 +324,18 @@
                         {% csrf_token %}
                         <div class="row">
                             <div class="span6"> <span class="your-name">
-                    <input type="text" name="contact_name" id="contact-name" placeholder="Your name ..." title="Your name ..." size="40" class="cform-text"/>
+                    <input type="text" name="contact_name" id="contact-name" placeholder="Your name ..."
+                           title="Your name ..." size="40" class="cform-text"/>
                     </span></div>
                             <div class="span6"> <span class="your-email">
-                      <input type="text" name="contact_email" id="contact-email" placeholder="Your Email ..." title="Your Email ..." class="cform-text"/>
+                      <input type="text" name="contact_email" id="contact-email" placeholder="Your Email ..."
+                             title="Your Email ..." class="cform-text"/>
                     </span></div>
                         </div>
                         <div class="row">
                             <div class="span12"> <span class="message">
-                    <textarea class="cform-textarea" cols="20" name="contact_comment" id="contact-comment" rows="4" placeholder="Your Comment ..." title="Your Comment ..."></textarea>
+                    <textarea class="cform-textarea" cols="20" name="contact_comment" id="contact-comment" rows="4"
+                              placeholder="Your Comment ..." title="Your Comment ..."></textarea>
                     </span></div>
                         </div>
                         <div>
@@ -325,12 +352,12 @@
     <!-- /.container -->
 </section>
 <div class="footer-wrapper">
-        <footer id="footer">
+    <footer id="footer">
         <div class="container">
-        {% include "layout/footer.html" %}
-        {% include "layout/analytics.html" %}
+            {% include "layout/footer.html" %}
+            {% include "layout/analytics.html" %}
         </div>
-        </footer>
+    </footer>
 </div>
 <!-- Loading the javaScript at the end of the page -->
 <script type="text/javascript" src="{{ STATIC_URL }}template/www.interpegasus.com/js/bootstrap.js"></script>
