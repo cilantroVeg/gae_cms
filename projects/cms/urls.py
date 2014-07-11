@@ -63,17 +63,11 @@ urlpatterns = patterns('',
     url(r'^record/delete/(?P<id>\d+)/$', 'pages.views.record_delete'),
     url(r'^records/', 'pages.views.record_list'),
     
-    # Page - feed_archives
-    url(r'^feed_archive/new/$', 'pages.views.feed_archive_form'),
-    url(r'^feed_archive/edit/(?P<id>\d+)/$', 'pages.views.feed_archive_form'),
-    url(r'^feed_archive/delete/(?P<id>\d+)/$', 'pages.views.feed_archive_delete'),
-    url(r'^feed_archives/', 'pages.views.feed_archive_list'),
-    
-    # Page - feed_sources
-    url(r'^feed_source/new/$', 'pages.views.feed_source_form'),
-    url(r'^feed_source/edit/(?P<id>\d+)/$', 'pages.views.feed_source_form'),
-    url(r'^feed_source/delete/(?P<id>\d+)/$', 'pages.views.feed_source_delete'),
-    url(r'^feed_sources/', 'pages.views.feed_source_list'),
+    # Page - feeds
+    url(r'^feed/new/$', 'pages.views.feed_form'),
+    url(r'^feed/edit/(?P<id>\d+)/$', 'pages.views.feed_form'),
+    url(r'^feed/delete/(?P<id>\d+)/$', 'pages.views.feed_delete'),
+    url(r'^feeds/', 'pages.views.feed_list'),
 
     # Page - spreadsheets
     url(r'^spreadsheet/new/$', 'pages.views.spreadsheet_form'),

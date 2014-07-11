@@ -87,6 +87,24 @@ class Spreadsheet(models.Model):
         return u'%s' % (self.name )
 
 # ...
+class Feed(models.Model):
+    id = models.AutoField(primary_key=True)
+    feed_source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    feed_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    logo_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    language = models.ForeignKey(Language, null=True, blank=True)
+    save_to_db = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now=True)
+
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.source_type )
+
+    # ...
+    class Meta:
+        unique_together = ("source_type", "language")
+
+# ...
 class Page(models.Model):
     id = models.AutoField(primary_key=True)
     category = models.ForeignKey(Category, null=False, blank=False)
@@ -97,6 +115,10 @@ class Page(models.Model):
     slug = models.SlugField(unique=True, blank=False, null=False)
     content = models.TextField(null=False, blank=False)
     twitter_hashtags = models.CharField(max_length=256, null=False, blank=False)
+    feed_source = models.ForeignKey(Feed, null=False, blank=False)
+    image_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    video_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    audio_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
     is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
 
@@ -198,34 +220,6 @@ class Record(models.Model):
     class Meta:
         unique_together = ("key", "language")
 
-# ...
-class FeedSource(models.Model):
-    id = models.AutoField(primary_key=True)
-    feed_source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    feed_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
-    logo_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
-    language = models.ForeignKey(Language, null=True, blank=True)
-    save_to_db = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now=True)
-
-    # ...
-    def __unicode__(self):
-        return u'%s' % (self.source_type )
-
-    # ...
-    class Meta:
-        unique_together = ("source_type", "language")
-
-    # ...
-class FeedArchive(models.Model):
-    id = models.AutoField(primary_key=True)
-    feed_source = models.ForeignKey(FeedSource, null=False, blank=False)
-    title = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    text = models.TextField(null=False, blank=False)
-    image_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    video_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    audio_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
-    created_at = models.DateTimeField(auto_now=True)
 
 # ...
 class ContactForm(forms.Form):
