@@ -1,0 +1,32 @@
+{% extends template_admin %}
+
+{% block title %}AdvertisementSource List{% endblock %}{% block js %}
+<script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
+<script type = 'text/javascript'>
+    google.load('visualization', '1', {packages: ['table']});
+    google.setOnLoadCallback(drawTable);
+    function drawTable() {
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('string', 'advertisement_url');
+        data.addColumn('string', 'image_url');
+        data.addColumn('string', 'name ');
+        data.addColumn('string', 'Manage');
+        data.addRows([
+                {% for entry in advertisement_list %}
+    ['{{ entry.advertisement_url }}','{{ entry.image_url }}', '{{ entry.name }}', '<a href="/advertisement/edit/{{ entry.id }}/">Edit</a>|<a href="/advertisement/delete/{{ entry.id }}/">Delete</a>'],
+            {% endfor %}
+    ])
+    ;
+
+    var table = new google.visualization.Table(document.getElementById('table_div'));
+    table.draw(data, {showRowNumber: true, allowHtml: true});
+    }
+</script>{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>AdvertisementSource List</h1>
+
+    <div id = 'table_div'></div>
+</div><a href = "/advertisement/new/">New</a>
+
+{% endblock %}

@@ -68,6 +68,12 @@ urlpatterns = patterns('',
     url(r'^feed/edit/(?P<id>\d+)/$', 'pages.views.feed_form'),
     url(r'^feed/delete/(?P<id>\d+)/$', 'pages.views.feed_delete'),
     url(r'^feeds/', 'pages.views.feed_list'),
+    
+    # Page - advertisements
+    url(r'^advertisement/new/$', 'pages.views.advertisement_form'),
+    url(r'^advertisement/edit/(?P<id>\d+)/$', 'pages.views.advertisement_form'),
+    url(r'^advertisement/delete/(?P<id>\d+)/$', 'pages.views.advertisement_delete'),
+    url(r'^advertisements/', 'pages.views.advertisement_list'),
 
     # Page - spreadsheets
     url(r'^spreadsheet/new/$', 'pages.views.spreadsheet_form'),

@@ -1,0 +1,17 @@
+{% extends template_admin %}
+
+{% block title %}Form{% endblock %}{% block js %}
+
+{% endblock %}{% block content %}
+<div id = "static_content">
+    <h1>Advertisement Form</h1>
+    {% if id %}
+    <form action = "/advertisement/edit/{{ id }}/" method = "post">
+        {% else %}
+        <form action = "/advertisement/new/" method = "post">
+            {% endif %} {% csrf_token %} {{ form }}
+            <div>&nbsp;</div>
+            <div><input type = "submit" value = "Submit"/></div>
+        </form>
+</div>
+<hr/><a href = "/advertisements/">Advertisement Source List</a>{% endblock %}

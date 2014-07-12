@@ -197,6 +197,34 @@ def feed_delete(request, id=None):
         return redirect('/feeds/')
     else:
         return redirect('/', False)
+    
+# ...
+def advertisement_form(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Advertisement, id=id) if id is not None else None
+        form = AdvertisementForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/advertisements/')
+        return render_to_response("pages/advertisement_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def advertisement_list(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/advertisement_list.html", {"advertisement_list": Advertisement.objects.all()}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def advertisement_delete(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Advertisement, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/advertisements/')
+    else:
+        return redirect('/', False)
 
 def get_category_tree(request):
     return True

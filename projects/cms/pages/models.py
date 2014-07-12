@@ -222,6 +222,18 @@ class Record(models.Model):
     class Meta:
         unique_together = ("key", "language")
 
+# ...
+class Advertisement(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=128, null=False, blank=False, unique=True)
+    advertisement_url = models.CharField(max_length=128, null=False, blank=False, unique=True)
+    image_url = models.CharField(max_length=128, null=False, blank=False, unique=True)
+    is_enabled = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now=True)
+
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.name )
 
 # ...
 class ContactForm(forms.Form):
@@ -271,3 +283,9 @@ class ImageForm(ModelForm):
     class Meta:
         model = Image
         fields = ['name', 'image_file']
+
+# Forms
+class AdvertisementForm(ModelForm):
+    class Meta:
+        model = Advertisement
+        fields = ['name', 'advertisement_url', 'image_url', 'is_enabled']
