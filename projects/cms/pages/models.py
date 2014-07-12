@@ -94,6 +94,7 @@ class Feed(models.Model):
     logo_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
     language = models.ForeignKey(Language, null=True, blank=True)
     save_to_db = models.BooleanField(default=False)
+    is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
@@ -257,7 +258,7 @@ class PageForm(ModelForm):
 class FeedForm(ModelForm):
     class Meta:
         model = Feed
-        fields = ['source_type', 'feed_url', 'logo_url', 'language', 'save_to_db']
+        fields = ['source_type', 'feed_url', 'logo_url', 'language', 'save_to_db', 'is_enabled']
 
 # Forms
 class SpreadsheetForm(ModelForm):
