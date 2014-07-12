@@ -16,7 +16,9 @@
     <form enctype = "multipart/form-data" action = "/spreadsheet/edit/{{ id }}/" method = "post">
         {% else %}
         <form enctype = "multipart/form-data" action = "/spreadsheet/new/" method = "post">
-            {% endif %} {% csrf_token %} {{ form }} <input type = "submit" value = "Submit"/>
+            {% endif %} {% csrf_token %} {{ form }}
+                        <div>&nbsp;</div>
+            <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
 <hr/><a href = "/static/spreadsheet/Google_App_Engine_Spreadsheet_Template.xlsx">Download Spreadsheet Template</a>

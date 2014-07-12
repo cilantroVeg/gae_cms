@@ -16,7 +16,9 @@
     <form enctype = "multipart/form-data" action = "/image/edit/{{ id }}/" method = "post">
         {% else %}
         <form enctype = "multipart/form-data" action = "/image/new/" method = "post">
-            {% endif %} {% csrf_token %} {{ form }} <input type = "submit" value = "Submit"/>
+            {% endif %} {% csrf_token %} {{ form }}
+                        <div>&nbsp;</div>
+            <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
 <hr/><a href = "/images/">Image List</a>{% endblock %}

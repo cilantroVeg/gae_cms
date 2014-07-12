@@ -9,7 +9,9 @@
     <form action = "/record/edit/{{ id }}/" method = "post">
         {% else %}
         <form action = "/record/new/" method = "post">
-            {% endif %} {% csrf_token %} {{ form }} <input type = "submit" value = "Submit"/>
+            {% endif %} {% csrf_token %} {{ form }}
+                        <div>&nbsp;</div>
+            <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
 <hr/><a href = "/records/">Record List</a>{% endblock %}

@@ -254,6 +254,12 @@ class PageForm(ModelForm):
         fields = ['category', 'title', 'content']
 
 # Forms
+class FeedForm(ModelForm):
+    class Meta:
+        model = Feed
+        fields = ['source_type', 'feed_url', 'logo_url', 'language', 'save_to_db']
+
+# Forms
 class SpreadsheetForm(ModelForm):
     class Meta:
         model = Spreadsheet
