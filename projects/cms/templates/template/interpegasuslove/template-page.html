@@ -37,6 +37,7 @@
             src="{{ STATIC_URL }}template/www.interpegasus.com/js/jquery.localscroll-1.2.7-min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}javascript/flex/flexslider.css" media="all"/>
     <script type="text/javascript" src="{{ STATIC_URL }}javascript/flex/jquery.flexslider-min.js"></script>
+    {% block js %}{% endblock %}
 </head>
 <body>
 {% include "layout/admin.html" %}

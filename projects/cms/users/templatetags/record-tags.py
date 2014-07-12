@@ -20,7 +20,7 @@ def get_record(key, language='en'):
     if record:
         return record[0].value
     else:
-        return 'No Content in ' + str(l.name)
+        return 'No Content in Language'
 
 
 @register.filter

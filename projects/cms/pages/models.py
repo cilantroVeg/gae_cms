@@ -89,7 +89,7 @@ class Spreadsheet(models.Model):
 # ...
 class Feed(models.Model):
     id = models.AutoField(primary_key=True)
-    feed_source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    source_type = models.CharField(max_length=64, null=False, blank=False, unique=False)
     feed_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
     logo_url = models.CharField(max_length=128, null=False, blank=False, unique=False)
     language = models.ForeignKey(Language, null=True, blank=True)
@@ -111,14 +111,15 @@ class Page(models.Model):
     user = models.ForeignKey(User, null=False, blank=False)
     spreadsheet = models.ForeignKey(Spreadsheet, null=True, blank=True)
     title = models.CharField(max_length=256, null=False, blank=False)
+    content = models.TextField(null=False, blank=False)
     headline = models.CharField(max_length=256, null=False, blank=False)
     slug = models.SlugField(unique=True, blank=False, null=False)
-    content = models.TextField(null=False, blank=False)
     twitter_hashtags = models.CharField(max_length=256, null=False, blank=False)
     feed_source = models.ForeignKey(Feed, null=False, blank=False)
     image_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
     video_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
     audio_url = models.CharField(max_length=64, null=False, blank=False, unique=False)
+    priority = models.IntegerField(default=1, null=False, blank=False, unique=False)
     is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
 
