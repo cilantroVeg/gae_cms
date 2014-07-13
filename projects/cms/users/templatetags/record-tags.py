@@ -18,6 +18,8 @@ def get_record(key, language='en'):
             l = None
         if l:
             record = Record.objects.filter(key=key, language=l)
+        else:
+            record = None
     else:
         record = Record.objects.filter(key=key)[0].value
     if record:
