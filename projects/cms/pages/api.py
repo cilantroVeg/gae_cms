@@ -9,6 +9,9 @@ import urllib2
 import urllib
 import json
 import re
+import feedparser
+import datetime
+import time
 
 # ...
 def languages(request,language_code):
@@ -76,6 +79,12 @@ def pages(request,language_code):
             p['category'] = page.category.name
             p['category_slug'] = page.category.slug
             p['twitter_hashtags'] = page.twitter_hashtags
+            p['feed_source']= page.feed_source
+            p['image_url']= page.image_url
+            p['video_url']= page.video_url
+            p['audio_url']= page.audio_url
+            p['priority']= page.priority
+            p['is_enabled']= page.is_enabled
             p['created_at'] = str(naturalday(page.created_at))
             pages.append(p)
     response_data['pages'] = pages
@@ -109,8 +118,24 @@ def images(request,language_code):
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 # ...
+def feed_data(request, language_code):
+    response_data = {}
+    pages = []
+    page_set = []
+    language = validate_language(language_code)
+    if validate_token(request) and language:
+        feeds = Feed.objects.all()
+        # Iterate feeds and add items to page_set
+        for feed in feeds:
+            pages = parse_feed(feed.feed_url, feed.source_type)
+            # add pages to page_set
+    response_data['pages'] = pages
+    return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
+
+
+# ...
 def validate_token(request):
-    return settings.API_ACCESS_TOKEN == request.REQUEST['access_token']
+    return (settings.API_ACCESS_TOKEN == request.REQUEST['access_token']) or (settings.API_ACCESS_TOKEN_1 == request.REQUEST['access_token'])
 
 # ...
 def validate_language(language_code):
@@ -130,3 +155,40 @@ def build_url(language_code, api_request, extra_parameters):
     url = str(settings.SITE_URL) + '/api/' + str(language_code) + '/' + api_request + '?access_token=' + settings.API_ACCESS_TOKEN
     url = url + '&' + urllib.urlencode(extra_parameters)
     return url
+
+def parse_feed(feed_url,source_type):
+    pages = []
+    feed_url = 'https://www.yahoo.com/tech/rss'
+    source_type = 'YAHOO'
+    if source_type == 'YAHOO':
+        info = feedparser.parse(feed_url)
+        for entry in info.entries:
+            match = re.search(r'src="(.*?)"', entry.content[0]["value"])
+            if match:
+                image_url = match.groups()[0]
+            else:
+                image_url = None
+            if image_url:
+                p = {}
+                p['id'] = None
+                p['title'] = entry.title
+                p['headline'] = entry.title
+                p['slug'] = slugify(entry.title)
+                p['content'] = entry.description
+                p['author'] = None
+                p['category'] = source_type
+                p['category_slug'] = source_type
+                p['twitter_hashtags'] = None
+                p['feed_source']= entry.link
+                p['image_url']= image_url
+                p['video_url']= None
+                p['audio_url']= None
+                p['priority']= 2
+                p['is_enabled']= True
+                p['created_at'] = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                pages.append(p)
+    else:
+        return None
+    return pages
+
+
