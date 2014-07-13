@@ -158,8 +158,6 @@ def build_url(language_code, api_request, extra_parameters):
 
 def parse_feed(feed_url,source_type):
     pages = []
-    feed_url = 'https://www.yahoo.com/tech/rss'
-    source_type = 'YAHOO'
     if source_type == 'YAHOO':
         info = feedparser.parse(feed_url)
         for entry in info.entries:
