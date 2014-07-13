@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/API/specs/api-specification.rb" afterPath="$PROJECT_DIR$/projects/cms/static/template/API/specs/api-specification.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/api.py" afterPath="$PROJECT_DIR$/projects/cms/pages/api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/interpegasus_cms" afterPath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/interpegasus_cms" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/urls.py" afterPath="$PROJECT_DIR$/projects/cms/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -65,7 +61,7 @@
       <file leaf-file-name="api.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62250453" vertical-offset="2617" max-vertical-offset="3168">
+            <state vertical-scroll-proportion="0.88384753" vertical-offset="2473" max-vertical-offset="3168">
               <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
               <folding>
                 <element signature="e#26#62#0" expanded="true" />
@@ -706,12 +702,16 @@
       <created>1405221674004</created>
       <updated>1405221674004</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Feed Parser OK">
+      <created>1405222306746</created>
+      <updated>1405222306746</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1156,7 +1156,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62250453" vertical-offset="2617" max-vertical-offset="3168">
+        <state vertical-scroll-proportion="0.88384753" vertical-offset="2473" max-vertical-offset="3168">
           <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
           <folding>
             <element signature="e#26#62#0" expanded="true" />
