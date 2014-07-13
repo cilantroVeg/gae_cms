@@ -105,6 +105,31 @@ def images
   return
 end
 
+##~ a = source2swagger.namespace("interpegasus_cms")
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+
+##~ e = a.apis.add
+##~ e.set :path => "/{language_code}/feed_pages", :description => "Get feed pages", :format => "json"
+
+##~ o = e.operations.add
+##~ o.set :httpMethod => "GET", :summary => "Get Feed Pages", :responseClass => "PageArray", :nickname => "pegasus", :tags => ["pegasus"], :deprecated => false
+##~ o.parameters.add :name => "access_token", :description => "access_token", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "query"
+##~ o.parameters.add :name => "language_code", :description => "language code", :dataType => "string", :allowMultiple => false, :required => true, :paramType => "path"
+##~ o.parameters.add :name => "page_slug", :description => "page slug", :dataType => "string", :allowMultiple => false, :required => false, :paramType => "query"
+
+##~ a.models["Page"] = {:id => "Page", :properties => {:title => {:type => "string"}, :content => {:type => "string"}}}
+##~ a.models["PageArray"] = {:id => "PageArray", :properties => {:pages => {:type => "Array", :items =>{:$ref => "Page"} }}}
+
+##~ err = o.errorResponses.add
+##~ err.set :reason => "Not found", :code => 404
+##~ o.errorResponses.add :reason => "Invalid ID supplied", :code => 400
+##~ o.errorResponses.add :reason => "Unprocessable Entity", :code => 422
+##~ o.errorResponses.add :reason => "API Coming Soon", :code => 0
+##~ o.errorResponses.add :reason => "Ok", :code => 200
+def pages
+  return
+end
+
 
 ##~ a = source2swagger.namespace("bible")
 ##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"

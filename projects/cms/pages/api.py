@@ -118,7 +118,7 @@ def images(request,language_code):
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 # ...
-def feed_data(request, language_code):
+def feed_pages(request, language_code):
     response_data = {}
     pages = []
     page_set = []
@@ -183,7 +183,7 @@ def parse_feed(feed_url,source_type):
                 p['audio_url']= None
                 p['priority']= 2
                 p['is_enabled']= True
-                p['created_at'] = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                p['created_at'] = str(naturalday(datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))))
                 pages.append(p)
     else:
         return None
