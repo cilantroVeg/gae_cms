@@ -168,7 +168,7 @@ APP_NAME = 'interpegasuslove'
 # Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if True:
+if False:
     SITE_URL = 'http://127.0.0.1:8001'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
