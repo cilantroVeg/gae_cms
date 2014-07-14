@@ -208,60 +208,145 @@
     <!-- /.container -->
 </section>
 <!--******************** News Section ********************-->
-<section id="news" class="single-page scrollblock" style="display: none;">
+<section id="news" class="single-page scrollblock">
     <div class="container">
         <div class="align"><i class="icon-pencil-circled"></i></div>
-        <h1>Our Blog</h1>
+        <h1>Latest Tech & Science News</h1>
         <!-- Three columns -->
         <div class="row">
             <article class="span4 post"><img class="img-news" src="img/blog_img-01.jpg" alt="">
-
                 <div class="inside">
-                    <p class="post-date"><i class="icon-calendar"></i> March 17, 2013</p>
-
-                    <h2>A girl running on a road</h2>
-
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.0.created_at}}</p>
+                    <h2>{{ feed_pages.0.headline }}</h2>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-                        <a href="#" class="more-link">read more</a></div>
+                        <p>{{ feed_pages.0.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.0.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.0.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
                 </div>
                 <!-- /.inside -->
             </article>
             <!-- /.span4 -->
             <article class="span4 post"><img class="img-news" src="img/blog_img-02.jpg" alt="">
-
                 <div class="inside">
-                    <p class="post-date">February 28, 2013</p>
-
-                    <h2>A bear sleeping on a tree</h2>
-
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.1.created_at}}</p>
+                    <h2>{{ feed_pages.1.headline }}</h2>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-                        <a href="#" class="more-link">read more</a></div>
+                        <p>{{ feed_pages.1.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.1.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.1.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+
                 </div>
                 <!-- /.inside -->
             </article>
             <!-- /.span4 -->
             <article class="span4 post"><img class="img-news" src="img/blog_img-03.jpg" alt="">
-
                 <div class="inside">
-                    <p class="post-date">February 06, 2013</p>
-
-                    <h2>A Panda playing with his baby</h2>
-
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.2.created_at}}</p>
+                    <h2>{{ feed_pages.2.headline }}</h2>
                     <div class="entry-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-                        <a href="#" class="more-link">read more</a></div>
+                        <p>{{ feed_pages.2.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.2.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.2.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
                 </div>
                 <!-- /.inside -->
             </article>
             <!-- /.span4 -->
         </div>
         <!-- /.row -->
-        <a href="#" class="btn btn-large">Go to our blog</a></div>
+        <br/>
+         <!-- Three columns -->
+        <div class="row">
+            <article class="span4 post"><img class="img-news" src="img/blog_img-01.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.3.created_at}}</p>
+                    <h2>{{ feed_pages.3.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.3.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.3.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.3.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-02.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.4.created_at}}</p>
+                    <h2>{{ feed_pages.4.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.4.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.4.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.4.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-03.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.5.created_at}}</p>
+                    <h2>{{ feed_pages.5.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.5.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.5.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.5.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        <br/>
+         <!-- Three columns -->
+        <div class="row">
+            <article class="span4 post"><img class="img-news" src="img/blog_img-01.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.6.created_at}}</p>
+                    <h2>{{ feed_pages.6.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.6.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.6.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.6.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-02.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.7.created_at}}</p>
+                    <h2>{{ feed_pages.7.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.7.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.7.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.7.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+            <article class="span4 post"><img class="img-news" src="img/blog_img-03.jpg" alt="">
+                <div class="inside">
+                    <p class="post-date"><i class="icon-calendar"></i> {{feed_pages.8.created_at}}</p>
+                    <h2>{{ feed_pages.8.headline }}</h2>
+                    <div class="entry-content">
+                        <p>{{ feed_pages.8.content|truncate_str:128 }}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.8.slug}}" class="more-link">read more</a>
+                        <img src="{{feed_pages.8.feed_image_url}}" style="width:50px;float: right;clear:none"/>
+                    </div>
+                </div>
+                <!-- /.inside -->
+            </article>
+            <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        <a href="/{{request_language}}/news" class="btn btn-large">All the news</a></div>
     <!-- /.container -->
 </section>
 <!--******************** Team Section ********************-->

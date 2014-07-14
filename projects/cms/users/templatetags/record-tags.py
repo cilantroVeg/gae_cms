@@ -49,3 +49,8 @@ def translate(key, language_code):
         return spanish[key]
     else:
         return key
+
+
+@register.filter
+def truncate_str(str, length):
+    return (str[:length] + '..') if len(str) > length else str

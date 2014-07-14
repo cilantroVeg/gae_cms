@@ -48,6 +48,7 @@ urlpatterns = patterns('',
     url(r'^page/delete/(?P<id>\d+)/$', 'pages.views.page_delete'),
     url(r'^pages/', 'pages.views.page_list'),
     url(r'^(?P<language>[a-z]{2})/(?P<slug>[-\w]+)/$', 'pages.views.page_view'),
+    url(r'^(?P<language>[a-z]{2})/feed/(?P<slug>[-\w]+)/$', 'pages.views.page_feed_view'),
     url(r'^api/$', 'pages.views.page_api'),
 
     # Page - images

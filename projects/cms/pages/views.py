@@ -13,6 +13,7 @@ from django.forms.models import modelformset_factory
 from pages.models import *
 from pages.context_processors import is_admin
 from django.shortcuts import render
+from pages.api import *
 
 # ...
 def delete_cache(request):
@@ -408,6 +409,15 @@ def page_view(request, language, slug):
     return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array},context_instance=RequestContext(request))
 
 # ...
+def page_feed_view(request, language, slug):
+    feed_pages = query_api(language, 'feed_pages')
+    page = None
+    for p in feed_pages['pages']:
+        if p['slug'] == slug:
+            page = p
+    return render_to_response("pages/page_view.html", {"page": page},context_instance=RequestContext(request))
+
+# ...
 def page_api(request):
     return render_to_response("pages/page_api.html",context_instance=RequestContext(request))
 
@@ -505,16 +515,14 @@ def front_page(request):
             return redirect('/'+language.code, False)
     return redirect('/en', False)
 
-
 def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
-    return render_to_response('users/front_page.html', {'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
-
+    feed_pages = query_api(language, 'feed_pages')
+    return render_to_response('users/front_page.html', {'feed_pages':feed_pages['pages'], 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 # Custom 404 and 500
 def my_custom_404_view(request):
     return render_to_response('users/404.html',context_instance=RequestContext(request))
-
 
 def my_custom_500_view(request):
     return render_to_response('users/500.html',context_instance=RequestContext(request))

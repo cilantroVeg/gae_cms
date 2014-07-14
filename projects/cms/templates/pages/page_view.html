@@ -4,17 +4,25 @@
 
 {% endblock %}{% block content %}
 <div id = "static_content">
-    <h1>{{ page.title }}</h1>
-    {{ page.content|safe }}
-    <br />
-    <hr />
-    {% for entry in image_array %}
+    <div style="color: white; text-align: left;width: 80%;margin-left: auto;margin-right: auto;padding: 10px;">
+        <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>
+        <h2>{{ page.title }}</h2>
+        <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}" style="float: left;clear:none;margin:10px;margin-top: 0px;border-width: 1px;border-color: white;border-style: solid;"/></a>
+        {{ page.content|safe }}
+        <br />
+        <img src="{{page.feed_image_url}}" style="width:100px;float: right;clear:none;padding: 20px;border-width: 1px;border-color: white;"/>
+        <br />
+        <a href="{{page.feed_source}}" target="_blank" class="btn btn-large">Read More</a></div>
+        <br />
+        <hr />
+        {% for entry in image_array %}
         {{ entry.name }}
         <a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>
         {% if is_admin %}
-            <a href="/image/delete/{{ entry.id }}/">Delete</a>
+        <a href="/image/delete/{{ entry.id }}/">Delete</a>
         {% endif %}
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock %}

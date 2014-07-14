@@ -80,6 +80,7 @@ def pages(request,language_code):
             p['category_slug'] = page.category.slug
             p['twitter_hashtags'] = page.twitter_hashtags
             p['feed_source']= page.feed_source
+            p['feed_image_url'] = None
             p['image_url']= page.image_url
             p['video_url']= page.video_url
             p['audio_url']= page.audio_url
@@ -127,9 +128,9 @@ def feed_pages(request, language_code):
         feeds = Feed.objects.all()
         # Iterate feeds and add items to page_set
         for feed in feeds:
-            pages = parse_feed(feed.feed_url, feed.source_type)
+            pages = parse_feed(feed)
             # add pages to page_set
-    response_data['pages'] = pages
+    response_data['pages'] = pages # sorted(pages, key=lambda k: k['created_at'])
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 
@@ -156,7 +157,9 @@ def build_url(language_code, api_request, extra_parameters):
     url = url + '&' + urllib.urlencode(extra_parameters)
     return url
 
-def parse_feed(feed_url,source_type):
+def parse_feed(feed):
+    feed_url = feed.feed_url
+    source_type = feed.source_type
     pages = []
     if source_type == 'YAHOO':
         info = feedparser.parse(feed_url)
@@ -170,7 +173,7 @@ def parse_feed(feed_url,source_type):
                 p = {}
                 p['id'] = None
                 p['title'] = entry.title
-                p['headline'] = entry.title
+                p['headline'] = (entry.title[:29] + '..') if len(entry.title) > 29 else entry.title
                 p['slug'] = slugify(entry.title)
                 p['content'] = entry.description
                 p['author'] = None
@@ -178,6 +181,7 @@ def parse_feed(feed_url,source_type):
                 p['category_slug'] = source_type
                 p['twitter_hashtags'] = None
                 p['feed_source']= entry.link
+                p['feed_image_url']= feed.logo_url
                 p['image_url']= image_url
                 p['video_url']= None
                 p['audio_url']= None
