@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -26,12 +25,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="api.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.04" vertical-offset="1881" max-vertical-offset="3232">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="131" selection-end-column="35" />
+              <folding>
+                <element signature="e#26#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35397038" vertical-offset="2457" max-vertical-offset="3200">
-              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.3755047" vertical-offset="2457" max-vertical-offset="3200">
+              <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.76" vertical-offset="7785" max-vertical-offset="8528">
+              <caret line="519" column="4" selection-start-line="519" selection-start-column="4" selection-end-line="519" selection-end-column="50" />
+              <folding>
+                <element signature="e#12#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,10 +119,10 @@
         <option value="$PROJECT_DIR$/projects/cms/users/templatetags/record-tags.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/urls.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/api.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/api.py" />
       </list>
     </option>
   </component>
@@ -167,6 +190,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,7 +562,11 @@
       <created>1405304516156</created>
       <updated>1405304516156</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Deploy OK">
+      <created>1405376288289</created>
+      <updated>1405376288289</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -574,7 +623,8 @@
     <MESSAGE value="API Deployment" />
     <MESSAGE value="API OK" />
     <MESSAGE value="Feed OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feed OK" />
+    <MESSAGE value="Deploy OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -901,14 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.411765" vertical-offset="6019" max-vertical-offset="8320">
-          <caret line="416" column="20" selection-start-line="416" selection-start-column="20" selection-end-line="416" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.37566137" vertical-offset="1052" max-vertical-offset="1808">
@@ -946,18 +988,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.76" vertical-offset="7785" max-vertical-offset="8528">
+          <caret line="519" column="4" selection-start-line="519" selection-start-column="4" selection-end-line="519" selection-end-column="50" />
+          <folding>
+            <element signature="e#12#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5760112" vertical-offset="2307" max-vertical-offset="3040">
-          <caret line="182" column="30" selection-start-line="182" selection-start-column="19" selection-end-line="182" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="-6.04" vertical-offset="1881" max-vertical-offset="3232">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="131" selection-end-column="35" />
+          <folding>
+            <element signature="e#26#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35397038" vertical-offset="2457" max-vertical-offset="3200">
-          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.3755047" vertical-offset="2457" max-vertical-offset="3200">
+          <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
           <folding />
         </state>
       </provider>
