@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7415882" vertical-offset="7769" max-vertical-offset="8544">
-              <caret line="520" column="50" selection-start-line="520" selection-start-column="50" selection-end-line="520" selection-end-column="50" />
+              <caret line="520" column="40" selection-start-line="520" selection-start-column="40" selection-end-line="520" selection-end-column="40" />
               <folding>
                 <element signature="e#12#39#0" expanded="true" />
               </folding>
@@ -571,7 +571,11 @@
       <created>1405377514723</created>
       <updated>1405377514723</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Deploy OK">
+      <created>1405377881441</created>
+      <updated>1405377881441</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1014,7 +1018,7 @@
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7415882" vertical-offset="7769" max-vertical-offset="8544">
-          <caret line="520" column="50" selection-start-line="520" selection-start-column="50" selection-end-line="520" selection-end-column="50" />
+          <caret line="520" column="40" selection-start-line="520" selection-start-column="40" selection-end-line="520" selection-end-column="40" />
           <folding>
             <element signature="e#12#39#0" expanded="true" />
           </folding>
