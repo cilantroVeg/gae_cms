@@ -87,6 +87,7 @@ def pages(request,language_code):
             p['priority']= page.priority
             p['is_enabled']= page.is_enabled
             p['created_at'] = str(naturalday(page.created_at))
+            p['timestamp'] = time.mktime(page.created_at)
             pages.append(p)
     response_data['pages'] = pages
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
@@ -130,7 +131,7 @@ def feed_pages(request, language_code):
         for feed in feeds:
             pages = parse_feed(feed)
             # add pages to page_set
-    response_data['pages'] = pages # sorted(pages, key=lambda k: k['created_at'])
+    response_data['pages'] = sorted(pages, key=lambda k: k['timestamp'])
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 
@@ -188,7 +189,9 @@ def parse_feed(feed):
                 p['priority']= 2
                 p['is_enabled']= True
                 p['created_at'] = str(naturalday(datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))))
-                pages.append(p)
+                p['timestamp'] = time.mktime(entry.published_parsed)
+                if len(entry.description) > 140:
+                    pages.append(p)
     else:
         return None
     return pages

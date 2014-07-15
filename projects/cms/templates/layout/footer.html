@@ -22,7 +22,12 @@
 <div id = "copyright">
     <div id="languages">
         {% for language in languages.languages %}
-            <a href ="/{{ language.code }}">{{ language.name }}</a>&nbsp;|&nbsp;
+            <a href ="/{{ language.code }}">{{ language.name }}</a>
+            {% if forloop.last %}
+                &nbsp;&nbsp;
+            {% else %}
+                &nbsp;|&nbsp;
+            {%endif %}
         {% endfor %}
     </div>
     <ul>
