@@ -481,9 +481,9 @@ def contact(request):
                 contact_name = form.cleaned_data['contact_name']
                 contact_email = form.cleaned_data['contact_email']
                 contact_comment = form.cleaned_data['contact_comment']
-                subject = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + ': \'' + contact_name + '\': \'' + contact_email + '\''
+                subject = 'Contact Form ' + Record.objects.filter(key='WEBSITE_NAME')[:1][0].value + ': \'' + contact_name + '\': \'' + contact_email + '\''
                 recipients = settings.ADMIN_USERS_EMAILS
-                sender = 'Contact Form ' + Record.objects.get(key='WEBSITE_NAME').value + " <" + settings.SERVER_EMAIL + ">"
+                sender = 'Contact Form ' + Record.objects.filter(key='WEBSITE_NAME')[:1][0].value + " <" + settings.SERVER_EMAIL + ">"
                 from google.appengine.api import mail
                 mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
                 return redirect('/thanks/',False)
