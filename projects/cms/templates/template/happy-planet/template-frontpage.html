@@ -1,208 +1,543 @@
 {% load record-tags %}
-<!DOCTYPE HTML>
-<!--
-	Verti 2.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html lang="en-US">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css" />
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/config.js"></script>
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/skel.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/skel-panels.min.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/skel-noscript.css" />
-        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/style.css" />
-        <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/style-desktop.css" />
-    </noscript>
-    <!--[if lte IE 8]><script src="{{ STATIC_URL }}template/www.nrwl.org/js/html5shiv.js"></script><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie8.css" /><![endif]-->
-    <!--[if lte IE 7]><link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/ie7.css" /><![endif]-->
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
+    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+    <link rel='stylesheet' id='reset-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/reset.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='superfish-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/superfish.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawsome-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/font-awsome/css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='orbit-css-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/orbit.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='color-scheme-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/color/green.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/zerogrid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/responsive.css" type="text/css" media="screen">
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.carouFredSel-6.2.1-packed.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/hoverIntent.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/superfish.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/orbit.min.js'></script>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/css3-mediaqueries.js"></script>
+
+    <script type="text/javascript" language="javascript">
+        $(function() {
+
+            /* Start Carousel */
+            $('#featured-posts').carouFredSel({
+                auto: true,
+                prev: '#prev2',
+                next: '#next2',
+            });
+            /* End Carousel */
+
+
+            /* Start Orbit Slider */
+            $(window).load(function() {
+                $('.post-gallery').orbit({
+                    animation: 'fade',
+                });
+            });
+            /* End Orbit Slider */
+
+
+            /* Start Super fish */
+            jQuery(document).ready(function(){
+                jQuery('ul.sf-menu').superfish({
+                    delay:         100,
+                    speed:         'fast',
+                    speedOut:      'fast',
+                });
+            });
+            /* End Of Super fish */
+
+        });
+    </script>
     {% block js %}{% endblock %}
 </head>
-<body class="homepage">
+
+<body class="home blog">
 {% include "layout/admin.html" %}
 {% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
-<!-- Header Wrapper -->
-<div id="header-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="12u">
+<!-- Start Header -->
+<div class="container zerogrid">
+    <div class="col-full"><div class="wrap-col">
+        <div id="header-nav-container">
 
-                <!-- Header -->
-                <header id="header">
+            <a href="{{ STATIC_URL }}template/www.nrwl.org/#" style="color:white;font-size: 31px;">
+                NRWL
+            </a>
+            <!-- Navigation Menu -->
 
-                    <!-- Logo -->
-                    <div id="logo">
-                        <h1><a href="#" id="logo">NRWL</a></h1>
-                        <span>{{ 'WEBSITE_NAME'|get_record:request_language}}</span>
-                    </div>
+            <ul class="sf-menu"><li class="menu-item current-menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/index.html">Home</a></li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/blog.html">Blog</a></li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Features</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 01</a></li>
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 02</a></li>
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 03</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/about.html">About us</a></li>
+            </ul>
+            <!-- End Navigation Menu -->
 
-                    <!-- Nav -->
-                    <nav id="nav">
-                        <ul id = "fixed-nav">
-                            <li class = "current_page_item"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
-                            {% for main_category in categories %} {% if main_category.name != 'Root' %} {% if main_category.parent_id == 1 %}
-                            {% if  main_category.language_code == request_language %}
-                            <li><a href = "#{{main_category.slug}}">{{ main_category.name }}</a></li>
-                            {% endif %}
-                            {% endif %} {% endif %} {% endfor %}
-                            {% if is_logged_in %}
-                            {% else %}
-                            <li><a href = "#enter">Log in</a></li>
-                            {% endif %}
-                            <li><a href = "#contact">Contact Us</a></li>
-                        </ul>
-                    </nav>
+            <div class="clear"></div>
 
-                </header>
-
-            </div>
         </div>
     </div>
+    </div>
+    <div class="clear"></div>
 </div>
+<div class="spacing-30"></div>
+<!-- End Header -->
 
-<!-- Banner Wrapper -->
-<div id="banner-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="12u">
+<!-- Start Featured Carousel -->
+<div class="container zerogrid">
+    <div class="list_carousel">
+        <ul id="featured-posts">
 
-                <!-- Banner -->
-                <div id="banner" class="box">
 
-                    <div>
-                        <div class="row">
-                            <div class="7u">
-                                <h2>{{ 'WEBSITE_NAME'|get_record:request_language}}</h2>
-                                <p>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</p>
-                            </div>
-                            <div class="5u">
-                                <ul>
-                                    <li><a href="#" class="button button-big button-icon button-icon-rarrow">Animals</a></li>
-                                    <li><a href="#" class="button button-alt button-big button-icon button-icon-question">Plants</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+            <li class="first carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">The Lighthouse Effect</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
                 </div>
 
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Features Wrapper -->
-<div id="features-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="4u">
-
-                <!-- Box -->
-                <section class="box box-feature">
-                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <header>
-                            <h2>Animals</h2>
-                            <span class="byline">Browse Animals</span>
-                        </header>
-                        <p>The animal kingdom is amazing!</p>
-                    </div>
-                </section>
-
-            </div>
-            <div class="4u">
-
-                <!-- Box -->
-                <section class="box box-feature">
-                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <header>
-                            <h2>Plants</h2>
-                            <span class="byline">Browse Plants</span>
-                        </header>
-                        <p>Great information about the plants kingdom!</p>
-                    </div>
-                </section>
-
-            </div>
-            <div class="4u">
-
-                <!-- Box -->
-                <section class="box box-feature last">
-                    <a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <header>
-                            <h2>Protect The Environment</h2>
-                            <span class="byline">Campaigns to protect nature and the planet</span>
-                        </header>
-                        <p>You can help!</p>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Main Wrapper -->
-<div id="main-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="4u">
-
-                <!-- Sidebar -->
-                <div id="sidebar">
-                    <section class="widget-thumbnails">
-                        <h3>Great Info About The Environment</h3>
-                        <div class="grid">
-                            <div class="row no-collapse half">
-                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic06.jpg" alt="" /></a></div>
-                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic06.jpg" alt="" /></a></div>
-                            </div>
-                            <div class="row no-collapse half">
-                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic06.jpg" alt="" /></a></div>
-                                <div class="6u"><a href="#" class="{{ STATIC_URL }}template/www.nrwl.org/image image-full"><img src="{{ STATIC_URL }}template/www.nrwl.org/images/pic06.jpg" alt="" /></a></div>
-                            </div>
-                        </div>
-                        <a href="#" class="button button-icon button-icon-paper">More</a>
-                    </section>
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/HighRes-290x130.jpg"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
                 </div>
 
-            </div>
-            <div class="8u">
-
-                <!-- Content -->
-                <div id="content">
-                    <section class="last">
-                        <h2>{{ 'WEBSITE_NAME'|get_record:request_language}} </h2>
-                        <p>{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</p>
-                    </section>
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+            <li class="first carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">One More Beer</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
                 </div>
 
-            </div>
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/one-more-beer-290x130.png"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-play-circle-o fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
+                </div>
 
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+            <li class="last carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Port Harbor</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
+                </div>
+
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/Port_Harbor1-290x130.jpg"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
+                </div>
+
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+            <li class="first carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Underground Volcano</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
+                </div>
+
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/Timothy-J-Reynolds-2560x14401-290x130.jpg"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
+                </div>
+
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+            <li class="first carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">We Are not alone</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
+                </div>
+
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/UFO1-290x130.jpg"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
+                </div>
+
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+            <li class="last carousel-item">
+                <div class="post-margin">
+                    <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Bearing water falls</a></h6>
+                    <span><i class="fa fa-clock-o"></i> December 13, 2013</span>
+                </div>
+
+                <div class="featured-image">
+                    <img width="290" height="130" src="{{ STATIC_URL }}template/www.nrwl.org/img/Diamantina-Full_Landscape-290x130.jpg"  />                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>                    </span>
+                </div>
+                </div>
+
+                <div class="post-margin">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu</p>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="clear"></div>
+
+        <div class="carousel-controls">
+            <a id="prev2" class="prev" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-left"></i></a>
+            <a id="next2" class="next" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-right"></i></a>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
+<!-- Start Featured Carousel -->
+
+
+
+<!-- Start Main Container -->
+<div class="container zerogrid">
+
+<!-- Start Posts Container -->
+<div class="col-2-3" id="post-container">
+    <div class="wrap-col">
+
+        <!-- Start Post Item -->
+        <div class="post">
+            <div class="post-margin">
+
+                <div class="post-avatar">
+                    <div class="avatar-frame"></div>
+                    <img alt='' src='{{ STATIC_URL }}template/www.nrwl.org/http://1.gravatar.com/avatar/16afd22c8bf5c2398b206a76c9316a3c?s=70&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D70&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />                </div>
+
+                <h4 class="post-title"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Port Harbor</a></h4>
+                <ul class="post-status">
+                    <li><i class="fa fa-clock-o"></i>December 13, 2013</li>
+                    <li><i class="fa fa-folder-open-o"></i><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts in Illustration" rel="category">Illustration</a></li>
+                    <li><i class="fa fa-comment-o"></i>No Comments</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div class="featured-image">
+                <img src="{{ STATIC_URL }}template/www.nrwl.org/img/Port_Harbor1-610x350.jpg" class="attachment-post-standard "  />
+                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-margin">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu placerat lacus, pellentesque tincidunt felis. Aliquam dictum cursus elit, et sagittis nibh tincidunt quis. Vestibulum leo dui, ullamcorper quis erat nec, accumsan imperdiet ligula. Maecenas ut dui sed arcu sodales consequat. Nulla et est ac lacus congue volutpat. Aliquam vehicula tincidunt sem eget cursus. Nam sed mollis diam. Pellentesque id felis ut diam dignissim egestas id non ipsum.
+
+                    Ut id magna eu eros vehicula sollicitudin at et odio. Mauris consectetur tortor in mauris aliquet feugiat. Etiam</p>
+            </div>
+
+            <ul class="post-social">
+                <li><a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-google-plus"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+        <!-- End Post Item -->
+
+
+        <!-- Start Post Item -->
+        <div class="post">
+            <div class="post-margin">
+
+                <div class="post-avatar">
+                    <div class="avatar-frame"></div>
+                    <img alt='' src='{{ STATIC_URL }}template/www.nrwl.org/http://1.gravatar.com/avatar/16afd22c8bf5c2398b206a76c9316a3c?s=70&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D70&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />                </div>
+
+                <h4 class="post-title"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">One More Beer</a></h4>
+                <ul class="post-status">
+                    <li><i class="fa fa-clock-o"></i>December 13, 2013</li>
+                    <li><i class="fa fa-folder-open-o"></i><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts in Illustration" rel="category">Illustration</a></li>
+                    <li><i class="fa fa-comment-o"></i>No Comments</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div class="featured-image">
+                <iframe src="{{ STATIC_URL }}template/www.nrwl.org///player.vimeo.com/video/50522981?title=0&amp;byline=0&amp;portrait=0&amp;color=2ecc71" width="450" height="244" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-play-circle-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-margin">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu placerat lacus, pellentesque tincidunt felis. Aliquam dictum cursus elit, et sagittis nibh tincidunt quis. Vestibulum leo dui, ullamcorper quis erat nec, accumsan imperdiet ligula. Maecenas ut dui sed arcu sodales consequat. Nulla et est ac lacus congue volutpat. Aliquam vehicula tincidunt sem eget cursus. Nam sed mollis diam. Pellentesque id felis ut diam dignissim egestas id non ipsum.
+
+                    Ut id magna eu eros vehicula sollicitudin at et odio. Mauris consectetur tortor in mauris aliquet feugiat. Etiam</p>
+            </div>
+
+            <ul class="post-social">
+                <li><a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-google-plus"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+        <!-- End Post Item -->
+
+
+        <!-- Start Post Item -->
+        <div class="post">
+            <div class="post-margin">
+
+                <div class="post-avatar">
+                    <div class="avatar-frame"></div>
+                    <img alt='' src='{{ STATIC_URL }}template/www.nrwl.org/http://1.gravatar.com/avatar/16afd22c8bf5c2398b206a76c9316a3c?s=70&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D70&amp;r=G' class='avatar avatar-70 photo' height='70' width='70' />                </div>
+
+                <h4 class="post-title"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Port Harbor</a></h4>
+                <ul class="post-status">
+                    <li><i class="fa fa-clock-o"></i>December 13, 2013</li>
+                    <li><i class="fa fa-folder-open-o"></i><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts in Illustration" rel="category">Illustration</a></li>
+                    <li><i class="fa fa-comment-o"></i>No Comments</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div class="featured-image">
+                <img src="{{ STATIC_URL }}template/www.nrwl.org/img/Port_Harbor1-610x350.jpg" class="attachment-post-standard "  />
+                <div class="post-icon">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-margin">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet auctor ligula. Donec eu placerat lacus, pellentesque tincidunt felis. Aliquam dictum cursus elit, et sagittis nibh tincidunt quis. Vestibulum leo dui, ullamcorper quis erat nec, accumsan imperdiet ligula. Maecenas ut dui sed arcu sodales consequat. Nulla et est ac lacus congue volutpat. Aliquam vehicula tincidunt sem eget cursus. Nam sed mollis diam. Pellentesque id felis ut diam dignissim egestas id non ipsum.
+
+                    Ut id magna eu eros vehicula sollicitudin at et odio. Mauris consectetur tortor in mauris aliquet feugiat. Etiam</p>
+            </div>
+
+            <ul class="post-social">
+                <li><a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-google-plus"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" target="_blank">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
+
+                <li>
+                    <a href="{{ STATIC_URL }}template/www.nrwl.org/#" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+        <!-- End Post Item -->
+
+
+        <!-- Start Pagination -->
+        <div class="spacing-20"></div><ul class="pagination"><li class='current'><a href='{{ STATIC_URL }}template/www.nrwl.org/'>1</a></li><li><a href='{{ STATIC_URL }}template/www.nrwl.org/http://demo.themesmarts.com/euclid/?paged=2'>2</a></li><li><a href='{{ STATIC_URL }}template/www.nrwl.org/http://demo.themesmarts.com/euclid/?paged=3'>3</a></li><li><a href='{{ STATIC_URL }}template/www.nrwl.org/http://demo.themesmarts.com/euclid/?paged=4'>4</a></li></ul>
+        <!-- End Pagination -->
+
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- End Posts Container -->
+
+<!-- Start Sidebar -->
+<div class="col-1-3">
+    <div class="wrap-col">
+        <div class="widget-container"><form role="search" method="get" id="searchform" class="searchform" action="http://demo.themesmarts.com/euclid/">
+            <div>
+                <label class="screen-reader-text" for="s">Search for:</label>
+                <input type="text" value="" name="s" id="s" />
+                <input type="submit" id="searchsubmit" value="Search" />
+            </div>
+        </form><div class="clear"></div></div><div class="widget-container"><h6 class="widget-title">Categories</h6>		<ul>
+        <li class="cat-item cat-item-5"><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts filed under Apps">Apps</a>
+        </li>
+        <li class="cat-item cat-item-3"><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts filed under Illustration">Illustration</a>
+        </li>
+        <li class="cat-item cat-item-4"><a href="{{ STATIC_URL }}template/www.nrwl.org/#" title="View all posts filed under Logo">Logo</a>
+        </li>
+    </ul>
+        <div class="clear"></div></div><div class="widget-container"><h6 class="widget-title">Latest Posts</h6>	<!-- Start Widget -->
+        <ul class="widget-recent-posts">
+
+            <li>
+                <div class="post-image">
+                    <div class="post-mask"></div>
+                    <img width="70" height="70" src="{{ STATIC_URL }}template/www.nrwl.org/img/HighRes-70x70.jpg" class="attachment-post-widget #"  />                </div>
+
+                <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">The Lighthouse Effect</a></h6>
+                <span>November 02, 2013</span>
+                <div class="clear"></div>
+            </li>
+
+
+            <li>
+                <div class="post-image">
+                    <div class="post-mask"></div>
+                    <img width="70" height="70" src="{{ STATIC_URL }}template/www.nrwl.org/img/one-more-beer-70x70.png" class="attachment-post-widget #"  />                </div>
+
+                <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">One More Beer</a></h6>
+                <span>November 02, 2013</span>
+                <div class="clear"></div>
+            </li>
+
+
+            <li>
+                <div class="post-image">
+                    <div class="post-mask"></div>
+                    <img width="70" height="70" src="{{ STATIC_URL }}template/www.nrwl.org/img/Port_Harbor1-70x70.jpg" class="attachment-post-widget #"  />                </div>
+
+                <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Port Harbor</a></h6>
+                <span>November 02, 2013</span>
+                <div class="clear"></div>
+            </li>
+
+
+            <li>
+                <div class="post-image">
+                    <div class="post-mask"></div>
+                    <img width="70" height="70" src="{{ STATIC_URL }}template/www.nrwl.org/img/Timothy-J-Reynolds-2560x14401-70x70.jpg" class="attachment-post-widget #"  />                </div>
+
+                <h6><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Underground Volcano</a></h6>
+                <span>November 02, 2013</span>
+                <div class="clear"></div>
+            </li>
+
+
+        </ul>
+        <!-- End Widget -->
+        <div class="clear"></div></div>    <div class="clear"></div>
+    </div></div>        <!-- End Sidebar -->
+
+<div class="clear"></div>
+{% if is_logged_in %}
+{% else %}
 <div class="section" id="enter" >
     <div class="container">
         {% include "layout/login_form.html" %}
     </div>
 </div>
-<!-- Footer Wrapper -->
-<div id="footer-wrapper">
-         {% include "layout/footer2.html" %}
-        {% include "layout/analytics.html" %}
+<div class="clear"></div>
+{% endif %}
+<div class="section section-alt" id="contact" >
+    <div class="container">
+        {% include "layout/contact_form_2.html" %}
+    </div>
 </div>
+<div class="clear"></div>
+</div>
+<!-- End Main Container -->
+
+
+<!-- Start Footer -->
+<div class="spacing-30"></div>
+<div class="container zerogrid">
+    <div id="footer-container" class="col-full">
+        {% include "layout/footer.html" %}
+        {% include "layout/analytics.html" %}
+    </div>
+</div>
+<!-- End Footer -->
+
+
 </body>
+
 </html>

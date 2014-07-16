@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>InterPegasus - Welcome</title>
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
+    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
     <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/bootstrap.css" rel="stylesheet">
