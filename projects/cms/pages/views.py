@@ -519,7 +519,8 @@ def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
     language_code = 'en' if (language is None) else language
     feed_pages = query_api(language_code, 'feed_pages')
-    return render_to_response('users/front_page.html', {'feed_pages':feed_pages['pages'], 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    feed_pages = feed_pages['pages'] if feed_pages else None
+    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 # Custom 404 and 500
 def my_custom_404_view(request):

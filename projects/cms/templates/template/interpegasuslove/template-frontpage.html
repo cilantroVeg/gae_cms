@@ -222,7 +222,7 @@
                     <p class="post-date"><i class="icon-calendar"></i> {{item.created_at}}</p>
                     <h2>{{ item.headline }}</h2>
                     <div class="entry-content">
-                    <p>{{ item.content|truncate_str:128 }}</p>
+                    <p>{{ item.content_no_html|truncate_str:128 }}</p>
                     <a href="/{{request_language}}/feed/{{item.slug}}" class="more-link">read more</a>
                     <img src="{{item.feed_image_url}}" style="width:50px;float: right;clear:none"/>
                     </div>
