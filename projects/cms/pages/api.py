@@ -81,6 +81,7 @@ def pages(request,language_code):
             p['author'] = page.user.first_name if page.user else None
             p['category'] = page.category.name
             p['category_slug'] = page.category.slug
+            p['feed_type'] = None
             p['twitter_hashtags'] = page.twitter_hashtags
             p['feed_source']= page.feed_source
             p['feed_image_url'] = None
@@ -126,16 +127,15 @@ def images(request,language_code):
 def feed_pages(request, language_code):
     response_data = {}
     pages = []
-    page_set = []
+    page_set = {}
     language = validate_language(language_code)
     if validate_token(request) and language:
         feeds = Feed.objects.all()
         # Iterate feeds and add items to page_set
         for feed in feeds:
-            if feed.source_type == 'PETA':
-                pages = parse_feed(feed)
-                page_set = page_set + pages
-    response_data['pages'] = sorted(page_set, key=lambda k: k['timestamp'], reverse=True)
+            pages = parse_feed(feed)
+            page_set[feed.source_type] = pages # sorted(pages, key=lambda k: k['timestamp'], reverse=True)
+    response_data['pages'] = page_set
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
 
@@ -184,7 +184,8 @@ def parse_feed(feed):
                 p['content_no_html'] = strip_tags(p['content'] )
                 p['author'] = None
                 p['category'] = source_type
-                p['category_slug'] = source_type
+                p['category_slug'] = slugify(source_type)
+                p['feed_type'] = source_type
                 p['twitter_hashtags'] = None
                 p['feed_source']= entry.link
                 p['feed_image_url']= feed.logo_url
@@ -215,7 +216,8 @@ def parse_feed(feed):
                 p['content_no_html'] = strip_tags(p['content'] )
                 p['author'] = None
                 p['category'] = source_type
-                p['category_slug'] = source_type
+                p['category_slug'] = slugify(source_type)
+                p['feed_type'] = source_type
                 p['twitter_hashtags'] = None
                 p['feed_source']= entry.link
                 p['feed_image_url']= feed.logo_url
@@ -246,7 +248,8 @@ def parse_feed(feed):
                 p['content_no_html'] = strip_tags(p['content'] )
                 p['author'] = None
                 p['category'] = source_type
-                p['category_slug'] = source_type
+                p['category_slug'] = slugify(source_type)
+                p['feed_type'] = source_type
                 p['twitter_hashtags'] = None
                 p['feed_source']= entry.link
                 p['feed_image_url']= feed.logo_url
