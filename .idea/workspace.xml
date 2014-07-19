@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/api.py" afterPath="$PROJECT_DIR$/projects/cms/pages/api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/css3-mediaqueries.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/css3-mediaqueries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/green.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/jquery-migrate.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/orange.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/orange.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/orbit.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/orbit.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/orbit.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/orbit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/orbit.min.js" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/js/orbit.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/purple.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/purple.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/red.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/red.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/responsive.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/superfish.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/superfish.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/yellow.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/yellow.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/zerogrid.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/zerogrid.css" />
@@ -44,85 +38,7 @@
     <favorites_list name="gae_cms" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53333336" vertical-offset="320" max-vertical-offset="4720">
-              <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#3;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.16" vertical-offset="1216" max-vertical-offset="2192">
-              <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.24" vertical-offset="6432" max-vertical-offset="8592">
-              <caret line="418" column="28" selection-start-line="418" selection-start-column="28" selection-end-line="418" selection-end-column="28" />
-              <folding>
-                <element signature="e#12#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/page_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.8" vertical-offset="0" max-vertical-offset="624">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.64" vertical-offset="816" max-vertical-offset="1584">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -227,160 +143,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="gae_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happy-planet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -773,7 +535,11 @@
       <created>1405739234046</created>
       <updated>1405739234046</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;&#10;Bible GUI ... In Progress&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;Portfolio&#10;AG Site&#10;APPLE&#10;GOOGLE&#10;NINTENDO&#10;SONY">
+      <created>1405744281030</created>
+      <updated>1405744281030</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,7 +552,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30222842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30222842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -835,7 +601,8 @@
     <MESSAGE value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Bible GUI ... In Progress&#10;Green Peace (NRWL) ... In Progress&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;World Vision (MAF) ... In Progress" />
     <MESSAGE value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Bible GUI ... In Progress&#10;Green Peace (NRWL) ... OK&#10;NRWL GUI ... OK&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;World Vision (MAF) ... In Progress" />
     <MESSAGE value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Bible GUI ... In Progress&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;World Vision (MAF) ... In Progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Bible GUI ... In Progress&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;World Vision (MAF) ... In Progress" />
+    <MESSAGE value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;&#10;Bible GUI ... In Progress&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;Portfolio&#10;AG Site&#10;APPLE&#10;GOOGLE&#10;NINTENDO&#10;SONY" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;&#10;Bible GUI ... In Progress&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;Portfolio&#10;AG Site&#10;APPLE&#10;GOOGLE&#10;NINTENDO&#10;SONY" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1208,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336" vertical-offset="320" max-vertical-offset="4720">
+        <state vertical-scroll-proportion="0.5168237" vertical-offset="320" max-vertical-offset="4720">
           <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
