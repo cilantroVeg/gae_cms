@@ -134,7 +134,7 @@ def feed_pages(request, language_code):
         # Iterate feeds and add items to page_set
         for feed in feeds:
             pages = parse_feed(feed)
-            page_set[feed.source_type] = pages # sorted(pages, key=lambda k: k['timestamp'], reverse=True)
+            page_set[feed.source_type] = sorted(pages, key=lambda k: k['timestamp'], reverse=True)
     response_data['pages'] = page_set
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 

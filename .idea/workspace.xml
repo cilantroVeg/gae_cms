@@ -15,7 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/reset.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/responsive.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/superfish.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/superfish.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/yellow.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/color/yellow.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/zerogrid.css" afterPath="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/css/zerogrid.css" />
@@ -41,10 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2863372" vertical-offset="3067" max-vertical-offset="4160">
+            <state vertical-scroll-proportion="-7.88" vertical-offset="3067" max-vertical-offset="4160">
               <caret line="204" column="53" selection-start-line="204" selection-start-column="53" selection-end-line="204" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,11 +67,44 @@
       <file leaf-file-name="api.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.6" vertical-offset="1961" max-vertical-offset="5440">
-              <caret line="136" column="49" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="49" />
+            <state vertical-scroll-proportion="-10.24" vertical-offset="1696" max-vertical-offset="5216">
+              <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.8625" vertical-offset="3211" max-vertical-offset="5536">
+              <caret line="225" column="45" selection-start-line="225" selection-start-column="45" selection-end-line="225" selection-end-column="45" />
               <folding>
-                <element signature="e#26#62#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.72" vertical-offset="2057" max-vertical-offset="3360">
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,19 +160,19 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_view.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/layout/footer.html" />
         <option value="$PROJECT_DIR$/projects/cms/access_keys.py" />
-        <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/index.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-admin.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/front_page.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/template.html" />
-        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-page.html" />
         <option value="$PROJECT_DIR$/delete.py" />
         <option value="$PROJECT_DIR$/projects/cms/pages/del.py" />
-        <option value="$PROJECT_DIR$/projects/cms/pages/api.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html" />
+        <option value="$PROJECT_DIR$/projects/cms/pages/api.py" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html" />
+        <option value="$PROJECT_DIR$/projects/cms/settings.py" />
+        <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
       </list>
     </option>
   </component>
@@ -621,9 +654,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -645,6 +675,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -887,20 +920,23 @@
       <created>1405708397143</created>
       <updated>1405708397143</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Yahoo Feed OK&#10;Bible API (Bible) ... OK&#10;Bible GUI ... In Progress&#10;Green Peace (NRWL) ... OK&#10;PETA (NRWL) ... OK&#10;NRWL GUI ... OK&#10;Wikipedia (NRWL) ... In Progress&#10;Wikia Recipes (YIYASK) ... In Progress&#10;World Vision (MAF) ... In Progress">
+      <created>1405710037057</created>
+      <updated>1405710037057</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30222842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30222842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -908,11 +944,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23733003" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1096,13 +1133,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/API/specs/api-specification.rb">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="5968">
           <caret line="1" column="74" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="74" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/API/api-docs.json">
@@ -1238,26 +1275,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
           <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2736" max-vertical-offset="3376">
-          <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,15 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7801" max-vertical-offset="8560">
           <caret line="520" column="55" selection-start-line="520" selection-start-column="55" selection-end-line="520" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3201" max-vertical-offset="5536">
-          <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3648" max-vertical-offset="4432">
           <caret line="271" column="7" selection-start-line="271" selection-start-column="7" selection-end-line="271" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1300,19 +1311,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.6" vertical-offset="1961" max-vertical-offset="5440">
-          <caret line="136" column="49" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="49" />
-          <folding>
-            <element signature="e#26#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/happy-planet/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2863372" vertical-offset="3067" max-vertical-offset="4160">
+        <state vertical-scroll-proportion="-7.88" vertical-offset="3067" max-vertical-offset="4160">
           <caret line="204" column="53" selection-start-line="204" selection-start-column="53" selection-end-line="204" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1328,6 +1329,43 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.24" vertical-offset="1696" max-vertical-offset="5216">
+          <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8625" vertical-offset="3211" max-vertical-offset="5536">
+          <caret line="225" column="45" selection-start-line="225" selection-start-column="45" selection-end-line="225" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.72" vertical-offset="2057" max-vertical-offset="3360">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
