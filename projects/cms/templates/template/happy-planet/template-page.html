@@ -41,25 +41,13 @@
             });
             /* End Carousel */
 
-
-            /* Start Orbit Slider */
-            $(window).load(function() {
-                $('.post-gallery').orbit({
-                    animation: 'fade',
-                });
+            $('#featured-posts-wwf').carouFredSel({
+                auto: true,
+                prev: '#prev3',
+                next: '#next3',
             });
-            /* End Orbit Slider */
+            /* End Carousel */
 
-
-            /* Start Super fish */
-            jQuery(document).ready(function(){
-                jQuery('ul.sf-menu').superfish({
-                    delay:         100,
-                    speed:         'fast',
-                    speedOut:      'fast',
-                });
-            });
-            /* End Of Super fish */
 
         });
     </script>
@@ -75,7 +63,7 @@
     <div class="col-full"><div class="wrap-col">
         <div id="header-nav-container">
 
-            <a href="{{ STATIC_URL }}template/www.nrwl.org/#" style="color:white;font-size: 31px;">
+            <a href="/" style="color:white;font-size: 31px;">
                 NRWL
             </a>
             <!-- Navigation Menu -->
@@ -105,138 +93,10 @@
 <!-- Start Main Container -->
 <div class="container zerogrid">
     <!-- Start Featured Carousel -->
-    <div class="container zerogrid">
-        <div class="list_carousel">
-            <ul id="featured-posts">
-                {% for item in feed_pages %}
-                {% if forloop.counter >= 4 %}
-                    {% if forloop.counter|divisibleby:"3" %}
-                <li class="last carousel-item" style="height: 405px;">
-                    {% else %}
-                <li class="first carousel-item" style="height: 405px;">
-                    {% endif%}
-                    <div class="post-margin">
-                        <h6 style="height: 30px;clear:both;margin-bottom: 30px;"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                        <span style="clear: both;"><i class="fa fa-clock-o"></i>{{item.created_at}}</span>
-                    </div>
-
-                    <div class="featured-image">
-                        <a href="/{{request_language}}/feed/{{item.slug}}"><img width="290" height="130" src="{{item.image_url}}"  style="max-width: 290px;max-height: 130px" /></a>
-                        <div class="post-icon">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="post-margin" style="height: 100px;">
-                        <p>{{item.content_no_html|truncate_str:96}}</p>
-                    </div>
-                <div><img src="{{feed_pages.0.feed_image_url}}" style="width:70px;float: right;clear:none;"/></div>
-                </li>
-                {% endif %}
-                {% endfor %}
-
-            </ul>
-
-            <div class="clear"></div>
-
-            <div class="carousel-controls">
-                <a id="prev2" class="prev" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-left"></i></a>
-                <a id="next2" class="next" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-right"></i></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Start Posts Container -->
-    <div class="col-2-3" id="post-container">
-        <div class="wrap-col">
-
-            <!-- Start Post Item -->
-            <div class="post">
-                <div class="post-margin">
-
-                    <div class="post-avatar">
-                        <div class="avatar-frame"></div>
-                    </div>
-
-                    <h4 class="post-title"><a href="/{{request_language}}/feed/{{feed_pages.0.slug}}">{{feed_pages.0.title}}</a></h4>
-                    <ul class="post-status">
-                        <li><i class="fa fa-clock-o"></i>{{feed_pages.0.created_at}}</li>
-                        <li><i class="fa fa-folder-open-o"></i><a href="/{{request_language}}/feed/{{feed_pages.0.slug}}" title="{{feed_pages.0.title}}" rel="category">Read More</a></li>
-                        <li><img src="{{feed_pages.0.feed_image_url}}" style="width:70px;float: right;clear:none"/></li>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="featured-image">
-                    <img src="{{feed_pages.0.image_url}}" class="attachment-post-standard "  />
-                    <div class="post-icon">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <div class="post-margin">
-                    <p>{{feed_pages.0.content_no_html| safe | truncate_str:512}}</p>
-                    <img src="{{feed_pages.0.feed_image_url}}" style="width:70px;float: right;clear:none"/>
-                </div>
-
-                <br />
-                <ul class="post-social">
-                    <li>
-                        <a href="/{{request_language}}/feed/{{feed_pages.0.slug}}" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a>
-                    </li>
-                </ul>
-
-                <div class="clear"></div>
-            </div>
-            <!-- End Post Item -->
-
-
-
-
-
-
-
-
-
-
-            <div class="clear"></div>
-
-        </div>
-
-        <!-- Start Featured Carousel -->
-    </div>
-    <!-- End Posts Container -->
-
-    <!-- Start Sidebar -->
-    <div class="col-1-3">
-        <div class="wrap-col">
-            <div class="widget-container"><h6 class="widget-title">Latest Posts</h6>	<!-- Start Widget -->
-                <ul class="widget-recent-posts">
-                    {% for item in feed_pages %}
-                    {% if forloop.counter > 1 and forloop.counter < 4 %}
-                    <li style="clear: both;">
-                        <div class="post-image">
-                            <div class="post-mask"></div>
-                            <img width="70" height="70" src="{{item.image_url}}" class="attachment-post-widget #"  />
-                        </div>
-                        <h6><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                        <br />
-                        <span style="float: right;">{{item.created_at}}</span>
-                        <div class="clear"></div>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <!-- End Widget -->
-                <div class="clear"></div></div>    <div class="clear"></div>
-        </div></div>        <!-- End Sidebar -->
+    <div>{% block content %}{% endblock %}</div>
 
     <div class="clear"></div>
+
     {% if is_logged_in %}
     {% else %}
     <div class="section" id="enter" >

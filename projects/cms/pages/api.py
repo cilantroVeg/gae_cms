@@ -134,7 +134,7 @@ def feed_pages(request, language_code):
         # Iterate feeds and add items to page_set
         for feed in feeds:
             pages = parse_feed(feed)
-            page_set[feed.source_type] = sorted(pages, key=lambda k: k['timestamp'], reverse=True)
+            page_set[feed.source_type] = pages # sorted(pages, key=lambda k: k['timestamp'], reverse=True)
     response_data['pages'] = page_set
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
 
@@ -239,6 +239,38 @@ def parse_feed(feed):
             else:
                 image_url = None
             if image_url:
+                p = {}
+                p['id'] = None
+                p['title'] = entry.title
+                p['headline'] = (entry.title[:29] + '..') if len(entry.title) > 29 else entry.title
+                p['slug'] = slugify(entry.title)
+                p['content'] = entry.description
+                p['content_no_html'] = strip_tags(p['content'] )
+                p['author'] = None
+                p['category'] = source_type
+                p['category_slug'] = slugify(source_type)
+                p['feed_type'] = source_type
+                p['twitter_hashtags'] = None
+                p['feed_source']= entry.link
+                p['feed_image_url']= feed.logo_url
+                p['image_url']= image_url
+                p['video_url']= None
+                p['audio_url']= None
+                p['priority']= 2
+                p['is_enabled']= True
+                p['created_at'] = str(naturalday(datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))))
+                p['timestamp'] = time.mktime(entry.published_parsed)
+                if len(entry.description) > 140:
+                    pages.append(p)
+    elif source_type == 'WWF':
+        info = feedparser.parse(feed_url)
+        for entry in info.entries:
+            match = re.search(r'[href|src]="(.*(png|jpg))"', entry.description)
+            if match:
+                image_url = match.groups()[0]
+            else:
+                image_url = None
+            if True:
                 p = {}
                 p['id'] = None
                 p['title'] = entry.title

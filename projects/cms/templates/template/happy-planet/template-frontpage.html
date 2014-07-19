@@ -41,25 +41,13 @@
             });
             /* End Carousel */
 
-
-            /* Start Orbit Slider */
-            $(window).load(function() {
-                $('.post-gallery').orbit({
-                    animation: 'fade',
-                });
+            $('#featured-posts-wwf').carouFredSel({
+                auto: false,
+                prev: '#prev3',
+                next: '#next3',
             });
-            /* End Orbit Slider */
+            /* End Carousel */
 
-
-            /* Start Super fish */
-            jQuery(document).ready(function(){
-                jQuery('ul.sf-menu').superfish({
-                    delay:         100,
-                    speed:         'fast',
-                    speedOut:      'fast',
-                });
-            });
-            /* End Of Super fish */
 
         });
     </script>
@@ -140,8 +128,8 @@
             <div class="clear"></div>
 
             <div class="carousel-controls">
-                <a id="prev2" class="prev" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-left"></i></a>
-                <a id="next2" class="next" href="{{ STATIC_URL }}template/www.nrwl.org/#"><i class="fa fa-angle-right"></i></a>
+                <a id="prev2" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
+                <a id="next2" class="next" href="#"><i class="fa fa-angle-right"></i></a>
                 <div class="clear"></div>
             </div>
         </div>
@@ -217,9 +205,56 @@
                 </ul>
                 <!-- End Widget -->
                 <div class="clear"></div></div>    <div class="clear"></div>
-        </div></div>        <!-- End Sidebar -->
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
 
     <div class="clear"></div>
+
+    <div class="container zerogrid">
+        <div class="list_carousel">
+            <ul id="featured-posts-wwf">
+                {% for item in feed_pages.WWF %}
+                    {% if forloop.counter|divisibleby:"3" %}
+                    <li class="last carousel-item" style="height: 320px;">
+                    {% else %}
+                    <li class="first carousel-item" style="height: 320px;">
+                    {% endif%}
+                    <div class="post-margin">
+                        <h6 style="height: 30px;clear:both;margin-bottom: 30px;"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
+                        <span style="clear: both;"><i class="fa fa-clock-o"></i>{{item.created_at}}</span>
+                    </div>
+
+                    <div class="featured-image" style="text-align: center;align-items: center;padding: 0;margin: 0; max-height: 70px;">
+                        <a href="/{{request_language}}/feed/{{item.slug}}"><img height="130" src="{{item.feed_image_url}}"  style="padding-bottom:5px;padding-top: 5px;max-height: 50px;text-align: center;" /></a>
+                        <div class="post-icon">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-margin" style="height: 80px;padding: 5px;margin: 5px;">
+                        <p>{{item.content_no_html|truncate_str:96}}</p>
+                    </div>
+                    <div style="text-align: right;padding: 5px;"><a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a></div>
+
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+            <div class="clear"></div>
+
+            <div class="carousel-controls">
+                <a id="prev3" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
+                <a id="next3" class="next" href="#"><i class="fa fa-angle-right"></i></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
     {% if is_logged_in %}
     {% else %}
     <div class="section" id="enter" >
