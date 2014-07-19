@@ -30,6 +30,7 @@ urlpatterns = patterns('',
     # Frontpage
     url('^$', 'pages.views.front_page'),
     url(r'^(?P<language>[a-z]{2})$', 'pages.views.front_page_language'),
+    url(r'^(?P<language>[a-z]{3})$', 'pages.views.front_page_language_family_iso'),
     url(r'^contact/', 'pages.views.contact'),
     url(r'^thanks/', 'pages.views.thanks'),
 

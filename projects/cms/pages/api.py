@@ -301,7 +301,7 @@ def parse_feed(feed):
 
 # Bible
 # ...
-def bible_languages(request,media):
+def bible_languages(request,media,return_type=None):
     response_data = {}
     if media =='text':
         r = requests.get(settings.DBT_LANGUAGE_TEXT_URL)
@@ -315,7 +315,10 @@ def bible_languages(request,media):
         response_data['languages'] = r.json()
     else:
         response_data['languages'] = None
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+    if return_type:
+        return response_data['languages']
+    else:
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
 # ...
 def bible_list(request,media,language_code):

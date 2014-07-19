@@ -511,11 +511,18 @@ def thanks(request):
 def front_page(request):
     from django.utils import translation
     thread_language = translation.get_language()
-    languages = Language.objects.filter(is_enabled=True)
-    for language in languages:
-        if language.code in thread_language:
-            return redirect('/'+language.code, False)
-    return redirect('/en', False)
+    if settings.APP_NAME == 'bible-love':
+        languages = bible_languages(request,'text','json')
+        for l in languages:
+            if thread_language[0:2].lower() in l["language_family_iso_1"].lower():
+                return redirect('/'+l["language_family_iso"].lower(), False)
+        return redirect('/eng', False)
+    else:
+        languages = Language.objects.filter(is_enabled=True)
+        for language in languages:
+            if language.code in thread_language:
+                return redirect('/'+language.code, False)
+        return redirect('/en', False)
 
 def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
@@ -523,6 +530,18 @@ def front_page_language(request,language):
     feed_pages = query_api(language_code, 'feed_pages')
     feed_pages = feed_pages['pages'] if feed_pages else None
     return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+
+def front_page_language_family_iso(request,language):
+    languages = bible_languages(request,'text','json')
+    language_item = search_dictionaries('language_family_iso', language, languages)
+    if language_item:
+        current_language = language
+    else:
+        return redirect('/eng', False)
+    return render_to_response('users/template.html', {'languages_bible':languages,'current_language':current_language,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+
+def search_dictionaries(key, value, list_of_dictionaries):
+    return [element for element in list_of_dictionaries if element[key] == value]
 
 # Custom 404 and 500
 def my_custom_404_view(request):
