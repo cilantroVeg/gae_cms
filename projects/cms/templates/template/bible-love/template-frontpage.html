@@ -7,7 +7,7 @@
 -->
 <html>
 <head>
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <title>{{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}"/>
     <meta name="author" content="Powered by InterPegasus CMS - {% now " Y
@@ -50,7 +50,11 @@
         <div id="content-inner">
             <!-- Post -->
             <article class="is-post is-post-excerpt">
-                <header>
+                {% if current_bible.right_to_left == 'true' %}
+                    <header style="text-align: right;">
+                {%else %}
+                    <header style="text-align: left;">
+                {%endif%}
                     <!--
                         Note: Titles and bylines will wrap automatically when necessary, so don't worry
                         if they get too long. You can also remove the "byline" span entirely if you don't
@@ -92,9 +96,11 @@
                     </ul>
                 </div>
                 {% for verse in current_chapter %}
-                <p>
-                    <sup>{{verse.verse_id}}</sup>{{verse.verse_text}}
-                </p>
+                {% if current_bible.right_to_left == 'true' %}
+                    <p style="text-align: right;">{{verse.verse_text}}<sup>{{verse.verse_id}}</sup></p>
+                {%else %}
+                    <p style="text-align: left;"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
+                {%endif%}
                 {% endfor %}
             </article>
 
@@ -136,7 +142,7 @@
     <div id="sidebar">
         <select id="language">
             {% for language in languages_bible %}
-            {% if language.language_family_name == language.language_family_english%}
+            {% if language.language_family_name == language.language_family_english %}
             <option value="{{language.language_family_iso}}"
             {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
             {{language.language_family_english|truncate_str:12}}

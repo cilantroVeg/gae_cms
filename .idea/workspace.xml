@@ -29,8 +29,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.156863" vertical-offset="8442" max-vertical-offset="9216">
-              <caret line="560" column="261" selection-start-line="560" selection-start-column="251" selection-end-line="560" selection-end-column="261" />
+            <state vertical-scroll-proportion="-7.9607844" vertical-offset="8458" max-vertical-offset="9216">
+              <caret line="554" column="19" selection-start-line="554" selection-start-column="12" selection-end-line="554" selection-end-column="19" />
               <folding>
                 <element signature="e#12#39#0" expanded="true" />
               </folding>
@@ -61,9 +61,13 @@
       <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42363113" vertical-offset="1306" max-vertical-offset="3808">
-              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.2074928" vertical-offset="0" max-vertical-offset="3904">
+              <caret line="9" column="110" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
               <folding>
+                <element signature="n#style#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#header#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -938,7 +942,11 @@
       <created>1405835910837</created>
       <updated>1405835910837</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="- Bible GUI ... In Progress&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done">
+      <created>1405836880157</created>
+      <updated>1405836880158</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1372,16 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.156863" vertical-offset="8442" max-vertical-offset="9216">
-          <caret line="560" column="261" selection-start-line="560" selection-start-column="251" selection-end-line="560" selection-end-column="261" />
-          <folding>
-            <element signature="e#12#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.2" vertical-offset="5216" max-vertical-offset="5984">
@@ -1398,11 +1396,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9607844" vertical-offset="8458" max-vertical-offset="9216">
+          <caret line="554" column="19" selection-start-line="554" selection-start-column="12" selection-end-line="554" selection-end-column="19" />
+          <folding>
+            <element signature="e#12#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42363113" vertical-offset="1306" max-vertical-offset="3808">
-          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.2074928" vertical-offset="0" max-vertical-offset="3904">
+          <caret line="9" column="110" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
           <folding>
+            <element signature="n#style#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#header#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#header#0;n#article#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
