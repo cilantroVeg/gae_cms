@@ -321,7 +321,7 @@ def bible_languages(request,media,return_type=None):
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
 # ...
-def bible_list(request,media,language_code):
+def bible_list(request,media,language_code,return_type=None):
     response_data = {}
     if media =='text':
         r = requests.get(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
@@ -335,17 +335,24 @@ def bible_list(request,media,language_code):
         response_data['bibles'] = r.json()
     else:
         response_data['bibles'] = None
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+    if return_type:
+        return response_data['bibles']
+    else:
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
 # ...
-def bible_books(request,dam_id):
+def bible_books(request,dam_id,return_type=None):
     response_data = {}
     r = requests.get(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
     if r.status_code == 200:
         response_data['books'] = r.json()
     else:
         response_data['books'] = None
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+    if return_type:
+        return response_data['books']
+    else:
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+
 
 # ...
 def bible_book_text(request,dam_id,book_id,chapter_id):

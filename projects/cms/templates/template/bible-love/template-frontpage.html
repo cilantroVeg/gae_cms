@@ -133,32 +133,48 @@
 
     <!-- Logo -->
     <div id="logo">
-        <h1>BIBLE</h1>
+        <h1>{{bibles.0.collection_name}}</h1>
     </div>
     <!-- Nav -->
+    <h1>{{current_language}}</h1>
     <nav id="nav">
     <select id="language">
         {% for language in languages_bible %}
             {% if language.language_family_name == language.language_family_english%}
                 <option value="{{language.language_family_iso}}"
-                        {% if current_language == language.language_family_iso %}selected = "selected"{% endif%}>
+                        {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
                         {{language.language_family_english|truncate_str:12}}
                 </option>
             {%else%}
                 {% if language.language_family_name|length > 12 %}
                     <option value="{{language.language_family_iso}}"
-                            {% if current_language == language.language_family_iso %}selected = "selected"{% endif%}>
+                            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
                         {{language.language_family_name|truncate_str:12}}
                     </option>
                 {% else %}
                     <option value="{{language.language_family_iso}}"
-                            {% if current_language == language.language_family_iso %}selected = "selected"{% endif%}>
+                            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
                         {{language.language_family_name}} - {{language.language_family_english|truncate_str:12}}
                     </option>
                 {% endif %}
             {%endif%}
         {% endfor %}
     </select>
+        
+    <select id="bible">
+        {% for bible in bibles %}
+            <option value="{{bible.dam_id}}"
+            {% if current_bible|lower == 1 %}selected = "selected"{% endif%}>
+            {{bible.collection_name}}
+            {% if bible.version_name %}
+                - {{bible.version_name}}
+            {% endif %}
+            </option>
+        {% endfor %}
+    </select>
+        
+        
+        
     </nav>
 
     <!-- Search -->
