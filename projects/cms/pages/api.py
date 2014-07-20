@@ -355,22 +355,28 @@ def bible_books(request,dam_id,return_type=None):
 
 
 # ...
-def bible_book_text(request,dam_id,book_id,chapter_id):
+def bible_book_text(request,dam_id,book_id,chapter_id,return_type=None):
     response_data = {}
     r = requests.get(settings.DBT_GET_BIBLE_BOOKS_TEXT_URL + '&dam_id=' + dam_id + '&book_id=' + book_id + '&chapter_id=' + str(chapter_id))
     if r.status_code == 200:
         response_data['text'] = r.json()
     else:
         response_data['text'] = None
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+    if return_type:
+        return response_data['text']
+    else:
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
 # ...
-def bible_copyright(request,dam_id):
+def bible_copyright(request,dam_id,return_type=None):
     response_data = {}
     r = requests.get(settings.DBT_GET_COPYRIGHT_URL + '&dam_id=' + str(dam_id))
     if r.status_code == 200:
         response_data['copyright'] = r.json()
     else:
         response_data['copyright'] = None
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
+    if return_type:
+        return response_data['copyright']
+    else:
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
