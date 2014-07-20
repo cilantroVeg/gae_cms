@@ -98,6 +98,19 @@
                 {% endfor %}
             </article>
 
+            <!-- Pager -->
+            <div class="pager">
+                <!--<a href="#" class="button previous">Previous Page</a>-->
+                <div class="pages">
+                    {% for chapter in current_book.chapters|string_to_array %}
+                        <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}"
+                        {% if current_chapter.0.chapter_id == chapter %} class="active" {% endif %}>{{chapter}}
+                        </a>
+                    {% endfor %}
+                </div>
+                <a href="#" class="button next">Next Page</a>
+            </div>
+
             <!-- Post -->
             <article class="is-post is-post-excerpt">
                 <header>
@@ -106,25 +119,16 @@
                 <ul>
                     {{references.0.mark}}
                     {% for reference in references.0.organization %}
-
+                    {% if reference.organization_url and reference.organization_url != 'null' %}
+                    <li><a href="{{reference.organization_url}}"><sub>{{reference.organization_english}}</sub></a></li>
+                    {% elif reference.organization_donation and reference.organization_donation != 'null' %}
+                    <li><a href="{{reference.organization_donation}}"><sub>{{reference.organization_english}}</sub></a></li>
+                    {% else %}
+                    <li><a href="#"><sub>{{reference.organization_english}}</sub></a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </article>
-
-            <!-- Pager -->
-            <div class="pager">
-                <!--<a href="#" class="button previous">Previous Page</a>-->
-                <div class="pages">
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <span>&hellip;</span>
-                    <a href="#">20</a>
-                </div>
-                <a href="#" class="button next">Next Page</a>
-            </div>
-
         </div>
     </div>
 
