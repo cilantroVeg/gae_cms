@@ -133,10 +133,10 @@
 
     <!-- Logo -->
     <div id="logo">
-        <h1>{{bibles.0.collection_name}}</h1>
+        <h1>{{current_bible.collection_name}}</h1>
     </div>
     <!-- Nav -->
-    <h1>{{current_language}}</h1>
+
     <nav id="nav">
     <select id="language">
         {% for language in languages_bible %}
@@ -160,15 +160,15 @@
             {%endif%}
         {% endfor %}
     </select>
-        
+    <hr />
     <select id="bible">
         {% for bible in bibles %}
-            <option value="{{bible.dam_id}}"
-            {% if current_bible|lower == 1 %}selected = "selected"{% endif%}>
-            {{bible.collection_name}}
-            {% if bible.version_name %}
-                - {{bible.version_name}}
-            {% endif %}
+            <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
+            {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
+                {{ bible.collection_name }}
+                {% if bible.volume_name %}
+                    - {{bible.volume_name}}
+                {% endif %}
             </option>
         {% endfor %}
     </select>

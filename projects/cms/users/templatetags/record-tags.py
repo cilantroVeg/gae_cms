@@ -54,3 +54,13 @@ def translate(key, language_code):
 @register.filter
 def truncate_str(str, length):
     return (str[:length] + '..') if len(str) > length else str
+
+@register.filter
+def format_testament(value):
+    """Removes all values of arg from the given string"""
+    if value == 'Old Testament':
+        return 'NT'
+    elif value == 'New Testament':
+        return 'NT'
+    else:
+        return value

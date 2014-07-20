@@ -531,7 +531,7 @@ def front_page_language(request,language):
     feed_pages = feed_pages['pages'] if feed_pages else None
     return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
-def front_page_language_family_iso(request,language,bible=None):
+def front_page_language_family_iso(request,language,bible=None,book=None):
     media = 'text'
     response_format = 'json'
     languages = bible_languages(request,media,response_format)
@@ -541,9 +541,16 @@ def front_page_language_family_iso(request,language,bible=None):
         language_family_code = language_item[0]['language_family_code']
         # Bible List
         bibles = bible_list(request,media,language_family_code.lower(),response_format)
+        if bible:
+            current_bible = search_dictionaries('dam_id', bible, bibles)[0]
+        else:
+            current_bible = bibles[0]
+        # Get Book
+        books = bible_books(request,current_bible['dam_id'],return_type=None)
+
     else:
         return redirect('/eng', False)
-    return render_to_response('users/template.html', {'languages_bible':languages, 'bibles':bibles,'current_language':language_family_iso.lower(),'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key] == value]
