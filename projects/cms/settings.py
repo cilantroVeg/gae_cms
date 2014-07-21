@@ -23,7 +23,7 @@ AUTOLOAD_SITECONF = 'indexes'
 
 SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 
-ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com']
+ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com','bible-love.appspot.com','bible7.co']
 
 INSTALLED_APPS = (
 #   'django.contrib.admin',
@@ -179,7 +179,7 @@ elif APP_NAME == 'arturopegasus7':
     SITE_URL = 'http://arturo.interpegasus.com'
 elif APP_NAME == 'arturoportfolio7':
     SITE_URL = 'http://portfolio.interpegasus.com'
-elif APP_NAME == 'bible-love' or APP_NAME == 'bible7.co':
+elif APP_NAME == 'bible-love':
     SITE_URL = 'http://bible-love.appspot.com'
 elif APP_NAME == 'musicmatch777':
     SITE_URL = 'http://musicmatch777.appspot.com'

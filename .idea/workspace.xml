@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/Music" afterPath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/music" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/NRWL" afterPath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/nrwl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/Recipes" afterPath="$PROJECT_DIR$/projects/cms/static/template/API/api-docs/recipes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/settings.py" afterPath="$PROJECT_DIR$/projects/cms/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -71,8 +68,8 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4306864" vertical-offset="2560" max-vertical-offset="3328">
-              <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.5168237" vertical-offset="0" max-vertical-offset="3328">
+              <caret line="25" column="289" selection-start-line="25" selection-start-column="289" selection-end-line="25" selection-end-column="289" />
               <folding />
             </state>
           </provider>
@@ -945,7 +942,11 @@
       <created>1405976775485</created>
       <updated>1405976775485</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done">
+      <created>1405983575589</created>
+      <updated>1405983575590</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1382,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4306864" vertical-offset="2560" max-vertical-offset="3328">
-          <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.5168237" vertical-offset="0" max-vertical-offset="3328">
+          <caret line="25" column="289" selection-start-line="25" selection-start-column="289" selection-end-line="25" selection-end-column="289" />
           <folding />
         </state>
       </provider>
