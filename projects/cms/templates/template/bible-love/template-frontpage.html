@@ -40,8 +40,50 @@
     Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
     Set it to "right-sidebar" to, you guessed it, position it on the right.
 -->
-<body class="left-sidebar">
-
+{% if current_bible.right_to_left == 'true' %}
+    <body class="right-sidebar">
+{%else %}
+    <body class="left-sidebar">
+{%endif%}
+<div style="min-height: 40px;min-width: 100%;clear: both;top:0px;  background-color: #c94663;">
+    <div style="width:45%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+        <select id="language">
+            {% for language in languages_bible %}
+            {% if language.language_family_name == language.language_family_english %}
+            <option value="{{language.language_family_iso}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_english|truncate_str:12}}
+            </option>
+            {%else%}
+            {% if language.language_family_name|length > 12 %}
+            <option value="{{language.language_family_iso}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name|truncate_str:12}}
+            </option>
+            {% else %}
+            <option value="{{language.language_family_iso}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name}} - {{language.language_family_english|truncate_str:12}}
+            </option>
+            {% endif %}
+            {%endif%}
+            {% endfor %}
+        </select>
+    </div>
+    <div style="width:45%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+             <select id="bible">
+                {% for bible in bibles %}
+                <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
+                {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
+                {{ bible.collection_name }}
+                {% if bible.volume_name %}
+                - {{bible.volume_name}}
+                {% endif %}
+                </option>
+                {% endfor %}
+            </select>
+    </div>
+</div>
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -60,18 +102,6 @@
                         if they get too long. You can also remove the "byline" span entirely if you don't
                         need a byline.
                     -->
-                    <select id="bible">
-                        {% for bible in bibles %}
-                        <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
-                        {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
-                        {{ bible.collection_name }}
-                        {% if bible.volume_name %}
-                        - {{bible.volume_name}}
-                        {% endif %}
-                        </option>
-                        {% endfor %}
-                    </select>
-
                     <h2><a href="#">{{current_chapter.0.book_name}}</a></h2>
                     <span class="byline">{{current_chapter.0.chapter_title}}</span>
                 </header>
@@ -114,7 +144,7 @@
                         </a>
                     {% endfor %}
                 </div>
-                <a href="#" class="button next">Next Page</a>
+                <a style="display: none;" href="#" class="button next">Next Page</a>
             </div>
 
             <!-- Post -->
@@ -140,33 +170,10 @@
 
     <!-- Sidebar -->
     <div id="sidebar">
-        <select id="language">
-            {% for language in languages_bible %}
-            {% if language.language_family_name == language.language_family_english %}
-            <option value="{{language.language_family_iso}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_english|truncate_str:12}}
-            </option>
-            {%else%}
-            {% if language.language_family_name|length > 12 %}
-            <option value="{{language.language_family_iso}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name|truncate_str:12}}
-            </option>
-            {% else %}
-            <option value="{{language.language_family_iso}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name}} - {{language.language_family_english|truncate_str:12}}
-            </option>
-            {% endif %}
-            {%endif%}
-            {% endfor %}
-        </select>
-        <hr/>
         <!-- Logo -->
 
         <h1 style="text-align: center;">{{current_bible.volume_name}}</h1>
-
+<br />
         <div id="logo">
             <h1>{{current_bible.collection_name}}</h1>
         </div>

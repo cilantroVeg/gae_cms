@@ -58,7 +58,10 @@ def truncate_str(str, length):
 @register.filter
 def string_to_array(value):
     """Removes all values of arg from the given string"""
-    return value.split(",")
+    if value:
+        return value.split(",")
+    else:
+        return None
 
 @register.filter
 def string_replace_null(value):
