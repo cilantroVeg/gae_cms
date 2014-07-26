@@ -67,6 +67,7 @@
             <h1>{{ 'WEBSITE_NAME'|get_record:request_language}}</h1>
             <div>{% block content %}{% endblock %}</div>
             <strong class = "sub_heading">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</strong>
+            {% include "layout/images.html" %}
         </div>
     </div>
 </div>

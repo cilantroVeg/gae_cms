@@ -1,0 +1,23 @@
+{% block js %}
+<link rel = "stylesheet" type = "text/css" href = "{{STATIC_URL}}javascript/flex/flexslider.css" media = "all"/>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/flex/jquery.flexslider-min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="flexslider" style="height: 320px; width:480px; margin: 0 auto; margin-bottom: 35px; overflow: hidden;">
+    <ul class="slides" >
+        {% for image in image_array %}
+        <li>
+            <img src="{{image.picasa_photo_url}}" title="{{image.name}}" style="
+    width: 100%;
+    height: auto;
+    background-position: center;
+    margin: 0 auto;
+    vertical-align: middle;"/>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
+
