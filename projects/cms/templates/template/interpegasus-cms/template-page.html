@@ -45,7 +45,6 @@
             </div>
             <div id = "top-nav" class = "">
                 <ul id = "fixed-nav">
-                    <li class = "current"><a href = "#home">{{'Home'|translate:request_language}}</a></li>
                     {% for c in categories %}
                     {% if c.parent == None %}
                     <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
@@ -62,10 +61,13 @@
 </div>
 <!-- End Header -->
 <!-- Big Full screen Banner -->
-<div class="hero bg-fixed" id="home">
+<div class="hero bg-fixed bg-color" id="home">
     <div class="slogan">
         <div class = "center">
-            <div>{% block content %}{% endblock %}</div>
+            <div style="text-align: left;margin-left: 20%;margin-right: 20%;font-size: 18px;">
+                <h1>{{ page.title}}</h1>
+                <div>{{page.content|safe}}</div>
+            </div>
         </div>
     </div>
 </div>
