@@ -21,12 +21,13 @@
     <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel.min.js"></script>
     <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel-panels.min.js"></script>
     <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/init.js"></script>
-
+<!--
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/skel-noscript.css"/>
+
+-->
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
-
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -34,6 +35,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie8.css"/><![endif]-->
     <!--[if lte IE 7]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie7.css"/><![endif]-->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}template/bible.interpegasus.com/images/favicon.ico">
 </head>
 
 <!--
@@ -52,18 +54,18 @@
             {% if language.language_family_name == language.language_family_english %}
             <option value="{{language.language_family_iso}}"
             {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_english|truncate_str:12}}
+            {{language.language_family_english|truncate_str:21}}
             </option>
             {%else%}
             {% if language.language_family_name|length > 12 %}
             <option value="{{language.language_family_iso}}"
             {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name|truncate_str:12}}
+            {{language.language_family_name|truncate_str:21}}
             </option>
             {% else %}
             <option value="{{language.language_family_iso}}"
             {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name}} - {{language.language_family_english|truncate_str:12}}
+            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
             </option>
             {% endif %}
             {%endif%}

@@ -515,6 +515,8 @@ def front_page(request):
     from django.utils import translation
     thread_language = translation.get_language()
     if settings.APP_NAME == 'bible-love':
+        if request.session['last_url']:
+            return redirect(request.session['last_url'], False)
         languages = bible_languages(request,'text','json')
         for l in languages:
             if thread_language[0:3].lower() in l["language_family_iso"].lower():
@@ -562,6 +564,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         else:
             chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], current_book['chapters'].split(",")[0], response_format)
         reference = bible_copyright(request,current_bible['dam_id'],return_type=response_format)
+        request.session['last_url'] = request.build_absolute_uri()
     else:
         return redirect('/eng', False)
     return render_to_response('users/template.html', {'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
