@@ -515,8 +515,9 @@ def front_page(request):
     from django.utils import translation
     thread_language = translation.get_language()
     if settings.APP_NAME == 'bible-love':
-        if request.session['last_url']:
-            return redirect(request.session['last_url'], False)
+        if 'last_url' in request.session:
+            if request.session['last_url']:
+                return redirect(request.session['last_url'], False)
         languages = bible_languages(request,'text','json')
         for l in languages:
             if thread_language[0:3].lower() in l["language_family_iso"].lower():
