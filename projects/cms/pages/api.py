@@ -91,7 +91,7 @@ def pages(request,language_code):
             p['priority']= page.priority
             p['is_enabled']= page.is_enabled
             p['created_at'] = str(naturalday(page.created_at))
-            p['timestamp'] = time.mktime(page.created_at)
+            p['timestamp'] = None
             pages.append(p)
     response_data['pages'] = pages
     return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
