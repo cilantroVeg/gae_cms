@@ -193,6 +193,10 @@ TEMPLATE_PAGE = 'template/'+APP_NAME+'/template-page.html'
 ADMIN_PAGE = 'template/'+APP_NAME+'/template-admin.html'
 TEMPLATE_API = 'template/template-api.html'
 
+#session
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 2592000
+
 # DBT
 DBT_KEY = access_keys.DBT_KEY
 DBT_LANGUAGE_TEXT_URL  = access_keys.DBT_LANGUAGE_TEXT_URL
