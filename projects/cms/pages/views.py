@@ -417,7 +417,10 @@ def page_feed_view(request, language, slug):
             for p in feed_pages['pages'][key]:
                 if p['slug'] == slug:
                     page = p
-    return render_to_response("pages/page_view.html", {"page": page},context_instance=RequestContext(request))
+    if page:
+        return render_to_response("pages/page_view.html", {"page": page},context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
 
 # ...
 def page_api(request):
