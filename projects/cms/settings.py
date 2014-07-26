@@ -23,7 +23,7 @@ AUTOLOAD_SITECONF = 'indexes'
 
 SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 
-ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com','bible-love.appspot.com','bible7.co']
+ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com','bible-love.appspot.com','bible7.co', 'www.bible7.co']
 
 INSTALLED_APPS = (
 #   'django.contrib.admin',
@@ -167,7 +167,7 @@ APP_NAME = 'interpegasus-cms'
 # Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if True:
+if False:
     SITE_URL = 'http://127.0.0.1:8001'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
