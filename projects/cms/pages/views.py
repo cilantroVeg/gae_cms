@@ -527,8 +527,11 @@ def front_page(request):
 def front_page_language(request,language):
     image_array = Image.objects.all()[:7]
     language_code = 'en' if (language is None) else language
-    feed_pages = query_api(language_code, 'feed_pages')
-    feed_pages = feed_pages['pages'] if feed_pages else None
+    try:
+        feed_pages = query_api(language_code, 'feed_pages')
+        feed_pages = feed_pages['pages'] if feed_pages else None
+    except:
+        feed_pages = None
     return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 def front_page_language_family_iso(request,language,bible=None,book=None,chapter=None):
