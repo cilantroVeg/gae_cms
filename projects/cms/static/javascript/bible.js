@@ -7,6 +7,10 @@ $(document).ready( function() {
         window.location = $(this).val();
     });
 
+    $('#book').change(function() {
+        window.location = $(this).val();
+    });
+
     $(function() {
         $('#bookmark').click(function() {
             if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark

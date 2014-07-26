@@ -570,7 +570,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
     return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 def search_dictionaries(key, value, list_of_dictionaries):
-    return [element for element in list_of_dictionaries if element[key] == value]
+    return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
 
 # Custom 404 and 500
 def my_custom_404_view(request):
