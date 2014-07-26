@@ -567,7 +567,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         request.session['last_url'] = request.build_absolute_uri()
     else:
         return redirect('/eng', False)
-    return render_to_response('users/template.html', {'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key] == value]
