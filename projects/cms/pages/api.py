@@ -141,7 +141,10 @@ def feed_pages(request, language_code):
 
 # ...
 def validate_token(request):
-    return (settings.API_ACCESS_TOKEN == request.REQUEST['access_token']) or (settings.API_ACCESS_TOKEN_1 == request.REQUEST['access_token'])
+    try:
+        return (settings.API_ACCESS_TOKEN == request.REQUEST['access_token']) or (settings.API_ACCESS_TOKEN_1 == request.REQUEST['access_token'])
+    except:
+        return False
 
 # ...
 def validate_language(language_code):
