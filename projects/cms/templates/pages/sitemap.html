@@ -4,7 +4,7 @@
 {% block content %}
     <div id="sitemap">
         {% for main_category in categories %}
-            {% if main_category.parent == None %}
+            {% if main_category.parent %}
                 <div>
                     <h4><a href = "/{{main_category.language}}/c/{{main_category.slug}}">{{ main_category.name|upper }}</a></h4>
                     {% for page in main_category.page_array %}
@@ -24,7 +24,12 @@
     </div>
     <div id="language_list">
     {% for language in languages.languages %}
-        <a href ="/{{ language.code }}">{{ language.name }}</a>&nbsp;|&nbsp;
+        <a href ="/{{ language.code }}">{{ language.name }}</a>
+            {% if forloop.last %}
+                &nbsp;&nbsp;
+            {% else %}
+                &nbsp;|&nbsp;
+            {%endif %}
     {% endfor %}
     </div>
 {% endblock %}

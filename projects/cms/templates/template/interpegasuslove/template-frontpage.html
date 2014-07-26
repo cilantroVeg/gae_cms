@@ -218,9 +218,9 @@
                 <div class="row">
             {% endif %}
                 <article class="span4 post"><img class="img-news" src="img/blog_img-01.jpg" alt="">
-                    <div class="inside" style="min-height:250px;">
+                    <div class="inside" style="min-height:280px;">
                     <p class="post-date"><i class="icon-calendar"></i> {{item.created_at}}</p>
-                    <h2>{{ item.headline }}</h2>
+                    <h2>{{ item.title }}</h2>
                     <div class="entry-content">
                     <p>{{ item.content_no_html|truncate_str:128 }}</p>
                     <div style="z-index: 1000"><a href="/{{request_language}}/feed/{{item.slug}}" class="more-link">read more</a></div>
