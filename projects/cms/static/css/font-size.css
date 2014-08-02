@@ -38,22 +38,22 @@ ul.textresizer a:hover
 
 ul.textresizer .small-text
 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 ul.textresizer .medium-text
 {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 ul.textresizer .large-text
 {
-    font-size: 18px;
+    font-size: 21px;
 }
 
 ul.textresizer .larger-text
 {
-    font-size: 21px;
+    font-size: 24px;
 }
 
 ul.textresizer a.textresizer-active
@@ -66,22 +66,22 @@ ul.textresizer a.textresizer-active
 
 #bible-text.small-text, #bible-text.small-text p
 {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #bible-text.medium-text, #bible-text.medium-text p
 {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 #bible-text.large-text, #bible-text.large-text p
 {
-    font-size: 18px;
+    font-size: 21px;
 }
 
 #bible-text.larger-text, #bible-text.larger-text p
 {
-    font-size: 21px;
+    font-size: 24px;
 }
 
 ul li a {

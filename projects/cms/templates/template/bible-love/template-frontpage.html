@@ -110,10 +110,18 @@
                 <li><a href="#" class="small-text" title="Small">A</a></li>
                 <li><a href="#" class="medium-text" title="Medium">A</a></li>
                 <li><a href="#" class="large-text" title="Large">A</a></li>
-                <li><a href="#" class="larger-text" title="Larger">A</a></li>
             </ul>
         </div>
     </div>
+    {% if current_bible.right_to_left == 'false' %}
+    <div style="margin:0;margin-left: 50px;text-align: left;float: left;clear: none;padding: 0;">
+        <div id="" style="padding: 3px;margin: 3px;">
+            <ul class="textresizer" >
+                <li><a id="paragraph-mode" href="#" class="large-text" title="Paragraph Mode">P</a></li>
+            </ul>
+        </div>
+    </div>
+    {% endif %}
 
 </div>
 <!-- Wrapper -->
@@ -159,9 +167,9 @@
                     <div id="bible-text">
                         {% for verse in current_chapter %}
                         {% if current_bible.right_to_left == 'true' %}
-                        <p style="text-align: right;">{{verse.verse_text}}<sup>{{verse.verse_id}}</sup></p>
+                            <p class="right-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
                         {%else %}
-                        <p style="text-align: left;"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
+                            <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
                         {%endif%}
                         {% endfor %}
                     </div>
