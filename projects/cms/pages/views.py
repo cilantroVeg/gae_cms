@@ -531,6 +531,8 @@ def front_page(request):
         return redirect('/en', False)
 
 def front_page_language(request,language):
+    if settings.APP_NAME == 'bible-love':
+        return redirect('/eng', False)
     image_array = Image.objects.all()[:7]
     language_code = 'en' if (language is None) else language
     try:

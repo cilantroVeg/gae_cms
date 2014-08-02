@@ -1,0 +1,119 @@
+{% load record-tags %}
+<!DOCTYPE HTML>
+<!--
+	Striped 2.5 by HTML5 Up!
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>{% block title %}{% endblock %} - {{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}"/>
+    <meta name="author" content='Powered by InterPegasus CMS - {% now "Y" %}'>
+    <meta name="keywords" content=""/>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700"
+          rel="stylesheet"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}javascript/bible.js"></script>
+
+    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel.min.js"></script>
+    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel-panels.min.js"></script>
+    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/init.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/skel-noscript.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie7.css"/><![endif]-->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}template/bible.interpegasus.com/images/favicon.ico">
+</head>
+
+<!--
+    Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+    Set it to "right-sidebar" to, you guessed it, position it on the right.
+-->
+{% if current_bible.right_to_left == 'true' %}
+    <body class="right-sidebar">
+{%else %}
+    <body class="left-sidebar">
+{%endif%}
+<div style="min-height: 40px;min-width: 100%;clear: both;top:0px;  background-color: #c94663;">
+    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+        <select id="language">
+            <option value="eng">English</option>
+            <option value="spa">Español - Spanish</option>
+            <option value="por">Português - Portuguese</option>
+            <option value="fra">Français - French</option>
+            <option value="heb">עברית - Hebrew</option>
+            <option value="zho">中文 - 中國的 - Chinese</option>
+            <option value="jpn">日本語 - Japanese</option>
+            <option disabled>──────────</option>
+            {% for language in languages_bible %}
+            {% if language.language_family_name == language.language_family_english %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_english|truncate_str:21}}
+            </option>
+            {%else%}
+            {% if language.language_family_name|length > 12 %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name|truncate_str:21}}
+            </option>
+            {% else %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
+            </option>
+            {% endif %}
+            {%endif%}
+            {% endfor %}
+        </select>
+    </div>
+    {% if bibles %}
+    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+             <select id="bible">
+                {% for bible in bibles %}
+                <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
+                {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
+                {{ bible.collection_name }}
+                {% if bible.volume_name %}
+                - {{bible.volume_name}}
+                {% endif %}
+                </option>
+                {% endfor %}
+            </select>
+    </div>
+    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+             <select id="book">
+                {% for book in books %}
+                <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
+                {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
+                {{book.book_name}}
+
+                </option>
+                {% endfor %}
+            </select>
+    </div>
+    {%endif%}
+</div>
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Content -->
+    <div id="content">
+        <div id="content-inner">
+            <!-- Post -->
+            <div>{% block content %}{% endblock %}</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
