@@ -1,4 +1,5 @@
 $(document).ready( function() {
+
     $('#language').change(function() {
         window.location = '/' + $(this).val();
     });
@@ -26,8 +27,6 @@ $(document).ready( function() {
         });
     });
 
-
-
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -51,26 +50,35 @@ $(document).ready( function() {
     $("#paragraph-mode").click(function() {
         check_paragraph_preference(true);
     });
-
     check_paragraph_preference(false);
-
 });
 
-function check_paragraph_preference(modify_cookie){
-    cookie_value = $.cookie('paragraph');
-    if (cookie_value == 'true'){
-        $("p").removeClass("clear_none");
-        $("p").addClass("left-text");
-        if (modify_cookie){
-            $.cookie('paragraph', 'false');
+function check_paragraph_preference(click) {
+    cookie_value = $.cookie('no_breaks');
+    if (click)
+    {
+        if (cookie_value == 'true') {
+            $("p").removeClass("no_breaks");
+            $("p").addClass("left-text");
+            $.cookie('no_breaks', 'false');
+            $("#paragraph-mode").removeClass("textresizer-active");
+        }else{
+            $("p").removeClass("left-text");
+            $("p").addClass("no_breaks");
+            $.cookie('no_breaks', 'true');
+            $("#paragraph-mode").addClass("textresizer-active");
         }
     }
-    else {
-        $("p").removeClass("left-text");
-        $("p").addClass("clear_none");
-        if (modify_cookie){
-            $.cookie('paragraph', 'true');
+    else
+    {
+        if (cookie_value == 'true') {
+            $("p").removeClass("left-text");
+            $("p").addClass("no_breaks");
+            $("#paragraph-mode").addClass("textresizer-active");
+        }else{
+            $("p").removeClass("no_breaks");
+            $("p").addClass("left-text");
+            $("#paragraph-mode").removeClass("textresizer-active");
         }
-
     }
 }

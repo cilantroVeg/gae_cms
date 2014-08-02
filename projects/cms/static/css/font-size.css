@@ -33,7 +33,7 @@ ul.textresizer a:hover
 {
     background: #e5e5e5;
     border: solid 1px #cccccc;
-
+    margin:0;
 }
 
 ul.textresizer .small-text
@@ -61,6 +61,7 @@ ul.textresizer a.textresizer-active
     border: solid 1px #2B562B;
     background: #FFF;
     color: #000000;
+    margin:0;
 }
 
 
