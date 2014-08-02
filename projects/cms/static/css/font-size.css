@@ -1,0 +1,89 @@
+#textsizer-classnames
+{
+    margin-bottom: 6px;
+}
+#textsizer-classnames p
+{
+    display: inline;
+}
+ul.textresizer
+{
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+ul.textresizer li
+{
+    display: inline;
+    margin: 0px;
+    margin-right: 5px;
+    padding: 0px;
+}
+
+ul.textresizer a
+{
+    border: solid 1px #999;
+    padding: 2px 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.textresizer a:hover
+{
+    background: #e5e5e5;
+    border: solid 1px #cccccc;
+
+}
+
+ul.textresizer .small-text
+{
+    font-size: 12px;
+}
+
+ul.textresizer .medium-text
+{
+    font-size: 15px;
+}
+
+ul.textresizer .large-text
+{
+    font-size: 18px;
+}
+
+ul.textresizer .larger-text
+{
+    font-size: 21px;
+}
+
+ul.textresizer a.textresizer-active
+{
+    border: solid 1px #2B562B;
+    background: #FFF;
+    color: #000000;
+}
+
+
+#bible-text.small-text, #bible-text.small-text p
+{
+    font-size: 12px;
+}
+
+#bible-text.medium-text, #bible-text.medium-text p
+{
+    font-size: 15px;
+}
+
+#bible-text.large-text, #bible-text.large-text p
+{
+    font-size: 18px;
+}
+
+#bible-text.larger-text, #bible-text.larger-text p
+{
+    font-size: 21px;
+}
+
+ul li a {
+    color: white;
+}

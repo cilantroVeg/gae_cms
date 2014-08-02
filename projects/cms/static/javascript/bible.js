@@ -33,4 +33,17 @@ $(document).ready( function() {
         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=618903634787090&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    $("#textsizer-classnames a").textresizer({
+        target: "#bible-text, #bible-books",
+        type: "cssClass",
+        sizes: [
+            "small-text",
+            "medium-text",
+            "large-text",
+            "larger-text"
+        ],
+        selectedIndex: 1
+    });
+
 });

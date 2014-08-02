@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/404.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/users/500.html" afterPath="$PROJECT_DIR$/projects/cms/templates/users/500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/cms/static/css/font-size.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/static/javascript/bible.js" afterPath="$PROJECT_DIR$/projects/cms/static/javascript/bible.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" afterPath="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -29,60 +28,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="template-frontpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.48" vertical-offset="352" max-vertical-offset="4240">
-              <caret line="54" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="259" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.22222222" vertical-offset="640" max-vertical-offset="4480">
+              <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2881" max-vertical-offset="19952">
+              <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
+      <file leaf-file-name="jquery.cookie.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/jquery-cookie/src/jquery.cookie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0" vertical-offset="8144" max-vertical-offset="9408">
-              <caret line="534" column="38" selection-start-line="534" selection-start-column="38" selection-end-line="534" selection-end-column="38" />
-              <folding>
-                <element signature="e#12#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/pages/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4736">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1968">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html">
+      <file leaf-file-name="bible.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/bible.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.56" vertical-offset="1184" max-vertical-offset="1984">
-              <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="880">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html">
+      <file leaf-file-name="font-size.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/cms/static/css/font-size.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.92" vertical-offset="384" max-vertical-offset="1584">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1504">
+              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -91,35 +85,9 @@
       <file leaf-file-name="template-frontpage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2" vertical-offset="0" max-vertical-offset="5536">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="5536">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="500.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/500.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13096862" vertical-offset="0" max-vertical-offset="733">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.32" vertical-offset="0" max-vertical-offset="304">
-              <caret line="13" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/projects/cms/templates/pages/page_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/record_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/spreadsheet_form.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/feed_form.html" />
@@ -180,14 +147,15 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/interpegasus-cms/template-page.html" />
         <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
-        <option value="$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style.css" />
-        <option value="$PROJECT_DIR$/projects/cms/static/javascript/bible.js" />
         <option value="$PROJECT_DIR$/projects/cms/settings.py" />
-        <option value="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/404.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/users/500.html" />
+        <option value="$PROJECT_DIR$/projects/cms/static/css/font-size.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/cms/static/javascript/bible.js" />
+        <option value="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" />
       </list>
     </option>
   </component>
@@ -222,6 +190,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,6 +330,36 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bible-love" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -409,6 +408,14 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bible.interpegasus.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -428,13 +435,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bible.interpegasus.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -973,14 +1013,17 @@
       <created>1406361159129</created>
       <updated>1406361159129</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;Sitemap&#10;FontSize&#10;Paragraphs&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done">
+      <created>1407008107212</created>
+      <updated>1407008107212</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1436" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -996,6 +1039,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1013597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1039,33 +1083,13 @@
     <MESSAGE value="- Bible GUI&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)" />
     <MESSAGE value="- Bible GUI ... In Progress&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done" />
     <MESSAGE value="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done" />
+    <MESSAGE value="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;Sitemap&#10;FontSize&#10;Paragraphs&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Bible GUI ... OK&#10;- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;Sitemap&#10;FontSize&#10;Paragraphs&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/layout/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="480">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="1024">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/static/template/www.nrwl.org/img/footer-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1247,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.84" vertical-offset="843" max-vertical-offset="6032">
           <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,23 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="848" max-vertical-offset="1936">
           <caret line="53" column="77" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8541667" vertical-offset="19168" max-vertical-offset="19936">
-          <caret line="1239" column="0" selection-start-line="1239" selection-start-column="0" selection-end-line="1239" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/bible.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1875" vertical-offset="0" max-vertical-offset="768">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6666667" vertical-offset="2640" max-vertical-offset="3408">
           <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.868074" vertical-offset="3690" max-vertical-offset="4448">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,15 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2768">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.48" vertical-offset="352" max-vertical-offset="4240">
-          <caret line="54" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="259" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,69 +1355,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4736">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0" vertical-offset="8144" max-vertical-offset="9408">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8144" max-vertical-offset="9408">
           <caret line="534" column="38" selection-start-line="534" selection-start-column="38" selection-end-line="534" selection-end-column="38" />
-          <folding>
-            <element signature="e#12#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.56" vertical-offset="1184" max-vertical-offset="1984">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1184" max-vertical-offset="1984">
           <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.92" vertical-offset="384" max-vertical-offset="1584">
+        <state vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1584">
           <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27513227" vertical-offset="0" max-vertical-offset="756">
+          <caret line="13" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25396827" vertical-offset="0" max-vertical-offset="756">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/jquery-cookie/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2592">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/jquery-cookie/src/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1968">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/css/font-size.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1504">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2881" max-vertical-offset="19952">
+          <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/javascript/bible.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="880">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/interpegasuslove/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2" vertical-offset="0" max-vertical-offset="5536">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="5536">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/404.html">
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.32" vertical-offset="0" max-vertical-offset="304">
-          <caret line="13" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.22222222" vertical-offset="640" max-vertical-offset="4480">
+          <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/users/500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13096862" vertical-offset="0" max-vertical-offset="733">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
