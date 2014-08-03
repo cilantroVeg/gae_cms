@@ -4,20 +4,24 @@
 
 {% endblock %}{% block content %}
 <div id="static_content">
-    <div style="color: white; text-align: left;width: 80%;margin-left: auto;margin-right: auto;padding: 10px;">
+    <div style="text-align: left;width: 80%;margin-left: auto;margin-right: auto;padding: 10px;">
         <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>
 
         <h2>{{ page.title }}</h2>
         {% if page.image_url %}
-        <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}"
-                                                              style="float: left;clear:none;margin:10px;margin-top: 0px;border-width: 1px;border-color: white;border-style: solid;"/></a>
+        <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}"                                                              style="float: left;clear:none;margin:10px;margin-top: 0px;border-width: 1px;border-color: white;border-style: solid;"/></a>
         {% endif%}
-        <p>{{ page.content_no_html|safe }}</p>
         <br/>
-        <img src="{{page.feed_image_url}}"
-             style="width:100px;float: right;clear:none;padding: 20px;border-width: 1px;border-color: white;"/>
+        {% if page.feed_image_url %}
+            <p>{{ page.content_no_html|safe }}</p>
+            <img src="{{page.feed_image_url}}" style="width:100px;float: right;clear:none;padding: 20px;border-width: 1px;border-color: white;"/>
+        {% else %}
+            <p>{{ page.content|safe }}</p>
+        {% endif%}
         <br/>
+        {% if page.feed_source %}
         <a href="{{page.feed_source}}" target="_blank" class="btn btn-large">Read More</a>
+        {% endif%}
     </div>
     <br/>
     <hr/>

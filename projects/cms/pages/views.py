@@ -432,6 +432,11 @@ def sitemap(request):
                               context_instance=RequestContext(request))
 
 # ...
+def sitemap_xml(request):
+    return render_to_response("pages/sitemap.html", {},
+                              context_instance=RequestContext(request))
+
+# ...
 def category_view(request, language, slug):
     language = Language.objects.filter(code=language)[:1]
     category = get_object_or_404(Category, slug=slug, language_id=language[0].id)

@@ -39,9 +39,9 @@
     Set it to "right-sidebar" to, you guessed it, position it on the right.
 -->
 {% if current_bible.right_to_left == 'true' %}
-    <body class="right-sidebar">
+<body class="right-sidebar">
 {%else %}
-    <body class="left-sidebar">
+<body class="left-sidebar">
 {%endif%}
 <div style="min-height: 40px;min-width: 100%;clear: both;top:0px;  background-color: #c94663;">
     <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
@@ -78,28 +78,28 @@
     </div>
     {% if bibles %}
     <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
-             <select id="bible">
-                {% for bible in bibles %}
-                <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
-                {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
-                {{ bible.collection_name }}
-                {% if bible.volume_name %}
-                - {{bible.volume_name}}
-                {% endif %}
-                </option>
-                {% endfor %}
-            </select>
+        <select id="bible">
+            {% for bible in bibles %}
+            <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
+            {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
+            {{ bible.collection_name }}
+            {% if bible.volume_name %}
+            - {{bible.volume_name}}
+            {% endif %}
+            </option>
+            {% endfor %}
+        </select>
     </div>
     <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
-             <select id="book">
-                {% for book in books %}
-                <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
-                {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
-                {{book.book_name}}
+        <select id="book">
+            {% for book in books %}
+            <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
+            {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
+            {{book.book_name}}
 
-                </option>
-                {% endfor %}
-            </select>
+            </option>
+            {% endfor %}
+        </select>
     </div>
     {%endif%}
 </div>
@@ -109,6 +109,9 @@
     <!-- Content -->
     <div id="content">
         <div id="content-inner">
+            <a href="/">Main Page</a>
+            <br />
+
             <!-- Post -->
             <div>{% block content %}{% endblock %}</div>
         </div>

@@ -88,6 +88,7 @@ urlpatterns = patterns('',
 
     # sitemap
     url(r'^sitemap/', 'pages.views.sitemap'),
+    url(r'^sitemap.xml/', 'pages.views.sitemap_xml'),
 
     # users
     url(r'^user/new/$', 'users.views.user_form'),

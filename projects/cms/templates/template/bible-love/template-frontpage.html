@@ -196,13 +196,13 @@
                 <ul>
                     {{references.0.mark}}
                     {% for reference in references.0.organization %}
-                    {% if reference.organization_url and reference.organization_url != 'null' %}
-                    <li><a href="{{reference.organization_url}}"><sub>{{reference.organization_english}}</sub></a></li>
-                    {% elif reference.organization_donation and reference.organization_donation != 'null' %}
-                    <li><a href="{{reference.organization_donation}}"><sub>{{reference.organization_english}}</sub></a></li>
-                    {% else %}
-                    <li><a href="#"><sub>{{reference.organization_english}}</sub></a></li>
-                    {% endif %}
+                        {% if reference.organization_url and reference.organization_url != 'null' %}
+                        <li><a class="reference-footer" href="{{reference.organization_url}}"><sub>{{reference.organization_english}}</sub></a></li>
+                        {% elif reference.organization_donation and reference.organization_donation != 'null' %}
+                        <li><a class="reference-footer" href="{{reference.organization_donation}}"><sub>{{reference.organization_english}}</sub></a></li>
+                        {% else %}
+                        <li><a class="reference-footer" href="#"><sub>{{reference.organization_english}}</sub></a></li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </article>
@@ -269,7 +269,7 @@
         <div id="copyright" style="text-align: left">
             <ul>
                 <li>{{references.0.mark}}</li>
-                <li>Development: <a href="http://www.interpegasus.com">InterPegasus</a></li>
+                <li>Development: <a href="http://www.interpegasus.com" target="_blank">InterPegasus</a></li>
                 <li>Template: <a href="/en/html5/">HTML5 UP</a></li>
                 <li>Contact Us: <a href="/contact">Contact</a></li>
             </ul>
