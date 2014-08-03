@@ -495,7 +495,7 @@ def contact(request):
     else:
         form = ContactForm()
         error_message = ''
-    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
+    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message, 'app_name': settings.APP_NAME})
 
 def message_contains_url(message):
     from django.utils.html import urlize

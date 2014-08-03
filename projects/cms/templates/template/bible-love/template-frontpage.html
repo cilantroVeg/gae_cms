@@ -167,9 +167,9 @@
                     <div id="bible-text">
                         {% for verse in current_chapter %}
                         {% if current_bible.right_to_left == 'true' %}
-                            <p class="right-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
+                        <p class="right-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
                         {%else %}
-                            <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
+                        <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
                         {%endif%}
                         {% endfor %}
                     </div>
@@ -265,14 +265,19 @@
             </ul>
         </section>
 
-
         <!-- Copyright -->
         <div id="copyright" style="text-align: left">
             <ul>
                 <li>{{references.0.mark}}</li>
                 <li>Development: <a href="http://www.interpegasus.com">InterPegasus</a></li>
-                <li>Template Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+                <li>Template: <a href="/en/html5/">HTML5 UP</a></li>
+                <li>Contact Us: <a href="/contact">Contact</a></li>
             </ul>
+        </div>
+
+        <div id="social">
+            <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" type="text/css" rel="stylesheet">
+            {% include "layout/social_login.html" %}
         </div>
 
     </div>
