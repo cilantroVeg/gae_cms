@@ -18,11 +18,8 @@
     <script src="{{ STATIC_URL }}javascript/bible.js"></script>
     <script src="{{ STATIC_URL }}javascript/jquery-cookie/src/jquery.cookie.js"></script>
     <script src="{{ STATIC_URL }}javascript/jquery-textresizer/jquery.textresizer.min.js"></script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-size.css"/><![endif]-->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-size.css"/>
 
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel.min.js"></script>
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel-panels.min.js"></script>
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/init.js"></script>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/skel-noscript.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
@@ -114,8 +111,8 @@
         </div>
     </div>
     {% if current_bible.right_to_left == 'false' %}
-    <div class="top-sections">
-        <div id="" style="padding: 3px;margin: 3px;">
+    <div id="p-mode" class="top-sections">
+        <div style="padding: 3px;margin: 3px;">
             <ul class="textresizer" >
                 <li><a id="paragraph-mode" href="#" class="small-text" title="Paragraph Mode">P</a></li>
             </ul>

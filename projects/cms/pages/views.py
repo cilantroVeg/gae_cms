@@ -436,9 +436,11 @@ def sitemap_xml(request):
     media = 'text'
     response_format = 'json'
     languages = bible_languages(request,media,response_format)
-    for language_item in languages:
-        1
-    return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+    if settings.APP_NAME == 'bible-love':
+        return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+    else:
+        return render_to_response("pages/sitemap.html", {},
+                              context_instance=RequestContext(request))
 
 # ...
 def category_view(request, language, slug):
