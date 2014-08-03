@@ -164,7 +164,7 @@
                     <div id="bible-text">
                         {% for verse in current_chapter %}
                         {% if current_bible.right_to_left == 'true' %}
-                        <p class="right-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</p>
+                        <div class="right-text" style="text-align: right;"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</div>
                         {%else %}
                         <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
                         {%endif%}
