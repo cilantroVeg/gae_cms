@@ -192,22 +192,21 @@
 
             <!-- Post -->
             <article class="is-post is-post-excerpt">
-                <header>
-                    <span class="byline">References</span>
-                </header>
-                <ul>
-                    {{references.0.mark}}
+
+                    <h2 class="byline">References</h2>
+                <ul id="references-list">
+                    <li><a class="reference-footer" href="#">{{references.0.mark}}</a></li>
                     {% for reference in references.0.organization %}
                         {% if reference.organization_url and reference.organization_url != 'null' %}
-                        <li><a class="reference-footer" href="{{reference.organization_url}}"><sub>{{reference.organization_english}}</sub></a></li>
+                        <li><a class="reference-footer" href="{{reference.organization_url}}">{{reference.organization_english}}</a></li>
                         {% elif reference.organization_donation and reference.organization_donation != 'null' %}
-                        <li><a class="reference-footer" href="{{reference.organization_donation}}"><sub>{{reference.organization_english}}</sub></a></li>
+                        <li><a class="reference-footer" href="{{reference.organization_donation}}">{{reference.organization_english}}</a></li>
                         {% else %}
-                        <li><a class="reference-footer" href="#"><sub>{{reference.organization_english}}</sub></a></li>
+                        <li><a class="reference-footer" href="#">{{reference.organization_english}}</a></li>
                         {% endif %}
                     {% endfor %}
-                    <li><a class="reference-footer" href="http://digitalbibleplatform.com/" target="_blank"><sub>Digital Bible Platform</sub></a></li>
-                    <li><a class="reference-footer" href="http://www.faithcomesbyhearing.com/" target="_blank"><sub>&copy; Faith Comes By Hearing</sub> </a></li>
+                    <li><a class="reference-footer" href="http://digitalbibleplatform.com/" target="_blank">Digital Bible Platform</a></li>
+                    <li><a class="reference-footer" href="http://www.faithcomesbyhearing.com/" target="_blank">Faith Comes By Hearing </a></li>
                 </ul>
             </article>
         </div>
@@ -237,7 +236,7 @@
                             <td class="pad
                     {% if current_chapter.0.chapter_id == chapter %} today {% endif %}
                     ">
-                                <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}"">{{chapter}}</a>
+                                <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}">{{chapter}}</a>
                             </td>
                             {% if forloop.last or forloop.counter|divisibleby:"7" %}
                         </tr>
