@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4976a2-bb10-4e84-aea6-fdb52e17f350" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml" afterPath="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/pages/views.py" afterPath="$PROJECT_DIR$/projects/cms/pages/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/cms/app.yaml" afterPath="$PROJECT_DIR$/projects/cms/app.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gae_cms.iws" />
@@ -61,16 +60,16 @@
         <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.52" vertical-offset="1657" max-vertical-offset="3180">
+            <state vertical-scroll-proportion="0.083333336" vertical-offset="2460" max-vertical-offset="3180">
               <caret line="169" column="8" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
               <folding />
             </state>
@@ -81,16 +80,16 @@
         <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.09804" vertical-offset="6016" max-vertical-offset="8910">
-              <caret line="445" column="30" selection-start-line="445" selection-start-column="30" selection-end-line="445" selection-end-column="30" />
+              <caret line="445" column="31" selection-start-line="445" selection-start-column="31" selection-end-line="445" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitemap.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sitemap.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
@@ -158,9 +157,9 @@
         <option value="$PROJECT_DIR$/projects/cms/templates/layout/social_login.html" />
         <option value="$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html" />
         <option value="$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style-desktop.css" />
-        <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
         <option value="$PROJECT_DIR$/projects/cms/pages/views.py" />
         <option value="$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml" />
+        <option value="$PROJECT_DIR$/projects/cms/app.yaml" />
       </list>
     </option>
   </component>
@@ -962,7 +961,11 @@
       <created>1407184219746</created>
       <updated>1407184219746</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="- Yiyask Wikia Recipes&#10;- Wikipedia List Of Animals (http://lib.colostate.edu/wildlife/atoz.php?letter=ALL)&#10;- Credits on Templates And References for all sites.&#10;&#10;For Future Max 1 Task Per Week&#10;- Implement images in ag homepage.&#10;- Portfolio&#10;- Extra feeds&#10;- Android / iOS apps&#10;Done">
+      <created>1407184336478</created>
+      <updated>1407184336478</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1353,6 +1356,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style-desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4167" max-vertical-offset="5295">
+          <caret line="313" column="22" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/templates/template/bible-love/template-frontpage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.18" vertical-offset="3076" max-vertical-offset="4380">
@@ -1371,42 +1398,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/static/template/bible.interpegasus.com/css/style-desktop.css">
+    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4167" max-vertical-offset="5295">
-          <caret line="313" column="22" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state vertical-scroll-proportion="-9.09804" vertical-offset="6016" max-vertical-offset="8910">
+          <caret line="445" column="31" selection-start-line="445" selection-start-column="31" selection-end-line="445" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/cms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.52" vertical-offset="1657" max-vertical-offset="3180">
+        <state vertical-scroll-proportion="0.083333336" vertical-offset="2460" max-vertical-offset="3180">
           <caret line="169" column="8" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.09804" vertical-offset="6016" max-vertical-offset="8910">
-          <caret line="445" column="30" selection-start-line="445" selection-start-column="30" selection-end-line="445" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/cms/templates/pages/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
