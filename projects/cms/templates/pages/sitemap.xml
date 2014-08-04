@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for language in languages%}
     <url>
-        <loc>http://bible7.co/{{ language.language_family_iso }}</loc>
+        <loc>http://bible7.co/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+{% for bible in bibles %}
+    <url>
+        <loc>http://bible7.co/{{bible.language.language_family_iso|lower}}/bible/{{bible.bible.0.dam_id}}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 {% endfor %}
 </urlset>

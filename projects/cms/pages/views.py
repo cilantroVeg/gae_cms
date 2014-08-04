@@ -435,9 +435,17 @@ def sitemap(request):
 def sitemap_xml(request):
     media = 'text'
     response_format = 'json'
-    languages = bible_languages(request,media,response_format)
     if settings.APP_NAME == 'bible-love':
-        return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+        languages = bible_languages(request,media,response_format)
+        bibles = []
+        for language in languages:
+            bible_item = {}
+            bible_item["language"] = language
+            bible_item["bible"] = bible_list(request,media,language["language_family_code"].lower(),response_format)
+            bibles.append(bible_item)
+            if len(bibles) >5:
+                break
+        return render_to_response("pages/sitemap.xml", {'languages':languages,'bibles': bibles},context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
         return render_to_response("pages/sitemap.html", {},
                               context_instance=RequestContext(request))
@@ -581,7 +589,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         request.session['last_url'] = request.build_absolute_uri()
     else:
         return redirect('/eng', False)
-    return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(), 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(),'current_language_html':language_item[0]["language_family_iso_1"], 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
