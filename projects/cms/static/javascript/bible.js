@@ -12,20 +12,10 @@ $(document).ready( function() {
         window.location = $(this).val();
     });
 
-    $(function() {
-        $('#bookmark').click(function() {
-            if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
-                window.sidebar.addPanel(document.title,window.location.href,'');
-            } else if(window.external && ('AddFavorite' in window.external)) { // IE Favorite
-                window.external.AddFavorite(location.href,document.title);
-            } else if(window.opera && window.print) { // Opera Hotlist
-                this.title=document.title;
-                return true;
-            } else { // webkit - safari/chrome
-                alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-            }
-        });
-    });
+
+
+
+
 
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -51,6 +41,7 @@ $(document).ready( function() {
         check_paragraph_preference(true);
     });
     check_paragraph_preference(false);
+    hide_favorite_from_non_supported_browsers();
 });
 
 function check_paragraph_preference(click) {
@@ -80,5 +71,11 @@ function check_paragraph_preference(click) {
             $("p").addClass("left-text");
             $("#paragraph-mode").removeClass("textresizer-active");
         }
+    }
+}
+
+function hide_favorite_from_non_supported_browsers(){
+    if (navigator.userAgent.search("Firefox") < 0) {
+        $("#bookmark_list").hide();
     }
 }
