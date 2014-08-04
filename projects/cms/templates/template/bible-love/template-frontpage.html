@@ -226,6 +226,7 @@
         <nav id="nav">
             <!-- Books -->
             <section class="is-calendar">
+                <h2 style="text-align: center">&nbsp;</h2>
                 <div class="inner">
                     <table>
                         <caption>{{ current_book.book_name }}</caption>
@@ -240,7 +241,10 @@
                             </td>
                             {% if forloop.last or forloop.counter|divisibleby:"7" %}
                         </tr>
+                        {% if forloop.last %}
+                        {% else %}
                         <tr>
+                        {% endif %}
                             {% endif %}
                             {% endfor %}
 
@@ -248,13 +252,6 @@
                 </div>
             </section>
         </nav>
-
-        <!-- Search -->
-        <section class="is-search" style="display: none;">
-            <form method="post" action="#">
-                <input type="text" class="text" name="search" placeholder="Search"/>
-            </form>
-        </section>
 
         <section class="is-recent-posts">
             <header>
