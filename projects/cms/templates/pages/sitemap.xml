@@ -9,6 +9,14 @@
     <url>
         <loc>http://bible7.co/{{bible.language.language_family_iso|lower}}/bible/{{bible.bible.0.dam_id}}</loc>
         <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+{% endfor %}
+
+{% for language in languages%}
+    <url>
+        <loc>http://bible7.co/{{ language.language_family_iso }}</loc>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 {% endfor %}
