@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" rel="stylesheet">
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -228,7 +229,6 @@
                 <div class="inner">
                     <table>
                         <caption>{{ current_book.book_name }}</caption>
-
                         {% for chapter in current_book.chapters|string_to_array %}
                         {% if forloop.first %}
                         <tr>
@@ -279,7 +279,6 @@
         </div>
 
         <div id="social">
-            <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" type="text/css" rel="stylesheet">
             {% include "layout/social_login.html" %}
         </div>
 
