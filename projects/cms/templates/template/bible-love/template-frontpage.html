@@ -44,9 +44,9 @@
     Set it to "right-sidebar" to, you guessed it, position it on the right.
 -->
 {% if current_bible.right_to_left == 'true' %}
-    <body class="right-sidebar">
+<body class="right-sidebar">
 {%else %}
-    <body class="left-sidebar">
+<body class="left-sidebar">
 {%endif%}
 {% include "layout/admin.html" %}
 <div id="top-bar">
@@ -61,65 +61,66 @@
             <option value="jpn">日本語 - Japanese</option>
             <option disabled>──────────</option>
             {% for language in languages_bible %}
-                {% if language.language_family_name == language.language_family_english %}
-                    <option value="{{language.language_family_iso|lower}}"
-                            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-                        {{language.language_family_english|truncate_str:21}}
-                    </option>
-                {%else%}
-                    {% if language.language_family_name|length > 12 %}
-                        <option value="{{language.language_family_iso|lower}}"
-                                {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-                            {{language.language_family_name|truncate_str:21}}
-                        </option>
-                    {% else %}
-                        <option value="{{language.language_family_iso|lower}}"
-                                {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-                            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
-                        </option>
-                    {% endif %}
-                {%endif%}
+            {% if language.language_family_name == language.language_family_english %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_english|truncate_str:21}}
+            </option>
+            {%else%}
+            {% if language.language_family_name|length > 12 %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name|truncate_str:21}}
+            </option>
+            {% else %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
+            </option>
+            {% endif %}
+            {%endif%}
             {% endfor %}
         </select>
     </div>
     <div class="top-sections">
         <select id="bible">
             {% for bible in bibles %}
-                <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
-                        {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
-                    {{ bible.collection_name }}
-                    {% if bible.volume_name %}
-                        - {{bible.volume_name}}
-                    {% endif %}
-                </option>
+            <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
+            {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
+            {{ bible.collection_name }}
+            {% if bible.volume_name %}
+            - {{bible.volume_name}}
+            {% endif %}
+            </option>
             {% endfor %}
         </select>
     </div>
     <div class="top-sections">
         <select id="book">
             {% for book in books %}
-                <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
-                        {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
-                    {{book.book_name}}
+            <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
+            {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
+            {{book.book_name}}
 
-                </option>
+            </option>
             {% endfor %}
         </select>
     </div>
     <div class="top-sections-p">
-        <ul class="textresizer" >
-            <li><a href="#" class="small-text" title="Small">A</a></li>
-            <li><a href="#" class="medium-text" title="Medium">A</a></li>
-            <li><a href="#" class="large-text" title="Large">A</a></li>
-        </ul>
-
-    </div>
-    {% if current_bible.right_to_left == 'false' %}
-        <div class="top-sections-p">
+        <div id="textsizer-classnames">
             <ul class="textresizer" >
-                <li><a id="paragraph-mode" href="#" class="small-text" title="Paragraph Mode">P</a></li>
+                <li><a href="#" class="small-text" title="Small">A</a></li>
+                <li><a href="#" class="medium-text" title="Medium">A</a></li>
+                <li><a href="#" class="large-text" title="Large">A</a></li>
             </ul>
         </div>
+    </div>
+    {% if current_bible.right_to_left == 'false' %}
+    <div class="top-sections-p">
+        <ul class="textresizer" >
+            <li><a id="paragraph-mode" href="#" class="small-text" title="Paragraph Mode">P</a></li>
+        </ul>
+    </div>
     {% endif %}
 
 </div>
@@ -132,46 +133,46 @@
             <!-- Post -->
             <article class="is-post is-post-excerpt">
                 {% if current_bible.right_to_left == 'true' %}
-                    <header style="text-align: right;">
-                {%else %}
+                <header style="text-align: right;">
+                    {%else %}
                     <header style="text-align: left;">
-                {%endif%}
-                <!--
-                    Note: Titles and bylines will wrap automatically when necessary, so don't worry
-                    if they get too long. You can also remove the "byline" span entirely if you don't
-                    need a byline.
-                -->
-                <h2><a href="#">{{current_chapter.0.book_name}}</a></h2>
-                <span class="byline">{{current_chapter.0.chapter_title}}</span>
-                </header>
-                <div class="info">
-                    <!--
-                        Note: The date should be formatted exactly as it's shown below. In particular, the
-                        "least significant" characters of the month should be encapsulated in a <span>
-                        element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-                        Oh, and if you don't need a date for a particular page or post you can simply delete
-                        the entire "date" element.
-
-                    -->
-                    <span class="date"><span class="month">{{current_chapter.0.book_name}}</span> <span class="day">{{current_chapter.0.chapter_id}}</span></span>
-                    <!--
-                        Note: You can change the number of list items in "stats" to whatever you want.
-                    -->
-                    <ul class="stats">
-                        <li id="bookmark_list"><a id="bookmarkme" class="fa fa-heart" href="#" rel="sidebar" title="{{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}">&nbsp;</a></li>
-                        <li><a href="http://twitter.com/share?text={{current_chapter.0.book_name|urlencode}}-{{current_chapter.0.chapter_title|urlencode}}&amp;url={{current_url}}&amp;hashtags=bible" target="_blank" class="fa fa-twitter">&nbsp;</a></li>
-                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{current_url}}" target="_blank" class="fa fa-facebook">&nbsp;</a></li>
-                    </ul>
-                </div>
-                <div id="bible-text">
-                    {% for verse in current_chapter %}
-                        {% if current_bible.right_to_left == 'true' %}
-                            <div class="right-text" style="text-align: right;"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</div>
-                        {%else %}
-                            <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
                         {%endif%}
-                    {% endfor %}
-                </div>
+                        <!--
+                            Note: Titles and bylines will wrap automatically when necessary, so don't worry
+                            if they get too long. You can also remove the "byline" span entirely if you don't
+                            need a byline.
+                        -->
+                        <h2><a href="#">{{current_chapter.0.book_name}}</a></h2>
+                        <span class="byline">{{current_chapter.0.chapter_title}}</span>
+                    </header>
+                    <div class="info">
+                        <!--
+                            Note: The date should be formatted exactly as it's shown below. In particular, the
+                            "least significant" characters of the month should be encapsulated in a <span>
+                            element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+                            Oh, and if you don't need a date for a particular page or post you can simply delete
+                            the entire "date" element.
+
+                        -->
+                        <span class="date"><span class="month">{{current_chapter.0.book_name}}</span> <span class="day">{{current_chapter.0.chapter_id}}</span></span>
+                        <!--
+                            Note: You can change the number of list items in "stats" to whatever you want.
+                        -->
+                        <ul class="stats">
+                            <li id="bookmark_list"><a id="bookmarkme" class="fa fa-heart" href="#" rel="sidebar" title="{{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}">&nbsp;</a></li>
+                            <li><a href="http://twitter.com/share?text={{current_chapter.0.book_name|urlencode}}-{{current_chapter.0.chapter_title|urlencode}}&amp;url={{current_url}}&amp;hashtags=bible" target="_blank" class="fa fa-twitter">&nbsp;</a></li>
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u={{current_url}}" target="_blank" class="fa fa-facebook">&nbsp;</a></li>
+                        </ul>
+                    </div>
+                    <div id="bible-text">
+                        {% for verse in current_chapter %}
+                        {% if current_bible.right_to_left == 'true' %}
+                        <div class="right-text" style="text-align: right;"><sup>{{verse.verse_id}}</sup>{{verse.verse_text}}</div>
+                        {%else %}
+                        <p class="left-text"><sup>{{verse.verse_id}}</sup>{{verse.verse_text|safe}}</p>
+                        {%endif%}
+                        {% endfor %}
+                    </div>
             </article>
 
             <!-- Pager -->
@@ -179,9 +180,9 @@
                 <!--<a href="#" class="button previous">Previous Page</a>-->
                 <div class="pages">
                     {% for chapter in current_book.chapters|string_to_array %}
-                        <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}"
-                                {% if current_chapter.0.chapter_id == chapter %} class="active" {% endif %}>{{chapter}}
-                        </a>
+                    <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}"
+                    {% if current_chapter.0.chapter_id == chapter %} class="active" {% endif %}>{{chapter}}
+                    </a>
                     {% endfor %}
                 </div>
                 <a style="display: none;" href="#" class="button next">Next Page</a>
@@ -194,13 +195,13 @@
                 <ul id="references-list">
                     <li><a class="reference-footer" href="#">{{references.0.mark}}</a></li>
                     {% for reference in references.0.organization %}
-                        {% if reference.organization_url and reference.organization_url != 'null' %}
-                            <li><a class="reference-footer" href="{{reference.organization_url}}">{{reference.organization_english}}</a></li>
-                        {% elif reference.organization_donation and reference.organization_donation != 'null' %}
-                            <li><a class="reference-footer" href="{{reference.organization_donation}}">{{reference.organization_english}}</a></li>
-                        {% else %}
-                            <li><a class="reference-footer" href="#">{{reference.organization_english}}</a></li>
-                        {% endif %}
+                    {% if reference.organization_url and reference.organization_url != 'null' %}
+                    <li><a class="reference-footer" href="{{reference.organization_url}}">{{reference.organization_english}}</a></li>
+                    {% elif reference.organization_donation and reference.organization_donation != 'null' %}
+                    <li><a class="reference-footer" href="{{reference.organization_donation}}">{{reference.organization_english}}</a></li>
+                    {% else %}
+                    <li><a class="reference-footer" href="#">{{reference.organization_english}}</a></li>
+                    {% endif %}
                     {% endfor %}
                     <li><a class="reference-footer" href="http://digitalbibleplatform.com/" target="_blank">Digital Bible Platform</a></li>
                     <li><a class="reference-footer" href="http://www.faithcomesbyhearing.com/" target="_blank">Faith Comes By Hearing </a></li>
@@ -227,22 +228,22 @@
                     <table>
                         <caption>{{ current_book.book_name }}</caption>
                         {% for chapter in current_book.chapters|string_to_array %}
-                            {% if forloop.first %}
-                                <tr>
+                        {% if forloop.first %}
+                        <tr>
                             {% endif %}
-                        <td class="pad
+                            <td class="pad
                     {% if current_chapter.0.chapter_id == chapter %} today {% endif %}
                     ">
-                            <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}">{{chapter}}</a>
-                        </td>
-                        {% if forloop.last or forloop.counter|divisibleby:"7" %}
-                            </tr>
-                            {% if forloop.last %}
-                            {% else %}
-                                <tr>
+                                <a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{current_book.book_id}}/chapter/{{chapter}}">{{chapter}}</a>
+                            </td>
+                            {% if forloop.last or forloop.counter|divisibleby:"7" %}
+                        </tr>
+                        {% if forloop.last %}
+                        {% else %}
+                        <tr>
                             {% endif %}
-                        {% endif %}
-                        {% endfor %}
+                            {% endif %}
+                            {% endfor %}
 
                     </table>
                 </div>
@@ -255,8 +256,8 @@
             </header>
             <ul id="bible-books">
                 {% for book in books %}
-                    <li><a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}">{{book.book_name}}</a>
-                    </li>
+                <li><a href="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}">{{book.book_name}}</a>
+                </li>
                 {% endfor %}
             </ul>
         </section>
