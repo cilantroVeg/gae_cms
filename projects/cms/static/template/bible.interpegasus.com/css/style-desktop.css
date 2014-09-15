@@ -276,7 +276,6 @@ select{
     margin: 0;
 }
 
-
 @media (min-width: 0px) and (max-width: 639px) { /* smartphones, iPhone, portrait 480x320 phones */
     div#top-bar{
         display: block;
@@ -348,6 +347,10 @@ select{
         padding-right: 1em;
         padding-bottom: 1em;
     }
+
+    select{
+        max-width: 360px;
+    }
 }
 
 @media (min-width:961px) and (max-width: 1280px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -369,6 +372,9 @@ select{
         padding-top: 1em;
         padding-right: 1em;
         padding-bottom: 1em;
+    }
+    select{
+        max-width: 360px;
     }
 }
 
