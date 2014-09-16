@@ -1,0 +1,15 @@
+{% extends template_admin %}
+
+{% block title %}Site Map{% endblock %}
+{% block content %}
+    <h1>Site Map</h1>
+    {% for language in languages %}
+        {% if language.language_family_name == language.language_family_english %}
+            <h3><a href="/{{language.language_family_iso|lower}}">{{language.language_family_english}}</a></h3>
+        {%else%}
+            <h3><a href="/{{language.language_family_iso|lower}}">{{language.language_family_name}} - {{language.language_family_english}}</a></h3>
+        {% endif %}
+            <br />
+    {% endfor %}
+
+{% endblock %}

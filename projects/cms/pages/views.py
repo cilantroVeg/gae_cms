@@ -428,8 +428,13 @@ def page_api(request):
 
 # ...
 def sitemap(request):
-    return render_to_response("pages/sitemap.html", {},
-                              context_instance=RequestContext(request))
+    media = 'text'
+    response_format = 'json'
+    if settings.APP_NAME == 'bible-love':
+        languages = bible_languages(request,media,response_format)
+        return render_to_response("pages/sitemap-bible.html", {'languages':languages},context_instance=RequestContext(request))
+    else:
+        return render_to_response("pages/sitemap.html", {},context_instance=RequestContext(request))
 
 # ...
 def sitemap_xml(request):
