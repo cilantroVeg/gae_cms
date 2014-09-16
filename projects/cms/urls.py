@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url('', include('social.apps.django_app.urls', namespace='social')),
 
     # sitemap
-    url(r'^sitemap$', 'pages.views.sitemap'),
+    url(r'^sitemap[/]$', 'pages.views.sitemap'),
     url(r'^sitemap.xml$', 'pages.views.sitemap_xml'),
     url(r'^sitemap/(?P<language>[a-z]{3})\.xml$', 'pages.views.sitemap_xml_language'),
 
