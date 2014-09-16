@@ -12,6 +12,11 @@ urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     url('', include('social.apps.django_app.urls', namespace='social')),
 
+    # sitemap
+    url(r'^sitemap$', 'pages.views.sitemap'),
+    url(r'^sitemap.xml$', 'pages.views.sitemap_xml'),
+    url(r'^sitemap/(?P<language>[a-z]{3})\.xml$', 'pages.views.sitemap_xml_language'),
+
     # User Session
     url(r'^enter/', 'users.views.enter'),
     url(r'^exit/', 'users.views.exit_request'),
@@ -85,10 +90,6 @@ urlpatterns = patterns('',
     url(r'^spreadsheet/edit/(?P<id>\d+)/$', 'pages.views.spreadsheet_form'),
     url(r'^spreadsheet/delete/(?P<id>\d+)/$', 'pages.views.spreadsheet_delete'),
     url(r'^spreadsheets/', 'pages.views.spreadsheet_list'),
-
-    # sitemap
-    url(r'^sitemap/', 'pages.views.sitemap'),
-    url(r'^sitemap.xml/', 'pages.views.sitemap_xml'),
 
     # users
     url(r'^user/new/$', 'users.views.user_form'),

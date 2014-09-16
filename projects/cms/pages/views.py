@@ -437,18 +437,27 @@ def sitemap_xml(request):
     response_format = 'json'
     if settings.APP_NAME == 'bible-love':
         languages = bible_languages(request,media,response_format)
-        bibles = []
-        for language in languages:
-            bible_item = {}
-            bible_item["language"] = language
-            bible_item["bible"] = bible_list(request,media,language["language_family_code"].lower(),response_format)
-            bibles.append(bible_item)
-            if len(bibles) >10:
-                break
-        return render_to_response("pages/sitemap.xml", {'languages':languages,'bibles': bibles},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+        return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
         return render_to_response("pages/sitemap.html", {},
                               context_instance=RequestContext(request))
+
+# ...
+def sitemap_xml_language(request,language):
+    media = 'text'
+    response_format = 'json'
+    # Get language_family_code
+    language_family_code = 'eng'
+    languages = bible_languages(request,media,response_format)
+    language_item = search_dictionaries('language_family_iso', language, languages)
+    if language_item:
+        language_family_iso = language_item[0]['language_family_iso']
+        language_family_code = language_item[0]['language_family_code']
+        # Bible List
+        bibles = bible_list(request,media,language_family_code.lower(),response_format)
+    else:
+        bibles = []
+    return render_to_response("pages/sitemap-page.xml", {'language':language,'bibles': bibles},context_instance=RequestContext(request),content_type="application/xhtml+xml")
 
 # ...
 def category_view(request, language, slug):
