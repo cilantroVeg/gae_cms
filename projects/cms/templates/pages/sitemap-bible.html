@@ -1,15 +1,20 @@
 {% extends template_admin %}
-
 {% block title %}Site Map{% endblock %}
 {% block content %}
-    <h1>Site Map</h1>
-    {% for language in languages %}
-        {% if language.language_family_name == language.language_family_english %}
-            <h3><a href="/{{language.language_family_iso|lower}}">{{language.language_family_english}}</a></h3>
-        {%else%}
-            <h3><a href="/{{language.language_family_iso|lower}}">{{language.language_family_name}} - {{language.language_family_english}}</a></h3>
-        {% endif %}
-            <br />
-    {% endfor %}
-
+<span style="font-size: 50px;">Site Map</span>
+<br /><br />
+<span style="font-size: 21px;">XML Sitemap - Search Engines</span>
+<br />
+<a href="/sitemap.xml">sitemap.xml</a>
+<br /><br />
+<span style="font-size: 21px;">Languages</span>
+{% for language in languages %}
+<br />
+{% if language.language_family_name == language.language_family_english %}
+<a href="/{{language.language_family_iso|lower}}">{{language.language_family_english}}</a>
+{%else%}
+<a href="/{{language.language_family_iso|lower}}">{{language.language_family_name}} - {{language.language_family_english}}</a>
+{% endif %}
+        - <a href="/sitemap/{{ language.language_family_iso|lower }}.xml">{{ language.language_family_iso|lower }}.xml</a>
+{% endfor %}
 {% endblock %}

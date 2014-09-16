@@ -5,25 +5,26 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="{{current_language_html}}">
 <head>
-    <title>{% block title %}{% endblock %} - {{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="description" content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}"/>
-    <meta name="author" content='Powered by InterPegasus CMS - {% now "Y" %}'>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
     <meta name="keywords" content=""/>
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700"
-          rel="stylesheet"/>
+    <meta name="application-name" content="bible">
+    <meta name="generator" content="InterPegasus CMS">
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}javascript/bible.js"></script>
+    <script src="{{ STATIC_URL }}javascript/jquery-cookie/src/jquery.cookie.js"></script>
+    <script src="{{ STATIC_URL }}javascript/jquery-textresizer/jquery.textresizer.min.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-size.css"/>
 
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel.min.js"></script>
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/skel-panels.min.js"></script>
-    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/init.js"></script>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/skel-noscript.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" rel="stylesheet">
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -43,8 +44,9 @@
 {%else %}
 <body class="left-sidebar">
 {%endif%}
-<div style="min-height: 40px;min-width: 100%;clear: both;top:0px;  background-color: #c94663;">
-    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
+{% include "layout/admin.html" %}
+<div id="top-bar">
+    <div class="top-sections">
         <select id="language">
             <option value="eng">English</option>
             <option value="spa">Español - Spanish</option>
@@ -76,32 +78,6 @@
             {% endfor %}
         </select>
     </div>
-    {% if bibles %}
-    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
-        <select id="bible">
-            {% for bible in bibles %}
-            <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
-            {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
-            {{ bible.collection_name }}
-            {% if bible.volume_name %}
-            - {{bible.volume_name}}
-            {% endif %}
-            </option>
-            {% endfor %}
-        </select>
-    </div>
-    <div style="width:30%;text-align: center;float: left;clear: none;padding: 0;margin: 0;">
-        <select id="book">
-            {% for book in books %}
-            <option value="/{{current_language|lower}}/bible/{{current_bible.dam_id}}/book/{{book.book_id}}"
-            {% if current_book.book_id == book.book_id %}selected="selected"{% endif%}>
-            {{book.book_name}}
-
-            </option>
-            {% endfor %}
-        </select>
-    </div>
-    {%endif%}
 </div>
 <!-- Wrapper -->
 <div id="wrapper">
@@ -109,13 +85,23 @@
     <!-- Content -->
     <div id="content">
         <div id="content-inner">
-            <a href="/">Main Page</a>
-            <br />
-
-            <!-- Post -->
             <div>{% block content %}{% endblock %}</div>
         </div>
     </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <!-- Copyright -->
+        <div id="copyright" style="text-align: left">
+            <ul>
+                <li>{{references.0.mark}}</li>
+                <li>Development: <a href="http://www.interpegasus.com" target="_blank">InterPegasus</a></li>
+                <li>Template: <a href="/en/html5/">HTML5 UP</a></li>
+                <li>Contact Us: <a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 </body>
