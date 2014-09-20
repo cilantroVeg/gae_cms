@@ -180,7 +180,7 @@ elif APP_NAME == 'arturopegasus7':
 elif APP_NAME == 'arturoportfolio7':
     SITE_URL = 'http://portfolio.interpegasus.com'
 elif APP_NAME == 'bible-love':
-    SITE_URL = 'http://bible-love.appspot.com'
+    SITE_URL = 'http://bible7.co'
 elif APP_NAME == 'musicmatch777':
     SITE_URL = 'http://musicmatch777.appspot.com'
 elif APP_NAME == 'yiyask7':

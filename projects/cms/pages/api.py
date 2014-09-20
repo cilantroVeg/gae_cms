@@ -152,9 +152,9 @@ def validate_language(language_code):
 
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
-    url = build_url(language_code, api_request, extra_parameters)
-    result = urlfetch.fetch(url)
     try:
+        url = build_url(language_code, api_request, extra_parameters)
+        result = urlfetch.fetch(url)
         data = json.loads(result.content)
     except:
         data = None
