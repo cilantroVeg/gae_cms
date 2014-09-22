@@ -4,6 +4,7 @@ from django.contrib.humanize.templatetags.humanize import naturalday
 from django.conf import settings
 from pages.models import *
 from google.appengine.api import urlfetch
+from google.appengine.api import memcache
 from django.utils.html import *
 import json
 import urllib2
@@ -153,9 +154,15 @@ def validate_language(language_code):
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
     try:
-        url = build_url(language_code, api_request, extra_parameters)
-        result = urlfetch.fetch(url)
-        data = json.loads(result.content)
+        # Get data from cache
+        key = str(language_code) + str(api_request) + str(extra_parameters)
+        data = get_cache(key)
+        if data is None:
+            # Otherwise get it via query and set cache
+            url = build_url(language_code, api_request, extra_parameters)
+            result = urlfetch.fetch(url)
+            data = json.loads(result.content)
+            set_cache(key,data)
     except:
         data = None
     return data
@@ -383,3 +390,18 @@ def bible_copyright(request,dam_id,return_type=None):
     else:
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
+
+# ...
+def get_cache(key):
+    key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
+    data = memcache.get(key)
+    if data:
+        return data
+    else:
+        return None
+
+# ...
+def set_cache(key,data):
+    key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
+    memcache.add(key, data, 60*60*24*30*12)
+    return data
