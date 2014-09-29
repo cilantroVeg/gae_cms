@@ -142,8 +142,7 @@
                             if they get too long. You can also remove the "byline" span entirely if you don't
                             need a byline.
                         -->
-                        <h2><a href="#">{{current_chapter.0.book_name}}</a></h2>
-                        <span class="byline">{{current_chapter.0.chapter_title}}</span>
+                        <h2><a href="#">{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}</a></h2>
                     </header>
                     <div class="info">
                         <!--
@@ -178,6 +177,7 @@
 
             <!-- Pager -->
             <div class="pager pager_div">
+                <hr />
                 <!--<a href="#" class="button previous">Previous Page</a>-->
                 <div class="pages">
                     {% for chapter in current_book.chapters|string_to_array %}
@@ -191,8 +191,8 @@
 
             <!-- Post -->
             <article class="is-post is-post-excerpt">
-
-                <h2 class="byline">References</h2>
+                <hr />
+                <h2 class="byline">Copyright</h2>
                 <ul id="references-list">
                     <li><a class="reference-footer" href="#">{{references.0.mark}}</a></li>
                     {% for reference in references.0.organization %}
@@ -280,7 +280,7 @@
         </div>
 
         <div id="social">
-            {% include "layout/social_login.html" %}
+            <!-- {% include "layout/social_login.html" %} -->
         </div>
 
     </div>
