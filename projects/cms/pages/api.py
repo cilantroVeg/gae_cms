@@ -314,13 +314,13 @@ def parse_feed(feed):
 def bible_languages(request,media,return_type=None):
     response_data = {}
     if media =='text':
-        r = requests.get(settings.DBT_LANGUAGE_TEXT_URL)
+        r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
     elif media == 'audio':
-        r = requests.get(settings.DBT_LANGUAGE_AUDIO_URL)
+        r = request_url(settings.DBT_LANGUAGE_AUDIO_URL)
     elif media == 'video':
-        r = requests.get(settings.DBT_LANGUAGE_VIDEO_URL)
+        r = request_url(settings.DBT_LANGUAGE_VIDEO_URL)
     else:
-        r = requests.get(settings.DBT_LANGUAGE_TEXT_URL)
+        r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
     if r.status_code == 200:
         response_data['languages'] = r.json()
     else:
@@ -334,13 +334,13 @@ def bible_languages(request,media,return_type=None):
 def bible_list(request,media,language_code,return_type=None):
     response_data = {}
     if media =='text':
-        r = requests.get(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
+        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
     elif media == 'audio':
-        r = requests.get(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=audio&language_family_code=' + language_code)
+        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=audio&language_family_code=' + language_code)
     elif media == 'video':
-        r = requests.get(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=video&language_family_code=' + language_code)
+        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=video&language_family_code=' + language_code)
     else:
-        r = requests.get(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
+        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
     if r.status_code == 200:
         response_data['bibles'] = r.json()
     else:
@@ -353,7 +353,7 @@ def bible_list(request,media,language_code,return_type=None):
 # ...
 def bible_books(request,dam_id,return_type=None):
     response_data = {}
-    r = requests.get(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
+    r = request_url(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
     if r.status_code == 200:
         response_data['books'] = r.json()
     else:
@@ -367,7 +367,7 @@ def bible_books(request,dam_id,return_type=None):
 # ...
 def bible_book_text(request,dam_id,book_id,chapter_id,return_type=None):
     response_data = {}
-    r = requests.get(settings.DBT_GET_BIBLE_BOOKS_TEXT_URL + '&dam_id=' + dam_id + '&book_id=' + book_id + '&chapter_id=' + str(chapter_id))
+    r = request_url(settings.DBT_GET_BIBLE_BOOKS_TEXT_URL + '&dam_id=' + dam_id + '&book_id=' + book_id + '&chapter_id=' + str(chapter_id))
     if r.status_code == 200:
         response_data['text'] = r.json()
     else:
@@ -380,7 +380,7 @@ def bible_book_text(request,dam_id,book_id,chapter_id,return_type=None):
 # ...
 def bible_copyright(request,dam_id,return_type=None):
     response_data = {}
-    r = requests.get(settings.DBT_GET_COPYRIGHT_URL + '&dam_id=' + str(dam_id))
+    r = request_url(settings.DBT_GET_COPYRIGHT_URL + '&dam_id=' + str(dam_id))
     if r.status_code == 200:
         response_data['copyright'] = r.json()
     else:
@@ -405,3 +405,14 @@ def set_cache(key,data):
     key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
     memcache.add(key, data, 60*60*24*30*12)
     return data
+
+# ...
+def request_url(url):
+    try:
+        r = requests.get(url)
+    except:
+        try:
+            r = requests.get(url)
+        except:
+            r = None
+    return r
