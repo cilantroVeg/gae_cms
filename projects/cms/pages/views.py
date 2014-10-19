@@ -412,11 +412,12 @@ def page_view(request, language, slug):
 def page_feed_view(request, language, slug):
     feed_pages = query_api(language, 'feed_pages')
     page = None
-    for key in feed_pages['pages']:
-        if feed_pages['pages'][key]:
-            for p in feed_pages['pages'][key]:
-                if p['slug'] == slug:
-                    page = p
+    if 'pages' in feed_pages:
+        for key in feed_pages['pages']:
+            if feed_pages['pages'][key]:
+                for p in feed_pages['pages'][key]:
+                    if p['slug'] == slug:
+                        page = p
     if page:
         return render_to_response("pages/page_view.html", {"page": page},context_instance=RequestContext(request))
     else:
