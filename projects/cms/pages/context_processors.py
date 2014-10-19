@@ -24,10 +24,13 @@ def categories(request):
 
 # ...
 def is_logged_in(request):
-    if not request.user.is_authenticated():
+    try:
+        if request.user.is_authenticated():
+            return {'is_logged_in': True}
+        else:
+            return {'is_logged_in': False}
+    except:
         return {'is_logged_in': False}
-    else:
-        return {'is_logged_in': True}
 
 # ...
 def is_admin(request):

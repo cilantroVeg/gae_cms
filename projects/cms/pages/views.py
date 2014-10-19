@@ -608,6 +608,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         return redirect('/eng', False)
     return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(),'current_language_html':language_item[0]["language_family_iso_1"], 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
+#...
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
 
@@ -615,5 +616,6 @@ def search_dictionaries(key, value, list_of_dictionaries):
 def my_custom_404_view(request):
     return render_to_response('users/404.html',context_instance=RequestContext(request))
 
+#...
 def my_custom_500_view(request):
     return render_to_response('users/500.html',context_instance=RequestContext(request))
