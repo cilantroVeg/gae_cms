@@ -354,14 +354,16 @@ def bible_books(request,dam_id,return_type=None):
     response_data = {}
     r = request_url(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
     if r.status_code == 200:
-        response_data['books'] = r.json()
+        try:
+            response_data['books'] = r.json()
+        except:
+            response_data['books'] = None
     else:
         response_data['books'] = None
     if return_type:
         return response_data['books']
     else:
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
-
 
 # ...
 def bible_book_text(request,dam_id,book_id,chapter_id,return_type=None):
@@ -415,3 +417,8 @@ def request_url(url):
         except:
             r = None
     return r
+
+#...
+def xx_log(key, value):
+    import sys
+    print >> sys.stderr, 'OUTPUT VARIABLE CONTENT ' + str(key) + ': ' + str(value)

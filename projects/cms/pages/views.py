@@ -594,6 +594,8 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         if language_family_iso == 'heb':
             current_bible['right_to_left'] = 'true'
         books = bible_books(request,current_bible['dam_id'],response_format)
+        if books is None:
+            return redirect('/eng', False)
         if book:
             current_book = search_dictionaries('book_id', book, books)[0]
         else:
