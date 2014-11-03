@@ -6,9 +6,12 @@
     position: fixed;
     width: 200px;
     background: transparent;
+    background: #ebebeb;
     float: left;
     display: none;
     z-index: 10000;
+    border-bottom: 1px solid #696969;
+    border-top: 1px solid #696969;
 }
 #menu-tab {
     margin-top: 220px;
