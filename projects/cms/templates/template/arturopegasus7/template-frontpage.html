@@ -17,7 +17,6 @@
 </head>
 <body>
 {% include "layout/admin.html" %}
-{% include "layout/add_this_2.html" %}
 {% include "layout/microdata.html" %}
 <hgroup>
     <h1>Arturo's Homepage</h1>
@@ -30,15 +29,19 @@
     <ul id="menu" class="menu">
         <li> <a href="#" id="about"> <img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/5.JPG" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">About me</span> <span class="descr">About Me</span> </span> </a> </li>
         <li> <a href="#" id="projects"> <img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/4.JPG" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Projects</span> <span class="descr">My Work</span> </span> </a> </li>
-        <li> <a href="#" id="contact"> <img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/3.JPG" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Contact</span> <span class="descr">Get in Touch</span> </span> </a> </li>
-        <li > <a href="#" id="blog"> <img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/2.JPG" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Blog</span> <span class="descr">Blog</span> </span> </a> </li>
     </ul>
 </nav>
 <section id="bg">
     <section id="overlay"></section>
     <a href="#" class="nextImageBtn" title="next"></a><a href="#" class="prevImageBtn" title="previous"></a><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/5.JPG" alt="Japan" title="Arashiyama - Japan" id="bgimg" /></section>
 <div id="preloader"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/ajax-loader_dark.gif" width="32" height="32" alt="" /></div>
-<div id="img_title"></div>
+<div id="img_title">
+
+</div>
+<div id="img_title_2">
+{% include "layout/add_this_3.html" %}
+</div>
+
 <div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/toolbar_fs_icon.png" width="50" height="50" alt="" /></a></div>
 <div id="thumbnails_wrapper">
     <div id="outer_container">
@@ -107,38 +110,6 @@
                 <p><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/elegant-press.png" alt="" class="image"/>Portal with information about natural resources, and the environment.<br />
                 </p>
                 <div class="border"></div>
-            </div>
-        </div>
-        <div class="dragger_container">
-            <div class="dragger"></div>
-        </div>
-        <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
-</article>
-<article id="popupContact" class="popupContact">
-    <div class="customScrollBox">
-        <div class="container">
-            <div class="content"> <a id="popupContactClose"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/cross.png" width="20" alt="" /></a>
-                {% include "layout/contact_form_2.html" %}
-                <br />
-                <div id="social-network"> <a href="#" target="_blank"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/facebook.png" alt="Facebook" /></a> <a href="#" target="_blank"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/flickr.png" alt="Flicker" /></a> <a href="#" target="_blank"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/linkedin.png" alt="Linkedin" /></a> <a href="#" target="_blank"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/myspace.png" alt="Myspace" /></a> <a href="#" target="_blank"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/twitter.png" alt="Twitter" /></a> </div>
-            </div>
-        </div>
-        <div class="dragger_container">
-            <div class="dragger"></div>
-        </div>
-        <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> </div>
-</article>
-<article id="popupBlog" class="popupBlog">
-    <div class="customScrollBox">
-        <div class="container">
-            <div class="content"> <a id="popupBlogClose"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/cross.png" width="20" alt="" /></a>
-                <h1>Blog</h1>
-
-                <h2>New Website Template</h2>
-                <div class="date"><span class="day">30</span> <span class="month">June</span> <span class="year">2014</span> </div>
-                <p>I am happy to update my website, with some of my photographies, and a new tempalte. The new site is powered by Google App Engine, and InterPegasus CMS at GAE.</p>
-                <div class="border"></div>
-
             </div>
         </div>
         <div class="dragger_container">

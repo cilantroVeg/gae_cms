@@ -18,9 +18,12 @@ from django.contrib.auth import login
 
 # ...
 def enter(request):
-    if is_logged_in(request):
+    from pages.context_processors import is_logged_in
+    is_logged_in = is_logged_in(request)
+    if is_logged_in['is_logged_in']:
         return redirect('/', False)
-    return render_to_response('users/signup.html', context_instance=RequestContext(request))
+    else:
+        return render_to_response('users/signup.html', context_instance=RequestContext(request))
 
 # ...
 def not_found(request):
