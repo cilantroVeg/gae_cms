@@ -1,24 +1,24 @@
 {% if is_admin %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/admin.css">
     <script src="{{ STATIC_URL }}javascript/admin.js"></script>
-    <div id = "menu-tab"></div>
-    <div id = "menu-container">
-        <div id = "menu-container-top"></div>
-        <div id = "menu-container-middle">
-            <ul id = "menu">
-                <li><a href = "/languages/">Languages</a></li>
-                <li><a href = "/categories/">Categories</a></li>
-                <li><a href = "/pages/">Pages</a></li>
-                <li><a href = "/records/">Records</a></li>
-                <li><a href = "/users/">Users</a></li>
-                <li><a href = "/spreadsheets/">Spreadsheets</a></li>
-                <li><a href = "/images/">Images</a></li>
-                <li><a href = "/feeds/">Feeds</a></li>
-                <li><a href = "/advertisements/">Advertisements</a></li>
-                <li><a href = "/delete_cache/">Delete Cache</a></li>
+    <div id="menu-tab"></div>
+    <div id="menu-container">
+        <div id="menu-container-top"></div>
+        <div id="menu-container-middle">
+            <ul id="menu">
+                <li><a target="_self" href="/languages/">Languages</a></li>
+                <li><a target="_self" href="/categories/">Categories</a></li>
+                <li><a target="_self" href="/pages/">Pages</a></li>
+                <li><a target="_self" href="/records/">Records</a></li>
+                <li><a target="_self" href="/users/">Users</a></li>
+                <li><a target="_self" href="/spreadsheets/">Spreadsheets</a></li>
+                <li><a target="_self" href="/images/">Images</a></li>
+                <li><a target="_self" href="/feeds/">Feeds</a></li>
+                <li><a target="_self" href="/advertisements/">Advertisements</a></li>
+                <li><a target="_self" href="/delete_cache/">Delete Cache</a></li>
             </ul>
         </div>
 
-        <div id = "menu-container-footer"></div>
+        <div id="menu-container-footer"></div>
     </div>
 {% endif %}

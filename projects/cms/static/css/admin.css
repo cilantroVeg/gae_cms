@@ -5,7 +5,6 @@
     margin-left: -200px;
     position: fixed;
     width: 200px;
-    background: transparent;
     background: #ebebeb;
     float: left;
     display: none;
@@ -58,4 +57,23 @@
 a:hover,a:focus,a{
     text-underline-position: none;
     text-decoration: none;
+}
+
+#menu li{
+    list-style: none;
+    border:none;
+    padding: 3px;
+    min-width: 120px;
+    margin:0;
+}
+
+#menu li a:hover{
+    background-color: lightskyblue;
+    color: #696969;
+    min-width: 120px;
+    text-align: left;
+}
+
+a,a:visited{
+    color: #696969;
 }
