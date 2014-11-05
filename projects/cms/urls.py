@@ -31,6 +31,12 @@ urlpatterns = patterns('',
     url(r'^language/edit/(?P<id>\d+)[/]$', 'pages.views.language_form'),
     url(r'^language/delete/(?P<id>\d+)[/]$', 'pages.views.language_delete'),
     url(r'^languages[/]$', 'pages.views.language_list'),
+    
+    # Page - galleries
+    url(r'^gallery/new[/]$', 'pages.views.gallery_form'),
+    url(r'^gallery/edit/(?P<id>\d+)[/]$', 'pages.views.gallery_form'),
+    url(r'^gallery/delete/(?P<id>\d+)[/]$', 'pages.views.gallery_delete'),
+    url(r'^galleries[/]$', 'pages.views.gallery_list'),
 
     # Frontpage
     url('^$', 'pages.views.front_page'),

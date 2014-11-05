@@ -160,11 +160,23 @@ class Page(models.Model):
     class Meta:
         unique_together = ("category", "title")
 
+
+# ...
+class Gallery(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=256, blank=True, null=True)
+    description = models.TextField(null=True, blank=True)
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.name )
+
 # ...
 class Image(models.Model):
     id = models.AutoField(primary_key=True)
     page = models.ForeignKey(Page, null=True, blank=True)
+    gallery = models.ForeignKey(Gallery, null=True, blank=True)
     name = models.CharField(max_length=256, blank=True, null=True)
+    description = models.TextField(null=True, blank=True)
     slug = models.SlugField(unique=True, blank=False, null=False)
     image_file = models.FileField(upload_to='images/')
     size = models.CharField(max_length=32)
@@ -279,10 +291,17 @@ class SpreadsheetForm(ModelForm):
         fields = ['name', 'spreadsheet_file']
 
 # Forms
+class GalleryForm(ModelForm):
+    class Meta:
+        model = Gallery
+        fields = ['name', 'description']
+
+
+# Forms
 class ImageForm(ModelForm):
     class Meta:
         model = Image
-        fields = ['name', 'image_file']
+        fields = ['name', 'description', 'image_file']
 
 # Forms
 class AdvertisementForm(ModelForm):

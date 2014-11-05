@@ -96,6 +96,37 @@ def language_delete(request, id=None):
         return redirect('/', False)
 
 # ...
+def gallery_form(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Gallery, id=id) if id is not None else None
+        form = GalleryForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/galleries/')
+        return render_to_response("pages/gallery_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def gallery_list(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/gallery_list.html", {"gallery_list": Gallery.objects.all()}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def gallery_delete(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Gallery, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/galleries/')
+    else:
+        return redirect('/', False)
+
+
+
+
+# ...
 def page_form(request, id=None):
     if is_admin(request)['is_admin']:
         instance = get_object_or_404(Page, id=id) if id is not None else None
