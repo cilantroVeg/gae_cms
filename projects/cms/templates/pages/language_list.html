@@ -12,7 +12,7 @@
         data.addColumn('string', 'Language Code');
         data.addColumn('string', 'Manage');
         data.addRows([
-                {% for entry in language_list %}
+            {% for entry in language_list %}
     ['{{ entry.name }}', '{{ entry.code }}', '<a href="/language/edit/{{ entry.id }}/">Edit</a>|<a href="/language/delete/{{ entry.id }}/">Delete</a>'],
             {% endfor %}
     ])
@@ -24,7 +24,6 @@
 </script>{% endblock %}{% block content %}
 <div id = "static_content">
     <h1>Language List</h1>
-
     <div id = 'table_div'></div>
 </div><a href = "/language/new/">New</a>
 

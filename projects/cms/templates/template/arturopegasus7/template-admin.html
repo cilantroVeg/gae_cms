@@ -14,19 +14,17 @@
     <script src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/pop-ups.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/nav.js"></script>
+    {% block js %}{% endblock %}
 </head>
 <body>
 {% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
 <hgroup>
-    <h1>Arturo's Homepage</h1>
-    <h4>Photographs by <a href="http://arturo.interpegasus.com" target="_blank">Arturo Gomez M</a></h4>
-    <div id="social">
-        {% include "layout/social_login_2.html" %}
-    </div>
+    <h1><a href="/">Arturo's Homepage</a></h1>
 </hgroup>
 
-<div style="background-color: black;margin-top:180px;padding:21px;clear:both;color: white;">{% block content %}{% endblock %}</div>
-
+<div id="ag_page_content">
+    {% block content %}{% endblock %}
+</div>
 </body>
 </html>

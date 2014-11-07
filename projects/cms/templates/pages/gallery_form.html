@@ -1,6 +1,7 @@
 {% extends template_admin %}
 
 {% block title %}Form{% endblock %}{% block js %}
+<script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
 <script src = "/static/ckeditor/ckeditor.js"></script>
 <script src = "/static/ckeditor/adapters/jquery.js"></script>
 <script type = "text/javascript">
@@ -13,10 +14,12 @@
 <div id = "static_content">
     <h1>Gallery Form</h1>
     {% if id %}
-    <form enctype = "multipart/form-data" action = "/gallery/edit/{{ id }}/" method = "post">
-        {% else %}
+        <form enctype = "multipart/form-data" action = "/gallery/edit/{{ id }}/" method = "post">
+    {% else %}
         <form enctype = "multipart/form-data" action = "/gallery/new/" method = "post">
-            {% endif %} {% csrf_token %} {{ gallery_form }}
+    {% endif %}
+            {% csrf_token %}
+            {{ gallery_form }}
             <hr/>
             {% if image_array %} {% for image in image_array %}
             <div>
