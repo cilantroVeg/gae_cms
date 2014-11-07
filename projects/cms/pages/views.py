@@ -94,16 +94,36 @@ def language_delete(request, id=None):
         return redirect('/languages/')
     else:
         return redirect('/', False)
-
-# ...
+    
+# ...    
 def gallery_form(request, id=None):
     if is_admin(request)['is_admin']:
         instance = get_object_or_404(Gallery, id=id) if id is not None else None
-        form = GalleryForm(request.POST or None, instance=instance)
-        if form.is_valid():
-            form.save()
+        if instance:
+            image_array = Image.objects.filter(gallery=instance)
+        else:
+            image_array = None
+        gallery_form = GalleryForm(request.POST or None, instance=instance)
+        ImageFormSet = formset_factory(ImageForm, extra=7)
+        if gallery_form.is_valid():
+            gallery = gallery_form.save(commit=False)
+            gallery.user = request.user
+            gallery.save()
+            formset = ImageFormSet(request.POST or None, request.FILES or None)
+            for form in formset.forms:
+                try:
+                    image = form.save(commit=False)
+                    image.gallery = gallery
+                    image.name = form.cleaned_data['name']
+                    image.image_file = form.cleaned_data['image_file'].name
+                    image.size = form.cleaned_data['image_file'].size
+                    image.save()
+                    handle_image_picasa(form.cleaned_data['image_file'], image)
+                except:
+                    continue
+
             return redirect('/galleries/')
-        return render_to_response("pages/gallery_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
