@@ -417,6 +417,8 @@ def delete_picasa_photo(instance):
 
 # ...
 def handle_image_picasa(file, image):
+    from google.appengine.api import urlfetch
+    urlfetch.set_default_fetch_deadline(120)
     gd_client = connect_picasa()
     try:
         current_album = None
