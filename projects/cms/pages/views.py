@@ -435,8 +435,11 @@ def handle_image_picasa(file, image):
     photo = gd_client.InsertPhotoSimple(album_url, strip_tags(image_name), strip_tags(image_description) , file, content_type='image/jpeg')
     image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text
-    image.picasa_thumb_url = photo.media.thumbnail[0].url
-    image.picasa_photo_url = photo.content.src
+    import re
+    thumb = re.sub('s72','s320',photo.media.thumbnail[0].url)
+    full = re.sub('s72','s2048',photo.media.thumbnail[0].url)
+    image.picasa_thumb_url = thumb
+    image.picasa_photo_url = full #photo.content.src
     image.save()
     return photo
 
