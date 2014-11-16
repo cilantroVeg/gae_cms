@@ -8,21 +8,26 @@
         $('textarea').ckeditor();
     });
 </script>
+{% endblock %}
 
-{% endblock %}{% block content %}
+{% block content %}
 <div id = "static_content">
     <h1>Page Form</h1>
     {% if id %}
-    <form enctype = "multipart/form-data" action = "/page/edit/{{ id }}/" method = "post">
-        {% else %}
+        <form enctype = "multipart/form-data" action = "/page/edit/{{ id }}/" method = "post">
+    {% else %}
         <form enctype = "multipart/form-data" action = "/page/new/" method = "post">
-            {% endif %} {% csrf_token %} {{ page_form }}
+    {% endif %}
+            {% csrf_token %}
+            {{ page_form }}
             <hr/>
-            {% if image_array %} {% for image in image_array %}
+            {% if image_array %}
+            {% for image in image_array %}
             <div>
                 <a href = "{{ image.picasa_photo_url }}"><img src = "{{ image.picasa_thumb_url }}"/></a>
             </div>
-            {% endfor %} {% endif %}
+            {% endfor %}
+            {% endif %}
             <h3>Image Form</h3>
             {{ image_formset }}
             <hr/>
@@ -30,4 +35,6 @@
             <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
-<hr/><a href = "/pages/">Page List</a>{% endblock %}
+<hr/><a href = "/pages/">Page List</a>
+
+{% endblock %}

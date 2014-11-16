@@ -183,6 +183,7 @@ class Image(models.Model):
     picasa_album_id = models.CharField(max_length=256)
     picasa_photo_id = models.CharField(max_length=256)
     picasa_photo_url = models.URLField()
+    picasa_medium_url = models.URLField()
     picasa_thumb_url = models.URLField()
     height = models.CharField(max_length=7)
     width = models.CharField(max_length=7)

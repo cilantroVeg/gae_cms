@@ -439,8 +439,10 @@ def handle_image_picasa(file, image):
     image.picasa_photo_id = photo.gphoto_id.text
     import re
     thumb = re.sub('s72','s320',photo.media.thumbnail[0].url)
+    medium = re.sub('s72','s1024',photo.media.thumbnail[0].url)
     full = re.sub('s72','s2048',photo.media.thumbnail[0].url)
     image.picasa_thumb_url = thumb
+    picasa_medium_url = medium
     image.picasa_photo_url = full #photo.content.src
     image.save()
     return photo
