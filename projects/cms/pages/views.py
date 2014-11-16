@@ -115,6 +115,7 @@ def gallery_form(request, id=None):
                     image = form.save(commit=False)
                     image.gallery = gallery
                     image.name = form.cleaned_data['name']
+                    image.description = form.cleaned_data['description']
                     image.image_file = form.cleaned_data['image_file'].name
                     image.size = form.cleaned_data['image_file'].size
                     image.save()
@@ -166,6 +167,7 @@ def page_form(request, id=None):
                     image = form.save(commit=False)
                     image.page = page
                     image.name = form.cleaned_data['name']
+                    image.description = form.cleaned_data['description']
                     image.image_file = form.cleaned_data['image_file'].name
                     image.size = form.cleaned_data['image_file'].size
                     image.save()
@@ -378,6 +380,7 @@ def image_form(request, id=None):
         if form.is_valid():
             image = form.save(commit=False)
             image.name = request.POST['name']
+            image.description = form.cleaned_data['description']
             image.image_file = request.FILES['image_file'].name
             image.size = request.FILES['image_file'].size
             image.save()
@@ -422,7 +425,9 @@ def handle_image_picasa(file, image):
         album = gd_client.InsertAlbum(title=Record.objects.get(key='WEBSITE_NAME').value, summary=Record.objects.get(key='WEBSITE_DESCRIPTION').value)
 
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
-    photo = gd_client.InsertPhotoSimple(album_url, file.name, 'Text', file, content_type='image/jpeg')
+    image_name = image.name if image.name else 'Image'
+    image_description = image.description if image.description else 'Image Description'
+    photo = gd_client.InsertPhotoSimple(album_url, image_name, image_description, file, content_type='image/jpeg')
 
     image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text
