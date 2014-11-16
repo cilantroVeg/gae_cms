@@ -14,6 +14,7 @@ from pages.models import *
 from pages.context_processors import is_admin
 from django.shortcuts import render
 from pages.api import *
+from django.utils.html import strip_tags
 
 # ...
 def delete_cache(request):
@@ -65,8 +66,8 @@ def category_delete(request, id=None):
         return redirect('/categories/')
     else:
         return redirect('/', False)
-    
-    
+
+
 # ...
 def language_form(request, id=None):
     if is_admin(request)['is_admin']:
@@ -94,7 +95,7 @@ def language_delete(request, id=None):
         return redirect('/languages/')
     else:
         return redirect('/', False)
-    
+
 # ...    
 def gallery_form(request, id=None):
     if is_admin(request)['is_admin']:
@@ -251,7 +252,7 @@ def feed_delete(request, id=None):
         return redirect('/feeds/')
     else:
         return redirect('/', False)
-    
+
 # ...
 def advertisement_form(request, id=None):
     if is_admin(request)['is_admin']:
@@ -417,25 +418,26 @@ def delete_picasa_photo(instance):
 # ...
 def handle_image_picasa(file, image):
     gd_client = connect_picasa()
-
     try:
+        current_album = None
         albums = gd_client.GetUserFeed()
-        album = albums.entry[0]
+        for album in albums.entry:
+            if album.title.text == settings.APP_NAME:
+                current_album = album
+        if current_album is None:
+            album = gd_client.InsertAlbum(title=settings.APP_NAME, summary='Photos from ' + settings.SITE_URL)
     except:
-        album = gd_client.InsertAlbum(title=Record.objects.get(key='WEBSITE_NAME').value, summary=Record.objects.get(key='WEBSITE_DESCRIPTION').value)
+        album = gd_client.InsertAlbum(title=settings.APP_NAME, summary='Photos from ' + settings.SITE_URL)
 
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
     image_name = image.name if image.name else 'Image'
     image_description = image.description if image.description else 'Image Description'
-    photo = gd_client.InsertPhotoSimple(album_url, image_name, image_description, file, content_type='image/jpeg')
-
+    photo = gd_client.InsertPhotoSimple(album_url, strip_tags(image_name), strip_tags(image_description) , file, content_type='image/jpeg')
     image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text
     image.picasa_thumb_url = photo.media.thumbnail[0].url
     image.picasa_photo_url = photo.content.src
     image.save()
-    # pic = StringIO.StringIO(pic)
-    debug('PHOTO', photo)
     return photo
 
 # ...
@@ -502,7 +504,7 @@ def sitemap_xml(request):
         return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
         return render_to_response("pages/sitemap.html", {},
-                              context_instance=RequestContext(request))
+                                  context_instance=RequestContext(request))
 
 # ...
 def sitemap_xml_language(request,language):
