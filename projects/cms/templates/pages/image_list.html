@@ -12,10 +12,11 @@
         data.addColumn('string', 'Picasa thumb');
         data.addColumn('string', 'Slug');
         data.addColumn('string', 'Page');
+        data.addColumn('string', 'Gallery');
         data.addColumn('string', 'Manage');
         data.addRows([
                 {% for entry in image_list %}
-    ['{{ entry.name }}', '<a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
+    ['{{ entry.name }}', '<a href="{{ entry.picasa_photo_url }}"><img src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a>', '<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
             {% endfor %}
     ])
     ;

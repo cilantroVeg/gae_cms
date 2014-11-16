@@ -422,7 +422,7 @@ def handle_image_picasa(file, image):
         album = gd_client.InsertAlbum(title=Record.objects.get(key='WEBSITE_NAME').value, summary=Record.objects.get(key='WEBSITE_DESCRIPTION').value)
 
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
-    photo = gd_client.InsertPhotoSimple(album_url, file.name, Record.objects.get(key='WEBSITE_DESCRIPTION').value, file, content_type='image/jpeg')
+    photo = gd_client.InsertPhotoSimple(album_url, file.name, 'Text', file, content_type='image/jpeg')
 
     image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text

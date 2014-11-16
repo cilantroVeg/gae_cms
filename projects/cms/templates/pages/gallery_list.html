@@ -11,11 +11,10 @@
         data.addColumn('string', 'Gallery');
         data.addColumn('string', 'Manage');
         data.addRows([
-                {% for entry in gallery_list %}
-    ['{{ entry.name }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>'],
+            {% for entry in gallery_list %}
+                ['{{ entry.name }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>'],
             {% endfor %}
-    ])
-    ;
+        ]);
 
     var table = new google.visualization.Table(document.getElementById('table_div'));
     table.draw(data, {showRowNumber: true, allowHtml: true});
