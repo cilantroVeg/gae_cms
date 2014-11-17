@@ -808,6 +808,7 @@ label {
     padding: 3px;
 }
 
-div#cke_id_content{
-    width: 360px;
+#cke_id_content{
+    width: 720px;
 }
+

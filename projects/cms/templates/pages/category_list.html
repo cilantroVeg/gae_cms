@@ -15,9 +15,9 @@
         data.addColumn('string', 'Language');
         data.addColumn('string', 'Manage');
         data.addRows([
-                {% for entry in category_list %}
+        {% for entry in category_list %}
     ['{{ entry.name }}', '{{ entry.parent }}', '{{ entry.slug }}', '{{ entry.language }}' , '<a href="/category/edit/{{ entry.id }}">Edit</a>|<a href="/category/delete/{{ entry.id }}">Delete</a>'],
-            {% endfor %}
+    {% endfor %}
     ])
     ;
 
@@ -28,10 +28,11 @@
 {% endblock %}
 {% block content %}<a href = "/category/edit/">Edit All</a>
 <hr/>
-<div id = "static_content">
-    <h1>Category List</h1>
 
+<div id ="static_content">
+    <h1>Category List</h1>
     <div id = 'table_div'></div>
 </div>
+<br />
 <a href = "/category/new/">New</a>
 {% endblock %}

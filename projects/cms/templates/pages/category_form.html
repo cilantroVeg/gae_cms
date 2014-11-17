@@ -3,7 +3,7 @@
 {% block title %}Form{% endblock %}{% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
 {% endblock %}{% block content %}
-<div id = "static_content">
+<div id="static_content">
     <h1>category Form</h1>
     {% if id %}
     <form action = "/category/edit/{{ id }}/" method = "post">
@@ -14,4 +14,6 @@
             <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
-<hr/><a href = "/categories/">Category List</a>{% endblock %}
+<br/>
+<hr/>
+<a href = "/categories/">Category List</a>{% endblock %}

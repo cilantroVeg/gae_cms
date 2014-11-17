@@ -28,13 +28,16 @@
             </div>
             {% endfor %}
             {% endif %}
-            <h3>Image Form</h3>
-            {{ image_formset }}
+            <br />
+            <h1>Image Form</h1>
+            <div id="image_formset">
+                {{ image_formset }}
+            </div>
             <hr/>
-            <div>&nbsp;</div>
             <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>
-<hr/><a href = "/pages/">Page List</a>
+<hr/>
+<a href = "/pages/">Page List</a>
 
 {% endblock %}
