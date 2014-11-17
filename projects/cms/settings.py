@@ -11,7 +11,7 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = False
+DEBUG = True
 ADMIN_USERS = access_keys.ADMIN_USERS
 ADMIN_USERS_EMAILS = access_keys.ADMIN_USERS_EMAILS
 SERVER_EMAIL = access_keys.SERVER_EMAIL
@@ -206,3 +206,29 @@ DBT_GET_BIBLES_FOR_LANGUAGE_URL = access_keys.DBT_GET_BIBLES_FOR_LANGUAGE_URL
 DBT_GET_BIBLE_BOOKS_URL =  access_keys.DBT_GET_BIBLE_BOOKS_URL
 DBT_GET_BIBLE_BOOKS_TEXT_URL =  access_keys.DBT_GET_BIBLE_BOOKS_TEXT_URL
 DBT_GET_COPYRIGHT_URL = access_keys.DBT_GET_COPYRIGHT_URL
+
+LOGGING = {
+    'version': 1,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+            }
+        },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+        }
+    }
