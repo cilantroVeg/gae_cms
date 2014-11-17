@@ -31,9 +31,14 @@
             <br />
             <h1>Image Form</h1>
             <div id="image_formset">
-                {{ image_formset }}
+                <label for="image_name_1">Name:</label>
+                <input id="image_name_1" maxlength="256" name="image_name_1" type="text">
+                <label for="image_description_1">Description:</label>
+                <textarea id="image_description_1" name="image_description_1" rows="7"></textarea>
+                <label for="image_file_1">Image file:</label>
+                <input id="image_file_1" name="image_file_1" type="file">
+                <hr/>
             </div>
-            <hr/>
             <div><input type = "submit" value = "Submit"/></div>
         </form>
 </div>

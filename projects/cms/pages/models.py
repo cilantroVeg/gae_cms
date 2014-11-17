@@ -190,6 +190,12 @@ class Image(models.Model):
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
+    @classmethod
+    def create(cls, name):
+        image = cls(name=name)
+        return image
+
+    # ...
     def __unicode__(self):
         return u'%s' % (self.name )
 

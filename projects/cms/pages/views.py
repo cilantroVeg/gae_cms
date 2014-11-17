@@ -162,19 +162,17 @@ def page_form(request, id=None):
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
-            formset = ImageFormSet(request.POST or None, request.FILES or None)
-            for form in formset.forms:
-                try:
-                    image = form.save(commit=False)
-                    image.page = page
-                    image.name = form.cleaned_data['name']
-                    image.description = form.cleaned_data['description']
-                    image.image_file = form.cleaned_data['image_file'].name
-                    image.size = form.cleaned_data['image_file'].size
-                    image.save()
-                    handle_image_picasa(form.cleaned_data['image_file'], image)
-                except:
-                    continue
+
+            name_1 = request.POST.get("image_name_1", None)
+            description_1 = request.POST.get("image_desription_1", None)
+            image_1 = request.FILES['image_file_1']
+            image = Image.create(name_1)
+            image.description = description_1
+            image.image_file = image_1.name
+            image.size = image_1.size
+            image.page = page
+            image.save()
+            handle_image_picasa(image_1, image)
 
             return redirect('/pages/')
         return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
