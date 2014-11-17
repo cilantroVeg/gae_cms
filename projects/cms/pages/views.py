@@ -109,27 +109,12 @@ def gallery_form(request, id=None):
         else:
             image_array = None
         gallery_form = GalleryForm(request.POST or None, instance=instance)
-        ImageFormSet = formset_factory(ImageForm, extra=7)
         if gallery_form.is_valid():
             gallery = gallery_form.save(commit=False)
-            gallery.user = request.user
             gallery.save()
-            formset = ImageFormSet(request.POST or None, request.FILES or None)
-            for form in formset.forms:
-                try:
-                    image = form.save(commit=False)
-                    image.gallery = gallery
-                    image.name = form.cleaned_data['name']
-                    image.description = form.cleaned_data['description']
-                    image.image_file = form.cleaned_data['image_file'].name
-                    image.size = form.cleaned_data['image_file'].size
-                    image.save()
-                    handle_image_picasa(form.cleaned_data['image_file'], image)
-                except:
-                    continue
-
+            process_uploaded_files(request,gallery)
             return redirect('/galleries/')
-        return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
+        return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -161,14 +146,13 @@ def page_form(request, id=None):
         else:
             image_array = None
         page_form = PageForm(request.POST or None, instance=instance)
-        ImageFormSet = formset_factory(ImageForm, extra=7)
         if page_form.is_valid():
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
             process_uploaded_files(request,page)
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"page_form": page_form, "image_formset": ImageFormSet, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
+        return render_to_response("pages/page_form.html", {"page_form": page_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
