@@ -658,6 +658,7 @@ def search_dictionaries(key, value, list_of_dictionaries):
 def process_uploaded_files(request,page):
     try:
         name_1 = request.POST.get("image_name_1", None)
+
         if name_1:
             description_1 = request.POST.get("image_desription_1", None)
             image_1 = request.FILES['image_file_1']
