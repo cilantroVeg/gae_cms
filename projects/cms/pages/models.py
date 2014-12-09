@@ -166,6 +166,9 @@ class Gallery(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=256, blank=True, null=True)
     description = models.TextField(null=True, blank=True)
+    is_enabled = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now=True)
+
     # ...
     def __unicode__(self):
         return u'%s' % (self.name )

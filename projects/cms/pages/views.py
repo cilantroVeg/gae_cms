@@ -112,7 +112,7 @@ def gallery_form(request, id=None):
         if gallery_form.is_valid():
             gallery = gallery_form.save(commit=False)
             gallery.save()
-            process_uploaded_files(request,gallery)
+            process_uploaded_files(request,gallery,True)
             return redirect('/galleries/')
         return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
@@ -150,7 +150,7 @@ def page_form(request, id=None):
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
-            process_uploaded_files(request,page)
+            process_uploaded_files(request,page,False)
             return redirect('/pages/')
         return render_to_response("pages/page_form.html", {"page_form": page_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
@@ -655,7 +655,7 @@ def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
 
 #...
-def process_uploaded_files(request,page):
+def process_uploaded_files(request,page, is_gallery=False):
     try:
         name_1 = request.POST.get("image_name_1", None)
 
@@ -666,7 +666,10 @@ def process_uploaded_files(request,page):
             image.description = description_1
             image.image_file = image_1.name
             image.size = image_1.size
-            image.page = page
+            if is_gallery:
+                image.gallery = page
+            else:
+                image.page = page
             image.save()
             handle_image_picasa(image_1, image)
             logger.debug("Image 1 uploaded successfully.")
@@ -683,7 +686,10 @@ def process_uploaded_files(request,page):
             image.description = description_2
             image.image_file = image_2.name
             image.size = image_2.size
-            image.page = page
+            if is_gallery:
+                image.gallery = page
+            else:
+                image.page = page
             image.save()
             handle_image_picasa(image_2, image)
             logger.debug("Image 2 uploaded successfully.")
@@ -700,7 +706,10 @@ def process_uploaded_files(request,page):
             image.description = description_3
             image.image_file = image_3.name
             image.size = image_3.size
-            image.page = page
+            if is_gallery:
+                image.gallery = page
+            else:
+                image.page = page
             image.save()
             handle_image_picasa(image_3, image)
             logger.debug("Image 3 uploaded successfully.")
@@ -717,7 +726,10 @@ def process_uploaded_files(request,page):
             image.description = description_4
             image.image_file = image_4.name
             image.size = image_4.size
-            image.page = page
+            if is_gallery:
+                image.gallery = page
+            else:
+                image.page = page
             image.save()
             handle_image_picasa(image_4, image)
             logger.debug("Image 4 uploaded successfully.")
@@ -734,7 +746,10 @@ def process_uploaded_files(request,page):
             image.description = description_5
             image.image_file = image_5.name
             image.size = image_5.size
-            image.page = page
+            if is_gallery:
+                image.gallery = page
+            else:
+                image.page = page
             image.save()
             handle_image_picasa(image_5, image)
             logger.debug("Image 5 uploaded successfully.")
