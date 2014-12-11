@@ -657,10 +657,10 @@ def search_dictionaries(key, value, list_of_dictionaries):
 #...
 def process_uploaded_files(request,page, is_gallery=False):
     # Image 1
-    name_1 = request.POST.get("image_name_1", None)
+    name_1 = request.POST.get('image_name_1', None)
     if name_1:
         description_1 = request.POST.get("image_desription_1", None)
-        image_1 = request.FILES['image_file_1']
+        image_1 = request.FILES['image_file_one']
         image = Image.create(name_1)
         image.description = description_1
         image.image_file = image_1.name
@@ -676,10 +676,10 @@ def process_uploaded_files(request,page, is_gallery=False):
         logger.debug("Image 1 is empty.")
 
     # Image 2
-    name_2 = request.POST.get("image_name_2", None)
+    name_2 = request.POST.get('image_name_2', None)
     if name_2:
         description_2 = request.POST.get("image_desription_2", None)
-        image_2 = request.FILES['image_file_2']
+        image_2 = request.FILES['image_file_two']
         image = Image.create(name_2)
         image.description = description_2
         image.image_file = image_2.name
@@ -695,10 +695,10 @@ def process_uploaded_files(request,page, is_gallery=False):
         logger.debug("Image 2 is empty.")
 
     # Image 3
-    name_3 = request.POST.get("image_name_3", None)
+    name_3 = request.POST.get('image_name_3', None)
     if name_3:
         description_3 = request.POST.get("image_desription_3", None)
-        image_3 = request.FILES['image_file_3']
+        image_3 = request.FILES['image_file_three']
         image = Image.create(name_3)
         image.description = description_3
         image.image_file = image_3.name
@@ -714,10 +714,10 @@ def process_uploaded_files(request,page, is_gallery=False):
         logger.debug("Image 3 is empty.")
 
     # Image 4
-    name_4 = request.POST.get("image_name_4", None)
+    name_4 = request.POST.get('image_name_4', None)
     if name_4:
         description_4 = request.POST.get("image_desription_4", None)
-        image_4 = request.FILES['image_file_4']
+        image_4 = request.FILES['image_file_four']
         image = Image.create(name_4)
         image.description = description_4
         image.image_file = image_4.name
@@ -733,10 +733,10 @@ def process_uploaded_files(request,page, is_gallery=False):
         logger.debug("Image 4 is empty.")
 
     # Image 5
-    name_5 = request.POST.get("image_name_5", None)
+    name_5 = request.POST.get('image_name_5', None)
     if name_5:
         description_5 = request.POST.get("image_desription_5", None)
-        image_5 = request.FILES['image_file_5']
+        image_5 = request.FILES['image_file_five']
         image = Image.create(name_5)
         image.description = description_5
         image.image_file = image_5.name

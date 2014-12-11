@@ -1,9 +1,9 @@
 {% extends template_admin %}
 
 {% block title %}Form{% endblock %}{% block js %}
-<script src ="/static/ckeditor/ckeditor.js"></script>
-<script src ="/static/ckeditor/adapters/jquery.js"></script>
-<script type ="text/javascript">
+<script src="/static/ckeditor/ckeditor.js"></script>
+<script src="/static/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript">
     $(document).ready(function () {
         $('textarea').ckeditor();
     });
@@ -11,19 +11,20 @@
 {% endblock %}
 
 {% block content %}
-<div id ="static_content">
+<div id="static_content">
     <h1>Gallery Form</h1>
     {% if id %}
-        <form enctype="multipart/form-data" action="/gallery/edit/{{ id }}/" method="post">{% else %}
+        <form enctype="multipart/form-data" action="/gallery/edit/{{ id }}/" method="post">
+            {% else %}
         <form enctype="multipart/form-data" action="/gallery/new/" method="post">
             {% endif %}
             {% csrf_token %}
-            {{ gallery_form }}
+            {{ gallery_form.as_p }}
             <hr/>
             {% if image_array %}
             {% for image in image_array %}
             <div>
-                <a href ="{{ image.picasa_photo_url }}"><img src ="{{ image.picasa_thumb_url }}"/></a>
+                <a href="{{ image.picasa_photo_url }}"><img src="{{ image.picasa_thumb_url }}"/></a>
             </div>
             {% endfor %}
             {% endif %}
@@ -32,49 +33,49 @@
             <div id="image_formset">
                 <h3>Image 1</h3>
                 <label for="image_name_1">Name:</label>
-                <input id="image_name_1" maxlength="256" name="image_name_1" type="text">
+                <input id="image_name_1" maxlength="256" name="image_name_1" type="text" />
                 <label for="image_description_1">Description:</label>
                 <textarea id="image_description_1" name="image_description_1" rows="7"></textarea>
-                <label for="image_file_1">Image file:</label>
-                <input id="image_file_1" name="image_file_1" type="file">
+                <label for="image_file_one">Image file:</label>
+                <input type="file" id="image_file_one" name="image_file_one" title="image"/>
                 <hr/>
                 <h3>Image 2</h3>
                 <label for="image_name_2">Name:</label>
-                <input id="image_name_2" maxlength="256" name="image_name_2" type="text">
+                <input id="image_name_2" maxlength="256" name="image_name_2" type="text" />
                 <label for="image_description_2">Description:</label>
                 <textarea id="image_description_2" name="image_description_2" rows="7"></textarea>
-                <label for="image_file_2">Image file:</label>
-                <input id="image_file_2" name="image_file_2" type="file">
+                <label for="image_file_two">Image file:</label>
+                <input type="file" id="image_file_two" name="image_file_two" title="image"/>
                 <hr/>
                 <h3>Image 3</h3>
                 <label for="image_name_3">Name:</label>
-                <input id="image_name_3" maxlength="256" name="image_name_3" type="text">
+                <input id="image_name_3" maxlength="256" name="image_name_3" type="text" />
                 <label for="image_description_3">Description:</label>
                 <textarea id="image_description_3" name="image_description_3" rows="7"></textarea>
-                <label for="image_file_3">Image file:</label>
-                <input id="image_file_3" name="image_file_3" type="file">
+                <label for="image_file_three">Image file:</label>
+                <input type="file" id="image_file_three" name="image_file_three" title="image"/>
                 <hr/>
                 <h3>Image 4</h3>
                 <label for="image_name_4">Name:</label>
-                <input id="image_name_4" maxlength="256" name="image_name_4" type="text">
+                <input id="image_name_4" maxlength="256" name="image_name_4" type="text" />
                 <label for="image_description_4">Description:</label>
                 <textarea id="image_description_4" name="image_description_4" rows="7"></textarea>
-                <label for="image_file_4">Image file:</label>
-                <input id="image_file_4" name="image_file_4" type="file">
+                <label for="image_file_four">Image file:</label>
+                <input type="file" id="image_file_four" name="image_file_four" title="image"/>
                 <hr/>
                 <h3>Image 5</h3>
                 <label for="image_name_5">Name:</label>
-                <input id="image_name_5" maxlength="256" name="image_name_5" type="text">
+                <input id="image_name_5" maxlength="256" name="image_name_5" type="text" />
                 <label for="image_description_5">Description:</label>
                 <textarea id="image_description_5" name="image_description_5" rows="7"></textarea>
-                <label for="image_file_5">Image file:</label>
-                <input id="image_file_5" name="image_file_5" type="file">
+                <label for="image_file_five">Image file:</label>
+                <input type="file" id="image_file_five" name="image_file_five" title="image"/>
                 <hr/>
             </div>
-            <div><input type ="submit" value ="Submit"/></div>
+            <div><input type="submit" value="Submit"/></div>
         </form>
 </div>
 <hr/>
-<a href ="/galleries/">Gallery List</a>
+<a href="/galleries/">Gallery List</a>
 
 {% endblock %}
