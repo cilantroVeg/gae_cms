@@ -164,7 +164,7 @@ class Page(models.Model):
 # ...
 class Gallery(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=256, blank=True, null=True)
+    name = models.CharField(max_length=256, blank=True, null=True, unique=True)
     description = models.TextField(null=True, blank=True)
     is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)

@@ -656,107 +656,102 @@ def search_dictionaries(key, value, list_of_dictionaries):
 
 #...
 def process_uploaded_files(request,page, is_gallery=False):
-    try:
-        name_1 = request.POST.get("image_name_1", None)
+    # Image 1
+    name_1 = request.POST.get("image_name_1", None)
+    if name_1:
+        description_1 = request.POST.get("image_desription_1", None)
+        image_1 = request.FILES['image_file_1']
+        image = Image.create(name_1)
+        image.description = description_1
+        image.image_file = image_1.name
+        image.size = image_1.size
+        if is_gallery:
+            image.gallery = page
+        else:
+            image.page = page
+        image.save()
+        handle_image_picasa(image_1, image)
+        logger.debug("Image 1 uploaded successfully.")
+    else:
+        logger.debug("Image 1 is empty.")
 
-        if name_1:
-            description_1 = request.POST.get("image_desription_1", None)
-            image_1 = request.FILES['image_file_1']
-            image = Image.create(name_1)
-            image.description = description_1
-            image.image_file = image_1.name
-            image.size = image_1.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_1, image)
-            logger.debug("Image 1 uploaded successfully.")
+    # Image 2
+    name_2 = request.POST.get("image_name_2", None)
+    if name_2:
+        description_2 = request.POST.get("image_desription_2", None)
+        image_2 = request.FILES['image_file_2']
+        image = Image.create(name_2)
+        image.description = description_2
+        image.image_file = image_2.name
+        image.size = image_2.size
+        if is_gallery:
+            image.gallery = page
         else:
-            logger.debug("Image 1 is empty.")
-    except:
-        logger.debug("Issue uploading image 1")
-    try:
-        name_2 = request.POST.get("image_name_2", None)
-        if name_2:
-            description_2 = request.POST.get("image_desription_2", None)
-            image_2 = request.FILES['image_file_2']
-            image = Image.create(name_2)
-            image.description = description_2
-            image.image_file = image_2.name
-            image.size = image_2.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_2, image)
-            logger.debug("Image 2 uploaded successfully.")
+            image.page = page
+        image.save()
+        handle_image_picasa(image_2, image)
+        logger.debug("Image 2 uploaded successfully.")
+    else:
+        logger.debug("Image 2 is empty.")
+
+    # Image 3
+    name_3 = request.POST.get("image_name_3", None)
+    if name_3:
+        description_3 = request.POST.get("image_desription_3", None)
+        image_3 = request.FILES['image_file_3']
+        image = Image.create(name_3)
+        image.description = description_3
+        image.image_file = image_3.name
+        image.size = image_3.size
+        if is_gallery:
+            image.gallery = page
         else:
-            logger.debug("Image 2 is empty.")
-    except:
-        logger.debug("Issue uploading image 2")
-    try:
-        name_3 = request.POST.get("image_name_3", None)
-        if name_3:
-            description_3 = request.POST.get("image_desription_3", None)
-            image_3 = request.FILES['image_file_3']
-            image = Image.create(name_3)
-            image.description = description_3
-            image.image_file = image_3.name
-            image.size = image_3.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_3, image)
-            logger.debug("Image 3 uploaded successfully.")
+            image.page = page
+        image.save()
+        handle_image_picasa(image_3, image)
+        logger.debug("Image 3 uploaded successfully.")
+    else:
+        logger.debug("Image 3 is empty.")
+
+    # Image 4
+    name_4 = request.POST.get("image_name_4", None)
+    if name_4:
+        description_4 = request.POST.get("image_desription_4", None)
+        image_4 = request.FILES['image_file_4']
+        image = Image.create(name_4)
+        image.description = description_4
+        image.image_file = image_4.name
+        image.size = image_4.size
+        if is_gallery:
+            image.gallery = page
         else:
-            logger.debug("Image 3 is empty.")
-    except:
-        logger.debug("Issue uploading image 3")
-    try:
-        name_4 = request.POST.get("image_name_4", None)
-        if name_4:
-            description_4 = request.POST.get("image_desription_4", None)
-            image_4 = request.FILES['image_file_4']
-            image = Image.create(name_4)
-            image.description = description_4
-            image.image_file = image_4.name
-            image.size = image_4.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_4, image)
-            logger.debug("Image 4 uploaded successfully.")
+            image.page = page
+        image.save()
+        handle_image_picasa(image_4, image)
+        logger.debug("Image 4 uploaded successfully.")
+    else:
+        logger.debug("Image 4 is empty.")
+
+    # Image 5
+    name_5 = request.POST.get("image_name_5", None)
+    if name_5:
+        description_5 = request.POST.get("image_desription_5", None)
+        image_5 = request.FILES['image_file_5']
+        image = Image.create(name_5)
+        image.description = description_5
+        image.image_file = image_5.name
+        image.size = image_5.size
+        if is_gallery:
+            image.gallery = page
         else:
-            logger.debug("Image 4 is empty.")
-    except:
-        logger.debug("Issue uploading image 4")
-    try:
-        name_5 = request.POST.get("image_name_5", None)
-        if name_5:
-            description_5 = request.POST.get("image_desription_5", None)
-            image_5 = request.FILES['image_file_5']
-            image = Image.create(name_5)
-            image.description = description_5
-            image.image_file = image_5.name
-            image.size = image_5.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_5, image)
-            logger.debug("Image 5 uploaded successfully.")
-        else:
-            logger.debug("Image 5 is empty.")
-    except:
-        logger.debug("Issue uploading image 5")        
+            image.page = page
+        image.save()
+        handle_image_picasa(image_5, image)
+        logger.debug("Image 5 uploaded successfully.")
+    else:
+        logger.debug("Image 5 is empty.")
+
+    return True
 
 
 # Custom 404 and 500
