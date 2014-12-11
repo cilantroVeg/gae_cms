@@ -654,30 +654,6 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
 
-def process_jquery_file_upload_handler(request,page, is_gallery=False):
-    try:
-        name_1 = request.POST.get("image_name_1", None)
-
-        if name_1:
-            description_1 = request.POST.get("image_desription_1", None)
-            image_1 = request.FILES['image_file_1']
-            image = Image.create(name_1)
-            image.description = description_1
-            image.image_file = image_1.name
-            image.size = image_1.size
-            if is_gallery:
-                image.gallery = page
-            else:
-                image.page = page
-            image.save()
-            handle_image_picasa(image_1, image)
-            logger.debug("Image 1 uploaded successfully.")
-        else:
-            logger.debug("Image 1 is empty.")
-    except:
-        logger.debug("Issue uploading image 1")
-    return True
-
 #...
 def process_uploaded_files(request,page, is_gallery=False):
     try:
