@@ -115,7 +115,7 @@ AUTH_PROFILE_MODULE = 'users.models.UserProfile'
 FILE_UPLOAD_TEMP_DIR = '/tmp'
 # Add to your settings file
 CONTENT_TYPES = ['image', 'video']
-FILE_UPLOAD_MAX_MEMORY_SIZE = 7621440
+FILE_UPLOAD_MAX_MEMORY_SIZE = 35000000
 
 EMAIL_BACKEND = 'djangoappengine.mail.EmailBackend'
 
