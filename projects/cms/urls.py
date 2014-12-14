@@ -118,6 +118,9 @@ urlpatterns = patterns('',
     url(r'^api/(?P<language_code>[a-z]{2})/images[/]$', 'pages.api.images'),
     url(r'^api/(?P<language_code>[a-z]{2})/feed_pages[/]$', 'pages.api.feed_pages'),
 
+    # Ajax
+    url(r'^ajax/galleries[/]$', 'pages.ajax.get_gallery_list'),
+    url(r'^ajax/gallery/(?P<id>\d+)[/]$', 'pages.ajax.get_gallery_details'),
 )
 
 handler404 = 'pages.views.my_custom_404_view'
