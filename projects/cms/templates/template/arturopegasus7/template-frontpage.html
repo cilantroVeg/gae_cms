@@ -39,17 +39,14 @@
 
 </div>
 <div id="img_title_2">
-{% include "layout/add_this_3.html" %}
+    {% include "layout/add_this_3.html" %}
 </div>
 
 <div id="toolbar"><a href="#" title="Maximize" onClick="ImageViewMode('full');return false"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/toolbar_fs_icon.png" width="50" height="50" alt="" /></a></div>
 <div id="thumbnails_wrapper">
     <div id="outer_container">
         <div class="thumbScroller">
-            <div class="container">
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/1.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/1.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
+            <div class="container" id="image_gallery_container">
                 <div class="content">
                     <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/2.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/2.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
                 </div>
@@ -119,5 +116,6 @@
 </article>
 <script type="text/javascript" src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/gallery.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}template/arturo.interpegasus.com/scripts/ag.js"></script>
 </body>
 </html>
