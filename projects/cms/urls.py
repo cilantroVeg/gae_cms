@@ -120,6 +120,7 @@ urlpatterns = patterns('',
 
     # Ajax
     url(r'^ajax/galleries[/]$', 'pages.ajax.get_gallery_list'),
+    url(r'^ajax/pages[/]$', 'pages.ajax.get_page_list'),
     url(r'^ajax/gallery/(?P<id>\d+)[/]$', 'pages.ajax.get_gallery_details'),
 )
 

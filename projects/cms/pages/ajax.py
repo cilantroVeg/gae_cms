@@ -29,6 +29,18 @@ def get_gallery_list(request):
     return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
 
 # ...
+def get_page_list(request):
+    pages = Page.objects.filter(is_enabled=True)
+    page_list = []
+    for page_item in pages:
+        page = {}
+        page['id'] = page_item.id
+        page['title'] = page_item.title
+        page['headline'] = page_item.headline
+        page_list.append(page)
+    return HttpResponse(json.dumps(page_list), content_type="application/json",status=200)
+
+# ...
 def get_gallery_details(request,id):
     images = Image.objects.filter(gallery=id)
     image_list=[]
