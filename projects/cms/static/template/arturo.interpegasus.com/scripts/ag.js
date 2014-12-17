@@ -53,6 +53,7 @@ function set_gallery(gallery_id){
     set_gallery_images(gallery_id);
     $("#ajax_project_content").hide();
     $("#project_content").show();
+    $("#popupProjects").fadeOut("slow");
 }
 
 function set_gallery_images(gallery_id){
@@ -63,8 +64,11 @@ function set_gallery_images(gallery_id){
         success: function(data) {
             if(data.length){
                 $.each(data, function(i, record) {
-
-                    $("#page_index").append('<li><a href="javascript:void(0);" onclick="javascript:set_page('+ record.id +');">'+ record.title +'</a></li>').show('slow');
+                    $("#image_gallery_container").append('' +
+                    '<div class="content"><div>' +
+                    '<a href="'+ record.picasa_photo_url +'">' +
+                    '<img src="'+ record.picasa_thumb_url +'" title="'+ record.name +'" alt="'+ record.name +'" class="thumb" />' +
+                    '</a></div></div>').show('slow');
                 });
             }else{
                 $("#page_index").append('<li>No Data</li>').show('slow');

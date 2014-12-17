@@ -41,10 +41,10 @@ $(window).load(function() {
 	$thumbScroller.css("width",sliderWidth);
 	var totalContent=0;
 	fadeSpeed=200;
-	
+
 	var $the_outer_container=document.getElementById("outer_container");
 	var $placement=findPos($the_outer_container);
-	
+
 	$thumbScroller_content.each(function () {
 		var $this=$(this);
 		totalContent+=$this.innerWidth();
@@ -54,18 +54,18 @@ $(window).load(function() {
 
 	$thumbScroller.mousemove(function(e){
 		if($thumbScroller_container.width()>sliderWidth){
-	  		var mouseCoords=(e.pageX - $placement[1]);
-	  		var mousePercentX=mouseCoords/sliderWidth;
-	  		var destX=-((((totalContent+($tsMargin*2))-(sliderWidth))-sliderWidth)*(mousePercentX));
-	  		var thePosA=mouseCoords-destX;
-	  		var thePosB=destX-mouseCoords;
-	  		if(mouseCoords>destX){
-		  		$thumbScroller_container.stop().animate({left: -thePosA}, $scrollEasing,$scrollEasingType); //with easing
-	  		} else if(mouseCoords<destX){
-		  		$thumbScroller_container.stop().animate({left: thePosB}, $scrollEasing,$scrollEasingType); //with easing
-	  		} else {
-				$thumbScroller_container.stop();  
-	  		}
+			var mouseCoords=(e.pageX - $placement[1]);
+			var mousePercentX=mouseCoords/sliderWidth;
+			var destX=-((((totalContent+($tsMargin*2))-(sliderWidth))-sliderWidth)*(mousePercentX));
+			var thePosA=mouseCoords-destX;
+			var thePosB=destX-mouseCoords;
+			if(mouseCoords>destX){
+				$thumbScroller_container.stop().animate({left: -thePosA}, $scrollEasing,$scrollEasingType); //with easing
+			} else if(mouseCoords<destX){
+				$thumbScroller_container.stop().animate({left: thePosB}, $scrollEasing,$scrollEasingType); //with easing
+			} else {
+				$thumbScroller_container.stop();
+			}
 		}
 	});
 
@@ -95,7 +95,7 @@ $(window).load(function() {
 	//on window resize scale image and reset thumbnail scroller
 	$(window).resize(function() {
 		FullScreenBackground("#bgimg",$bgimg.data("newImageW"),$bgimg.data("newImageH"));
-		$thumbScroller_container.stop().animate({left: sliderLeft}, 400,"easeOutCirc"); 
+		$thumbScroller_container.stop().animate({left: sliderLeft}, 400,"easeOutCirc");
 		var newWidth=$outer_container.width();
 		$thumbScroller.css("width",newWidth);
 		sliderWidth=newWidth;
@@ -152,7 +152,7 @@ $("#outer_container a").click(function(event){
 	GetImageTitle($this);
 	SwitchImage(this);
 	ShowHideNextPrev("show");
-}); 
+});
 
 //next/prev images buttons
 $nextImageBtn.click(function(event){
@@ -173,21 +173,21 @@ $prevImageBtn.click(function(event){
 
 //next/prev images keyboard arrows
 if($keyboardNavigation=="on"){
-$(document).keydown(function(ev) {
-    if(ev.keyCode == 39) { //right arrow
-        SwitchImage($outer_container.data("nextImage"));
-		var $this=$("#outer_container a[href='"+$outer_container.data("nextImage")+"']");
-		GetNextPrevImages($this);
-		GetImageTitle($this);
-        return false; // don't execute the default action (scrolling or whatever)
-    } else if(ev.keyCode == 37) { //left arrow
-        SwitchImage($outer_container.data("prevImage"));
-		var $this=$("#outer_container a[href='"+$outer_container.data("prevImage")+"']");
-		GetNextPrevImages($this);
-		GetImageTitle($this);
-        return false; // don't execute the default action (scrolling or whatever)
-    }
-});
+	$(document).keydown(function(ev) {
+		if(ev.keyCode == 39) { //right arrow
+			SwitchImage($outer_container.data("nextImage"));
+			var $this=$("#outer_container a[href='"+$outer_container.data("nextImage")+"']");
+			GetNextPrevImages($this);
+			GetImageTitle($this);
+			return false; // don't execute the default action (scrolling or whatever)
+		} else if(ev.keyCode == 37) { //left arrow
+			SwitchImage($outer_container.data("prevImage"));
+			var $this=$("#outer_container a[href='"+$outer_container.data("prevImage")+"']");
+			GetNextPrevImages($this);
+			GetImageTitle($this);
+			return false; // don't execute the default action (scrolling or whatever)
+		}
+	});
 }
 
 function ShowHideNextPrev(state){
@@ -287,15 +287,15 @@ function ImageViewMode(theMode){
 }
 
 //function to find element Position
-	function findPos(obj) {
-		var curleft = curtop = 0;
-		if (obj.offsetParent) {
-			curleft = obj.offsetLeft
-			curtop = obj.offsetTop
-			while (obj = obj.offsetParent) {
-				curleft += obj.offsetLeft
-				curtop += obj.offsetTop
-			}
+function findPos(obj) {
+	var curleft = curtop = 0;
+	if (obj.offsetParent) {
+		curleft = obj.offsetLeft
+		curtop = obj.offsetTop
+		while (obj = obj.offsetParent) {
+			curleft += obj.offsetLeft
+			curtop += obj.offsetTop
 		}
-		return [curtop, curleft];
 	}
+	return [curtop, curleft];
+}
