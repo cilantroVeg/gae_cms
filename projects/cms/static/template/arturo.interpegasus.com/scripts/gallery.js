@@ -27,6 +27,10 @@ $nextImageBtn=$(".nextImageBtn");
 $prevImageBtn=$(".prevImageBtn");
 
 $(window).load(function() {
+	load_gallery();
+});
+
+function load_gallery(){
 	$toolbar.data("imageViewMode",$defaultViewMode); //default view mode
 	if($defaultViewMode=="full"){
 		$toolbar_a.html("<img src='/static/template/arturo.interpegasus.com/images/toolbar_n_icon.png' width='50' height='50'  />").attr("onClick", "ImageViewMode('normal');return false").attr("title", "Restore");
@@ -108,7 +112,8 @@ $(window).load(function() {
 	the1stImg.src = $bgimg.attr("src");
 	$outer_container.data("nextImage",$(".content").first().next().find("a").attr("href"));
 	$outer_container.data("prevImage",$(".content").last().find("a").attr("href"));
-});
+}
+
 
 function BackgroundLoad($this,imageWidth,imageHeight,imgSrc){
 	$this.fadeOut("fast",function(){
@@ -133,6 +138,7 @@ function BackgroundLoad($this,imageWidth,imageHeight,imgSrc){
 if($toolbar.css("display")!="none"){
 	$toolbar.fadeTo("fast", 0.4);
 }
+
 $toolbar.hover(
 	function(){ //mouse over
 		var $this=$(this);

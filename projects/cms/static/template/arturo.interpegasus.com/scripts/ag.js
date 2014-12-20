@@ -69,6 +69,7 @@ function set_gallery_images(gallery_id){
                     '<a href="'+ record.picasa_photo_url +'">' +
                     '<img src="'+ record.picasa_thumb_url +'" title="'+ record.name +'" alt="'+ record.name +'" class="thumb" />' +
                     '</a></div></div>').show('slow');
+                    load_gallery();
                 });
             }else{
                 $("#page_index").append('<li>No Data</li>').show('slow');
