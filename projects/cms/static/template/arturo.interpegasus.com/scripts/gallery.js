@@ -2,9 +2,9 @@
 //config
 //set default images view mode
 $defaultViewMode="full"; //full, normal, original
-$tsMargin=30; //first and last thumbnail margin (for better cursor interaction) 
-$scrollEasing=600; //scroll easing amount (0 for no easing) 
-$scrollEasingType="easeOutCirc"; //scroll easing type 
+$tsMargin=30; //first and last thumbnail margin (for better cursor interaction)
+$scrollEasing=600; //scroll easing amount (0 for no easing)
+$scrollEasingType="easeOutCirc"; //scroll easing type
 $thumbnailsContainerOpacity=0.8; //thumbnails area default opacity
 $thumbnailsContainerMouseOutOpacity=0; //thumbnails area opacity on mouse out
 $thumbnailsOpacity=0.6; //thumbnails default opacity
