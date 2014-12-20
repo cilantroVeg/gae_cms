@@ -42,7 +42,6 @@ $(document).ready(function(){
 			"visibility": "visible"	});
 		centerPopupProjects();
 		loadPopupProjects();
-		$("#popupProjects").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10);
 	});
 	$("#popupProjectsClose").click(function(){
 		disablePopupProjects();

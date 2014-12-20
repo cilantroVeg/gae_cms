@@ -25,7 +25,6 @@ $bgimg=$("#bgimg");
 $img_title=$("#img_title");
 $nextImageBtn=$(".nextImageBtn");
 $prevImageBtn=$(".prevImageBtn");
-
 $(window).load(function() {
 	load_gallery();
 });

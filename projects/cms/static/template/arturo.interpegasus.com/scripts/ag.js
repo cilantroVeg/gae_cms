@@ -63,6 +63,7 @@ function set_gallery_images(gallery_id){
         url: request,
         success: function(data) {
             if(data.length){
+                $("#image_gallery_container").empty();
                 $.each(data, function(i, record) {
                     $("#image_gallery_container").append('' +
                     '<div class="content"><div>' +
