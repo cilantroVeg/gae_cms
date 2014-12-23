@@ -42,28 +42,12 @@
     <div id="outer_container">
         <div class="thumbScroller">
             <div class="container" id="image_gallery_container">
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/2.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/2.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/3.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/3.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/4.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/4.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/5.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/5.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/6.JPG"><img src="{{ STATIC_URL }}template/arturo.interpegasus.com/images/Arashiyama-Monkey-Park/Thumb/6.JPG" title="Arashiyama - Japan" alt="Monkey Park" class="thumb" /></a></div>
-                </div>
-
-
-                <div class="content">
-                    <div><a href="https://lh5.googleusercontent.com/-e6d4hR6KvL4/VIy0m7cRzPI/AAAAAAAAAhk/FDvXKmUtqVc/s2048/Image%2525203.jpg"><img src="https://lh5.googleusercontent.com/-e6d4hR6KvL4/VIy0m7cRzPI/AAAAAAAAAhk/FDvXKmUtqVc/s320/Image%2525203.jpg" title="Image 3" alt="Image 3" class="thumb"></a></div>
-                </div>
-                <div class="content">
-                    <div><a href="https://lh6.googleusercontent.com/-1-iaD1lF-7U/VIy0kY0IeUI/AAAAAAAAAhU/oExLXHkrcpw/s2048/I1.jpg"><img src="https://lh6.googleusercontent.com/-1-iaD1lF-7U/VIy0kY0IeUI/AAAAAAAAAhU/oExLXHkrcpw/s320/I1.jpg" title="I1" alt="I1" class="thumb"></a></div></div><div class="content"><div><a href="https://lh3.googleusercontent.com/-5OjU-jAsWAo/VIy0nleI9eI/AAAAAAAAAhs/XSB0_pr24wA/s2048/Image%2525204.jpg"><img src="https://lh3.googleusercontent.com/-5OjU-jAsWAo/VIy0nleI9eI/AAAAAAAAAhs/XSB0_pr24wA/s320/Image%2525204.jpg" title="Image 4" alt="Image 4" class="thumb"></a></div></div><div class="content"><div><a href="https://lh3.googleusercontent.com/-E_3AVphPtI0/VIy0lpYY8JI/AAAAAAAAAhc/IwZuBDS2wuI/s2048/Image%2525202.jpg"><img src="https://lh3.googleusercontent.com/-E_3AVphPtI0/VIy0lpYY8JI/AAAAAAAAAhc/IwZuBDS2wuI/s320/Image%2525202.jpg" title="Image 2" alt="Image 2" class="thumb"></a></div></div>
+                {% for image in image_list %}
+                {{image_list}}
+                    <div class="content">
+                        <div><a href="{{ image.picasa_photo_url }}"><img src="{{ image.picasa_thumb_url }}" title="{{ image.name }}" alt="{{ image.description }}" class="thumb" /></a></div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

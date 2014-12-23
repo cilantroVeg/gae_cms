@@ -167,6 +167,7 @@ class Gallery(models.Model):
     name = models.CharField(max_length=256, blank=True, null=True, unique=True)
     description = models.TextField(null=True, blank=True)
     is_enabled = models.BooleanField(default=True)
+    is_default = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
 
     # ...
@@ -304,7 +305,7 @@ class SpreadsheetForm(ModelForm):
 class GalleryForm(ModelForm):
     class Meta:
         model = Gallery
-        fields = ['name', 'description']
+        fields = ['name', 'description','is_default','is_enabled']
 
 
 # Forms

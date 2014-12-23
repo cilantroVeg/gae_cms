@@ -607,14 +607,53 @@ def front_page(request):
 def front_page_language(request,language):
     if settings.APP_NAME == 'bible-love':
         return redirect('/eng', False)
-    image_array = Image.objects.all()[:7]
-    language_code = 'en' if (language is None) else language
-    try:
-        feed_pages = query_api(language_code, 'feed_pages')
-        feed_pages = feed_pages['pages'] if feed_pages else None
-    except:
-        feed_pages = None
+    elif settings.APP_NAME == 'arturopegasus7':
+        gallery = get_gallery()
+        if gallery:
+            image_list = None
+        else:
+            image_list = get_image_list(gallery['id'])
+        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    else:
+        image_array = Image.objects.all()[:7]
+        language_code = 'en' if (language is None) else language
+        try:
+            feed_pages = query_api(language_code, 'feed_pages')
+            feed_pages = feed_pages['pages'] if feed_pages else None
+        except:
+            feed_pages = None
     return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+
+def get_gallery(gallery_id=None):
+    gallery = None
+    if gallery_id:
+        gallery_item = Gallery.objects.filter(id=gallery_id)[:1]
+    else:
+        gallery_item = Gallery.objects.filter(is_enabled=True,is_default=True)[:1]
+    if not gallery_item:
+        gallery_item = Gallery.objects.filter(is_enabled=True)[:1]
+    if gallery_item:
+        gallery = {}
+        gallery['id'] = gallery_item[0].id
+        gallery['name'] = gallery_item[0].name
+        gallery['description'] = gallery_item[0].description
+    return gallery
+
+def get_image_list(gallery_id):
+    images = Image.objects.filter(gallery=gallery_id)
+    image_list=[]
+    if images:
+        for image_item in images:
+            image = {}
+            image['id'] = image_item.id
+            image['name'] = image_item.name
+            image['description'] = image_item.description
+            image['slug'] = image_item.slug
+            image['picasa_photo_url'] = image_item.picasa_photo_url
+            image['picasa_medium_url'] = image_item.picasa_medium_url
+            image['picasa_thumb_url'] = image_item.picasa_thumb_url
+            image_list.append(image)
+    return image_list
 
 def front_page_language_family_iso(request,language,bible=None,book=None,chapter=None):
     media = 'text'
