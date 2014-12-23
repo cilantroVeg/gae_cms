@@ -610,9 +610,9 @@ def front_page_language(request,language):
     elif settings.APP_NAME == 'arturopegasus7':
         gallery = get_gallery()
         if gallery:
-            image_list = None
-        else:
             image_list = get_image_list(gallery['id'])
+        else:
+            image_list = None
         return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
     else:
         image_array = Image.objects.all()[:7]

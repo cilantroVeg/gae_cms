@@ -43,7 +43,6 @@
         <div class="thumbScroller">
             <div class="container" id="image_gallery_container">
                 {% for image in image_list %}
-                {{image_list}}
                     <div class="content">
                         <div><a href="{{ image.picasa_photo_url }}"><img src="{{ image.picasa_thumb_url }}" title="{{ image.name }}" alt="{{ image.description }}" class="thumb" /></a></div>
                     </div>
