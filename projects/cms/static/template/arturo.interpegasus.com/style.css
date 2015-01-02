@@ -65,7 +65,7 @@ header {
 	left:10px;
 	top:10px;
 	padding:10px;
-	background:url(images/fs_img_g_bg.png);
+	background:url(/static/template/arturo.interpegasus.com/images/fs_img_g_bg.png);
 	color:#FFF;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 	font-size: 30px;
@@ -105,7 +105,7 @@ header a:hover {
 	right:10px;
 	top:10px;
 	padding:5px;
-	background:url(images/fs_img_g_bg.png);
+	background:url(/static/template/arturo.interpegasus.com/images/fs_img_g_bg.png);
 }
 #toolbar img {
 	border:none;
@@ -116,7 +116,7 @@ header a:hover {
 	right:10px;
 	bottom: 35%;
 	padding:10px;
-	background:url(images/fs_img_g_bg.png);
+	background:url(/static/template/arturo.interpegasus.com/images/fs_img_g_bg.png);
 	color:#FFF;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 	text-transform:uppercase;
@@ -129,7 +129,7 @@ header a:hover {
 	left:10px;
 	bottom: 30%;
 	padding:10px;
-	background:url(images/fs_img_g_bg.png);
+	background:url(/static/template/arturo.interpegasus.com/images/fs_img_g_bg.png);
 	color:#FFF;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 	text-transform:uppercase;
@@ -150,7 +150,7 @@ header a:hover {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background: url(images/dotted.png);
+	background: url(/static/template/arturo.interpegasus.com/images/dotted.png);
 	opacity: 0.3;
 }
 #bgimg {
@@ -172,7 +172,7 @@ header a:hover {
 	bottom:0%;
 	width:100%;
 	height: 205px;
-	background:url(images/empty.gif); /* stupid ie needs a background value to understand hover area */
+	background:url(/static/template/arturo.interpegasus.com/images/empty.gif); /* stupid ie needs a background value to understand hover area */
 }
 #outer_container {
 	position:relative;
@@ -183,8 +183,9 @@ header a:hover {
 #outer_container .thumbScroller {
 	position:relative;
 	overflow:hidden;
-	background:url(images/fs_img_g_bg.png);
+	background:url(/static/template/arturo.interpegasus.com/images/fs_img_g_bg.png);
 	background: rgba(0,0,0,0.850);
+	opacity: 0.75;
 }
 #outer_container .thumbScroller, #outer_container .thumbScroller .container, #outer_container .thumbScroller .content {
 	height:170px;
@@ -202,6 +203,8 @@ header a:hover {
 }
 #outer_container .thumbScroller img {
 	border:3px solid #fff;
+	height: 145px;
+	max-height: 145px;
 }
 #outer_container .thumbScroller .content div a {
 	display:block;
@@ -238,10 +241,10 @@ header a:hover {
 }
 .nextImageBtn {
 	right:0;
-	background:#000 url(images/nextImgBtn.png) center center no-repeat;
+	background:#000 url(/static/template/arturo.interpegasus.com/images/nextImgBtn.png) center center no-repeat;
 }
 .prevImageBtn {
-	background:#000 url(images/prevImgBtn.png) center center no-repeat;
+	background:#000 url(/static/template/arturo.interpegasus.com/images/prevImgBtn.png) center center no-repeat;
 }
 ul.menu {
 	margin:0;
@@ -273,7 +276,7 @@ ul.menu li > a {
 	width:100px;
 	height:75px;
 	z-index:12;
-	background:transparent url(images/overlay.png) no-repeat bottom right;
+	background:transparent url(/static/template/arturo.interpegasus.com/images/overlay.png) no-repeat bottom right;
 	background-color: rgba(0, 0, 0, 0.70);
 	-moz-box-shadow:0px 0px 2px #000 inset;
 	-webkit-box-shadow:0px 0px 2px #000 inset;

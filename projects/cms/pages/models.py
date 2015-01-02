@@ -165,6 +165,7 @@ class Page(models.Model):
 class Gallery(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=256, blank=True, null=True, unique=True)
+    slug = models.SlugField(unique=True, blank=False, null=False)
     description = models.TextField(null=True, blank=True)
     is_enabled = models.BooleanField(default=True)
     is_default = models.BooleanField(default=False)
@@ -173,6 +174,23 @@ class Gallery(models.Model):
     # ...
     def __unicode__(self):
         return u'%s' % (self.name )
+    
+    # ...
+    def save(self, *args, **kwargs):
+        memcache.delete('galleries')
+        import re
+        name = re.sub(r'\W+', ' ', self.name)
+        slug_1 = slugify(str(name))        
+
+        if self.id is not None:
+            gallery_exists_1 = Gallery.objects.filter(slug=slug_1).exclude(id=self.id).count()            
+        else:
+            gallery_exists_1 = Gallery.objects.filter(slug=slug_1).count()
+        if gallery_exists_1 == False:
+            self.slug = slug_1
+        else:
+            raise ValidationError("Another gallery with same slug already exists. Please use different name.")
+        super(Gallery, self).save(*args, **kwargs)
 
 # ...
 class Image(models.Model):

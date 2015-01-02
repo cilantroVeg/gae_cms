@@ -448,6 +448,13 @@ def page_view(request, language, slug):
     image_array = Image.objects.filter(page=page)
     return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array},context_instance=RequestContext(request))
 
+
+# ...
+def gallery_view(request, language, slug):
+    gallery = get_object_or_404(Gallery, slug=slug)
+    image_array = Image.objects.filter(gallery=gallery)
+    return render_to_response("template/arturopegasus7/template-frontpage.html", {"gallery": gallery,"image_array":image_array},context_instance=RequestContext(request))
+
 # ...
 def page_feed_view(request, language, slug):
     feed_pages = query_api(language, 'feed_pages')
