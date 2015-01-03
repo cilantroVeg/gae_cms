@@ -649,6 +649,7 @@ def get_gallery(gallery_id=None):
         gallery = {}
         gallery['id'] = gallery_item[0].id
         gallery['name'] = gallery_item[0].name
+        gallery['slug'] = gallery_item[0].slug
         gallery['description'] = gallery_item[0].description
     return gallery
 
