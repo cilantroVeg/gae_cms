@@ -137,6 +137,7 @@ header a:hover {
 	letter-spacing: 1px;
     max-width: 50px;
 }
+
 #bg {
 	position:fixed;
 	z-index:1;

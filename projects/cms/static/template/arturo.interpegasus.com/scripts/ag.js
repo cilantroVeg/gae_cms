@@ -17,7 +17,7 @@ function create_gallery_links(){
             $("#project_content").show();
             if(data.length){
                 $.each(data, function(i, record) {
-                    $("#gallery_index").append('<li><a href="javascript:void(0);" onclick="javascript:set_gallery('+ record.id +');">'+ record.name +'</a></li>').show('slow');
+                    $("#gallery_index").append('<li><a href="/en/gallery/'+record.slug+'" onclick="javascript:set_gallery('+ record.id +');">'+ record.name +'</a></li>').show('slow');
                 });
             }else{
                 $("#gallery_index").append('<li>No Data</li>').show('slow');

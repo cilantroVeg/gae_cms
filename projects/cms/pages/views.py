@@ -451,9 +451,15 @@ def page_view(request, language, slug):
 
 # ...
 def gallery_view(request, language, slug):
-    gallery = get_object_or_404(Gallery, slug=slug)
-    image_array = Image.objects.filter(gallery=gallery)
-    return render_to_response("template/arturopegasus7/template-frontpage.html", {"gallery": gallery,"image_array":image_array},context_instance=RequestContext(request))
+    if settings.APP_NAME == 'arturopegasus7':
+        gallery = get_object_or_404(Gallery, slug=slug)
+        if gallery:
+            image_list = get_image_list(gallery.id)
+        else:
+            image_list = None
+        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    else:
+        return render_to_response("template/arturopegasus7/template-frontpage.html", {"gallery": gallery,"image_array":image_array},context_instance=RequestContext(request))
 
 # ...
 def page_feed_view(request, language, slug):

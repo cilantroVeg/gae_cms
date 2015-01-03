@@ -24,6 +24,7 @@ def get_gallery_list(request):
         gallery = {}
         gallery['id'] = gallery_item.id
         gallery['name'] = gallery_item.name
+        gallery['slug'] = gallery_item.slug
         gallery['description'] = gallery_item.description
         gallery_list.append(gallery)
     return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
