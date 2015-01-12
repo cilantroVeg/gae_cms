@@ -86,24 +86,23 @@ function set_page(page_id){
         dataType: "json",
         url: request,
         success: function(data) {
-            var content = $("#project_content").html();
+            var content =  $("#project_content").html();
             $("#project_content").empty();
             if(data){
                 $("#project_content").append('<h1>'+ data.title +'</h1>' +'<article">'+ data.content +'</article>').show('slow');
             }else{
                 $("#project_content").append('<h3>No Data</h3>').show('slow');
             }
-            $("#project_content").append('<div><a href="javascript:void(0);" onclick="javascript:go_back('+content+')">Back</a></div>').show('slow');
+            $("#project_content").append('<div><a href="javascript:void(0);" onclick="javascript:go_back()">Back</a></div>').show('slow');
         }
     });
 }
 
-function go_back(content){
+function go_back(){
     $("#project_content").empty();
-    alert('1');
-    $("#project_content").apend('<h1>GREAT</h1>');
-    alert(content);
-    $("#project_content").append(content).show('slow');
+    $("#project_content").append('<h1>Galleries</h1><ul id="gallery_index"></ul><div class="border"></div><h1>Pages</h1><ul id="page_index"></ul>');
+    create_gallery_links();
+    create_page_links();
 }
 
 

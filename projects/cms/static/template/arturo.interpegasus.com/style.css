@@ -266,7 +266,7 @@ ul.menu a {
 ul.menu li {
 	float:left;
 	width:100px;
-	height:75px;
+	height:60px;
 	position:relative;
 	cursor:pointer;
 }
@@ -275,10 +275,10 @@ ul.menu li > a {
 	top:0px;
 	left:0px;
 	width:100px;
-	height:75px;
+	height:60px;
 	z-index:12;
 	background:transparent url(/static/template/arturo.interpegasus.com/images/overlay.png) no-repeat bottom right;
-	background-color: rgba(0, 0, 0, 0.70);
+	background-color: rgba(0, 0, 0, 0.50);
 	-moz-box-shadow:0px 0px 2px #000 inset;
 	-webkit-box-shadow:0px 0px 2px #000 inset;
 	box-shadow:0px 0px 2px #000 inset;
@@ -296,8 +296,9 @@ ul.menu li a img {
 	box-shadow:0px 0px 4px #000;
 }
 ul.menu li span.wrap {
+	padding: 7px;
 	position:absolute;
-	top:15px;
+	top:0px;
 	left:0px;
 	width:100px;
 	height:60px;
@@ -325,13 +326,13 @@ ul.menu li span.active {
 	-moz-border-radius-bottomleft: 15px;
 }
 ul.menu li span span.link, ul.menu li span span.descr, ul.menu li div.box a {
-	margin-left:15px;
+	margin-left:0px;
 	text-transform:uppercase;
 	text-shadow:1px 1px 1px #000;
 }
 ul.menu li span span.link {
 	color:#fff;
-	font-size:24px;
+	font-size:18px;
 	float:left;
 	clear:both;
 }
@@ -621,4 +622,12 @@ input[type="file"]{
 
 label{
     padding: 7px 0;
+}
+
+a,a:visited,li a{
+	color: #ffff00;
+}
+
+a,a:hover{
+	color:greenyellow;
 }
