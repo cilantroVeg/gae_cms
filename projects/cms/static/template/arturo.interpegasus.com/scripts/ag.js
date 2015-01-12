@@ -81,14 +81,32 @@ function set_gallery_images(gallery_id){
 
 
 function set_page(page_id){
-    // Show Ajax
-    $("#ajax_project_content").show();
-    $("#project_content").hide();
-    // Get Page Content
-
-    $("#ajax_project_content").hide();
-    $("#project_content").show();
+    request = url + '/ajax/page/' + String(page_id);
+    $.ajax({
+        dataType: "json",
+        url: request,
+        success: function(data) {
+            var content = $("#project_content").html();
+            $("#project_content").empty();
+            if(data){
+                $("#project_content").append('<h1>'+ data.title +'</h1>' +'<article">'+ data.content +'</article>').show('slow');
+            }else{
+                $("#project_content").append('<h3>No Data</h3>').show('slow');
+            }
+            $("#project_content").append('<div><a href="javascript:void(0);" onclick="javascript:go_back('+content+')">Back</a></div>').show('slow');
+        }
+    });
 }
+
+function go_back(content){
+    $("#project_content").empty();
+    alert('1');
+    $("#project_content").apend('<h1>GREAT</h1>');
+    alert(content);
+    $("#project_content").append(content).show('slow');
+}
+
+
 
 function preload_images(){
     $(window).load(function() {

@@ -59,6 +59,18 @@ def get_gallery_details(request,id):
     return HttpResponse(json.dumps(image_list), content_type="application/json",status=200)
 
 # ...
+def get_page_details(request,id):
+    page = Page.objects.filter(id=id)[:1]
+    page_object={}
+    if page:        
+        page_object['id'] = page[0].id
+        page_object['title'] = page[0].title
+        page_object['content'] = page[0].content
+        page_object['slug'] = page[0].slug
+        page_object['headline'] = page[0].headline
+    return HttpResponse(json.dumps(page_object), content_type="application/json",status=200)
+
+# ...
 def get_cache(key):
     key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
     data = memcache.get(key)
