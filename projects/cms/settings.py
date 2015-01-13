@@ -98,8 +98,6 @@ MEDIA_URL = '/static/'
 # Keys
 SOCIAL_AUTH_TWITTER_KEY = access_keys.IP_TWEET_KEY
 SOCIAL_AUTH_TWITTER_SECRET = access_keys.IP_TWEET_SECRET
-SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
-SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = access_keys.IP_GOOGLE_KEY
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = access_keys.IP_GOOGLE_SECRET
 FLICKR_API_KEY = access_keys.FLICKR_KEY
@@ -171,20 +169,36 @@ if False:
     SITE_URL = 'http://127.0.0.1:8001'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'interpegasuslove':
     SITE_URL = 'http://www.interpegasus.com'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'happy-planet':
     SITE_URL = 'http://www.nrwl.org'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'arturopegasus7':
     SITE_URL = 'http://arturo.interpegasus.com'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.AG_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.AG_FACEBOOK_SECRET
 elif APP_NAME == 'arturoportfolio7':
     SITE_URL = 'http://portfolio.interpegasus.com'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'bible-love':
     SITE_URL = 'http://bible7.co'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'musicmatch777':
     SITE_URL = 'http://musicmatch777.appspot.com'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 elif APP_NAME == 'yiyask7':
     SITE_URL = 'http://www.yiyask.com'
+    SOCIAL_AUTH_FACEBOOK_KEY = access_keys.IP_FACEBOOK_KEY
+    SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.IP_FACEBOOK_SECRET
 
 
 # templates
