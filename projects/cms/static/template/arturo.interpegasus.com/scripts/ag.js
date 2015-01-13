@@ -1,5 +1,5 @@
 var url = 'http://arturo.interpegasus.com';
-var url = 'http://127.0.0.1:8000';
+// var url = 'http://127.0.0.1:8000';
 
 $(document).ready(function() {
     create_gallery_links();
