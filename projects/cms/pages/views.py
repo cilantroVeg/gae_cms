@@ -731,6 +731,9 @@ def upload_handler(request):
     print >>sys.stderr, filename
     print >>sys.stderr, file.size
 
+    page_id = request.GET.get('page_id', None)
+    gallery_id = request.GET.get('gallery_id', None)
+
     image = Image.create(filename)
     image.description = file.name
     image.image_file = file.name
@@ -743,6 +746,12 @@ def upload_handler(request):
         image_dictionary["size"] = image.size
         image_dictionary["url"] = image.picasa_photo_url
         image_dictionary["thumbnailUrl"] = image.picasa_thumb_url
+        if page_id:
+            page = Page.objects.get(id=page_id)
+            image.page = page
+        elif gallery_id:
+            gallery = Gallery.objects.get(id=gallery_id)
+            image.gallery = gallery
         image.save()
         image_dictionary["deleteUrl"] = str(request.build_absolute_uri()).replace('upload_handler/', '')  + 'image/delete/'+ str(image.id) +'/?json=true'
         image_dictionary["deleteType"] = "GET"
@@ -759,13 +768,13 @@ def upload_handler(request):
 # ...
 def image_upload(request):
     if is_admin(request)['is_admin']:
-        page_id = request.GET.get('page_id', '')
-        gallery_id = request.GET.get('gallery_id', 'false')
+        page_id = request.GET.get('page_id', None)
+        gallery_id = request.GET.get('gallery_id', None)
         if page_id:
-            page = get_object_or_404(Page, id=page_id) if id is not None else None
+            page = Page.objects.get(id=page_id)
             gallery = None
         elif gallery_id:
-            gallery = get_object_or_404(Gallery, id=gallery_id) if id is not None else None
+            gallery = Gallery.objects.get(id=gallery_id)
             page = None
         return render_to_response("pages/image_upload.html", {"page":page, "gallery":gallery }, context_instance=RequestContext(request))
     else:
