@@ -15,7 +15,7 @@
         data.addColumn('string', 'Manage');
         data.addRows([
             {% for entry in gallery_list %}
-                ['{{ entry.name }}','{{ entry.is_enabled }}','{{ entry.is_default }}','{{ entry.slug }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>'],
+                ['{{ entry.name }}','{{ entry.is_enabled }}','{{ entry.is_default }}','{{ entry.slug }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>', '<a href="/image_upload/?gallery_id={{ entry.id }}">Upload</a>'],
             {% endfor %}
         ]);
 

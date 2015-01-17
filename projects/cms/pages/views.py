@@ -759,7 +759,15 @@ def upload_handler(request):
 # ...
 def image_upload(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/image_upload.html", {"formset": 1}, context_instance=RequestContext(request))
+        page_id = request.GET.get('page_id', '')
+        gallery_id = request.GET.get('gallery_id', 'false')
+        if page_id:
+            page = get_object_or_404(Page, id=page_id) if id is not None else None
+            gallery = None
+        elif gallery_id:
+            gallery = get_object_or_404(Gallery, id=gallery_id) if id is not None else None
+            page = None
+        return render_to_response("pages/image_upload.html", {"page":page, "gallery":gallery }, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

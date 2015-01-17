@@ -13,9 +13,10 @@
         data.addColumn('string', 'Language');
         data.addColumn('string', 'Slug');
         data.addColumn('string', 'Manage');
+        data.addColumn('string', 'Upload Images');
         data.addRows([
                 {% for entry in page_list %}
-    ['{{ entry.title }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>'],
+    ['{{ entry.title }}', '{{ entry.category }}', '{{ entry.category.language }}', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.id }}/">Edit</a>|<a href="/page/delete/{{ entry.id }}/">Delete</a>', '<a href="/image_upload/?page_id={{ entry.id }}">Upload</a>'],
             {% endfor %}
     ])
     ;
