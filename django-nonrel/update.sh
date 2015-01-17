@@ -11,7 +11,7 @@ echo '**********************************'
 echo '* DJANGO                         *'
 echo '**********************************'
 cd django
-git reset --hard origin/master
+git reset --hard origin/nonrel-1.6
 git status
 git branch
 git pull
