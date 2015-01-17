@@ -731,8 +731,8 @@ def upload_handler(request):
     print >>sys.stderr, filename
     print >>sys.stderr, file.size
 
-    page_id = request.GET.get('page_id', None)
-    gallery_id = request.GET.get('gallery_id', None)
+    page_id = request.POST.get('page_id', None)
+    gallery_id = request.POST.get('gallery_id', None)
 
     image = Image.create(filename)
     image.description = file.name
