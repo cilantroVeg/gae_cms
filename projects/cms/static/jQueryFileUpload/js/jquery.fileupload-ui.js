@@ -55,6 +55,7 @@
             // as the user clicks on the start buttons. To enable automatic
             // uploads, set the following option to true:
             autoUpload: false,
+            forceIframeTransport:false,
             // The ID of the upload template:
             uploadTemplateId: 'template-upload',
             // The ID of the download template:
