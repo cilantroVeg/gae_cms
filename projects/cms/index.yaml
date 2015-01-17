@@ -27,6 +27,12 @@ indexes:
 # automatically uploaded to the admin console when you next deploy
 # your application using appcfg.py.
 
+- kind: auth_user
+  properties:
+  - name: username
+  - name: __key__
+    direction: desc
+
 - kind: pages_category
   properties:
   - name: __key__
@@ -58,6 +64,21 @@ indexes:
   properties:
   - name: is_enabled
   - name: title
+
+- kind: social_auth_association
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: social_auth_nonce
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: social_auth_usersocialauth
+  properties:
+  - name: __key__
+    direction: desc
 
 - kind: users_user
   properties:

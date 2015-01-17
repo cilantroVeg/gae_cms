@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'users',
     'pages',
+    'inplaceeditform',
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
@@ -242,3 +243,5 @@ LOGGING = {
             },
         }
     }
+
+ADAPTOR_INPLACEEDIT_EDIT = 'pages.perms.MyAdaptorEditInline'
