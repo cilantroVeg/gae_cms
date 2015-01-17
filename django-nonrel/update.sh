@@ -1,13 +1,12 @@
 echo '**********************************'
 echo '* AUTOLOAD                       *'
 echo '**********************************'
-cd autoload
-git reset --hard origin/master
+hg clone https://bitbucket.org/twanschik/django-autoload
+rm -rf autoload
+mv django-autoload/autoload .
+git add autoload && git commit -a -m "autoload" && git push
 git status
 git branch
-git pull
-git remote show origin
-cd ..
 echo '**********************************'
 echo '* DJANGO                         *'
 echo '**********************************'
