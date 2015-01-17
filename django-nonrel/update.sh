@@ -6,6 +6,7 @@ git reset --hard origin/master
 git status
 git branch
 git pull
+git remote show origin
 cd ..
 echo '**********************************'
 echo '* DJANGO                         *'
@@ -15,6 +16,7 @@ git reset --hard origin/nonrel-1.6
 git status
 git branch
 git pull
+git remote show origin
 cd ..
 echo '**********************************'
 echo '* DBINDEXER                      *'
@@ -24,6 +26,7 @@ git reset --hard origin/master
 git status
 git branch
 git pull
+git remote show origin
 cd ..
 echo '**********************************'
 echo '* DJANGOAPPENGINE                *'
@@ -33,6 +36,7 @@ git reset --hard origin/master
 git status
 git branch
 git pull
+git remote show origin
 cd ..
 echo '**********************************'
 echo '* DJANGOTOOLBOX                  *'
@@ -42,4 +46,5 @@ git reset --hard origin/master
 git status
 git branch
 git pull
+git remote show origin
 cd ..
