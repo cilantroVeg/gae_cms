@@ -4,6 +4,7 @@ echo '**********************************'
 hg clone https://bitbucket.org/twanschik/django-autoload
 rm -rf autoload
 mv django-autoload/autoload .
+rm -rf django-autoload
 git add autoload && git commit -a -m "autoload" && git push
 git status
 git branch
