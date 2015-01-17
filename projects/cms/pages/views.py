@@ -756,6 +756,15 @@ def upload_handler(request):
     print >>sys.stderr, file_dictionary
     return HttpResponse(json.dumps(file_dictionary), content_type="application/json",status=200)
 
+# ...
+def image_upload(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/image_upload.html", {"formset": 1}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+
+
 # Custom 404 and 500
 def my_custom_404_view(request):
     return render_to_response('users/404.html',context_instance=RequestContext(request))

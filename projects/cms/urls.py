@@ -67,6 +67,7 @@ urlpatterns = patterns('',
     url(r'^(?P<language>[a-z]{2})/feed/(?P<slug>[-\w]+)[/]$', 'pages.views.page_feed_view'),
     url(r'^api[/]$', 'pages.views.page_api'),
     url(r'^upload_handler[/]$', 'pages.views.upload_handler'),
+    url(r'^image_upload[/]$', 'pages.views.image_upload'),
 
 
     # Page - images
