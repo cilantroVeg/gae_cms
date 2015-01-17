@@ -15,6 +15,7 @@ from pages.context_processors import is_admin
 from django.shortcuts import render
 from pages.api import *
 from django.utils.html import strip_tags
+from django.views.decorators.csrf import csrf_exempt
 
 import logging
 logger = logging.getLogger(__name__)
@@ -706,6 +707,45 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
 #...
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
+
+#...
+@csrf_exempt
+def upload_handler(request):
+    file_dictionary = {}
+    files_array = []
+    file = request.FILES["files[]"]
+    filename = file.name
+    import sys
+    print >>sys.stderr, 'HELLO'
+    print >>sys.stderr, file
+    print >>sys.stderr, filename
+    print >>sys.stderr, file.size
+
+    image = Image.create(filename)
+    image.description = file.name
+    image.image_file = file.name
+    image.size = file.size
+    try:
+        photo = handle_image_picasa(file, image)
+        logger.debug("Image 1 uploaded successfully.")
+        image_dictionary = {}
+        image_dictionary["name"] = filename
+        image_dictionary["size"] = image.size
+        image_dictionary["url"] = image.picasa_photo_url
+        image_dictionary["thumbnailUrl"] = image.picasa_thumb_url
+        image_dictionary["deleteUrl"] = 1
+        image_dictionary["deleteType"] = "DELETE"
+        image.save()
+    except:
+        image_dictionary = {}
+        image_dictionary["name"] = filename
+        image_dictionary["size"] = image.size
+        image_dictionary["error"] = 'Error Uploading Photo Exception'
+    files_array.append(image_dictionary)
+    file_dictionary["files"] = files_array
+    print >>sys.stderr, "SHELLO"
+    print >>sys.stderr, file_dictionary
+    return HttpResponse(json.dumps(file_dictionary), content_type="application/json",status=200)
 
 #...
 def process_uploaded_files(request,page, is_gallery=False):
