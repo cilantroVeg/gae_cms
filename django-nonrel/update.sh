@@ -48,3 +48,9 @@ git branch
 git pull
 git remote show origin
 cd ..
+cd ..
+
+echo '**********************************'
+echo '* CMS PEGASUS                    *'
+echo '**********************************'
+git remote show origin
