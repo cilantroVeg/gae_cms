@@ -3,7 +3,7 @@
 import gdata.photos.service
 import gdata.media
 import gdata.geo
-
+import sys
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from django.conf import settings
@@ -113,7 +113,6 @@ def gallery_form(request, id=None):
         if gallery_form.is_valid():
             gallery = gallery_form.save(commit=False)
             gallery.save()
-            process_uploaded_files(request,gallery,True)
             return redirect('/galleries/')
         return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
@@ -151,7 +150,6 @@ def page_form(request, id=None):
             page = page_form.save(commit=False)
             page.user = request.user
             page.save()
-            process_uploaded_files(request,page,False)
             return redirect('/pages/')
         return render_to_response("pages/page_form.html", {"page_form": page_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
     else:
@@ -436,9 +434,21 @@ def image_list(request):
 def image_delete(request, id=None):
     if is_admin(request)['is_admin']:
         instance = get_object_or_404(Image, id=id) if id is not None else None
+        filename = instance.name
         delete_picasa_photo(instance)
         instance.delete()
-        return redirect('/images/')
+        json = request.GET.get('json', 'false')
+        if json == 'true':
+            file_dictionary = {}
+            files_array = []
+            image_dictionary = {}
+            image_dictionary[str(filename)] = True
+            files_array.append(image_dictionary)
+            file_dictionary["files"] = files_array
+            import json
+            return HttpResponse(json.dumps(file_dictionary), content_type="application/json",status=200)
+        else:
+            return redirect('/images/')
     else:
         return redirect('/', False)
 
@@ -733,119 +743,18 @@ def upload_handler(request):
         image_dictionary["size"] = image.size
         image_dictionary["url"] = image.picasa_photo_url
         image_dictionary["thumbnailUrl"] = image.picasa_thumb_url
-        image_dictionary["deleteUrl"] = 1
-        image_dictionary["deleteType"] = "DELETE"
         image.save()
+        image_dictionary["deleteUrl"] = str(request.build_absolute_uri()).replace('upload_handler/', '')  + 'image/delete/'+ str(image.id) +'/?json=true'
+        image_dictionary["deleteType"] = "GET"
     except:
         image_dictionary = {}
         image_dictionary["name"] = filename
         image_dictionary["size"] = image.size
-        image_dictionary["error"] = 'Error Uploading Photo Exception'
+        image_dictionary["error"] = 'Error Uploading Photo ' + filename
     files_array.append(image_dictionary)
     file_dictionary["files"] = files_array
-    print >>sys.stderr, "SHELLO"
     print >>sys.stderr, file_dictionary
     return HttpResponse(json.dumps(file_dictionary), content_type="application/json",status=200)
-
-#...
-def process_uploaded_files(request,page, is_gallery=False):
-    # Image 1
-    name_1 = request.POST.get('image_name_1', None)
-    if name_1:
-        description_1 = request.POST.get("image_desription_1", None)
-        image_1 = request.FILES['image_file_one']
-        image = Image.create(name_1)
-        image.description = description_1
-        image.image_file = image_1.name
-        image.size = image_1.size
-        if is_gallery:
-            image.gallery = page
-        else:
-            image.page = page
-        image.save()
-        handle_image_picasa(image_1, image)
-        logger.debug("Image 1 uploaded successfully.")
-    else:
-        logger.debug("Image 1 is empty.")
-
-    # Image 2
-    name_2 = request.POST.get('image_name_2', None)
-    if name_2:
-        description_2 = request.POST.get("image_desription_2", None)
-        image_2 = request.FILES['image_file_two']
-        image = Image.create(name_2)
-        image.description = description_2
-        image.image_file = image_2.name
-        image.size = image_2.size
-        if is_gallery:
-            image.gallery = page
-        else:
-            image.page = page
-        image.save()
-        handle_image_picasa(image_2, image)
-        logger.debug("Image 2 uploaded successfully.")
-    else:
-        logger.debug("Image 2 is empty.")
-
-    # Image 3
-    name_3 = request.POST.get('image_name_3', None)
-    if name_3:
-        description_3 = request.POST.get("image_desription_3", None)
-        image_3 = request.FILES['image_file_three']
-        image = Image.create(name_3)
-        image.description = description_3
-        image.image_file = image_3.name
-        image.size = image_3.size
-        if is_gallery:
-            image.gallery = page
-        else:
-            image.page = page
-        image.save()
-        handle_image_picasa(image_3, image)
-        logger.debug("Image 3 uploaded successfully.")
-    else:
-        logger.debug("Image 3 is empty.")
-
-    # Image 4
-    name_4 = request.POST.get('image_name_4', None)
-    if name_4:
-        description_4 = request.POST.get("image_desription_4", None)
-        image_4 = request.FILES['image_file_four']
-        image = Image.create(name_4)
-        image.description = description_4
-        image.image_file = image_4.name
-        image.size = image_4.size
-        if is_gallery:
-            image.gallery = page
-        else:
-            image.page = page
-        image.save()
-        handle_image_picasa(image_4, image)
-        logger.debug("Image 4 uploaded successfully.")
-    else:
-        logger.debug("Image 4 is empty.")
-
-    # Image 5
-    name_5 = request.POST.get('image_name_5', None)
-    if name_5:
-        description_5 = request.POST.get("image_desription_5", None)
-        image_5 = request.FILES['image_file_five']
-        image = Image.create(name_5)
-        image.description = description_5
-        image.image_file = image_5.name
-        image.size = image_5.size
-        if is_gallery:
-            image.gallery = page
-        else:
-            image.page = page
-        image.save()
-        handle_image_picasa(image_5, image)
-        logger.debug("Image 5 uploaded successfully.")
-    else:
-        logger.debug("Image 5 is empty.")
-
-    return True
-
 
 # Custom 404 and 500
 def my_custom_404_view(request):
