@@ -1,6 +1,4 @@
 {% extends template_admin %}
-{% load inplace_edit %}
-{% inplace_media %}
 {% block title %}Image List{% endblock %}
 {% block js %}
 <script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
@@ -19,7 +17,7 @@
         data.addColumn('string', 'Manage');
         data.addRows([
         {% for entry in image_list %}
-            ['{%inplace_edit "entry.name"%}','{{entry.description|safe}}', '<a href="{{ entry.picasa_photo_url }}" target="_blank"><img width="120" src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a>', '<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
+            ['{{entry.name}}','{{entry.description|safe}}', '<a href="{{ entry.picasa_photo_url }}" target="_blank"><img width="120" src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a>', '<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
         {% endfor %}
     ]);
 
@@ -34,7 +32,12 @@
     <h1>Image List</h1>
     <div id = 'table_div'></div>
 </div><a href = "/image/new/">New</a>
+
+<br /><br />
 {% for entry in image_list %}
-            {%inplace_edit "entry.name"%}
+This is an in place
+<div>
+    {{entry.name}}
+</div>
 {% endfor %}
 {% endblock %}

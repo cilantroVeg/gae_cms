@@ -127,7 +127,6 @@ urlpatterns = patterns('',
     url(r'^ajax/gallery/(?P<id>\d+)[/]$', 'pages.ajax.get_gallery_details'),
     url(r'^ajax/page/(?P<id>\d+)[/]$', 'pages.ajax.get_page_details'),
 
-    (r'^inplaceeditform/', include('inplaceeditform.urls')),
 )
 
 handler404 = 'pages.views.my_custom_404_view'
