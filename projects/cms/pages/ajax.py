@@ -33,7 +33,7 @@ def get_gallery_list(request):
 # ...
 def save_model(request,model_name,id):
     image = Image.objects.filter(id=id)
-    return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
+    return HttpResponse(json.dumps(image), content_type="application/json",status=200)
 
 
 # ...

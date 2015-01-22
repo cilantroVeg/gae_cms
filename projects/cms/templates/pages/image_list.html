@@ -14,11 +14,12 @@
     $(document).ready(function() {
         //toggle `popup` / `inline` mode
         $.fn.editable.defaults.mode = 'popup';
-
+        // var url = 'http://arturo.interpegasus.com';
+        var url = 'http://127.0.0.1:8000';
         //make username editable
         {% for entry in image_list %}
-            $('#image_name_{{entry.id}}').editable({    type: 'text',    pk: 1,    url: '/post',    title: 'Enter username'});
-            $('#image_description_{{entry.id}}').editable({    type: 'text',    pk: 1,    url: '/post',    title: 'Enter username'});
+            $('#image_name_{{entry.id}}').editable({           type: 'text',           pk: {{entry.id}},   name:'name',              url: url + '/ajax/save/image/{{entry.id}}',    title: 'Image Name'});
+            $('#image_description_{{entry.id}}').editable({    type: 'text',           pk: {{entry.id}},   name:'description',       url: url + '/ajax/save/image/{{entry.id}}',    title: 'Image Description'});
         {% endfor %}
 
 
