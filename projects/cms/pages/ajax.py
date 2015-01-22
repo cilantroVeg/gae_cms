@@ -29,6 +29,13 @@ def get_gallery_list(request):
         gallery_list.append(gallery)
     return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
 
+
+# ...
+def save_model(request,model_name,id):
+    image = Image.objects.filter(id=id)
+    return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
+
+
 # ...
 def get_page_list(request):
     pages = Page.objects.filter(is_enabled=True)

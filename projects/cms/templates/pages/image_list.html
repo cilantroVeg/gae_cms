@@ -1,43 +1,67 @@
 {% extends template_admin %}
 {% block title %}Image List{% endblock %}
 {% block js %}
-<script type = 'text/javascript' src = 'https://www.google.com/jsapi'></script>
-<script type = 'text/javascript'>
-    google.load('visualization', '1', {packages: ['table']});
-    google.setOnLoadCallback(drawTable);
-    function drawTable() {
-        var data = new google.visualization.DataTable();
+    <!-- bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
-        data.addColumn('string', 'Name');
-        data.addColumn('string', 'Description');
-        data.addColumn('string', 'Picasa thumb');
-        data.addColumn('string', 'Slug');
-        data.addColumn('string', 'Page');
-        data.addColumn('string', 'Gallery');
-        data.addColumn('string', 'Manage');
-        data.addRows([
+    <!-- x-editable (bootstrap version) -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+<!-- main.js -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        //toggle `popup` / `inline` mode
+        $.fn.editable.defaults.mode = 'popup';
+
+        //make username editable
         {% for entry in image_list %}
-            ['{{entry.name}}','{{entry.description|safe}}', '<a href="{{ entry.picasa_photo_url }}" target="_blank"><img width="120" src="{{ entry.picasa_thumb_url }}" /></a>', '{{ entry.slug }}', '<a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a>', '<a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a>', '<a href="/image/delete/{{ entry.id }}/">Delete</a>'],
+            $('#image_name_{{entry.id}}').editable({    type: 'text',    pk: 1,    url: '/post',    title: 'Enter username'});
+            $('#image_description_{{entry.id}}').editable({    type: 'text',    pk: 1,    url: '/post',    title: 'Enter username'});
         {% endfor %}
-    ]);
 
-    var table = new google.visualization.Table(document.getElementById('table_div'));
-    table.draw(data, {showRowNumber: true, allowHtml: true});
-    }
+
+
+    });
 </script>
-
 {% endblock %}
 {% block content %}
 <div id = "static_content">
     <h1>Image List</h1>
-    <div id = 'table_div'></div>
+    <table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Picasa thumb</th>
+        <th>Slug</th>
+        <th>Page</th>
+        <th>Gallery</th>
+        <th>Manage</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for entry in image_list %}
+        <tr>
+        <td><a href="#" id="image_name_{{entry.id}}" data-type="text" data-placement="right" data-title="Name">{{entry.name}}</a></td>
+        <td><a href="#" id="image_description_{{entry.id}}" data-type="text" data-placement="right" data-title="Name">{{entry.description}}</a></td>
+        <td><a href="{{ entry.picasa_photo_url }}" target="_blank"><img style="max-height: 90px;width: auto;"  src="{{ entry.picasa_thumb_url }}" /></a></td>
+        <td>{{ entry.slug }}</td>
+        <td><a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a></td>
+        <td><a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a></td>
+        <td><a href="/image/delete/{{ entry.id }}/">Delete</a></td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+
 </div><a href = "/image/new/">New</a>
 
-<br /><br />
-{% for entry in image_list %}
-This is an in place
-<div>
-    {{entry.name}}
-</div>
-{% endfor %}
+
+
+
+
+
+
 {% endblock %}
