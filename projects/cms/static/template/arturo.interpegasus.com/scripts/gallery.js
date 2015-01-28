@@ -23,6 +23,7 @@ $toolbar=$("#toolbar");
 $toolbar_a=$("#toolbar a");
 $bgimg=$("#bgimg");
 $img_title=$("#img_title");
+$img_description=$("#img_description");
 $nextImageBtn=$(".nextImageBtn");
 $prevImageBtn=$(".prevImageBtn");
 $(window).load(function() {
@@ -120,6 +121,7 @@ function BackgroundLoad($this,imageWidth,imageHeight,imgSrc){
 		FullScreenBackground($this,imageWidth,imageHeight); //scale background image
 		$preloader.fadeOut("fast",function(){$this.fadeIn("slow");});
 		var imageTitle=$img_title.data("imageTitle");
+		var imageDescription=$img_title.data("imageDescription");
 		if(imageTitle){
 			$this.attr("alt", imageTitle).attr("title", imageTitle);
 			$img_title.fadeOut("fast",function(){
@@ -128,6 +130,16 @@ function BackgroundLoad($this,imageWidth,imageHeight,imgSrc){
 		} else {
 			$img_title.fadeOut("fast",function(){
 				$img_title.html($this.attr("title")).fadeIn();
+			});
+		}
+		if(imageDescription){
+			$this.attr("alt", imageDescription).attr("alt", imageDescription);
+			$img_description.fadeOut("fast",function(){
+				$img_description.html(imageDescription).fadeIn();
+			});
+		} else {
+			$img_description.fadeOut("fast",function(){
+				$img_description.html($this.attr("alt")).fadeIn();
 			});
 		}
 	});
@@ -155,6 +167,7 @@ $("#outer_container a").click(function(event){
 	var $this=$(this);
 	GetNextPrevImages($this);
 	GetImageTitle($this);
+	GetImageDescription($this);
 	SwitchImage(this);
 	ShowHideNextPrev("show");
 });
@@ -209,6 +222,11 @@ function ShowHideNextPrev(state){
 function GetImageTitle(elem){
 	var title_attr=elem.children("img").attr("title"); //get image title attribute
 	$img_title.data("imageTitle", title_attr); //store image title
+}
+
+function GetImageDescription(elem){
+	var description_attr=elem.children("img").attr("alt"); //get image description attribute
+	$img_description.data("imageDescription", description_attr); //store image description
 }
 
 //get next/prev images
