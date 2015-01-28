@@ -126,7 +126,7 @@ urlpatterns = patterns('',
     url(r'^ajax/pages[/]$', 'pages.ajax.get_page_list'),
     url(r'^ajax/gallery/(?P<id>\d+)[/]$', 'pages.ajax.get_gallery_details'),
     url(r'^ajax/page/(?P<id>\d+)[/]$', 'pages.ajax.get_page_details'),
-    url(r'^ajax/save/(?P<model_name>[a-z])/(?P<id>\d+)[/]$', 'pages.ajax.save_model'),
+    url(r'^ajax/save/(?P<model_name>[-\w]+)/(?P<id>\d+)[/]$', 'pages.ajax.save_model'),
 
 )
 

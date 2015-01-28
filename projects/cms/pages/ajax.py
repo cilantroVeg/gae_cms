@@ -15,6 +15,9 @@ import feedparser
 import datetime
 import time
 import requests
+from django.views.decorators.http import require_http_methods
+from django.views.decorators.csrf import csrf_exempt
+from django.db.models import get_model
 
 # ...
 def get_gallery_list(request):
@@ -29,11 +32,24 @@ def get_gallery_list(request):
         gallery_list.append(gallery)
     return HttpResponse(json.dumps(gallery_list), content_type="application/json",status=200)
 
-
 # ...
+@csrf_exempt
+@require_http_methods(["POST"])
 def save_model(request,model_name,id):
-    image = Image.objects.filter(id=id)
-    return HttpResponse(json.dumps(image), content_type="application/json",status=200)
+    json_response = {}
+    model = get_model('pages', model_name)
+    if model:
+        pk = request.POST.get('pk', None)
+        name = request.POST.get('name', None)
+        value = request.POST.get('value', None)
+        object = model.objects.get(id=pk)
+        setattr(object, name, value)
+        object.save
+        json_response['success'] = True
+    else:
+        json_response['success'] = False
+        json_response['msg'] = 'Server Error Test'
+    return HttpResponse(json.dumps(json_response), content_type="application/json",status=200)
 
 
 # ...

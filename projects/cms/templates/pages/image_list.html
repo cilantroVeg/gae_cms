@@ -18,8 +18,15 @@
         var url = 'http://127.0.0.1:8000';
         //make username editable
         {% for entry in image_list %}
-            $('#image_name_{{entry.id}}').editable({           type: 'text',           pk: {{entry.id}},   name:'name',              url: url + '/ajax/save/image/{{entry.id}}',    title: 'Image Name'});
-            $('#image_description_{{entry.id}}').editable({    type: 'text',           pk: {{entry.id}},   name:'description',       url: url + '/ajax/save/image/{{entry.id}}',    title: 'Image Description'});
+            $('#image_name_{{entry.id}}').editable({
+                type: 'text',
+                pk: {{entry.id}},
+                name:'name',
+                url: url + '/ajax/save/image/{{entry.id}}/',
+                title: 'Image Name',
+                success: function(response, newValue) {    if(!response.success) return response.msg;}
+            });
+            $('#image_description_{{entry.id}}').editable({    type: 'text',           pk: {{entry.id}},   name:'description',       url: url + '/ajax/save/image/{{entry.id}}/',    title: 'Image Description'});
         {% endfor %}
 
 
