@@ -44,8 +44,9 @@ def save_model(request,model_name,id):
         value = request.POST.get('value', None)
         object = model.objects.get(id=pk)
         setattr(object, name, value)
-        object.save
+        object.save()
         json_response['success'] = True
+        json_response['new_value'] = getattr(object, name)
     else:
         json_response['success'] = False
         json_response['msg'] = 'Server Error Test'
