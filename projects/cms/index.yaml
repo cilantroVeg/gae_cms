@@ -52,6 +52,19 @@ indexes:
 - kind: pages_image
   properties:
   - name: gallery_id
+  - name: is_enabled
+  - name: order
+  - name: name
+
+- kind: pages_image
+  properties:
+  - name: gallery_id
+  - name: name
+
+- kind: pages_image
+  properties:
+  - name: gallery_id
+  - name: order
   - name: name
 
 - kind: pages_page

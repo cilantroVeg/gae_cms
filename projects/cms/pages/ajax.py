@@ -47,7 +47,7 @@ def save_model(request,model_name,id):
             setattr(object, name, bool(int(value)))
         elif type(getattr(object, name)) is unicode:
             setattr(object, name, value)
-        elif type(getattr(object, name)) is int:
+        elif type(getattr(object, name)) is int or (name == 'order'):
             setattr(object, name, int(value))
         elif (type(getattr(object, name)) is Gallery) or (name == 'gallery'):
             setattr(object, name, Gallery.objects.get(id=value))
