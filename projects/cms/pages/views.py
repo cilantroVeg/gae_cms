@@ -424,7 +424,7 @@ def handle_image_picasa(file, image):
 # ...
 def image_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','name'),"gallery_list": Gallery.objects.order_by('name')}, context_instance=RequestContext(request))
+        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name')}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -663,7 +663,7 @@ def get_gallery(gallery_id=None):
     return gallery
 
 def get_image_list(gallery_id):
-    images = Image.objects.filter(gallery=gallery_id)
+    images = Image.objects.filter(gallery=gallery_id,is_enabled=True).order_by('order','name')
     image_list=[]
     if images:
         for image_item in images:
