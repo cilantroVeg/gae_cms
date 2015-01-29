@@ -15,8 +15,16 @@
         //toggle `popup` / `inline` mode
         $.fn.editable.defaults.mode = 'popup';
         var url = 'http://arturo.interpegasus.com';
-        // var url = 'http://127.0.0.1:8000';
-        //make username editable
+        var url = 'http://127.0.0.1:8000';
+        var order_array = [];
+        var is_enabled_array = [{value: 1, text: 'True'},{value: 0, text: 'False'}];
+        for (i=1;i<=50;i++){
+            order_array.push({value: i, text: i.toString()});
+        }
+        var gallery_array = [];
+        {% for gallery in gallery_list %}
+            gallery_array.push({value: {{gallery.id}}, text: '{{gallery.name}}' });
+        {% endfor %}
         {% for entry in image_list %}
             $('#image_name_{{entry.id}}').editable({
                 type: 'text',
@@ -26,7 +34,48 @@
                 title: 'Image Name',
                 success: function(response, newValue) {    if(!response.success) return response.msg;}
             });
-            $('#image_description_{{entry.id}}').editable({    type: 'text',           pk: {{entry.id}},   name:'description',       url: url + '/ajax/save/image/{{entry.id}}/',    title: 'Image Description'});
+            $('#image_description_{{entry.id}}').editable({
+                type: 'textarea',
+                pk: {{entry.id}},
+                name:'description',
+                url: url + '/ajax/save/image/{{entry.id}}/',
+                title: 'Image Description',
+                success: function(response, newValue) {    if(!response.success) return response.msg;}
+            });
+            $('#image_order_{{entry.id}}').editable({
+                type: 'select',
+                pk: {{entry.id}},
+                name:'image_order',
+                url: url + '/ajax/save/image/{{entry.id}}/',
+                title: 'Image Order',
+                value: 1,
+                source: order_array,
+                success: function(response, newValue) {    if(!response.success) return response.msg;}
+            });
+    
+            $('#image_is_enabled_{{entry.id}}').editable({
+                type: 'select',
+                pk: {{entry.id}},
+                name:'is_enabled',
+                url: url + '/ajax/save/image/{{entry.id}}/',
+                title: 'Image Is Enabled',
+                value: 1,
+                source: is_enabled_array,
+                success: function(response, newValue) {    if(!response.success) return response.msg;}
+            });
+            
+            $('#image_gallery_{{entry.id}}').editable({
+                type: 'select',
+                pk: {{entry.id}},
+                name:'gallery',
+                url: url + '/ajax/save/image/{{entry.id}}/',
+                title: 'Image Is Enabled',
+                value: 1,
+                source: gallery_array,
+                success: function(response, newValue) {    if(!response.success) return response.msg;}
+            });
+
+            
         {% endfor %}
 
 
@@ -44,6 +93,8 @@
         <th>Description</th>
         <th>Picasa thumb</th>
         <th>Slug</th>
+        <th>Order</th>
+        <th>Is Enabled</th>
         <th>Page</th>
         <th>Gallery</th>
         <th>Manage</th>
@@ -52,12 +103,14 @@
     <tbody>
     {% for entry in image_list %}
         <tr>
-        <td><a href="#" id="image_name_{{entry.id}}" data-type="text" data-placement="right" data-title="Name">{{entry.name}}</a></td>
-        <td><a href="#" id="image_description_{{entry.id}}" data-type="text" data-placement="right" data-title="Name">{{entry.description}}</a></td>
+        <td><a href="#" id="image_name_{{entry.id}}" data-type="text" data-placement="right" data-title="Image Name">{{entry.name}}</a></td>
+        <td><a href="#" id="image_description_{{entry.id}}" data-type="textarea" data-placement="right" data-title="Image Description">{{entry.description}}</a></td>
         <td><a href="{{ entry.picasa_photo_url }}" target="_blank"><img style="max-height: 90px;width: auto;"  src="{{ entry.picasa_thumb_url }}" /></a></td>
         <td>{{ entry.slug }}</td>
+        <td><a href="#" id="image_order_{{entry.id}}" data-type="select" data-placement="right" data-title="Image Order">{{entry.order}}</a></td>
+        <td><a href="#" id="image_is_enabled_{{entry.id}}" data-type="select" data-placement="right" data-title="Image Is Enabled">{{entry.is_enabled}}</a></td>
         <td><a href="/page/edit/{{ entry.page.id }}">{{ entry.page.title }}</a></td>
-        <td><a href="/gallery/edit/{{ entry.gallery.id }}">{{ entry.gallery.name }}</a></td>
+        <td><a href="#" id="image_gallery_{{entry.id}}" data-type="select" data-placement="right" data-title="Image Gallery">{{entry.gallery}}</a></td>
         <td><a href="/image/delete/{{ entry.id }}/">Delete</a></td>
     </tr>
     </tbody>
