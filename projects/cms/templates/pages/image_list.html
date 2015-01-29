@@ -14,8 +14,30 @@
     $(document).ready(function() {
         //toggle `popup` / `inline` mode
         $.fn.editable.defaults.mode = 'popup';
-        var url = 'http://arturo.interpegasus.com';
-        //var url = 'http://127.0.0.1:8000';
+        if (document.URL.indexOf("127") > -1) {
+            var url = 'http://127.0.0.1:8000';
+        }
+        else if (document.URL.indexOf("arturo.interpegasus") > -1){
+            var url = 'http://arturo.interpegasus.com';
+        }
+        else if (document.URL.indexOf("nrwl") > -1){
+            var url = 'http://nrwl.org';
+        }
+        else if (document.URL.indexOf("magicangel") > -1){
+            var url = 'http://magicangel.org';
+        }
+        else if (document.URL.indexOf("yiyask") > -1){
+            var url = 'http://yiyask.com';
+        }
+        else if (document.URL.indexOf("bible7") > -1){
+            var url = 'http://bible7.co';
+        }
+        else if (document.URL.indexOf("portfolio") > -1){
+            var url = 'http://portfolio.interpegasus.com';
+        }
+        else if (document.URL.indexOf("interpegasus.com") > -1){
+            var url = 'http://interpegasus.com';
+        }
         var order_array = [];
         var is_enabled_array = [{value: 1, text: 'True'},{value: 0, text: 'False'}];
         for (i=1;i<=50;i++){
@@ -45,7 +67,7 @@
             $('#image_order_{{entry.id}}').editable({
                 type: 'select',
                 pk: {{entry.id}},
-                name:'image_order',
+                name:'order',
                 url: url + '/ajax/save/image/{{entry.id}}/',
                 title: 'Image Order',
                 value: 1,

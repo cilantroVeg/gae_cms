@@ -19,8 +19,7 @@ $(function () {
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
         url: '/upload_handler/',
-        limitConcurrentUploads: 2,
-        limitMultiFileUploads: 2
+        sequentialUploads: true
     });
 
     // Enable iframe cross-domain access via redirect option:

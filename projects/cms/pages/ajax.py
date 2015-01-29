@@ -43,7 +43,14 @@ def save_model(request,model_name,id):
         name = request.POST.get('name', None)
         value = request.POST.get('value', None)
         object = model.objects.get(id=pk)
-        setattr(object, name, value)
+        if (type(getattr(object, name)) is bool) or (name == 'is_enabled'):
+            setattr(object, name, bool(int(value)))
+        elif type(getattr(object, name)) is unicode:
+            setattr(object, name, value)
+        elif type(getattr(object, name)) is int:
+            setattr(object, name, int(value))
+        elif (type(getattr(object, name)) is Gallery) or (name == 'gallery'):
+            setattr(object, name, Gallery.objects.get(id=value))
         object.save()
         json_response['success'] = True
         json_response['new_value'] = getattr(object, name)
