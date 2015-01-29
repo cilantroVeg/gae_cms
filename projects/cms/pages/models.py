@@ -195,7 +195,7 @@ class Gallery(models.Model):
         super(Gallery, self).save(*args, **kwargs)
 
         class Meta:
-            order_with_respect_to = ordering = ['-name']
+            ordering = ['-name']
 
 # ...
 class Image(models.Model):
@@ -220,7 +220,7 @@ class Image(models.Model):
     created_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        order_with_respect_to = ordering = ['-gallery','-page','-order']
+        ordering = ['-gallery','-page','-order']
 
     # ...
     @classmethod
