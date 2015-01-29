@@ -19,7 +19,7 @@ $(function () {
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
         url: '/upload_handler/',
-        limitConcurrentUploads: 2,
+        limitConcurrentUploads: 1,
         limitMultiFileUploads: 1
     });
 

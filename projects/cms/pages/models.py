@@ -176,7 +176,7 @@ class Gallery(models.Model):
     # ...
     def __unicode__(self):
         return u'%s' % (self.name )
-    
+
     # ...
     def save(self, *args, **kwargs):
         memcache.delete('galleries')
@@ -193,6 +193,9 @@ class Gallery(models.Model):
         else:
             raise ValidationError("Another gallery with same slug already exists. Please use different name.")
         super(Gallery, self).save(*args, **kwargs)
+
+        class Meta:
+            order_with_respect_to = ordering = ['-name']
 
 # ...
 class Image(models.Model):
@@ -215,6 +218,9 @@ class Image(models.Model):
     order = models.SmallIntegerField(null=True, blank=True,default=1, choices=ORDER)
     is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        order_with_respect_to = ordering = ['-gallery','-page','-order']
 
     # ...
     @classmethod
