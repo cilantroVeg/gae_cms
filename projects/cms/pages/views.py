@@ -424,7 +424,7 @@ def handle_image_picasa(file, image):
 # ...
 def image_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/image_list.html", {"image_list": Image.objects.all(),"gallery_list": Gallery.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','name'),"gallery_list": Gallery.objects.order_by('name')}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

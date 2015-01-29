@@ -49,6 +49,11 @@ indexes:
   - name: parent_id
   - name: order
 
+- kind: pages_image
+  properties:
+  - name: gallery_id
+  - name: name
+
 - kind: pages_page
   properties:
   - name: __key__
