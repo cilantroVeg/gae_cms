@@ -20,7 +20,6 @@ $(function () {
         //xhrFields: {withCredentials: true},
         url: '/upload_handler/',
         limitConcurrentUploads: 1,
-        limitMultiFileUploads: 1
     });
 
     // Enable iframe cross-domain access via redirect option:
