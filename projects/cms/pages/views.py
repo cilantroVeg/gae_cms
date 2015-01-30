@@ -390,7 +390,7 @@ def delete_picasa_photo(instance):
         return False
 
 # ...
-def handle_image_picasa(file, image):
+def handle_image_picasa(file, image, description=None):
     from google.appengine.api import urlfetch
     urlfetch.set_default_fetch_deadline(120)
     gd_client = connect_picasa()
@@ -407,10 +407,8 @@ def handle_image_picasa(file, image):
 
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
     image_name = image.name if image.name else 'Image'
-    if image.gallery:
-        image_description = image.gallery.name
-    elif image.page:
-        image_description = image.page.title
+    if description:
+        image_description = description + ' ' + settings.SITE_URL
     else:
         image_description = 'Image From ' + settings.SITE_URL
     photo = gd_client.InsertPhotoSimple(album_url, strip_tags(image_name), strip_tags(image_description) , file, content_type='image/jpeg')
@@ -736,13 +734,20 @@ def upload_handler(request):
 
     page_id = request.POST.get('page_id', None)
     gallery_id = request.POST.get('gallery_id', None)
-
+    if page_id:
+        page = Page.objects.get(id=page_id)
+        description = page.title
+    elif gallery_id:
+        gallery = Gallery.objects.get(id=gallery_id)
+        description = gallery.name
+    else:
+        description = None
     image = Image.create(filename)
-    image.description = file.name
+    image.description = description if description else file.name
     image.image_file = file.name
     image.size = file.size
     try:
-        photo = handle_image_picasa(file, image)
+        photo = handle_image_picasa(file, image, description)
         logger.debug("Image 1 uploaded successfully.")
         image_dictionary = {}
         image_dictionary["name"] = filename
@@ -750,10 +755,8 @@ def upload_handler(request):
         image_dictionary["url"] = image.picasa_photo_url
         image_dictionary["thumbnailUrl"] = image.picasa_thumb_url
         if page_id:
-            page = Page.objects.get(id=page_id)
             image.page = page
         elif gallery_id:
-            gallery = Gallery.objects.get(id=gallery_id)
             image.gallery = gallery
         image.save()
         image_dictionary["deleteUrl"] = str(request.build_absolute_uri()).replace('upload_handler/', '')  + 'image/delete/'+ str(image.id) +'/?json=true'
