@@ -390,7 +390,7 @@ def delete_picasa_photo(instance):
         return False
 
 # ...
-def handle_image_picasa(file, image, description=None):
+def handle_image_picasa(file, image, description=None,url_slug=''):
     from google.appengine.api import urlfetch
     urlfetch.set_default_fetch_deadline(120)
     gd_client = connect_picasa()
@@ -408,9 +408,9 @@ def handle_image_picasa(file, image, description=None):
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
     image_name = image.name if image.name else 'Image'
     if description:
-        image_description = description + ' ' + settings.SITE_URL
+        image_description = description + ' ' + settings.SITE_URL + url_slug
     else:
-        image_description = 'Image From ' + settings.SITE_URL
+        image_description = 'Image From ' + settings.SITE_URL + url_slug
     photo = gd_client.InsertPhotoSimple(album_url, strip_tags(image_name), strip_tags(image_description) , file, content_type='image/jpeg')
     image.picasa_album_id = album.gphoto_id.text
     image.picasa_photo_id = photo.gphoto_id.text
@@ -734,12 +734,14 @@ def upload_handler(request):
 
     page_id = request.POST.get('page_id', None)
     gallery_id = request.POST.get('gallery_id', None)
+    url_slug = ''
     if page_id:
         page = Page.objects.get(id=page_id)
         description = page.title
     elif gallery_id:
         gallery = Gallery.objects.get(id=gallery_id)
         description = gallery.name
+        url_slug = '/en/gallery/' + gallery.slug
     else:
         description = None
     image = Image.create(filename)
@@ -747,7 +749,7 @@ def upload_handler(request):
     image.image_file = file.name
     image.size = file.size
     try:
-        photo = handle_image_picasa(file, image, description)
+        photo = handle_image_picasa(file, image, description,url_slug)
         logger.debug("Image 1 uploaded successfully.")
         image_dictionary = {}
         image_dictionary["name"] = filename
