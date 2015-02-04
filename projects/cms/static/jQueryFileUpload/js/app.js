@@ -15,8 +15,8 @@
 (function () {
     'use strict';
 
-    var isOnGitHub = window.location.hostname === 'blueimp.github.io',
-        url = isOnGitHub ? '//jquery-file-upload.appspot.com/' : 'server/php/';
+    var isOnGitHub = window.location.hostname === 'blueimp.github.io';
+    var url = '/upload_handler/';
 
     angular.module('demo', [
         'blueimp.fileupload'
@@ -48,7 +48,8 @@
             '$scope', '$http', '$filter', '$window',
             function ($scope, $http) {
                 $scope.options = {
-                    url: url
+                    url: url,
+                    sequentialUploads: true
                 };
                 if (!isOnGitHub) {
                     $scope.loadingFiles = true;
