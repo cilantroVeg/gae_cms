@@ -722,6 +722,8 @@ def search_dictionaries(key, value, list_of_dictionaries):
 #...
 @csrf_exempt
 def upload_handler(request):
+    if is_admin(request)['is_admin'] == False:
+        return HttpResponse(json.dumps({'error':'Admin Permission Required'}), content_type="application/json",status=200)
     file_dictionary = {}
     files_array = []
     file = request.FILES["files[]"]

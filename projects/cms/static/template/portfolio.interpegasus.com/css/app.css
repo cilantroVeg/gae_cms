@@ -1,0 +1,13 @@
+.panel-top{
+    padding: 0;
+    background-color: #FFF;
+    background-image: url("http://web.uvic.ca/~agomez/Images/arturo.jpg");
+    background-repeat: no-repeat;
+    border: none;
+    width: 100%;
+}
+
+.row-top{
+    margin: 0;
+    width: 100%;
+}
