@@ -19,7 +19,9 @@ $(function () {
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
         url: '/upload_handler/',
-        sequentialUploads: true
+        sequentialUploads: true,
+        loadImageMaxFileSize: 20000000,
+        acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i
     });
 
     // Enable iframe cross-domain access via redirect option:
@@ -52,7 +54,7 @@ $(function () {
             }).fail(function () {
                 $('<div class="alert alert-danger"/>')
                     .text('Upload server currently unavailable - ' +
-                            new Date())
+                    new Date())
                     .appendTo('#fileupload');
             });
         }
