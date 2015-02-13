@@ -5,9 +5,17 @@
     background-repeat: no-repeat;
     border: none;
     width: 100%;
+    height: 121px;
 }
 
 .row-top{
     margin: 0;
     width: 100%;
+    height: 121px;
+    padding: 0;
+}
+
+hr{
+    margin-top: 0px;
+    padding-top: 0px;
 }

@@ -13,17 +13,22 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
     <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
+    <script type="text/css">
+
+    </script>
 </head>
 <body>
 {% include "layout/admin.html" %}
 {% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
 <div class="row row-top">
-        <div class="panel panel-top">
-            <img src="http://web.uvic.ca/~agomez/Images/arturo.jpg" alt="Arturo's Portfolio"/>
+    <div class="panel panel-top">
+        <img src="http://web.uvic.ca/~agomez/Images/arturo.jpg" alt="Arturo's Portfolio"/>
+        <div id="social" style="clear:none;float:right">
+            {% include "layout/social_login_2.html" %}
         </div>
+    </div>
 </div>
-
 <hr />
 
 <div class="row">
@@ -175,7 +180,7 @@
         <hr/>
         <div class="row">
             <div class="large-5 columns">
-                <p>&copy; Copyright no one at all. Go to town.</p>
+                <p>&copy; Arturo G&oacute;mez.</p>
             </div>
             <div class="large-7 columns">
                 <ul class="inline-list right">
