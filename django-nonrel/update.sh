@@ -54,3 +54,5 @@ echo '**********************************'
 echo '* CMS PEGASUS                    *'
 echo '**********************************'
 git remote show origin
+cd ..
+find . -name "*.pyc" -exec rm -rf {} \;
