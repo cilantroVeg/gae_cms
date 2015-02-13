@@ -639,6 +639,9 @@ def front_page_language(request,language):
         else:
             image_list = None
         return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    elif settings.APP_NAME == 'arturoportfolio7':
+        pages = get_page_list()
+        return render_to_response('users/template.html', {'page_list':pages,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
     else:
         image_array = Image.objects.all()[:7]
         language_code = 'en' if (language is None) else language
@@ -664,6 +667,25 @@ def get_gallery(gallery_id=None):
         gallery['slug'] = gallery_item[0].slug
         gallery['description'] = gallery_item[0].description
     return gallery
+
+def get_page_list():
+    page_list = []
+    pages = Page.objects.filter(is_enabled=True).order_by('priority','title')
+    for page in pages:
+        page_dictionary = {}
+        page_dictionary["title"] = page.title
+        page_dictionary["content"] = page.content
+        if page.image_url:
+            page_dictionary["image_url"] = page.image_url
+        else:
+            image = Image.objects.filter(page=page.id,is_enabled=True).order_by('order','name')[:1]
+            if image and image[0]:
+                page_dictionary["image_url"] = image[0].picasa_thumb_url
+            else:
+                page_dictionary["image_url"] = None
+        page_dictionary["link_url"] = page.link_url
+        page_list.append(page_dictionary)
+    return page_list
 
 def get_image_list(gallery_id):
     images = Image.objects.filter(gallery=gallery_id,is_enabled=True).order_by('order','name')

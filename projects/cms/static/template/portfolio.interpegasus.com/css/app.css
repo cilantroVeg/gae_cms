@@ -1,21 +1,34 @@
 .panel-top{
     padding: 0;
     background-color: #FFF;
-    background-image: url("http://web.uvic.ca/~agomez/Images/arturo.jpg");
-    background-repeat: no-repeat;
     border: none;
     width: 100%;
-    height: 121px;
+
+    max-height: 121px;
 }
 
 .row-top{
     margin: 0;
     width: 100%;
-    height: 121px;
+    max-height: 121px;
     padding: 0;
 }
 
 hr{
     margin-top: 0px;
     padding-top: 0px;
+}
+
+.header_login li a {
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.image_thumb{
+    width: 160px;
+    min-width: 160px;
+    min-height: 120px;
+    height: auto;
+    max-height: 120px;
+    overflow: hidden;
 }

@@ -67,6 +67,13 @@ indexes:
   - name: order
   - name: name
 
+- kind: pages_image
+  properties:
+  - name: is_enabled
+  - name: page_id
+  - name: order
+  - name: name
+
 - kind: pages_page
   properties:
   - name: __key__
@@ -76,6 +83,12 @@ indexes:
   properties:
   - name: category_id
   - name: is_enabled
+  - name: title
+
+- kind: pages_page
+  properties:
+  - name: is_enabled
+  - name: priority
   - name: title
 
 - kind: pages_page

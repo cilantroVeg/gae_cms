@@ -120,6 +120,7 @@ class Page(models.Model):
     image_url = models.CharField(max_length=64, null=True, blank=True, unique=False)
     video_url = models.CharField(max_length=64, null=True, blank=True, unique=False)
     audio_url = models.CharField(max_length=64, null=True, blank=True, unique=False)
+    link_url = models.CharField(max_length=64, null=True, blank=True, unique=False)
     priority = models.IntegerField(default=1, null=False, blank=False, unique=False)
     is_enabled = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now=True)
@@ -312,7 +313,7 @@ class CategoryForm(ModelForm):
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ['category', 'title', 'content']
+        fields = ['category', 'title', 'content','image_url','video_url','link_url']
 
 # Forms
 class FeedForm(ModelForm):
