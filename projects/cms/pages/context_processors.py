@@ -1,6 +1,10 @@
 from google.appengine.api import memcache
 from pages.api import *
 from django.conf import settings
+# import the logging library
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 # ...
 def categories(request):
@@ -16,8 +20,11 @@ def categories(request):
             pages = []
             if c["parent"] is None:
                 pages_in_c = query_api(request_language, 'pages', {'category_slug': c["slug"]})
-                for p in pages_in_c["pages"]:
-                    pages.append(p)
+                try:
+                    for p in pages_in_c["pages"]:
+                        pages.append(p)
+                except:
+                    logger.error('Something went wrong in context processor!')
                 c["page_array"] = pages
         categories = categories["categories"]
     return {'categories': categories,  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE,'template_admin': settings.ADMIN_PAGE, 'api_page': settings.TEMPLATE_API}
