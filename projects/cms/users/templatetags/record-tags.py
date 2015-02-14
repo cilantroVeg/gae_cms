@@ -5,6 +5,8 @@
 
 from django.template import Library
 from pages.models import Record, Language
+import logging
+logger = logging.getLogger(__name__)
 
 register = Library()
 
@@ -15,6 +17,7 @@ def get_record(key, language='en'):
         try:
             l = Language.objects.get(code=language)
         except:
+            logger.error('views/get_record')
             l = None
         if l:
             record = Record.objects.filter(key=key, language=l)

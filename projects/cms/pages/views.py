@@ -16,10 +16,8 @@ from django.shortcuts import render
 from pages.api import *
 from django.utils.html import strip_tags
 from django.views.decorators.csrf import csrf_exempt
-
 import logging
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 # ...
 def delete_cache(request):
@@ -310,6 +308,7 @@ def handle_spreadsheet(f, user, spreadsheet):
                 try:
                     extra = worksheet.cell(i, 6).value
                 except:
+                    logger.error('views/handle_spreadsheet')
                     extra = None
                 # Language
                 language, language_created = Language.objects.get_or_create(code=language_code,  defaults={'name': language_code})
@@ -387,6 +386,7 @@ def delete_picasa_photo(instance):
             if photo.gphoto_id.text == instance.picasa_photo_id:
                 gd_client.Delete(photo)
     except:
+        logger.error('views/delete_picasa_photo')
         return False
 
 # ...
@@ -403,6 +403,7 @@ def handle_image_picasa(file, image, description=None,url_slug=''):
         if current_album is None:
             album = gd_client.InsertAlbum(title=settings.APP_NAME, summary='Photos from ' + settings.SITE_URL)
     except:
+        logger.error('views/handle_image_picasa')
         album = gd_client.InsertAlbum(title=settings.APP_NAME, summary='Photos from ' + settings.SITE_URL)
 
     album_url = '/data/feed/api/user/%s/albumid/%s' % ('default', album.gphoto_id.text)
@@ -579,6 +580,7 @@ def contact(request):
             try:
                 data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
             except:
+                logger.error('views/contact')
                 data = {}
         else:
             if form.is_valid():
@@ -649,6 +651,7 @@ def front_page_language(request,language):
             feed_pages = query_api(language_code, 'feed_pages')
             feed_pages = feed_pages['pages'] if feed_pages else None
         except:
+            logger.error('views/front_page_language')
             feed_pages = None
     return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
 
@@ -788,6 +791,7 @@ def upload_handler(request):
         image_dictionary["deleteUrl"] = str(request.build_absolute_uri()).replace('upload_handler/', '')  + 'image/delete/'+ str(image.id) +'/?json=true'
         image_dictionary["deleteType"] = "GET"
     except:
+        logger.error('views/upload_handler')
         image_dictionary = {}
         image_dictionary["name"] = filename
         image_dictionary["size"] = image.size

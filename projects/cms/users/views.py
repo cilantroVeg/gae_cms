@@ -1,8 +1,6 @@
 # views.py
 
 # imports
-import logging
-log = logging.getLogger(__name__)
 from pages.context_processors import *
 from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, get_object_or_404, redirect
@@ -11,6 +9,8 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
 from django.contrib.auth import login
+import logging
+logger = logging.getLogger(__name__)
 
 ################
 # User Methods
@@ -41,6 +41,7 @@ def process_create_account(request):
     try:
         u = User.objects.filter(email=request.POST['email'])
     except:
+        logger.error('views/process_create_account')
         u = False
     if u:
         return render_to_response('users/signup.html', {'error_message': "Email is already taken"}, context_instance=RequestContext(request))

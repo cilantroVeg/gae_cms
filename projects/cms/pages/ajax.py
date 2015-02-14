@@ -18,6 +18,8 @@ import requests
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.db.models import get_model
+import logging
+logger = logging.getLogger(__name__)
 
 # ...
 def get_gallery_list(request):
@@ -121,10 +123,11 @@ def request_url(url):
     try:
         r = requests.get(url)
     except:
+        logger.error('ajax/request_url')
         try:
             r = requests.get(url)
         except:
-            r = None
+            logger.error('ajax/request_url')
     return r
 
 #...

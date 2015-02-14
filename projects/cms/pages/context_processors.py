@@ -1,9 +1,7 @@
 from google.appengine.api import memcache
 from pages.api import *
 from django.conf import settings
-# import the logging library
 import logging
-# Get an instance of a logger
 logger = logging.getLogger(__name__)
 
 # ...
@@ -24,7 +22,7 @@ def categories(request):
                     for p in pages_in_c["pages"]:
                         pages.append(p)
                 except:
-                    logger.error('Something went wrong in context processor!')
+                    logger.error('context_processors/categories')
                 c["page_array"] = pages
         categories = categories["categories"]
     return {'categories': categories,  'languages': languages, 'pages': pages, 'request_language':request_language, 'template_frontpage': settings.TEMPLATE_FRONTPAGE, 'template_page': settings.TEMPLATE_PAGE,'template_admin': settings.ADMIN_PAGE, 'api_page': settings.TEMPLATE_API}
@@ -35,6 +33,7 @@ def is_logged_in(request):
         if request.user.is_authenticated():
             return {'is_logged_in': True}
     except:
+        logger.error('context_processors/is_logged_in')
         return {'is_logged_in': False}
     return {'is_logged_in': False}
 
@@ -44,6 +43,7 @@ def is_admin(request):
         if (request.user.email in settings.ADMIN_USERS_EMAILS):
             return {'is_admin': True}
     except:
+        logger.error('context_processors/is_admin')
         return {'is_admin': False}
     return {'is_admin': False}
 

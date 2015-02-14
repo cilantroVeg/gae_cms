@@ -15,6 +15,8 @@ import feedparser
 import datetime
 import time
 import requests
+import logging
+logger = logging.getLogger(__name__)
 
 # ...
 def languages(request,language_code):
@@ -144,6 +146,7 @@ def validate_token(request):
     try:
         return (settings.API_ACCESS_TOKEN == request.REQUEST['access_token']) or (settings.API_ACCESS_TOKEN_1 == request.REQUEST['access_token'])
     except:
+        logger.error('api/validate_token')
         return False
 
 # ...
@@ -163,6 +166,7 @@ def query_api(language_code, api_request, extra_parameters={}):
             data = json.loads(result.content)
             set_cache(key,data)
     except:
+        logger.error('api/query_api')
         data = None
     return data
 
@@ -357,6 +361,7 @@ def bible_books(request,dam_id,return_type=None):
         try:
             response_data['books'] = r.json()
         except:
+            logger.error('api/bible_books')
             response_data['books'] = None
     else:
         response_data['books'] = None
@@ -412,9 +417,11 @@ def request_url(url):
     try:
         r = requests.get(url)
     except:
+        logger.error('api/request_url')
         try:
             r = requests.get(url)
         except:
+            logger.error('api/request_url')
             r = None
     return r
 
