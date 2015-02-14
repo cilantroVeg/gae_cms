@@ -313,7 +313,7 @@ class CategoryForm(ModelForm):
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ['category', 'title', 'content','image_url','video_url','link_url']
+        fields = ['category', 'title', 'content','image_url','video_url','link_url','is_enabled']
 
 # Forms
 class FeedForm(ModelForm):
