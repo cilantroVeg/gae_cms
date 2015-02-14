@@ -12,20 +12,19 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
-    {% block css %}{% endblock %}
     <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
     <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+    <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
 <body>
 {% include "layout/admin.html" %}
-{% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
 <div class="row row-top">
     <div class="panel panel-top">
-        <img src="http://web.uvic.ca/~agomez/Images/arturo.jpg" alt="Arturo's Portfolio"/>
-        <div id="social" style="clear:none;float:right">
+        <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
+        <div id="social" style="clear:none;float:right;position:absolute;top:10px;right:10px;">
             {% include "layout/social_login_2.html" %}
         </div>
     </div>
@@ -35,48 +34,23 @@
 <div class="row">
     <div class="large-3 columns ">
         <div class="panel">
-            <h4><a href="#">Arturo's Portfolio</a></h4>
+            <h4><a href="/">Arturo's Portfolio</a></h4>
+            <hr />
             <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+                {% for page in page_list %}
                 <section class="section">
-                    <h5 class="title"><a href="#">InterPegasus</a></h5>
+                    <h5 class="title"><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title}}</a></h5>
                 </section>
+                {% endfor %}
+                <hr />
                 <section class="section">
-                    <h5 class="title"><a href="#">InterPegasus GAE</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">InterPegasus PHP</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">NRWL</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">MAF</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">ESPN</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Sony</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Warner Bross</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Apple Push</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">GTN iOS App</a></h5>
-                </section>
-                <section class="section">
-                    <h5 class="title"><a href="#">Holly Bible</a></h5>
+                    <h5 class="title"><a href="/contact">Contact</a></h5>
                 </section>
             </div>
         </div>
     </div>
     <div class="large-9 columns">
-        <div>
-            {% block content %}{% endblock %}
-        </div>
+         {% block content %}{% endblock %}
     </div>
 </div>
 
@@ -89,12 +63,9 @@
             </div>
             <div class="large-7 columns">
                 <ul class="inline-list right">
-                    <li><a href="#">Section 1</a></li>
-                    <li><a href="#">Section 2</a></li>
-                    <li><a href="#">Section 3</a></li>
-                    <li><a href="#">Section 4</a></li>
-                    <li><a href="#">Section 5</a></li>
-                    <li><a href="#">Section 6</a></li>
+                    {% for page in page_list %}
+                    <li><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
