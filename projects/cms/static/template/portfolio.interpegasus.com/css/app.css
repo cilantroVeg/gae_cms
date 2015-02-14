@@ -32,3 +32,9 @@ hr{
     max-height: 120px;
     overflow: hidden;
 }
+
+.right_bottom{
+    float: right;
+    clear: both;
+    padding: 7px 0;
+}

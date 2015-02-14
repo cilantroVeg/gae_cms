@@ -15,11 +15,11 @@
     <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
     <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+    <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
 <body>
 {% include "layout/admin.html" %}
-{% include "layout/add_this.html" %}
 {% include "layout/microdata.html" %}
 <div class="row row-top">
     <div class="panel panel-top">
@@ -39,7 +39,7 @@
             <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
                 {% for page in page_list %}
                 <section class="section">
-                    <h5 class="title"><a href="#{{page.title|slugify}}">{{page.title}}</a></h5>
+                    <h5 class="title"><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title}}</a></h5>
                 </section>
                 {% endfor %}
                 <hr />
@@ -51,17 +51,16 @@
     </div>
     <div class="large-9 columns">
         {% for page in page_list %}
-        <div class="row" id="{{page.title}}">
+        <div class="row" id="{{page.title|slugify}}">
             <div class="large-3 columns small-3">
                 <a target="_blank" href="{{page.link_url}}"><img class="image_thumb" src="{{page.image_url}}"/></a>
             </div>
             <div class="large-9 columns">
                 <h3>{{page.title | safe }}</h3>
                 {{page.content | safe }}
-                <ul class="inline-list">
-                    <li><a href="">Reply</a></li>
-                    <li><a href="">Share</a></li>
-                </ul>
+                <div class="right_bottom">
+                    {% include "layout/add_this_4.html" %}
+                </div>
             </div>
         </div>
         <hr/>
@@ -79,7 +78,7 @@
             <div class="large-7 columns">
                 <ul class="inline-list right">
                     {% for page in page_list %}
-                    <li><a href="#{{page.title|slugify}}">{{page.title|safe}}</a></li>
+                    <li><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
                     {% endfor %}
                 </ul>
             </div>
