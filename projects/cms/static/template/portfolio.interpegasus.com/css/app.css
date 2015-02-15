@@ -38,3 +38,9 @@ hr{
     clear: both;
     padding: 7px 0;
 }
+
+.portfolio_item{
+    height: 180px;
+    #max-height: 180px;
+    #overflow: hidden;
+}

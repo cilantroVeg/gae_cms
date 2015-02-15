@@ -51,12 +51,12 @@
     </div>
     <div class="large-9 columns">
         {% for page in page_list %}
-        <div class="row" id="{{page.title|slugify}}">
+        <div class="row portfolio_item" id="{{page.title|slugify}}">
             <div class="large-3 columns small-3">
-                <a target="_blank" href="{{page.link_url}}"><img class="image_thumb" src="{{page.image_url}}"/></a>
+                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img src="{{page.image_url}}"/></a>
             </div>
             <div class="large-9 columns">
-                <h3>{{page.title | safe }}</h3>
+                <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
                 {{page.content | safe }}
                 <div class="right_bottom">
                     {% include "layout/add_this_4.html" %}

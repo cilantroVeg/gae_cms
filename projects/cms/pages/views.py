@@ -825,3 +825,9 @@ def my_custom_404_view(request):
 #...
 def my_custom_500_view(request):
     return render_to_response('users/500.html',context_instance=RequestContext(request))
+
+def humans(request):
+    return render_to_response('txt/humans.txt',context_instance=RequestContext(request))
+
+def robots(request):
+    return render_to_response('txt/robots.txt',context_instance=RequestContext(request))
