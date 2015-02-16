@@ -1,0 +1,15 @@
+{% if is_logged_in %}
+<ul>
+    <li><a href = "/">Welcome {{request.user.first_name}}</a></li>
+    <li>|</li>
+    <li><a href = "/exit">Log out</a></li>
+</ul>
+{% else %}
+<ul>
+    <li><a data-tooltip aria-haspopup="true" class="has-tip" title="Click here to create a new account or login." href="/enter"><span class=" fi-social-facebook size-24"></span></a></li>
+    <li><a href="{% url 'social:begin' 'facebook' %}"  title="Login via faceebook."></a></li>
+    <li><a href="{% url 'social:begin' 'twitter' %}"  title="Login via twitter."></a></li>
+    <li><a href="{% url 'social:begin' 'google-oauth2' %}"  title="Login via google."></a></li>
+    <li><a href="/contact"  title="Contact"><i class="icon-mail-2"></i></a></li>
+</ul>
+{% endif %}

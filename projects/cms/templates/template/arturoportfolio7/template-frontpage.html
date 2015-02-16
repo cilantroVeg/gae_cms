@@ -8,7 +8,7 @@
     <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
     <meta name="description" content="Web Mobile Portfolio"/>
     <meta name="author" content="Arturo"/>
-    <meta name="copyright" content="Original Template From ZURB, And Foundation inc. Copyright (c) 2015"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
@@ -48,7 +48,7 @@
                         <input id="search" name="search" placeholder="Projects & Technologies" type="text">
                     </div>
                     <div class="large-4 small-3 columns">
-                        <a href="#" class="alert button expand">Search</a>
+                        <a href="#" onclick="alert($('#search').val())" class="alert button expand">Search</a>
                     </div>
                 </div>
             </li>
@@ -71,7 +71,9 @@
             <li class="divider"></li>
             <!-- Button -->
             <li class="has-form show-for-large-up">
-                <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+<div id="social">
+{% include "layout/social_login_3.html" %}
+</div>
             </li>
         </ul>
     </section>
@@ -79,9 +81,6 @@
 <div class="row row-top">
     <div class="panel panel-top">
         <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
-        <div id="social" style="clear:none;float:right;position:absolute;top:10px;right:10px;">
-            {% include "layout/social_login_2.html" %}
-        </div>
     </div>
 </div>
 <hr />
@@ -113,6 +112,7 @@
             <div class="large-9 columns">
                 <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
                 {{page.content | safe }}
+                <a class="tiny button">Read More</a>
                 <div class="right_bottom">
                     {% include "layout/add_this_4.html" %}
                 </div>
@@ -128,7 +128,8 @@
         <hr/>
         <div class="row">
             <div class="large-5 columns">
-                <p>&copy; Arturo G&oacute;mez.</p>
+                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS"><p>&copy; Arturo G&oacute;mez.</p></span>
+
             </div>
             <div class="large-7 columns">
                 <ul class="inline-list right">
