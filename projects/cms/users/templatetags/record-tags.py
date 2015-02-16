@@ -5,9 +5,9 @@
 
 from django.template import Library
 from pages.models import Record, Language
+from django.conf import settings
 import logging
 logger = logging.getLogger(__name__)
-
 register = Library()
 
 
@@ -28,7 +28,7 @@ def get_record(key, language='en'):
     if record:
         return record[0].value
     else:
-        return 'No Content in Language'
+        return settings.APP_NAME
 
 
 @register.filter

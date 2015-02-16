@@ -39,6 +39,18 @@ hr{
     padding: 7px 0;
 }
 
-.portfolio_item{
-
+.ui-menu-item{
+    width:180px;
+    background-color: #ffffff;
+    list-style: none;
+    border: 1px solid ghostwhite;
 }
+
+.ui-menu-item.ui-state-focus{
+    width:180px;
+    background-color: #008cba;
+    color: #FFF;
+    list-style: none;
+    border: 1px solid ghostwhite;
+}
+.ui-helper-hidden-accessible { display:none; }
