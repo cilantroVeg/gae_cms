@@ -54,3 +54,17 @@ hr{
     border: 1px solid ghostwhite;
 }
 .ui-helper-hidden-accessible { display:none; }
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; color: #008CBA; }
+
+a.has-tip, .name h1 a{
+    max-height: 2.7rem;
+    text-decoration: none;
+    border-style: none;
+}
+
