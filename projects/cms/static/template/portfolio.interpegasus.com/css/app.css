@@ -68,3 +68,10 @@ a.has-tip, .name h1 a{
     border-style: none;
 }
 
+#feedback{
+    display: none;
+}
+
+.portfolio_item{
+    padding-top: 5px;
+}
