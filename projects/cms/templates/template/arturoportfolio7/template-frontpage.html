@@ -47,7 +47,7 @@
                         <input id="search" name="search" placeholder="Projects & Technologies" type="text">
                     </div>
                     <div class="large-4 small-3 columns">
-                        <a href="#" onclick="search_results($('#search').val())" class="alert button expand">Search</a>
+                        <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
                     </div>
                 </div>
             </li>
@@ -94,7 +94,7 @@
             <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
                 {% for page in page_list %}
                 <section class="section">
-                    <h5 class="title"><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title}}</a></h5>
+                    <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
                 </section>
                 {% endfor %}
                 <hr />
@@ -112,7 +112,7 @@
         {% for page in page_list %}
         <div class="row portfolio_item" id="{{page.title|slugify}}">
             <div class="large-3 columns small-3">
-                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img src="{{page.image_url}}"/></a>
+                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." src="{{page.image_url}}"/></a>
             </div>
             <div class="large-9 columns">
                 <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
@@ -145,7 +145,7 @@
             <div class="large-7 columns">
                 <ul class="inline-list right">
                     {% for page in page_list %}
-                    <li><a href="#" onclick="scroll_to_anchor('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                    <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
                     {% endfor %}
                 </ul>
             </div>

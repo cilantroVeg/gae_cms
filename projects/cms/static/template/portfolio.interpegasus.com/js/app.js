@@ -1,6 +1,12 @@
 $( document ).ready(function() {
     $( "#search" ).autocomplete({
-        source: availableTags
+        source: availableTags,
+        response : function(event, ui) {
+            if (!ui.content.length){
+                ui.content.push({ label: "No Results", value: "No Results" });
+            }
+            console.log(ui.length);
+        }
     });
     $( "#search" ).focus(function() {
         $("#feedback").hide("highlight", {}, 200);
@@ -31,10 +37,10 @@ function search_results(search){
         $("#feedback").hide("highlight", {}, 1500);
         scroll_to_anchor_and_show_tip(search);
     }else {
-        var html = '<div data-alert class="alert-box warning">'+search+' Not Found</a></div>';
+        var html = '<div data-alert class="alert-box warning">The search did not return an exact match.</a></div>';
         $("#feedback").html(html);
-        $("#feedback").toggle("highlight", {}, 1500);
-        $("#feedback").toggle("highlight", {}, 1500);
+        $("#feedback").fadeIn(500);
+        $("#feedback").fadeOut(3000);
 
     }
 }
