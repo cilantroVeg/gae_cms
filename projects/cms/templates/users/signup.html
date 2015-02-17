@@ -5,7 +5,9 @@
 
 {% block content %}
 {% if error_message %}
-<p id="my_feedback">{{ error_message }} </p>
+<div data-alert class="alert-box">
+    {{ error_message }}
+</div>
 {% endif %}
         {% include "layout/login_form.html" %}
 {% endblock %}
