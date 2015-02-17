@@ -116,8 +116,14 @@
             </div>
             <div class="large-9 columns">
                 <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
-                {{page.content | safe }}
-                <a class="tiny button">Read More</a>
+                <span id="{{page.title|slugify}}_truncated">
+                    {{page.content | truncatewords_html:3 | safe }}
+                    <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
+                </span>
+                <span id="{{page.title|slugify}}_full" style="display: none;">
+                    {{page.content | safe }}
+                    <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
+                </span>
                 <div class="right_bottom">
                     {% include "layout/add_this_4.html" %}
                 </div>

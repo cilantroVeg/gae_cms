@@ -31,8 +31,10 @@ function search_results(search){
         $("#feedback").hide("highlight", {}, 1500);
         scroll_to_anchor_and_show_tip(search);
     }else {
-        var html = '<div data-alert class="alert-box warning">'+search+' Not Found <a href="#" class="close">×</a></div>';
+        var html = '<div data-alert class="alert-box warning">'+search+' Not Found</a></div>';
         $("#feedback").html(html);
-        $("#feedback").show("highlight", {}, 1500);
+        $("#feedback").toggle("highlight", {}, 1500);
+        $("#feedback").toggle("highlight", {}, 1500);
+
     }
 }
