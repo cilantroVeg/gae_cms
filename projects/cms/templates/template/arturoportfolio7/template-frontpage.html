@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
-    <meta name="description" content="Web Mobile Portfolio"/>
+    <meta name="description" content="Portfolio"/>
     <meta name="author" content="Arturo"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
@@ -139,7 +139,7 @@
         <hr/>
         <div class="row">
             <div class="large-5 columns">
-                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS"><p>&copy; Arturo G&oacute;mez.</p></span>
+                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS"><p>&copy; Arturo G&oacute;mez. {% now "Y" %}</p></span>
 
             </div>
             <div class="large-7 columns">
