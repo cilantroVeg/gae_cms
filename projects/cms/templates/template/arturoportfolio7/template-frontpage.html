@@ -29,10 +29,13 @@
 <body>
 {% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
+
 <nav class="top-bar" data-topbar="" role="navigation">
     <!-- Title -->
     <ul class="title-area">
-        <li class="name"><h1><a data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS" href="/">Arturo's Portfolio</a></h1></li>
+        <li class="name">
+            <h2><a href="/en">Arturo's&nbsp;Portfolio</a></h2>
+        </li>
         <!-- Mobile Menu Toggle -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
@@ -59,7 +62,7 @@
             <li class="divider"></li>
             <!-- Dropdown -->
             <li class="has-dropdown not-click"><a href="#">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <ul class="dropdown" aria-autoclose="true">
+                <ul class="dropdown">
                     <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
                     {% for page in page_list %}
                     <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
@@ -77,6 +80,8 @@
         </ul>
     </section>
 </nav>
+
+
 <div class="row row-top">
     <div class="panel panel-top">
         <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
@@ -112,18 +117,18 @@
         {% for page in page_list %}
         <div class="row portfolio_item" id="{{page.title|slugify}}">
             <div class="large-3 columns small-3">
-                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." src="{{page.image_url}}"/></a>
+                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
             </div>
             <div class="large-9 columns">
                 <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
-                <span id="{{page.title|slugify}}_truncated">
+                <div id="{{page.title|slugify}}_truncated">
                     {{page.content | truncatewords_html:3 | safe }}
                     <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
-                </span>
-                <span id="{{page.title|slugify}}_full" style="display: none;">
+                </div>
+                <div id="{{page.title|slugify}}_full" style="display: none;">
                     {{page.content | safe }}
                     <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
-                </span>
+                </div>
                 <div class="right_bottom">
                     {% include "layout/add_this_4.html" %}
                 </div>
@@ -139,8 +144,7 @@
         <hr/>
         <div class="row">
             <div class="large-5 columns">
-                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS"><p>&copy; Arturo G&oacute;mez. {% now "Y" %}</p></span>
-
+                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
             </div>
             <div class="large-7 columns">
                 <ul class="inline-list right">
