@@ -3,19 +3,7 @@
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="Web Mobile Portfolio"/>
-    <meta name="author" content="Arturo"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+    {% include "layout/head.html" %}
     <script type="application/javascript">
         var availableTags = [
         {% for page in page_list %}
@@ -23,86 +11,142 @@
         {% endfor %}
         ];
     </script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
     <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
 <body>
-{% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
-<nav class="top-bar" data-topbar="" role="navigation">
-    <!-- Title -->
-    <ul class="title-area">
-        <li class="name"><h1><a data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS" href="/">Arturo's Portfolio</a></h1></li>
-        <!-- Mobile Menu Toggle -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <!-- Top Bar Section -->
-    <section class="top-bar-section">
-        <!-- Top Bar Right Nav Elements -->
-        <ul class="right">
-            <!-- Divider -->
-            <li class="divider"></li>
-            <!-- Button -->
-            <li class="has-form show-for-large-up">
-                <div id="social">
-                    {% include "layout/social_login_3.html" %}
-                </div>
-            </li>
-        </ul>
-    </section>
-</nav>
-<div class="row row-top">
-    <div class="panel panel-top">
-        <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
-    </div>
-</div>
-<hr />
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <!-- Title -->
+            <ul class="title-area">
+                <li class="name">
+                    <h2><a href="/en">Arturo's&nbsp;Portfolio</a></h2>
+                </li>
+                <!-- Mobile Menu Toggle -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <!-- Top Bar Section -->
+            <section class="top-bar-section">
+                <!-- Top Bar Left Nav Elements -->
+                <ul class="left">
+                    <!-- Search | has-form wrapper -->
+                    <li class="has-form">
+                        <div class="row collapse">
+                            <div class="large-8 small-9 columns">
+                                <input id="search" name="search" placeholder="Projects & Technologies" type="text">
+                            </div>
+                            <div class="large-4 small-3 columns">
+                                <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
+                <!-- Top Bar Right Nav Elements -->
+                <ul class="right">
+                    <!-- Divider -->
+                    <li class="divider"></li>
+                    <!-- Dropdown -->
+                    <li class="has-dropdown not-click"><a href="#">Projects</a>
+                        <ul class="dropdown">
+                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            <li class="divider"></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <!-- Button -->
+                    <li class="has-form show-for-large-up">
+                        <div id="social">
+                            {% include "layout/social_login_3.html" %}
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
 
-
-<div class="row">
-    <div class="large-3 columns ">
-        <div class="panel">
-            <h4><a href="/">Arturo's Portfolio</a></h4>
-            <hr />
-            <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-                {% for page in page_list %}
-                <section class="section">
-                    <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
-                </section>
-                {% endfor %}
-                <hr />
-                <section class="section">
-                    <h5 class="title"><a href="/contact">Contact</a></h5>
-                </section>
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <aside class="right-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <div class="row row-top">
+            <div class="panel panel-top">
+                <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
+                {% if is_admin %}
+                <span class="show-for-medium-up" style="position:fixed;top:3rem;right: 3rem;">
+                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-24" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-24" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                </span>
+                {% endif %}
             </div>
         </div>
-    </div>
-    <div class="large-9 columns">
-            <div class="large-9 columns">
-         {% block content %}{% endblock %}
-    </div>
-    </div>
-</div>
+        <hr />
 
-<footer class="row">
-    <div class="large-12 columns">
-        <hr/>
         <div class="row">
-            <div class="large-5 columns">
-                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS"><p>&copy; Arturo G&oacute;mez.</p></span>
-
+            <div class="large-3 columns ">
+                <div class="panel">
+                    <h4><a href="/">Arturo's Portfolio</a></h4>
+                    <hr />
+                    <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+                        {% for page in page_list %}
+                        <section class="section">
+                            <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
+                        </section>
+                        {% endfor %}
+                        <hr />
+                        <section class="section">
+                            <h5 class="title"><a href="/contact">Contact</a></h5>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div class="large-7 columns">
-                <ul class="inline-list right">
-                    {% for page in page_list %}
-                    <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
-                    {% endfor %}
+            <div class="large-9 columns">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <div id="feedback">
+
+                </div>
+
+                {% block content %}{% endblock %}
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul class="pagination">
+                    <li class="current"><a href="#" data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Page 1">1</a></li>
                 </ul>
             </div>
         </div>
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr/>
+                <div class="row">
+                    <div class="large-5 columns">
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
+                    </div>
+                    <div class="large-7 columns">
+                        <ul class="inline-list right">
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
     </div>
-</footer>
+</div>
 <script>
     $(document).foundation();
     var doc = document.documentElement;

@@ -3,19 +3,7 @@
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
-    <meta name="description" content="Portfolio"/>
-    <meta name="author" content="Arturo"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+    {% include "layout/head.html" %}
     <script type="application/javascript">
         var availableTags = [
         {% for page in page_list %}
@@ -23,6 +11,7 @@
         {% endfor %}
         ];
     </script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
     <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
@@ -81,10 +70,7 @@
             </section>
         </nav>
 
-
-
         <!-- Off Canvas Menu -->
-
         <aside class="left-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
@@ -103,8 +89,6 @@
             </div>
         </div>
         <hr />
-
-
 
         <div class="row">
             <div class="large-3 columns ">
@@ -182,7 +166,6 @@
         </footer>
         <!-- close the off-canvas menu -->
         <a class="exit-off-canvas"></a>
-
     </div>
 </div>
 <script>
