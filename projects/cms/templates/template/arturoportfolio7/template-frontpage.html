@@ -61,7 +61,7 @@
                     <!-- Divider -->
                     <li class="divider"></li>
                     <!-- Dropdown -->
-                    <li class="has-dropdown not-click"><a href="#">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <li class="has-dropdown not-click"><a href="#">Projects</a>
                         <ul class="dropdown">
                             <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
                             {% for page in page_list %}
@@ -88,9 +88,18 @@
         <aside class="left-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
+        <aside class="right-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
         <div class="row row-top">
             <div class="panel panel-top">
                 <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
+                {% if is_admin %}
+                <span class="show-for-medium-up" style="position:fixed;top:3rem;right: 3rem;">
+                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-24" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-24" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                </span>
+                {% endif %}
             </div>
         </div>
         <hr />
@@ -116,12 +125,13 @@
                 </div>
             </div>
             <div class="large-9 columns">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
                 <div id="feedback">
 
                 </div>
-                {% if is_admin %}
-                <a class="left-off-canvas-toggle fi-widget size-24" href="#"><span></span></a>
-                {% endif %}
+
                 {% for page in page_list %}
                 <div class="row portfolio_item" id="{{page.title|slugify}}">
                     <div class="large-3 columns small-3">
@@ -144,6 +154,12 @@
                 </div>
                 <hr/>
                 {% endfor %}
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul class="pagination">
+                    <li class="current"><a href="#" data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Page 1">1</a></li>
+                </ul>
             </div>
         </div>
 
