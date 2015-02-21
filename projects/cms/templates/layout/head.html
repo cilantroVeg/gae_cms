@@ -1,13 +1,14 @@
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
-    <meta name="description" content="Arturo's Web And Mobile Portfolio"/>
-    <meta name="author" content="Arturo"/>
-    <meta name="application-name" content="InterPegasus CMS"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
-    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+{% load record-tags %}
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
+<meta name="description" content="Arturo's Web And Mobile Portfolio"/>
+<meta name="author" content="Arturo"/>
+<meta name="application-name" content="InterPegasus CMS"/>
+<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
+<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
+<script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
+<script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
+<script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
