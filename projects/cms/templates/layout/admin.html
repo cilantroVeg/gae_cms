@@ -1,24 +1,15 @@
 {% if is_admin %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/admin.css" type="text/css" media="screen" />
-    <script src="{{ STATIC_URL }}javascript/admin.js"></script>
-    <div id="menu-tab"></div>
-    <div id="menu-container">
-        <div id="menu-container-top"></div>
-        <div id="menu-container-middle">
-            <ul id="menu">
-                <li><a target="_self" onclick="javascript:window.open('/languages/','_self');" href="#">Languages</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/categories/','_self');" href="#">Categories</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/pages/','_self');" href="#">Pages</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/records/','_self');" href="#">Records</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/users/','_self');" href="#">Users</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/spreadsheets/','_self');" href="#">Spreadsheets</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/galleries/','_self');" href="#">Galleries</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/images/','_self');" href="#">Images</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/feeds/','_self');" href="#">Feeds</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/advertisements/','_self');" href="#">Advertisements</a></li>
-                <li><a target="_self" onclick="javascript:window.open('/delete_cache/','_self');" href="#">Delete Cache</a></li>
-            </ul>
-        </div>
-        <div id="menu-container-footer"></div>
-    </div>
+<ul>
+    <li><a target="_self" onclick="javascript:window.open('/languages/','_self');" href="#">Languages</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/categories/','_self');" href="#">Categories</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/pages/','_self');" href="#">Pages</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/records/','_self');" href="#">Records</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/users/','_self');" href="#">Users</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/spreadsheets/','_self');" href="#">Spreadsheets</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/galleries/','_self');" href="#">Galleries</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/images/','_self');" href="#">Images</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/feeds/','_self');" href="#">Feeds</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/advertisements/','_self');" href="#">Advertisements</a></li>
+    <li><a target="_self" onclick="javascript:window.open('/delete_cache/','_self');" href="#">Delete Cache</a></li>
+</ul>
 {% endif %}

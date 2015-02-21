@@ -27,135 +27,148 @@
     {% block js %}{% endblock %}
 </head>
 <body>
-{% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
-
-<nav class="top-bar" data-topbar="" role="navigation">
-    <!-- Title -->
-    <ul class="title-area">
-        <li class="name">
-            <h2><a href="/en">Arturo's&nbsp;Portfolio</a></h2>
-        </li>
-        <!-- Mobile Menu Toggle -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <!-- Top Bar Section -->
-    <section class="top-bar-section">
-        <!-- Top Bar Left Nav Elements -->
-        <ul class="left">
-            <!-- Search | has-form wrapper -->
-            <li class="has-form">
-                <div class="row collapse">
-                    <div class="large-8 small-9 columns">
-                        <input id="search" name="search" placeholder="Projects & Technologies" type="text">
-                    </div>
-                    <div class="large-4 small-3 columns">
-                        <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <!-- Top Bar Right Nav Elements -->
-        <ul class="right">
-            <!-- Divider -->
-            <li class="divider"></li>
-            <!-- Dropdown -->
-            <li class="has-dropdown not-click"><a href="#">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <ul class="dropdown">
-                    <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-                    {% for page in page_list %}
-                    <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
-                    <li class="divider"></li>
-                    {% endfor %}
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <!-- Title -->
+            <ul class="title-area">
+                <li class="name">
+                    <h2><a href="/en">Arturo's&nbsp;Portfolio</a></h2>
+                </li>
+                <!-- Mobile Menu Toggle -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <!-- Top Bar Section -->
+            <section class="top-bar-section">
+                <!-- Top Bar Left Nav Elements -->
+                <ul class="left">
+                    <!-- Search | has-form wrapper -->
+                    <li class="has-form">
+                        <div class="row collapse">
+                            <div class="large-8 small-9 columns">
+                                <input id="search" name="search" placeholder="Projects & Technologies" type="text">
+                            </div>
+                            <div class="large-4 small-3 columns">
+                                <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-            </li>
-            <li class="divider"></li>
-            <!-- Button -->
-            <li class="has-form show-for-large-up">
-                <div id="social">
-                    {% include "layout/social_login_3.html" %}
-                </div>
-            </li>
-        </ul>
-    </section>
-</nav>
+
+                <!-- Top Bar Right Nav Elements -->
+                <ul class="right">
+                    <!-- Divider -->
+                    <li class="divider"></li>
+                    <!-- Dropdown -->
+                    <li class="has-dropdown not-click"><a href="#">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <ul class="dropdown">
+                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            <li class="divider"></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <!-- Button -->
+                    <li class="has-form show-for-large-up">
+                        <div id="social">
+                            {% include "layout/social_login_3.html" %}
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
 
 
-<div class="row row-top">
-    <div class="panel panel-top">
-        <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
-    </div>
-</div>
-<hr />
 
+        <!-- Off Canvas Menu -->
 
-
-<div class="row">
-    <div class="large-3 columns ">
-        <div class="panel">
-            <h4><a href="/">Arturo's Portfolio</a></h4>
-            <hr />
-            <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-                {% for page in page_list %}
-                <section class="section">
-                    <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
-                </section>
-                {% endfor %}
-                <hr />
-                <section class="section">
-                    <h5 class="title"><a href="/contact">Contact</a></h5>
-                </section>
+        <aside class="left-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <div class="row row-top">
+            <div class="panel panel-top">
+                <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
             </div>
         </div>
-    </div>
-    <div class="large-9 columns">
-        <div id="feedback">
+        <hr />
 
-        </div>
 
-        {% for page in page_list %}
-        <div class="row portfolio_item" id="{{page.title|slugify}}">
-            <div class="large-3 columns small-3">
-                <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
+
+        <div class="row">
+            <div class="large-3 columns ">
+                <div class="panel">
+                    <h4><a href="/">Arturo's Portfolio</a></h4>
+                    <hr />
+                    <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+                        {% for page in page_list %}
+                        <section class="section">
+                            <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
+                        </section>
+                        {% endfor %}
+                        <hr />
+                        <section class="section">
+                            <h5 class="title"><a href="/contact">Contact</a></h5>
+                        </section>
+                    </div>
+                </div>
             </div>
             <div class="large-9 columns">
-                <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
-                <div id="{{page.title|slugify}}_truncated">
-                    {{page.content | truncatewords_html:3 | safe }}
-                    <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
+                <div id="feedback">
+
                 </div>
-                <div id="{{page.title|slugify}}_full" style="display: none;">
-                    {{page.content | safe }}
-                    <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
+                {% if is_admin %}
+                <a class="left-off-canvas-toggle fi-widget size-24" href="#"><span></span></a>
+                {% endif %}
+                {% for page in page_list %}
+                <div class="row portfolio_item" id="{{page.title|slugify}}">
+                    <div class="large-3 columns small-3">
+                        <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
+                    </div>
+                    <div class="large-9 columns">
+                        <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
+                        <div id="{{page.title|slugify}}_truncated">
+                            {{page.content | truncatewords_html:3 | safe }}
+                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
+                        </div>
+                        <div id="{{page.title|slugify}}_full" style="display: none;">
+                            {{page.content | safe }}
+                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
+                        </div>
+                        <div class="right_bottom">
+                            {% include "layout/add_this_4.html" %}
+                        </div>
+                    </div>
                 </div>
-                <div class="right_bottom">
-                    {% include "layout/add_this_4.html" %}
-                </div>
+                <hr/>
+                {% endfor %}
             </div>
         </div>
-        <hr/>
-        {% endfor %}
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr/>
+                <div class="row">
+                    <div class="large-5 columns">
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
+                    </div>
+                    <div class="large-7 columns">
+                        <ul class="inline-list right">
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+
     </div>
 </div>
-
-<footer class="row">
-    <div class="large-12 columns">
-        <hr/>
-        <div class="row">
-            <div class="large-5 columns">
-                <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
-            </div>
-            <div class="large-7 columns">
-                <ul class="inline-list right">
-                    {% for page in page_list %}
-                    <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 <script>
     $(document).foundation();
     var doc = document.documentElement;
