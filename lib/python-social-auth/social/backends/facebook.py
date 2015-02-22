@@ -10,7 +10,8 @@ import hashlib
 
 from social.utils import parse_qs, constant_time_compare
 from social.backends.oauth import BaseOAuth2
-from social.exceptions import AuthException, AuthCanceled, AuthUnknownError
+from social.exceptions import AuthException, AuthCanceled, AuthUnknownError, \
+                              AuthMissingParameter
 
 
 class FacebookOAuth2(BaseOAuth2):
@@ -22,6 +23,7 @@ class FacebookOAuth2(BaseOAuth2):
     ACCESS_TOKEN_URL = 'https://graph.facebook.com/oauth/access_token'
     REVOKE_TOKEN_URL = 'https://graph.facebook.com/{uid}/permissions'
     REVOKE_TOKEN_METHOD = 'DELETE'
+    USER_DATA_URL = 'https://graph.facebook.com/me'
     EXTRA_DATA = [
         ('id', 'id'),
         ('expires', 'expires')
@@ -29,18 +31,22 @@ class FacebookOAuth2(BaseOAuth2):
 
     def get_user_details(self, response):
         """Return user details from Facebook account"""
+        fullname, first_name, last_name = self.get_user_names(
+            response.get('name', ''),
+            response.get('first_name', ''),
+            response.get('last_name', '')
+        )
         return {'username': response.get('username', response.get('name')),
                 'email': response.get('email', ''),
-                'fullname': response.get('name', ''),
-                'first_name': response.get('first_name', ''),
-                'last_name': response.get('last_name', '')}
+                'fullname': fullname,
+                'first_name': first_name,
+                'last_name': last_name}
 
     def user_data(self, access_token, *args, **kwargs):
         """Loads user data from service"""
         params = self.setting('PROFILE_EXTRA_PARAMS', {})
         params['access_token'] = access_token
-        return self.get_json('https://graph.facebook.com/me',
-                             params=params)
+        return self.get_json(self.USER_DATA_URL, params=params)
 
     def process_error(self, data):
         super(FacebookOAuth2, self).process_error(data)
@@ -51,6 +57,8 @@ class FacebookOAuth2(BaseOAuth2):
     def auth_complete(self, *args, **kwargs):
         """Completes loging process, must return user instance"""
         self.process_error(self.data)
+        if not self.data.get('code'):
+            raise AuthMissingParameter(self, 'code')
         state = self.validate_state()
         key, secret = self.get_key_and_secret()
         url = self.ACCESS_TOKEN_URL
@@ -102,7 +110,9 @@ class FacebookOAuth2(BaseOAuth2):
         return {'access_token': token}
 
     def process_revoke_token_response(self, response):
-        return response.code == 200 and response.content == 'true'
+        return super(FacebookOAuth2, self).process_revoke_token_response(
+            response
+        ) and response.content == 'true'
 
 
 class FacebookAppOAuth2(FacebookOAuth2):
@@ -119,12 +129,12 @@ class FacebookAppOAuth2(FacebookOAuth2):
         if 'signed_request' in self.data:
             key, secret = self.get_key_and_secret()
             response = self.load_signed_request(self.data['signed_request'])
-            if not 'user_id' in response and not 'oauth_token' in response:
+            if 'user_id' not in response and 'oauth_token' not in response:
                 raise AuthException(self)
 
             if response is not None:
                 access_token = response.get('access_token') or \
-                               response['oauth_token'] or \
+                               response.get('oauth_token') or \
                                self.data.get('access_token')
 
         if access_token is None:
@@ -169,3 +179,15 @@ class FacebookAppOAuth2(FacebookOAuth2):
             if constant_time_compare(sig, expected_sig) and \
                data['issued_at'] > (time.time() - 86400):
                 return data
+
+
+class Facebook2OAuth2(FacebookOAuth2):
+    """Facebook OAuth2 authentication backend using Facebook Open Graph 2.0"""
+    AUTHORIZATION_URL = 'https://www.facebook.com/v2.0/dialog/oauth'
+    ACCESS_TOKEN_URL = 'https://graph.facebook.com/v2.0/oauth/access_token'
+    REVOKE_TOKEN_URL = 'https://graph.facebook.com/v2.0/{uid}/permissions'
+    USER_DATA_URL = 'https://graph.facebook.com/v2.0/me'
+
+
+class Facebook2AppOAuth2(Facebook2OAuth2, FacebookAppOAuth2):
+    pass

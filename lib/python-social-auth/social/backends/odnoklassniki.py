@@ -22,12 +22,17 @@ class OdnoklassnikiOAuth2(BaseOAuth2):
 
     def get_user_details(self, response):
         """Return user details from Odnoklassniki request"""
+        fullname, first_name, last_name = self.get_user_names(
+            fullname=unquote(response['name']),
+            first_name=unquote(response['first_name']),
+            last_name=unquote(response['last_name'])
+        )
         return {
             'username': response['uid'],
             'email': '',
-            'fullname': unquote(response['name']),
-            'first_name': unquote(response['first_name']),
-            'last_name': unquote(response['last_name'])
+            'fullname': fullname,
+            'first_name': first_name,
+            'last_name': last_name
         }
 
     def user_data(self, access_token, *args, **kwargs):
@@ -49,15 +54,20 @@ class OdnoklassnikiApp(BaseAuth):
                             if key in response['extra_data_list']])
 
     def get_user_details(self, response):
+        fullname, first_name, last_name = self.get_user_names(
+            fullname=unquote(response['name']),
+            first_name=unquote(response['first_name']),
+            last_name=unquote(response['last_name'])
+        )
         return {
             'username': response['uid'],
             'email': '',
-            'fullname': unquote(response['name']),
-            'first_name': unquote(response['first_name']),
-            'last_name': unquote(response['last_name'])
+            'fullname': fullname,
+            'first_name': first_name,
+            'last_name': last_name
         }
 
-    def auth_complete(self, request, user, *args, **kwargs):
+    def auth_complete(self, *args, **kwargs):
         self.verify_auth_sig()
         response = self.get_response()
         fields = ('uid', 'first_name', 'last_name', 'name') + \
@@ -84,15 +94,15 @@ class OdnoklassnikiApp(BaseAuth):
             details['extra_data_list'] = fields + auth_data_fields
             kwargs.update({'backend': self, 'response': details})
         else:
-            raise AuthFailed('Cannot get user details: API error')
+            raise AuthFailed(self, 'Cannot get user details: API error')
         return self.strategy.authenticate(*args, **kwargs)
 
     def get_auth_sig(self):
-        secret_key = self.setting('APP_SECRET')
-        hash_source = '{0:d}{1:s}{2:s}'.format(self.data['logged_user_id'],
+        secret_key = self.setting('SECRET')
+        hash_source = '{0:s}{1:s}{2:s}'.format(self.data['logged_user_id'],
                                                self.data['session_key'],
                                                secret_key)
-        return md5(hash_source).hexdigest()
+        return md5(hash_source.encode('utf-8')).hexdigest()
 
     def get_response(self):
         fields = ('logged_user_id', 'api_server', 'application_key',
@@ -115,12 +125,14 @@ def odnoklassniki_oauth_sig(data, client_secret):
         http://dev.odnoklassniki.ru/wiki/pages/viewpage.action?pageId=12878032,
     search for "little bit different way"
     """
-    suffix = md5('{0:s}{1:s}'.format(data['access_token'],
-                                     client_secret)).hexdigest()
+    suffix = md5(
+        '{0:s}{1:s}'.format(data['access_token'],
+                            client_secret).encode('utf-8')
+    ).hexdigest()
     check_list = sorted(['{0:s}={1:s}'.format(key, value)
                             for key, value in data.items()
                                 if key != 'access_token'])
-    return md5(''.join(check_list) + suffix).hexdigest()
+    return md5((''.join(check_list) + suffix).encode('utf-8')).hexdigest()
 
 
 def odnoklassniki_iframe_sig(data, client_secret_or_session_secret):
@@ -133,8 +145,9 @@ def odnoklassniki_iframe_sig(data, client_secret_or_session_secret):
     """
     param_list = sorted(['{0:s}={1:s}'.format(key, value)
                             for key, value in data.items()])
-    return md5(''.join(param_list) +
-               client_secret_or_session_secret).hexdigest()
+    return md5(
+        (''.join(param_list) + client_secret_or_session_secret).encode('utf-8')
+    ).hexdigest()
 
 
 def odnoklassniki_api(backend, data, api_url, public_key, client_secret,

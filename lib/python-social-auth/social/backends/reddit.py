@@ -17,6 +17,7 @@ class RedditOAuth2(BaseOAuth2):
     REDIRECT_STATE = False
     SCOPE_SEPARATOR = ','
     DEFAULT_SCOPE = ['identity']
+    SEND_USER_AGENT = True
     EXTRA_DATA = [
         ('id', 'id'),
         ('link_karma', 'link_karma'),
@@ -26,7 +27,7 @@ class RedditOAuth2(BaseOAuth2):
     ]
 
     def get_user_details(self, response):
-        """Return user details from Github account"""
+        """Return user details from Reddit account"""
         return {'username': response.get('name'),
                 'email': '', 'fullname': '',
                 'first_name': '', 'last_name': ''}

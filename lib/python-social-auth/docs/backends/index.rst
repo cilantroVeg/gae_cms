@@ -50,13 +50,17 @@ Social backends
    angel
    aol
    appsfuel
+   battlenet
+   beats
    behance
    belgium_eid
    bitbucket
    box
+   clef
    coinbase
    dailymotion
    disqus
+   docker
    douban
    dropbox
    evernote
@@ -69,34 +73,52 @@ Social backends
    google
    instagram
    jawbone
+   kakao
+   khanacademy
+   lastfm
    linkedin
    livejournal
    live
+   loginradius
    mailru
+   mapmyfitness
    mendeley
+   mineid
    mixcloud
+   moves
+   nationbuilder
    odnoklassnikiru
+   openstreetmap
    persona
+   pixelpin
    pocket
    podio
+   qq
    rdio
    readability
    reddit
    runkeeper
+   salesforce
    shopify
    skyrock
+   slack
    soundcloud
+   spotify
    suse
    stackoverflow
    steam
    stocktwits
+   strava
    stripe
+   taobao
    thisismyjam
    trello
    tripit
    tumblr
    twilio
+   twitch
    twitter
+   vimeo
    vk
    weibo
    xing

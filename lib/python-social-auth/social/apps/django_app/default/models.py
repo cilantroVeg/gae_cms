@@ -33,6 +33,9 @@ class UserSocialAuth(models.Model, DjangoUserMixin):
     uid = models.CharField(max_length=UID_LENGTH)
     extra_data = JSONField()
 
+    def __str__(self):
+        return str(self.user)
+
     class Meta:
         """Meta data"""
         unique_together = ('provider', 'uid')
@@ -65,9 +68,10 @@ class Nonce(models.Model, DjangoNonceMixin):
     """One use numbers"""
     server_url = models.CharField(max_length=NONCE_SERVER_URL_LENGTH)
     timestamp = models.IntegerField()
-    salt = models.CharField(max_length=40)
+    salt = models.CharField(max_length=65)
 
     class Meta:
+        unique_together = ('server_url', 'timestamp', 'salt')
         db_table = 'social_auth_nonce'
 
 

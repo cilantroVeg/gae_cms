@@ -17,6 +17,10 @@ for more frameworks and ORMs.
 .. image:: https://pypip.in/d/python-social-auth/badge.png
    :target: https://crate.io/packages/python-social-auth?version=latest
 
+.. image:: https://readthedocs.org/projects/python-social-auth/badge/?version=latest
+   :target: https://readthedocs.org/projects/python-social-auth/?badge=latest
+   :alt: Documentation Status
+
 .. contents:: Table of Contents
 
 
@@ -56,10 +60,12 @@ or current ones extended):
     * BelgiumEIDOpenId_ OpenId https://www.e-contract.be/
     * Bitbucket_ OAuth1
     * Box_ OAuth2
+    * Clef_ OAuth2
+    * Coursera_ OAuth2
     * Dailymotion_ OAuth2
     * Disqus_ OAuth2
     * Douban_ OAuth1 and OAuth2
-    * Dropbox_ OAuth1
+    * Dropbox_ OAuth1 and OAuth2
     * Evernote_ OAuth1
     * Exacttarget OAuth2
     * Facebook_ OAuth2 and OAuth2 for Applications
@@ -72,17 +78,23 @@ or current ones extended):
     * Google_ OAuth1, OAuth2 and OpenId
     * Instagram_ OAuth2
     * Jawbone_ OAuth2 https://jawbone.com/up/developer/authentication
+    * Kakao_ OAuth2 https://developer.kakao.com
+    * `Khan Academy`_ OAuth1
+    * Launchpad_ OpenId
     * Linkedin_ OAuth1
     * Live_ OAuth2
     * Livejournal_ OpenId
+    * LoginRadius_ OAuth2 and Application Auth
     * Mailru_ OAuth2
+    * MapMyFitness_ OAuth2
     * Mendeley_ OAuth1 http://mendeley.com
     * Mixcloud_ OAuth2
     * `Mozilla Persona`_
     * Odnoklassniki_ OAuth2 and Application Auth
     * OpenId_
+    * OpenStreetMap_ OAuth1 http://wiki.openstreetmap.org/wiki/OAuth
     * OpenSuse_ OpenId http://en.opensuse.org/openSUSE:Connect
-    * Orkut_ OAuth1
+    * PixelPin_ OAuth2
     * Pocket_ OAuth2
     * Podio_ OAuth2
     * Rdio_ OAuth1 and OAuth2
@@ -94,7 +106,9 @@ or current ones extended):
     * Stackoverflow_ OAuth2
     * Steam_ OpenId
     * Stocktwits_ OAuth2
+    * Strava_ OAuth2
     * Stripe_ OAuth2
+    * Taobao_ OAuth2 http://open.taobao.com/doc/detail.htm?id=118
     * ThisIsMyJam_ OAuth1 https://www.thisismyjam.com/developers/authentication
     * Trello_ OAuth1 https://trello.com/docs/gettingstarted/oauth.html
     * Tripit_ OAuth1
@@ -136,11 +150,14 @@ Dependencies that **must** be met to use the application:
 
 - OpenId_ support depends on python-openid_
 
-- OAuth_ support depends on python-oauth2_ (despite the name, this is just for
-  OAuth1)
+- OAuth_ support depends on requests-oauthlib_
 
 - Several backends demand application registration on their corresponding
   sites and other dependencies like sqlalchemy_ on Flask and Webpy.
+
+- Other dependencies:
+    * six_
+    * requests_
 
 
 Documents
@@ -174,6 +191,19 @@ Or::
     $ cd python-social-auth
     $ sudo python setup.py install
 
+
+Upgrading
+---------
+
+Django with South
+~~~~~~~~~~~~~~~~~
+
+Upgrading from 0.1 to 0.2 is likely to cause problems trying to apply a migration when the tables
+already exist. In this case a fake migration needs to be applied::
+
+    $ python manage.py migrate --fake default
+
+
 Support
 ---------------------
 
@@ -203,6 +233,8 @@ check `django-social-auth LICENSE`_ for details:
 .. _Behance: https://www.behance.net
 .. _Bitbucket: https://bitbucket.org
 .. _Box: https://www.box.com
+.. _Clef: https://getclef.com/
+.. _Coursera: https://www.coursera.org/
 .. _Dailymotion: https://dailymotion.com
 .. _Disqus: https://disqus.com
 .. _Douban: http://www.douban.com
@@ -216,21 +248,25 @@ check `django-social-auth LICENSE`_ for details:
 .. _Github: https://github.com
 .. _Google: http://google.com
 .. _Instagram: https://instagram.com
+.. _LaunchPad: https://help.launchpad.net/YourAccount/OpenID
 .. _Linkedin: https://www.linkedin.com
 .. _Live: https://live.com
 .. _Livejournal: http://livejournal.com
+.. _Khan Academy: https://github.com/Khan/khan-api/wiki/Khan-Academy-API-Authentication
 .. _Mailru: https://mail.ru
+.. _MapMyFitness: http://www.mapmyfitness.com/
 .. _Mixcloud: https://www.mixcloud.com
 .. _Mozilla Persona: http://www.mozilla.org/persona/
 .. _Odnoklassniki: http://www.odnoklassniki.ru
-.. _Orkut: http://www.orkut.com
 .. _Pocket: http://getpocket.com
 .. _Podio: https://podio.com
 .. _Shopify: http://shopify.com
 .. _Skyrock: https://skyrock.com
 .. _Soundcloud: https://soundcloud.com
 .. _Stocktwits: https://stocktwits.com
+.. _Strava: http://strava.com
 .. _Stripe: https://stripe.com
+.. _Taobao: http://open.taobao.com/doc/detail.htm?id=118
 .. _Tripit: https://www.tripit.com
 .. _Twilio: https://www.twilio.com
 .. _Twitter: http://twitter.com
@@ -261,6 +297,10 @@ check `django-social-auth LICENSE`_ for details:
 .. _Webpy: https://github.com/omab/python-social-auth/tree/master/social/apps/webpy_app
 .. _Tornado: http://www.tornadoweb.org/
 .. _python-openid: http://pypi.python.org/pypi/python-openid/
-.. _python-oauth2: https://github.com/simplegeo/python-oauth2
+.. _requests-oauthlib: https://requests-oauthlib.readthedocs.org/
 .. _sqlalchemy: http://www.sqlalchemy.org/
 .. _pypi: http://pypi.python.org/pypi/python-social-auth/
+.. _OpenStreetMap: http://www.openstreetmap.org
+.. _six: http://pythonhosted.org/six/
+.. _requests: http://docs.python-requests.org/en/latest/
+.. _PixelPin: http://pixelpin.co.uk

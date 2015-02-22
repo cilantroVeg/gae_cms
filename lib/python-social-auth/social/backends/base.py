@@ -1,6 +1,7 @@
-from requests import request
+from requests import request, ConnectionError
 
-from social.utils import module_member, parse_qs
+from social.utils import module_member, parse_qs, user_agent
+from social.exceptions import AuthFailed
 
 
 class BaseAuth(object):
@@ -9,9 +10,11 @@ class BaseAuth(object):
     name = ''  # provider name, it's stored in database
     supports_inactive_user = False  # Django auth
     ID_KEY = None
+    EXTRA_DATA = None
     REQUIRES_EMAIL_VALIDATION = False
+    SEND_USER_AGENT = False
 
-    def __init__(self, strategy=None, redirect_uri=None, *args, **kwargs):
+    def __init__(self, strategy=None, redirect_uri=None):
         self.strategy = strategy
         self.redirect_uri = redirect_uri
         self.data = {}
@@ -24,6 +27,17 @@ class BaseAuth(object):
     def setting(self, name, default=None):
         """Return setting value from strategy"""
         return self.strategy.setting(name, default=default, backend=self)
+
+    def start(self):
+        # Clean any partial pipeline info before starting the process
+        self.strategy.clean_partial_pipeline()
+        if self.uses_redirect():
+            return self.strategy.redirect(self.auth_url())
+        else:
+            return self.strategy.html(self.auth_html())
+
+    def complete(self, *args, **kwargs):
+        return self.auth_complete(*args, **kwargs)
 
     def auth_url(self):
         """Must return redirect URL to auth provider"""
@@ -80,7 +94,7 @@ class BaseAuth(object):
         pipeline = self.strategy.get_disconnect_pipeline()
         if 'pipeline_index' in kwargs:
             pipeline = pipeline[kwargs['pipeline_index']:]
-        kwargs['name'] = self.strategy.backend.name
+        kwargs['name'] = self.name
         kwargs['user_storage'] = self.strategy.storage.user
         return self.run_pipeline(pipeline, *args, **kwargs)
 
@@ -88,7 +102,7 @@ class BaseAuth(object):
         out = kwargs.copy()
         out.setdefault('strategy', self.strategy)
         out.setdefault('backend', out.pop(self.name, None) or self)
-        out.setdefault('request', self.strategy.request)
+        out.setdefault('request', self.strategy.request_data())
 
         for idx, name in enumerate(pipeline):
             out['pipeline_index'] = pipeline_index + idx
@@ -101,8 +115,25 @@ class BaseAuth(object):
         return out
 
     def extra_data(self, user, uid, response, details):
-        """Return default blank user extra data"""
-        return {}
+        """Return deafault extra data to store in extra_data field"""
+        data = {}
+        for entry in (self.EXTRA_DATA or []) + self.setting('EXTRA_DATA', []):
+            if not isinstance(entry, (list, tuple)):
+                entry = (entry,)
+            size = len(entry)
+            if size >= 1 and size <= 3:
+                if size == 3:
+                    name, alias, discard = entry
+                elif size == 2:
+                    (name, alias), discard = entry, False
+                elif size == 1:
+                    name = alias = entry[0]
+                    discard = False
+                value = response.get(name) or details.get(name)
+                if discard and not value:
+                    continue
+                data[alias] = value
+        return data
 
     def auth_allowed(self, response, details):
         """Return True if the user should be allowed to authenticate, by
@@ -117,7 +148,8 @@ class BaseAuth(object):
         return allowed
 
     def get_user_id(self, details, response):
-        """Must return a unique ID from values returned on details"""
+        """Return a unique ID for the current user, by default from server
+        response."""
         return response.get(self.ID_KEY)
 
     def get_user_details(self, response):
@@ -130,6 +162,20 @@ class BaseAuth(object):
         """
         raise NotImplementedError('Implement in subclass')
 
+    def get_user_names(self, fullname='', first_name='', last_name=''):
+        # Avoid None values
+        fullname = fullname or ''
+        first_name = first_name or ''
+        last_name = last_name or ''
+        if fullname and not (first_name or last_name):
+            try:
+                first_name, last_name = fullname.split(' ', 1)
+            except ValueError:
+                first_name = first_name or fullname or ''
+                last_name = last_name or ''
+        fullname = fullname or ' '.join((first_name, last_name))
+        return fullname.strip(), first_name.strip(), last_name.strip()
+
     def get_user(self, user_id):
         """
         Return user with given ID from the User model used by this backend.
@@ -141,8 +187,8 @@ class BaseAuth(object):
 
     def continue_pipeline(self, *args, **kwargs):
         """Continue previous halted pipeline"""
-        kwargs.update({'backend': self})
-        return self.strategy.authenticate(*args, **kwargs)
+        kwargs.update({'backend': self, 'strategy': self.strategy})
+        return self.authenticate(*args, **kwargs)
 
     def request_token_extra_arguments(self):
         """Return extra arguments needed on request-token process"""
@@ -151,7 +197,7 @@ class BaseAuth(object):
     def auth_extra_arguments(self):
         """Return extra arguments needed on auth process. The defaults can be
         overriden by GET parameters."""
-        extra_arguments = self.setting('AUTH_EXTRA_ARGUMENTS', {})
+        extra_arguments = self.setting('AUTH_EXTRA_ARGUMENTS', {}).copy()
         extra_arguments.update((key, self.data[key]) for key in extra_arguments
                                     if key in self.data)
         return extra_arguments
@@ -162,9 +208,19 @@ class BaseAuth(object):
         return True
 
     def request(self, url, method='GET', *args, **kwargs):
+        kwargs.setdefault('headers', {})
+        if self.setting('VERIFY_SSL') is not None:
+            kwargs.setdefault('verify', self.setting('VERIFY_SSL'))
         kwargs.setdefault('timeout', self.setting('REQUESTS_TIMEOUT') or
                                      self.setting('URLOPEN_TIMEOUT'))
-        response = request(method, url, *args, **kwargs)
+
+        if self.SEND_USER_AGENT and 'User-Agent' not in kwargs['headers']:
+            kwargs['headers']['User-Agent'] = user_agent()
+
+        try:
+            response = request(method, url, *args, **kwargs)
+        except ConnectionError as err:
+            raise AuthFailed(self, str(err))
         response.raise_for_status()
         return response
 

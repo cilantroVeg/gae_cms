@@ -6,6 +6,38 @@ settings and methods overrides to retrieve user data from services API. Follow
 the details below.
 
 
+Common attributes
+-----------------
+
+First, lets check the common attributes for all backend types.
+
+``name = ''``
+    Any backend needs a name, usually the popular name of the service is used,
+    like ``facebook``, ``twitter``, etc. It must be unique, otherwise another
+    backend can take precedence if it's listed before in
+    ``AUTHENTICATION_BACKENDS`` setting.
+
+``ID_KEY = None``
+    Defines the attribute in the service response that identifies the user as
+    unique in the service, the value is later stored in the ``uid`` attribute
+    in the ``UserSocialAuth`` instance.
+
+``REQUIRES_EMAIL_VALIDATION = False``
+    Flags the backend to enforce email validation during the pipeline (if the
+    corresponding pipeline ``social.pipeline.mail.mail_validation`` was
+    enabled).
+
+``EXTRA_DATA = None``
+    During the auth process some basic user data is returned by the provider or
+    retrieved by ``user_data()`` method which usually is used to call some API
+    on the provider to retrieve it. This data will be stored under
+    ``UserSocialAuth.extra_data`` attribute, but to make it accessible under
+    some common names on different providers, this attribute defines a list of
+    tuples in the form ``(name, alias)`` where ``name`` is the key in the user
+    data (which should be a ``dict`` instance) and ``alias`` is the name to
+    store it on ``extra_data``.
+
+
 OAuth
 -----
 
@@ -46,21 +78,11 @@ Shared attributes
     from provider to provider, override the default value with this attribute
     if it differs.
 
-``EXTRA_DATA = None``
-    During the auth process some basic user data is returned by the provider or
-    retrieved by the ``user_data()`` method which calls some API on the
-    provider to retrieve it. This data will be stored under
-    ``UserSocialAuth.extra_data`` attribute, but to make it accessible under
-    some common names on different providers, this attribute defines a list of
-    tuples in the form ``(name, alias)`` where ``name`` is the key in the user
-    data (which should be a ``dict`` instance) and ``alias`` is the name to
-    store it on ``extra_data``.
-
 
 OAuth2
 ******
 
-OAuth2 backends are fair simple to implement, just a few settings, a method
+OAuth2 backends are fairly simple to implement; just a few settings, a method
 override and it's mostly ready to go.
 
 The key points on this backends are:
@@ -73,7 +95,7 @@ The key points on this backends are:
 
 ``ACCESS_TOKEN_URL``
     Must point to the API endpoint that provides an ``access_token`` needed to
-    authenticate in users behalf on futer API calls.
+    authenticate in users behalf on future API calls.
 
 ``REFRESH_TOKEN_URL``
     Some providers give the option to renew the ``access_token`` since they are
@@ -88,12 +110,12 @@ The key points on this backends are:
 
 ``STATE_PARAMETER``
     OAuth2 defines that an ``state`` parameter can be passed in order to
-    validate the process, it's kinda a CSRF check to avoid man in the middle
-    attacks. Some don't recognice it or don't return it which will making the
-    auth process invalid, set this attribute as ``False`` in such case.
+    validate the process, it's kind of a CSRF check to avoid man in the middle
+    attacks. Some don't recognise it or don't return it which will make the
+    auth process invalid. Set this attribute to ``False`` in that case.
 
 ``REDIRECT_STATE``
-    For those providers that don't recognice the ``state`` parameter, the app
+    For those providers that don't recognise the ``state`` parameter, the app
     can add a ``redirect_state`` argument to the ``redirect_uri`` to mimic it.
     Set this value to ``False`` if the provider likes to verify the
     ``redirect_uri`` value and this parameter invalidates that check.

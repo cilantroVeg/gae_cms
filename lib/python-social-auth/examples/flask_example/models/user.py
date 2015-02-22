@@ -1,8 +1,13 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, String, Integer, Boolean
+from sqlalchemy.ext.declarative import declarative_base
 
 from flask.ext.login import UserMixin
 
-from flask_example import Base
+from flask_example import db_session
+
+
+Base = declarative_base()
+Base.query = db_session.query_property()
 
 
 class User(Base, UserMixin):

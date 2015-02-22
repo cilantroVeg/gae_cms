@@ -7,17 +7,21 @@ from social.backends.oauth import BaseOAuth1, BaseOAuth2
 
 class BaseLinkedinAuth(object):
     EXTRA_DATA = [('id', 'id'),
-                  ('first-name', 'first_name'),
-                  ('last-name', 'last_name')]
+                  ('first-name', 'first_name', True),
+                  ('last-name', 'last_name', True),
+                  ('firstName', 'first_name', True),
+                  ('lastName', 'last_name', True)]
     USER_DETAILS = 'https://api.linkedin.com/v1/people/~:({0})'
 
     def get_user_details(self, response):
         """Return user details from Linkedin account"""
-        first_name = response['firstName']
-        last_name = response['lastName']
+        fullname, first_name, last_name = self.get_user_names(
+            first_name=response['firstName'],
+            last_name=response['lastName']
+        )
         email = response.get('emailAddress', '')
         return {'username': first_name + last_name,
-                'fullname': first_name + ' ' + last_name,
+                'fullname': fullname,
                 'first_name': first_name,
                 'last_name': last_name,
                 'email': email}
@@ -73,6 +77,7 @@ class LinkedinOAuth2(BaseLinkedinAuth, BaseOAuth2):
     AUTHORIZATION_URL = 'https://www.linkedin.com/uas/oauth2/authorization'
     ACCESS_TOKEN_URL = 'https://www.linkedin.com/uas/oauth2/accessToken'
     ACCESS_TOKEN_METHOD = 'POST'
+    REDIRECT_STATE = False
 
     def user_data(self, access_token, *args, **kwargs):
         return self.get_json(
@@ -80,4 +85,12 @@ class LinkedinOAuth2(BaseLinkedinAuth, BaseOAuth2):
             params={'oauth2_access_token': access_token,
                     'format': 'json'},
             headers=self.user_data_headers()
+        )
+
+    def request_access_token(self, *args, **kwargs):
+        # LinkedIn expects a POST request with querystring parameters, despite
+        # the spec http://tools.ietf.org/html/rfc6749#section-4.1.3
+        kwargs['params'] = kwargs.pop('data')
+        return super(LinkedinOAuth2, self).request_access_token(
+            *args, **kwargs
         )
