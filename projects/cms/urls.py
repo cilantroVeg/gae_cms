@@ -106,6 +106,11 @@ urlpatterns = patterns('',
     url(r'^user/edit/(?P<id>\d+)[/]$', 'users.views.user_form'),
     url(r'^user/delete/(?P<id>\d+)[/]$', 'users.views.user_delete'),
     url(r'^users[/]$', 'users.views.user_list'),
+    
+    # user_profiles
+    url(r'^user_profile/new[/]$', 'users.views.user_profile_form'),
+    url(r'^user_profile/edit/(?P<id>\d+)[/]$', 'users.views.user_profile_form'),
+    url(r'^user_profiles[/]$', 'users.views.user_profile_list'),
 
     # Admin
     url(r'^delete_cache[/]$', 'pages.views.delete_cache'),
