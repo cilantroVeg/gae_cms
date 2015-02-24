@@ -32,7 +32,7 @@ echo '**********************************'
 echo '* DJANGOAPPENGINE                *'
 echo '**********************************'
 cd djangoappengine
-git reset --hard origin/master
+git reset --hard origin/devserver2
 git status
 git branch
 git pull
