@@ -23,7 +23,7 @@
             <!-- Title -->
             <ul class="title-area">
                 <li class="name">
-                    <h2><a href="/en">Arturo's&nbsp;Portfolio</a></h2>
+                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Arturo's&nbsp;Portfolio</a></h2>
                 </li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -119,7 +119,7 @@
                 {% for page in page_list %}
                 <div class="row portfolio_item" id="{{page.title|slugify}}">
                     <div class="large-3 columns small-3">
-                        <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
+                        <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
                     </div>
                     <div class="large-9 columns">
                         <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
