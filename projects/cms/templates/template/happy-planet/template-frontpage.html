@@ -1,290 +1,177 @@
 {% load record-tags %}
-<!DOCTYPE html lang="en-US">
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
-    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
-
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
-    <link rel='stylesheet' id='reset-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/reset.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='superfish-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/superfish.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fontawsome-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/font-awsome/css/font-awesome.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='orbit-css-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/orbit.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='style-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='color-scheme-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/color/green.css' type='text/css' media='all' />
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/zerogrid.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/responsive.css" type="text/css" media="screen">
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-1.10.2.min.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.carouFredSel-6.2.1-packed.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/hoverIntent.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/superfish.js'></script>
-    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/orbit.min.js'></script>
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/css3-mediaqueries.js"></script>
-
-    <script type="text/javascript" language="javascript">
-        $(function() {
-
-            /* Start Carousel */
-            $('#featured-posts').carouFredSel({
-                auto: true,
-                prev: '#prev2',
-                next: '#next2',
-            });
-            /* End Carousel */
-
-            $('#featured-posts-wwf').carouFredSel({
-                auto: false,
-                prev: '#prev3',
-                next: '#next3',
-            });
-            /* End Carousel */
-
-
-        });
+    {% include "layout/head.html" %}
+    <script type="application/javascript">
+        var availableTags = [
+        {% for page in page_list %}
+        { label: "{{page.title | safe }}", value: "{{page.title | slugify }}" },
+        {% endfor %}
+        ];
     </script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
+    <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
-
-<body class="home blog">
-{% include "layout/admin.html" %}
-{% include "layout/add_this.html" %}
+<body>
 {% include "layout/microdata.html" %}
-<!-- Start Header -->
-<div class="container zerogrid">
-    <div class="col-full"><div class="wrap-col">
-        <div id="header-nav-container">
-
-            <a href="/" style="color:white;font-size: 31px;">
-                NRWL
-            </a>
-            <!-- Navigation Menu -->
-
-            <ul class="sf-menu"><li class="menu-item current-menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/index.html">Home</a></li>
-                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/blog.html">Animals</a></li>
-                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Plants</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 01</a></li>
-                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 02</a></li>
-                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 03</a></li>
-                    </ul>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <!-- Title -->
+            <ul class="title-area">
+                <li class="name">
+                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Arturo's&nbsp;Portfolio</a></h2>
                 </li>
-                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/about.html">News</a></li>
+                <!-- Mobile Menu Toggle -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
-            <!-- End Navigation Menu -->
-
-            <div class="clear"></div>
-
-        </div>
-    </div>
-    </div>
-    <div class="clear"></div>
-</div>
-<div class="spacing-30"></div>
-<!-- End Header -->
-<!-- Start Main Container -->
-<div class="container zerogrid">
-    <!-- Start Featured Carousel -->
-    <div class="container zerogrid">
-        <div class="list_carousel">
-            <ul id="featured-posts">
-                {% for item in feed_pages.GREENPEACE %}               
-                    {% if forloop.counter|divisibleby:"3" %}
-                    <li class="last carousel-item" style="height: 405px;">
-                    {% else %}
-                    <li class="first carousel-item" style="height: 405px;">
-                    {% endif%}
-                    <div class="post-margin">
-                        <h6 style="height: 30px;clear:both;margin-bottom: 30px;"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                        <span style="clear: both;"><i class="fa fa-clock-o"></i>{{item.created_at}}</span>
-                    </div>
-                    
-                    <div class="featured-image">
-                        <a href="/{{request_language}}/feed/{{item.slug}}"><img width="290" height="130" src="{{item.image_url}}"  style="max-width: 290px;max-height: 130px" /></a>
-                        <div class="post-icon">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="post-margin" style="height: 100px;">
-                        <p>{{item.content_no_html|truncate_str:96}}</p>
-                    </div>
-                    <div><img src="{{feed_pages.GREENPEACE.0.feed_image_url}}" style="width:70px;float: right;clear:none;"/></div>
-                    </li>
-                {% endfor %}
-
-            </ul>
-
-            <div class="clear"></div>
-
-            <div class="carousel-controls">
-                <a id="prev2" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
-                <a id="next2" class="next" href="#"><i class="fa fa-angle-right"></i></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Start Posts Container -->
-    <div class="col-2-3" id="post-container">
-        <div class="wrap-col">
-
-            <!-- Start Post Item -->
-            <div class="post">
-                <div class="post-margin">
-
-                    <div class="post-avatar">
-                        <div class="avatar-frame"></div>
-                    </div>
-
-                    <h4 class="post-title"><a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}">{{feed_pages.GREENPEACE.0.title}}</a></h4>
-                    <ul class="post-status">
-                        <li><i class="fa fa-clock-o"></i>{{feed_pages.GREENPEACE.0.created_at}}</li>
-                        <li><i class="fa fa-folder-open-o"></i><a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" title="{{feed_pages.GREENPEACE.0.title}}" rel="category">Read More</a></li>
-                        <li><img src="{{feed_pages.GREENPEACE.0.feed_image_url}}" style="width:70px;float: right;clear:none"/></li>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="featured-image">
-                    <img src="{{feed_pages.GREENPEACE.0.image_url}}" class="attachment-post-standard "  />
-                    <div class="post-icon">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <div class="post-margin">
-                    <p>{{feed_pages.GREENPEACE.0.content_no_html| safe | truncate_str:512}}</p>
-                    <img src="{{feed_pages.GREENPEACE.0.feed_image_url}}" style="width:70px;float: right;clear:none"/>
-                </div>
-
-                <br />
-                <ul class="post-social">
-                    <li>
-                        <a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a>
-                    </li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-            <!-- End Post Item -->
-            <div class="clear"></div>
-        </div>
-        <!-- Start Featured Carousel -->
-    </div>
-    <!-- End Posts Container -->
-
-    <!-- Start Sidebar -->
-    <div class="col-1-3">
-        <div class="wrap-col">
-            <div class="widget-container"><h6 class="widget-title">Latest Posts</h6>	<!-- Start Widget -->
-                <ul class="widget-recent-posts">
-                    {% for item in feed_pages.PETA %}
-                        <li style="clear: both;">
-                            <div class="post-image">
-                                <div class="post-mask"></div>
-                                <img width="70" height="70" src="{{item.image_url}}" class="attachment-post-widget #"  />
+            <!-- Top Bar Section -->
+            <section class="top-bar-section">
+                <!-- Top Bar Left Nav Elements -->
+                <ul class="left">
+                    <!-- Search | has-form wrapper -->
+                    <li class="has-form">
+                        <div class="row collapse">
+                            <div class="large-8 small-9 columns">
+                                <input id="search" name="search" placeholder="Projects & Technologies" type="text">
                             </div>
-                            <h6><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                            <br />
-                            <span style="float: right;">{{item.created_at}}</span>
-                            <div class="clear"></div>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <!-- End Widget -->
-                <div class="clear"></div></div>    <div class="clear"></div>
-        </div>
-    </div>
-    <!-- End Sidebar -->
-
-
-    <div class="clear"></div>
-
-    <div class="container zerogrid">
-        <div class="list_carousel">
-            <ul id="featured-posts-wwf">
-                {% for item in feed_pages.WWF %}
-                    {% if forloop.counter|divisibleby:"3" %}
-                    <li class="last carousel-item" style="height: 320px;">
-                    {% else %}
-                    <li class="first carousel-item" style="height: 320px;">
-                    {% endif%}
-                    <div class="post-margin">
-                        <h6 style="height: 30px;clear:both;margin-bottom: 30px;"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                        <span style="clear: both;"><i class="fa fa-clock-o"></i>{{item.created_at}}</span>
-                    </div>
-
-                    <div class="featured-image" style="text-align: center;align-items: center;padding: 0;margin: 0; max-height: 70px;">
-                        <a href="/{{request_language}}/feed/{{item.slug}}"><img height="130" src="{{item.feed_image_url}}"  style="padding-bottom:5px;padding-top: 5px;max-height: 50px;text-align: center;" /></a>
-                        <div class="post-icon">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                            </span>
+                            <div class="large-4 small-3 columns">
+                                <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="post-margin" style="height: 80px;padding: 5px;margin: 5px;">
-                        <p>{{item.content_no_html|truncate_str:96}}</p>
-                    </div>
-                    <div style="text-align: right;padding: 5px;"><a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="readmore">Read More <i class="fa fa-arrow-circle-o-right"></i></a></div>
-
                     </li>
+                </ul>
 
-                {% endfor %}
+                <!-- Top Bar Right Nav Elements -->
+                <ul class="right">
+                    <!-- Divider -->
+                    <li class="divider"></li>
+                    <!-- Dropdown -->
+                    <li class="has-dropdown not-click"><a href="#">Projects</a>
+                        <ul class="dropdown">
+                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            <li class="divider"></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <!-- Button -->
+                    <li class="has-form show-for-large-up">
+                        <div id="social">
+                            {% include "layout/social_login_3.html" %}
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
 
-            </ul>
-
-            <div class="clear"></div>
-
-            <div class="carousel-controls">
-                <a id="prev3" class="prev" href="#"><i class="fa fa-angle-left"></i></a>
-                <a id="next3" class="next" href="#"><i class="fa fa-angle-right"></i></a>
-                <div class="clear"></div>
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <aside class="right-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <div class="row row-top">
+            <div class="panel panel-top">
+                <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
+                {% if is_admin %}
+                <span class="show-for-medium-up" style="position:fixed;top:3rem;right: 3rem;">
+                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-24" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-24" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                </span>
+                {% endif %}
             </div>
         </div>
-    </div>
-    {% if is_logged_in %}
-    {% else %}
-    <div class="section" id="enter" >
-        <div class="container">
-            {% include "layout/login_form.html" %}
+        <hr />
+
+        <div class="row">
+            <div class="large-3 columns ">
+                <div class="panel">
+                    <h4><a href="/">Arturo's Portfolio</a></h4>
+                    <hr />
+                    <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+                        {% for page in page_list %}
+                        <section class="section">
+                            <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
+                        </section>
+                        {% endfor %}
+                        <hr />
+                        <section class="section">
+                            <h5 class="title"><a href="/contact">Contact</a></h5>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="large-9 columns">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <div id="feedback">
+
+                </div>
+
+                {% for page in page_list %}
+                <div class="row portfolio_item" id="{{page.title|slugify}}">
+                    <div class="large-3 columns small-3">
+                        <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
+                    </div>
+                    <div class="large-9 columns">
+                        <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
+                        <div id="{{page.title|slugify}}_truncated">
+                            {{page.content | truncatewords_html:3 | safe }}
+                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
+                        </div>
+                        <div id="{{page.title|slugify}}_full" style="display: none;">
+                            {{page.content | safe }}
+                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
+                        </div>
+                        <div class="right_bottom">
+                            {% include "layout/add_this_4.html" %}
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                {% endfor %}
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul class="pagination">
+                    <li class="current"><a href="#" data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Page 1">1</a></li>
+                </ul>
+            </div>
         </div>
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr/>
+                <div class="row">
+                    <div class="large-5 columns">
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
+                    </div>
+                    <div class="large-7 columns">
+                        <ul class="inline-list right">
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
     </div>
-    <div class="clear"></div>
-    {% endif %}
-    <div class="section section-alt" id="contact" >
-        <div class="container">
-            {% include "layout/contact_form_2.html" %}
-        </div>
-    </div>
-    <div class="clear"></div>
 </div>
-<!-- End Main Container -->
-
-
-<!-- Start Footer -->
-<div class="spacing-30"></div>
-<div class="container zerogrid">
-    <div id="footer-container" class="col-full">
-        {% include "layout/footer.html" %}
-        {% include "layout/analytics.html" %}
-    </div>
-</div>
-<!-- End Footer -->
-
-
+<script>
+    $(document).foundation();
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
 </body>
-
 </html>
