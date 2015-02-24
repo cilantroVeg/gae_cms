@@ -1,8 +1,9 @@
 echo '**********************************'
 echo '* AUTOLOAD                       *'
 echo '**********************************'
-hg clone https://bitbucket.org/twanschik/django-autoload
+cd /Users/arturo/interpegasus/gae_cms/django-nonrel
 rm -rf autoload
+hg clone https://bitbucket.org/twanschik/django-autoload
 mv django-autoload/autoload .
 rm -rf django-autoload
 git add autoload && git commit -a -m "autoload"
@@ -11,48 +12,42 @@ git branch
 echo '**********************************'
 echo '* DJANGO                         *'
 echo '**********************************'
-cd django
-git reset --hard origin/nonrel-1.7
+cd /Users/arturo/interpegasus/gae_cms/django-nonrel
+rm -rf django
+git clone https://github.com/django-nonrel/django.git
 git status
 git branch
-git pull
 git remote show origin
-cd ..
 echo '**********************************'
 echo '* DBINDEXER                      *'
 echo '**********************************'
-cd django-dbindexer
-git reset --hard origin/master
+cd /Users/arturo/interpegasus/gae_cms/django-nonrel
+rm -rf django-dbindexer
+git clone https://github.com/django-nonrel/django-dbindexer.git
 git status
 git branch
-git pull
 git remote show origin
-cd ..
 echo '**********************************'
 echo '* DJANGOAPPENGINE                *'
 echo '**********************************'
-cd djangoappengine
-git reset --hard origin/devserver2
+cd /Users/arturo/interpegasus/gae_cms/django-nonrel
+rm -rf djangoappengine
+git clone https://github.com/django-nonrel/djangoappengine.git
 git status
 git branch
-git pull
 git remote show origin
-cd ..
 echo '**********************************'
 echo '* DJANGOTOOLBOX                  *'
 echo '**********************************'
-cd djangotoolbox
-git reset --hard origin/master
+cd /Users/arturo/interpegasus/gae_cms/django-nonrel
+rm -rf djangotoolbox
+git clone https://github.com/django-nonrel/djangotoolbox.git
 git status
 git branch
-git pull
 git remote show origin
-cd ..
-cd ..
-
+cd /Users/arturo/interpegasus/gae_cms/
 echo '**********************************'
 echo '* CMS PEGASUS                    *'
 echo '**********************************'
 git remote show origin
-cd ..
 find . -name "*.pyc" -exec rm -rf {} \;
