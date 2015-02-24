@@ -32,7 +32,7 @@ echo '* DJANGOAPPENGINE                *'
 echo '**********************************'
 cd /Users/arturo/interpegasus/gae_cms/django-nonrel
 rm -rf djangoappengine
-git clone https://github.com/django-nonrel/djangoappengine.git
+git clone https://github.com/django-nonrel/djangoappengine.git --branch devappserver2
 git status
 git branch
 git remote show origin
