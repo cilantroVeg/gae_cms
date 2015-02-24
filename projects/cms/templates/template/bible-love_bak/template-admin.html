@@ -1,0 +1,118 @@
+{% load record-tags %}
+<!DOCTYPE HTML>
+<!--
+	Striped 2.5 by HTML5 Up!
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{current_language_html}}">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+    <meta name="application-name" content="bible">
+    <meta name="generator" content="InterPegasus CMS">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}javascript/bible.js"></script>
+    <script src="{{ STATIC_URL }}javascript/jquery-cookie/src/jquery.cookie.js"></script>
+    <script src="{{ STATIC_URL }}javascript/jquery-textresizer/jquery.textresizer.min.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-size.css"/>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/skel-noscript.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
+    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" rel="stylesheet">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="{{ STATIC_URL }}template/bible.interpegasus.com/js/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie7.css"/><![endif]-->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}template/bible.interpegasus.com/images/favicon.ico">
+</head>
+
+<!--
+    Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+    Set it to "right-sidebar" to, you guessed it, position it on the right.
+-->
+{% if current_bible.right_to_left == 'true' %}
+<body class="right-sidebar">
+{%else %}
+<body class="left-sidebar">
+{%endif%}
+{% include "layout/admin.html" %}
+<div id="top-bar">
+    <div class="top-sections">
+        <select id="language">
+            <option value="eng">English</option>
+            <option value="spa">Español - Spanish</option>
+            <option value="por">Português - Portuguese</option>
+            <option value="fra">Français - French</option>
+            <option value="heb">עברית - Hebrew</option>
+            <option value="zho">中文 - 中國的 - Chinese</option>
+            <option value="jpn">日本語 - Japanese</option>
+            <option disabled>──────────</option>
+            {% for language in languages_bible %}
+            {% if language.language_family_name == language.language_family_english %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_english|truncate_str:21}}
+            </option>
+            {%else%}
+            {% if language.language_family_name|length > 12 %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name|truncate_str:21}}
+            </option>
+            {% else %}
+            <option value="{{language.language_family_iso|lower}}"
+            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
+            </option>
+            {% endif %}
+            {%endif%}
+            {% endfor %}
+        </select>
+    </div>
+</div>
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Content -->
+    <div id="content">
+        <div id="content-inner">
+            <div>{% block content %}{% endblock %}</div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div id="logo">
+            <a href="/">Homepage</a>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright" style="text-align: left">
+            <ul>
+                <li>{{references.0.mark}}</li>
+                <li>Development: <a href="http://www.interpegasus.com" target="_blank">InterPegasus</a></li>
+                <li>Template: <a href="/en/html5/">HTML5 UP</a></li>
+                <li>Contact Us: <a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="sitemap">
+            <h2>Sitemap</h2>
+            <a href="/sitemap">Sitemap</a>
+            <a href="/sitemap.xml">Sitemap XML</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

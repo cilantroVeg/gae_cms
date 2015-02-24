@@ -1,0 +1,132 @@
+{% load record-tags %}
+<!DOCTYPE html lang="en-US">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
+    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+    <link rel='stylesheet' id='reset-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/reset.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='superfish-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/superfish.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawsome-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/font-awsome/css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='orbit-css-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/orbit.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='color-scheme-css'  href='{{ STATIC_URL }}template/www.nrwl.org/css/color/green.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/zerogrid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/responsive.css" type="text/css" media="screen">
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/jquery.carouFredSel-6.2.1-packed.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/hoverIntent.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/superfish.js'></script>
+    <script type='text/javascript' src='{{ STATIC_URL }}template/www.nrwl.org/js/orbit.min.js'></script>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/css3-mediaqueries.js"></script>
+
+    <script type="text/javascript" language="javascript">
+        $(function() {
+
+            /* Start Carousel */
+            $('#featured-posts').carouFredSel({
+                auto: true,
+                prev: '#prev2',
+                next: '#next2',
+            });
+            /* End Carousel */
+
+            $('#featured-posts-wwf').carouFredSel({
+                auto: true,
+                prev: '#prev3',
+                next: '#next3',
+            });
+            /* End Carousel */
+
+
+        });
+    </script>
+    {% block js %}{% endblock %}
+</head>
+
+<body class="home blog">
+{% include "layout/admin.html" %}
+{% include "layout/add_this.html" %}
+{% include "layout/microdata.html" %}
+<!-- Start Header -->
+<div class="container zerogrid">
+    <div class="col-full"><div class="wrap-col">
+        <div id="header-nav-container">
+
+            <a href="/" style="color:white;font-size: 31px;">
+                NRWL
+            </a>
+            <!-- Navigation Menu -->
+
+            <ul class="sf-menu"><li class="menu-item current-menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/index.html">Home</a></li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/blog.html">Animals</a></li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Plants</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 01</a></li>
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 02</a></li>
+                        <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/#">Menu 03</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="{{ STATIC_URL }}template/www.nrwl.org/about.html">News</a></li>
+            </ul>
+            <!-- End Navigation Menu -->
+
+            <div class="clear"></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="spacing-30"></div>
+<!-- End Header -->
+<!-- Start Main Container -->
+<div class="container zerogrid">
+    <!-- Start Featured Carousel -->
+    <div>{% block content %}{% endblock %}</div>
+
+    <div class="clear"></div>
+
+    {% if is_logged_in %}
+    {% else %}
+    <div class="section" id="enter" >
+        <div class="container">
+            {% include "layout/login_form.html" %}
+        </div>
+    </div>
+    <div class="clear"></div>
+    {% endif %}
+    <div class="section section-alt" id="contact" >
+        <div class="container">
+            {% include "layout/contact_form_2.html" %}
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!-- End Main Container -->
+
+
+<!-- Start Footer -->
+<div class="spacing-30"></div>
+<div class="container zerogrid">
+    <div id="footer-container" class="col-full">
+        {% include "layout/footer.html" %}
+        {% include "layout/analytics.html" %}
+    </div>
+</div>
+<!-- End Footer -->
+
+
+</body>
+
+</html>
