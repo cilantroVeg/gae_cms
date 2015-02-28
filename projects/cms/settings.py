@@ -145,9 +145,9 @@ SOCIAL_AUTH_PIPELINE = (
 LOGIN_REDIRECT_URL = '/'
 
 # apps
-APP_NAME = 'arturoportfolio7'
+#APP_NAME = 'arturoportfolio7'
 #APP_NAME = 'arturopegasus7'
-#APP_NAME = 'happy-planet'
+APP_NAME = 'happy-planet'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
 #APP_NAME = 'interpegasus-cms'
@@ -165,7 +165,7 @@ APP_NAME = 'arturoportfolio7'
 # Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if False:
+if True:
     SITE_URL = 'http://127.0.0.1:8001'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'

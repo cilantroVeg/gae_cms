@@ -4,15 +4,11 @@
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
     {% include "layout/head.html" %}
-    <script type="application/javascript">
-        var availableTags = [
-        {% for page in page_list %}
-        { label: "{{page.title | safe }}", value: "{{page.title | slugify }}" },
-        {% endfor %}
-        ];
-    </script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/portfolio.interpegasus.com/css/app.css"/>
-    <script src="{{ STATIC_URL }}template/portfolio.interpegasus.com/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/slick/slick/slick-theme.css"/>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/slick/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/app.css"/>
+    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
 <body>
@@ -23,7 +19,7 @@
             <!-- Title -->
             <ul class="title-area">
                 <li class="name">
-                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Arturo's&nbsp;Portfolio</a></h2>
+                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Natural Resources & Wildlife Organization</a></h2>
                 </li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -31,7 +27,7 @@
             <!-- Top Bar Section -->
             <section class="top-bar-section">
                 <!-- Top Bar Left Nav Elements -->
-                <ul class="left">
+                <ul class="hide">
                     <!-- Search | has-form wrapper -->
                     <li class="has-form">
                         <div class="row collapse">
@@ -50,22 +46,20 @@
                     <!-- Divider -->
                     <li class="divider"></li>
                     <!-- Dropdown -->
-                    <li class="has-dropdown not-click"><a href="#">Projects</a>
-                        <ul class="dropdown">
-                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-                            {% for page in page_list %}
-                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
-                            <li class="divider"></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <!-- Button -->
-                    <li class="has-form show-for-large-up">
+                    <li>
                         <div id="social">
                             {% include "layout/social_login_3.html" %}
                         </div>
                     </li>
+                    {% if is_admin %}
+                    <li>
+                        <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    </li>
+                    <li>
+                        <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                    </li>
+                    {% endif %}
+                    <li class="divider"></li>
                 </ul>
             </section>
         </nav>
@@ -77,73 +71,57 @@
         <aside class="right-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
-        <div class="row row-top">
-            <div class="panel panel-top">
-                <img src="{{ STATIC_URL }}template/portfolio.interpegasus.com/images/arturo.jpg" alt="Arturo's Portfolio"/>
-                {% if is_admin %}
-                <span class="show-for-medium-up" style="position:fixed;top:3rem;right: 3rem;">
-                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-24" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
-                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-24" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
-                </span>
-                {% endif %}
-            </div>
-        </div>
         <hr />
 
         <div class="row">
-            <div class="large-3 columns ">
-                <div class="panel">
-                    <h4><a href="/">Arturo's Portfolio</a></h4>
-                    <hr />
-                    <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-                        {% for page in page_list %}
-                        <section class="section">
-                            <h5 class="title"><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title}}</a></h5>
-                        </section>
-                        {% endfor %}
-                        <hr />
-                        <section class="section">
-                            <h5 class="title"><a href="/contact">Contact</a></h5>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="large-9 columns">
-                <ul class="breadcrumbs">
-                    <li><a href="#">Home</a></li>
-                </ul>
-                <div id="feedback">
-
+            <div class="large-12 columns ">
+                <div class="row slide-me">
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
+                    <div><img src="http://placehold.it/400x300&text=[img]"></div>
                 </div>
 
-                {% for page in page_list %}
-                <div class="row portfolio_item" id="{{page.title|slugify}}">
-                    <div class="large-3 columns small-3">
-                        <a class="th [radius]" target="_blank" href="{{page.link_url}}"><img title="Click to open {{page.title | safe }} in a new window." alt="{{page.title | safe }}" src="{{page.image_url}}"/></a>
-                    </div>
-                    <div class="large-9 columns">
-                        <h4><a target="_blank" href="{{page.link_url}}">{{page.title | safe }}</a></h4>
-                        <div id="{{page.title|slugify}}_truncated">
-                            {{page.content | truncatewords_html:3 | safe }}
-                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').hide();$('#{{page.title|slugify}}_full').show();">Read More</a>
-                        </div>
-                        <div id="{{page.title|slugify}}_full" style="display: none;">
-                            {{page.content | safe }}
-                            <a class="tiny button" onclick="$('#{{page.title|slugify}}_truncated').show();$('#{{page.title|slugify}}_full').hide();">Less</a>
-                        </div>
-                        <div class="right_bottom">
-                            {% include "layout/add_this_4.html" %}
-                        </div>
-                    </div>
-                </div>
                 <hr/>
-                {% endfor %}
-                <ul class="breadcrumbs">
-                    <li><a href="#">Home</a></li>
-                </ul>
-                <ul class="pagination">
-                    <li class="current"><a href="#" data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Page 1">1</a></li>
-                </ul>
+
+                <div class="row">
+                    <div class="large-4 columns">
+                        <img src="http://placehold.it/400x300&text=[img]"/>
+                        <h4>This is a content section.</h4>
+                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                    </div>
+                    <div class="large-4 columns">
+                        <img src="http://placehold.it/400x300&text=[img]"/>
+                        <h4>This is a content section.</h4>
+                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                    </div>
+                    <div class="large-4 columns">
+                        <img src="http://placehold.it/400x300&text=[img]"/>
+                        <h4>This is a content section.</h4>
+                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="panel">
+                            <h4>Get in touch!</h4>
+                            <div class="row">
+                                <div class="large-9 columns">
+                                    <p>We'd love to hear from you, you attractive person you.</p>
+                                </div>
+                                <div class="large-3 columns">
+                                    <a href="#" class="radius button right">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

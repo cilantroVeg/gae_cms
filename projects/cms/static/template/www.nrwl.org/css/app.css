@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+*{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+
+.top-bar .name h2 a{
+    min-width: 300px;
+    max-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.panel-top{
+    padding: 0;
+    background-color: #FFF;
+    border: none;
+    width: 100%;
+
+    max-height: 121px;
+}
+
+.row-top{
+    margin: 0;
+    width: 100%;
+    max-height: 121px;
+    padding: 0;
+}
+
+hr{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.header_login li a {
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.image_thumb{
+    width: 160px;
+    min-width: 160px;
+    min-height: 120px;
+    height: auto;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.right_bottom{
+    float: right;
+    clear: both;
+    padding: 7px 0;
+}
+
+.ui-menu-item{
+    width:180px;
+    background-color: #ffffff;
+    list-style: none;
+    border: 1px solid ghostwhite;
+}
+
+.ui-menu-item.ui-state-focus{
+    width:180px;
+    background-color: #008cba;
+    color: #FFF;
+    list-style: none;
+    border: 1px solid ghostwhite;
+}
+.ui-helper-hidden-accessible { display:none; }
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-32 { font-size: 32px; }
+.size-24 { font-size: 24px; color: #008CBA; }
+
+a.has-tip, .name h1 a{
+    max-height: 2.7rem;
+    text-decoration: none;
+    border-style: none;
+}
+
+#feedback{
+    display: none;
+}
+
+.portfolio_item{
+    padding-top: 5px;
+}
