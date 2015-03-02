@@ -165,8 +165,8 @@ APP_NAME = 'arturoportfolio7'
 # Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if False:
-    SITE_URL = 'http://127.0.0.1:8001'
+if True:
+    SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
     SOCIAL_AUTH_FACEBOOK_KEY = access_keys.MAF_FACEBOOK_KEY
