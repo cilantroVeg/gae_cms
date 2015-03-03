@@ -14,8 +14,8 @@ register = Library()
 
 @register.filter
 def get_record(key, language='en'):
-    cache_key = str(language_code) + str(key)
-    data = get_cache(key)
+    cache_key = str(language_code) + '_get_record_' + str(key)
+    data = get_cache(cache_key)
     if data:
         return data
     else:
@@ -28,7 +28,7 @@ def get_record(key, language='en'):
         else:
             record = Record.objects.filter(key=key).first()
         if record:
-            set_cache(cache_key,data)
+            set_cache(cache_key,record.value)
             return record.value
         else:
             return settings.APP_NAME

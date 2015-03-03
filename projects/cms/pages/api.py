@@ -20,126 +20,159 @@ logger = logging.getLogger(__name__)
 
 # ...
 def languages(request,language_code):
-    response_data = {}
-    languages = []
-    if validate_token(request) and validate_language(language_code):
-        for language in Language.objects.all():
-            l = {}
-            l['name'] = language.name
-            l['code'] = language.code
-            languages.append(l)
-        response_data['languages'] = languages
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+    cache_key = str(language_code) + '_languages_'
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
     else:
-        response_data['languages'] = languages
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=422)
+        response_data = {}
+        languages = []
+        if validate_token(request) and validate_language(language_code):
+            for language in Language.objects.all():
+                l = {}
+                l['name'] = language.name
+                l['code'] = language.code
+                languages.append(l)
+            response_data['languages'] = languages
+            set_cache(cache_key,response_data)
+        else:
+            response_data['languages'] = languages
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
 def categories(request,language_code):
-    response_data = {}
-    categories = []
-    language = validate_language(language_code)
-    if validate_token(request) and language:
-        if request.REQUEST.get('category_slug', None):
-            cat_slug = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
-            if cat_slug:
-                category_set = Category.objects.order_by('order').filter(language=language[0], parent_id=cat_slug[0].id)
-        else:
-            category_set = Category.objects.order_by('order').filter(language=language[0])
-        for category in category_set:
-            c = {}
-            c['id'] = category.id
-            c['name'] = category.name
-            c['language'] = language[0].code
-            c['parent'] = category.parent_id
-            c['slug'] = category.slug
-            c['allow_replies'] = category.allow_replies
-            categories.append(c)
-    response_data['categories'] = categories
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=422)
+    category_slug = request.REQUEST.get('category_slug', None)
+    cache_key = str(language_code) + '_categories_' + str(category_slug)
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    else:
+        response_data = {}
+        categories = []
+        language = validate_language(language_code)
+        if validate_token(request) and language:
+            if category_slug:
+                cat_slug = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
+                if cat_slug:
+                    category_set = Category.objects.order_by('order').filter(language=language[0], parent_id=cat_slug[0].id)
+            else:
+                category_set = Category.objects.order_by('order').filter(language=language[0])
+            for category in category_set:
+                c = {}
+                c['id'] = category.id
+                c['name'] = category.name
+                c['language'] = language[0].code
+                c['parent'] = category.parent_id
+                c['slug'] = category.slug
+                c['allow_replies'] = category.allow_replies
+                categories.append(c)
+        response_data['categories'] = categories
+        set_cache(cache_key,response_data)
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
 def pages(request,language_code):
-    response_data = {}
-    pages = []
-    page_set = []
-    language = validate_language(language_code)
-    if validate_token(request) and language:
-        if request.REQUEST.get('category_slug', None):
-            cat_slug = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
-            if cat_slug:
-                page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id)
-        elif request.REQUEST.get('page_slug', None):
-            page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
-        else:
-            page_set = Page.objects.order_by('title').filter(is_enabled = True)
-        for page in page_set:
-            p = {}
-            p['id'] = page.id
-            p['title'] = page.title
-            p['headline'] = re.sub('<[^<]+?>', '', page.headline).strip()
-            p['slug'] = page.slug
-            p['content'] = page.content if len(page_set) == 1 else None
-            p['content_no_html'] = strip_tags(p['content'] )
-            p['author'] = page.user.first_name if page.user else None
-            p['category'] = page.category.name
-            p['category_slug'] = page.category.slug
-            p['feed_type'] = None
-            p['twitter_hashtags'] = page.twitter_hashtags
-            p['feed_source']= page.feed_source
-            p['feed_image_url'] = None
-            p['image_url']= page.image_url
-            p['video_url']= page.video_url
-            p['audio_url']= page.audio_url
-            p['priority']= page.priority
-            p['is_enabled']= page.is_enabled
-            p['created_at'] = str(naturalday(page.created_at))
-            p['timestamp'] = None
-            pages.append(p)
-    response_data['pages'] = pages
-    return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
+    category_slug = request.REQUEST.get('category_slug', None)
+    page_slug = request.REQUEST.get('page_slug', None):
+    cache_key = str(language_code) + '_pages_' + str(category_slug) + str(page_slug)
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    else:
+        response_data = {}
+        pages = []
+        page_set = []
+        language = validate_language(language_code)
+        if validate_token(request) and language:
+            if category_slug:
+                cat_slug = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
+                if cat_slug:
+                    page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id)
+            elif page_slug:
+                page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
+            else:
+                page_set = Page.objects.order_by('title').filter(is_enabled = True)
+            for page in page_set:
+                p = {}
+                p['id'] = page.id
+                p['title'] = page.title
+                p['headline'] = re.sub('<[^<]+?>', '', page.headline).strip()
+                p['slug'] = page.slug
+                p['content'] = page.content if len(page_set) == 1 else None
+                p['content_no_html'] = strip_tags(p['content'] )
+                p['author'] = page.user.first_name if page.user else None
+                p['category'] = page.category.name
+                p['category_slug'] = page.category.slug
+                p['feed_type'] = None
+                p['twitter_hashtags'] = page.twitter_hashtags
+                p['feed_source']= page.feed_source
+                p['feed_image_url'] = None
+                p['image_url']= page.image_url
+                p['video_url']= page.video_url
+                p['audio_url']= page.audio_url
+                p['priority']= page.priority
+                p['is_enabled']= page.is_enabled
+                p['created_at'] = str(naturalday(page.created_at))
+                p['timestamp'] = None
+                pages.append(p)
+        response_data['pages'] = pages
+        set_cache(cache_key,response_data)
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
 def images(request,language_code):
-    response_data = {}
-    images = []
-    image_set = []
-    if validate_token(request):
-        if request.REQUEST.get('page_slug', None):
-            pag_slug = Page.objects.filter(slug=request.REQUEST['page_slug'])[:1]
-            if pag_slug:
-                image_set = Image.objects.order_by('name').filter(page_id=pag_slug[0].id)
-        else:
-            image_set = Image.objects.order_by('name')
-        for image in image_set:
-            i = {}
-            i['id'] = image.id
-            i['page_slug'] = image.page.slug if image.page else None
-            i['name'] = image.name
-            i['slug'] = image.slug
-            i['picasa_photo_url'] = image.picasa_photo_url
-            i['picasa_thumb_url'] = image.picasa_thumb_url
-            i['height'] = image.height
-            i['width'] = image.width
-            i['created_at'] = str(naturalday(image.created_at))
-            images.append(i)
-    response_data['images'] = images
-    return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
+    page_slug = request.REQUEST.get('page_slug', None):
+    cache_key = str(language_code) + '_images_' + str(page_slug)
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    else:
+        response_data = {}
+        images = []
+        image_set = []
+        if validate_token(request):
+            if page_slug:
+                pag_slug = Page.objects.filter(slug=request.REQUEST['page_slug'])[:1]
+                if pag_slug:
+                    image_set = Image.objects.order_by('name').filter(page_id=pag_slug[0].id)
+            else:
+                image_set = Image.objects.order_by('name')
+            for image in image_set:
+                i = {}
+                i['id'] = image.id
+                i['page_slug'] = image.page.slug if image.page else None
+                i['name'] = image.name
+                i['slug'] = image.slug
+                i['picasa_photo_url'] = image.picasa_photo_url
+                i['picasa_thumb_url'] = image.picasa_thumb_url
+                i['height'] = image.height
+                i['width'] = image.width
+                i['created_at'] = str(naturalday(image.created_at))
+                images.append(i)
+        response_data['images'] = images
+        set_cache(cache_key,response_data)
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
 def feed_pages(request, language_code):
-    response_data = {}
-    pages = []
-    page_set = {}
-    language = validate_language(language_code)
-    if validate_token(request) and language:
-        feeds = Feed.objects.all()
-        # Iterate feeds and add items to page_set
-        for feed in feeds:
-            pages = parse_feed(feed)
-            page_set[feed.source_type] = pages # sorted(pages, key=lambda k: k['timestamp'], reverse=True)
-    response_data['pages'] = page_set
-    return HttpResponse(json.dumps((response_data)), content_type="application/json", status=422)
+    cache_key = str(language_code) + '_feed_pages_'
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    else:
+        response_data = {}
+        pages = []
+        page_set = {}
+        language = validate_language(language_code)
+        if validate_token(request) and language:
+            feeds = Feed.objects.all()
+            # Iterate feeds and add items to page_set
+            for feed in feeds:
+                pages = parse_feed(feed)
+                page_set[feed.source_type] = pages
+        response_data['pages'] = page_set
+        set_cache(cache_key,response_data)
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
 def validate_token(request):
@@ -151,7 +184,14 @@ def validate_token(request):
 
 # ...
 def validate_language(language_code):
-    return Language.objects.filter(code=language_code)[:1]
+    cache_key = str(language_code) + '_validate_language_'
+    data = get_cache(cache_key)
+    if data:
+        return data
+    else:
+        response = Language.objects.filter(code=language_code)[:1]
+        set_cache(cache_key,response)
+        return response
 
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
