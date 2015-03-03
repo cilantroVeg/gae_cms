@@ -6,6 +6,7 @@
 from django.template import Library
 from pages.models import Record, Language
 from django.conf import settings
+from pages.api import *
 import logging
 logger = logging.getLogger(__name__)
 register = Library()
@@ -13,19 +14,24 @@ register = Library()
 
 @register.filter
 def get_record(key, language='en'):
-    if language:
-        l = Language.objects.filter(code=language).first()
-        if l:
-            record = Record.objects.filter(key=key, language=l).first()
+    cache_key = str(language_code) + str(key)
+    data = get_cache(key)
+    if data:
+        return data
+    else:
+        if language:
+            l = Language.objects.filter(code=language).first()
+            if l:
+                record = Record.objects.filter(key=key, language=l).first()
+            else:
+                record = None
         else:
-            record = None
-    else:
-        record = Record.objects.filter(key=key).first()
-    if record:
-        return record.value
-    else:
-        return settings.APP_NAME
-
+            record = Record.objects.filter(key=key).first()
+        if record:
+            set_cache(cache_key,data)
+            return record.value
+        else:
+            return settings.APP_NAME
 
 @register.filter
 def translate(key, language_code):
