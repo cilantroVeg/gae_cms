@@ -73,7 +73,7 @@ def categories(request,language_code):
 # ...
 def pages(request,language_code):
     category_slug = request.REQUEST.get('category_slug', None)
-    page_slug = request.REQUEST.get('page_slug', None):
+    page_slug = request.REQUEST.get('page_slug', None)
     cache_key = str(language_code) + '_pages_' + str(category_slug) + str(page_slug)
     data = get_cache(cache_key)
     if data:
@@ -121,7 +121,7 @@ def pages(request,language_code):
 
 # ...
 def images(request,language_code):
-    page_slug = request.REQUEST.get('page_slug', None):
+    page_slug = request.REQUEST.get('page_slug', None)
     cache_key = str(language_code) + '_images_' + str(page_slug)
     data = get_cache(cache_key)
     if data:
