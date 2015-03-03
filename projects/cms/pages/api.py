@@ -16,6 +16,9 @@ import datetime
 import time
 import requests
 import logging
+from google.appengine.api import memcache
+from google.appengine.ext import db
+from google.appengine.datastore import entity_pb
 logger = logging.getLogger(__name__)
 
 # ...
@@ -190,7 +193,8 @@ def validate_language(language_code='en'):
         return data
     else:
         response = Language.objects.filter(code=language_code)[:1]
-        set_cache(cache_key,response)
+        if response.count():
+            set_cache(cache_key,response)
         return response
 
 # ...
@@ -442,15 +446,35 @@ def get_cache(key):
     key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
     data = memcache.get(key)
     if data:
-        return data
+        return deserialize_entities(data)
     else:
         return None
 
 # ...
 def set_cache(key,data):
     key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
-    memcache.add(key, data, 60*60*24*7)
+    memcache.add(key, serialize_entities(data), 60*60*24*7)
     return data
+
+# ...
+def serialize_entities(models):
+    if models is None:
+        return None
+    elif isinstance(models, db.Model):
+        # Just one instance
+        return db.model_to_protobuf(models).Encode()
+    else:
+    # A list
+        return [db.model_to_protobuf(x).Encode() for x in models]
+
+def deserialize_entities(data):
+    if data is None:
+        return None
+    elif isinstance(data, str):
+        # Just one instance
+        return db.model_from_protobuf(entity_pb.EntityProto(data))
+    else:
+        return [db.model_from_protobuf(entity_pb.EntityProto(x)) for x in data]
 
 # ...
 def request_url(url):

@@ -14,7 +14,7 @@ register = Library()
 
 @register.filter
 def get_record(key, language='en'):
-    cache_key = str(language_code) + '_get_record_' + str(key)
+    cache_key = str(language) + '_get_record_' + str(key)
     data = get_cache(cache_key)
     if data:
         return data
