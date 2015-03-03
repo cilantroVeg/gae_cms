@@ -19,7 +19,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # ...
-def languages(request,language_code):
+def languages(request,language_code='en'):
     cache_key = str(language_code) + '_languages_'
     data = get_cache(cache_key)
     if data:
@@ -40,7 +40,7 @@ def languages(request,language_code):
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
-def categories(request,language_code):
+def categories(request,language_code='en'):
     category_slug = request.REQUEST.get('category_slug', None)
     cache_key = str(language_code) + '_categories_' + str(category_slug)
     data = get_cache(cache_key)
@@ -71,7 +71,7 @@ def categories(request,language_code):
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
-def pages(request,language_code):
+def pages(request,language_code='en'):
     category_slug = request.REQUEST.get('category_slug', None)
     page_slug = request.REQUEST.get('page_slug', None)
     cache_key = str(language_code) + '_pages_' + str(category_slug) + str(page_slug)
@@ -120,7 +120,7 @@ def pages(request,language_code):
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
-def images(request,language_code):
+def images(request,language_code='en'):
     page_slug = request.REQUEST.get('page_slug', None)
     cache_key = str(language_code) + '_images_' + str(page_slug)
     data = get_cache(cache_key)
@@ -154,7 +154,7 @@ def images(request,language_code):
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
-def feed_pages(request, language_code):
+def feed_pages(request, language_code='en'):
     cache_key = str(language_code) + '_feed_pages_'
     data = get_cache(cache_key)
     if data:
@@ -183,7 +183,7 @@ def validate_token(request):
         return False
 
 # ...
-def validate_language(language_code):
+def validate_language(language_code='en'):
     cache_key = str(language_code) + '_validate_language_'
     data = get_cache(cache_key)
     if data:
