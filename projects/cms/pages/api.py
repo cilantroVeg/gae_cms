@@ -399,7 +399,7 @@ def bible_copyright(request,dam_id,return_type=None):
 
 # ...
 def get_cache(key):
-    key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
+    key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
     data = memcache.get(key)
     if data:
         return data
@@ -408,8 +408,8 @@ def get_cache(key):
 
 # ...
 def set_cache(key,data):
-    key = re.sub(r'\W+', '', str(key) + str(settings.APP_NAME))
-    memcache.add(key, data, 60*60*24*30*12)
+    key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
+    memcache.add(key, data, 60*60*24*7)
     return data
 
 # ...
