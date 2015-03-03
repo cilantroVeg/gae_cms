@@ -16,7 +16,7 @@ def get_record(key, language='en'):
     if language:
         l = Language.objects.filter(code=language).first()
         if l:
-            record = Record.objects.filter(key=key, language=l)
+            record = Record.objects.filter(key=key, language=l).first()
         else:
             record = None
     else:

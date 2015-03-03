@@ -707,6 +707,8 @@ def get_image_list(gallery_id):
     return image_list
 
 def front_page_language_family_iso(request,language,bible=None,book=None,chapter=None):
+    if settings.APP_NAME != 'bible-love':
+        return redirect('/', False)
     media = 'text'
     response_format = 'json'
     languages = bible_languages(request,media,response_format)
