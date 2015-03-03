@@ -14,19 +14,15 @@ register = Library()
 @register.filter
 def get_record(key, language='en'):
     if language:
-        try:
-            l = Language.objects.get(code=language)
-        except:
-            logger.error('views/get_record')
-            l = None
+        l = Language.objects.filter(code=language).first()
         if l:
             record = Record.objects.filter(key=key, language=l)
         else:
             record = None
     else:
-        record = Record.objects.filter(key=key)[0].value
+        record = Record.objects.filter(key=key).first()
     if record:
-        return record[0].value
+        return record.value
     else:
         return settings.APP_NAME
 

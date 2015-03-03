@@ -39,12 +39,9 @@ def is_logged_in(request):
 
 # ...
 def is_admin(request):
-    try:
-        if (request.user.email in settings.ADMIN_USERS_EMAILS):
+    if hasattr(request.user, 'email'):
+        if request.user.email in settings.ADMIN_USERS_EMAILS:
             return {'is_admin': True}
-    except:
-        logger.error('context_processors/is_admin')
-        return {'is_admin': False}
     return {'is_admin': False}
 
 # ...

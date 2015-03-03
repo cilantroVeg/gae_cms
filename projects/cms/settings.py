@@ -11,7 +11,7 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = False
+DEBUG = True
 ADMIN_USERS = access_keys.ADMIN_USERS
 ADMIN_USERS_EMAILS = access_keys.ADMIN_USERS_EMAILS
 SERVER_EMAIL = access_keys.SERVER_EMAIL
@@ -165,7 +165,7 @@ APP_NAME = 'arturoportfolio7'
 # Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if False:
+if True:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
