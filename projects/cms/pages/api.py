@@ -6,6 +6,8 @@ from pages.models import *
 from google.appengine.api import urlfetch
 from google.appengine.api import memcache
 from django.utils.html import *
+from google.appengine.api import memcache
+
 import json
 import urllib2
 import urllib
@@ -16,9 +18,7 @@ import datetime
 import time
 import requests
 import logging
-from google.appengine.api import memcache
-from google.appengine.ext import db
-from google.appengine.datastore import entity_pb
+
 logger = logging.getLogger(__name__)
 
 # ...
@@ -29,8 +29,8 @@ def languages(request,language_code='en'):
         return HttpResponse(json.dumps(data), content_type="application/json",status=200)
     else:
         response_data = {}
-        languages = []
         if validate_token(request) and validate_language(language_code):
+            languages = []
             for language in Language.objects.all():
                 l = {}
                 l['name'] = language.name
@@ -39,7 +39,7 @@ def languages(request,language_code='en'):
             response_data['languages'] = languages
             set_cache(cache_key,response_data)
         else:
-            response_data['languages'] = languages
+            response_data['languages'] = None
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
@@ -102,7 +102,7 @@ def pages(request,language_code='en'):
                 p['headline'] = re.sub('<[^<]+?>', '', page.headline).strip()
                 p['slug'] = page.slug
                 p['content'] = page.content if len(page_set) == 1 else None
-                p['content_no_html'] = strip_tags(p['content'] )
+                p['content_no_html'] = strip_tags(p['content'] ) if p['content'] else None
                 p['author'] = page.user.first_name if page.user else None
                 p['category'] = page.category.name
                 p['category_slug'] = page.category.slug
@@ -192,13 +192,22 @@ def validate_language(language_code='en'):
     if data:
         return data
     else:
-        response = Language.objects.filter(code=language_code)[:1]
-        if response.count():
-            set_cache(cache_key,response)
+        response = [Language.objects.filter(code=language_code).first()]
+        set_cache(cache_key,response)
         return response
 
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
+    # Get data from cache
+    key = str(language_code) + str(api_request) + str(extra_parameters)
+    data = get_cache(key)
+    if data is None:
+        # Otherwise get it via query and set cache
+        url = build_url(language_code, api_request, extra_parameters)
+        logger.info(url)
+        result = urlfetch.fetch(url)
+        data = json.loads(result.content)
+        set_cache(key,data)
     try:
         # Get data from cache
         key = str(language_code) + str(api_request) + str(extra_parameters)
@@ -440,7 +449,6 @@ def bible_copyright(request,dam_id,return_type=None):
     else:
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=r.status_code)
 
-
 # ...
 def get_cache(key):
     key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
@@ -457,24 +465,12 @@ def set_cache(key,data):
     return data
 
 # ...
-def serialize_entities(models):
-    if models is None:
-        return None
-    elif isinstance(models, db.Model):
-        # Just one instance
-        return db.model_to_protobuf(models).Encode()
-    else:
-    # A list
-        return [db.model_to_protobuf(x).Encode() for x in models]
+def serialize_entities(data):
+    return (data)
 
+# ...
 def deserialize_entities(data):
-    if data is None:
-        return None
-    elif isinstance(data, str):
-        # Just one instance
-        return db.model_from_protobuf(entity_pb.EntityProto(data))
-    else:
-        return [db.model_from_protobuf(entity_pb.EntityProto(x)) for x in data]
+    return (data)
 
 # ...
 def request_url(url):
