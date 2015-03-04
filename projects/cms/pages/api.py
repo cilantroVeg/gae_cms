@@ -192,8 +192,9 @@ def validate_language(language_code='en'):
     if data:
         return data
     else:
-        response = [Language.objects.filter(code=language_code).first()]
-        set_cache(cache_key,response)
+        response = Language.objects.filter(code=language_code).first()
+        if response:
+            set_cache(cache_key,[response])
         return response
 
 # ...
