@@ -21,7 +21,8 @@ logger = logging.getLogger(__name__)
 
 # ...
 def delete_cache(request):
-    memcache.delete('category_array')
+    from google.appengine.api import memcache
+    memcache.flush_all()
     return redirect('/', False)
 
 # ...
