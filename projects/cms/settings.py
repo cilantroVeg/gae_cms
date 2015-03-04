@@ -11,7 +11,7 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = True
+DEBUG = False
 ADMIN_USERS = access_keys.ADMIN_USERS
 ADMIN_USERS_EMAILS = access_keys.ADMIN_USERS_EMAILS
 SERVER_EMAIL = access_keys.SERVER_EMAIL
@@ -156,16 +156,9 @@ APP_NAME = 'arturoportfolio7'
 # Strategy
 # Get Site Online One By One
 
-# MAF. Status. Fully functional. Improve Sitemap and QA
-# IP. Status. Keep a one page site. Simple. Eventually add news RSS reader.
-# NRWL. Status. Beta. Fetch Animal Plant (s) from wikipodia. Fetch images form scheintific name flickr. Fetch video from youtube
-# Yiyask. Status. Beta. Fetch Recipes form wikia. Fetch vegan recipes various sources.
-# AG. Template. Keep it simple. Post basic photos. and about me.
-# Portfolio. Keep it clean and simple.
-# Bible. Status Fetch data from Bible platform
 # python manage.py runserver 127.0.0.1:8001
 
-if True:
+if False:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
