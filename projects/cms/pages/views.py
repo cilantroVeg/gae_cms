@@ -754,8 +754,14 @@ def upload_handler(request):
         return HttpResponse(json.dumps({'error':'Admin Permission Required'}), content_type="application/json",status=200)
     file_dictionary = {}
     files_array = []
-    file = request.FILES["files[]"]
-    filename = file.name
+    try:
+        file = request.FILES["files[]"]
+        filename = file.name
+    except:
+        file = None
+        filename = None
+        return HttpResponse(json.dumps(None), content_type="application/json",status=200)
+
     import sys
     print >>sys.stderr, 'HELLO'
     print >>sys.stderr, file
