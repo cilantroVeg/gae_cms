@@ -576,10 +576,19 @@ def delete_all():
 def contact(request):
     if request.method == 'POST': # If the form has been submitted...
         form = ContactForm(request.POST) # A form bound to the POST data
+        captcha_response =  request.POST.get('g-recaptcha-response', None)
+        captcha_is_valid = captcha_is_valid(captcha_response,request)
         error_message = message_contains_url(request.POST['contact_comment'])
         if error_message:
             try:
                 data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
+            except:
+                logger.error('views/contact')
+                data = {}
+        elif captcha_is_valid == False:
+            try:
+                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
+                error_message = 'Captcha Issue'
             except:
                 logger.error('views/contact')
                 data = {}

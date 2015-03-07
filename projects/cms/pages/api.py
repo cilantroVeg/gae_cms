@@ -478,9 +478,13 @@ def deserialize_entities(data):
 @csrf_exempt
 def validate_recaptcha(request):
     captcha_response =  request.POST.get('captcha_response', None)
-    url = 'https://www.google.com/recaptcha/api/siteverify'
     response_data = {}
-    response_data['result'] = False
+    response_data['result'] = captcha_is_valid(captcha_response,request)
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+
+def captcha_is_valid(captcha_response,request):
+    url = 'https://www.google.com/recaptcha/api/siteverify'
+    response_data = False
     logger.info('Google Captcha Validation')
     logger.info('captcha_response:')
     logger.info(captcha_response)
@@ -489,9 +493,11 @@ def validate_recaptcha(request):
         response = request_url(url,'POST',params)
         if response:
             response_json = json.loads(response.content)
-            response_data['result'] = response_json['success']
+            response_data = response_json['success']
             logger.info(response_json['success'])
-    return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+    return response_data
+
+
 
 # ...
 def request_url(url,type='GET',params=None):
