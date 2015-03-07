@@ -474,6 +474,12 @@ def deserialize_entities(data):
     return (data)
 
 # ...
+def validate_recaptcha(request):
+    url = 'https://www.google.com/recaptcha/api/siteverify'
+    response_data = False
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+
+# ...
 def request_url(url):
     try:
         r = requests.get(url)

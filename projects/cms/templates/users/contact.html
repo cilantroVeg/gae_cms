@@ -1,6 +1,10 @@
 {% extends template_page %}
+{% block title %}Contact{% endblock %}
+{% block js %}
+<script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
-{% block title %}Contact{% endblock %}{% block js %}
 
 {% endblock %}
 {% block content %}
@@ -22,6 +26,10 @@
             {{ form.as_p }}
         </fieldset>
         </br >
+
+        <div id="captcha" name="captcha" class="g-recaptcha" data-sitekey="6LdhIwMTAAAAALOXVuFBhvUSMrk_J9wM6daQe6Kv"></div>
+
+        <br />
         <input type="submit" value="Contact" class="button" />
     </form>
 

@@ -30,35 +30,9 @@
             </ul>
             <!-- Top Bar Section -->
             <section class="top-bar-section">
-                <!-- Top Bar Left Nav Elements -->
-                <ul class="left">
-                    <!-- Search | has-form wrapper -->
-                    <li class="has-form">
-                        <div class="row collapse">
-                            <div class="large-8 small-9 columns">
-                                <input id="search" name="search" placeholder="Projects & Technologies" type="text">
-                            </div>
-                            <div class="large-4 small-3 columns">
-                                <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="right">
                     <!-- Divider -->
-                    <li class="divider"></li>
-                    <!-- Dropdown -->
-                    <li class="has-dropdown not-click"><a href="#">Projects</a>
-                        <ul class="dropdown">
-                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-                            {% for page in page_list %}
-                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
-                            <li class="divider"></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
                     <li class="divider"></li>
                     <!-- Button -->
                     <li class="has-form show-for-large-up">

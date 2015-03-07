@@ -145,9 +145,9 @@ SOCIAL_AUTH_PIPELINE = (
 LOGIN_REDIRECT_URL = '/'
 
 # apps
-#APP_NAME = 'arturoportfolio7'
+APP_NAME = 'arturoportfolio7'
 #APP_NAME = 'arturopegasus7'
-APP_NAME = 'happy-planet'
+#APP_NAME = 'happy-planet'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
 #APP_NAME = 'interpegasus-cms'
@@ -209,6 +209,9 @@ DBT_GET_BIBLES_FOR_LANGUAGE_URL = access_keys.DBT_GET_BIBLES_FOR_LANGUAGE_URL
 DBT_GET_BIBLE_BOOKS_URL =  access_keys.DBT_GET_BIBLE_BOOKS_URL
 DBT_GET_BIBLE_BOOKS_TEXT_URL =  access_keys.DBT_GET_BIBLE_BOOKS_TEXT_URL
 DBT_GET_COPYRIGHT_URL = access_keys.DBT_GET_COPYRIGHT_URL
+
+CAPTCHA_SITE_KEY = access_keys.CAPTCHA_SITE_KEY
+CAPTCHA_SITE_SECRET = access_keys.CAPTCHA_SITE_SECRET
 
 LOGGING = {
     'version': 1,
