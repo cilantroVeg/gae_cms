@@ -3,8 +3,28 @@
 {% block js %}
 <script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
 <script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script type="text/javascript">
+    var verifyCallback = function(captcha_response) {
+        var url = '/api/validate_recaptcha/'
+        var posting = $.post( url, { captcha_response: captcha_response});
+        posting.done(function( response ) {
+            if(response.result) {
+                $('#contact_button').removeAttr("disabled");
+                $("#contact_button").removeClass("disabled")
+            } else {
+                alert("Captcha Validation Issue");
+            }
+        });
+    };
+    var onloadCallback = function() {
+        grecaptcha.render('google_recaptcha', {
+            'sitekey' : '6LdhIwMTAAAAALOXVuFBhvUSMrk_J9wM6daQe6Kv',
+            'callback' : verifyCallback,
+            'theme' : 'light'
+        });
+    };
+</script>
 
 {% endblock %}
 {% block content %}
@@ -26,12 +46,11 @@
             {{ form.as_p }}
         </fieldset>
         </br >
-
-        <div id="captcha" name="captcha" class="g-recaptcha" data-sitekey="6LdhIwMTAAAAALOXVuFBhvUSMrk_J9wM6daQe6Kv"></div>
-
+        <div id="google_recaptcha"></div>
         <br />
-        <input type="submit" value="Contact" class="button" />
+        <input id="contact_button" type="submit" value="Contact" class="button disabled" disabled="disabled" />
     </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
     <ul class="breadcrumbs">
         <li><a href="/">Home</a></li>

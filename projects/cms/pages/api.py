@@ -7,6 +7,7 @@ from google.appengine.api import urlfetch
 from google.appengine.api import memcache
 from django.utils.html import *
 from google.appengine.api import memcache
+from django.views.decorators.csrf import csrf_exempt
 
 import json
 import urllib2
@@ -474,25 +475,53 @@ def deserialize_entities(data):
     return (data)
 
 # ...
+@csrf_exempt
 def validate_recaptcha(request):
+    captcha_response =  request.POST.get('captcha_response', None)
     url = 'https://www.google.com/recaptcha/api/siteverify'
-    response_data = False
+    response_data = {}
+    response_data['result'] = False
+    logger.info('Google Captcha Validation')
+    logger.info('captcha_response:')
+    logger.info(captcha_response)
+    if captcha_response:
+        params = {'secret': '6LdhIwMTAAAAAB7Rt27xR15hHfK4rZtWgfcEVzqj', 'response': captcha_response, 'remoteip': get_client_ip(request) }
+        response = request_url(url,'POST',params)
+        if response:
+            response_json = json.loads(response.content)
+            response_data['result'] = response_json['success']
+            logger.info(response_json['success'])
     return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 # ...
-def request_url(url):
-    try:
-        r = requests.get(url)
-    except:
-        logger.error('api/request_url')
+def request_url(url,type='GET',params=None):
+    if (type == 'GET'):
         try:
             r = requests.get(url)
         except:
             logger.error('api/request_url')
-            r = None
+            try:
+                r = requests.get(url)
+            except:
+                logger.error('api/request_url')
+                r = None
+    elif (type == 'POST'):
+        headers = {'content-type': 'application/json'}
+        r = requests.post(url, params=params)
     return r
 
 #...
 def xx_log(key, value):
     import sys
     print >> sys.stderr, 'OUTPUT VARIABLE CONTENT ' + str(key) + ': ' + str(value)
+
+def get_client_ip(request):
+    try:
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = request.META.get('REMOTE_ADDR')
+    except:
+        ip=None
+    return ip
