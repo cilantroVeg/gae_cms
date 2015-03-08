@@ -11,7 +11,8 @@
         posting.done(function( response ) {
             if(response.result) {
                 $('#contact_button').removeAttr("disabled");
-                $("#contact_button").removeClass("disabled")
+                $("#contact_button").removeClass("hide");
+                $("#contact_button").show();
             } else {
                 alert("Captcha Validation Issue");
             }
@@ -48,7 +49,7 @@
         </br >
         <div id="google_recaptcha"></div>
         <br />
-        <input id="contact_button" type="submit" value="Contact" class="button disabled" disabled="disabled" />
+        <input id="contact_button" type="submit" value="Contact" class="button hide" disabled="disabled" />
     </form>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 

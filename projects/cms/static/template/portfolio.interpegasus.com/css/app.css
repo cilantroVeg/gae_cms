@@ -79,3 +79,7 @@ a.has-tip, .name h1 a{
 .portfolio_item{
     padding-top: 5px;
 }
+
+#id_contact_comment{
+    height: 200px;
+}
