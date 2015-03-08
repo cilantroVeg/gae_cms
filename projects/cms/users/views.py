@@ -2,7 +2,7 @@
 
 # imports
 from pages.context_processors import *
-from django.contrib.auth.models import *
+from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from django.views.decorators.http import require_http_methods
@@ -38,21 +38,21 @@ def exit_request(request):
 # ...
 @require_http_methods(["POST"])
 def process_create_account(request):
-    try:
-        u = User.objects.filter(email=request.POST['email'])
-    except:
-        logger.error('views/process_create_account')
-        u = False
+    username = request.POST['email']
+    password = request.POST['password']
+    u = User.objects.filter(email=username)
     if u:
         return render_to_response('users/signup.html', {'error_message': "Email is already taken"}, context_instance=RequestContext(request))
-    User.objects.create_user(request.POST['email'], request.POST['email'], request.POST['password'])
-    user = authenticate(username=request.POST['email'], password=request.POST['password'])
+    user = User.objects.create_user(username, username, password)
+    authenticate(username=request.POST['email'], password=request.POST['password'])
     if user is not None:
         if user.is_active:
+            user.backend = "django.contrib.auth.backends.ModelBackend"
             login(request, user)
             return redirect('/', False)
     else:
-        return render_to_response('users/signup.html', {'error_message': "Email is already taken"}, context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'error_message': "User Registration for '"+ username + "' Was Succesful. Please login."}, context_instance=RequestContext(request))
+
 
 # ...
 @require_http_methods(["POST"])
