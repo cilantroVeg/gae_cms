@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 *{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -6,6 +8,10 @@
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 400;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 .top-bar .name h2 a{
@@ -92,4 +98,50 @@ a.has-tip, .name h1 a{
 
 .portfolio_item{
     padding-top: 5px;
+}
+
+.panel.callout{
+    padding:0;
+    margin:7px;
+    height: 360px;
+    background-color: #f4f4f4;
+    border-color: #c0c0c0;
+}
+.panel.callout a img{
+    height:130px;
+    max-height:130px;
+    width: 100%;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+
+.greenpeace_logo{
+    width:70px;
+    bottom: 5%;
+    position: fixed;
+    padding: 7px;
+
+}
+
+.panel_title{
+    max-height: 65px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
+}
+.panel_date{
+    max-height: 30px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 7px;
+}
+.panel_content{
+    max-height: 90px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
 }
