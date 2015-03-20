@@ -497,8 +497,6 @@ def captcha_is_valid(captcha_response,request):
             logger.info(response_json['success'])
     return response_data
 
-
-
 # ...
 def request_url(url,type='GET',params=None):
     if (type == 'GET'):
