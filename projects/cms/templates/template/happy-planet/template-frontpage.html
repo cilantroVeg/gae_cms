@@ -19,33 +19,26 @@
             <!-- Title -->
             <ul class="title-area">
                 <li class="name">
-                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Natural Resources & Wildlife Organization</a></h2>
+                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="nrwl.org">Natural Resources & Wildlife Organization</a></h2>
                 </li>
                 <!-- Mobile Menu Toggle -->
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
             <!-- Top Bar Section -->
             <section class="top-bar-section">
-                <!-- Top Bar Left Nav Elements -->
-                <ul class="hide">
-                    <!-- Search | has-form wrapper -->
-                    <li class="has-form">
-                        <div class="row collapse">
-                            <div class="large-8 small-9 columns">
-                                <input id="search" name="search" placeholder="Projects & Technologies" type="text">
-                            </div>
-                            <div class="large-4 small-3 columns">
-                                <a href="#" onclick="search_results($('#search').val())" class="button expand">Search</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
                 <!-- Top Bar Right Nav Elements -->
                 <ul class="right">
                     <!-- Divider -->
                     <li class="divider"></li>
                     <!-- Dropdown -->
+                    <li class="has-dropdown not-click"><a href="#">Species</a>
+                        <ul class="dropdown">
+                            {% for page in endangered_species %}
+                                <li><a href="/{{request_language}}/{{page.title|slugify}}/">{{page.title|safe}}</a></li>
+                            {% endfor %}
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
                     <li>
                         <div id="social">
                             {% include "layout/social_login_3.html" %}
@@ -132,13 +125,13 @@
             <div class="large-12 columns">
                 <hr/>
                 <div class="row">
-                    <div class="large-5 columns">
+                    <div class="large-3 columns">
                         <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">NRWL {% now "Y" %}</span>
                     </div>
-                    <div class="large-7 columns">
+                    <div class="large-9 columns">
                         <ul class="inline-list right">
-                            {% for page in page_list %}
-                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            {% for page in endangered_species %}
+                                <li><a href="/{{request_language}}/{{page.title|slugify}}/">{{page.title|safe}}</a></li>
                             {% endfor %}
                         </ul>
                     </div>
