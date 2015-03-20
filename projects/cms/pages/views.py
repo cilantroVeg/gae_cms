@@ -574,6 +574,7 @@ def delete_all():
 
 # Contact Form
 def contact(request):
+    from api import captcha_is_valid
     if request.method == 'POST': # If the form has been submitted...
         form = ContactForm(request.POST) # A form bound to the POST data
         captcha_response =  request.POST.get('g-recaptcha-response', None)
@@ -662,8 +663,6 @@ def front_page_language(request,language):
             endangered_species = query_api(language_code, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/front_page_language')
-            feed_pages = None
-            endangered_species = None
         return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
     else:
         image_array = Image.objects.all()[:7]
