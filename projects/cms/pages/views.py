@@ -638,8 +638,9 @@ def front_page(request):
         languages = Language.objects.filter(is_enabled=True)
         for language in languages:
             if language.code in thread_language:
-                return redirect('/'+language.code, False)
-        return redirect('/en', False)
+                if language.code != "":
+                    return redirect('/'+language.code+'/', False)
+        return redirect('/en/', False)
 
 def front_page_language(request,language):
     if settings.APP_NAME == 'bible-love':
