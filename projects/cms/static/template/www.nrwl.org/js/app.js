@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
     $('.slide-me').slick({
         autoplay:true,
         autoplaySpeed:5000,
@@ -9,9 +10,9 @@ $( document ).ready(function() {
         arrows:true,
         initialSlide:1,
         mobileFirst:true
-
     });
-        $('.slide-me-wwf').slick({
+    $('.slide-me').show();
+    $('.slide-me-wwf').slick({
         autoplay:true,
         autoplaySpeed:5000,
         infinite: true,
@@ -21,8 +22,8 @@ $( document ).ready(function() {
         arrows:true,
         initialSlide:1,
         mobileFirst:true
-
     });
+    $('.slide-me-wwf').show();
 
 });
 

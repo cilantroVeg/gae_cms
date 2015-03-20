@@ -74,24 +74,28 @@
         <hr />
 
         <div class="row">
-            <div class="large-12 columns ">
-                <div class="row slide-me">
-                    {% for item in feed_pages.GREENPEACE %}
-                    <div class="panel callout radius">
-                        <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
-                        <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
-                        <a href="/{{request_language}}/feed/{{item.slug}}"><img alt="{{item.title|safe}}" src="{{item.image_url}}" /></span></a>
-                        <p class="panel_content">{{item.content_no_html|truncate_str:96}}</p>
-                        <img class="greenpeace_logo" src="{{feed_pages.GREENPEACE.0.feed_image_url}}"/>
+            <div class="large-12 columns">
+                <div class="slide-height">
+                    <div class="row slide-me">
+                        {% for item in feed_pages.GREENPEACE %}
+                        <div class="panel callout">
+                            <a href="/{{request_language}}/feed/{{item.slug}}" class="panel_image_container"><img alt="{{item.title|safe}}" src="{{item.image_url}}" /></a>
+                            <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
+                            <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
+                            <p class="panel_content">{{item.content_no_html|truncate_str:96}}</p>
+                            <img class="greenpeace_logo" src="{{feed_pages.GREENPEACE.0.feed_image_url}}"/>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
+                    &nbsp;
                 </div>
 
                 <hr/>
 
                 <div class="row">
                     <div class="large-8 columns">
-                        <img src="{{feed_pages.GREENPEACE.0.image_url}}" class="main_article_image"/>
+                        <h2>{{feed_pages.GREENPEACE.0.title}}</h2>
+                        <div class="main_image_container"><img src="{{feed_pages.GREENPEACE.0.image_url}}" /></div>
                         <p>{{feed_pages.GREENPEACE.0.content_no_html| safe | truncate_str:512}}</p>
                         <a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="button">Read More</a>
                     </div>
@@ -118,14 +122,6 @@
                                 <a class="button tiny" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
                             </div>
                             {% endfor %}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="panel">
-                            {% include "layout/contact_form_3.html" %}
                         </div>
                     </div>
                 </div>
