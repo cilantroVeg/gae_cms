@@ -90,27 +90,42 @@
                 <hr/>
 
                 <div class="row">
-                    <div class="large-4 columns">
-                        <img src="http://placehold.it/400x300&text=[img]"/>
-                        <h4>This is a content section.</h4>
-                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                    <div class="large-8 columns">
+                        <img src="{{feed_pages.GREENPEACE.0.image_url}}" class="main_article_image"/>
+                        <p>{{feed_pages.GREENPEACE.0.content_no_html| safe | truncate_str:512}}</p>
+                        <a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="button">Read More</a>
                     </div>
                     <div class="large-4 columns">
-                        <img src="http://placehold.it/400x300&text=[img]"/>
-                        <h4>This is a content section.</h4>
-                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                        {% for item in feed_pages.PETA %}
+                        <panel>
+                            <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
+                            <img class="rouded_image" src="{{item.image_url}}"   />
+                            <h6><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
+                        </panel>
+                        {% endfor %}
                     </div>
-                    <div class="large-4 columns">
-                        <img src="http://placehold.it/400x300&text=[img]"/>
-                        <h4>This is a content section.</h4>
-                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                </div>
+
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="row slide-me-wwf">
+                            {% for item in feed_pages.WWF %}
+                            <div class="panel callout">
+                                <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
+                                <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
+                                <img class="wwf_logo" src="{{feed_pages.WWF.0.feed_image_url}}"/>
+                                <p class="panel_content">{{item.content_no_html|truncate_str:180}}</p>
+                                <a class="button tiny" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="large-12 columns">
                         <div class="panel">
-                            {% include "layout/contact_form_2.html" %}
+                            {% include "layout/contact_form_3.html" %}
                         </div>
                     </div>
                 </div>
@@ -122,7 +137,7 @@
                 <hr/>
                 <div class="row">
                     <div class="large-5 columns">
-                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">NRWL {% now "Y" %}</span>
                     </div>
                     <div class="large-7 columns">
                         <ul class="inline-list right">

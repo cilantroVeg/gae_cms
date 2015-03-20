@@ -1,0 +1,26 @@
+{% block js %}
+<script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/recaptcha.js"></script>
+{% endblock %}
+{% block content %}
+{% if error_message %}
+<div data-alert class="alert-box">
+    {{ error_message }}
+</div>
+{% endif %}
+<div>
+    <h1>Contact</h1>
+    <form id="contact_form" name="contact_form" action="/contact/" method="post">
+        {% csrf_token %}
+        <fieldset>
+            {{ form.as_p }}
+        </fieldset>
+        </br >
+        <div id="google_recaptcha"></div>
+        <br />
+        <input id="contact_button" type="submit" value="Contact" class="button hide" disabled="disabled" />
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</div>
+{% endblock %}

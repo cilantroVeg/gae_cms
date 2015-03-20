@@ -11,6 +11,18 @@ $( document ).ready(function() {
         mobileFirst:true
 
     });
+        $('.slide-me-wwf').slick({
+        autoplay:true,
+        autoplaySpeed:5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots:false,
+        arrows:true,
+        initialSlide:1,
+        mobileFirst:true
+
+    });
 
 });
 

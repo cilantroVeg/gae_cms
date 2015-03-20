@@ -124,6 +124,11 @@ a.has-tip, .name h1 a{
 
 }
 
+.wwf_logo{
+    width:70px;
+    padding: 7px;
+}
+
 .panel_title{
     max-height: 65px;
     display: block;
@@ -144,4 +149,18 @@ a.has-tip, .name h1 a{
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 7px;
+}
+
+.rouded_image{
+    border-radius: 50px;
+    width:70px;
+    height:70px;
+}
+
+.main_article_image{
+    display: block;
+    min-width:360px;
+    max-height:180px;
+    height: auto;
+    overflow: hidden;
 }
