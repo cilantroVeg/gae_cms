@@ -464,7 +464,13 @@ def page_view(request, language, slug):
     else:
         wiki_page = None
     image_array = Image.objects.filter(page=page)
-    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page},context_instance=RequestContext(request))
+    if settings.APP_NAME == 'happy-planet':
+        try:
+            endangered_species = query_api(language_code, 'pages',{'category_slug': 'endangered-species'})['pages']
+        except:
+            logger.error('views/page_view')
+            endangered_species = None
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species},context_instance=RequestContext(request))
 
 #...
 def is_wiki(page):
