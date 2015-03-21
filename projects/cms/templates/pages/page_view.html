@@ -6,8 +6,10 @@
 <div id="static_content">
     <div style="text-align: left;width: 80%;margin-left: auto;margin-right: auto;padding: 10px;">
         {% if wiki_page %}
-            <h2>{{ wiki_page.title }}</h2>
+            <h1>{{ wiki_page.original_content }} - {{ wiki_page.original_title|title }}</h1>
             {{wiki_page.html|safe}}
+            <h3>Reference</h3>
+            <a href="{{wiki_page.url}}">Wikipedia - {{wiki_page.title}}</a>
             <br/>
         {% else %}
             <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>

@@ -34,7 +34,7 @@
                     <li class="has-dropdown not-click"><a href="#">Species</a>
                         <ul class="dropdown">
                             {% for page in endangered_species %}
-                            <li><a href="/{{request_language}}/{{page.title|slugify}}/">{{page.title|safe}}</a></li>
+                                <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
                             {% endfor %}
                             <li class="divider"></li>
                         </ul>
@@ -70,7 +70,6 @@
             <div class="large-12 columns">
                 {% block content %}{% endblock %}
             </div>
-            <hr/>
         </div>
 
         <footer class="row">
@@ -83,7 +82,7 @@
                     <div class="large-9 columns">
                         <ul class="inline-list right">
                             {% for page in endangered_species %}
-                            <li><a href="/{{request_language}}/{{page.title|slugify}}/">{{page.title|safe}}</a></li>
+                                <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
                             {% endfor %}
                         </ul>
                     </div>

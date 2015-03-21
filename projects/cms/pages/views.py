@@ -489,12 +489,24 @@ def process_wiki_page(page):
     try:
         p = wikipedia.page(page.title)
         wiki_page["url"] = p.url
+        wiki_page["original_title"] = page.title
+        wiki_page["original_content"] = page.content
         wiki_page["title"] = p.title
         wiki_page["content"] = p.content
         wiki_page["images"] = p.images
-        wiki_page["html"] = removetags(p.html(),'a b small')
+        wiki_page["html"] = removetags(p.html(),'a b i small')
         soup = BeautifulSoup(wiki_page["html"] )
+
         elements = soup.find_all("div", class_="hatnote")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("div", class_="reflist")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("ol", class_="references")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("ul", class_="gallery mw-gallery-traditional")
         [element.extract() for element in elements]
 
         elements = soup.find_all("span", class_="mw-editsection")
@@ -503,10 +515,44 @@ def process_wiki_page(page):
         elements = soup.find_all("table", class_="navbox")
         [element.extract() for element in elements]
 
+        elements = soup.find_all("span", class_="citation web")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", class_="Z3988")
+        [element.extract() for element in elements]
+
         elements = soup.find_all("sup")
         [element.extract() for element in elements]
 
         elements = soup.find_all("div", id="toc")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", id="References")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", id="Bibliography")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("div", class_="reflist columns references-column-width")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", id="See_also")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", id="Gallery")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("div", class_="noprint portal tright")
+        [element.extract() for element in elements]
+
+
+        elements = soup.find_all("span", id="External_links")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("table", class_="mbox-small plainlinks")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("table", class_="metadata plainlinks ambox ambox-content ambox-Refimprove")
         [element.extract() for element in elements]
 
         wiki_page["html"] = soup.prettify()
