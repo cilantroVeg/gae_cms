@@ -476,14 +476,36 @@ def is_wiki(page):
 
 #...
 def process_wiki_page(page):
+    from django.template.defaultfilters import removetags
     from wikipedia import wikipedia
-    p = wikipedia.page(page.title)
+    from bs4 import BeautifulSoup
     wiki_page = {}
-    wiki_page["url"] = p.url
-    wiki_page["title"] = p.title
-    wiki_page["content"] = p.content
-    wiki_page["images"] = p.images
-    wiki_page["html"] = p.html()
+    try:
+        p = wikipedia.page(page.title)
+        wiki_page["url"] = p.url
+        wiki_page["title"] = p.title
+        wiki_page["content"] = p.content
+        wiki_page["images"] = p.images
+        wiki_page["html"] = removetags(p.html(),'a b small')
+        soup = BeautifulSoup(wiki_page["html"] )
+        elements = soup.find_all("div", class_="hatnote")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("span", class_="mw-editsection")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("table", class_="navbox")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("sup")
+        [element.extract() for element in elements]
+
+        elements = soup.find_all("div", id="toc")
+        [element.extract() for element in elements]
+
+        wiki_page["html"] = soup.prettify()
+    except:
+        logger.error('process_wiki_page')
     return wiki_page
 
 # ...
@@ -683,9 +705,14 @@ def front_page_language(request,language):
         language_code = 'en' if (language is None) else language
         try:
             feed_pages = query_api(language_code, 'feed_pages')['pages']
+        except:
+            logger.error('views/front_page_language')
+            feed_pages = None
+        try:
             endangered_species = query_api(language_code, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/front_page_language')
+            endangered_species = None
         return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
     else:
         image_array = Image.objects.all()[:7]
