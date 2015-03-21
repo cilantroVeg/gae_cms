@@ -466,7 +466,7 @@ def page_view(request, language, slug):
     image_array = Image.objects.filter(page=page)
     if settings.APP_NAME == 'happy-planet':
         try:
-            endangered_species = query_api(language_code, 'pages',{'category_slug': 'endangered-species'})['pages']
+            endangered_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/page_view')
             endangered_species = None
