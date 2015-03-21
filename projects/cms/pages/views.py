@@ -459,9 +459,32 @@ def image_delete(request, id=None):
 # ...
 def page_view(request, language, slug):
     page = get_object_or_404(Page, slug=slug)
+    if is_wiki(page):
+        wiki_page = process_wiki_page(page)
+    else:
+        wiki_page = None
     image_array = Image.objects.filter(page=page)
-    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array},context_instance=RequestContext(request))
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page},context_instance=RequestContext(request))
 
+#...
+def is_wiki(page):
+    parent_category = Category.objects.get(slug=page.category.slug)
+    if parent_category and (parent_category.parent.slug == 'wiki'):
+        return True
+    else:
+        return False
+
+#...
+def process_wiki_page(page):
+    from wikipedia import wikipedia
+    p = wikipedia.page(page.title)
+    wiki_page = {}
+    wiki_page["url"] = p.url
+    wiki_page["title"] = p.title
+    wiki_page["content"] = p.content
+    wiki_page["images"] = p.images
+    wiki_page["html"] = p.html()
+    return wiki_page
 
 # ...
 def gallery_view(request, language, slug):
