@@ -191,3 +191,8 @@ a.has-tip, .name h1 a{
     clear: both;
     width: 100%;
 }
+
+ul .dropdown li a{
+    padding:0px;
+    margin:0;
+}

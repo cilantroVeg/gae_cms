@@ -153,7 +153,10 @@ class Page(models.Model):
             raise ValidationError("Another page with same slug already exists. Please use different name.")
 
         # Headline
-        self.headline = self.content[0:70] + '...'
+        if len(self.headline) > 70:
+            self.headline = self.content[0:70] + '...'
+        else:
+            self.headline = self.content
 
         super(Page, self).save(*args, **kwargs)
 

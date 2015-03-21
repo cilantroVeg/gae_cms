@@ -11,6 +11,9 @@ import logging
 logger = logging.getLogger(__name__)
 register = Library()
 
+@register.filter
+def detruncate(str):
+    return str.replace(".", '');
 
 @register.filter
 def get_record(key, language='en'):
