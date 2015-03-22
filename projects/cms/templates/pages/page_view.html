@@ -8,10 +8,10 @@
         {% if wiki_page %}
             <h1><span>{{ wiki_page.original_content|title }} - {{ wiki_page.original_title }}</span></h1>
             <div class="row">
-                <div class="large-4 medium-5 small-12 columns">
+                <div class="large-5 medium-5 small-12 columns">
                     {{wiki_page.infobox|safe}}
                 </div>
-                <div class="large-8 medium-7 smal-12 columns">
+                <div class="large-7 medium-7 smal-12 columns">
                     {{wiki_page.html|safe}}
                 </div>
             </div>
