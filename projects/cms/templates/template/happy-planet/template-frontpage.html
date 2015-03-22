@@ -107,7 +107,7 @@
                     <div class="large-12 columns">
                         <div class="row slide-me-wwf">
                             {% for item in feed_pages.WWF %}
-                            <div class="panel callout">
+                            <div class="panel callout wwf">
                                 <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
                                 <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
                                 <img class="wwf_logo" src="{{feed_pages.WWF.0.feed_image_url}}"/>

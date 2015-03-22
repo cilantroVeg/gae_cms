@@ -15,15 +15,15 @@ p{
 }
 
 .top-bar .name h2 a{
-    min-width: 300px;
+    min-width: 20rem;
     overflow: hidden;
     white-space: nowrap;
-    height: 3.5rem;
+    height: 3.1rem;
 }
 
 nav, .top-bar{
-    height: 3.5rem;
-    min-height: 3.5rem;
+    height: 3.1rem;
+    min-height: 3.1rem;
 }
 
 .panel-top{
@@ -31,7 +31,7 @@ nav, .top-bar{
     background-color: #FFF;
     border: none;
     width: 100%;
-    max-height: 121px;
+    max-height: 3.1rem;
 }
 
 .row-top{
@@ -41,12 +41,12 @@ nav, .top-bar{
 }
 
 hr{
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .header_login li a {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding: 3px;
 }
 
@@ -66,14 +66,14 @@ hr{
 }
 
 .ui-menu-item{
-    width:180px;
+    width:20rem;
     background-color: #ffffff;
     list-style: none;
     border: 1px solid ghostwhite;
 }
 
 .ui-menu-item.ui-state-focus{
-    width:180px;
+    width:100%;
     background-color: #008cba;
     color: #FFF;
     list-style: none;
@@ -105,10 +105,14 @@ a.has-tip, .name h1 a{
 
 .panel.callout{
     padding:0;
-    margin:7px;
-    height: 360px;
+    margin:0.5rem;
+    height: 23rem;
     background-color: #f4f4f4;
     border-color: #c0c0c0;
+}
+
+.panel.callout.wwf{
+    height: 20rem;
 }
 
 .greenpeace_logo{
@@ -116,7 +120,7 @@ a.has-tip, .name h1 a{
     top: 5%;
     position: fixed;
     padding: 7px;
-    opacity: 70%;
+    opacity: 0.9;
 }
 
 .wwf_logo{
