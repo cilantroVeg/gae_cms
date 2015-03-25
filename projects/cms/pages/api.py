@@ -156,6 +156,32 @@ def images(request,language_code='en'):
         response_data['images'] = images
         set_cache(cache_key,response_data)
         return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+    
+# ...
+def galleries(request,language_code='en'):
+    cache_key = str(language_code) + '_galleries_'
+    data = get_cache(cache_key)
+    if data:
+        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    else:
+        response_data = {}
+        if validate_token(request):
+            galleries = None
+            gallery_set = Gallery.objects.order_by('name')
+            if gallery_set:
+                galleries = []
+                for gallery in gallery_set:
+                    i = {}
+                    i['id'] = gallery.id
+                    i['name'] = gallery.name
+                    i['slug'] = gallery.slug
+                    i['is_enabled'] = gallery.is_enabled
+                    i['is_default'] = gallery.is_default
+                    i['created_at'] = str(naturalday(gallery.created_at))
+                    galleries.append(i)
+        response_data['galleries'] = galleries
+        set_cache(cache_key,response_data)
+        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)    
 
 # ...
 def feed_pages(request, language_code='en'):

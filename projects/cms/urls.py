@@ -125,6 +125,7 @@ urlpatterns = patterns('',
     url(r'^api/(?P<language_code>[a-z]{2})/categories[/]$', 'pages.api.categories'),
     url(r'^api/(?P<language_code>[a-z]{2})/pages[/]$', 'pages.api.pages'),
     url(r'^api/(?P<language_code>[a-z]{2})/images[/]$', 'pages.api.images'),
+    url(r'^api/(?P<language_code>[a-z]{2})/galleries[/]$', 'pages.api.galleries'),
     url(r'^api/(?P<language_code>[a-z]{2})/feed_pages[/]$', 'pages.api.feed_pages'),
     url(r'^api/validate_recaptcha[/]$', 'pages.api.validate_recaptcha'),
 

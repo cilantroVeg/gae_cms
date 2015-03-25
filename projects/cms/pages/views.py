@@ -20,6 +20,7 @@ import logging
 from django.template.defaultfilters import removetags
 from wikipedia import wikipedia
 from bs4 import BeautifulSoup
+from context_processors import *
 logger = logging.getLogger(__name__)
 
 # ...
@@ -488,7 +489,7 @@ def is_wiki(page):
 def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
     wiki_page = {}
     # Get data from cache
-    key = slugify(str(language_code) + '_' + str(page.title))
+    key = slugify(str(language_code) + '_WIKI_' + str(page.title))
     data = get_cache(key)
     if data and cache_enabled:
         wiki_page = data
@@ -628,7 +629,13 @@ def page_feed_view(request, language, slug):
     if page:
         return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species},context_instance=RequestContext(request))
     else:
-        return redirect('/', False)
+        language = get_request_language(request)["request_language"]
+        galleries = query_api(language, 'galleries')
+        images = query_api(language, 'images')
+        pages = query_api(language, 'pages')
+        categories = query_api(language, 'categories')
+        feeds = query_api(language, 'feed_pages')
+        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds},context_instance=RequestContext(request))
 
 # ...
 def page_api(request):
@@ -642,7 +649,13 @@ def sitemap(request):
         languages = bible_languages(request,media,response_format)
         return render_to_response("pages/sitemap-bible.html", {'languages':languages},context_instance=RequestContext(request))
     else:
-        return render_to_response("pages/sitemap.html", {},context_instance=RequestContext(request))
+        language = get_request_language(request)["request_language"]
+        pages = query_api(language, 'pages')
+        categories = query_api(language, 'categories')
+        feeds = query_api(language, 'feed_pages')
+        galleries = query_api(language, 'galleries')
+        images = query_api(language, 'images')
+        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds},context_instance=RequestContext(request))
 
 # ...
 def sitemap_xml(request):
