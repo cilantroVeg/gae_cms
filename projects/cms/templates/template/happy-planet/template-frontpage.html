@@ -82,7 +82,12 @@
                     <div class="row slide-me">
                         {% for item in feed_pages.GREENPEACE %}
                         <div class="panel callout">
-                            <a href="/{{request_language}}/feed/{{item.slug}}" class="panel_image_container"><img alt="{{item.title|safe}}" src="{{item.image_url}}" /></a>
+                            <a href="/{{request_language}}/feed/{{item.slug}}" class="panel_image_container_small show-for-small-only">
+                                <img alt="{{item.title|safe}}" src="{{item.image_url}}" />
+                            </a>
+                            <a href="/{{request_language}}/feed/{{item.slug}}" class="panel_image_container show-for-medium-up">
+                                <img alt="{{item.title|safe}}" src="{{item.image_url}}" />
+                            </a>
                             <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
                             <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
                             <p class="panel_content">{{item.content_no_html|truncate_str:96|safe}}</p>
@@ -122,7 +127,7 @@
                                 <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
                                 <img class="wwf_logo" src="{{feed_pages.WWF.0.feed_image_url}}"/>
                                 <p class="panel_content">{{item.content_no_html|truncate_str:180|safe}}</p>
-                                <a class="button tiny" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
+                                <a class="button tiny hide" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
                             </div>
                             {% endfor %}
                         </div>
