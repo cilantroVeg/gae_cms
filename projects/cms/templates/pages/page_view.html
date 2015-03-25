@@ -3,40 +3,47 @@
 {% block title %}Page List{% endblock %}{% block js %}
 
 {% endblock %}{% block content %}
-<div id="static_content">
-    <div style="text-align: left;width: 80%;margin-left: auto;margin-right: auto;padding: 10px;">
+<div class="row">
+    <div class="large-12 columns">
         {% if wiki_page %}
-            <h1><span>{{ wiki_page.original_content|title }} - {{ wiki_page.original_title }}</span></h1>
-            <div class="row">
-                <div class="large-5 medium-5 small-12 columns">
-                    {{wiki_page.infobox|safe}}
-                </div>
-                <div class="large-7 medium-7 smal-12 columns">
-                    {{wiki_page.html|safe}}
-                </div>
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li class="current"><a href="#">{{ wiki_page.original_title }}</a></li>
+        </ul>
+        <h1><span>{{ wiki_page.original_content|title }} - {{ wiki_page.original_title }}</span></h1>
+        <div class="row">
+            <div class="large-4 medium-5  small-12 columns">
+                {{wiki_page.infobox|safe}}
             </div>
-            <h3>Reference</h3>
-            <a href="{{wiki_page.url}}">Wikipedia - {{wiki_page.title}}</a>
-            <br/>
+            <div class="large-8 medium-7 smal-12 columns">
+                {{wiki_page.summary|safe}}
+            </div>
+        </div>
+        <h3>Reference</h3>
+        <a href="{{wiki_page.url}}">Wikipedia - {{wiki_page.title}}</a>
+        <br/>
         {% else %}
-            <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>
-            <h2>{{ page.title }}</h2>
-            {% if page.image_url %}
-            <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}" /></a>
-            {% endif%}
-            <br/>
-            {% if page.feed_image_url %}
-                <p>{{ page.content_no_html|safe }}</p>
-                <img src="{{page.feed_image_url}}" />
-            {% else %}
-                <p>{{ page.content|safe }}</p>
-            {% endif%}
-            <br/>
-            {% if page.feed_source %}
-            <a href="{{page.feed_source}}" target="_blank" class="button tiny">Read More</a>
-            {% endif%}
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li class="current"><a href="#">{{ page.title }}</a></li>
+        </ul>
+        <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>
+        <h2>{{ page.title }}</h2>
+        {% if page.image_url %}
+        <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}" /></a>
+        {% endif%}
+        <br/>
+        {% if page.feed_image_url %}
+        <p>{{ page.content_no_html|safe }}</p>
+        <img id="feed_logo" src="{{page.feed_image_url}}" />
+        {% else %}
+        <p>{{ page.content|safe }}</p>
+        {% endif%}
+        <br/>
+        {% if page.feed_source %}
+        <a href="{{page.feed_source}}" target="_blank" class="button tiny">Read More</a>
+        {% endif%}
         {% endif %}
-        
     </div>
     <br/>
     <hr/>

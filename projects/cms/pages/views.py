@@ -603,8 +603,14 @@ def page_feed_view(request, language, slug):
                 for p in feed_pages['pages'][key]:
                     if p['slug'] == slug:
                         page = p
+    if settings.APP_NAME == 'happy-planet':
+        try:
+            endangered_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
+        except:
+            logger.error('views/page_view')
+            endangered_species = None
     if page:
-        return render_to_response("pages/page_view.html", {"page": page},context_instance=RequestContext(request))
+        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 

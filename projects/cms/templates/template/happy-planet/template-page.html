@@ -13,49 +13,59 @@
 </head>
 <body>
 {% include "layout/microdata.html" %}
-<div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-        <nav class="top-bar" data-topbar="" role="navigation">
-            <!-- Title -->
-            <ul class="title-area">
-                <li class="name">
-                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="nrwl.org">Natural Resources & Wildlife Organization</a></h2>
+<div class="fixed">
+    <nav class="top-bar" data-topbar="" role="navigation" data-options="is_hover: false">
+        <!-- Title -->
+        <ul class="title-area">
+            <li class="name">
+                <h2><a href="/en" data-tooltip aria-haspopup="true" title="nrwl.org">Natural Resources & Wildlife Organization</a></h2>
+            </li>
+            <!-- Mobile Menu Toggle -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <!-- Top Bar Section -->
+        <section class="top-bar-section">
+            <!-- Top Bar Right Nav Elements -->
+            <ul class="right">
+                <!-- Divider -->
+                <li class="divider"></li>
+                <!-- Dropdown -->
+                <li class="has-dropdown not-click hide-for-medium"><a href="#">Species</a>
+                    <ul class="dropdown">
+                        <li><label>Endangered Species</label></li>
+                        {% for page in endangered_species|slice:":5" %}
+                        {% if request_language == 'en' %}
+                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}}</a></li>
+                        {% else %}
+                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
+                        {% endif%}
+                        {% endfor %}
+                        <li><a href="javascript:scroll_to_anchor('footer')">...</a></li>
+                        <li class="divider"></li>
+                        <li><label>Keystone Species</label></li>
+                        <li class="divider"></li>
+                    </ul>
                 </li>
-                <!-- Mobile Menu Toggle -->
-                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                <li>
+                    <div id="social">
+                        {% include "layout/social_login_3.html" %}
+                    </div>
+                </li>
+                {% if is_admin %}
+                <li>
+                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                </li>
+                <li>
+                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                </li>
+                {% endif %}
+                <li class="divider"></li>
             </ul>
-            <!-- Top Bar Section -->
-            <section class="top-bar-section">
-                <!-- Top Bar Right Nav Elements -->
-                <ul class="right">
-                    <!-- Divider -->
-                    <li class="divider"></li>
-                    <!-- Dropdown -->
-                    <li class="has-dropdown not-click"><a href="#">Species</a>
-                        <ul class="dropdown">
-                            {% for page in endangered_species %}
-                                <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
-                            {% endfor %}
-                            <li class="divider"></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div id="social">
-                            {% include "layout/social_login_3.html" %}
-                        </div>
-                    </li>
-                    {% if is_admin %}
-                    <li>
-                        <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
-                    </li>
-                    <li>
-                        <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
-                    </li>
-                    {% endif %}
-                    <li class="divider"></li>
-                </ul>
-            </section>
-        </nav>
+        </section>
+    </nav>
+</div>
+<div class="off-canvas-wrap" data-offcanvas class="fixed">
+    <div class="inner-wrap">
 
         <!-- Off Canvas Menu -->
         <aside class="left-off-canvas-menu">
@@ -65,29 +75,45 @@
             {% include "layout/admin.html" %}
         </aside>
         <hr />
-
         <div class="row">
             <div class="large-12 columns">
                 {% block content %}{% endblock %}
             </div>
         </div>
 
-        <footer class="row">
+        <footer class="row" id="footer">
             <div class="large-12 columns">
                 <hr/>
                 <div class="row">
-                    <div class="large-3 columns">
+                    <div class="large-4 columns">
                         <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">NRWL {% now "Y" %}</span>
                     </div>
-                    <div class="large-9 columns">
+
+                    <div class="large-4 columns">
                         <ul class="inline-list right">
+                            <li><label>Endangered Species</label></li>
+                            <br />
                             {% for page in endangered_species %}
-                                <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
+                            {% if request_language == 'en' %}
+                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}} ({{page.title|safe}})</a></li>
+                            {% else %}
+                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
+                            {% endif%}
+                            <br />
                             {% endfor %}
                         </ul>
                     </div>
+                    <div class="large-4 columns">
+                        <ul class="inline-list right">
+                            <li><label>Keystone Species</label></li>
+                            <br />
+                            <li>...</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
+
         </footer>
         <!-- close the off-canvas menu -->
         <a class="exit-off-canvas"></a>

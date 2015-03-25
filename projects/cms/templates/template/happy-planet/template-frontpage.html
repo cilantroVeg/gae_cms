@@ -30,11 +30,15 @@
                 <!-- Divider -->
                 <li class="divider"></li>
                 <!-- Dropdown -->
-                <li class="has-dropdown not-click"><a href="#">Species</a>
+                <li class="has-dropdown not-click hide-for-medium"><a href="#">Species</a>
                     <ul class="dropdown">
                         <li><label>Endangered Species</label></li>
                         {% for page in endangered_species|slice:":5" %}
+                        {% if request_language == 'en' %}
                         <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}}</a></li>
+                        {% else %}
+                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
+                        {% endif%}
                         {% endfor %}
                         <li><a href="javascript:scroll_to_anchor('footer')">...</a></li>
                         <li class="divider"></li>
@@ -102,7 +106,7 @@
                         {% for item in feed_pages.PETA %}
                         <panel>
                             <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
-                            <img class="rouded_image" src="{{item.image_url}}"   />
+                            <img class="rounded_image" src="{{item.image_url}}"   />
                             <h6><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
                         </panel>
                         {% endfor %}
@@ -140,7 +144,11 @@
                             <li><label>Endangered Species</label></li>
                             <br />
                             {% for page in endangered_species %}
-                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}} - ({{page.title|safe}})</a></li>
+                            {% if request_language == 'en' %}
+                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}} ({{page.title|safe}})</a></li>
+                            {% else %}
+                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
+                            {% endif%}
                             <br />
                             {% endfor %}
                         </ul>
