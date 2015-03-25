@@ -240,3 +240,8 @@ h1,h1 span{
     margin-top: -20px;
     padding: 0;
 }
+
+nav{
+    opacity: 0.95;
+}
+
