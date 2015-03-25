@@ -153,12 +153,10 @@ APP_NAME = 'happy-planet'
 #APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'interpegasuslove'
 
-# Strategy
-# Get Site Online One By One
 
-# python manage.py runserver 127.0.0.1:8001
+CACHE_ENABLED = True
 
-if False:
+if True:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
@@ -188,7 +186,6 @@ elif APP_NAME == 'yiyask7':
     SITE_URL = 'http://www.yiyask.com'
     SOCIAL_AUTH_FACEBOOK_KEY = access_keys.YIYASK_FACEBOOK_KEY
     SOCIAL_AUTH_FACEBOOK_SECRET = access_keys.YIYASK_FACEBOOK_SECRET
-
 
 # templates
 TEMPLATE_FRONTPAGE = 'template/'+APP_NAME+'/template-frontpage.html'

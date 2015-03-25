@@ -17,6 +17,9 @@ from pages.api import *
 from django.utils.html import strip_tags
 from django.views.decorators.csrf import csrf_exempt
 import logging
+from django.template.defaultfilters import removetags
+from wikipedia import wikipedia
+from bs4 import BeautifulSoup
 logger = logging.getLogger(__name__)
 
 # ...
@@ -460,17 +463,18 @@ def image_delete(request, id=None):
 def page_view(request, language, slug):
     page = get_object_or_404(Page, slug=slug)
     if is_wiki(page):
-        wiki_page = process_wiki_page(page)
+        wiki_page = process_wiki_page(language,page)
     else:
         wiki_page = None
     image_array = Image.objects.filter(page=page)
     if settings.APP_NAME == 'happy-planet':
         try:
             endangered_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
+            keystone_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/page_view')
             endangered_species = None
-    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species},context_instance=RequestContext(request))
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species},context_instance=RequestContext(request))
 
 #...
 def is_wiki(page):
@@ -481,96 +485,107 @@ def is_wiki(page):
         return False
 
 #...
-def process_wiki_page(page):
-    from django.template.defaultfilters import removetags
-    from wikipedia import wikipedia
-    from bs4 import BeautifulSoup
+def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
     wiki_page = {}
-    try:
-        p = wikipedia.page(page.title)
-    except:
-        logger.error('process_wiki_page')
-    wiki_page["url"] = p.url
-    wiki_page["original_title"] = page.title
-    wiki_page["original_content"] = page.content
-    wiki_page["title"] = p.title
-    wiki_page["content"] = p.content
-    wiki_page["images"] = p.images
-    wiki_page["html"] = removetags(p.html(),'a b i small script br')
-    wiki_page["summary"] = p.summary
+    # Get data from cache
+    key = slugify(str(language_code) + '_' + str(page.title))
+    data = get_cache(key)
+    if data and cache_enabled:
+        wiki_page = data
+    else:
+        try:
+            p = wikipedia.page(page.title)
+        except:
+            p = None
+            logger.error('process_wiki_page')
+        if p and p.url:
+            1
+        else:
+            return wiki_page
 
-    soup = BeautifulSoup(wiki_page["html"] )
+        wiki_page["url"] = p.url
+        wiki_page["original_title"] = page.title
+        wiki_page["original_content"] = page.content
+        wiki_page["title"] = p.title
+        wiki_page["content"] = p.content
+        wiki_page["images"] = p.images
+        wiki_page["html"] = removetags(p.html(),'a b i small script br')
+        wiki_page["summary"] = p.summary
 
-    elements = soup.find_all("div", class_="hatnote")
-    [element.extract() for element in elements]
+        soup = BeautifulSoup(wiki_page["html"] )
 
-    elements = soup.find_all("div", class_="reflist")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", class_="hatnote")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("ol", class_="references")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", class_="reflist")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("ul", class_="gallery mw-gallery-traditional")
-    [element.extract() for element in elements]
+        elements = soup.find_all("ol", class_="references")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", class_="mw-editsection")
-    [element.extract() for element in elements]
+        elements = soup.find_all("ul", class_="gallery mw-gallery-traditional")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("table", class_="navbox")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", class_="mw-editsection")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", class_="citation web")
-    [element.extract() for element in elements]
+        elements = soup.find_all("table", class_="navbox")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", class_="Z3988")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", class_="citation web")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("sup")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", class_="Z3988")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("div", id="toc")
-    [element.extract() for element in elements]
+        elements = soup.find_all("sup")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", id="References")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", id="toc")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", id="Bibliography")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", id="References")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("div", class_="reflist columns references-column-width")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", id="Bibliography")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", id="See_also")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", class_="reflist columns references-column-width")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", id="Gallery")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", id="See_also")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("div", class_="noprint portal tright")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", id="Gallery")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("div", class_="thumbcaption")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", class_="noprint portal tright")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("span", id="External_links")
-    [element.extract() for element in elements]
+        elements = soup.find_all("div", class_="thumbcaption")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("table", class_="mbox-small plainlinks")
-    [element.extract() for element in elements]
+        elements = soup.find_all("span", id="External_links")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("table", class_="metadata plainlinks ambox ambox-content ambox-Refimprove")
-    [element.extract() for element in elements]
+        elements = soup.find_all("table", class_="mbox-small plainlinks")
+        [element.extract() for element in elements]
 
-    wiki_page["infobox"] = str(_remove_attrs(soup.find("table", class_="infobox biota")))
-    wiki_page["html_images"] = soup.find_all("img")
+        elements = soup.find_all("table", class_="metadata plainlinks ambox ambox-content ambox-Refimprove")
+        [element.extract() for element in elements]
 
-    elements = soup.find_all("table", class_="infobox biota")
-    [element.extract() for element in elements]
+        wiki_page["infobox"] = str(_remove_attrs(soup.find("table", class_="infobox biota")))
+        wiki_page["html_images"] = soup.find_all("img")
 
-    elements = soup.find_all("img")
-    [element.extract() for element in elements]
+        elements = soup.find_all("table", class_="infobox biota")
+        [element.extract() for element in elements]
 
-    wiki_page["html"] = _remove_attrs(soup).prettify()
+        elements = soup.find_all("img")
+        [element.extract() for element in elements]
+
+        wiki_page["html"] = _remove_attrs(soup).prettify()
+
+        set_cache(key,wiki_page)
 
     return wiki_page
 
@@ -606,11 +621,12 @@ def page_feed_view(request, language, slug):
     if settings.APP_NAME == 'happy-planet':
         try:
             endangered_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
+            keystone_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/page_view')
             endangered_species = None
     if page:
-        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species},context_instance=RequestContext(request))
+        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species},context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
