@@ -518,7 +518,8 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
 def get_wikipedia_info_box(html):
     soup = BeautifulSoup(html)
     wiki_table = soup.find("table", class_="infobox biota")
-    wiki_table.find('th').contents[0].replace_with(p.title)
+    #wiki_table.find('th').contents[0].replaceWith(p.title)
+    #return clean_html(wiki_table.find('th').contents[0].replaceWith('title'))
     return clean_html(wiki_table.prettify())
 
 # ...
