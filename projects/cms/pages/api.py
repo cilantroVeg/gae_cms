@@ -501,6 +501,7 @@ def validate_recaptcha(request):
     return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
 
 def captcha_is_valid(captcha_response,request):
+    return True
     url = 'https://www.google.com/recaptcha/api/siteverify'
     response_data = False
     logger.info('Google Captcha Validation')
