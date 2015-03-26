@@ -227,24 +227,19 @@ def validate_language(language_code='en'):
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
     # Get data from cache
-    try:
-        key = str(language_code) + str(api_request) + str(extra_parameters)
-        data = get_cache(key)
-        if data is None:
-            # Otherwise get it via query and set cache
+    key = str(language_code) + str(api_request) + str(extra_parameters)
+    data = get_cache(key)
+    counter = 0
+    while (data is None) and (counter < 3):
+        counter = counter + 1
+        try:
             url = build_url(language_code, api_request, extra_parameters)
             result = urlfetch.fetch(url)
             data = json.loads(result.content)
             set_cache(key,data)
-    except:
-        try:
-            logger.info(url)
-            logger.info(key)
-            result = urlfetch.fetch(url)
-            data = json.loads(result.content)
-            set_cache(key,data)
         except:
-            logger.error('api/query_api')
+            if (counter > 2):
+                logger.error('api/query_api counter:' + str(counter))
             data = None
     return data
 
