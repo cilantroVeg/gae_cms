@@ -497,11 +497,11 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
         try:
             p = wikipedia.page(page.title)
         except:
-            p = None
-            logger.error('process_wiki_page')
-        if p and p.url:
-            1
-        else:
+            try:
+                p = wikipedia.page(page.title)
+            except:
+                logger.error('process_wiki_page')
+        if p is None:
             return wiki_page
 
         wiki_page["url"] = p.url
@@ -510,7 +510,7 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
         wiki_page["title"] = p.title
         wiki_page["content"] = p.content
         wiki_page["images"] = p.images
-        wiki_page["html"] = removetags(p.html(),'a b i small script br')
+        wiki_page["html"] = removetags(p.html(),'a b i small script br style')
         wiki_page["summary"] = p.summary
 
         soup = BeautifulSoup(wiki_page["html"] )
@@ -591,7 +591,7 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
     return wiki_page
 
 def _remove_attrs(soup):
-    blacklist = ["style", "id", "class" ]
+    blacklist = ["style", "id", "class", "height", "width", "data-file-height", "data-file-width", "srcset", "style" ]
     for tag in soup():
         for attribute in blacklist:
             del tag[attribute]
