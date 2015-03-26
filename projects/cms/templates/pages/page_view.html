@@ -8,14 +8,14 @@
         {% if wiki_page %}
         <ul class="breadcrumbs">
             <li><a href="/">Home</a></li>
-            <li class="current"><a href="#">{{ wiki_page.original_title }}</a></li>
+            <li class="current"><a href="#">{{ wiki_page.title }}</a></li>
         </ul>
         <div class="row">
             <div class="large-3 medium-4  small-12 columns">
                 {{wiki_page.infobox|safe}}
             </div>
             <div class="large-9 medium-8 smal-12 columns">
-                <h1>{{ wiki_page.original_content|title }} - {{ wiki_page.original_title }}</h1>
+                <h1>{{ wiki_page.title }}</h1>
                 <h2>Summary</h2>
                 {{wiki_page.summary|safe}}
                 <h2>Reference</h2>
