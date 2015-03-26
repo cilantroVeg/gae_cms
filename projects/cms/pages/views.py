@@ -660,17 +660,13 @@ def contact(request):
         error_message = message_contains_url(request.POST['contact_comment'])
         if error_message:
             try:
-                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
+                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_comment']}
             except:
                 logger.error('views/contact')
                 data = {}
         elif captcha_is_valid == False:
-            try:
-                data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_message']}
-                error_message = 'Captcha Issue'
-            except:
-                logger.error('views/contact')
-                data = {}
+            data = {'contact_email': request.POST['contact_email'], 'contact_name': request.POST['contact_name'], 'contact_message': request.POST['contact_comment']}
+            error_message = 'Captcha Issue'
         else:
             if form.is_valid():
                 contact_name = form.cleaned_data['contact_name']
@@ -680,6 +676,7 @@ def contact(request):
                 recipients = settings.ADMIN_USERS_EMAILS
                 sender = 'Contact Form ' + Record.objects.filter(key='WEBSITE_NAME')[:1][0].value + " <" + settings.SERVER_EMAIL + ">"
                 from google.appengine.api import mail
+                exit()
                 mail.send_mail(sender=sender, to=recipients, subject=subject, body=contact_comment)
                 return redirect('/thanks/',False)
     else:

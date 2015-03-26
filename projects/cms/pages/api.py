@@ -507,12 +507,15 @@ def captcha_is_valid(captcha_response,request):
     logger.info('captcha_response:')
     logger.info(captcha_response)
     if captcha_response:
-        params = {'secret': '6LdhIwMTAAAAAB7Rt27xR15hHfK4rZtWgfcEVzqj', 'response': captcha_response, 'remoteip': get_client_ip(request) }
+        params = {'secret': '6LdhIwMTAAAAAB7Rt27xR15hHfK4rZtWgfcEVzqj', 'response': str(captcha_response), 'remoteip': get_client_ip(request) }
         response = request_url(url,'POST',params)
         if response:
             response_json = json.loads(response.content)
             response_data = response_json['success']
-            logger.info(response_json['success'])
+            logger.info('RESPONSE SUCCESS CONTENT')
+            logger.info(str(response_data))
+            logger.info('CAPTCHA RESPONSE')
+            logger.info(str(captcha_response))
     return response_data
 
 # ...
