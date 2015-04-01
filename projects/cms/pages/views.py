@@ -510,9 +510,9 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
         wiki_page["html"] = removetags(p.html(),'a b i small script br')
         wiki_page["summary"] = p.summary
         wiki_page["infobox"] = get_wikipedia_info_box(wiki_page["html"])
+        wiki_page["tweets"] = get_tweets(p.title)
         # CLEAN
         set_cache(key,wiki_page)
-
     return wiki_page
 
 def get_wikipedia_info_box(html):
@@ -521,6 +521,31 @@ def get_wikipedia_info_box(html):
     #wiki_table.find('th').contents[0].replaceWith(p.title)
     #return clean_html(wiki_table.find('th').contents[0].replaceWith('title'))
     return clean_html(wiki_table.prettify())
+
+#..
+def get_tweets(search):
+    from twython import Twython
+    twitter = Twython(settings.NRWL_TWEET_KEY, settings.NRWL_TWEET_SECRET, settings.NRWL_ACCESS_TOKEN,  settings.NRWL_ACCESS_SECRET)
+    tweet_array = []
+    # twitter.update_status(status='Natural Resource And Wildlife Organization #NRWL nrwl.org')
+    filters = ' filter:links filter:images filter:verified'
+    result = twitter.search(q=str(search) + str(filters), result_type='mixed', count=100, lang='en')
+    for tweet in result["statuses"]:
+        tweet_data = {}
+        tweet_data["title"] = remove_uris(tweet["text"])
+        tweet_data["text"] = remove_uris(tweet["text"])
+        tweet_data["image"] = tweet["entities"]["media"][0]["media_url"]
+        tweet_data["link"] = tweet["entities"]["urls"][0]["url"]
+        tweet_data["tweet_url"] = tweet["entities"]["media"][0]["url"]
+        tweet_data["profile_image"] = tweet["user"]["profile_image_url"]
+        tweet_data["profile_name"] = tweet["user"]["name"]
+        tweet_array.append(tweet_data)
+    return tweet_array
+
+def remove_uris(text):
+    import re
+    text = re.sub(r"(?:\@|https?\://)\S+", "", text)
+    return text
 
 # ...
 def gallery_view(request, language, slug):
