@@ -22,6 +22,8 @@ from wikipedia import wikipedia
 from bs4 import BeautifulSoup
 from context_processors import *
 from lxml.html.clean import clean_html
+from django.contrib.humanize.templatetags.humanize import naturalday
+
 logger = logging.getLogger(__name__)
 
 # ...
@@ -502,6 +504,7 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
             try:
                 p = wikipedia.page(page.title)
             except:
+                p=None
                 logger.error('process_wiki_page')
         if p is None:
             return wiki_page
@@ -532,10 +535,13 @@ def get_tweets(search):
     # twitter.update_status(status='Natural Resource And Wildlife Organization #NRWL nrwl.org')
     filters = ' filter:links filter:images filter:verified'
     result = twitter.search(q=str(search) + str(filters), result_type='mixed', count=100, lang='en')
+    link_array = []
+    image_array = []
+    title_array = []
     for tweet in result["statuses"]:
         try:
             tweet_data = {}
-            tweet_data["created_at"] = tweet["created_at"]
+            tweet_data["created_at"] = str(naturalday(tweet["created_at"]))
             tweet_data["title"] = remove_uris(tweet["text"])
             tweet_data["text"] = remove_uris(tweet["text"])
             tweet_data["image"] = tweet["entities"]["media"][0]["media_url"]
@@ -543,7 +549,12 @@ def get_tweets(search):
             tweet_data["tweet_url"] = tweet["entities"]["media"][0]["url"]
             tweet_data["profile_image"] = tweet["user"]["profile_image_url"]
             tweet_data["profile_name"] = tweet["user"]["name"]
-            tweet_array.append(tweet_data)
+            if (tweet_data["image"] not in image_array) and (tweet_data["link"] not in link_array) or(tweet_data["title"] not in title_array):
+                if ('natgeo' in tweet_data["profile_name"].lower()) or ('discovery' in tweet_data["profile_name"].lower()) or ('news' in tweet_data["profile_name"].lower()):
+                    tweet_array.append(tweet_data)
+                    link_array.append(tweet_data["link"])
+                    image_array.append(tweet_data["image"])
+                    title_array.append(tweet_data["title"])
         except:
             logger.info('tweet_data')
     return tweet_array

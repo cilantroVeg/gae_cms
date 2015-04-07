@@ -23,15 +23,15 @@
                 {% if wiki_page.tweets %}
                 <h2>Latest Stories</h2>
                     {% for tweet in wiki_page.tweets %}
-                      <div class="row clearfix"  data-equalizer>
+                      <div class="row clearfix" data-equalizer>
                         <div class="left">
                             <a href="{{ tweet.link }}"><img class="square_image_large" src="{{ tweet.image }}"   /></a>
                         </div>
                         <div class="left">
                             <h3><small>{{ tweet.created_at }}</small></h3>
                             <h3><a href="{{ tweet.link }}" target="_blank">{{ tweet.title }}</a></h3>
-                            <a class="right"  target="_blank" href="{{ tweet.tweet_url }}">{{ tweet.profile_name }}</a>
-                            <a  target="_blank" href="{{ tweet.tweet_url }}" class="right"><img class="square_image_small" src="{{ tweet.profile_image }}"   /></a>
+                            <a class="left" target="_blank" href="{{ tweet.tweet_url }}"><img class="square_image_small" src="{{ tweet.profile_image }}"   /></a>
+                            <a class="left" target="_blank" href="{{ tweet.tweet_url }}">{{ tweet.profile_name }}</a>
                         </div>
                       <hr />
                     </div>
