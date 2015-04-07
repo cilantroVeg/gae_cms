@@ -102,18 +102,24 @@
 
                 <div class="row">
                     <div class="large-8 columns">
-                        <h2>{{feed_pages.GREENPEACE.0.title}}</h2>
-                        <div class="main_image_container"><img src="{{feed_pages.GREENPEACE.0.image_url}}" /></div>
+                        <a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}"><h2>{{feed_pages.GREENPEACE.0.title}}</h2></a>
+                        <div class="main_image_container"><a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}"><img src="{{feed_pages.GREENPEACE.0.image_url}}" /></a></div>
                         <p>{{feed_pages.GREENPEACE.0.content_no_html | truncate_str:512 | safe}}</p>
                         <a href="/{{request_language}}/feed/{{feed_pages.GREENPEACE.0.slug}}" class="button">Read More</a>
                     </div>
                     <div class="large-4 columns">
+                        <h3>PETA</h3><hr />
                         {% for item in feed_pages.PETA %}
-                        <panel>
-                            <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
-                            <img class="rounded_image" src="{{item.image_url}}"   />
-                            <h6><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h6>
-                        </panel>
+                            <div class="row clearfix"  data-equalizer>
+                                <div class="left peta_div">
+                                    <a href="/{{request_language}}/feed/{{item.slug}}"><img class="rounded_image" src="{{item.image_url}}"   /></a>
+                                </div>
+                                <div class="left peta_div">
+                                    <h3><small>{{item.created_at}}</small></h3>
+                                    <h3><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h3>
+                                </div>
+                            </div>
+                            <hr />
                         {% endfor %}
                     </div>
                 </div>
@@ -125,7 +131,7 @@
                             <div class="panel callout wwf">
                                 <h4 class="panel_title"><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title|truncate_str:32}}</a></h4>
                                 <h4 class="panel_date"><small>{{item.created_at}}</small></h4>
-                                <img class="wwf_logo" src="{{feed_pages.WWF.0.feed_image_url}}"/>
+                                <a href="/{{request_language}}/feed/{{item.slug}}"><img class="wwf_logo" src="{{feed_pages.WWF.0.feed_image_url}}"/></a>
                                 <p class="panel_content">{{item.content_no_html|truncate_str:180|safe}}</p>
                                 <a class="button tiny hide" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
                             </div>
