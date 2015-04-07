@@ -297,6 +297,19 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 5px;
     margin: 7px;
 }
+.square_image_large{
+    border-radius: 5px;
+    margin: 7px;
+    width: 120px;
+    height: 90px;
+}
+
+.square_image_small{
+    border-radius: 5px;
+    margin: 7px;
+    width: 32px;
+    height: 32px;
+}
 
 h1{font-size: 2.5rem;text-decoration: none;margin-top: -12px;}
 h2{font-size: 2.0rem;text-decoration: none;}
