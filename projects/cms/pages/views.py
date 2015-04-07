@@ -476,6 +476,7 @@ def page_view(request, language, slug):
         except:
             logger.error('views/page_view')
             endangered_species = None
+            keystone_species = None
     return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species},context_instance=RequestContext(request))
 
 #...
@@ -509,17 +510,18 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
         wiki_page["title"] = p.title
         wiki_page["html"] = removetags(p.html(),'a b i small script br')
         wiki_page["summary"] = p.summary
-        wiki_page["infobox"] = get_wikipedia_info_box(wiki_page["html"])
-        wiki_page["tweets"] = get_tweets(p.title)
+        wiki_page["infobox"] = get_wikipedia_info_box(wiki_page["html"],str(p.title))
+        #wiki_page["tweets"] = get_tweets(p.title)
         # CLEAN
         set_cache(key,wiki_page)
     return wiki_page
 
-def get_wikipedia_info_box(html):
+def get_wikipedia_info_box(html,title):
     soup = BeautifulSoup(html)
     wiki_table = soup.find("table", class_="infobox biota")
-    #wiki_table.find('th').contents[0].replaceWith(p.title)
-    #return clean_html(wiki_table.find('th').contents[0].replaceWith('title'))
+    element = wiki_table.find('th')
+    element.clear()
+    element.append(title)
     return clean_html(wiki_table.prettify())
 
 #..

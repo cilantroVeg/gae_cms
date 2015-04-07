@@ -158,7 +158,7 @@ APP_NAME = 'happy-planet'
 #APP_NAME = 'interpegasuslove'
 
 
-CACHE_ENABLED = True
+CACHE_ENABLED = False
 
 if True:
     SITE_URL = 'http://127.0.0.1:8080'

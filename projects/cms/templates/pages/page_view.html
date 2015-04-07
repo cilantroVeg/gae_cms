@@ -31,7 +31,7 @@
         <p class="post-date"><i class="icon-calendar"></i> {{page.created_at}}</p>
         <h2>{{ page.title }}</h2>
         {% if page.image_url %}
-        <a href="{{ page.feed_source }}" target="_blank"><img src="{{page.image_url}}" /></a>
+        <a href="{{ page.feed_source }}" target="_blank"><img class="rounded_image_page" src="{{page.image_url}}" /></a>
         {% endif%}
         <br/>
         {% if page.feed_image_url %}
