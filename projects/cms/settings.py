@@ -158,9 +158,9 @@ APP_NAME = 'happy-planet'
 #APP_NAME = 'interpegasuslove'
 
 
-CACHE_ENABLED = False
+CACHE_ENABLED = True
 
-if True:
+if False:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
