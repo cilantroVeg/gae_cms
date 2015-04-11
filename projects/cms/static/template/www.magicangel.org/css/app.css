@@ -1,0 +1,319 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+*{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-bar .name h2 a{
+    min-width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 3.1rem;
+}
+
+nav, .top-bar{
+    height: 3.1rem;
+    min-height: 3.1rem;
+}
+
+.panel-top{
+    padding: 0;
+    background-color: #FFF;
+    border: none;
+    width: 100%;
+    max-height: 3.1rem;
+}
+
+.row-top{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+hr{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header_login li a {
+    font-size: 0.8rem;
+    padding: 3px;
+}
+
+.image_thumb{
+    width: 160px;
+    min-width: 160px;
+    min-height: 120px;
+    height: auto;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.right_bottom{
+    float: right;
+    clear: both;
+    padding: 7px 0;
+}
+
+.ui-menu-item{
+    width:20rem;
+    background-color: #ffffff;
+    list-style: none;
+    border: 1px solid ghostwhite;
+}
+
+.ui-menu-item.ui-state-focus{
+    width:100%;
+    background-color: #008cba;
+    color: #FFF;
+    list-style: none;
+    border: 1px solid ghostwhite;
+}
+.ui-helper-hidden-accessible { display:none; }
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-32 { font-size: 32px; }
+.size-24 { font-size: 24px; color: #008CBA; }
+
+a.has-tip, .name h1 a{
+    max-height: 2.7rem;
+    text-decoration: none;
+    border-style: none;
+}
+
+#feedback{
+    display: none;
+}
+
+.portfolio_item{
+    padding-top: 5px;
+}
+
+.panel.callout{
+    padding:0;
+    margin:0.5rem;
+    height: 23rem;
+    background-color: #f4f4f4;
+    border-color: #c0c0c0;
+}
+
+.panel.callout.wwf{
+    height: 20rem;
+}
+
+.greenpeace_logo{
+    width:80px;
+    top: 5%;
+    position: fixed;
+    padding: 7px;
+    opacity: 0.9;
+}
+
+.wwf_logo{
+    width:70px;
+    padding: 7px;
+}
+
+.panel_title{
+    max-height: 2.5rem;
+    max-height: 2.5rem;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 7px;
+    margin: 0;
+}
+.panel_date{
+    height: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 7px;
+    marfin:0;
+}
+.panel_content{
+    height: 10rem;
+    max-height: 10rem;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
+}
+
+.rounded_image{
+    border-radius: 50px;
+    width:70px;
+    height:70px;
+}
+
+.main_image_container{
+    display: block;
+    width:100%;
+    max-height:320px;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    clear:both;
+    border-radius: 5px;
+}
+
+.panel_image_container{
+    display: block;
+    width:100%;
+    height:11rem;
+    height:11rem;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+
+.panel_image_container_small{
+    display: block;
+    width:100%;
+    height:5rem;
+    height:5rem;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+
+.main_image_container img,.panel_image_container img{
+    margin:0;
+    min-width:100%;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+.slide-me-www,.slide-me{
+    display: none;
+}
+
+.slide-height{
+    min-height: 400px;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100%;
+}
+
+ul .dropdown li a{
+    padding:0px;
+    margin:0;
+}
+
+tbody tr th{
+    background-color: #3E3E3E;
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    padding: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+tr th span{
+    display:none;
+}
+
+h2 span{
+    color: #008cba;
+    min-width: 100%;
+    border-bottom: #008cba 1px solid;
+}
+
+h1 span{
+    min-width: 100%;
+    font-size: 2.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+h1,h1 span{
+    margin-top: -20px;
+    padding: 0;
+}
+
+nav{
+    opacity: 0.95;
+}
+
+#feed_logo{
+    width: 10rem;
+    margin:7px;
+    clear: both;
+    float: right;
+}
+
+.peta_div{
+    padding: 5px;
+}
+
+td{
+    padding: 0;
+    margin: 0;
+}
+td img{
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+table,.infobox, .biota{
+    width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #3E3E3E;
+    padding: 0;
+    margin: 7px 0;
+    clear: both;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+}
+
+.rounded_image_page{
+    border-radius: 5px;
+    margin: 7px;
+}
+.square_image_large{
+    border-radius: 5px;
+    margin: 7px;
+    width: 120px;
+    height: 90px;
+}
+
+.square_image_small{
+    border-radius: 5px;
+    margin: 7px;
+    width: 32px;
+    height: 32px;
+}
+
+h1{font-size: 2.5rem;text-decoration: none;margin-top: -12px;}
+h2{font-size: 2.0rem;text-decoration: none;}
+h3{font-size: 1.0rem;text-decoration: none;}
+h4{font-size: 1.0rem;text-decoration: none;}
+h5{font-size: 1.0rem;text-decoration: none;}
+h6{font-size: 0.5rem;text-decoration: none;}
