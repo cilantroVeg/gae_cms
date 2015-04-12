@@ -29,8 +29,14 @@ $( document ).ready(function() {
 
 function scroll_to_anchor(anchor_id){
     var tag = $("#"+anchor_id+"");
-    $('html,body').animate({scrollTop: tag.offset().top},'slow');
+    $('html,body').animate({scrollTop: tag.offset().top - 100},'slow');
 }
+
+function scroll_to_anchor(anchor_id, offset_value){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top - offset_value},'slow');
+}
+
 
 function scroll_to_anchor_and_show_tip(anchor_id){
     var tag = $("#"+anchor_id+"");

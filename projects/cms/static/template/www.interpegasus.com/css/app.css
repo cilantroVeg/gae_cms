@@ -15,15 +15,15 @@ p{
 }
 
 .top-bar .name h2 a{
-    min-width: 20rem;
-    overflow: hidden;
     white-space: nowrap;
-    height: 3.1rem;
+    font-size: 220%;
+    padding: 12px;
+    min-width: 320px;
 }
 
 nav, .top-bar{
-    height: 3.1rem;
-    min-height: 3.1rem;
+    height: 4.0rem;
+    min-height: 5.0rem;
 }
 
 .panel-top{
@@ -317,3 +317,17 @@ h3{font-size: 1.0rem;text-decoration: none;}
 h4{font-size: 1.0rem;text-decoration: none;}
 h5{font-size: 1.0rem;text-decoration: none;}
 h6{font-size: 0.5rem;text-decoration: none;}
+
+#home{
+    min-width:100%;
+    height: 360px;
+    min-height: 360px;
+    position: static;
+    overflow: hidden;
+}
+#home img{
+    display: block;
+    max-width:100%;
+    width: auto;
+    height: auto;
+}
