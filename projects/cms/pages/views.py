@@ -794,7 +794,7 @@ def front_page_language(request,language):
         except:
             logger.error('views/front_page_language')
             feed_pages = None
-    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'], 'app_name': settings.APP_NAME }, context_instance=RequestContext(request))
 
 def get_gallery(gallery_id=None):
     gallery = None

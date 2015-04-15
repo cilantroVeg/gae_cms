@@ -5,10 +5,20 @@
 <meta name="description" content="Arturo's Web And Mobile Portfolio"/>
 <meta name="author" content="Arturo"/>
 <meta name="application-name" content="InterPegasus CMS"/>
-<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
-<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
-<link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
-<script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
-<script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
-<script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
-<script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+{% if app_name == 'interpegasuslove' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.interpegasus.com/foundation-compass-template/bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.interpegasus.com/foundation-compass-template/bower_components/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}template/www.interpegasus.com/foundation-compass-template/bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}template/www.interpegasus.com/foundation-compass-template/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}template/www.interpegasus.com/foundation-compass-template/bower_components/foundation/js/foundation.js"></script>
+{% else %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}js/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}js/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}js/foundation/js/foundation.min.js"></script>
+{% endif %}
