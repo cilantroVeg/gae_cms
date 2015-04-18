@@ -13,7 +13,10 @@
         <!-- Title -->
         <ul class="title-area">
             <li class="name">
-                <h2><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">InterPegasus</a></h2>
+                <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
+                    <img src="/static/foundation/interpegasus/custom_assets/images/pegasus.png" style="height: 48px;" />
+                    InterPegasus
+                </a></h1>
             </li>
             <!-- Mobile Menu Toggle -->
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -24,16 +27,11 @@
             <ul class="right">
                 <!-- Divider -->
                 <li class="divider"></li>
-                <!-- Dropdown -->
                 {% for item in categories %}
                     <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
                 {% endfor %}
                 <li class="divider"></li>
-                <li>
-                    <div id="social">
-                        {% include "layout/social_login_3.html" %}
-                    </div>
-                </li>
+                {% include "layout/social_login_3.html" %}
                 {% if is_admin %}
                     <li>
                         <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
