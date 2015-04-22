@@ -1,7 +1,6 @@
 <li class="divider"></li>
 {% if is_logged_in %}
 <li><a data-tooltip aria-haspopup="true" class="has-tip" title="Welcome {{request.user.first_name}}" href = "#">Welcome {{request.user.first_name}}</a></li>
-<li>|</li>
 <li><a data-tooltip aria-haspopup="true" class="has-tip" title="Click here to close the session." href = "/exit">Log out</a></li>
 {% else %}
 <li><a data-tooltip aria-haspopup="true" class="has-tip"  href="/enter" title="Click here to create a new account or login."><span class=" fi-male-female size-24"></span></a></li>
