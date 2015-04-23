@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,900,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-32 { font-size: 32px; }
+.size-24 { font-size: 24px; color: #fff; }
+
+#feedback{
+    display: none;
+}
+
+h1,h1 a{font-size: 2.3rem;text-decoration: none;}
+h2{font-size: 2.0rem;text-decoration: none;}
+h3{font-size: 1.0rem;text-decoration: none;}
+h4{font-size: 1.0rem;text-decoration: none;}
+h5{font-size: 1.0rem;text-decoration: none;}
+h6{font-size: 0.5rem;text-decoration: none;}
+
+#home{
+    min-width:100%;
+    max-height: 35rem;
+    position: static;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#home img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid;
+    position: static;
+    z-index: 0;
+    opacity: .9;
+    margin: 0;
+    padding: 0;
+}
+
+#home h1{
+    position: absolute;
+    margin:2rem;
+    margin-left:50%;
+    max-width: 50%;
+    z-index: 1;
+    color: #f7f7f7;
+    font-size: 180%;
+}
+
+@media only screen and (max-width: 320px) {
+    #home h1{
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #home h1{
+        font-size: 75%;
+    }
+}
+
+
+.fixed{
+    background-color: rgb(239,133,38);
+}
+
+.fixed{
+    opacity: 0.95;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+    color: rgba(33, 29, 26, 0.05);
+    border: none;
+    border-bottom: 1px solid;
+}
+
+h1,h2,h3 {
+    color:rgb(239,133,38);
+}
+h4,h5,h6 {
+    color:#008CBA;
+}
+
+.big-icon{
+    font-size: 72px;
+    padding: 7px;
+    color:rgb(239,133,38);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color:#008CBA;
+    min-width: 100%;
+    color: #FFF;
+}
+footer h5, footer a{
+    color:#ffffff;
+}
+.no-deco{
+    text-decoration: none;
+    list-style: none;
+    list-style-image: none;
+    line-height: 0%;
+}
+
+.img-circle{
+    border-radius: 50%;
+    width:128px;
+    height: 128px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid ;
+    border-color: rgb(239,133,38);
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.img-circle img{
+    width: 128px;
+}
+
+.team_item{
+    text-align: center;
+    display:block;
+    clear:none;
+    float: left;
+    margin-left: 70px;
+}
+
+.bottom{
+    bottom: 5px;
+    position: absolute;
+    right: 12px;
+    margin-bottom: 7px;
+}
