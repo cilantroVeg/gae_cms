@@ -4,11 +4,6 @@
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
     {% include "layout/head.html" %}
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/slick/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/slick/slick/slick-theme.css"/>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/slick/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.nrwl.org/css/app.css"/>
-    <script src="{{ STATIC_URL }}template/www.nrwl.org/js/app.js"></script>
     {% block js %}{% endblock %}
 </head>
 <body>
@@ -18,7 +13,10 @@
         <!-- Title -->
         <ul class="title-area">
             <li class="name">
-                <h2><a href="/en" data-tooltip aria-haspopup="true" title="nrwl.org">Natural Resources & Wildlife Organization</a></h2>
+                <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
+                    <img src="/static/foundation/interpegasus_custom_assets/images/pegasus.png" style="height: 48px;" />
+                    InterPegasus
+                </a></h1>
             </li>
             <!-- Mobile Menu Toggle -->
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -29,35 +27,18 @@
             <ul class="right">
                 <!-- Divider -->
                 <li class="divider"></li>
-                <!-- Dropdown -->
-                <li class="has-dropdown not-click hide-for-medium"><a href="#">Species</a>
-                    <ul class="dropdown">
-                        <li><label>Endangered Species</label></li>
-                        {% for page in endangered_species|slice:":5" %}
-                        {% if request_language == 'en' %}
-                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}}</a></li>
-                        {% else %}
-                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
-                        {% endif%}
-                        {% endfor %}
-                        <li><a href="javascript:scroll_to_anchor('footer')">...</a></li>
-                        <li class="divider"></li>
-                        <li><label>Keystone Species</label></li>
-                        <li class="divider"></li>
-                    </ul>
-                </li>
-                <li>
-                    <div id="social">
-                        {% include "layout/social_login_3.html" %}
-                    </div>
-                </li>
+                {% for item in categories %}
+                    <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                {% endfor %}
+                <li class="divider"></li>
+                {% include "layout/social_login_3.html" %}
                 {% if is_admin %}
-                <li>
-                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
-                </li>
-                <li>
-                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
-                </li>
+                    <li>
+                        <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    </li>
+                    <li>
+                        <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                    </li>
                 {% endif %}
                 <li class="divider"></li>
             </ul>
@@ -66,7 +47,6 @@
 </div>
 <div class="off-canvas-wrap" data-offcanvas class="fixed">
     <div class="inner-wrap">
-
         <!-- Off Canvas Menu -->
         <aside class="left-off-canvas-menu">
             {% include "layout/admin.html" %}
@@ -74,43 +54,29 @@
         <aside class="right-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
-        <hr />
+
         <div class="row">
             <div class="large-12 columns">
                 {% block content %}{% endblock %}
             </div>
         </div>
 
-     <footer class="row" id="footer">
+        <footer class="row" id="footer">
             <div class="large-12 columns">
-                <hr/>
                 <div class="row">
                     <div class="large-4 columns">
-                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">NRWL {% now "Y" %} | <a href="/sitemap">Sitemap</a> | <a href="/api_documentaion/">API</a></span>
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">InterPegasus {% now "Y" %}</span> | <a href="/sitemap">Sitemap</a> | <a href="/api_documentaion/">API</a>
                     </div>
-
-                    <div class="large-4 columns">
-                        <ul class="inline-list right">
-                            <li><label>Endangered Species</label></li>
-                            <br />
-                            {% for page in endangered_species %}
-                            {% if request_language == 'en' %}
-                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}} ({{page.title|safe}})</a></li>
-                            {% else %}
-                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
-                            {% endif%}
-                            <br />
+                    <div class="large-8 columns">
+                        {% for item in categories %}
+                            <h5>{{ item.name }}</h5>
+                            {% for object in item.page_array %}
+                                <ul>
+                                    <li class="no-deco"><a href="/{{ request_language }}/{{ object.slug }}">{{ object.title }}</a></li>
+                                </ul>
                             {% endfor %}
-                        </ul>
+                        {% endfor %}
                     </div>
-                    <div class="large-4 columns">
-                        <ul class="inline-list right">
-                            <li><label>Keystone Species</label></li>
-                            <br />
-                            <li>...</li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
 
@@ -126,3 +92,7 @@
 </script>
 </body>
 </html>
+
+
+
+
