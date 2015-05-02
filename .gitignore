@@ -7,3 +7,4 @@ projects/.DS_Store
 projects/cms/.DS_Store
 projects/cms/static/.DS_Store
 projects/cms/static/foundation/.DS_Store
+projects/cms/access_keys.py
