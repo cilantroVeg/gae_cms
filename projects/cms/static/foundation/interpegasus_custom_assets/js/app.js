@@ -1,7 +1,7 @@
 $(document).foundation();
-$( document ).ready(function() {
 
-    $('.slide-ip').slick({
+$( document ).ready(function() {
+    $('#slide-ip').slick({
         autoplay:false,
         autoplaySpeed:5000,
         infinite: true,
@@ -10,11 +10,33 @@ $( document ).ready(function() {
         dots:false,
         arrows:false,
         initialSlide:1,
-        mobileFirst:true
+        mobileFirst:true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
     });
-    $('.slide-ip').show();
+    $('#slide-ip').show();
 
-    $('.slide-news').slick({
+    $('#slide-news').slick({
         autoplay:true,
         autoplaySpeed:5000,
         infinite: true,
@@ -23,9 +45,31 @@ $( document ).ready(function() {
         dots:false,
         arrows:true,
         initialSlide:1,
-        mobileFirst:true
+        mobileFirst:true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
     });
-    $('.slide-news').show();
+    $('#slide-news').show();
 
 });
 

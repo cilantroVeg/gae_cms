@@ -1,26 +1,18 @@
-{% block js %}
 <script type="text/javascript" src="{{STATIC_URL}}javascript/validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}javascript/signup.js"></script>
+
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <script type="text/javascript" src="{{STATIC_URL}}javascript/recaptcha.js"></script>
-{% endblock %}
-{% block content %}
-{% if error_message %}
-<div data-alert class="alert-box">
-    {{ error_message }}
-</div>
-{% endif %}
-<div>
-    <h1>Contact</h1>
-    <form id="contact_form" name="contact_form" action="/contact/" method="post">
-        {% csrf_token %}
-        <fieldset>
-            {{ form.as_p }}
-        </fieldset>
-        </br >
-        <div id="google_recaptcha"></div>
-        <br />
-        <input id="contact_button" type="submit" value="Contact" class="button hide" disabled="disabled" />
-    </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-</div>
-{% endblock %}
+
+<form id="contact_form" name="contact_form" action="/contact/" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <input type="text" name="contact_name" id="contact-name" placeholder="Your name ..."/>
+        <input type="text" name="contact_email" id="contact-email" placeholder="Your Email ..."/>
+        <textarea cols="20" name="contact_comment" id="contact-comment" rows="4" placeholder="Your Comment ..."></textarea>
+    </fieldset>
+    </br >
+    <div id="google_recaptcha"></div>
+    <br />
+    <input id="contact_button" type="submit" value="Send Message" class="button hide" disabled="disabled" />
+</form>

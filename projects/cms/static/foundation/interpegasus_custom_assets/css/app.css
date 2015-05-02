@@ -33,12 +33,13 @@ h6{font-size: 0.5rem;text-decoration: none;}
 
 #home{
     min-width:100%;
-    max-height: 35rem;
+    max-height: 37rem;
     position: static;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
+
 #home img{
     max-width: 100%;
     height: auto;
@@ -47,21 +48,25 @@ h6{font-size: 0.5rem;text-decoration: none;}
     border: none;
     border-bottom: 1px solid;
     position: static;
-    z-index: 0;
     opacity: .9;
     margin: 0;
     padding: 0;
 }
-
-#home h1{
+#home h1,#home h2{
     position: absolute;
     margin:2rem;
     margin-left:50%;
     max-width: 50%;
     z-index: 1;
-    color: #f7f7f7;
+    color: #f7a246;
     font-size: 180%;
 }
+
+#services{
+    position: static;
+    margin-top: -5rem;
+}
+
 
 @media only screen and (max-width: 320px) {
     #home h1{
@@ -99,13 +104,17 @@ h4,h5,h6 {
     color:#008CBA;
 }
 
-.big-icon{
+.big-icon,.medium-icon{
     font-size: 72px;
     padding: 7px;
     color:rgb(239,133,38);
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.medium-icon{
+  font-size: 36px;
 }
 
 footer{
@@ -144,7 +153,9 @@ footer h5, footer a{
     display:block;
     clear:none;
     float: left;
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
 }
 
 .bottom{
@@ -152,4 +163,71 @@ footer h5, footer a{
     position: absolute;
     right: 12px;
     margin-bottom: 7px;
+}
+
+.panel{
+    height: 200px;
+    min-height: 200px;
+}
+
+.hide{
+    display: none;
+}
+
+#newsletter
+{
+  background-color: #085a78;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+.ip-footer-bottom
+{
+  background-color: #333333;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  padding-top: 24px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+.ip-footer-top
+{
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  color: white;
+}
+
+/* Line 13860 */
+.ip-footer-top.bg-fblue
+{
+  background-color: #074e68;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+#pegasus_logo{
+    height: 48px
 }
