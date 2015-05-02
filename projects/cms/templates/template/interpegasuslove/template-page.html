@@ -14,7 +14,7 @@
         <ul class="title-area">
             <li class="name">
                 <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
-                    <img src="/static/foundation/interpegasus_custom_assets/images/pegasus.png" style="height: 48px;" />
+                    <img src="/static/foundation/interpegasus_custom_assets/images/pegasus.png" id="pegasus_logo" />
                     InterPegasus
                 </a></h1>
             </li>
@@ -54,237 +54,102 @@
         <aside class="right-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
-
-        {% for item in categories %}
-            {% if item.slug == 'home' %}
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="subheader text-right">{{ item.page_array.0.headline }}</h1>
-                    <img src="https://lh4.googleusercontent.com/-hLlOIRoKyKw/VNOCjqBOUyI/AAAAAAAACYA/g_3wibBKlZ4/s2048/IMG_4462.JPG"/>
-                </div>
-            {% elif item.slug == 'services' %}
-                <br />
-                <div id="{{ item.slug }}" class="row" data-equalizer>
-                    {% for object in item.page_array %}
-                        <div class="large-3 medium-3 columns panel" data-equalizer-watch>
-                            <h3>{{ object.title }}</h3>
-                            {% if 'Android' in object.title %}
-                                <span class="big-icon fi-social-android text-center"></span>
-                            {% elif 'iOS' in object.title %}
-                                <span class="big-icon fi-social-apple text-center"></span>
-                            {% elif 'Dev' in object.title %}
-                                <span class="big-icon fi-tablet-portrait text-center"></span>
-                            {% elif 'Des' in object.title %}
-                                <span class="big-icon fi-photo text-center"></span>
-                            {% endif %}
-                            <p>{{ object.headline|truncate_str:128 }}</p>
-                            <a class="button tiny right bottom" href="/{{request_language}}/{{ object.slug }}">Read More</a>
-                            <br />
-                        </div>
-                    {% endfor %}
-                </div>
-            {% elif item.slug == 'news' %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div id="slide-news" data-equalizer>
-                        {% for item in feed_pages.YAHOO %}
-                            <div data-equalizer-watch>
-                                <h5 class="sub-heading">{{ item.title }}</h5>
-                                <p>{{ item.content_no_html|truncate_str:128 }}</p>
-                                <a class="button tiny right" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            {% elif item.slug == 'contact' %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div class="large-12 columns">
-                        <!-- Handle Home News Contact Section -->
-                        {% include "layout/contact_form_2.html" %}
-                    </div>
-                </div>
-            {% elif item.slug == 'team' %}
-                <br />
-                <h1 id="{{ item.slug }}" class="text-center">{{ item.name }}</h1>
-                    <div class="row small-6 columns" >
-                        <div class="team_item">
-                            <div class="img-circle">
-                                <img src="https://lh3.googleusercontent.com/-J8-X29QlOeg/VTe_CZHw5nI/AAAAAAAADYM/BUZlMU7bavk/s2048/rose.jpg"  alt="Rose">
-                            </div>
-                            <h3>Rose</h3>
-                            <p>CTO</p>
-                        </div>
-                    </div>
-                    <div class="row small-6 columns" >
-                        <div class="team_item">
-                            <div class="img-circle">
-                                <img src="https://lh3.googleusercontent.com/-LTgBqcIjvSI/VTe_BZIXPlI/AAAAAAAADYE/vDH7aJkiW0c/s320/arturo.jpg"  alt="Arturo">
-                            </div>
-                            <h3>Arturo</h3>
-                            <p>CEO</p>
-                        </div>
-
-                    </div>
-
-                <br />
-            {% else %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div id="slide-ip" class="row" data-equalizer>
-                        {% for object in item.page_array %}
-                            <div>
-                                <ul class="pricing-table" data-equalizer-watch>
-                                    <li class="title">{{ object.title }}</li>
-                                    <li class="bullet-item"><p>{{ object.headline }}</p></li>
-                                    <li class="cta-button"><a class="button tiny" href="#">View</a></li>
-                                </ul>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <br />
-            {% endif %}
-            <hr />
-        {% endfor %}
-
-        <footer class="row" id="footer">
+        <hr />
+        <div class="row">
             <div class="large-12 columns">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <footer class="row" id="footer">
+            <!-- close the off-canvas menu -->
+            <div id="newsletter">
                 <div class="row">
-                    <div class="large-4 columns">
-                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">InterPegasus {% now "Y" %}</span> | <a href="/sitemap">Sitemap</a> | <a href="/api_documentaion/">API</a>
+                    <div class="medium-8 columns">
+                        <h4>Sign up to our newsletter</h4>
                     </div>
-                    <div class="large-8 columns">
-                        {% for item in categories %}
-                            <h5>{{ item.name }}</h5>
-                            {% for object in item.page_array %}
-                                <ul>
-                                    <li class="no-deco"><a href="/{{ request_language }}/{{ object.slug }}">{{ object.title }}</a></li>
-                                </ul>
-                            {% endfor %}
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-        <!-- close the off-canvas menu -->
-        <div id="newsletter">
-            <div class="row">
-                <div class="medium-8 columns">
-                    <h5>Stay on top of what’s happening in <a href="http://zurb.com/responsive">responsive design</a>.</h5>
-                    <p>Sign up to receive monthly <a href="http://zurb.com/responsive/reading">Responsive Reading</a> highlights. <a href="http://www.zurb.com/responsive/reading"></a></p><a href="http://www.zurb.com/responsive/reading">
-                </a></div><a href="http://www.zurb.com/responsive/reading">
-                <div class="medium-4 columns">
-                    <form action="http://zurb.createsend.com/t/y/s/xlitlu/" method="post" id="subForm">
+                    <div class="medium-4 columns">
                         <div class="row collapse margintop-20px">
-                            <div class="small-8 medium-8 columns">
-                                <input id="fieldEmail" name="cm-xlitlu-xlitlu" placeholder="signup@example.com" type="text">
+                            <form action="//interpegasus.us10.list-manage.com/subscribe/post?u=0d0fe61d7bed2c263e3863425&amp;id=e32bacf7cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div class="small-8 medium-8 columns">
+                                    <div id="mc_embed_signup">
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="mc-field-group">
+                                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="signup@email.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-4 medium-4 columns">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button small">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ip-footer-top bg-fblue">
+                <div class="row property">
+                    <div class="medium-4 columns">
+                        <div class="property-info">
+                            <h3>InterPegasus</h3>
+                            <p><a href="http://www.interpegasus.com/">InterPegasus provides </a>professional services, including development and design of mobile and web applications.</p>
+                        </div>
+                    </div>
+                    <div class="medium-8 columns">
+                        <div class="row collapse">
+                            <div class="medium-4 columns">
+                                <div class="learn-links">
+                                    <h4 class="hide-for-small">Visit us</h4>
+                                    <p>On Facebook at <br> <a href="https://facebook.com/interpegasus">interpegasus</a></p>
+                                    <h4 class="hide-for-small">Site Map</h4>
+                                    <p><a href="/sitemap">Sitemap</a></p>
+                                </div>
                             </div>
-                            <div class="small-4 medium-4 columns">
-                                <input href="#" class="postfix small button expand" value="Sign Up" type="submit">
+                            <div class="medium-4 columns">
+                                <div class="support-links">
+                                    <h4 class="hide-for-small">Talk to us</h4>
+                                    <p>Tweet us at <br> <a href="https://twitter.com/interpegasus">interpegasus</a></p>
+                                    <h4 class="hide-for-small">Responsive Design</h4>
+                                    <p>via <a href="http://foundation.zurb.com/">Foundation</a></p>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns">
+                                <div class="connect-links">
+                                    <h4 class="hide-for-small">Dev Channel</h4>
+                                    <p>Latest development updates via <a href="https://github.com/interpegasus">Github</a>.</p>
+                                    <h4 class="hide-for-small">InterPegasus API</h4>
+                                    <p><a href="/api_documentaion/">API</a></p>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </a>
-            </div>
-            <a href="http://www.zurb.com/responsive/reading">
-            </a>
-        </div>
-        <a href="http://www.zurb.com/responsive/reading">
-        </a>
-        <div class="zurb-footer-top bg-fblue"><a href="http://www.zurb.com/responsive/reading">
-        </a><div class="row property"><a href="http://www.zurb.com/responsive/reading">
-        </a><div class="medium-4 columns"><a href="http://www.zurb.com/responsive/reading">
-        </a><div class="property-info"><a href="http://www.zurb.com/responsive/reading">
-            <h3>Foundation</h3>
-        </a><p><a href="http://www.zurb.com/responsive/reading">Foundation is made by </a><a href="http://zurb.com">ZURB, a product design</a> company in Campbell, California. We've put more than 15 years of experience building web products, services and websites into this framework.
-        </p>
-        </div>
-        </div>
-            <div class="medium-8 columns">
-                <div class="row collapse">
-                    <div class="medium-4 columns">
-                        <div class="learn-links">
-                            <h4 class="hide-for-small">Want more?</h4>
-                            <ul>
-                                <li><a href="business/services.html">Foundation Business</a></li>
-                                <li><a href="http://zurb.com/responsive">Responsive</a></li>
-                                <li><a href="http://zurb.com/notable">Notable</a></li>
-                                <li><a href="learn/training.html">Foundation Training</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="medium-4 columns">
-                        <div class="support-links">
-                            <h4 class="hide-for-small">Talk to us</h4>
-                            <p>Tweet us at <br> <a href="https://twitter.com/zurbfoundation">@ZURBfoundation</a></p>
-                            <p>Or check our <br> <a href="support/support.html">support page</a></p>
-                        </div>
-                    </div>
-                    <div class="medium-4 columns">
-                        <div class="connect-links">
-                            <h4 class="hide-for-small">Stay in touch</h4>
-                            <p>Keep up with the latest on Foundation. Find us on <a href="https://github.com/zurb/foundation">Github</a>.</p>
-                            <a href="http://zurb.com/news" class="small button">Stay Connected</a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-            <div class="row global">
-                <div class="medium-3 small-6 columns">
-                    <a href="http://zurb.com/studios" class="footer-link-block services">
-                        <span class="title">Studios</span>
-                        <span>Helping more than 200 startups succeed since 1998.</span>
-                    </a>
-                </div>
-                <div class="medium-3 small-6 columns">
-                    <a href="http://foundation.zurb.com/" class="footer-link-block foundation">
-                        <span class="title">Foundation</span>
-                        <span>The most advanced front-end framework in the world.</span>
-                    </a>
-                </div>
-                <div class="medium-3 small-6 columns">
-                    <a href="http://zurb.com/notable" class="footer-link-block apps">
-                        <span class="title">Notable</span>
-                        <span>Prototype, iterate and collect feedback on your products.</span>
-                    </a>
-                </div>
-                <div class="medium-3 small-6 columns">
-                    <a href="http://zurb.com/university" class="footer-link-block expo">
-                        <span class="title">University</span>
-                        <span>Ideas, thoughts and design resources shared with you.</span>
-                    </a>
+            <div class="ip-footer-bottom">
+                <div class="row">
+                    <div class="medium-4 medium-4 push-8 columns">
+                        <ul class="home-social inline-list">
+                            <li><a href="http://www.twitter.com/interpegasus" class="twitter"><span class="medium-icon fi-social-twitter text-center"></span></a></li>
+                            <li><a href="http://www.facebook.com/interpegasus" class="facebook"><span class="medium-icon fi-social-facebook text-center"></span></a></li>
+                            <li><a href="http://github.com/interpegasus" class="mail"><span class="medium-icon fi-social-github text-center"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-8 medium-8 pull-4 columns">
+
+                        <ul class="inline-list">
+                            {% for item in categories %}
+
+                                <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        <p class="copyright">© 2004–{% now "Y" %} InterPegasus. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="zurb-footer-bottom">
-            <div class="row">
-                <div class="medium-4 medium-4 push-8 columns">
-                    <ul class="home-social">
-                        <li><a href="http://www.twitter.com/ZURB" class="twitter"></a></li>
-                        <li><a href="http://www.facebook.com/ZURB" class="facebook"></a></li>
-                        <li><a href="http://zurb.com/contact" class="mail"></a></li>
-                    </ul>
-                </div>
-                <div class="medium-8 medium-8 pull-4 columns">
-                    <a href="http://www.zurb.com" class="zurb-logo regular"></a>
-                    <ul class="zurb-links">
-                        <li><a href="http://zurb.com/about">About</a></li>
-                        <li><a href="http://zurb.com/blog">Blog</a></li>
-                        <li><a href="http://zurb.com/news">News<span class="show-for-medium-up"> &amp; Events</span></a></li>
-                        <li><a href="http://zurb.com/contact">Contact</a></li>
-                        <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
-                    </ul>
-                    <p class="copyright">© 1998–2015 ZURB, Inc. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
+
     <a class="exit-off-canvas"></a>
 </div>
 <script>

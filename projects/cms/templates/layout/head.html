@@ -6,6 +6,7 @@
 <meta name="author" content="Arturo"/>
 <meta name="application-name" content="InterPegasus CMS"/>
 {% if app_name == 'interpegasuslove' %}
+    <meta name="gae_app_name" content="interpegasuslove"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/interpegasus/bower_components/foundation/css/foundation.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/interpegasus/bower_components/foundation/css/normalize.css"/>
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/interpegasus_custom_assets/css/app.css"/>
     <script src="{{ STATIC_URL }}foundation/interpegasus_custom_assets/js/app.js"></script>
 {% else %}
+    <meta name="gae_app_name" content="happy-planet"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/normalize.css"/>

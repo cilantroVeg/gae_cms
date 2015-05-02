@@ -144,8 +144,9 @@ footer h5, footer a{
     margin-right: auto ;
 }
 
-.img-circle img{
+.img-circle img, .feed-logo{
     width: 128px;
+    max-width: 128px;
 }
 
 .team_item{
@@ -230,4 +231,11 @@ footer h5, footer a{
 
 #pegasus_logo{
     height: 48px
+}
+
+.rounded_image_page{
+    border-radius: 5px;
+    margin: 7px;
+    max-height: 360px;
+    max-width: 360px;
 }

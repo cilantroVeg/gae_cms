@@ -479,7 +479,7 @@ def page_view(request, language, slug):
             logger.error('views/page_view')
             endangered_species = None
             keystone_species = None
-    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species},context_instance=RequestContext(request))
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
 
 #...
 def is_wiki(page):
@@ -593,8 +593,12 @@ def page_feed_view(request, language, slug):
         except:
             logger.error('views/page_view')
             endangered_species = None
+            keystone_species = None
+    else:
+        endangered_species = None
+        keystone_species = None
     if page:
-        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species},context_instance=RequestContext(request))
+        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
     else:
         language = get_request_language(request)["request_language"]
         galleries = query_api(language, 'galleries')
@@ -602,7 +606,7 @@ def page_feed_view(request, language, slug):
         pages = query_api(language, 'pages')
         categories = query_api(language, 'categories')
         feeds = query_api(language, 'feed_pages')
-        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds},context_instance=RequestContext(request))
+        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
 
 # ...
 def page_api(request):
