@@ -466,6 +466,8 @@ def image_delete(request, id=None):
 # ...
 def page_view(request, language, slug):
     page = get_object_or_404(Page, slug=slug)
+    endangered_species = None
+    keystone_species = None
     if is_wiki(page):
         wiki_page = process_wiki_page(language,page)
     else:
@@ -477,17 +479,17 @@ def page_view(request, language, slug):
             keystone_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/page_view')
-            endangered_species = None
-            keystone_species = None
     return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
 
 #...
 def is_wiki(page):
     parent_category = Category.objects.get(slug=page.category.slug)
-    if parent_category and (parent_category.parent.slug == 'wiki'):
-        return True
-    else:
+    try:
+        if parent_category and (parent_category.parent.slug == 'wiki'):
+            return True
+    except:
         return False
+    return False
 
 #...
 def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
@@ -727,7 +729,7 @@ def contact(request):
     else:
         form = ContactForm()
         error_message = ''
-    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message, 'app_name': settings.APP_NAME})
+    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
 
 def message_contains_url(message):
     from django.utils.html import urlize
@@ -798,7 +800,7 @@ def front_page_language(request,language):
         except:
             logger.error('views/front_page_language')
             feed_pages = None
-    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'], 'app_name': settings.APP_NAME }, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'] }, context_instance=RequestContext(request))
 
 def get_gallery(gallery_id=None):
     gallery = None

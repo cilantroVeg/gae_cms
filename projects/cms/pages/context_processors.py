@@ -51,3 +51,6 @@ def get_request_language(request):
         return {'request_language': language_code}
     else:
         return {'request_language': 'en'}
+
+def app_name(request):
+    return {'app_name': settings.APP_NAME}

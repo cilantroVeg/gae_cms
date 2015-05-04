@@ -45,7 +45,7 @@
         </section>
     </nav>
 </div>
-<div class="off-canvas-wrap" data-offcanvas class="fixed">
+<div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
         <!-- Off Canvas Menu -->
         <aside class="left-off-canvas-menu">
@@ -54,7 +54,6 @@
         <aside class="right-off-canvas-menu">
             {% include "layout/admin.html" %}
         </aside>
-
         {% for item in categories %}
             {% if item.slug == 'home' %}
                 <div id="{{ item.slug }}" class="row">
@@ -236,9 +235,8 @@
                 </div>
             </div>
         </footer>
+        <a class="exit-off-canvas"></a>
     </div>
-
-    <a class="exit-off-canvas"></a>
 </div>
 <script>
     $(document).foundation();
