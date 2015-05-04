@@ -40,7 +40,7 @@ def category_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/categories/')
-        return render_to_response("pages/category_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/category_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -57,7 +57,7 @@ def category_formset(request):
                 return redirect('/categories/')
         else:
             formset = CategoryFormSet(initial=Category.objects.values())
-        return render_to_response("pages/category_formset.html", {"formset": formset}, context_instance=RequestContext(request))
+        return render_to_response("pages/category_formset.html", {"formset": formset,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -65,7 +65,7 @@ def category_formset(request):
 # ...
 def category_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/category_list.html", {"category_list": Category.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/category_list.html", {"category_list": Category.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -87,14 +87,14 @@ def language_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/languages/')
-        return render_to_response("pages/language_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/language_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def language_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/language_list.html", {"language_list": Language.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/language_list.html", {"language_list": Language.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -120,14 +120,14 @@ def gallery_form(request, id=None):
             gallery = gallery_form.save(commit=False)
             gallery.save()
             return redirect('/galleries/')
-        return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
+        return render_to_response("pages/gallery_form.html", {"gallery_form": gallery_form, "id": id, "user": request.user.id, 'image_array': image_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def gallery_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/gallery_list.html", {"gallery_list": Gallery.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/gallery_list.html", {"gallery_list": Gallery.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -157,14 +157,14 @@ def page_form(request, id=None):
             page.user = request.user
             page.save()
             return redirect('/pages/')
-        return render_to_response("pages/page_form.html", {"page_form": page_form, "id": id, "user": request.user.id, 'image_array': image_array}, context_instance=RequestContext(request))
+        return render_to_response("pages/page_form.html", {"page_form": page_form, "id": id, "user": request.user.id, 'image_array': image_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def page_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/page_list.html", {"page_list": Page.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/page_list.html", {"page_list": Page.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -185,14 +185,14 @@ def record_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/records/')
-        return render_to_response("pages/record_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/record_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def record_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/record_list.html", {"record_list": Record.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/record_list.html", {"record_list": Record.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -213,14 +213,14 @@ def feed_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/feeds/')
-        return render_to_response("pages/feed_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/feed_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def feed_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/feed_list.html", {"feed_list": Feed.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/feed_list.html", {"feed_list": Feed.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -241,14 +241,14 @@ def advertisement_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/advertisements/')
-        return render_to_response("pages/advertisement_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/advertisement_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def advertisement_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/advertisement_list.html", {"advertisement_list": Advertisement.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("pages/advertisement_list.html", {"advertisement_list": Advertisement.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -290,7 +290,7 @@ def spreadsheet_form(request, id=None):
             spreadsheet.save()
             handle_spreadsheet(request.FILES['spreadsheet_file'], request.user, spreadsheet)
             return redirect('/spreadsheets/')
-        return render_to_response("pages/spreadsheet_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("pages/spreadsheet_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -370,7 +370,7 @@ def image_form(request, id=None):
             return redirect('/images/')
         else:
             return render_to_response("pages/image_form.html",
-                                      {"form": form, "id": id},
+                                      {"form": form, "id": id,'app_name':app_name(request)['app_name']},
                                       context_instance=RequestContext(request))
 
     else:
@@ -436,7 +436,7 @@ def handle_image_picasa(file, image, description=None,url_slug=''):
 # ...
 def image_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name')}, context_instance=RequestContext(request))
+        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name'),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -479,7 +479,7 @@ def page_view(request, language, slug):
             keystone_species = query_api(language, 'pages',{'category_slug': 'endangered-species'})['pages']
         except:
             logger.error('views/page_view')
-    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
+    return render_to_response("pages/page_view.html", {"page": page,"image_array":image_array, "wiki_page":wiki_page, "endangered_species":endangered_species, "keystone_species":keystone_species, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 #...
 def is_wiki(page):
@@ -574,9 +574,9 @@ def gallery_view(request, language, slug):
             image_list = get_image_list(gallery.id)
         else:
             image_list = None
-        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
-        return render_to_response("template/arturopegasus7/template-frontpage.html", {"gallery": gallery,"image_array":image_array},context_instance=RequestContext(request))
+        return render_to_response("template/arturopegasus7/template-frontpage.html", {"gallery": gallery,"image_array":image_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 # ...
 def page_feed_view(request, language, slug):
@@ -600,7 +600,7 @@ def page_feed_view(request, language, slug):
         endangered_species = None
         keystone_species = None
     if page:
-        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
+        return render_to_response("pages/page_view.html", {"page": page,"endangered_species":endangered_species,"keystone_species":keystone_species, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         language = get_request_language(request)["request_language"]
         galleries = query_api(language, 'galleries')
@@ -608,7 +608,7 @@ def page_feed_view(request, language, slug):
         pages = query_api(language, 'pages')
         categories = query_api(language, 'categories')
         feeds = query_api(language, 'feed_pages')
-        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
+        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 # ...
 def page_api(request):
@@ -620,7 +620,7 @@ def sitemap(request):
     response_format = 'json'
     if settings.APP_NAME == 'bible-love':
         languages = bible_languages(request,media,response_format)
-        return render_to_response("pages/sitemap-bible.html", {'languages':languages},context_instance=RequestContext(request))
+        return render_to_response("pages/sitemap-bible.html", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         language = get_request_language(request)["request_language"]
         pages = query_api(language, 'pages')
@@ -628,7 +628,7 @@ def sitemap(request):
         feeds = query_api(language, 'feed_pages')
         galleries = query_api(language, 'galleries')
         images = query_api(language, 'images')
-        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME},context_instance=RequestContext(request))
+        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 # ...
 def sitemap_xml(request):
@@ -636,7 +636,7 @@ def sitemap_xml(request):
     response_format = 'json'
     if settings.APP_NAME == 'bible-love':
         languages = bible_languages(request,media,response_format)
-        return render_to_response("pages/sitemap.xml", {'languages':languages},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+        return render_to_response("pages/sitemap.xml", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
         return render_to_response("pages/sitemap.html", {},
                                   context_instance=RequestContext(request))
@@ -656,14 +656,14 @@ def sitemap_xml_language(request,language):
         bibles = bible_list(request,media,language_family_code.lower(),response_format)
     else:
         bibles = []
-    return render_to_response("pages/sitemap-page.xml", {'language':language,'bibles': bibles},context_instance=RequestContext(request),content_type="application/xhtml+xml")
+    return render_to_response("pages/sitemap-page.xml", {'language':language,'bibles': bibles,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
 
 # ...
 def category_view(request, language, slug):
     language = Language.objects.filter(code=language)[:1]
     category = get_object_or_404(Category, slug=slug, language_id=language[0].id)
     pages = Page.objects.filter(category=category)
-    return render_to_response("pages/category_view.html", {"category": category, "pages": pages},context_instance=RequestContext(request))
+    return render_to_response("pages/category_view.html", {"category": category, "pages": pages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 # ...
 def image_view(request, language, slug):
@@ -774,10 +774,10 @@ def front_page_language(request,language):
             image_list = get_image_list(gallery['id'])
         else:
             image_list = None
-        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     elif settings.APP_NAME == 'arturoportfolio7':
         pages = get_page_list()
-        return render_to_response('users/template.html', {'page_list':pages,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'page_list':pages,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     elif settings.APP_NAME == 'happy-planet':
         language_code = 'en' if (language is None) else language
         try:
@@ -790,7 +790,7 @@ def front_page_language(request,language):
         except:
             logger.error('views/front_page_language')
             endangered_species = None
-        return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         image_array = Image.objects.all()[:7]
         language_code = 'en' if (language is None) else language
@@ -800,7 +800,7 @@ def front_page_language(request,language):
         except:
             logger.error('views/front_page_language')
             feed_pages = None
-    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'] }, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 def get_gallery(gallery_id=None):
     gallery = None
@@ -887,7 +887,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         request.session['last_url'] = request.build_absolute_uri()
     else:
         return redirect('/eng', False)
-    return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(),'current_language_html':language_item[0]["language_family_iso_1"], 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'current_url':request.session['last_url'],'languages_bible':languages, 'current_language':language_family_iso.lower(),'current_language_html':language_item[0]["language_family_iso_1"], 'bibles':bibles, 'current_bible':current_bible, 'books':books, 'current_book':current_book, 'current_chapter':chapter, 'references':reference,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 #...
 def search_dictionaries(key, value, list_of_dictionaries):
@@ -967,7 +967,7 @@ def image_upload(request):
         elif gallery_id:
             gallery = Gallery.objects.get(id=gallery_id)
             page = None
-        return render_to_response("pages/image_upload.html", {"page":page, "gallery":gallery }, context_instance=RequestContext(request))
+        return render_to_response("pages/image_upload.html", {"page":page, "gallery":gallery ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
