@@ -3,7 +3,7 @@
 
 
 ##~ a = source2swagger.namespace("interpegasus_cms")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/languages", :description => "Get CMS Available Languages", :format => "json"
@@ -28,7 +28,7 @@ end
 
 
 ##~ a = source2swagger.namespace("interpegasus_cms")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/categories", :description => "Get CMS Categories by language", :format => "json"
@@ -54,7 +54,7 @@ end
 
 
 ##~ a = source2swagger.namespace("interpegasus_cms")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/pages", :description => "Get pages by slug or by category", :format => "json"
@@ -81,7 +81,7 @@ end
 
 
 ##~ a = source2swagger.namespace("interpegasus_cms")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/images", :description => "Get images by slug or by category", :format => "json"
@@ -106,7 +106,7 @@ def images
 end
 
 ##~ a = source2swagger.namespace("interpegasus_cms")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/feed_pages", :description => "Get feed pages", :format => "json"
@@ -132,7 +132,7 @@ end
 
 
 ##~ a = source2swagger.namespace("bible")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/books", :description => "Get book names", :format => "json"
@@ -157,7 +157,7 @@ def books
 end
 
 ##~ a = source2swagger.namespace("bible")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/chapters", :description => "Get chapters by book", :format => "json"
@@ -184,7 +184,7 @@ def chapters
 end
 
 ##~ a = source2swagger.namespace("nrwl")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/categories", :description => "Get NRWL Categories by language", :format => "json"
@@ -210,7 +210,7 @@ end
 
 
 ##~ a = source2swagger.namespace("nrwl")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/pages", :description => "Get NRWL pages by slug or by category", :format => "json"
@@ -236,7 +236,7 @@ def pages
 end
 
 ##~ a = source2swagger.namespace("music")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/artists", :description => "Get music artists", :format => "json"
@@ -260,7 +260,7 @@ end
 
 
 ##~ a = source2swagger.namespace("music")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/songs", :description => "Get songs by artist", :format => "json"
@@ -290,7 +290,7 @@ def chapters
 end
 
 ##~ a = source2swagger.namespace("recipes")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/categories", :description => "Get Recipe Categories by language", :format => "json"
@@ -316,7 +316,7 @@ end
 
 
 ##~ a = source2swagger.namespace("recipes")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/recipe", :description => "Get recipes by slug or by category", :format => "json"
@@ -342,7 +342,7 @@ def recipes
 end
 
 ##~ a = source2swagger.namespace("news")
-##~ a.set "basePath" => "http://127.0.0.1:8080/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
+##~ a.set "basePath" => "http://www.interpegasus.com/api", "swaggerVersion" => "1", "apiVersion" => "1.0"
 
 ##~ e = a.apis.add
 ##~ e.set :path => "/{language_code}/news", :description => "Get news array", :format => "json"

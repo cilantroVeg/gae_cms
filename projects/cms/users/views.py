@@ -23,11 +23,11 @@ def enter(request):
     if is_logged_in['is_logged_in']:
         return redirect('/', False)
     else:
-        return render_to_response('users/signup.html', context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'app_name':settings.APP_NAME},context_instance=RequestContext(request))
 
 # ...
 def not_found(request):
-    return render_to_response('template/404.html',context_instance=RequestContext(request))
+    return render_to_response('template/404.html', {'app_name':settings.APP_NAME},context_instance=RequestContext(request))
 
 # ...
 def exit_request(request):
@@ -51,7 +51,7 @@ def process_create_account(request):
             login(request, user)
             return redirect('/', False)
     else:
-        return render_to_response('users/signup.html', {'error_message': "User Registration for '"+ username + "' Was Succesful. Please login."}, context_instance=RequestContext(request))
+        return render_to_response('users/signup.html',{'app_name':settings.APP_NAME, 'error_message': "User Registration for '"+ username + "' Was Succesful. Please login."}, context_instance=RequestContext(request))
 
 
 # ...
@@ -66,7 +66,7 @@ def process_sign_up(request):
             return redirect('/', False)
     else:
         # Return an 'invalid login' error message.
-        return render_to_response('users/signup.html', {'error_message': "Email and Password Don't Match"}, context_instance=RequestContext(request))
+        return render_to_response('users/signup.html', {'app_name':settings.APP_NAME, 'error_message': "Email and Password Don't Match"}, context_instance=RequestContext(request))
 
 # ...
 def logged_in(request):
@@ -74,7 +74,7 @@ def logged_in(request):
 
 # ...
 def login_error(request):
-    return render_to_response('users/signup.html', {'error_message': "Incorrect login. Please try again"}, context_instance=RequestContext(request))
+    return render_to_response('users/signup.html', {'app_name':settings.APP_NAME, 'error_message': "Incorrect login. Please try again"}, context_instance=RequestContext(request))
 
 # ...
 def user_form(request, id=None):
@@ -84,14 +84,14 @@ def user_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/users/')
-        return render_to_response("users/user_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("users/user_form.html", {'app_name':settings.APP_NAME,"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def user_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("users/user_list.html", {"user_list": User.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("users/user_list.html", {'app_name':settings.APP_NAME,"user_list": User.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -112,13 +112,13 @@ def user_profile_form(request, id=None):
         if form.is_valid():
             form.save()
             return redirect('/user_profiles/')
-        return render_to_response("users/user_profile_form.html", {"form": form, "id": id}, context_instance=RequestContext(request))
+        return render_to_response("users/user_profile_form.html", {'app_name':settings.APP_NAME,"form": form, "id": id}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
 # ...
 def user_profile_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("users/user_profile_list.html", {"user_profile_list": UserProfile.objects.all()}, context_instance=RequestContext(request))
+        return render_to_response("users/user_profile_list.html", {'app_name':settings.APP_NAME, "user_profile_list": UserProfile.objects.all()}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
