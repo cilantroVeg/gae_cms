@@ -551,3 +551,9 @@ def get_client_ip(request):
     except:
         ip=None
     return ip
+
+
+def json_file(request,file_name='interpegasus_cms'):
+    url = 'http://127.0.0.1:8080/static/template/API/api-docs/' + str(file_name)
+    result = urlfetch.fetch(url)
+    return HttpResponse(result.content, mimetype='application/json')

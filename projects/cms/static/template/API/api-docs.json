@@ -3,27 +3,27 @@
   "swaggerVersion": "1.2",
   "apis": [
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/interpegasus_cms",
+            "path":"http://127.0.0.1:8080/api/json/interpegasus_cms",
             "description":"InterPegasus CMS API"
         },
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/bible",
+            "path":"http://127.0.0.1:8080/api/json/bible",
             "description":"Bible"
         },
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/music",
+            "path":"http://127.0.0.1:8080/api/json/music",
             "description":"Music"
         },
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/nrwl",
+            "path":"http://127.0.0.1:8080/api/json/nrwl",
             "description":"Natural Resources And Wildlife Organization"
         },
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/recipes",
+            "path":"http://127.0.0.1:8080/api/json/recipes",
             "description":"Recipes Yiyask"
         },
         {
-            "path":"http://www.interpegasus.com/static/template/API/api-docs/news",
+            "path":"http://127.0.0.1:8080/api/json/news",
             "description":"News Feed"
         }
   ]

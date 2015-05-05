@@ -129,6 +129,8 @@ urlpatterns = patterns('',
     url(r'^api/(?P<language_code>[a-z]{2})/feed_pages[/]$', 'pages.api.feed_pages'),
     url(r'^api/validate_recaptcha[/]$', 'pages.api.validate_recaptcha'),
 
+    url(r'^api/json/(?P<file_name>[-\w]+)[/]$', 'pages.api.json_file'),
+
     # Ajax
     url(r'^ajax/galleries[/]$', 'pages.ajax.get_gallery_list'),
     url(r'^ajax/pages[/]$', 'pages.ajax.get_page_list'),
