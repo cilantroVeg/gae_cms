@@ -121,15 +121,18 @@ urlpatterns = patterns('',
     # API InterPegasus CMS
     url(r'^(?P<language>[a-z]{2})/i/(?P<slug>[-\w]+)[/]$', 'pages.views.image_view'),
 
-    url(r'^api/(?P<language_code>[a-z]{2})/languages[/]$', 'pages.api.languages'),
-    url(r'^api/(?P<language_code>[a-z]{2})/categories[/]$', 'pages.api.categories'),
-    url(r'^api/(?P<language_code>[a-z]{2})/pages[/]$', 'pages.api.pages'),
-    url(r'^api/(?P<language_code>[a-z]{2})/images[/]$', 'pages.api.images'),
-    url(r'^api/(?P<language_code>[a-z]{2})/galleries[/]$', 'pages.api.galleries'),
-    url(r'^api/(?P<language_code>[a-z]{2})/feed_pages[/]$', 'pages.api.feed_pages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/languages/?$', 'pages.api.languages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/categories/?$', 'pages.api.categories'),
+    url(r'^api/(?P<language_code>[a-z]{2})/pages/?$', 'pages.api.pages'),
+    url(r'^api/(?P<language_code>[a-z]{2})/images/?$', 'pages.api.images'),
+    url(r'^api/(?P<language_code>[a-z]{2})/galleries/?$', 'pages.api.galleries'),
+    url(r'^api/(?P<language_code>[a-z]{2})/feed_pages/?$', 'pages.api.feed_pages'),
     url(r'^api/validate_recaptcha[/]$', 'pages.api.validate_recaptcha'),
 
     url(r'^api/json/(?P<file_name>[-\w]+)[/]$', 'pages.api.json_file'),
+
+    url(r'^api/.*', 'pages.api.not_found'),
+
 
     # Ajax
     url(r'^ajax/galleries[/]$', 'pages.ajax.get_gallery_list'),

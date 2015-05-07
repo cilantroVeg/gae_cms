@@ -652,7 +652,7 @@ def sitemap_xml_language(request,language):
     if language_item:
         language_family_iso = language_item[0]['language_family_iso']
         language_family_code = language_item[0]['language_family_code']
-        # Bible List
+        # bible List
         bibles = bible_list(request,media,language_family_code.lower(),response_format)
     else:
         bibles = []
@@ -729,7 +729,7 @@ def contact(request):
     else:
         form = ContactForm()
         error_message = ''
-    return render(request, 'users/contact.html', {'form': form, 'error_message': error_message})
+    return render(request, 'users/contact.html', {'form': form, 'app_name':app_name(request)['app_name'],'error_message': error_message})
 
 def message_contains_url(message):
     from django.utils.html import urlize
@@ -796,7 +796,7 @@ def front_page_language(request,language):
         language_code = 'en' if (language is None) else language
         try:
             feed_pages = query_api(language_code, 'feed_pages')
-            feed_pages = feed_pages['pages'] if feed_pages else None
+            feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
         except:
             logger.error('views/front_page_language')
             feed_pages = None
@@ -863,7 +863,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
     if language_item:
         language_family_iso = language_item[0]['language_family_iso']
         language_family_code = language_item[0]['language_family_code']
-        # Bible List
+        # bible List
         bibles = bible_list(request,media,language_family_code.lower(),response_format)
         if bible:
             current_bible = search_dictionaries('dam_id', bible, bibles)[0]
@@ -975,11 +975,11 @@ def image_upload(request):
 
 # Custom 404 and 500
 def my_custom_404_view(request):
-    return render_to_response('users/404.html',context_instance=RequestContext(request))
+    return render_to_response('users/404.html',{'app_name':app_name(request)['app_name']},context_instance=RequestContext(request))
 
 #...
 def my_custom_500_view(request):
-    return render_to_response('users/500.html',context_instance=RequestContext(request))
+    return render_to_response('users/500.html',{'app_name':app_name(request)['app_name']},context_instance=RequestContext(request))
 
 def humans(request):
     return render_to_response('txt/humans.txt',context_instance=RequestContext(request))
