@@ -239,3 +239,5 @@ LOGGING = {
             },
         }
     }
+
+LOG_TO_CONSOLE = True
