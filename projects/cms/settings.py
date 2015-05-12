@@ -11,7 +11,7 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = False
+DEBUG = True
 ADMIN_USERS = access_keys.ADMIN_USERS
 ADMIN_USERS_EMAILS = access_keys.ADMIN_USERS_EMAILS
 SERVER_EMAIL = access_keys.SERVER_EMAIL

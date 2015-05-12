@@ -55,7 +55,7 @@ def languages(request,language_code='en'):
     else:
         response_data = {}
         languages = []
-        for language in Language.objects.all():
+        for language in list(Language.objects.all()):
             l = {}
             l['name'] = language.name
             l['code'] = language.code
@@ -77,13 +77,13 @@ def categories(request,language_code='en'):
         response_data = {}
         categories = []
         language = validate_language(language_code)
-
         if category_slug:
-            cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
+            cat_slug = list(Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1])
             if cat_slug:
-                category_set = Category.objects.order_by('order').filter(language=language, parent_id=cat_slug[0].id)
+                category_set = list(Category.objects.order_by('order').filter(language=language, parent_id=cat_slug[0].id))
         else:
-            category_set = Category.objects.order_by('order').filter(language=language)
+            logger.error('Language Is:' + str(language))
+            category_set = list(Category.objects.order_by('order').filter(language=language))
         for category in category_set:
             c = {}
             c['id'] = category.id
@@ -115,11 +115,11 @@ def pages(request,language_code='en'):
         if category_slug:
             cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
             if cat_slug:
-                page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id)
+                page_set = list(Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id))
         elif page_slug:
-            page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
+            page_set = list(Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1])
         else:
-            page_set = Page.objects.order_by('title').filter(is_enabled = True)
+            page_set = list(Page.objects.order_by('title').filter(is_enabled = True))
         for page in page_set:
             p = {}
             p['id'] = page.id
@@ -241,13 +241,13 @@ def query_api(language_code, api_request, extra_parameters={}):
         counter = counter + 1
         try:
             url = build_url(language_code, api_request, extra_parameters)
-            logger.error('URL IS:' + str(url))
             result = urlfetch.fetch(url)
             data = json.loads(result.content)
             set_cache(key,data)
         except:
             if (counter > 2):
                 logger.error('api/query_api counter:' + str(counter))
+                logger.error('URL IS:' + str(url))
             data = None
     return data
 

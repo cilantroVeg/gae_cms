@@ -792,7 +792,6 @@ def front_page_language(request,language):
             endangered_species = None
         return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
-        image_array = Image.objects.all()[:7]
         language_code = 'en' if (language is None) else language
         try:
             feed_pages = query_api(language_code, 'feed_pages')
@@ -800,7 +799,7 @@ def front_page_language(request,language):
         except:
             logger.error('views/front_page_language')
             feed_pages = None
-    return render_to_response('users/template.html', {'feed_pages':feed_pages, 'image_array': image_array,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'feed_pages':feed_pages,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 def get_gallery(gallery_id=None):
     gallery = None
