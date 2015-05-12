@@ -55,7 +55,7 @@ def languages(request,language_code='en'):
     else:
         response_data = {}
         languages = []
-        for language in list(Language.objects.all()):
+        for language in Language.objects.all():
             l = {}
             l['name'] = language.name
             l['code'] = language.code
@@ -78,12 +78,11 @@ def categories(request,language_code='en'):
         categories = []
         language = validate_language(language_code)
         if category_slug:
-            cat_slug = list(Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1])
+            cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
             if cat_slug:
-                category_set = list(Category.objects.order_by('order').filter(language=language, parent_id=cat_slug[0].id))
+                category_set = Category.objects.order_by('order').filter(language=language, parent_id=cat_slug[0].id)
         else:
-            logger.error('Language Is:' + str(language))
-            category_set = list(Category.objects.order_by('order').filter(language=language))
+            category_set = Category.objects.order_by('order').filter(language=language)
         for category in category_set:
             c = {}
             c['id'] = category.id
@@ -115,11 +114,11 @@ def pages(request,language_code='en'):
         if category_slug:
             cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
             if cat_slug:
-                page_set = list(Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id))
+                page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id)
         elif page_slug:
-            page_set = list(Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1])
+            page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
         else:
-            page_set = list(Page.objects.order_by('title').filter(is_enabled = True))
+            page_set = Page.objects.order_by('title').filter(is_enabled = True)
         for page in page_set:
             p = {}
             p['id'] = page.id
