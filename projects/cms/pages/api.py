@@ -23,212 +23,228 @@ import logging
 logger = logging.getLogger(__name__)
 
 # ...
-def token_is_not_valid(request):
-    access_token = request.GET.get('access_token', None)
-    if (str(settings.API_ACCESS_TOKEN) == str(access_token)) or (str(settings.API_ACCESS_TOKEN_1) == str(access_token)):
-        return False
-    else:
-        logger.error('ACCESS TOKEN IS NOT VALID')
-        return True
-
-def return_token_is_not_valid():
-    return HttpResponse(json.dumps({'access_token':'Access Token Is Not Correct'}), content_type="application/json",status=200)
-
-# ...
-def language_is_not_valid(language_code='en'):
-    if (language_code == 'en') or (language_code == 'es'):
-        return False
-    else:
-        return True
-
-def return_language_is_not_valid():
-    return HttpResponse(json.dumps({'access_token':'Language Is Not In The System'}), content_type="application/json",status=401)
-
-# ...
 def languages(request,language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_language_is_not_valid()
-    cache_key = str(language_code) + '_languages_'
-    data = get_cache(cache_key)
-    if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):
+        cache_key = str(language_code) + '_languages_'
+        response_data['languages'] = get_cache(cache_key)
+        if response_data['languages'] is None:
+            languages = []
+            for language in Language.objects.all():
+                l = {}
+                l['name'] = language.name
+                l['code'] = language.code
+                languages.append(l)
+            response_data['languages'] = languages
+            set_cache(cache_key,languages)
     else:
-        response_data = {}
-        languages = []
-        for language in Language.objects.all():
-            l = {}
-            l['name'] = language.name
-            l['code'] = language.code
-            languages.append(l)
-        response_data['languages'] = languages
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+        response_data['languages'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=response_data['status'])
 
 # ...
 def categories(request,language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_language_is_not_valid()
-    category_slug = request.REQUEST.get('category_slug', None)
-    cache_key = str(language_code) + '_categories_' + str(category_slug)
-    data = get_cache(cache_key)
-    if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):
+        category_slug = request.REQUEST.get('category_slug', None)
+        cache_key = str(language_code) + '_categories_' + str(category_slug)
+        response_data['categories'] = get_cache(cache_key)
+        if response_data['categories'] is None:
+            categories = []
+            language = validate_language(language_code)     
+            if category_slug:
+                category_slug_object = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
+                if category_slug_object:
+                    category_set = Category.objects.order_by('order').filter(language=language[0], parent_id=category_slug_object[0].id)
+            else:
+                category_set = Category.objects.order_by('order').filter(language=language[0])
+            for category in category_set:
+                c = {}
+                c['id'] = category.id
+                c['name'] = category.name
+                c['language'] = language[0].code
+                c['parent'] = category.parent_id
+                c['slug'] = category.slug
+                c['allow_replies'] = category.allow_replies
+                categories.append(c)
+            response_data['categories'] = categories
+            set_cache(cache_key,categories)
     else:
-        response_data = {}
-        categories = []
-        language = validate_language(language_code)
-        if category_slug:
-            cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
-            if cat_slug:
-                category_set = Category.objects.order_by('order').filter(language=language, parent_id=cat_slug[0].id)
-        else:
-            category_set = Category.objects.order_by('order').filter(language=language)
-        for category in category_set:
-            c = {}
-            c['id'] = category.id
-            c['name'] = category.name
-            c['language'] = language.code
-            c['parent'] = category.parent_id
-            c['slug'] = category.slug
-            c['allow_replies'] = category.allow_replies
-            categories.append(c)
-        response_data['categories'] = categories
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+        response_data['categories'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=response_data['status'])
 
 # ...
 def pages(request,language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_language_is_not_valid()
-    category_slug = request.REQUEST.get('category_slug', None)
-    page_slug = request.REQUEST.get('page_slug', None)
-    cache_key = str(language_code) + '_pages_' + str(category_slug) + str(page_slug)
-    data = get_cache(cache_key)
-    if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):
+        category_slug = request.REQUEST.get('category_slug', None)
+        page_slug = request.REQUEST.get('page_slug', None)
+        cache_key = str(language_code) + '_pages_' + str(category_slug) + str(page_slug)
+        response_data['pages'] = get_cache(cache_key)
+        if response_data['pages'] is None:
+            pages = []
+            page_set = []
+            language = validate_language(language_code)
+            if category_slug:
+                category_slug_object = Category.objects.filter(language=language[0], slug=request.REQUEST['category_slug'])[:1]
+                if category_slug_object:
+                    page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=category_slug_object[0].id)
+            elif page_slug:
+                page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
+            else:
+                page_set = Page.objects.order_by('title').filter(is_enabled = True)
+            for page in page_set:
+                p = {}
+                p['id'] = page.id
+                p['title'] = page.title
+                p['headline'] = re.sub('<[^<]+?>', '', page.headline).strip()
+                p['slug'] = page.slug
+                p['content'] = page.content if len(page_set) == 1 else None
+                p['content_no_html'] = strip_tags(p['content'] ) if p['content'] else None
+                p['author'] = page.user.first_name if page.user else None
+                p['category'] = page.category.name
+                p['category_slug'] = page.category.slug
+                p['feed_type'] = None
+                p['twitter_hashtags'] = page.twitter_hashtags
+                p['feed_source']= page.feed_source
+                p['feed_image_url'] = None
+                p['image_url']= page.image_url
+                p['video_url']= page.video_url
+                p['audio_url']= page.audio_url
+                p['priority']= page.priority
+                p['is_enabled']= page.is_enabled
+                p['created_at'] = str(naturalday(page.created_at))
+                p['timestamp'] = None
+                pages.append(p)
+            response_data['pages'] = pages
+            set_cache(cache_key,pages)
     else:
-        response_data = {}
-        pages = []
-        page_set = []
-        language = validate_language(language_code)
-        if category_slug:
-            cat_slug = Category.objects.filter(language=language, slug=request.REQUEST['category_slug'])[:1]
-            if cat_slug:
-                page_set = Page.objects.order_by('title').filter(is_enabled = True, category_id=cat_slug[0].id)
-        elif page_slug:
-            page_set = Page.objects.filter(is_enabled = True, slug=request.REQUEST['page_slug'])[:1]
-        else:
-            page_set = Page.objects.order_by('title').filter(is_enabled = True)
-        for page in page_set:
-            p = {}
-            p['id'] = page.id
-            p['title'] = page.title
-            p['headline'] = re.sub('<[^<]+?>', '', page.headline).strip()
-            p['slug'] = page.slug
-            p['content'] = page.content if len(page_set) == 1 else None
-            p['content_no_html'] = strip_tags(p['content'] ) if p['content'] else None
-            p['author'] = page.user.first_name if page.user else None
-            p['category'] = page.category.name
-            p['category_slug'] = page.category.slug
-            p['feed_type'] = None
-            p['twitter_hashtags'] = page.twitter_hashtags
-            p['feed_source']= page.feed_source
-            p['feed_image_url'] = None
-            p['image_url']= page.image_url
-            p['video_url']= page.video_url
-            p['audio_url']= page.audio_url
-            p['priority']= page.priority
-            p['is_enabled']= page.is_enabled
-            p['created_at'] = str(naturalday(page.created_at))
-            p['timestamp'] = None
-            pages.append(p)
-        response_data['pages'] = pages
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+        response_data['pages'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=response_data['status'])
 
 # ...
 def images(request,language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_token_is_not_valid()
-    page_slug = request.REQUEST.get('page_slug', None)
-    cache_key = str(language_code) + '_images_' + str(page_slug)
-    data = get_cache(cache_key)
-    if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):        
+        page_slug = request.REQUEST.get('page_slug', None)
+        cache_key = str(language_code) + '_images_' + str(page_slug)
+        response_data['images'] = get_cache(cache_key)
+        if response_data['images'] is None:
+            images = []
+            image_set = []
+            if page_slug:
+                page_slug_object = Page.objects.filter(slug=request.REQUEST['page_slug'])[:1]
+                if page_slug_object:
+                    image_set = Image.objects.order_by('name').filter(page_id=page_slug_object[0].id)
+            else:
+                image_set = Image.objects.order_by('name')
+            for image in image_set:
+                i = {}
+                i['id'] = image.id
+                i['page_slug'] = image.page.slug if image.page else None
+                i['name'] = image.name
+                i['slug'] = image.slug
+                i['picasa_photo_url'] = image.picasa_photo_url
+                i['picasa_thumb_url'] = image.picasa_thumb_url
+                i['height'] = image.height
+                i['width'] = image.width
+                i['created_at'] = str(naturalday(image.created_at))
+                images.append(i)
+            response_data['images'] = images
+            set_cache(cache_key,images)
     else:
-        response_data = {}
-        images = []
-        image_set = []
-        if page_slug:
-            pag_slug = Page.objects.filter(slug=request.REQUEST['page_slug'])[:1]
-            if pag_slug:
-                image_set = Image.objects.order_by('name').filter(page_id=pag_slug[0].id)
-        else:
-            image_set = Image.objects.order_by('name')
-        for image in image_set:
-            i = {}
-            i['id'] = image.id
-            i['page_slug'] = image.page.slug if image.page else None
-            i['name'] = image.name
-            i['slug'] = image.slug
-            i['picasa_photo_url'] = image.picasa_photo_url
-            i['picasa_thumb_url'] = image.picasa_thumb_url
-            i['height'] = image.height
-            i['width'] = image.width
-            i['created_at'] = str(naturalday(image.created_at))
-            images.append(i)
-        response_data['images'] = images
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+        response_data['images'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=response_data['status'])    
     
 # ...
 def galleries(request,language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_language_is_not_valid()
-    cache_key = str(language_code) + '_galleries_'
-    data = get_cache(cache_key)
-    if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):
+        cache_key = str(language_code) + '_galleries_'
+        response_data['galleries'] = get_cache(cache_key)
+        if response_data['galleries'] is None:
+            galleries = None
+            gallery_set = Gallery.objects.order_by('name')
+            if gallery_set:
+                galleries = []
+                for gallery in gallery_set:
+                    i = {}
+                    i['id'] = gallery.id
+                    i['name'] = gallery.name
+                    i['slug'] = gallery.slug
+                    i['is_enabled'] = gallery.is_enabled
+                    i['is_default'] = gallery.is_default
+                    i['created_at'] = str(naturalday(gallery.created_at))
+                    galleries.append(i)
+            response_data['galleries'] = galleries
+            set_cache(cache_key,galleries)
     else:
-        response_data = {}
-        galleries = None
-        gallery_set = Gallery.objects.order_by('name')
-        if gallery_set:
-            galleries = []
-            for gallery in gallery_set:
-                i = {}
-                i['id'] = gallery.id
-                i['name'] = gallery.name
-                i['slug'] = gallery.slug
-                i['is_enabled'] = gallery.is_enabled
-                i['is_default'] = gallery.is_default
-                i['created_at'] = str(naturalday(gallery.created_at))
-                galleries.append(i)
-        response_data['galleries'] = galleries
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)    
+        response_data['galleries'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=response_data['status'])
+
 
 # ...
 def feed_pages(request, language_code='en'):
-    if token_is_not_valid(request): return return_token_is_not_valid()
-    if language_is_not_valid(language_code): return return_language_is_not_valid()
-    cache_key = str(language_code) + '_feed_pages_'
+    response_data = {}
+    response_data['message'] = 'Success.'
+    response_data['status'] = 200
+    if validate_token(request) and validate_language(language_code):
+        cache_key = str(language_code) + '_feed_pages_'
+        response_data['pages'] = get_cache(cache_key)
+        if response_data['pages'] is None:
+            response_data = {}
+            pages = []
+            page_set = {}
+            feeds = Feed.objects.all()
+            for feed in feeds:
+                pages = parse_feed(feed)
+                page_set[feed.source_type] = pages
+            response_data['pages'] = page_set
+            set_cache(cache_key,page_set)
+    else:
+        response_data['pages'] = None
+        response_data['message'] = 'Please verify access token and language code.'
+        response_data['status'] = 403
+    return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+
+# ...
+def validate_token(request):
+    try:
+        return (settings.API_ACCESS_TOKEN == request.REQUEST['access_token']) or (settings.API_ACCESS_TOKEN_1 == request.REQUEST['access_token'])
+    except:
+        logger.error('api/validate_token')
+        return False
+
+# ...
+def validate_language(language_code='en'):
+    cache_key = str(language_code) + '_validate_language_'
     data = get_cache(cache_key)
     if data:
-        return HttpResponse(json.dumps(data), content_type="application/json",status=200)
+        return data
     else:
-        response_data = {}
-        pages = []
-        page_set = {}
-        language = validate_language(language_code)
-        feeds = Feed.objects.all()
-        # Iterate feeds and add items to page_set
-        for feed in feeds:
-            pages = parse_feed(feed)
-            page_set[feed.source_type] = pages
-        response_data['pages'] = page_set
-        set_cache(cache_key,response_data)
-        return HttpResponse(json.dumps(response_data), content_type="application/json",status=200)
+        response = Language.objects.filter(code=language_code).first()
+        if response:
+            set_cache(cache_key,[response])
+        return response
 
 # ...
 def query_api(language_code, api_request, extra_parameters={}):
@@ -246,7 +262,6 @@ def query_api(language_code, api_request, extra_parameters={}):
         except:
             if (counter > 2):
                 logger.error('api/query_api counter:' + str(counter))
-                logger.error('URL IS:' + str(url))
             data = None
     return data
 
@@ -392,7 +407,7 @@ def parse_feed(feed):
     return pages
 
 
-# bible
+# Bible
 # ...
 def bible_languages(request,media,return_type=None):
     response_data = {}
@@ -487,9 +502,8 @@ def get_cache(key):
 
 # ...
 def set_cache(key,data):
-    if data:
-        key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
-        memcache.add(key, serialize_entities(data), 60*60*24*7)
+    key = re.sub(r'\W+', '', str(key) + '_' + str(settings.APP_NAME))
+    memcache.add(key, serialize_entities(data), 60*60*24*7)
     return data
 
 # ...
@@ -544,17 +558,6 @@ def request_url(url,type='GET',params=None):
         r = requests.post(url, params=params)
     return r
 
-def validate_language(language_code='en'):
-    cache_key = str(language_code) + '_validate_language_'
-    data = get_cache(cache_key)
-    if data:
-        return data
-    else:
-        response = Language.objects.filter(code=language_code).first()
-        if response:
-            set_cache(cache_key,[response])
-        return response
-
 #...
 def xx_log(key, value):
     import sys
@@ -570,7 +573,6 @@ def get_client_ip(request):
     except:
         ip=None
     return ip
-
 
 def json_file(request,file_name='interpegasus_cms'):
     url = settings.SITE_URL +'/static/template/API/api-docs/' + str(file_name)
