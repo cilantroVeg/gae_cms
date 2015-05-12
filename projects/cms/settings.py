@@ -11,7 +11,6 @@ from djangoappengine.settings_base import *
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DEBUG = True
 ADMIN_USERS = access_keys.ADMIN_USERS
 ADMIN_USERS_EMAILS = access_keys.ADMIN_USERS_EMAILS
 SERVER_EMAIL = access_keys.SERVER_EMAIL
@@ -154,11 +153,12 @@ LOGIN_REDIRECT_URL = '/'
 #APP_NAME = 'happy-planet'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
-#APP_NAME = 'interpegasus-cms'
-APP_NAME = 'interpegasuslove'
+APP_NAME = 'interpegasus-cms'
+#APP_NAME = 'interpegasuslove'
 
 
 CACHE_ENABLED = True
+DEBUG = True
 
 if True:
     SITE_URL = 'http://127.0.0.1:8080'

@@ -1,97 +1,245 @@
 {% load record-tags %}
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
-    <meta charset="utf-8" />
-    <title>{{ 'WEBSITE_NAME'|get_record:request_language}} - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}">
-    <meta name="author" content="Powered by InterPegasus CMS - {% now "Y" %}">
-    <meta name="HandheldFriendly" content="true">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="{{ STATIC_URL }}template/www.magicangel.org/css/main.css">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.min.js"></script>
-    <script src = "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.easing.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.scrollto.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/slabtext.min.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/jquery.nav.js"></script>
-    <script src="{{ STATIC_URL }}template/www.magicangel.org/js/main.js"></script>
-    <link rel="shortcut icon" href="{{ STATIC_URL }}template/www.magicangel.org/favicon.ico">
+    {% include "layout/head.html" %}
     {% block js %}{% endblock %}
 </head>
-<!-- To change color change the class "color-2" to "ccolor-2, color-3 ... color-6" -->
-<body class="home color-2">
-{% include "layout/admin.html" %}
-{% include "layout/add_this.html" %}
+<body>
 {% include "layout/microdata.html" %}
-<div id="header">
-    <div class="container">
-        <div class="row">
-            <i id="nav-button" class="icon-circle-arrow-down"></i>
-            <h2 id="logo"><a href="/{{request_language}}">Magic Angel <span class="highlight">Foundation</span></a></h2>
-            <div id="header-enter">
-                {% if is_logged_in %}
-                <ul>
-                    <li>Welcome {{request.user.first_name}}</li>
-                    <li>|</li>
-                    <li><a id = "header_login" href = "/exit">Log out</a></li>
-                </ul>
+<div class="fixed">
+    <nav class="top-bar" data-topbar="" role="navigation" data-options="is_hover: false">
+        <!-- Title -->
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
+                    MagicAngelFoundation
+                </a></h1>
+            </li>
+            <!-- Mobile Menu Toggle -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <!-- Top Bar Section -->
+        <section class="top-bar-section">
+            <!-- Top Bar Right Nav Elements -->
+            <ul class="right">
+                <!-- Divider -->
+                <li class="divider"></li>
+                {% for item in categories %}
+                    <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                {% endfor %}
+                <li class="divider"></li>
+                {% include "layout/social_login_3.html" %}
+                {% if is_admin %}
+                    <li>
+                        <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
+                    </li>
+                    <li>
+                        <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
+                    </li>
                 {% endif %}
-            </div>
-            <div id = "top-nav" class = "">
-                <ul id = "fixed-nav">
-                    {% for c in categories %}
-                    {% if c.parent == None %}
-                    <li><a href = "#{{c.slug}}">{{ c.name }}</a></li>
-                    {% endif %}
+                <li class="divider"></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        <aside class="right-off-canvas-menu">
+            {% include "layout/admin.html" %}
+        </aside>
+        {% for item in categories %}
+            {% if item.slug == 'home' %}
+                <div id="{{ item.slug }}" class="row">
+                    <h1 class="subheader text-right">{{ item.page_array.0.headline }}</h1>
+                    <img src="https://lh4.googleusercontent.com/-hLlOIRoKyKw/VNOCjqBOUyI/AAAAAAAACYA/g_3wibBKlZ4/s2048/IMG_4462.JPG"/>
+                </div>
+            {% elif item.slug == 'services' %}
+                <br />
+                <div id="{{ item.slug }}" class="row" data-equalizer>
+                    {% for object in item.page_array %}
+                        <div class="large-3 medium-3 columns panel" data-equalizer-watch>
+                            <h3>{{ object.title }}</h3>
+                            {% if 'Android' in object.title %}
+                                <span class="big-icon fi-social-android text-center"></span>
+                            {% elif 'iOS' in object.title %}
+                                <span class="big-icon fi-social-apple text-center"></span>
+                            {% elif 'Dev' in object.title %}
+                                <span class="big-icon fi-tablet-portrait text-center"></span>
+                            {% elif 'Des' in object.title %}
+                                <span class="big-icon fi-photo text-center"></span>
+                            {% endif %}
+                            <p>{{ object.headline|truncate_str:256 }}</p>
+                            <br />
+                        </div>
                     {% endfor %}
-                    {% if is_logged_in == False %}
-                    <li><a href = "#enter">Log in - Register</a></li>
-                    {% endif %}
-                    <li><a href = "#contact">Contact Us</a></li>
-                </ul>
+                </div>
+            {% elif item.slug == 'news' %}
+                <br />
+                <div id="{{ item.slug }}" class="row">
+                    <h1 class="text-center">{{ item.name }}</h1>
+                    <div id="slide-news" class="large-12 columns" data-equalizer>
+                        {% for item in feed_pages.YAHOO %}
+                            <div class="panel radius" data-equalizer-watch>
+                                <h5 class="sub-heading">{{ item.title }}</h5>
+                                <p>{{ item.content_no_html|truncate_str:128 }}</p>
+                                <a class="button tiny right" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% elif item.slug == 'contact' %}
+                <br />
+                <div id="{{ item.slug }}" class="row">
+                    <h1 class="text-center">{{ item.name }}</h1>
+                    <div class="large-12 columns">
+                        <!-- Handle Home News Contact Section -->
+                        {% include "layout/contact_form_2.html" %}
+                    </div>
+                </div>
+            {% elif item.slug == 'team' %}
+                <br />
+                <h1 id="{{ item.slug }}" class="text-center">{{ item.name }}</h1>
+                <div class="row small-6 columns" >
+                    <div class="team_item">
+                        <div class="img-circle">
+                            <img src="https://lh3.googleusercontent.com/-J8-X29QlOeg/VTe_CZHw5nI/AAAAAAAADYM/BUZlMU7bavk/s2048/rose.jpg"  alt="Rose">
+                        </div>
+                        <h3>Rose</h3>
+                        <p>CTO</p>
+                    </div>
+                </div>
+                <div class="row small-6 columns" >
+                    <div class="team_item">
+                        <div class="img-circle">
+                            <img src="https://lh3.googleusercontent.com/-LTgBqcIjvSI/VTe_BZIXPlI/AAAAAAAADYE/vDH7aJkiW0c/s320/arturo.jpg"  alt="Arturo">
+                        </div>
+                        <h3>Arturo</h3>
+                        <p>CEO</p>
+                    </div>
+
+                </div>
+
+                <br />
+            {% else %}
+                <br />
+                <div id="{{ item.slug }}" class="row">
+                    <h1 class="text-center">{{ item.name }}</h1>
+                    <div id="slide-ip" class="row" data-equalizer>
+                        {% for object in item.page_array %}
+                            <div>
+                                <ul class="pricing-table" data-equalizer-watch>
+                                    <li class="title">{{ object.title }}</li>
+                                    <li class="bullet-item"><p>{{ object.headline }}</p></li>
+                                    <li class="cta-button"><a class="button tiny" href="{{ object.link_url }}">View</a></li>
+                                </ul>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <br />
+            {% endif %}
+            <hr />
+        {% endfor %}
+        <footer class="row" id="footer">
+            <!-- close the off-canvas menu -->
+            <div id="newsletter">
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <h4>Sign up to our newsletter</h4>
+                    </div>
+                    <div class="medium-6 columns">
+                        <div class="row collapse margintop-20px">
+                            <form action="//interpegasus.us10.list-manage.com/subscribe/post?u=0d0fe61d7bed2c263e3863425&amp;id=e32bacf7cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div class="small-7 medium-7 columns">
+                                    <div id="mc_embed_signup">
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="mc-field-group">
+                                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="signup@email.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-5 medium-5 columns">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button small">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- End Header -->
-<!-- Big Full screen Banner -->
-<div class="hero bg-fixed bg-color" id="home">
-    <div class="slogan">
-        <div class = "center">
-            <h1>{{ 'WEBSITE_NAME'|get_record:request_language}}</h1>
-            <div>{% block content %}{% endblock %}</div>
-            <strong class = "sub_heading">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</strong>
-            {% include "layout/images.html" %}
-        </div>
-    </div>
-</div>
+            <div id="ip-footer-top">
+                <div class="row property">
+                    <div class="medium-4 columns">
+                        <div class="property-info">
+                            <h3>MagicAngelFoundation</h3>
+                            <p><a href="http://www.interpegasus.com/">MagicAngelFoundation </a></p>
+                        </div>
+                    </div>
+                    <div class="medium-8 columns">
+                        <div class="row collapse">
+                            <div class="medium-4 columns">
+                                <div class="learn-links">
+                                    <h4 class="hide-for-small">Visit us</h4>
+                                    <p>On Facebook at <br> <a href="https://facebook.com/interpegasus">interpegasus</a></p>
+                                    <h4 class="hide-for-small">Site Map</h4>
+                                    <p><a href="/sitemap">Sitemap</a></p>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns">
+                                <div class="support-links">
+                                    <h4 class="hide-for-small">Talk to us</h4>
+                                    <p>Tweet us at <br> <a href="https://twitter.com/interpegasus">interpegasus</a></p>
+                                    <h4 class="hide-for-small">Responsive Design</h4>
+                                    <p>via <a href="http://foundation.zurb.com/">Foundation</a></p>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns">
+                                <div class="connect-links">
+                                    <h4 class="hide-for-small">Dev Channel</h4>
+                                    <p>Latest development updates via <a href="https://github.com/interpegasus">Github</a>.</p>
+                                    <h4 class="hide-for-small">MagicAngelFoundation API</h4>
+                                    <p><a href="/api_documentaion/">API</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ip-footer-bottom">
+                <div class="row">
+                    <div class="medium-4 medium-4 push-8 columns">
+                        <ul class="home-social inline-list">
+                            <li><a href="http://www.twitter.com/magic_angel_foundation" class="twitter"><span class="medium-icon fi-social-twitter text-center"></span></a></li>
+                            <li><a href="http://www.facebook.com/magic_angel_foundation" class="facebook"><span class="medium-icon fi-social-facebook text-center"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-8 medium-8 pull-4 columns">
 
-{% include "layout/one_page_sections.html" %}
+                        <ul class="inline-list">
+                            {% for item in categories %}
 
-{% if is_logged_in %}
-{% else %}
-<div class="section" id="enter" >
-    <div class="container">
-        {% include "layout/login_form.html" %}
+                                <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        <p class="copyright">© 2009–{% now "Y" %} MagicAngelFoundation. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="exit-off-canvas"></a>
     </div>
 </div>
-{% endif %}
-<div class="section section-alt" id="contact" >
-    <div class="container">
-        {% include "layout/contact_form.html" %}
-    </div>
-</div>
-<footer id="footer">
-    <div class="container">
-        {% include "layout/footer.html" %}
-        {% include "layout/analytics.html" %}
-    </div>
-</footer>
+<script>
+    $(document).foundation();
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
 </body>
 </html>

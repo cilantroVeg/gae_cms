@@ -13,7 +13,7 @@ def categories(request):
     # Get Categories
     categories = query_api(request_language, 'categories')
     pages = []
-    if categories and 'categories' in categories:
+    if categories and 'categories' in categories and categories["categories"] is not None:
         for c in categories["categories"]:
             pages = []
             if c["parent"] is None:

@@ -321,18 +321,22 @@ def handle_spreadsheet(f, user, spreadsheet):
                 # Language
                 language, language_created = Language.objects.get_or_create(code=language_code,  defaults={'name': language_code})
                 # Categories
-                parent, parent_created = Category.objects.get_or_create(name=parent_category_name,
-                                                                        defaults={'parent': None, 'language': language,
-                                                                                  'allow_replies': True})
-                category, category_created = Category.objects.get_or_create(name=category_name,
-                                                                            defaults={'parent': parent,
-                                                                                      'language': language,
-                                                                                      'allow_replies': True})
+
+                try:
+                    parent, parent_created = Category.objects.get_or_create(name=parent_category_name, defaults={'parent': None, 'language': language,'allow_replies': True})
+                    category, category_created = Category.objects.get_or_create(name=category_name,defaults={'parent': parent,'language': language,'allow_replies': True})
+                except:
+                    parent, parent_created = None,False
+                    category, category_created = None,False
                 # Page
-                page, created = Page.objects.get_or_create(category=category, title=strip_tags(page_title), defaults={'user': user})
-                page.content = strip_tags(page_content)
-                page.spreadsheet = spreadsheet
-                page.save()
+                if category:
+                    page, created = Page.objects.get_or_create(category=category, title=strip_tags(page_title), defaults={'user': user})
+                    page.content = strip_tags(page_content)
+                    page.spreadsheet = spreadsheet
+                    try:
+                        page.save()
+                    except:
+                        continue
 
 
 # ...
