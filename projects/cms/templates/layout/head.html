@@ -35,6 +35,53 @@
     <script src="{{ STATIC_URL }}foundation/nrwl/bower_components/foundation/js/foundation.js"></script>
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/nrwl/css/app.css"/>
     <script src="{{ STATIC_URL }}foundation/nrwl/js/app.js"></script>
+{% elif app_name == 'arturopegasus7' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/js/foundation.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
+    <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
+{% elif app_name == 'bible-love' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/bible/bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/bible/bower_components/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}foundation/bible/bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}foundation/bible/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}foundation/bible/bower_components/foundation/js/foundation.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/bible/css/app.css"/>
+    <script src="{{ STATIC_URL }}foundation/bible/js/app.js"></script>
+{% elif app_name == 'yiyask7' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/yiyask/bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/yiyask/bower_components/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}foundation/yiyask/bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}foundation/yiyask/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}foundation/yiyask/bower_components/foundation/js/foundation.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/yiyask/css/app.css"/>
+    <script src="{{ STATIC_URL }}foundation/yiyask/js/app.js"></script>    
+{% elif app_name == 'arturoportfolio7' %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/portfolio/bower_components/foundation/css/foundation.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/portfolio/bower_components/foundation/css/normalize.css"/>
+    <script src="{{ STATIC_URL }}foundation/portfolio/bower_components/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ STATIC_URL }}foundation/portfolio/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ STATIC_URL }}foundation/portfolio/bower_components/foundation/js/foundation.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/portfolio/css/app.css"/>
+    <script src="{{ STATIC_URL }}foundation/portfolio/js/app.js"></script>
+    <script type="application/javascript">
+        var availableTags = [
+        {% for page in page_list %}
+        { label: "{{page.title | safe }}", value: "{{page.title | slugify }}" },
+        {% endfor %}
+        ];
+    </script>
 {% else %}
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/css/foundation.css"/>
