@@ -27,7 +27,9 @@
                 <!-- Divider -->
                 <li class="divider"></li>
                 {% for item in categories %}
-                    <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                    {% if item.parent == None %}
+                        <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                    {% endif %}
                 {% endfor %}
                 <li class="divider"></li>
                 {% include "layout/social_login_3.html" %}
@@ -54,97 +56,99 @@
             {% include "layout/admin.html" %}
         </aside>
         {% for item in categories %}
-            {% if item.slug == 'home' %}
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="subheader text-right">{{ item.page_array.0.headline }}</h1>
-                    <img src="https://lh4.googleusercontent.com/-hLlOIRoKyKw/VNOCjqBOUyI/AAAAAAAACYA/g_3wibBKlZ4/s2048/IMG_4462.JPG"/>
-                </div>
-            {% elif item.slug == 'services' %}
-                <br />
-                <div id="{{ item.slug }}" class="row" data-equalizer>
-                    {% for object in item.page_array %}
-                        <div class="large-3 medium-3 columns panel" data-equalizer-watch>
-                            <h3>{{ object.title }}</h3>
-                            {% if 'Android' in object.title %}
-                                <span class="big-icon fi-social-android text-center"></span>
-                            {% elif 'iOS' in object.title %}
-                                <span class="big-icon fi-social-apple text-center"></span>
-                            {% elif 'Dev' in object.title %}
-                                <span class="big-icon fi-tablet-portrait text-center"></span>
-                            {% elif 'Des' in object.title %}
-                                <span class="big-icon fi-photo text-center"></span>
-                            {% endif %}
-                            <p>{{ object.headline|truncate_str:256 }}</p>
-                            <br />
-                        </div>
-                    {% endfor %}
-                </div>
-            {% elif item.slug == 'news' %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div id="slide-news" class="large-12 columns" data-equalizer>
-                        {% for item in feed_pages.YAHOO %}
-                            <div class="panel radius" data-equalizer-watch>
-                                <h5 class="sub-heading">{{ item.title }}</h5>
-                                <p>{{ item.content_no_html|truncate_str:128 }}</p>
-                                <a class="button tiny right" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
-                            </div>
-                        {% endfor %}
+            {% if item.parent == None %}
+                {% if item.slug == 'home' %}
+                    <div id="{{ item.slug }}" class="row">
+                        <h1 class="subheader text-right">{{ item.page_array.0.headline }}</h1>
+                        {% include "layout/images.html" %}
                     </div>
-                </div>
-            {% elif item.slug == 'contact' %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div class="large-12 columns">
-                        <!-- Handle Home News Contact Section -->
-                        {% include "layout/contact_form_2.html" %}
-                    </div>
-                </div>
-            {% elif item.slug == 'team' %}
-                <br />
-                <h1 id="{{ item.slug }}" class="text-center">{{ item.name }}</h1>
-                <div class="row small-6 columns" >
-                    <div class="team_item">
-                        <div class="img-circle">
-                            <img src="https://lh3.googleusercontent.com/-J8-X29QlOeg/VTe_CZHw5nI/AAAAAAAADYM/BUZlMU7bavk/s2048/rose.jpg"  alt="Rose">
-                        </div>
-                        <h3>Rose</h3>
-                        <p>CTO</p>
-                    </div>
-                </div>
-                <div class="row small-6 columns" >
-                    <div class="team_item">
-                        <div class="img-circle">
-                            <img src="https://lh3.googleusercontent.com/-LTgBqcIjvSI/VTe_BZIXPlI/AAAAAAAADYE/vDH7aJkiW0c/s320/arturo.jpg"  alt="Arturo">
-                        </div>
-                        <h3>Arturo</h3>
-                        <p>CEO</p>
-                    </div>
-
-                </div>
-
-                <br />
-            {% else %}
-                <br />
-                <div id="{{ item.slug }}" class="row">
-                    <h1 class="text-center">{{ item.name }}</h1>
-                    <div id="slide-ip" class="row" data-equalizer>
+                {% elif item.slug == 'services' %}
+                    <br />
+                    <div id="{{ item.slug }}" class="row" data-equalizer>
                         {% for object in item.page_array %}
-                            <div>
-                                <ul class="pricing-table" data-equalizer-watch>
-                                    <li class="title">{{ object.title }}</li>
-                                    <li class="bullet-item"><p>{{ object.headline }}</p></li>
-                                    <li class="cta-button"><a class="button tiny" href="{{ object.link_url }}">View</a></li>
-                                </ul>
+                            <div class="large-3 medium-3 columns panel" data-equalizer-watch>
+                                <h3>{{ object.title }}</h3>
+                                {% if 'Android' in object.title %}
+                                    <span class="big-icon fi-social-android text-center"></span>
+                                {% elif 'iOS' in object.title %}
+                                    <span class="big-icon fi-social-apple text-center"></span>
+                                {% elif 'Dev' in object.title %}
+                                    <span class="big-icon fi-tablet-portrait text-center"></span>
+                                {% elif 'Des' in object.title %}
+                                    <span class="big-icon fi-photo text-center"></span>
+                                {% endif %}
+                                <p>{{ object.headline|truncate_str:256 }}</p>
+                                <br />
                             </div>
                         {% endfor %}
                     </div>
-                </div>
-                <br />
+                {% elif item.slug == 'news' %}
+                    <br />
+                    <div id="{{ item.slug }}" class="row">
+                        <h1 class="text-center">{{ item.name }}</h1>
+                        <div id="slide-news" class="large-12 columns" data-equalizer>
+                            {% for item in feed_pages.YAHOO %}
+                                <div class="panel radius" data-equalizer-watch>
+                                    <h5 class="sub-heading">{{ item.title }}</h5>
+                                    <p>{{ item.content_no_html|truncate_str:128 }}</p>
+                                    <a class="button tiny right" href="/{{request_language}}/feed/{{item.slug}}">Read More</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% elif item.slug == 'contact' %}
+                    <br />
+                    <div id="{{ item.slug }}" class="row">
+                        <h1 class="text-center">{{ item.name }}</h1>
+                        <div class="large-12 columns">
+                            <!-- Handle Home News Contact Section -->
+                            {% include "layout/contact_form_2.html" %}
+                        </div>
+                    </div>
+                {% elif item.slug == 'team' %}
+                    <br />
+                    <h1 id="{{ item.slug }}" class="text-center">{{ item.name }}</h1>
+                    <div class="row small-6 columns" >
+                        <div class="team_item">
+                            <div class="img-circle">
+                                <img src="https://lh3.googleusercontent.com/-J8-X29QlOeg/VTe_CZHw5nI/AAAAAAAADYM/BUZlMU7bavk/s2048/rose.jpg"  alt="Rose">
+                            </div>
+                            <h3>Rose</h3>
+                            <p>CTO</p>
+                        </div>
+                    </div>
+                    <div class="row small-6 columns" >
+                        <div class="team_item">
+                            <div class="img-circle">
+                                <img src="https://lh3.googleusercontent.com/-LTgBqcIjvSI/VTe_BZIXPlI/AAAAAAAADYE/vDH7aJkiW0c/s320/arturo.jpg"  alt="Arturo">
+                            </div>
+                            <h3>Arturo</h3>
+                            <p>CEO</p>
+                        </div>
+
+                    </div>
+
+                    <br />
+                {% else %}
+                    <br />
+                    <div id="{{ item.slug }}" class="row">
+                        <h1 class="text-center">{{ item.name }}</h1>
+                        <div id="slide-ip" class="row" data-equalizer>
+                            {% for object in item.page_array %}
+                                <div>
+                                    <ul class="pricing-table" data-equalizer-watch>
+                                        <li class="title">{{ object.title }}</li>
+                                        <li class="bullet-item"><p>{{ object.headline }}</p></li>
+                                        <li class="cta-button"><a class="button tiny" href="{{ object.link_url }}">View</a></li>
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <br />
+                {% endif %}
+                <hr />
             {% endif %}
-            <hr />
         {% endfor %}
         <footer class="row" id="footer">
             <!-- close the off-canvas menu -->

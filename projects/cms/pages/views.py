@@ -48,7 +48,7 @@ def category_form(request, id=None):
 # ...
 def category_formset(request):
     if is_admin(request)['is_admin']:
-        CategoryFormSet = modelformset_factory(Category, exclude="slug", extra=0)
+        CategoryFormSet = modelformset_factory(Category, exclude=('slug',), extra=0)
 
         if request.POST:
             formset = CategoryFormSet(request.POST)
@@ -797,13 +797,14 @@ def front_page_language(request,language):
         return render_to_response('users/template.html', {'feed_pages':feed_pages, 'endangered_species':endangered_species, 'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         language_code = 'en' if (language is None) else language
+        image_array = Image.objects.all()
         try:
             feed_pages = query_api(language_code, 'feed_pages')
             feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
         except:
             logger.error('views/front_page_language')
             feed_pages = None
-    return render_to_response('users/template.html', {'feed_pages':feed_pages,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+    return render_to_response('users/template.html', {'image_array':image_array,'feed_pages':feed_pages,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 
 def get_gallery(gallery_id=None):
     gallery = None
