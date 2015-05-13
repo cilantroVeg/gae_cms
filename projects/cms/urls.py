@@ -3,8 +3,10 @@ from django.views.generic import RedirectView
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from django.views.generic import RedirectView
 admin.autodiscover()
 handler500 = 'djangotoolbox.errorviews.server_error'
+
 
 urlpatterns = patterns('',
     # Admin URL's
@@ -54,7 +56,6 @@ urlpatterns = patterns('',
     url(r'^category/edit/(?P<id>\d+)[/]$', 'pages.views.category_form'),
     url(r'^category/edit[/]$', 'pages.views.category_formset'),
     url(r'^category/delete/(?P<id>\d+)[/]$', 'pages.views.category_delete'),
-    url(r'^categories[/]$', 'pages.views.category_list'),
     url(r'^(?P<language>[a-z]{2})/categories[/]$', 'pages.views.category_list'),
     url(r'^(?P<language>[a-z]{2})/c/(?P<slug>[-\w]+)[/]$', 'pages.views.category_view'),
 
@@ -132,6 +133,8 @@ urlpatterns = patterns('',
     url(r'^api/json/(?P<file_name>[-\w]+)[/]$', 'pages.api.json_file'),
 
     url(r'^api/.*', 'pages.api.not_found'),
+    url(r'^category/.*', RedirectView.as_view(url='/sitemap')),
+    url(r'^page/.*', RedirectView.as_view(url='/sitemap')),
 
 
     # Ajax
