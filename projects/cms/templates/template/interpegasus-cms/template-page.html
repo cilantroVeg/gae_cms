@@ -13,9 +13,8 @@
         <!-- Title -->
         <ul class="title-area">
             <li class="name">
-                <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
-                    <img src="/static/foundation/interpegasus/images/pegasus.png" id="pegasus_logo" />
-                    InterPegasus
+                <h1><a href="/en">
+                    <b>Magic Angel Foundation</b>
                 </a></h1>
             </li>
             <!-- Mobile Menu Toggle -->
@@ -28,7 +27,9 @@
                 <!-- Divider -->
                 <li class="divider"></li>
                 {% for item in categories %}
-                    <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                    {% if item.parent == None %}
+                        <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                    {% endif %}
                 {% endfor %}
                 <li class="divider"></li>
                 {% include "layout/social_login_3.html" %}
@@ -91,8 +92,8 @@
                 <div class="row property">
                     <div class="medium-4 columns">
                         <div class="property-info">
-                            <h3>InterPegasus</h3>
-                            <p><a href="http://www.interpegasus.com/">InterPegasus provides </a>professional services, including development and design of mobile and web applications.</p>
+                            <h3>Magic Angel Foundation</h3>
+                            <p><a href="http://www.magicangel.org/">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</a></p>
                         </div>
                     </div>
                     <div class="medium-8 columns">
@@ -100,7 +101,7 @@
                             <div class="medium-4 columns">
                                 <div class="learn-links">
                                     <h4 class="hide-for-small">Visit us</h4>
-                                    <p>On Facebook at <br> <a href="https://facebook.com/interpegasus">interpegasus</a></p>
+                                    <p>On Facebook at <br> <a href="https://facebook.com/magic_angel_foundation">MagicAngelFoundation</a></p>
                                     <h4 class="hide-for-small">Site Map</h4>
                                     <p><a href="/sitemap">Sitemap</a></p>
                                 </div>
@@ -108,17 +109,13 @@
                             <div class="medium-4 columns">
                                 <div class="support-links">
                                     <h4 class="hide-for-small">Talk to us</h4>
-                                    <p>Tweet us at <br> <a href="https://twitter.com/interpegasus">interpegasus</a></p>
-                                    <h4 class="hide-for-small">Responsive Design</h4>
-                                    <p>via <a href="http://foundation.zurb.com/">Foundation</a></p>
+                                    <p>Tweet us at <br> <a href="https://twitter.com/magic_angel_foundation">MagicAngelFoundation</a></p>
                                 </div>
                             </div>
                             <div class="medium-4 columns">
                                 <div class="connect-links">
-                                    <h4 class="hide-for-small">Dev Channel</h4>
-                                    <p>Latest development updates via <a href="https://github.com/interpegasus">Github</a>.</p>
-                                    <h4 class="hide-for-small">InterPegasus API</h4>
-                                    <p><a href="/api_documentaion/">API</a></p>
+                                    <h4 class="hide-for-small">MagicAngelFoundation API</h4>
+                                    <p><a href="http://interpegasus.com/api_documentaion/">API</a></p>
                                 </div>
                             </div>
                         </div>
@@ -129,9 +126,8 @@
                 <div class="row">
                     <div class="medium-4 medium-4 push-8 columns">
                         <ul class="home-social inline-list">
-                            <li><a href="http://www.twitter.com/interpegasus" class="twitter"><span class="medium-icon fi-social-twitter text-center"></span></a></li>
-                            <li><a href="http://www.facebook.com/interpegasus" class="facebook"><span class="medium-icon fi-social-facebook text-center"></span></a></li>
-                            <li><a href="http://github.com/interpegasus" class="mail"><span class="medium-icon fi-social-github text-center"></span></a></li>
+                            <li><a href="http://www.twitter.com/magic_angel_foundation" class="twitter"><span class="medium-icon fi-social-twitter text-center"></span></a></li>
+                            <li><a href="http://www.facebook.com/magic_angel_foundation" class="facebook"><span class="medium-icon fi-social-facebook text-center"></span></a></li>
                         </ul>
                     </div>
                     <div class="medium-8 medium-8 pull-4 columns">
@@ -142,7 +138,7 @@
                                 <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
                             {% endfor %}
                         </ul>
-                        <p class="copyright">© 2004–{% now "Y" %} InterPegasus. All rights reserved.</p>
+                        <p class="copyright">© 2009–{% now "Y" %} Magic Angel Foundation. All rights reserved.</p>
                     </div>
                 </div>
             </div>

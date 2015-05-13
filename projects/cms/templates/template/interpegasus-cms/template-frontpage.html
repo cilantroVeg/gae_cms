@@ -13,8 +13,8 @@
         <!-- Title -->
         <ul class="title-area">
             <li class="name">
-                <h1><a href="/en" data-tooltip aria-haspopup="true" title="interpegasus.com">
-                    MagicAngelFoundation
+                <h1><a href="/en">
+                    <b>Magic Angel Foundation</b>
                 </a></h1>
             </li>
             <!-- Mobile Menu Toggle -->
@@ -62,26 +62,6 @@
                         <h1 class="subheader text-right">{{ item.page_array.0.headline }}</h1>
                         {% include "layout/images.html" %}
                     </div>
-                {% elif item.slug == 'services' %}
-                    <br />
-                    <div id="{{ item.slug }}" class="row" data-equalizer>
-                        {% for object in item.page_array %}
-                            <div class="large-3 medium-3 columns panel" data-equalizer-watch>
-                                <h3>{{ object.title }}</h3>
-                                {% if 'Android' in object.title %}
-                                    <span class="big-icon fi-social-android text-center"></span>
-                                {% elif 'iOS' in object.title %}
-                                    <span class="big-icon fi-social-apple text-center"></span>
-                                {% elif 'Dev' in object.title %}
-                                    <span class="big-icon fi-tablet-portrait text-center"></span>
-                                {% elif 'Des' in object.title %}
-                                    <span class="big-icon fi-photo text-center"></span>
-                                {% endif %}
-                                <p>{{ object.headline|truncate_str:256 }}</p>
-                                <br />
-                            </div>
-                        {% endfor %}
-                    </div>
                 {% elif item.slug == 'news' %}
                     <br />
                     <div id="{{ item.slug }}" class="row">
@@ -105,30 +85,6 @@
                             {% include "layout/contact_form_2.html" %}
                         </div>
                     </div>
-                {% elif item.slug == 'team' %}
-                    <br />
-                    <h1 id="{{ item.slug }}" class="text-center">{{ item.name }}</h1>
-                    <div class="row small-6 columns" >
-                        <div class="team_item">
-                            <div class="img-circle">
-                                <img src="https://lh3.googleusercontent.com/-J8-X29QlOeg/VTe_CZHw5nI/AAAAAAAADYM/BUZlMU7bavk/s2048/rose.jpg"  alt="Rose">
-                            </div>
-                            <h3>Rose</h3>
-                            <p>CTO</p>
-                        </div>
-                    </div>
-                    <div class="row small-6 columns" >
-                        <div class="team_item">
-                            <div class="img-circle">
-                                <img src="https://lh3.googleusercontent.com/-LTgBqcIjvSI/VTe_BZIXPlI/AAAAAAAADYE/vDH7aJkiW0c/s320/arturo.jpg"  alt="Arturo">
-                            </div>
-                            <h3>Arturo</h3>
-                            <p>CEO</p>
-                        </div>
-
-                    </div>
-
-                    <br />
                 {% else %}
                     <br />
                     <div id="{{ item.slug }}" class="row">
@@ -138,8 +94,8 @@
                                 <div>
                                     <ul class="pricing-table" data-equalizer-watch>
                                         <li class="title">{{ object.title }}</li>
-                                        <li class="bullet-item"><p>{{ object.headline }}</p></li>
-                                        <li class="cta-button"><a class="button tiny" href="{{ object.link_url }}">View</a></li>
+                                        <li class="bullet-item"><p>{{ object.content|safe }}</p></li>
+                                        <li class="cta-button"><a class="button tiny" href="/{{ request_language }}/p/{{ object.slug }}">View</a></li>
                                     </ul>
                                 </div>
                             {% endfor %}
@@ -182,8 +138,8 @@
                 <div class="row property">
                     <div class="medium-4 columns">
                         <div class="property-info">
-                            <h3>MagicAngelFoundation</h3>
-                            <p><a href="http://www.interpegasus.com/">MagicAngelFoundation </a></p>
+                            <h3>Magic Angel Foundation</h3>
+                            <p><a href="http://www.magicangel.org/">{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}</a></p>
                         </div>
                     </div>
                     <div class="medium-8 columns">
@@ -191,7 +147,7 @@
                             <div class="medium-4 columns">
                                 <div class="learn-links">
                                     <h4 class="hide-for-small">Visit us</h4>
-                                    <p>On Facebook at <br> <a href="https://facebook.com/interpegasus">interpegasus</a></p>
+                                    <p>On Facebook at <br> <a href="https://facebook.com/magic_angel_foundation">MagicAngelFoundation</a></p>
                                     <h4 class="hide-for-small">Site Map</h4>
                                     <p><a href="/sitemap">Sitemap</a></p>
                                 </div>
@@ -199,17 +155,13 @@
                             <div class="medium-4 columns">
                                 <div class="support-links">
                                     <h4 class="hide-for-small">Talk to us</h4>
-                                    <p>Tweet us at <br> <a href="https://twitter.com/interpegasus">interpegasus</a></p>
-                                    <h4 class="hide-for-small">Responsive Design</h4>
-                                    <p>via <a href="http://foundation.zurb.com/">Foundation</a></p>
+                                    <p>Tweet us at <br> <a href="https://twitter.com/magic_angel_foundation">MagicAngelFoundation</a></p>
                                 </div>
                             </div>
                             <div class="medium-4 columns">
                                 <div class="connect-links">
-                                    <h4 class="hide-for-small">Dev Channel</h4>
-                                    <p>Latest development updates via <a href="https://github.com/interpegasus">Github</a>.</p>
                                     <h4 class="hide-for-small">MagicAngelFoundation API</h4>
-                                    <p><a href="/api_documentaion/">API</a></p>
+                                    <p><a href="http://interpegasus.com/api_documentaion/">API</a></p>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +184,7 @@
                                 <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
                             {% endfor %}
                         </ul>
-                        <p class="copyright">© 2009–{% now "Y" %} MagicAngelFoundation. All rights reserved.</p>
+                        <p class="copyright">© 2009–{% now "Y" %} Magic Angel Foundation. All rights reserved.</p>
                     </div>
                 </div>
             </div>
