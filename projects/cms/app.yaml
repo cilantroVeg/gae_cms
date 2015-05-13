@@ -1,5 +1,5 @@
-application: interpegasus-cms
-version: 6
+application: happy-planet
+version: 7
 runtime: python27
 api_version: 1
 threadsafe: yes

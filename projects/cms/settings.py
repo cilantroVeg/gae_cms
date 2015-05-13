@@ -150,17 +150,17 @@ LOGIN_REDIRECT_URL = '/'
 # apps
 #APP_NAME = 'arturoportfolio7'
 #APP_NAME = 'arturopegasus7'
-#APP_NAME = 'happy-planet'
+APP_NAME = 'happy-planet'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
-APP_NAME = 'interpegasus-cms'
+#APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'interpegasuslove'
 
 
 CACHE_ENABLED = True
 DEBUG = True
 
-if True:
+if False:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'
