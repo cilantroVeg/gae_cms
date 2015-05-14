@@ -1,1 +1,14 @@
-User-Agent: *
+User-agent: Slurp
+User-agent: Bingbot
+User-agent: MSNBot
+User-agent: MSNBot-Media
+User-agent: Googlebot
+User-agent: Googlebot-News
+User-agent: Googlebot-Image
+User-agent: Googlebot-Video
+User-agent: Mediapartners-Google
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: *
+Disallow: /
