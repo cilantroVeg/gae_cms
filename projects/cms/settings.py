@@ -156,7 +156,6 @@ APP_NAME = 'bible-love'
 #APP_NAME = 'interpegasus-cms'
 #APP_NAME = 'interpegasuslove'
 
-
 CACHE_ENABLED = True
 DEBUG = False
 
