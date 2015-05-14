@@ -56,7 +56,7 @@ urlpatterns = patterns('',
     url(r'^category/edit/(?P<id>\d+)[/]$', 'pages.views.category_form'),
     url(r'^category/edit[/]$', 'pages.views.category_formset'),
     url(r'^category/delete/(?P<id>\d+)[/]$', 'pages.views.category_delete'),
-    url(r'^(?P<language>[a-z]{2})/categories[/]$', 'pages.views.category_list'),
+    url(r'^categories[/]$', 'pages.views.category_list'),
     url(r'^(?P<language>[a-z]{2})/c/(?P<slug>[-\w]+)[/]$', 'pages.views.category_view'),
 
     # Page - pages
