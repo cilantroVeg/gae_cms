@@ -91,13 +91,15 @@
                         <h1 class="text-center">{{ item.name }}</h1>
                         <div id="slide-ip" class="row" data-equalizer>
                             {% for object in item.page_array %}
-                                <div>
-                                    <ul class="pricing-table" data-equalizer-watch>
-                                        <li class="title">{{ object.title }}</li>
-                                        <li class="bullet-item"><p>{{ object.content|safe }}</p></li>
-                                        <li class="cta-button"><a class="button tiny" href="/{{ request_language }}/p/{{ object.slug }}">View</a></li>
-                                    </ul>
-                                </div>
+                                {% if object.content != None %}
+                                    <div>
+                                        <ul class="pricing-table" data-equalizer-watch>
+                                            <li class="title">{{ object.title }}</li>
+                                            <li class="bullet-item"><p>{{ object.content|safe }}</p></li>
+                                            <li class="cta-button"><a class="button tiny" href="/{{ request_language }}/{{ object.slug }}">View</a></li>
+                                        </ul>
+                                    </div>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </div>
