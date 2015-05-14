@@ -262,6 +262,7 @@ def query_api(language_code, api_request, extra_parameters={}):
         except:
             if (counter > 2):
                 logger.error('api/query_api counter:' + str(counter))
+                logger.error('URL:' + str(url))
             data = None
     return data
 
@@ -411,18 +412,23 @@ def parse_feed(feed):
 # ...
 def bible_languages(request,media,return_type=None):
     response_data = {}
-    if media =='text':
-        r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
-    elif media == 'audio':
-        r = request_url(settings.DBT_LANGUAGE_AUDIO_URL)
-    elif media == 'video':
-        r = request_url(settings.DBT_LANGUAGE_VIDEO_URL)
-    else:
-        r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
-    if r.status_code == 200:
-        response_data['languages'] = r.json()
-    else:
-        response_data['languages'] = None
+    cache_key = str('bible_languages') + '_' + str(media) + '_' + str(return_type)
+    response_data['languages'] = get_cache(cache_key)
+    if response_data['languages'] is None:
+        if media =='text':
+            r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
+        elif media == 'audio':
+            r = request_url(settings.DBT_LANGUAGE_AUDIO_URL)
+        elif media == 'video':
+            r = request_url(settings.DBT_LANGUAGE_VIDEO_URL)
+        else:
+            r = request_url(settings.DBT_LANGUAGE_TEXT_URL)
+        if r.status_code == 200:
+            response_data['languages'] = r.json()
+            set_cache(cache_key,response_data['languages'])
+        else:
+            response_data['languages'] = None
+
     if return_type:
         return response_data['languages']
     else:
@@ -431,18 +437,22 @@ def bible_languages(request,media,return_type=None):
 # ...
 def bible_list(request,media,language_code,return_type=None):
     response_data = {}
-    if media =='text':
-        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
-    elif media == 'audio':
-        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=audio&language_family_code=' + language_code)
-    elif media == 'video':
-        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=video&language_family_code=' + language_code)
-    else:
-        r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
-    if r.status_code == 200:
-        response_data['bibles'] = r.json()
-    else:
-        response_data['bibles'] = None
+    cache_key = str('bible_list') + '_' + str(media) + '_' + str(language_code) + '_' + str(return_type)
+    response_data['bibles'] = get_cache(cache_key)
+    if response_data['bibles'] is None:
+        if media =='text':
+            r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
+        elif media == 'audio':
+            r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=audio&language_family_code=' + language_code)
+        elif media == 'video':
+            r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=video&language_family_code=' + language_code)
+        else:
+            r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
+        if r.status_code == 200:
+            response_data['bibles'] = r.json()
+            set_cache(cache_key,response_data['bibles'])
+        else:
+            response_data['bibles'] = None
     if return_type:
         return response_data['bibles']
     else:
@@ -451,15 +461,19 @@ def bible_list(request,media,language_code,return_type=None):
 # ...
 def bible_books(request,dam_id,return_type=None):
     response_data = {}
-    r = request_url(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
-    if r.status_code == 200:
-        try:
-            response_data['books'] = r.json()
-        except:
-            logger.error('api/bible_books')
+    cache_key = str('bible_books') + '_' + str(dam_id) + '_' + str(return_type)
+    response_data['books'] = get_cache(cache_key)
+    if response_data['books'] is None:
+        r = request_url(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
+        if r.status_code == 200:
+            try:
+                response_data['books'] = r.json()
+                set_cache(cache_key,response_data['books'])
+            except:
+                logger.error('api/bible_books')
+                response_data['books'] = None
+        else:
             response_data['books'] = None
-    else:
-        response_data['books'] = None
     if return_type:
         return response_data['books']
     else:
@@ -481,11 +495,15 @@ def bible_book_text(request,dam_id,book_id,chapter_id,return_type=None):
 # ...
 def bible_copyright(request,dam_id,return_type=None):
     response_data = {}
-    r = request_url(settings.DBT_GET_COPYRIGHT_URL + '&dam_id=' + str(dam_id))
-    if r.status_code == 200:
-        response_data['copyright'] = r.json()
-    else:
-        response_data['copyright'] = None
+    cache_key = str('bible_copyright') + '_' + str(dam_id) + '_' + str(return_type)
+    response_data['copyright'] = get_cache(cache_key)
+    if response_data['copyright'] is None:
+        r = request_url(settings.DBT_GET_COPYRIGHT_URL + '&dam_id=' + str(dam_id))
+        if r.status_code == 200:
+            response_data['copyright'] = r.json()
+            set_cache(cache_key,response_data['copyright'])
+        else:
+            response_data['copyright'] = None
     if return_type:
         return response_data['copyright']
     else:
