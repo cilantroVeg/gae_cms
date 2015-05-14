@@ -182,8 +182,9 @@
 
                         <ul class="inline-list">
                             {% for item in categories %}
-
-                                <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                                {% if item.parent == None %}
+                                    <li><a title="{{ item.name }}" href="javascript:void(0);" onclick="javascript:scroll_to_anchor('{{ item.slug }}',75)">{{ item.name }}</a></li>
+                                {% endif %}
                             {% endfor %}
                         </ul>
                         <p class="copyright">© 2009–{% now "Y" %} Magic Angel Foundation. All rights reserved.</p>
