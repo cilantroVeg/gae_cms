@@ -465,7 +465,7 @@ def bible_books(request,dam_id,return_type=None):
     response_data['books'] = get_cache(cache_key)
     if response_data['books'] is None:
         r = request_url(settings.DBT_GET_BIBLE_BOOKS_URL + '&dam_id=' + dam_id)
-        if r.status_code == 200:
+        if r and r.status_code == 200:
             try:
                 response_data['books'] = r.json()
                 set_cache(cache_key,response_data['books'])
@@ -561,20 +561,28 @@ def captcha_is_valid(captcha_response,request):
 
 # ...
 def request_url(url,type='GET',params=None):
-    if (type == 'GET'):
-        try:
-            r = requests.get(url)
-        except:
-            logger.error('api/request_url')
+    data = None
+    counter = 0
+    while (data is None) and (counter < 3):
+        counter = counter + 1
+        if (type == 'GET'):
             try:
-                r = requests.get(url)
+                data = requests.get(url)
             except:
-                logger.error('api/request_url')
-                r = None
-    elif (type == 'POST'):
-        headers = {'content-type': 'application/json'}
-        r = requests.post(url, params=params)
-    return r
+                if (counter > 2):
+                    logger.error('api/query_api GET:' + str(counter))
+                    logger.error('URL:' + str(url))
+                data = None
+        elif (type == 'POST'):
+            headers = {'content-type': 'application/json'}
+            try:
+                data = requests.post(url, params=params)
+            except:
+                if (counter > 2):
+                    logger.error('api/query_api POST:' + str(counter))
+                    logger.error('URL:' + str(url))
+                data = None
+    return data
 
 #...
 def xx_log(key, value):

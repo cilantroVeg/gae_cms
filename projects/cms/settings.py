@@ -159,7 +159,7 @@ APP_NAME = 'bible-love'
 CACHE_ENABLED = True
 DEBUG = False
 
-if False:
+if True:
     SITE_URL = 'http://127.0.0.1:8080'
 elif APP_NAME == 'interpegasus-cms':
     SITE_URL = 'http://www.magicangel.org'

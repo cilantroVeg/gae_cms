@@ -870,7 +870,11 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
         # bible List
         bibles = bible_list(request,media,language_family_code.lower(),response_format)
         if bible:
-            current_bible = search_dictionaries('dam_id', bible, bibles)[0]
+            try:
+                current_bible = search_dictionaries('dam_id', bible, bibles)[0]
+            except:
+                logger.error('Redirect. Link Referer From: ' + str(request.META))
+                return redirect('/'+language, False)
         else:
             current_bible = bibles[0]
         # Get Book
@@ -896,6 +900,7 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
 #...
 def search_dictionaries(key, value, list_of_dictionaries):
     return [element for element in list_of_dictionaries if element[key].lower() == value.lower()]
+
 
 #...
 @csrf_exempt

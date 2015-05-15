@@ -115,7 +115,7 @@ urlpatterns = patterns('',
 
     # Admin
     url(r'^delete_cache[/]$', 'pages.views.delete_cache'),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/template/www.interpegasus.com/img/favicon.ico')),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/foundation/interpegasus/images/favicon.ico')),
     url(r'^robots\.txt$', 'pages.views.robots'),
     url(r'^humans\.txt$', 'pages.views.humans'),
 
