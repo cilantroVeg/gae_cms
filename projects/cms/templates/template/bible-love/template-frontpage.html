@@ -7,7 +7,7 @@
 -->
 <html lang="{{current_language_html}}">
 <head>
-    <title>{{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
+    <title>{% firstof current_bible.collection_name current_bible.collection_code %} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
     <meta charset="utf-8">
     <meta name="description" content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}
         {% for verse in current_chapter %}
@@ -95,7 +95,7 @@
             {% for bible in bibles %}
                 <option value="/{{current_language|lower}}/bible/{{bible.dam_id}}"
                         {% if current_bible.dam_id|lower == bible.dam_id|lower %}selected="selected"{% endif%}>
-                    {{ bible.collection_name }}
+                    {% firstof bible.collection_name bible.collection_code %}
                     {% if bible.volume_name %}
                         - {{bible.volume_name}}
                     {% endif %}
@@ -166,7 +166,7 @@
                         Note: You can change the number of list items in "stats" to whatever you want.
                     -->
                     <ul class="stats">
-                        <li id="bookmark_list"><a id="bookmarkme" class="fa fa-heart" href="#" rel="sidebar" title="{{current_bible.collection_name}} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}">&nbsp;</a></li>
+                        <li id="bookmark_list"><a id="bookmarkme" class="fa fa-heart" href="#" rel="sidebar" title="{% firstof current_bible.collection_name current_bible.collection_code %} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}">&nbsp;</a></li>
                         <li><a href="http://twitter.com/share?text={{current_chapter.0.book_name|urlencode}}-{{current_chapter.0.chapter_title|urlencode}}&amp;url={{current_url}}&amp;hashtags=bible" target="_blank" class="fa fa-twitter">&nbsp;</a></li>
                         <li><a href="https://www.facebook.com/sharer/sharer.php?u={{current_url}}" target="_blank" class="fa fa-facebook">&nbsp;</a></li>
                     </ul>
@@ -226,7 +226,7 @@
         <h1 style="text-align: center;">{{current_bible.volume_name}}</h1>
         <br />
         <div id="logo">
-            <h1>{{current_bible.collection_name}}</h1>
+            <h1>{% firstof current_bible.collection_name current_bible.collection_code %}</h1>
         </div>
         <!-- Nav -->
         <nav id="nav">
@@ -261,7 +261,7 @@
 
         <section class="is-recent-posts">
             <header>
-                <h2>{{current_bible.collection_name}}</h2>
+                <h2>{% firstof current_bible.collection_name current_bible.collection_code %}</h2>
             </header>
             <ul id="bible-books">
                 {% for book in books %}
