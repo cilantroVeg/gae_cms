@@ -206,6 +206,36 @@ def record_delete(request, id=None):
         return redirect('/', False)
 
 # ...
+def post_form(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Post, id=id) if id is not None else None
+        form = PostForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('/posts/')
+        return render_to_response("pages/post_form.html", {"form": form, "id": id,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def post_list(request):
+    if is_admin(request)['is_admin']:
+        return render_to_response("pages/post_list.html", {"post_list": Post.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+    else:
+        return redirect('/', False)
+
+# ...
+def post_delete(request, id=None):
+    if is_admin(request)['is_admin']:
+        instance = get_object_or_404(Post, id=id) if id is not None else None
+        instance.delete()
+        return redirect('/posts/')
+    else:
+        return redirect('/', False)
+
+
+
+# ...
 def feed_form(request, id=None):
     if is_admin(request)['is_admin']:
         instance = get_object_or_404(Feed, id=id) if id is not None else None
@@ -632,8 +662,7 @@ def sitemap(request):
         feeds = query_api(language, 'feed_pages')
         galleries = query_api(language, 'galleries')
         images = query_api(language, 'images')
-        return render_to_response("pages/sitemap.html", {"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
-
+        return render_to_response("pages/sitemap.html", {"url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 # ...
 def sitemap_xml(request):
     media = 'text'
@@ -642,8 +671,13 @@ def sitemap_xml(request):
         languages = bible_languages(request,media,response_format)
         return render_to_response("pages/sitemap.xml", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
-        return render_to_response("pages/sitemap.html", {},
-                                  context_instance=RequestContext(request))
+        language = get_request_language(request)["request_language"]
+        pages = query_api(language, 'pages')
+        categories = query_api(language, 'categories')
+        feeds = query_api(language, 'feed_pages')
+        galleries = query_api(language, 'galleries')
+        images = query_api(language, 'images')
+        return render_to_response("pages/sitemap_index.xml", {"url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
 
 # ...
 def sitemap_xml_language(request,language):
@@ -980,7 +1014,51 @@ def image_upload(request):
     else:
         return redirect('/', False)
 
+# Share
+def share():
+    post_created = False
+    counter = 0
+    while post_created == False and counter < 3:
+        counter = counter + 1
+        if settings.APP_NAME == 'bible-love':
+            long_text = 'Get Text'
+            short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+            long_url = 'Get Url'
+            short_url = short_url(long_url,settings.BIBLE_GOOGLE_PUBLIC_API_KEY)
 
+        if text and url:
+            post, post_created = Post.objects.get_or_create(long_url=long_url)
+            if post_created:
+                share_on_facebook(long_text,short_url)
+                share_on_twitter(short_text,short_url)
+                post.short_url = short_url
+                post.long_text = long_text
+                post.short_text = short_text
+                post.save()
+    return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
+
+
+def share_on_facebook(text,url):
+
+    return True
+
+def share_on_twitter(text,url):
+    from twython import Twython
+    twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.ACCESS_TOKEN, settings.ACCESS_SECRET)
+    twitter.update_status(status=text + ' ' + url)
+    return True
+
+def short_url(url,key):
+    google_url = 'https://www.googleapis.com/urlshortener/v1/url?key=' + str(key)
+    method = 'POST'
+    params = {"longUrl": url}
+    response = request_url(google_url,'POST',params)
+    if response:
+        response_json = json.loads(response.content)
+        short_url = response_json['id']
+        logger.info('Short URL GOOGLE')
+        logger.info(str(short_url))
+    return short_url
 
 # Custom 404 and 500
 def my_custom_404_view(request):

@@ -84,6 +84,13 @@ urlpatterns = patterns('',
     url(r'^record/delete/(?P<id>\d+)[/]$', 'pages.views.record_delete'),
     url(r'^records[/]$', 'pages.views.record_list'),
     
+    
+    # Page - posts
+    url(r'^post/new[/]$', 'pages.views.post_form'),
+    url(r'^post/edit/(?P<id>\d+)[/]$', 'pages.views.post_form'),
+    url(r'^post/delete/(?P<id>\d+)[/]$', 'pages.views.post_delete'),
+    url(r'^posts[/]$', 'pages.views.post_list'),    
+    
     # Page - feeds
     url(r'^feed/new[/]$', 'pages.views.feed_form'),
     url(r'^feed/edit/(?P<id>\d+)[/]$', 'pages.views.feed_form'),

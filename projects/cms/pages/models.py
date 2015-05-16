@@ -288,6 +288,21 @@ class Advertisement(models.Model):
         return u'%s' % (self.name )
 
 # ...
+class Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    short_text = models.CharField(max_length=128, null=False, blank=False, unique=False)
+    long_text = models.CharField(max_length=256, null=False, blank=False, unique=False)
+    short_url = models.CharField(max_length=128, null=False, blank=False, unique=True)
+    long_url = models.CharField(max_length=128, null=False, blank=False, unique=True)
+    on_facebook = models.BooleanField(default=False)
+    on_twitter = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now=True)
+
+    # ...
+    def __unicode__(self):
+        return u'%s' % (self.short_text)
+
+# ...
 class ContactForm(forms.Form):
     contact_email = forms.EmailField()
     contact_name = forms.CharField(max_length=100)
@@ -348,3 +363,10 @@ class AdvertisementForm(ModelForm):
     class Meta:
         model = Advertisement
         fields = ['name', 'advertisement_url', 'image_url', 'is_enabled']
+
+# Forms
+class PostForm(ModelForm):
+    class Meta:
+        model = Post
+        fields = ['long_text', 'short_text', 'long_url']
+

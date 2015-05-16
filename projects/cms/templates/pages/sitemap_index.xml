@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for language in languages%}
+        <sitemap>
+            <loc>http://bible7.co/sitemap/{{ language.language_family_iso|lower }}.xml</loc>
+            <lastmod>{% now "Y-m-d" %}</lastmod>
+            {%if categories%}
+                <url>
+                    {% for item in categories.categories %}
+                        <loc>{{ url }}/{{request_language}}/c/{{item.slug}}">{{item.name}}</loc>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.8</priority>
+                    {% endfor %}
+                </url>
+            {% endif %}
+            {%if pages%}
+                <url>
+                    {% for item in pages.pages %}
+                        <loc>{{ url }}/{{request_language}}/{{item.slug}}">{{item.title}}</loc>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.8</priority>
+                    {% endfor %}
+                </url>
+            {% endif %}
+            {%if galleries%}
+                <url>
+                    {% for item in galleries.galleries %}
+                        <loc>{{ url }}/{{request_language}}/gallery/{{item.slug}}">{{item.name}}</loc>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.8</priority>
+                    {% endfor %}
+                </url>
+            {% endif %}
+            {%if images%}
+                <url>
+                    {% for item in images.images %}
+                        <loc>{{ url }}/{{request_language}}/i/{{item.slug}}">{{item.name}}</loc>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.8</priority>
+                    {% endfor %}
+                </url>
+            {% endif %}
+            {%if feeds%}
+                <url>
+                    {% for i in feeds.pages %}
+                        {% for item in i %}
+                            <loc>{{ url }}/{{request_language}}/feed/{{item.slug}}">{{item.title}}</loc>
+                            <changefreq>monthly</changefreq>
+                            <priority>0.8</priority>
+                        {% endfor %}
+                    {% endfor %}
+                </url>
+            {% endif %}
+            {%if languages%}
+                <url>
+                    {% for item in images.images %}
+                        <loc>{{ url }}/{{request_language}}/{{item.code}}">{{item.name}}</loc>
+                        <changefreq>monthly</changefreq>
+                        <priority>0.8</priority>
+                    {% endfor %}
+                </url>
+            {% endif %}
+        </sitemap>
+    {% endfor %}
+</sitemapindex>

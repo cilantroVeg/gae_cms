@@ -577,7 +577,7 @@ def request_url(url,type='GET',params=None):
         elif (type == 'POST'):
             headers = {'content-type': 'application/json'}
             try:
-                data = requests.post(url, params=params)
+                data = requests.post(url, data=params, headers=headers)
             except:
                 if (counter > 2):
                     logger.error('api/query_api POST:' + str(counter))
