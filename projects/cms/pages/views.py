@@ -1024,7 +1024,7 @@ def share():
             long_text = 'Get Text'
             short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
             long_url = 'Get Url'
-            short_url = short_url(long_url,settings.BIBLE_GOOGLE_PUBLIC_API_KEY)
+            short_url = short_url(long_url)
 
         if text and url:
             post, post_created = Post.objects.get_or_create(long_url=long_url)
@@ -1039,7 +1039,14 @@ def share():
 
 
 def share_on_facebook(text,url):
-
+    # Fill in the values noted in previous steps here
+    cfg = {
+        "page_id"      : settings.FACEBOOK_PAGE_ID,
+        "access_token" : settings.FACEBOOK_ACCESS_TOKEN
+    }
+    api = get_api(cfg)
+    msg = "Hello, world!"
+    status = api.put_wall_post(msg)
     return True
 
 def share_on_twitter(text,url):
@@ -1048,8 +1055,18 @@ def share_on_twitter(text,url):
     twitter.update_status(status=text + ' ' + url)
     return True
 
-def short_url(url,key):
-    google_url = 'https://www.googleapis.com/urlshortener/v1/url?key=' + str(key)
+def get_api(cfg):
+    graph = facebook.GraphAPI(cfg['access_token'])
+    resp = graph.get_object('me/accounts')
+    page_access_token = None
+    for page in resp['data']:
+        if page['id'] == cfg['page_id']:
+            page_access_token = page['access_token']
+    graph = facebook.GraphAPI(page_access_token)
+    return graph
+
+def short_url(url):
+    google_url = 'https://www.googleapis.com/urlshortener/v1/url?key=' + str(settings.URL_SHORTENER_PUBLIC_KEY)
     method = 'POST'
     params = {"longUrl": url}
     response = request_url(google_url,'POST',params)
