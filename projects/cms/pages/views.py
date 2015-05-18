@@ -1016,7 +1016,7 @@ def image_upload(request):
         return redirect('/', False)
 
 
-def get_content_for_share(request):
+def get_content_for_share(request=None):
     content ={}
     if settings.APP_NAME == 'bible-love':
         response_format = 'json'
@@ -1046,17 +1046,18 @@ def get_content_for_share(request):
 # Share
 def share_content(request=None):
     content = get_content_for_share(request)
-    long_text = content["text"]
-    long_url = content["long_url"]
-    short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
-    short_url = get_short_url(long_url)
-    post, post_created = Post.objects.get_or_create(long_url=long_url)    
-    share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
-    share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
-    post.short_url = short_url
-    post.long_text = long_text
-    post.short_text = short_text
-    post.save()
+    if content.has_key('text'):
+        long_text = content["text"]
+        long_url = content["long_url"]
+        short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+        short_url = get_short_url(long_url)
+        post, post_created = Post.objects.get_or_create(long_url=long_url)
+        share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
+        share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
+        post.short_url = short_url
+        post.long_text = long_text
+        post.short_text = short_text
+        post.save()
     return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
 
 
