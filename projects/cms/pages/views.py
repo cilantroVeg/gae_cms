@@ -11,7 +11,7 @@ from django.utils.html import *
 from django.forms.formsets import formset_factory
 from django.forms.models import modelformset_factory
 from pages.models import *
-from pages.context_processors import is_admin
+from pages.context_processors import *
 from django.shortcuts import render
 from pages.api import *
 from django.utils.html import strip_tags
@@ -20,9 +20,10 @@ import logging
 from django.template.defaultfilters import removetags
 from wikipedia import wikipedia
 from bs4 import BeautifulSoup
-from context_processors import *
 from lxml.html.clean import clean_html
 from django.contrib.humanize.templatetags.humanize import naturalday
+from random import randrange
+import facebook
 
 logger = logging.getLogger(__name__)
 
@@ -1014,65 +1015,90 @@ def image_upload(request):
     else:
         return redirect('/', False)
 
-# Share
-def share():
-    post_created = False
-    counter = 0
-    while post_created == False and counter < 3:
-        counter = counter + 1
-        if settings.APP_NAME == 'bible-love':
-            long_text = 'Get Text'
-            short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
-            long_url = 'Get Url'
-            short_url = short_url(long_url)
 
-        if text and url:
-            post, post_created = Post.objects.get_or_create(long_url=long_url)
-            if post_created:
-                share_on_facebook(long_text,short_url)
-                share_on_twitter(short_text,short_url)
-                post.short_url = short_url
-                post.long_text = long_text
-                post.short_text = short_text
-                post.save()
+def get_content_for_share(request):
+    content ={}
+    if settings.APP_NAME == 'bible-love':
+        response_format = 'json'
+        media = 'text'
+        languages = bible_languages(request,media,response_format)
+        language_item = search_dictionaries('language_family_iso', 'eng', languages)
+        language_family_iso = language_item[0]['language_family_iso']
+        language_family_code = language_item[0]['language_family_code']
+        bibles = bible_list(request,media,language_family_code.lower(),response_format)
+        current_bible = bibles[randrange(0,len(bibles))]
+        books = bible_books(request,current_bible['dam_id'],response_format)
+        current_book = books[randrange(0,len(books))]
+        chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(0,len(current_book['chapters'].split(","))), response_format)
+        selected_verse = chapter[randrange(0,len(chapter))]
+        content["text"] = selected_verse["verse_text"].rstrip()
+        content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
+        content["picture"] = None
+        content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
+    return content
+
+# Share
+def share_content(request=None):
+    content = get_content_for_share(request)
+    long_text = content["text"]
+    long_url = content["long_url"]
+    short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+    short_url = get_short_url(long_url)
+    post, post_created = Post.objects.get_or_create(long_url=long_url)    
+    share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
+    share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
+    post.short_url = short_url
+    post.long_text = long_text
+    post.short_text = short_text
+    post.save()
     return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
 
 
-def share_on_facebook(text,url):
+def share_on_facebook(text,url,name=None,caption=None,picture=None):
     # Fill in the values noted in previous steps here
-    cfg = {
+    config = {
         "page_id"      : settings.FACEBOOK_PAGE_ID,
         "access_token" : settings.FACEBOOK_ACCESS_TOKEN
     }
-    api = get_api(cfg)
-    msg = "Hello, world!"
-    status = api.put_wall_post(msg)
+    api = get_api(config)
+    message = text + ' ' + url
+    attachment =  {
+        'name': name,
+        'link': url,
+        'caption': caption,
+        'description': text
+        #'picture': picture
+    }
+    status = api.put_wall_post(message,attachment)
     return True
 
-def share_on_twitter(text,url):
+def share_on_twitter(text,url,name=None,caption=None,picture=None):
     from twython import Twython
-    twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.ACCESS_TOKEN, settings.ACCESS_SECRET)
-    twitter.update_status(status=text + ' ' + url)
+    twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.TWEET_ACCESS_TOKEN, settings.TWEET_ACCESS_SECRET)
+    twitter.update_status(status=text + ' ' + str(caption) + url)
     return True
 
-def get_api(cfg):
-    graph = facebook.GraphAPI(cfg['access_token'])
+def get_api(config):
+    graph = facebook.GraphAPI(config['access_token'])
     resp = graph.get_object('me/accounts')
     page_access_token = None
     for page in resp['data']:
-        if page['id'] == cfg['page_id']:
+        if page['id'] == config['page_id']:
             page_access_token = page['access_token']
     graph = facebook.GraphAPI(page_access_token)
     return graph
 
-def short_url(url):
-    google_url = 'https://www.googleapis.com/urlshortener/v1/url?key=' + str(settings.URL_SHORTENER_PUBLIC_KEY)
+def get_short_url(url):
+    google_url = 'https://www.googleapis.com/urlshortener/v1/url?key=' + str(settings.SHORT_URL_API)
     method = 'POST'
     params = {"longUrl": url}
     response = request_url(google_url,'POST',params)
-    if response:
-        response_json = json.loads(response.content)
-        short_url = response_json['id']
+    short_url = url
+    try:
+        if response:
+            response_json = json.loads(response.content)
+            short_url = response_json['id']
+    except:
         logger.info('Short URL GOOGLE')
         logger.info(str(short_url))
     return short_url

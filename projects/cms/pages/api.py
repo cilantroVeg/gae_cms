@@ -428,7 +428,6 @@ def bible_languages(request,media,return_type=None):
             set_cache(cache_key,response_data['languages'])
         else:
             response_data['languages'] = None
-
     if return_type:
         return response_data['languages']
     else:
@@ -562,28 +561,26 @@ def captcha_is_valid(captcha_response,request):
 
 # ...
 def request_url(url,type='GET',params=None):
-    data = None
+    response = None
     counter = 0
-    while (data is None) and (counter < 3):
+    while (response is None) and (counter < 3):
         counter = counter + 1
         if (type == 'GET'):
             try:
-                data = requests.get(url)
+                response = requests.get(url)
             except:
                 if (counter > 2):
                     logger.error('api/query_api GET:' + str(counter))
                     logger.error('URL:' + str(url))
-                data = None
         elif (type == 'POST'):
-            headers = {'content-type': 'application/json'}
+            headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
             try:
-                data = requests.post(url, data=params, headers=headers)
+                response = requests.post(url, data=json.dumps(params), headers=headers)
             except:
                 if (counter > 2):
                     logger.error('api/query_api POST:' + str(counter))
                     logger.error('URL:' + str(url))
-                data = None
-    return data
+    return response
 
 #...
 def xx_log(key, value):
