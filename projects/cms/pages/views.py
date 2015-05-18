@@ -1021,20 +1021,26 @@ def get_content_for_share(request):
     if settings.APP_NAME == 'bible-love':
         response_format = 'json'
         media = 'text'
-        languages = bible_languages(request,media,response_format)
-        language_item = search_dictionaries('language_family_iso', 'eng', languages)
-        language_family_iso = language_item[0]['language_family_iso']
-        language_family_code = language_item[0]['language_family_code']
-        bibles = bible_list(request,media,language_family_code.lower(),response_format)
-        current_bible = bibles[randrange(0,len(bibles))]
-        books = bible_books(request,current_bible['dam_id'],response_format)
-        current_book = books[randrange(0,len(books))]
-        chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(0,len(current_book['chapters'].split(","))), response_format)
-        selected_verse = chapter[randrange(0,len(chapter))]
-        content["text"] = selected_verse["verse_text"].rstrip()
-        content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
-        content["picture"] = None
-        content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
+        try:
+            languages = bible_languages(request,media,response_format)
+            language_item = search_dictionaries('language_family_iso', 'eng', languages)
+            language_family_iso = language_item[0]['language_family_iso']
+            language_family_code = language_item[0]['language_family_code']
+            bibles = bible_list(request,media,language_family_code.lower(),response_format)
+            current_bible = bibles[randrange(0,len(bibles))]
+            books = bible_books(request,current_bible['dam_id'],response_format)
+            current_book = books[randrange(0,len(books))]
+            chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(0,len(current_book['chapters'].split(","))), response_format)
+            selected_verse = chapter[randrange(0,len(chapter))]
+            content["text"] = selected_verse["verse_text"].rstrip()
+            content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
+            content["picture"] = None
+            content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
+        except:
+            logger.error('get_content_for_share: ' + str(language_family_iso))
+            logger.error('get_content_for_share: ' + str(current_bible))
+            logger.error('get_content_for_share: ' + str(current_book))
+            logger.error('get_content_for_share: ' + str(chapter))
     return content
 
 # Share
@@ -1075,7 +1081,10 @@ def share_on_facebook(text,url,name=None,caption=None,picture=None):
 def share_on_twitter(text,url,name=None,caption=None,picture=None):
     from twython import Twython
     twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.TWEET_ACCESS_TOKEN, settings.TWEET_ACCESS_SECRET)
-    twitter.update_status(status=text + ' ' + str(caption) + url)
+    status_text = text + ' ' + str(caption) + ' ' + url + ' ' + '#bible7'
+    if len(status_text) > 140:
+        status_text = text + ' ' + str(caption) + ' ' + url
+    twitter.update_status(status=status_text)
     return True
 
 def get_api(config):
