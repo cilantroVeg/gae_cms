@@ -137,6 +137,8 @@ urlpatterns = patterns('',
     url(r'^api/(?P<language_code>[a-z]{2})/feed_pages/?$', 'pages.api.feed_pages'),
     url(r'^api/validate_recaptcha[/]$', 'pages.api.validate_recaptcha'),
 
+    url(r'^share_on_social_networks$', 'pages.views.share_content'),
+
     url(r'^api/json/(?P<file_name>[-\w]+)[/]$', 'pages.api.json_file'),
 
     url(r'^api/.*', 'pages.api.not_found'),

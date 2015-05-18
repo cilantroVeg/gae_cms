@@ -36,3 +36,7 @@ handlers:
 
 - url: /.*
   script: djangoappengine.main.application
+
+- url: /share_on_social_networks
+  script: pages.views.share_content
+  login: admin

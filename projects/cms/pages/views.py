@@ -1085,7 +1085,8 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
     status_text = text + ' ' + str(caption) + ' ' + url + ' ' + '#bible7'
     if len(status_text) > 140:
         status_text = text + ' ' + str(caption) + ' ' + url
-    twitter.update_status(status=status_text)
+    if len(status_text) > 140:
+        twitter.update_status(status=text[:85] + '.. ' + str(caption) + ' ' + url)
     return True
 
 def get_api(config):
