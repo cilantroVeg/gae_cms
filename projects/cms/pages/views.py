@@ -1041,24 +1041,44 @@ def get_content_for_share(request=None):
             logger.error('get_content_for_share: ' + str(current_bible))
             logger.error('get_content_for_share: ' + str(current_book))
             logger.error('get_content_for_share: ' + str(chapter))
+    elif settings.APP_NAME == 'interpegasuslove' or settings.APP_NAME == 'happy-planet':
+        try:
+            # Get Content From Feed
+            language_code = 'en'
+            feed_pages = query_api(language_code, 'feed_pages')
+            feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
+
+
+            content["text"] = selected_verse["verse_text"].rstrip()
+            content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
+            content["picture"] = None
+            content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
+        except:
+            logger.error('get_content_for_share: ' + str(language_family_iso))
+            logger.error('get_content_for_share: ' + str(current_bible))
+            logger.error('get_content_for_share: ' + str(current_book))
+            logger.error('get_content_for_share: ' + str(chapter))
     return content
 
 # Share
 def share_content(request=None):
-    content = get_content_for_share(request)
-    if content.has_key('text'):
-        long_text = content["text"]
-        long_url = content["long_url"]
-        short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
-        short_url = get_short_url(long_url)
-        post, post_created = Post.objects.get_or_create(long_url=long_url)
-        share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
-        share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
-        post.short_url = short_url
-        post.long_text = long_text
-        post.short_text = short_text
-        post.save()
-    return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
+    if is_admin(request)['is_admin'] or request.META['X-Appengine-Cron']:
+        content = get_content_for_share(request)
+        if content.has_key('text'):
+            long_text = content["text"]
+            long_url = content["long_url"]
+            short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+            short_url = get_short_url(long_url)
+            post, post_created = Post.objects.get_or_create(long_url=long_url)
+            share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
+            share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
+            post.short_url = short_url
+            post.long_text = long_text
+            post.short_text = short_text
+            post.save()
+        return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
+    else:
+        return HttpResponse(json.dumps({"Message":"Authorization Required"}), content_type="application/json",status=403)
 
 
 def share_on_facebook(text,url,name=None,caption=None,picture=None):

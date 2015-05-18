@@ -1,4 +1,4 @@
 cron:
 - description: share on social networks
   url: /share_on_social_networks
-  schedule: every 2 hours
+  schedule: every 205 minutes
