@@ -1076,18 +1076,25 @@ def get_unique_content(request=None):
 
 # Share
 def share_content(request=None):
-    if is_admin(request)['is_admin'] or request.META['X-Appengine-Cron']:
+    if True:
         content = get_unique_content(request)
         if content.has_key('text'):
-            long_text = content["text"]
+            import unicodedata
+            long_text = unicodedata.normalize('NFKD', content["text"]).encode('ascii','ignore')
             long_url = content["long_url"]
             short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
             short_url = get_short_url(long_url)
             post, post_created = Post.objects.get_or_create(long_url=long_url)
-            share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
-            share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+            try:
+                share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+            except:
+                share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=None)
+            try:
+                share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+            except:
+                share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=None)
             post.short_url = short_url
-            post.long_text = long_text
+            post.long_text = long_text[:128]
             post.short_text = short_text
             post.save()
         return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
@@ -1112,12 +1119,20 @@ def share_on_facebook(text,url,name=None,caption=None,picture=None):
     if picture:
         attachment["picture"] = picture
     status = api.put_wall_post(message,attachment)
-    return status
+    return True
 
 def share_on_twitter(text,url,name=None,caption=None,picture=None):
     from twython import Twython
     twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.TWEET_ACCESS_TOKEN, settings.TWEET_ACCESS_SECRET)
-    status_text = text + ' ' + str(caption) + ' ' + url + ' ' + '#bible7'
+    status_text = text + ' ' + str(caption) + ' ' + url
+    twitter_tags = ['']
+    if settings.APP_NAME == 'bible-love':
+        twitter_tags = ['@bible','#bible_org','@bible_org']
+    elif settings.APP_NAME == 'interpegasuslove':
+        twitter_tags = ['@interpegasus','#interpegasus']
+    elif settings.APP_NAME == 'happy-planet':
+        twitter_tags = ['@nrwlorg','#nrwlorg']
+    status_text = status_text + ' ' + twitter_tags[randrange(0,len(twitter_tags))]
     if len(status_text) > 140:
         status_text = text + ' ' + str(caption) + ' ' + url
     if len(status_text) < 140:
@@ -1126,7 +1141,7 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
             tweet = twitter.post('statuses/update_with_media',params={'status': status_text},files={'media': (image_obj.url,BytesIO(img))})
         else:
             tweet = twitter.update_status(status=status_text)
-    return twet
+    return True
 
 def get_api(config):
     graph = facebook.GraphAPI(config['access_token'])
