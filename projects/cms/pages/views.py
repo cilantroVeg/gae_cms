@@ -1076,31 +1076,27 @@ def get_unique_content(request=None):
 
 # Share
 def share_content(request=None):
-    if is_admin(request)['is_admin'] or request.META['X-Appengine-Cron']:
-        content = get_unique_content(request)
-        if content.has_key('text'):
-            import unicodedata
-            long_text = unicodedata.normalize('NFKD', content["text"]).encode('ascii','ignore')
-            long_url = content["long_url"]
-            short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
-            short_url = get_short_url(long_url)
-            post, post_created = Post.objects.get_or_create(long_url=long_url)
-            try:
-                share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
-            except:
-                share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=None)
-            try:
-                share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
-            except:
-                share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=None)
-            post.short_url = short_url
-            post.long_text = long_text[:128]
-            post.short_text = short_text
-            post.save()
-        return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
-    else:
-        return HttpResponse(json.dumps({"Message":"Authorization Required"}), content_type="application/json",status=403)
-
+    content = get_unique_content(request)
+    if content.has_key('text'):
+        import unicodedata
+        long_text = unicodedata.normalize('NFKD', content["text"]).encode('ascii','ignore')
+        long_url = content["long_url"]
+        short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+        short_url = get_short_url(long_url)
+        post, post_created = Post.objects.get_or_create(long_url=long_url)
+        try:
+            share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+        except:
+            share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=None)
+        try:
+            share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+        except:
+            share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=None)
+        post.short_url = short_url
+        post.long_text = long_text[:128]
+        post.short_text = short_text
+        post.save()
+    return HttpResponse(json.dumps({"Message":"Success"}), content_type="application/json",status=200)
 
 def share_on_facebook(text,url,name=None,caption=None,picture=None):
     # Fill in the values noted in previous steps here
@@ -1137,8 +1133,8 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
         status_text = text + ' ' + str(caption) + ' ' + url
     if len(status_text) < 140:
         if picture:
-            img = requests.get(url=picture).content
-            tweet = twitter.post('statuses/update_with_media',params={'status': status_text},files={'media': (image_obj.url,BytesIO(img))})
+            photo = urllib.urlopen(picture)
+            tweet = twitter.update_status_with_media(status=status_text, media=photo)
         else:
             tweet = twitter.update_status(status=status_text)
     return True

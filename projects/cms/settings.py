@@ -22,7 +22,7 @@ AUTOLOAD_SITECONF = 'indexes'
 
 SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 
-ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com','bible-love.appspot.com','bible7.co', 'www.bible7.co', 'portfolio.interpegasus.com']
+ALLOWED_HOSTS = ['127.0.0.1','www.magicangel.org','magicangel.org','www.interpegasus.com','interpegasus.com', 'nrwl.org', 'www.nrwl.org', 'yiyask.com', 'www.yiyask.com', '1.happy-planet.appspot.com', 'interpegasuslove.appspot.com', 'happy-planet.appspot.com', 'arturo.interpegasus.com','bible-love.appspot.com','bible7.co', 'www.bible7.co', 'portfolio.interpegasus.com']
 
 INSTALLED_APPS = (
 #   'django.contrib.admin',
@@ -145,11 +145,11 @@ LOGIN_REDIRECT_URL = '/'
 # apps
 #APP_NAME = 'arturoportfolio7'
 #APP_NAME = 'arturopegasus7'
-#APP_NAME = 'happy-planet'
+APP_NAME = 'happy-planet'
 #APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
 #APP_NAME = 'interpegasus-cms'
-APP_NAME = 'interpegasuslove'
+#APP_NAME = 'interpegasuslove'
 
 CACHE_ENABLED = True
 DEBUG = False
