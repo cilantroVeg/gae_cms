@@ -146,10 +146,10 @@ LOGIN_REDIRECT_URL = '/'
 #APP_NAME = 'arturoportfolio7'
 #APP_NAME = 'arturopegasus7'
 #APP_NAME = 'happy-planet'
-APP_NAME = 'bible-love'
+#APP_NAME = 'bible-love'
 #APP_NAME = 'yiyask7'
 #APP_NAME = 'interpegasus-cms'
-#APP_NAME = 'interpegasuslove'
+APP_NAME = 'interpegasuslove'
 
 CACHE_ENABLED = True
 DEBUG = False
@@ -168,10 +168,10 @@ elif APP_NAME == 'interpegasuslove':
     TWEET_SECRET = access_keys.IPEGASUS_TWEET_SECRET
     TWEET_ACCESS_TOKEN = access_keys.IPEGASUS_ACCESS_TOKEN
     TWEET_ACCESS_SECRET = access_keys.IPEGASUS_ACCESS_SECRET
-    FACEBOOK_PAGE_ID = access_keys.IPEGASUS7_FACEBOOK_PAGE_ID
-    FACEBOOK_APP_ID = access_keys.IPEGASUS7_FACEBOOK_APP_ID
-    FACEBOOK_APP_SECRET = access_keys.IPEGASUS7_FACEBOOK_APP_SECRET
-    FACEBOOK_ACCESS_TOKEN = access_keys.IPEGASUS7_FACEBOOK_ACCESS_TOKEN
+    FACEBOOK_PAGE_ID = access_keys.IPEGASUS_FACEBOOK_PAGE_ID
+    FACEBOOK_APP_ID = access_keys.IPEGASUS_FACEBOOK_APP_ID
+    FACEBOOK_APP_SECRET = access_keys.IPEGASUS_FACEBOOK_APP_SECRET
+    FACEBOOK_ACCESS_TOKEN = access_keys.IPEGASUS_FACEBOOK_ACCESS_TOKEN
     SHORT_URL_API = access_keys.BIBLE_GOOGLE_PUBLIC_API_KEY
 elif APP_NAME == 'happy-planet':
     SITE_URL = 'http://www.nrwl.org'

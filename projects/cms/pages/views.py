@@ -1042,22 +1042,20 @@ def get_content_for_share(request=None):
             logger.error('get_content_for_share: ' + str(current_book))
             logger.error('get_content_for_share: ' + str(chapter))
     elif settings.APP_NAME == 'interpegasuslove' or settings.APP_NAME == 'happy-planet':
-        try:
-            # Get Content From Feed
-            language_code = 'en'
-            feed_pages = query_api(language_code, 'feed_pages')
-            feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
-
-
-            content["text"] = selected_verse["verse_text"].rstrip()
-            content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
-            content["picture"] = None
-            content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
-        except:
-            logger.error('get_content_for_share: ' + str(language_family_iso))
-            logger.error('get_content_for_share: ' + str(current_bible))
-            logger.error('get_content_for_share: ' + str(current_book))
-            logger.error('get_content_for_share: ' + str(chapter))
+        language_code = 'en'
+        feed_pages = query_api(language_code, 'feed_pages')
+        feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
+        if feed_pages:
+            for key in feed_pages.iterkeys():
+                try:
+                    feed_item = feed_pages[key][randrange(0,len(feed_pages[key]))]
+                    content["text"] = feed_item["content_no_html"]
+                    content["name"] = feed_item["title"]
+                    content["caption"] = feed_item["title"]
+                    content["picture"] = feed_item["image_url"]
+                    content["long_url"] = feed_item["feed_source"]
+                except:
+                    logger.error('Feed: ' + str(key))
     return content
 
 # Share
