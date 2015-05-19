@@ -1076,7 +1076,7 @@ def get_unique_content(request=None):
 
 # Share
 def share_content(request=None):
-    if True:
+    if is_admin(request)['is_admin'] or request.META['X-Appengine-Cron']:
         content = get_unique_content(request)
         if content.has_key('text'):
             import unicodedata
