@@ -1033,6 +1033,7 @@ def get_content_for_share(request=None):
             chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(0,len(current_book['chapters'].split(","))), response_format)
             selected_verse = chapter[randrange(0,len(chapter))]
             content["text"] = selected_verse["verse_text"].rstrip()
+            content["name"] =    selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
             content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
             content["picture"] = None
             content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
@@ -1051,25 +1052,40 @@ def get_content_for_share(request=None):
                     feed_item = feed_pages[key][randrange(0,len(feed_pages[key]))]
                     content["text"] = feed_item["content_no_html"]
                     content["name"] = feed_item["title"]
-                    content["caption"] = feed_item["title"]
+                    content["caption"] = get_short_url(settings.SITE_URL + '/' + language_code + '/feed/' + feed_item["slug"] + '/')
                     content["picture"] = feed_item["image_url"]
                     content["long_url"] = feed_item["feed_source"]
                 except:
-                    logger.error('Feed: ' + str(key))
+                    logger.error('Feed: ' + str(feed_item))
+    return content
+
+# ...
+def get_unique_content(request=None):
+    content = {}
+    counter = 0
+    while ((not content) and (counter < 7)):
+        counter = counter + 1
+        content = get_content_for_share(request)
+        if content:
+            post = Post.objects.filter(long_url=content["long_url"])
+            if len(post) == 0:
+                return content
+            else:
+                content = {}
     return content
 
 # Share
 def share_content(request=None):
     if is_admin(request)['is_admin'] or request.META['X-Appengine-Cron']:
-        content = get_content_for_share(request)
+        content = get_unique_content(request)
         if content.has_key('text'):
             long_text = content["text"]
             long_url = content["long_url"]
             short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
             short_url = get_short_url(long_url)
             post, post_created = Post.objects.get_or_create(long_url=long_url)
-            share_on_facebook(long_text,short_url,name=content["caption"],caption=content["caption"])
-            share_on_twitter(short_text,short_url,name=content["caption"],caption=content["caption"])
+            share_on_facebook(long_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
+            share_on_twitter(short_text,short_url,name=content["name"],caption=content["caption"],picture=content["picture"])
             post.short_url = short_url
             post.long_text = long_text
             post.short_text = short_text
@@ -1092,10 +1108,11 @@ def share_on_facebook(text,url,name=None,caption=None,picture=None):
         'link': url,
         'caption': caption,
         'description': text
-        #'picture': picture
     }
+    if picture:
+        attachment["picture"] = picture
     status = api.put_wall_post(message,attachment)
-    return True
+    return status
 
 def share_on_twitter(text,url,name=None,caption=None,picture=None):
     from twython import Twython
@@ -1103,9 +1120,13 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
     status_text = text + ' ' + str(caption) + ' ' + url + ' ' + '#bible7'
     if len(status_text) > 140:
         status_text = text + ' ' + str(caption) + ' ' + url
-    if len(status_text) > 140:
-        twitter.update_status(status=text[:85] + '.. ' + str(caption) + ' ' + url)
-    return True
+    if len(status_text) < 140:
+        if picture:
+            img = requests.get(url=picture).content
+            tweet = twitter.post('statuses/update_with_media',params={'status': status_text},files={'media': (image_obj.url,BytesIO(img))})
+        else:
+            tweet = twitter.update_status(status=status_text)
+    return twet
 
 def get_api(config):
     graph = facebook.GraphAPI(config['access_token'])
