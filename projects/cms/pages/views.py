@@ -1030,13 +1030,17 @@ def get_content_for_share(request=None):
             current_bible = bibles[randrange(0,len(bibles))]
             books = bible_books(request,current_bible['dam_id'],response_format)
             current_book = books[randrange(0,len(books))]
-            chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(0,len(current_book['chapters'].split(","))), response_format)
-            selected_verse = chapter[randrange(0,len(chapter))]
-            content["text"] = selected_verse["verse_text"].rstrip()
-            content["name"] =    selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
-            content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
-            content["picture"] = None
-            content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
+            chapter = bible_book_text(request,current_bible['dam_id'], current_book['book_id'], randrange(1,len(current_book['chapters'].split(","))+1), response_format)
+            counter = 0
+            content["text"] = None
+            while ((content["text"] is None) or (len(content["text"]) > 107)) and (counter < 7):
+                counter = counter + 1
+                selected_verse = chapter[randrange(0,len(chapter))]
+                content["text"] = selected_verse["verse_text"].rstrip()
+                content["name"] =    selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
+                content["caption"] = selected_verse["book_name"] + ' ' + selected_verse["chapter_id"] + '-' + selected_verse["verse_id"]
+                content["picture"] = None
+                content["long_url"] = settings.SITE_URL + '/' + language_family_iso + '/bible/' + current_bible["dam_id"]  + '/book/' + current_book["book_id"]   + '/chapter/' + selected_verse["chapter_id"] + '/'
         except:
             logger.error('get_content_for_share: ' + str(language_family_iso))
             logger.error('get_content_for_share: ' + str(current_bible))
@@ -1047,16 +1051,19 @@ def get_content_for_share(request=None):
         feed_pages = query_api(language_code, 'feed_pages')
         feed_pages = feed_pages['pages'] if 'pages' in feed_pages else None
         if feed_pages:
+            key_array = []
             for key in feed_pages.iterkeys():
-                try:
-                    feed_item = feed_pages[key][randrange(0,len(feed_pages[key]))]
-                    content["text"] = feed_item["content_no_html"]
-                    content["name"] = feed_item["title"]
-                    content["caption"] = get_short_url(settings.SITE_URL + '/' + language_code + '/feed/' + feed_item["slug"] + '/')
-                    content["picture"] = feed_item["image_url"]
-                    content["long_url"] = feed_item["feed_source"]
-                except:
-                    logger.error('Feed: ' + str(feed_item))
+                key_array.append(key)
+            key = key_array[randrange(0,len(key_array))]
+            try:
+                feed_item = feed_pages[key][randrange(0,len(feed_pages[key]))]
+                content["text"] = feed_item["content_no_html"]
+                content["name"] = feed_item["title"]
+                content["caption"] = feed_item["feed_type"]
+                content["picture"] = feed_item["image_url"]
+                content["long_url"] = feed_item["feed_source"]
+            except:
+                logger.error('Feed: ' + str(feed_item))
     return content
 
 # ...
@@ -1066,7 +1073,7 @@ def get_unique_content(request=None):
     while ((not content) and (counter < 7)):
         counter = counter + 1
         content = get_content_for_share(request)
-        if content:
+        if content and ('long_url' in content):
             post = Post.objects.filter(long_url=content["long_url"])
             if len(post) == 0:
                 return content
@@ -1081,7 +1088,7 @@ def share_content(request=None):
         import unicodedata
         long_text = unicodedata.normalize('NFKD', content["text"]).encode('ascii','ignore')
         long_url = content["long_url"]
-        short_text = (long_text[:100] + '..') if len(long_text) > 100 else long_text
+        short_text = (long_text[:107] + '..') if len(long_text) > 107 else long_text
         short_url = get_short_url(long_url)
         post, post_created = Post.objects.get_or_create(long_url=long_url)
         try:
@@ -1122,23 +1129,22 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
     tweet = None
     twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.TWEET_ACCESS_TOKEN, settings.TWEET_ACCESS_SECRET)
     status_text = text + ' ' + str(caption) + ' ' + url
-    twitter_tags = ['']
-    if settings.APP_NAME == 'bible-love':
-        twitter_tags = ['@bible','#bible_org','@bible_org']
-    elif settings.APP_NAME == 'interpegasuslove':
-        twitter_tags = ['@interpegasus','#interpegasus']
-    elif settings.APP_NAME == 'happy-planet':
-        twitter_tags = ['@nrwlorg','#nrwlorg']
-    status_text = status_text + ' ' + twitter_tags[randrange(0,len(twitter_tags))]
+    if len(status_text) <= 130:
+        twitter_tags = []
+        if settings.APP_NAME == 'bible-love':
+            twitter_tags = ['@bible','#bible_org','@bible_org']
+        elif settings.APP_NAME == 'interpegasuslove':
+            twitter_tags = ['@interpegasus','#interpegasus']
+        elif settings.APP_NAME == 'happy-planet':
+            twitter_tags = ['@nrwlorg','#nrwlorg']
+        status_text = status_text + ' ' + twitter_tags[randrange(0,len(twitter_tags))]
     if len(status_text) >= 140:
-        status_text = text + ' ' + str(caption) + ' ' + url
-        status_text = (status_text[:135] + '..') if len(status_text) >= 140 else status_text
-    if len(status_text) < 140:
-        if picture:
-            photo = urllib.urlopen(picture)
-            tweet = twitter.update_status_with_media(status=status_text, media=photo)
-        else:
-            tweet = twitter.update_status(status=status_text)
+        status_text = (status_text[:135] + '..')
+    if picture:
+        photo = urllib.urlopen(picture)
+        tweet = twitter.update_status_with_media(status=status_text, media=photo)
+    else:
+        tweet = twitter.update_status(status=status_text)
     return tweet
 
 def get_api(config):
