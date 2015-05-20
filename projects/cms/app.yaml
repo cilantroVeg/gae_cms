@@ -1,5 +1,5 @@
-application: interpegasuslove
-version: 7
+application: happy-planet
+version: 8
 runtime: python27
 api_version: 1
 threadsafe: yes

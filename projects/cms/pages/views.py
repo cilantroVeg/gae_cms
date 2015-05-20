@@ -1115,10 +1115,11 @@ def share_on_facebook(text,url,name=None,caption=None,picture=None):
     if picture:
         attachment["picture"] = picture
     status = api.put_wall_post(message,attachment)
-    return True
+    return status
 
 def share_on_twitter(text,url,name=None,caption=None,picture=None):
     from twython import Twython
+    tweet = None
     twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET,settings.TWEET_ACCESS_TOKEN, settings.TWEET_ACCESS_SECRET)
     status_text = text + ' ' + str(caption) + ' ' + url
     twitter_tags = ['']
@@ -1129,15 +1130,16 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
     elif settings.APP_NAME == 'happy-planet':
         twitter_tags = ['@nrwlorg','#nrwlorg']
     status_text = status_text + ' ' + twitter_tags[randrange(0,len(twitter_tags))]
-    if len(status_text) > 140:
+    if len(status_text) >= 140:
         status_text = text + ' ' + str(caption) + ' ' + url
+        status_text = (status_text[:135] + '..') if len(status_text) >= 140 else status_text
     if len(status_text) < 140:
         if picture:
             photo = urllib.urlopen(picture)
             tweet = twitter.update_status_with_media(status=status_text, media=photo)
         else:
             tweet = twitter.update_status(status=status_text)
-    return True
+    return tweet
 
 def get_api(config):
     graph = facebook.GraphAPI(config['access_token'])
