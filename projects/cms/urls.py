@@ -48,6 +48,7 @@ urlpatterns = patterns('',
     url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
     url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
     url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter/(?P<chapter>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter[/]$', 'pages.views.front_page_language_family_iso'),
     url(r'^contact[/]$', 'pages.views.contact'),
     url(r'^thanks[/]$', 'pages.views.thanks'),
 
