@@ -567,7 +567,7 @@ def get_wikipedia_info_box(html,title):
 #..
 def get_tweets(search):
     from twython import Twython
-    twitter = Twython(settings.NRWL_TWEET_KEY, settings.NRWL_TWEET_SECRET, settings.NRWL_ACCESS_TOKEN,  settings.NRWL_ACCESS_SECRET)
+    twitter = Twython(settings.TWEET_KEY, settings.TWEET_SECRET, settings.TWEET_ACCESS_TOKEN,  settings.TWEET_ACCESS_SECRET)
     tweet_array = []
     # twitter.update_status(status='Natural Resource And Wildlife Organization #NRWL nrwl.org')
     filters = ' filter:links filter:images filter:verified'
