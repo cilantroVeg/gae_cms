@@ -441,7 +441,6 @@ def bible_list(request,media,language_code,return_type=None):
     if response_data['bibles'] is None:
         if media =='text':
             r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code)
-            logger.error('HERE: ' + str(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=text&language_family_code=' + language_code))
         elif media == 'audio':
             r = request_url(settings.DBT_GET_BIBLES_FOR_LANGUAGE_URL + '&media=audio&language_family_code=' + language_code)
         elif media == 'video':
