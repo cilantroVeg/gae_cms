@@ -557,12 +557,16 @@ def process_wiki_page(language_code,page, cache_enabled=settings.CACHE_ENABLED):
     return wiki_page
 
 def get_wikipedia_info_box(html,title):
-    soup = BeautifulSoup(html)
-    wiki_table = soup.find("table", class_="infobox biota")
-    element = wiki_table.find('th')
-    element.clear()
-    element.append(title)
-    return clean_html(wiki_table.prettify())
+    try:
+        soup = BeautifulSoup(html)
+        wiki_table = soup.find("table", class_="infobox biota")
+        element = wiki_table.find('th')
+        element.clear()
+        element.append(title)
+        return clean_html(wiki_table.prettify())
+    except:
+        logger.error('Error  Getting Info Box for ' + str(title))
+        return ''
 
 #..
 def get_tweets(search):
@@ -1057,7 +1061,7 @@ def get_content_for_share(request=None):
             key = key_array[randrange(0,len(key_array))]
             try:
                 feed_item = feed_pages[key][randrange(0,len(feed_pages[key]))]
-                content["text"] = feed_item["content_no_html"]
+                content["text"] = normalize_text(feed_item["content_no_html"])
                 content["name"] = feed_item["title"]
                 content["caption"] = feed_item["feed_type"]
                 content["picture"] = feed_item["image_url"]
@@ -1065,6 +1069,24 @@ def get_content_for_share(request=None):
             except:
                 logger.error('Feed: ' + str(feed_item))
     return content
+
+# ...
+def normalize_text(s):
+    s = s.replace("&lt;", "<")
+    s = s.replace("&gt;", ">")
+    s = s.replace(" &lsquo;", "'")
+    s = s.replace("&lsquo;", "'")
+    s = s.replace("&rsquo;", "")
+    s = s.replace("&trade;", "")
+    s = s.replace("\n", " ")
+    s = s.replace("&#8217;", "'")
+    s = s.replace("&#8216;", "")
+    s = s.replace("&#8212;", "")
+    s = s.replace("&#8220;", "")
+    s = s.replace("&#8221;", "")
+    s = s.replace("\u2014", " ")
+    s = s.replace("&amp;", "&")
+    return s
 
 # ...
 def get_unique_content(request=None):
@@ -1144,7 +1166,10 @@ def share_on_twitter(text,url,name=None,caption=None,picture=None):
         photo = urllib.urlopen(picture)
         tweet = twitter.update_status_with_media(status=status_text, media=photo)
     else:
-        tweet = twitter.update_status(status=status_text)
+        try:
+            tweet = twitter.update_status(status=status_text)
+        except:
+            tweet = twitter.update_status(status=status_text[:130] + '..')
     return tweet
 
 def get_api(config):
