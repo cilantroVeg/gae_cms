@@ -1,7 +1,15 @@
 {% load record-tags %}
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
+    {% if wiki_page %}
+        <title>{{ wiki_page.title }} - {{ 'WEBSITE_NAME'|get_record:request_language}}</title>
+    {% elif page %}
+        <title>{{ page.title }} - {{ 'WEBSITE_NAME'|get_record:request_language}}</title>
+    {% elif title %}
+        <title>{{ title|title }}</title>
+    {% else%}
+        <title>{{ 'WEBSITE_NAME'|get_record:request_language}}</title>
+    {% endif %}
 <meta name="description" content="Arturo's Web And Mobile Portfolio"/>
 <meta name="author" content="Arturo"/>
 <meta name="application-name" content="InterPegasus CMS"/>

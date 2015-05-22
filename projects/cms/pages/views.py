@@ -667,7 +667,7 @@ def sitemap(request):
         feeds = query_api(language, 'feed_pages')
         galleries = query_api(language, 'galleries')
         images = query_api(language, 'images')
-        return render_to_response("pages/sitemap.html", {"url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        return render_to_response("pages/sitemap.html", {"title":"SiteMap", "url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 # ...
 def sitemap_xml(request):
     media = 'text'
