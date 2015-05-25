@@ -8,8 +8,8 @@
     {% for bible in bibles %}
     <url>
         <loc>http://bible7.co/{{ language|lower }}/bible/{{ bible.dam_id }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
     {% endfor %}
 </urlset>

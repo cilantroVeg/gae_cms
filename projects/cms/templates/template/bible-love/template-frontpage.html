@@ -9,15 +9,10 @@
 <head>
     <title>{% firstof current_bible.collection_name current_bible.collection_code %} - {{current_bible.volume_name}} - {{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}} </title>
     <meta charset="utf-8">
-    <meta name="description" content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}
-        {% for verse in current_chapter %}
-            &nbsp;&nbsp;{{verse.verse_id}}:{{verse.verse_text|safe}}
-        {% endfor %}
-    "/>
-    <meta name="keywords" content="{{current_chapter.0.book_name}}"/>
+    <meta name="description" content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}"/>
+    <meta name="keywords"    content="{{current_chapter.0.book_name}} {{current_chapter.0.chapter_id}}, {{current_chapter.0.book_name}}, {{current_chapter.0.chapter_id}}, bible, biblia"/>
     <meta name="application-name" content="bible">
     <meta name="generator" content="InterPegasus CMS">
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}javascript/bible.js"></script>
     <script src="{{ STATIC_URL }}javascript/jquery-cookie/src/jquery.cookie.js"></script>
@@ -285,6 +280,12 @@
             <h2>Sitemap</h2>
             <a href="/sitemap">Sitemap</a>
             <a href="/sitemap.xml">Sitemap XML</a>
+            <hr />
+            <h2>Social</h2>
+            <ul class="inline-list left">
+                <a target="_blank" href="https://www.facebook.com/bible7"><li class="fi-social-facebook"><span>Facebook Page</span></li></a>
+                <a target="_blank" href="https://twitter.com/bible_org"><li class="fi-social-twitter"><span>Twitter Page</span></li></a>
+            </ul>
         </div>
 
         <div id="social">

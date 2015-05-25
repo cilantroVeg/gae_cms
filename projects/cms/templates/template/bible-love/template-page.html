@@ -9,8 +9,8 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content=""/>
+    <meta name="description" content="bible">
+    <meta name="keywords" content="bible, biblia"/>
     <meta name="application-name" content="bible">
     <meta name="generator" content="InterPegasus CMS">
 
@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-desktop.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/style-wide.css"/>
-    <link href="{{ STATIC_URL }}template/www.interpegasus.com/css/fontello.css" rel="stylesheet">
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -33,6 +32,7 @@
     <!--[if lte IE 7]>
     <link rel="stylesheet" href="{{ STATIC_URL }}template/bible.interpegasus.com/css/ie7.css"/><![endif]-->
     <link rel="shortcut icon" href="{{ STATIC_URL }}template/bible.interpegasus.com/images/favicon.ico">
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,9 +48,9 @@
     Set it to "right-sidebar" to, you guessed it, position it on the right.
 -->
 {% if current_bible.right_to_left == 'true' %}
-<body class="right-sidebar">
+    <body class="right-sidebar">
 {%else %}
-<body class="left-sidebar">
+    <body class="left-sidebar">
 {%endif%}
 {% include "layout/admin.html" %}
 <div id="top-bar">
@@ -65,32 +65,33 @@
             <option value="jpn">日本語 - Japanese</option>
             <option disabled>──────────</option>
             {% for language in languages_bible %}
-            {% if language.language_family_name == language.language_family_english %}
-            <option value="{{language.language_family_iso|lower}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_english|truncate_str:21}}
-            </option>
-            {%else%}
-            {% if language.language_family_name|length > 12 %}
-            <option value="{{language.language_family_iso|lower}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name|truncate_str:21}}
-            </option>
-            {% else %}
-            <option value="{{language.language_family_iso|lower}}"
-            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
-            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
-            </option>
-            {% endif %}
-            {%endif%}
+                {% if language.language_family_name == language.language_family_english %}
+                    <option value="{{language.language_family_iso|lower}}"
+                            {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+                        {{language.language_family_english|truncate_str:21}}
+                    </option>
+                {%else%}
+                    {% if language.language_family_name|length > 12 %}
+                        <option value="{{language.language_family_iso|lower}}"
+                                {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+                            {{language.language_family_name|truncate_str:21}}
+                        </option>
+                    {% else %}
+                        <option value="{{language.language_family_iso|lower}}"
+                                {% if current_language|lower == language.language_family_iso|lower %}selected = "selected"{% endif%}>
+                            {{language.language_family_name}} - {{language.language_family_english|truncate_str:21}}
+                        </option>
+                    {% endif %}
+                {%endif%}
             {% endfor %}
         </select>
     </div>
-</div>
+    </div>
 <!-- Wrapper -->
 <div id="wrapper">
 
     <!-- Content -->
+        <!-- Content -->
     <div id="content">
         <div id="content-inner">
             <div>{% block content %}{% endblock %}</div>
@@ -117,6 +118,12 @@
             <h2>Sitemap</h2>
             <a href="/sitemap">Sitemap</a>
             <a href="/sitemap.xml">Sitemap XML</a>
+            <hr />
+            <h2>Social</h2>
+            <ul class="inline-list left">
+                <a target="_blank" href="https://www.facebook.com/bible7"><li class="fi-social-facebook"><span>Facebook Page</span></li></a>
+                <a target="_blank" href="https://twitter.com/bible_org"><li class="fi-social-twitter"><span>Twitter Page</span></li></a>
+            </ul>
         </div>
     </div>
 

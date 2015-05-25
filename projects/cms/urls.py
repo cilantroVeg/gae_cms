@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     # sitemap
     url(r'^sitemap[/]$', 'pages.views.sitemap'),
     url(r'^sitemap.xml$', 'pages.views.sitemap_xml'),
-    url(r'^sitemap/(?P<language>[a-z]{3})\.xml$', 'pages.views.sitemap_xml_language'),
+    url(r'^sitemap/(?P<language>[a-z0-1]{3})\.xml$', 'pages.views.sitemap_xml_language'),
 
     # User Session
     url(r'^enter[/]$', 'users.views.enter'),
@@ -44,11 +44,11 @@ urlpatterns = patterns('',
     # Frontpage
     url('^$', 'pages.views.front_page'),
     url(r'^(?P<language>[a-z]{2})[/]$', 'pages.views.front_page_language'),
-    url(r'^(?P<language>[a-z]{3})[/]$', 'pages.views.front_page_language_family_iso'),
-    url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
-    url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
-    url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter/(?P<chapter>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
-    url(r'^(?P<language>[a-z]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z0-1]{3})[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z0-1]{3})/bible/(?P<bible>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z0-1]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z0-1]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter/(?P<chapter>[-\w]+)[/]$', 'pages.views.front_page_language_family_iso'),
+    url(r'^(?P<language>[a-z0-1]{3})/bible/(?P<bible>[-\w]+)/book/(?P<book>[-\w]+)/chapter[/]$', 'pages.views.front_page_language_family_iso'),
     url(r'^contact[/]$', 'pages.views.contact'),
     url(r'^thanks[/]$', 'pages.views.thanks'),
 
