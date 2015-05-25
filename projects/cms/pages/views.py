@@ -676,13 +676,15 @@ def sitemap_xml(request):
         languages = bible_languages(request,media,response_format)
         return render_to_response("pages/sitemap.xml", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
+        
         language = get_request_language(request)["request_language"]
         pages = query_api(language, 'pages')
         categories = query_api(language, 'categories')
         feeds = query_api(language, 'feed_pages')
         galleries = query_api(language, 'galleries')
         images = query_api(language, 'images')
-        return render_to_response("pages/sitemap_index.xml", {"url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
+        languages = query_api(language, 'languages')
+        return render_to_response("pages/sitemap_index.xml", {"url":settings.SITE_URL,"galleries":galleries,"images":images,"languages":languages,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
 
 # ...
 def sitemap_xml_language(request,language):
@@ -1078,6 +1080,7 @@ def normalize_text(s):
     s = s.replace("&lsquo;", "'")
     s = s.replace("&rsquo;", "")
     s = s.replace("&trade;", "")
+    s = s.replace("&mdash;", " ")
     s = s.replace("\n", " ")
     s = s.replace("&#8217;", "'")
     s = s.replace("&#8216;", "")
