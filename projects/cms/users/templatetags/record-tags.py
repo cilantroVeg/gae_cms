@@ -13,6 +13,15 @@ logger = logging.getLogger(__name__)
 register = Library()
 
 @register.filter
+def get_bible_books(bible):
+    response_format = 'json'
+    books = bible_books(None,bible,response_format)
+    book_array = []
+    for book in books:
+        book_array.append(book["book_id"])
+    return book_array
+
+@register.filter
 def detruncate(str):
     return str.replace(".", '');
 
