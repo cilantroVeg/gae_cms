@@ -7,6 +7,7 @@ from django.template import Library
 from pages.models import Record, Language
 from django.conf import settings
 from pages.api import *
+from pages.views import normalize_text
 import logging
 logger = logging.getLogger(__name__)
 register = Library()
@@ -14,6 +15,10 @@ register = Library()
 @register.filter
 def detruncate(str):
     return str.replace(".", '');
+
+@register.filter
+def to_keywords(str):
+    return str.replace(" ", ' ,');
 
 @register.filter
 def get_record(key, language='en'):
@@ -61,6 +66,7 @@ def translate(key, language_code):
 
 @register.filter
 def truncate_str(str, length):
+    str = normalize_text(str)
     return (str[:length] + '..') if len(str) > length else str
 
 @register.filter
