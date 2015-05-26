@@ -1,75 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for language in languages%}
-        <sitemap>
-            <loc>{{ url}}/sitemap.xml</loc>
-            <lastmod>{% now "Y-m-d" %}</lastmod>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>{{ url}}/sitemap.xml</loc>
+        <lastmod>{% now "Y-m-d" %}</lastmod>
+        <priority>0.1</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>{{ url}}/sitemap/</loc>
+        <lastmod>{% now "Y-m-d" %}</lastmod>
+        <priority>0.6</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>{{ url}}/contact/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    {%if languages%}
+        {% for item in languages.languages %}
             <url>
-                <loc>{{ url}}/sitemap/</loc>
-                <changefreq>weekly</changefreq>
-                <priority>0.5</priority>
+                <loc>{{ url }}/{{item.code}}/</loc>
+                <changefreq>hourly</changefreq>
+                <priority>1.0</priority>
             </url>
+        {% endfor %}
+    {% endif %}
+    {%if categories%}
+        {% for item in categories.categories %}
             <url>
-                <loc>{{ url}}/contact/</loc>
-                <changefreq>monthly</changefreq>
+                <loc>{{ url }}/{{request_language}}/c/{{item.slug}}/</loc>
+                <changefreq>weekly</changefreq>
                 <priority>0.9</priority>
             </url>
-            {%if languages%}
-                {% for item in languages.languages %}
-                    <url>
-                        <loc>{{ url }}/{{item.code}}"</loc>
-                        <changefreq>hourly</changefreq>
-                        <priority>1.0</priority>
-                    </url>
-                {% endfor %}
-            {% endif %}
-            {%if categories%}
-                {% for item in categories.categories %}
-                    <url>
-                        <loc>{{ url }}/{{request_language}}/c/{{item.slug}}/"</loc>
-                        <changefreq>weekly</changefreq>
-                        <priority>0.9</priority>
-                    </url>
-                {% endfor %}
-            {% endif %}
-            {%if pages%}
-                {% for item in pages.pages %}
-                    <url>
-                        <loc>{{ url }}/{{request_language}}/{{item.slug}}/"</loc>
-                        <changefreq>weekly</changefreq>
-                        <priority>0.8</priority>
-                    </url>
-                {% endfor %}
-            {% endif %}
-            {%if galleries%}
-                {% for item in galleries.galleries %}
-                    <url>
-                        <loc>{{ url }}/{{request_language}}/gallery/{{item.slug}}/"</loc>
-                        <changefreq>weekly</changefreq>
-                        <priority>0.7</priority>
-                    </url>
-                {% endfor %}
-            {% endif %}
-            {%if images%}
-                {% for item in images.images %}
-                    <url>
-                        <loc>{{ url }}/{{request_language}}/i/{{item.slug}}"</loc>
-                        <changefreq>weekly</changefreq>
-                        <priority>0.6</priority>
-                    </url>
-                {% endfor %}
-            {% endif %}
-            {%if feeds%}
-                {% for i in feeds.pages %}
-                    {% for item in i %}
-                        <url>
-                            <loc>{{ url }}/{{request_language}}/feed/{{item.slug}}/"</loc>
-                            <changefreq>weekly</changefreq>
-                            <priority>0.8</priority>
-                        </url>
-                    {% endfor %}
-                {% endfor %}
-            {% endif %}
-        </sitemap>
-    {% endfor %}
-</sitemapindex>
+        {% endfor %}
+    {% endif %}
+    {%if pages%}
+        {% for item in pages.pages %}
+            <url>
+                <loc>{{ url }}/{{request_language}}/{{item.slug}}/</loc>
+                <changefreq>weekly</changefreq>
+                <priority>0.8</priority>
+            </url>
+        {% endfor %}
+    {% endif %}
+
+    {%if galleries%}
+        {% for item in galleries.galleries %}
+            <url>
+                <loc>{{ url }}/{{request_language}}/gallery/{{item.slug}}/</loc>
+                <changefreq>weekly</changefreq>
+                <priority>0.7</priority>
+            </url>
+        {% endfor %}
+    {% endif %}
+    {%if images%}
+        {% for item in images.images %}
+            <image:image>
+                <image:loc>{{ url }}/{{request_language}}/i/{{item.slug}}/</image:loc>
+                <changefreq>weekly</changefreq>
+                <priority>0.6</priority>
+            </image:image>
+        {% endfor %}
+    {% endif %}
+    {%if feeds%}
+        {% for key in feeds.pages %}
+
+        {% endfor %}
+    {% endif %}
+</urlset>

@@ -1095,6 +1095,7 @@ def normalize_text(s):
     s = s.replace("&#8221;", "")
     s = s.replace("\u2014", " ")
     s = s.replace("&amp;", "&")
+    s = s.replace("&", "")
     return s
 
 # ...
@@ -1218,4 +1219,4 @@ def humans(request):
     return render_to_response('txt/humans.txt',context_instance=RequestContext(request), content_type='text/plain')
 
 def robots(request):
-    return render_to_response('txt/robots.txt',context_instance=RequestContext(request), content_type='text/plain')
+    return render_to_response('txt/robots.txt',{"url":settings.SITE_URL}, context_instance=RequestContext(request), content_type='text/plain')
