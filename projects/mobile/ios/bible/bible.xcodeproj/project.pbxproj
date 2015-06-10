@@ -7,102 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69B882D51B28B65C0061ABFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B882D41B28B65C0061ABFC /* AppDelegate.swift */; };
-		69B882D71B28B65C0061ABFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B882D61B28B65C0061ABFC /* FirstViewController.swift */; };
-		69B882D91B28B65C0061ABFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B882D81B28B65C0061ABFC /* SecondViewController.swift */; };
-		69B882DC1B28B65C0061ABFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B882DA1B28B65C0061ABFC /* Main.storyboard */; };
-		69B882DE1B28B65C0061ABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B882DD1B28B65C0061ABFC /* Images.xcassets */; };
-		69B882E11B28B65C0061ABFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B882DF1B28B65C0061ABFC /* LaunchScreen.xib */; };
-		69B882ED1B28B65C0061ABFC /* bibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B882EC1B28B65C0061ABFC /* bibleTests.swift */; };
-		69B883001B28B6D60061ABFC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B882FF1B28B6D60061ABFC /* InterfaceController.swift */; };
-		69B883021B28B6D60061ABFC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B883011B28B6D60061ABFC /* NotificationController.swift */; };
-		69B883041B28B6D60061ABFC /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B883031B28B6D60061ABFC /* GlanceController.swift */; };
-		69B883061B28B6D60061ABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B883051B28B6D60061ABFC /* Images.xcassets */; };
-		69B8830A1B28B6D70061ABFC /* bible WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 69B883091B28B6D70061ABFC /* bible WatchKit App.app */; };
-		69B883121B28B6D70061ABFC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B883101B28B6D70061ABFC /* Interface.storyboard */; };
-		69B883141B28B6D70061ABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B883131B28B6D70061ABFC /* Images.xcassets */; };
-		69B883171B28B6D70061ABFC /* bible WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69B882FA1B28B6D60061ABFC /* bible WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		693376DB1B28C16300D18A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693376DA1B28C16300D18A7C /* AppDelegate.swift */; };
+		693376DD1B28C16300D18A7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693376DC1B28C16300D18A7C /* FirstViewController.swift */; };
+		693376DF1B28C16300D18A7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693376DE1B28C16300D18A7C /* SecondViewController.swift */; };
+		693376E21B28C16300D18A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693376E01B28C16300D18A7C /* Main.storyboard */; };
+		693376E41B28C16300D18A7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693376E31B28C16300D18A7C /* Images.xcassets */; };
+		693376E71B28C16300D18A7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693376E51B28C16300D18A7C /* LaunchScreen.xib */; };
+		693376F31B28C16300D18A7C /* bibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693376F21B28C16300D18A7C /* bibleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		69B882E71B28B65C0061ABFC /* PBXContainerItemProxy */ = {
+		693376ED1B28C16300D18A7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 69B882C71B28B65C0061ABFC /* Project object */;
+			containerPortal = 693376CD1B28C16200D18A7C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 69B882CE1B28B65C0061ABFC;
+			remoteGlobalIDString = 693376D41B28C16300D18A7C;
 			remoteInfo = bible;
-		};
-		69B8830B1B28B6D70061ABFC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69B882C71B28B65C0061ABFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69B883081B28B6D70061ABFC;
-			remoteInfo = "bible WatchKit App";
-		};
-		69B883151B28B6D70061ABFC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69B882C71B28B65C0061ABFC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69B882F91B28B6D60061ABFC;
-			remoteInfo = "bible WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		69B8831E1B28B6D70061ABFC /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				69B883171B28B6D70061ABFC /* bible WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		69B882CF1B28B65C0061ABFC /* bible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bible.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69B882D31B28B65C0061ABFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69B882D41B28B65C0061ABFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69B882D61B28B65C0061ABFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		69B882D81B28B65C0061ABFC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		69B882DB1B28B65C0061ABFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69B882DD1B28B65C0061ABFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		69B882E01B28B65C0061ABFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		69B882E61B28B65C0061ABFC /* bibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69B882EB1B28B65C0061ABFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69B882EC1B28B65C0061ABFC /* bibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bibleTests.swift; sourceTree = "<group>"; };
-		69B882FA1B28B6D60061ABFC /* bible WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "bible WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69B882FD1B28B6D60061ABFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69B882FE1B28B6D60061ABFC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		69B882FF1B28B6D60061ABFC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		69B883011B28B6D60061ABFC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		69B883031B28B6D60061ABFC /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		69B883051B28B6D60061ABFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		69B883091B28B6D70061ABFC /* bible WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bible WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69B8830F1B28B6D70061ABFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69B883111B28B6D70061ABFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		69B883131B28B6D70061ABFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		693376D51B28C16300D18A7C /* bible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bible.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		693376D91B28C16300D18A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693376DA1B28C16300D18A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		693376DC1B28C16300D18A7C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		693376DE1B28C16300D18A7C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		693376E11B28C16300D18A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		693376E31B28C16300D18A7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		693376E61B28C16300D18A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		693376EC1B28C16300D18A7C /* bibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693376F11B28C16300D18A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693376F21B28C16300D18A7C /* bibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bibleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		69B882CC1B28B65C0061ABFC /* Frameworks */ = {
+		693376D21B28C16300D18A7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69B882E31B28B65C0061ABFC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69B882F71B28B6D60061ABFC /* Frameworks */ = {
+		693376E91B28C16300D18A7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -112,102 +58,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69B882C61B28B65C0061ABFC = {
+		693376CC1B28C16200D18A7C = {
 			isa = PBXGroup;
 			children = (
-				69B882D11B28B65C0061ABFC /* bible */,
-				69B882E91B28B65C0061ABFC /* bibleTests */,
-				69B882FB1B28B6D60061ABFC /* bible WatchKit Extension */,
-				69B8830D1B28B6D70061ABFC /* bible WatchKit App */,
-				69B882D01B28B65C0061ABFC /* Products */,
+				693376D71B28C16300D18A7C /* bible */,
+				693376EF1B28C16300D18A7C /* bibleTests */,
+				693376D61B28C16300D18A7C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		69B882D01B28B65C0061ABFC /* Products */ = {
+		693376D61B28C16300D18A7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69B882CF1B28B65C0061ABFC /* bible.app */,
-				69B882E61B28B65C0061ABFC /* bibleTests.xctest */,
-				69B882FA1B28B6D60061ABFC /* bible WatchKit Extension.appex */,
-				69B883091B28B6D70061ABFC /* bible WatchKit App.app */,
+				693376D51B28C16300D18A7C /* bible.app */,
+				693376EC1B28C16300D18A7C /* bibleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		69B882D11B28B65C0061ABFC /* bible */ = {
+		693376D71B28C16300D18A7C /* bible */ = {
 			isa = PBXGroup;
 			children = (
-				69B882D41B28B65C0061ABFC /* AppDelegate.swift */,
-				69B882D61B28B65C0061ABFC /* FirstViewController.swift */,
-				69B882D81B28B65C0061ABFC /* SecondViewController.swift */,
-				69B882DA1B28B65C0061ABFC /* Main.storyboard */,
-				69B882DD1B28B65C0061ABFC /* Images.xcassets */,
-				69B882DF1B28B65C0061ABFC /* LaunchScreen.xib */,
-				69B882D21B28B65C0061ABFC /* Supporting Files */,
+				693376DA1B28C16300D18A7C /* AppDelegate.swift */,
+				693376DC1B28C16300D18A7C /* FirstViewController.swift */,
+				693376DE1B28C16300D18A7C /* SecondViewController.swift */,
+				693376E01B28C16300D18A7C /* Main.storyboard */,
+				693376E31B28C16300D18A7C /* Images.xcassets */,
+				693376E51B28C16300D18A7C /* LaunchScreen.xib */,
+				693376D81B28C16300D18A7C /* Supporting Files */,
 			);
 			path = bible;
 			sourceTree = "<group>";
 		};
-		69B882D21B28B65C0061ABFC /* Supporting Files */ = {
+		693376D81B28C16300D18A7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				69B882D31B28B65C0061ABFC /* Info.plist */,
+				693376D91B28C16300D18A7C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		69B882E91B28B65C0061ABFC /* bibleTests */ = {
+		693376EF1B28C16300D18A7C /* bibleTests */ = {
 			isa = PBXGroup;
 			children = (
-				69B882EC1B28B65C0061ABFC /* bibleTests.swift */,
-				69B882EA1B28B65C0061ABFC /* Supporting Files */,
+				693376F21B28C16300D18A7C /* bibleTests.swift */,
+				693376F01B28C16300D18A7C /* Supporting Files */,
 			);
 			path = bibleTests;
 			sourceTree = "<group>";
 		};
-		69B882EA1B28B65C0061ABFC /* Supporting Files */ = {
+		693376F01B28C16300D18A7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				69B882EB1B28B65C0061ABFC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		69B882FB1B28B6D60061ABFC /* bible WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				69B882FF1B28B6D60061ABFC /* InterfaceController.swift */,
-				69B883011B28B6D60061ABFC /* NotificationController.swift */,
-				69B883031B28B6D60061ABFC /* GlanceController.swift */,
-				69B883051B28B6D60061ABFC /* Images.xcassets */,
-				69B882FC1B28B6D60061ABFC /* Supporting Files */,
-			);
-			path = "bible WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		69B882FC1B28B6D60061ABFC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				69B882FD1B28B6D60061ABFC /* Info.plist */,
-				69B882FE1B28B6D60061ABFC /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		69B8830D1B28B6D70061ABFC /* bible WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				69B883101B28B6D70061ABFC /* Interface.storyboard */,
-				69B883131B28B6D70061ABFC /* Images.xcassets */,
-				69B8830E1B28B6D70061ABFC /* Supporting Files */,
-			);
-			path = "bible WatchKit App";
-			sourceTree = "<group>";
-		};
-		69B8830E1B28B6D70061ABFC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				69B8830F1B28B6D70061ABFC /* Info.plist */,
+				693376F11B28C16300D18A7C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,101 +118,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69B882CE1B28B65C0061ABFC /* bible */ = {
+		693376D41B28C16300D18A7C /* bible */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69B882F01B28B65C0061ABFC /* Build configuration list for PBXNativeTarget "bible" */;
+			buildConfigurationList = 693376F61B28C16300D18A7C /* Build configuration list for PBXNativeTarget "bible" */;
 			buildPhases = (
-				69B882CB1B28B65C0061ABFC /* Sources */,
-				69B882CC1B28B65C0061ABFC /* Frameworks */,
-				69B882CD1B28B65C0061ABFC /* Resources */,
-				69B8831E1B28B6D70061ABFC /* Embed App Extensions */,
+				693376D11B28C16300D18A7C /* Sources */,
+				693376D21B28C16300D18A7C /* Frameworks */,
+				693376D31B28C16300D18A7C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				69B883161B28B6D70061ABFC /* PBXTargetDependency */,
 			);
 			name = bible;
 			productName = bible;
-			productReference = 69B882CF1B28B65C0061ABFC /* bible.app */;
+			productReference = 693376D51B28C16300D18A7C /* bible.app */;
 			productType = "com.apple.product-type.application";
 		};
-		69B882E51B28B65C0061ABFC /* bibleTests */ = {
+		693376EB1B28C16300D18A7C /* bibleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69B882F31B28B65C0061ABFC /* Build configuration list for PBXNativeTarget "bibleTests" */;
+			buildConfigurationList = 693376F91B28C16300D18A7C /* Build configuration list for PBXNativeTarget "bibleTests" */;
 			buildPhases = (
-				69B882E21B28B65C0061ABFC /* Sources */,
-				69B882E31B28B65C0061ABFC /* Frameworks */,
-				69B882E41B28B65C0061ABFC /* Resources */,
+				693376E81B28C16300D18A7C /* Sources */,
+				693376E91B28C16300D18A7C /* Frameworks */,
+				693376EA1B28C16300D18A7C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				69B882E81B28B65C0061ABFC /* PBXTargetDependency */,
+				693376EE1B28C16300D18A7C /* PBXTargetDependency */,
 			);
 			name = bibleTests;
 			productName = bibleTests;
-			productReference = 69B882E61B28B65C0061ABFC /* bibleTests.xctest */;
+			productReference = 693376EC1B28C16300D18A7C /* bibleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		69B882F91B28B6D60061ABFC /* bible WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69B8831B1B28B6D70061ABFC /* Build configuration list for PBXNativeTarget "bible WatchKit Extension" */;
-			buildPhases = (
-				69B882F61B28B6D60061ABFC /* Sources */,
-				69B882F71B28B6D60061ABFC /* Frameworks */,
-				69B882F81B28B6D60061ABFC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69B8830C1B28B6D70061ABFC /* PBXTargetDependency */,
-			);
-			name = "bible WatchKit Extension";
-			productName = "bible WatchKit Extension";
-			productReference = 69B882FA1B28B6D60061ABFC /* bible WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		69B883081B28B6D70061ABFC /* bible WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69B883181B28B6D70061ABFC /* Build configuration list for PBXNativeTarget "bible WatchKit App" */;
-			buildPhases = (
-				69B883071B28B6D70061ABFC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "bible WatchKit App";
-			productName = "bible WatchKit App";
-			productReference = 69B883091B28B6D70061ABFC /* bible WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		69B882C71B28B65C0061ABFC /* Project object */ = {
+		693376CD1B28C16200D18A7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = interpegasus;
 				TargetAttributes = {
-					69B882CE1B28B65C0061ABFC = {
+					693376D41B28C16300D18A7C = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					69B882E51B28B65C0061ABFC = {
+					693376EB1B28C16300D18A7C = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 69B882CE1B28B65C0061ABFC;
-					};
-					69B882F91B28B6D60061ABFC = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-					69B883081B28B6D70061ABFC = {
-						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 693376D41B28C16300D18A7C;
 					};
 				};
 			};
-			buildConfigurationList = 69B882CA1B28B65C0061ABFC /* Build configuration list for PBXProject "bible" */;
+			buildConfigurationList = 693376D01B28C16200D18A7C /* Build configuration list for PBXProject "bible" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -317,135 +179,87 @@
 				en,
 				Base,
 			);
-			mainGroup = 69B882C61B28B65C0061ABFC;
-			productRefGroup = 69B882D01B28B65C0061ABFC /* Products */;
+			mainGroup = 693376CC1B28C16200D18A7C;
+			productRefGroup = 693376D61B28C16300D18A7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69B882CE1B28B65C0061ABFC /* bible */,
-				69B882E51B28B65C0061ABFC /* bibleTests */,
-				69B882F91B28B6D60061ABFC /* bible WatchKit Extension */,
-				69B883081B28B6D70061ABFC /* bible WatchKit App */,
+				693376D41B28C16300D18A7C /* bible */,
+				693376EB1B28C16300D18A7C /* bibleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		69B882CD1B28B65C0061ABFC /* Resources */ = {
+		693376D31B28C16300D18A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69B882DC1B28B65C0061ABFC /* Main.storyboard in Resources */,
-				69B882E11B28B65C0061ABFC /* LaunchScreen.xib in Resources */,
-				69B882DE1B28B65C0061ABFC /* Images.xcassets in Resources */,
+				693376E21B28C16300D18A7C /* Main.storyboard in Resources */,
+				693376E71B28C16300D18A7C /* LaunchScreen.xib in Resources */,
+				693376E41B28C16300D18A7C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69B882E41B28B65C0061ABFC /* Resources */ = {
+		693376EA1B28C16300D18A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69B882F81B28B6D60061ABFC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69B883061B28B6D60061ABFC /* Images.xcassets in Resources */,
-				69B8830A1B28B6D70061ABFC /* bible WatchKit App.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69B883071B28B6D70061ABFC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69B883121B28B6D70061ABFC /* Interface.storyboard in Resources */,
-				69B883141B28B6D70061ABFC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69B882CB1B28B65C0061ABFC /* Sources */ = {
+		693376D11B28C16300D18A7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69B882D91B28B65C0061ABFC /* SecondViewController.swift in Sources */,
-				69B882D51B28B65C0061ABFC /* AppDelegate.swift in Sources */,
-				69B882D71B28B65C0061ABFC /* FirstViewController.swift in Sources */,
+				693376DF1B28C16300D18A7C /* SecondViewController.swift in Sources */,
+				693376DB1B28C16300D18A7C /* AppDelegate.swift in Sources */,
+				693376DD1B28C16300D18A7C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69B882E21B28B65C0061ABFC /* Sources */ = {
+		693376E81B28C16300D18A7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69B882ED1B28B65C0061ABFC /* bibleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69B882F61B28B6D60061ABFC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69B883021B28B6D60061ABFC /* NotificationController.swift in Sources */,
-				69B883001B28B6D60061ABFC /* InterfaceController.swift in Sources */,
-				69B883041B28B6D60061ABFC /* GlanceController.swift in Sources */,
+				693376F31B28C16300D18A7C /* bibleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		69B882E81B28B65C0061ABFC /* PBXTargetDependency */ = {
+		693376EE1B28C16300D18A7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 69B882CE1B28B65C0061ABFC /* bible */;
-			targetProxy = 69B882E71B28B65C0061ABFC /* PBXContainerItemProxy */;
-		};
-		69B8830C1B28B6D70061ABFC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69B883081B28B6D70061ABFC /* bible WatchKit App */;
-			targetProxy = 69B8830B1B28B6D70061ABFC /* PBXContainerItemProxy */;
-		};
-		69B883161B28B6D70061ABFC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69B882F91B28B6D60061ABFC /* bible WatchKit Extension */;
-			targetProxy = 69B883151B28B6D70061ABFC /* PBXContainerItemProxy */;
+			target = 693376D41B28C16300D18A7C /* bible */;
+			targetProxy = 693376ED1B28C16300D18A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69B882DA1B28B65C0061ABFC /* Main.storyboard */ = {
+		693376E01B28C16300D18A7C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69B882DB1B28B65C0061ABFC /* Base */,
+				693376E11B28C16300D18A7C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		69B882DF1B28B65C0061ABFC /* LaunchScreen.xib */ = {
+		693376E51B28C16300D18A7C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69B882E01B28B65C0061ABFC /* Base */,
+				693376E61B28C16300D18A7C /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		69B883101B28B6D70061ABFC /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69B883111B28B6D70061ABFC /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		69B882EE1B28B65C0061ABFC /* Debug */ = {
+		693376F41B28C16300D18A7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -490,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		69B882EF1B28B65C0061ABFC /* Release */ = {
+		693376F51B28C16300D18A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -528,7 +342,7 @@
 			};
 			name = Release;
 		};
-		69B882F11B28B65C0061ABFC /* Debug */ = {
+		693376F71B28C16300D18A7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -538,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		69B882F21B28B65C0061ABFC /* Release */ = {
+		693376F81B28C16300D18A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -548,7 +362,7 @@
 			};
 			name = Release;
 		};
-		69B882F41B28B65C0061ABFC /* Debug */ = {
+		693376FA1B28C16300D18A7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,7 +381,7 @@
 			};
 			name = Debug;
 		};
-		69B882F51B28B65C0061ABFC /* Release */ = {
+		693376FB1B28C16300D18A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,110 +393,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bible.app/bible";
-			};
-			name = Release;
-		};
-		69B883191B28B6D70061ABFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = bible_WatchKit_Extension;
-				INFOPLIST_FILE = "bible WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		69B8831A1B28B6D70061ABFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = bible_WatchKit_Extension;
-				INFOPLIST_FILE = "bible WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		69B8831C1B28B6D70061ABFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "bible WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		69B8831D1B28B6D70061ABFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "bible WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69B882CA1B28B65C0061ABFC /* Build configuration list for PBXProject "bible" */ = {
+		693376D01B28C16200D18A7C /* Build configuration list for PBXProject "bible" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69B882EE1B28B65C0061ABFC /* Debug */,
-				69B882EF1B28B65C0061ABFC /* Release */,
+				693376F41B28C16300D18A7C /* Debug */,
+				693376F51B28C16300D18A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69B882F01B28B65C0061ABFC /* Build configuration list for PBXNativeTarget "bible" */ = {
+		693376F61B28C16300D18A7C /* Build configuration list for PBXNativeTarget "bible" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69B882F11B28B65C0061ABFC /* Debug */,
-				69B882F21B28B65C0061ABFC /* Release */,
+				693376F71B28C16300D18A7C /* Debug */,
+				693376F81B28C16300D18A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		69B882F31B28B65C0061ABFC /* Build configuration list for PBXNativeTarget "bibleTests" */ = {
+		693376F91B28C16300D18A7C /* Build configuration list for PBXNativeTarget "bibleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69B882F41B28B65C0061ABFC /* Debug */,
-				69B882F51B28B65C0061ABFC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		69B883181B28B6D70061ABFC /* Build configuration list for PBXNativeTarget "bible WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69B883191B28B6D70061ABFC /* Debug */,
-				69B8831A1B28B6D70061ABFC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		69B8831B1B28B6D70061ABFC /* Build configuration list for PBXNativeTarget "bible WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69B8831C1B28B6D70061ABFC /* Debug */,
-				69B8831D1B28B6D70061ABFC /* Release */,
+				693376FA1B28C16300D18A7C /* Debug */,
+				693376FB1B28C16300D18A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 69B882C71B28B65C0061ABFC /* Project object */;
+	rootObject = 693376CD1B28C16200D18A7C /* Project object */;
 }
