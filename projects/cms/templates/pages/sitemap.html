@@ -1,83 +1,93 @@
 {% extends template_admin %}
 {% block content %}
-<ul class="breadcrumbs">
-    <li><a href="/">Home</a></li>
-    <li class="current"><a href="#">Site Map</a></li>
-</ul>
-<h1>Site Map</h1>
-<div class="row">
-    {%if categories%}
-    <section class="large-12 columns">
-        <h5>Categories</h5>
-        <ul>
-            {% for item in categories.categories %}
-            <li><a href="/{{request_language}}/c/{{item.slug}}">{{item.name}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
-    {% endif %}
-    {%if pages%}
-    <section class="large-12 columns">
-        <h5>Pages</h5>
-        <ul>
-            {% for item in pages.pages %}
-            <li><a href="/{{request_language}}/{{item.slug}}">{{item.title}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
-    {% endif %}
-    {%if galleries%}
-    <section class="large-12 columns">
-        <h5>Galleries</h5>
-        <ul>
-            {% for item in galleries.galleries %}
-            <li><a href="/{{request_language}}/gallery/{{item.slug}}">{{item.name}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
-    {% endif %}
-    {%if images%}
-    <section class="large-12 columns">
-        <h5>Images</h5>
-        <ul>
-            {% for item in images.images %}
-            <li><a href="/{{request_language}}/i/{{item.slug}}">{{item.name}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
-    {% endif %}
-    {%if feeds%}
-    <section class="large-12 columns">
-        <h5>Feed Pages</h5>
-        <ul>
-            {% for item in feeds.pages.GREENPEACE %}
-            <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
-            {% endfor %}
-            {% for item in feeds.pages.WWF %}
-            <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
-            {% endfor %}
-            {% for item in feeds.pages.PETA %}
-            <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
-    {% endif %}
-    {%if languages%}
-    <section class="large-12 columns">
-        <h5>Languages</h5>
-        <ul>
-            {% for item in languages.languages %}
-            <li><a href ="/{{ item.code }}">{{ item.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    <hr />
+    <ul class="breadcrumbs">
+        <li><a href="/">Home</a></li>
+        <li class="current"><a href="#">Site Map</a></li>
+    </ul>
+    {% if is_404 %}
+        <div data-alert class="alert-box alert">
+            404 - The page does not exist.
+            <a href="#" class="close">&times;</a>
+        </div>
+    {% else %}
+        <div data-alert class="alert-box info radius">
+            <h1>Site Map</h1>
+        </div>
     {% endif %}
 
-</div>
+    <div class="row">
+        {%if categories%}
+            <section class="large-12 columns">
+                <h5>Categories</h5>
+                <ul>
+                    {% for item in categories.categories %}
+                        <li><a href="/{{request_language}}/c/{{item.slug}}">{{item.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+        {%if pages%}
+            <section class="large-12 columns">
+                <h5>Pages</h5>
+                <ul>
+                    {% for item in pages.pages %}
+                        <li><a href="/{{request_language}}/{{item.slug}}">{{item.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+        {%if galleries%}
+            <section class="large-12 columns">
+                <h5>Galleries</h5>
+                <ul>
+                    {% for item in galleries.galleries %}
+                        <li><a href="/{{request_language}}/gallery/{{item.slug}}">{{item.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+        {%if images%}
+            <section class="large-12 columns">
+                <h5>Images</h5>
+                <ul>
+                    {% for item in images.images %}
+                        <li><a href="/{{request_language}}/i/{{item.slug}}">{{item.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+        {%if feeds%}
+            <section class="large-12 columns">
+                <h5>Feed Pages</h5>
+                <ul>
+                    {% for item in feeds.pages.GREENPEACE %}
+                        <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
+                    {% endfor %}
+                    {% for item in feeds.pages.WWF %}
+                        <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
+                    {% endfor %}
+                    {% for item in feeds.pages.PETA %}
+                        <li><a href="/{{request_language}}/feed/{{item.slug}}">{{item.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+        {%if languages%}
+            <section class="large-12 columns">
+                <h5>Languages</h5>
+                <ul>
+                    {% for item in languages.languages %}
+                        <li><a href ="/{{ item.code }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+            <hr />
+        {% endif %}
+
+    </div>
 {% endblock %}
