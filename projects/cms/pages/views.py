@@ -917,7 +917,11 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
                 logger.error('Redirect. Link Referer From: ' + str(request.META))
                 return redirect('/'+language, False)
         else:
-            current_bible = bibles[0]
+            try:
+                current_bible = bibles[0]
+            except:
+                logger.error('No bibles returned for language: ' + str(language_family_code.lower()))
+                return redirect('/sitemap', False)
         # Get Book
         if language_family_iso == 'heb':
             current_bible['right_to_left'] = 'true'
