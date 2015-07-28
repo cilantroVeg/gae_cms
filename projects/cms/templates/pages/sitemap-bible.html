@@ -8,13 +8,17 @@
 <a href="/sitemap.xml">sitemap.xml</a>
 <br /><br />
 <span style="font-size: 21px;">Languages</span>
-{% for language in languages %}
+{% for object in bible_array %}
 <br />
-{% if language.language_family_name == language.language_family_english %}
-<a href="/{{language.language_family_iso|lower}}">{{language.language_family_english}}</a>
+{% if object.language_family_name == object.language_family_english %}
+<a href="/{{object.language_family_iso|lower}}">{{object.language_family_english}}</a>
 {%else%}
-<a href="/{{language.language_family_iso|lower}}">{{language.language_family_name}} - {{language.language_family_english}}</a>
+<a href="/{{object.language_family_iso|lower}}">{{object.language_family_name}} - {{object.language_family_english}}</a>
 {% endif %}
-        - <a href="/sitemap/{{ language.language_family_iso|lower }}.xml">{{ language.language_family_iso|lower }}.xml</a>
+- <a href="/sitemap/{{ object.language_family_iso|lower }}.xml">{{ object.language_family_iso|lower }}.xml</a>
+{% for bible in object.bible_array %}
+<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&bullet; <a href="/{{bible.language_family_iso|lower}}/bible/{{bible.dam_id}}">{{bible.volume_name}} - {{bible.collection_code}}</a>
+{% endfor %}
 {% endfor %}
 {% endblock %}

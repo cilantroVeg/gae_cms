@@ -655,11 +655,30 @@ def page_api(request):
 
 # ...
 def sitemap(request):
-    media = 'text'
-    response_format = 'json'
     if settings.APP_NAME == 'bible-love':
-        languages = bible_languages(request,media,response_format)
-        return render_to_response("pages/sitemap-bible.html", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        media = 'text'
+        response_format = 'json'
+        languages = get_cache('language_objects')
+        if languages is None:
+            languages = bible_languages(request,media,response_format)
+            set_cache('language_objects',languages)
+        bible_array = []
+        for language in languages:
+            bible_dictionary = {}
+            language_family_iso = language['language_family_iso']
+            language_family_code = language['language_family_code']
+            language_family_english = language['language_family_english']
+            bible_dictionary["language_family_iso"]=language_family_iso
+            bible_dictionary["language_family_name"]=language_family_code
+            bible_dictionary["language_family_english"]=language_family_english
+            bibles = get_cache('bible_list_' + str(language_family_code.lower()))
+            if bibles is None:
+                bibles = bible_list(request,media,language_family_code.lower(),response_format)
+                set_cache('bible_list_' + str(language_family_code.lower()),bibles)
+            bible_dictionary["bible_array"] = bibles
+            if len(bibles):
+                bible_array.append(bible_dictionary)
+        return render_to_response("pages/sitemap-bible.html", {'languages':languages,'bible_array':bible_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         language = get_request_language(request)["request_language"]
         pages = query_api(language, 'pages')
@@ -668,15 +687,29 @@ def sitemap(request):
         galleries = query_api(language, 'galleries')
         images = query_api(language, 'images')
         return render_to_response("pages/sitemap.html", {"title":"SiteMap", "url":settings.SITE_URL,"galleries":galleries,"images":images,"pages":pages,"categories":categories,"feeds":feeds, "app_name":settings.APP_NAME,'app_name':app_name(request)['app_name'],'is_404':request.GET.get('r', None)}, context_instance=RequestContext(request))
+
 # ...
 def sitemap_xml(request):
     media = 'text'
     response_format = 'json'
     if settings.APP_NAME == 'bible-love':
-        languages = bible_languages(request,media,response_format)
-        return render_to_response("pages/sitemap.xml", {'languages':languages,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
+        media = 'text'
+        response_format = 'json'
+        languages = get_cache('language_objects')
+        if languages is None:
+            languages = bible_languages(request,media,response_format)
+            set_cache('language_objects',languages)
+        language_array = []
+        for language in languages:
+            language_family_code = language['language_family_code']
+            bibles = get_cache('bible_list_' + str(language_family_code.lower()))
+            if bibles is None:
+                bibles = bible_list(request,media,language_family_code.lower(),response_format)
+                set_cache('bible_list_' + str(language_family_code.lower()),bibles)
+            if len(bibles):
+                language_array.append(language)
+        return render_to_response("pages/sitemap.xml", {'languages':language_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request),content_type="application/xhtml+xml")
     else:
-        
         language = get_request_language(request)["request_language"]
         pages = query_api(language, 'pages')
         categories = query_api(language, 'categories')
@@ -916,12 +949,13 @@ def front_page_language_family_iso(request,language,bible=None,book=None,chapter
             except:
                 logger.error('Redirect. Link Referer From: ' + str(request.META))
                 return redirect('/'+language, False)
-        else:
+        elif len(bibles):
             try:
                 current_bible = bibles[0]
             except:
-                logger.error('No bibles returned for language: ' + str(language_family_code.lower()))
                 return redirect('/sitemap', False)
+        else:
+            return redirect('/sitemap', False)
         # Get Book
         if language_family_iso == 'heb':
             current_bible['right_to_left'] = 'true'
