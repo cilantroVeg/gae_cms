@@ -18,7 +18,7 @@
         <meta name="description" content="{{ 'WEBSITE_DESCRIPTION'|get_record:request_language}}"/>
         <meta name="keywords" content="{{ 'WEBSITE_NAME'|get_record:request_language|to_keywords}}"/>
     {% endif %}
-<meta name="author" content="Arturo - http://www.interpegasus.com/en/ - {{ 'WEBSITE_NAME'|get_record:request_language}}"/>
+<meta name="author" content="{{ 'WEBSITE_NAME'|get_record:request_language}}"/>
 <meta name="application-name" content="InterPegasus CMS"/>
 {% if app_name == 'interpegasuslove' %}
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
@@ -61,8 +61,6 @@
     <script src="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-ui/jquery-ui.min.js"></script>
     <script src="{{ STATIC_URL }}foundation/arturo/bower_components/foundation/js/foundation.js"></script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
-    <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 {% elif app_name == 'bible-love' %}
     <link rel="stylesheet" href="{{ STATIC_URL }}js/foundation/icons/foundation-icons.css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/bible/bower_components/foundation/css/foundation.css"/>
