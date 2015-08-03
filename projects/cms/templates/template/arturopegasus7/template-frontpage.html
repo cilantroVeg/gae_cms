@@ -4,33 +4,34 @@
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
     {% include "layout/head.html" %}
+    {% block js %}{% endblock %}
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
     <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
-    {% block js %}{% endblock %}
 </head>
 <body>
 {% include "layout/microdata.html" %}
 <div class="row">
     <div id="ag-gallery" name="ag-gallery" class="large-12 columns" >
         {% for image in image_list %}
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="full-screen" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
         {% endfor %}
     </div>
-    <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns" >
+
+        <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns" >
         {% for image in image_list %}
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
-        <div><img src="{{image.picasa_photo_url}}" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
         {% endfor %}
     </div>
 </div>
