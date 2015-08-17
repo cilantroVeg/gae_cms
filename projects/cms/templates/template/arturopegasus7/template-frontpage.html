@@ -11,23 +11,21 @@
 <body>
 {% include "layout/microdata.html" %}
 <div class="row">
-    <div id="ag-gallery" name="ag-gallery" class="large-12 columns" >
+    <div id="ag-gallery" name="ag-gallery" class="large-12 columns">
+        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/2.JPG" title="{{image.name}}"/></div>
+        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/3.JPG" title="{{image.name}}"/></div>
+        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
+        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
         {% for image in image_list %}
-        <div><img class="fullscreen-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="https://lh4.googleusercontent.com/-RnoCHbujqR0/VNOp11ORGvI/AAAAAAAAChk/KPMKCkVW-0g/s2048/IMG_4413.JPG" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="https://lh3.googleusercontent.com/-sxAUyCRPYKk/VNOnT-yUpqI/AAAAAAAACdk/ngVIn2vIPvU/s2048/IMG_3058.JPG" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
         {% endfor %}
     </div>
 
-    <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns" >
+    <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns">
+        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/2.JPG" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/3.JPG" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
+        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
         {% for image in image_list %}
-        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-RnoCHbujqR0/VNOp11ORGvI/AAAAAAAAChk/KPMKCkVW-0g/s2048/IMG_4413.JPG" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="https://lh3.googleusercontent.com/-sxAUyCRPYKk/VNOnT-yUpqI/AAAAAAAACdk/ngVIn2vIPvU/s2048/IMG_3058.JPG" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="https://lh4.googleusercontent.com/-i2D58Wj22Es/VMwHyAujsgI/AAAAAAAABYk/bhsi3OaY2Jo/s2048/20140617_074259.jpg" title="{{image.name}}"/></div>
         {% endfor %}
     </div>
 </div>
