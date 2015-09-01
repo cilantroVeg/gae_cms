@@ -14,7 +14,7 @@ echo '* DJANGO                         *'
 echo '**********************************'
 cd /Users/arturo/interpegasus/gae_cms/django-nonrel
 rm -rf django
-git clone https://github.com/django-nonrel/django.git
+git clone https://github.com/django-nonrel/django.git --branch nonrel-1.6
 git status
 git branch
 git remote show origin
@@ -41,7 +41,7 @@ echo '* DJANGOTOOLBOX                  *'
 echo '**********************************'
 cd /Users/arturo/interpegasus/gae_cms/django-nonrel
 rm -rf djangotoolbox
-git clone https://github.com/django-nonrel/djangotoolbox.git
+git clone https://github.com/django-nonrel/djangotoolbox.git --branch master
 git status
 git branch
 git remote show origin
