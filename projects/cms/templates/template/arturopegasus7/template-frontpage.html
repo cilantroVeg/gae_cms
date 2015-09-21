@@ -12,21 +12,20 @@
 {% include "layout/microdata.html" %}
 <div class="row">
     <div id="ag-gallery" name="ag-gallery" class="large-12 columns">
-        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/2.JPG" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/3.JPG" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
-        <div><img class="fullscreen-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
-        {% for image in image_list %}
-        {% endfor %}
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/2.JPG')" title="{{image.name}}"></div>
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/3.JPG')" title="{{image.name}}"></div>
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/1.JPG')" title="{{image.name}}"></div>
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/2.JPG')" title="{{image.name}}"></div>
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/3.JPG')" title="{{image.name}}"></div>
+        <div class="fullscreen-mode" style="background: url('{{ STATIC_URL }}images/sample/1.JPG')" title="{{image.name}}"></div>
     </div>
-
     <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns">
-        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/2.JPG" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/3.JPG" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
-        <div><img class="thumbnail-mode" src="{{ STATIC_URL }}images/sample/1.JPG" title="{{image.name}}"/></div>
-        {% for image in image_list %}
-        {% endfor %}
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/2.JPG')" title="{{image.name}}"></div>
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/3.JPG')" title="{{image.name}}"></div>
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/1.JPG')" title="{{image.name}}"></div>
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/2.JPG')" title="{{image.name}}"></div>
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/3.JPG')" title="{{image.name}}"></div>
+        <div class="thumbnail-mode" style="background: url('{{ STATIC_URL }}images/sample/1.JPG')" title="{{image.name}}"></div>
     </div>
 </div>
 <script>
