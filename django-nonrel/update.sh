@@ -42,6 +42,7 @@ echo '**********************************'
 cd /Users/arturo/interpegasus/gae_cms/django-nonrel
 rm -rf djangotoolbox
 git clone https://github.com/django-nonrel/djangotoolbox.git --branch master
+git checkout c216d13
 git status
 git branch
 git remote show origin
