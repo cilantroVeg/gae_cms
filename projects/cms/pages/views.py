@@ -848,11 +848,12 @@ def front_page_language(request,language):
         return redirect('/eng', False)
     elif settings.APP_NAME == 'arturopegasus7':
         gallery = get_gallery()
+        gallery_list = get_gallery_list()
         if gallery:
             image_list = get_image_list(gallery['id'])
         else:
             image_list = None
-        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'gallery':gallery,'image_list':image_list,'gallery_list':gallery_list,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     elif settings.APP_NAME == 'arturoportfolio7':
         pages = get_page_list()
         return render_to_response('users/template.html', {'page_list':pages,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
@@ -879,6 +880,19 @@ def front_page_language(request,language):
             logger.error('views/front_page_language')
             feed_pages = None
     return render_to_response('users/template.html', {'image_array':image_array,'feed_pages':feed_pages,'is_admin':is_admin(request)['is_admin'] ,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+
+
+def get_gallery_list():
+    gallery_list = []
+    galleries = Gallery.objects.filter(is_enabled=True).order_by('name')
+    for gallery_item in galleries:
+        gallery_dictionary = {}
+        gallery_dictionary['id'] = gallery_item.id
+        gallery_dictionary['name'] = gallery_item.name
+        gallery_dictionary['slug'] = gallery_item.slug
+        gallery_dictionary['description'] = gallery_item.description
+        gallery_list.append(gallery_dictionary)
+    return gallery_list
 
 def get_gallery(gallery_id=None):
     gallery = None
