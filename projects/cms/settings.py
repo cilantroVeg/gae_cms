@@ -152,7 +152,7 @@ APP_NAME = 'arturopegasus7'
 #APP_NAME = 'interpegasuslove'
 
 CACHE_ENABLED = True
-DEBUG = False
+DEBUG = True
 
 if False:
     SITE_URL = 'http://127.0.0.1:8080'

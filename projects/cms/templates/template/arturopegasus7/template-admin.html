@@ -5,117 +5,43 @@
 <head>
     {% include "layout/head.html" %}
     {% block js %}{% endblock %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
+    <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 </head>
 <body>
+{% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
 <div class="fixed">
-    <nav class="top-bar" data-topbar="" role="navigation" data-options="is_hover: false">
-        <!-- Title -->
+    <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
-                <h2><a href="/en" data-tooltip aria-haspopup="true" title="nrwl.org">Natural Resources & Wildlife Organization</a></h2>
+                <h1><a href="#">Arturo's Homepage</a></h1>
             </li>
-            <!-- Mobile Menu Toggle -->
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-        <!-- Top Bar Section -->
         <section class="top-bar-section">
-            <!-- Top Bar Right Nav Elements -->
+            <!-- Right Nav Section -->
             <ul class="right">
-                <!-- Divider -->
-                <li class="divider"></li>
-                <!-- Dropdown -->
-                <li class="has-dropdown not-click hide-for-medium"><a href="#">Species</a>
+                {% include "layout/social_login_3.html" %}
+                <li class="has-dropdown">
+                    <a href="#">Sections</a>
                     <ul class="dropdown">
-                        <li><label>Endangered Species</label></li>
-                        {% for page in endangered_species|slice:":5" %}
-                        {% if request_language == 'en' %}
-                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}}</a></li>
-                        {% else %}
-                        <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
-                        {% endif%}
+                        {% for gallery in gallery_list %}
+                        <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
                         {% endfor %}
-                        <li><a href="javascript:scroll_to_anchor('footer')">...</a></li>
-                        <li class="divider"></li>
-                        <li><label>Keystone Species</label></li>
-                        <li class="divider"></li>
                     </ul>
                 </li>
-                <li>
-                    <div id="social">
-                        {% include "layout/social_login_3.html" %}
-                    </div>
-                </li>
-                {% if is_admin %}
-                <li>
-                    <a class=" has-tip [radius round] left-off-canvas-toggle fi-widget size-32" href="#" data-tooltip aria-haspopup="true" title="Admin Section"><span></span></a>
-                </li>
-                <li>
-                    <a class=" has-tip [radius round] right-off-canvas-toggle fi-key size-32" href="#" data-tooltip aria-haspopup="true" title="Menu"><span></span></a>
-                </li>
-                {% endif %}
-                <li class="divider"></li>
             </ul>
         </section>
     </nav>
 </div>
-<div class="off-canvas-wrap" data-offcanvas class="fixed">
-    <div class="inner-wrap">
+<div class="row">
+    <div class="large-12 columns">
+        <div id="feedback">
 
-        <!-- Off Canvas Menu -->
-        <aside class="left-off-canvas-menu">
-            {% include "layout/admin.html" %}
-        </aside>
-        <aside class="right-off-canvas-menu">
-            {% include "layout/admin.html" %}
-        </aside>
-        <hr />
-
-        <div class="row">
-            <div class="large-12 columns">
-                {% block content %}{% endblock %}
-            </div>
         </div>
-
-        <footer class="row" id="footer">
-            <div class="large-12 columns">
-                <hr/>
-                <div class="row">
-                    <div class="large-4 columns">
-                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">NRWL {% now "Y" %} | <a href="/sitemap">Sitemap</a> | <a href="http://interpegasus.com/api_documentaion/">API</a></span>
-                        <br />
-                            <ul class="inline-list left">
-                                <a target="_blank" href="https://facebook.com/nrwlorg"><li class="fi-social-facebook"><span>&nbsp;&nbsp;Follow Us On Facebook</span></li></a>
-                                <a target="_blank" href="https://twitter.com/nrwlorg"><li class="fi-social-twitter"><span>&nbsp;&nbsp;Follow Us On Twitter</span></li></a>
-                            </ul>
-                    </div>
-                    <div class="large-4 columns">
-                        <ul class="inline-list right">
-                            <li><label>Endangered Species</label></li>
-                            <br />
-                            {% for page in endangered_species %}
-                            {% if request_language == 'en' %}
-                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.headline|detruncate|safe}} ({{page.title|safe}})</a></li>
-                            {% else %}
-                            <li><a href="/{{request_language}}/{{page.slug}}/">{{page.title|safe}}</a></li>
-                            {% endif%}
-                            <br />
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="large-4 columns">
-                        <ul class="inline-list right">
-                            <li><label>Keystone Species</label></li>
-                            <br />
-                            <li>...</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-        <!-- close the off-canvas menu -->
-        <a class="exit-off-canvas"></a>
+        {% block content %}{% endblock %}
     </div>
 </div>
 <script>

@@ -39,7 +39,7 @@ urlpatterns = patterns('',
     url(r'^gallery/edit/(?P<id>\d+)[/]$', 'pages.views.gallery_form'),
     url(r'^gallery/delete/(?P<id>\d+)[/]$', 'pages.views.gallery_delete'),
     url(r'^galleries[/]$', 'pages.views.gallery_list'),
-    url(r'^(?P<language>[a-z]{2})/gallery/(?P<slug>[-\w]+)[/]$', 'pages.views.gallery_view'),
+    url(r'^(?P<language>[a-z]{2})/g/(?P<slug>[-\w]+)[/]$', 'pages.views.gallery_view'),
 
     # Frontpage
     url('^$', 'pages.views.front_page'),
@@ -128,8 +128,6 @@ urlpatterns = patterns('',
     url(r'^humans\.txt$', 'pages.views.humans'),
 
     # API InterPegasus CMS
-    url(r'^(?P<language>[a-z]{2})/i/(?P<slug>[-\w]+)[/]$', 'pages.views.image_view'),
-
     url(r'^api/(?P<language_code>[a-z]{2})/languages/?$', 'pages.api.languages'),
     url(r'^api/(?P<language_code>[a-z]{2})/categories/?$', 'pages.api.categories'),
     url(r'^api/(?P<language_code>[a-z]{2})/pages/?$', 'pages.api.pages'),

@@ -28,7 +28,7 @@
                     <a href="#">Sections</a>
                     <ul class="dropdown">
                         {% for gallery in gallery_list %}
-                            <li><a href="/gallery/{{gallery.slug}}">{{gallery.name}}</a></li>
+                            <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
