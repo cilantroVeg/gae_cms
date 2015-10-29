@@ -9,7 +9,6 @@
     <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 </head>
 <body>
-{% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
 <div class="fixed">
     <nav class="top-bar" data-topbar role="navigation">
@@ -33,6 +32,7 @@
                     </ul>
                 </li>
             </ul>
+            {% include "layout/admin.html" %}
         </section>
     </nav>
 </div>
