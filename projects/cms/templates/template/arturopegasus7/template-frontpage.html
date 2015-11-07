@@ -37,14 +37,14 @@
     </nav>
 </div>
 <div class="row">
-    <div id="ag-gallery" name="ag-gallery" class="large-12 columns">
+    <div class="ag-gallery">
         {% for image in image_list %}
-        <div class="fullscreen-mode" style="background: url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="fullscreen-mode" style="background: url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
-    <div id="ag-gallery-nav" name="ag-gallery-nav" class="large-12 columns">
+    <div class="ag-nav">
         {% for image in image_list %}
-        <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
 </div>
