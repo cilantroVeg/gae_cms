@@ -37,9 +37,9 @@
     </nav>
 </div>
 <div class="row">
-    <div class="ag-gallery">
+    <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/ajax-loader.gif')">
         {% for image in image_list %}
-            <div class="fullscreen-mode" style="background: url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
     <div class="ag-nav">
