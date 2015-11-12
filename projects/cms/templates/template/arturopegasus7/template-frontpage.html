@@ -24,8 +24,8 @@
             <ul class="right">
                 {% include "layout/social_login_3.html" %}
                 <li class="has-dropdown">
-                    <a href="#">Sections</a>
-                    <ul class="dropdown tinyf-dropdown">
+                    <a href="#">Gallery</a>
+                    <ul class="dropdown">
                         {% for gallery in gallery_list %}
                             <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
                         {% endfor %}
