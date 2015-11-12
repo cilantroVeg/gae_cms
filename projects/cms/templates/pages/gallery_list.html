@@ -12,11 +12,12 @@
         data.addColumn('string', 'Is Enabled');
         data.addColumn('string', 'Is Default');
         data.addColumn('string', 'Slug');
+        data.addColumn('string', 'Tag');
         data.addColumn('string', 'Manage');
         data.addColumn('string', 'Upload Images');
         data.addRows([
             {% for entry in gallery_list %}
-                ['{{ entry.name }}','{{ entry.is_enabled }}','{{ entry.is_default }}','{{ entry.slug }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>', '<a href="/image_upload/?gallery_id={{ entry.id }}">Upload</a>'],
+                ['{{ entry.name }}','{{ entry.is_enabled }}','{{ entry.is_default }}','{{ entry.slug }}','{{ entry.tag }}', '<a href="/gallery/edit/{{ entry.id }}/">Edit</a>|<a href="/gallery/delete/{{ entry.id }}/">Delete</a>', '<a href="/image_upload/?gallery_id={{ entry.id }}">Upload</a>'],
             {% endfor %}
         ]);
 

@@ -9,7 +9,6 @@
     <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 </head>
 <body>
-{% include "layout/admin.html" %}
 {% include "layout/microdata.html" %}
 <div class="fixed">
     <nav class="top-bar" data-topbar role="navigation">
@@ -25,7 +24,7 @@
             <ul class="right">
                 {% include "layout/social_login_3.html" %}
                 <li class="has-dropdown">
-                    <a href="#">Sections</a>
+                    <a href="#">Gallery</a>
                     <ul class="dropdown">
                         {% for gallery in gallery_list %}
                         <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
@@ -33,17 +32,27 @@
                     </ul>
                 </li>
             </ul>
+
         </section>
     </nav>
 </div>
+{% if is_admin %}
+    {% include "layout/admin.html" %}
+    {% block content %}{% endblock %}
+{% else %}
 <div class="row">
-    <div class="large-12 columns">
-        <div id="feedback">
-
-        </div>
-        {% block content %}{% endblock %}
+    <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
+        {% for image in image_list %}
+        <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+        {% endfor %}
+    </div>
+    <div class="ag-nav">
+        {% for image in image_list %}
+        <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+        {% endfor %}
     </div>
 </div>
+{% endif %}
 <script>
     $(document).foundation();
     var doc = document.documentElement;
