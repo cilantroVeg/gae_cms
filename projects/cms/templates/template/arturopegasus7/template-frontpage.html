@@ -25,7 +25,7 @@
                 {% include "layout/social_login_3.html" %}
                 <li class="has-dropdown">
                     <a href="#">Sections</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown tinyf-dropdown">
                         {% for gallery in gallery_list %}
                             <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
                         {% endfor %}
@@ -37,7 +37,7 @@
     </nav>
 </div>
 <div class="row">
-    <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/ajax-loader.gif')">
+    <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
         {% for image in image_list %}
             <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
