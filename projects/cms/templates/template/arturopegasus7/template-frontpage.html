@@ -37,8 +37,8 @@
     </nav>
 </div>
 {% if is_admin %}
-    {% include "layout/admin.html" %}
-    {% block content %}{% endblock %}
+{% include "layout/admin.html" %}
+{% block content %}{% endblock %}
 {% else %}
 <div class="row">
     <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
@@ -46,10 +46,17 @@
         <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
-    <div class="ag-nav">
-        {% for image in image_list %}
-        <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
-        {% endfor %}
+    <div>
+        <div id="ag-nav-controls" class="ag-nav-controls">
+            <a href="#" onclick='$("#ag-nav").slideToggle("slow");'><span class="fi-arrows-expand size-8">&nbsp;</span></a>
+        </div>
+        <div id="ag-nav" class="ag-nav">
+            {% for image in image_list %}
+                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}">
+
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endif %}
