@@ -48,13 +48,11 @@
     </div>
     <div>
         <div id="ag-nav-controls" class="ag-nav-controls">
-            <a href="#" onclick='$("#ag-nav").slideToggle("slow");'><span class="fi-arrows-expand size-8">&nbsp;</span></a>
+            <a href="#" onclick="nav_toggle();"><span class="fi-arrows-expand size-8">&nbsp;</span></a>
         </div>
         <div id="ag-nav" class="ag-nav">
             {% for image in image_list %}
-                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}">
-
-                </div>
+                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
             {% endfor %}
         </div>
     </div>
