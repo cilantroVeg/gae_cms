@@ -41,9 +41,13 @@
 {% block content %}{% endblock %}
 {% else %}
 <div class="row">
+    <div class="add_this_tool">
+        {% include "layout/add_this_4.html" %}
+    </div>
     <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
         {% for image in image_list %}
-        <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
     <div>
@@ -52,6 +56,7 @@
         </div>
         <div id="ag-nav" class="ag-nav">
             {% for image in image_list %}
+                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
                 <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
             {% endfor %}
         </div>

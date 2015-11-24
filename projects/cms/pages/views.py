@@ -609,12 +609,15 @@ def remove_uris(text):
 def gallery_view(request, language, slug):
     if settings.APP_NAME == 'arturopegasus7':
         gallery = get_object_or_404(Gallery, slug=slug)
-        gallery_list = get_gallery_list()
+        try:
+            image = Image.objects.get(pk=image_id)
+        except:
+            image = None
         if gallery:
             image_list = get_image_list(gallery.id)
         else:
             image_list = None
-        return render_to_response('users/template.html', {'gallery_list':gallery_list,'gallery':gallery,'image_list':image_list,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        return render_to_response('users/template.html', {'gallery_list':gallery_list,'gallery':gallery,'image_list':image_list,'image':image,'is_admin':is_admin(request)['is_admin'],'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return render_to_response("template/arturopegasus7/template-frontpage.html", {'gallery_list':gallery_list,"gallery": gallery,"image_array":image_array,'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
 

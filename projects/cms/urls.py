@@ -40,6 +40,7 @@ urlpatterns = patterns('',
     url(r'^gallery/delete/(?P<id>\d+)[/]$', 'pages.views.gallery_delete'),
     url(r'^galleries[/]$', 'pages.views.gallery_list'),
     url(r'^(?P<language>[a-z]{2})/g/(?P<slug>[-\w]+)[/]$', 'pages.views.gallery_view'),
+    url(r'^(?P<language>[a-z]{2})/g/(?P<slug>[-\w]+)/(?P<image_id>\d+)[/]$', 'pages.views.gallery_view'),
 
     # Frontpage
     url('^$', 'pages.views.front_page'),
