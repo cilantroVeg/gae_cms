@@ -4,7 +4,21 @@
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
     {% include "layout/head.html" %}
-    {% block js %}{% endblock %}
+    {% block js %}
+    <script type="text/javascript">
+    var image_array = [];
+        {% for image in image_list %}
+            var image = {};
+            image["url"] = '{{ image.picasa_photo_url }}';
+            image["title"] = '{{ image.name }}';
+            image["description"] = '{{ image.description }}';
+            image["description"] = '{{ image.description }}';
+            image["slug"] = '{{ image.slug }}';
+            image["share_url"] = '{{ image.picasa_photo_url }}';
+            image_array.push(image);
+        {% endfor %}
+    </script>
+    {% endblock %}
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
     <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 </head>
@@ -44,19 +58,21 @@
     <div class="add_this_tool">
         {% include "layout/add_this_4.html" %}
     </div>
+    <div class="image_contain_cover">
+        <a id="arrows_in" href="#" onclick="image_contain_cover('IN');"><span class="fi-arrows-in size-12">&nbsp;</span></a>
+        <a id="arrows_out" href="#" onclick="image_contain_cover('OUT');"><span class="fi-arrows-out size-12">&nbsp;</span></a>
+    </div>
     <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
         {% for image in image_list %}
-            <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
             <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
     <div>
         <div id="ag-nav-controls" class="ag-nav-controls">
-            <a href="#" onclick="nav_toggle();"><span class="fi-arrows-expand size-8">&nbsp;</span></a>
+            <a href="#" onclick="nav_toggle();"><span class="fi-camera size-12">&nbsp;</span></a>
         </div>
         <div id="ag-nav" class="ag-nav">
             {% for image in image_list %}
-                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
                 <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
             {% endfor %}
         </div>
