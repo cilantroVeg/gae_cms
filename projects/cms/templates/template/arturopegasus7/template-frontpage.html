@@ -12,7 +12,6 @@
             image["url"] = '{{ image.picasa_photo_url }}';
             image["title"] = '{{ image.name }}';
             image["description"] = '{{ image.description }}';
-            image["description"] = '{{ image.description }}';
             image["slug"] = '{{ image.slug }}';
             image["share_url"] = '{{ image.picasa_photo_url }}';
             image_array.push(image);
@@ -21,6 +20,7 @@
     {% endblock %}
     <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
     <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
+    <script src="{{ STATIC_URL }}js/exif/exif.js"></script>
 </head>
 <body>
 {% include "layout/microdata.html" %}
@@ -59,8 +59,12 @@
         {% include "layout/add_this_4.html" %}
     </div>
     <div class="image_contain_cover">
+        <a id="image_info" href="#" onclick="image_info_toggle();"><span class="fi-info size-18">&nbsp;</span></a>
         <a id="arrows_in" href="#" onclick="image_contain_cover('IN');"><span class="fi-arrows-in size-12">&nbsp;</span></a>
         <a id="arrows_out" href="#" onclick="image_contain_cover('OUT');"><span class="fi-arrows-out size-12">&nbsp;</span></a>
+    </div>
+    <div class="image_info_div">
+
     </div>
     <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
         {% for image in image_list %}
