@@ -41,19 +41,17 @@
                     <a href="#">Gallery</a>
                     <ul class="dropdown">
                         {% for gallery in gallery_list %}
-                        <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
+                            <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
+                {% if is_admin %}
+                    {% include "layout/admin_dropdown.html" %}
+                {% endif %}
             </ul>
-
         </section>
     </nav>
 </div>
-{% if is_admin %}
-{% include "layout/admin.html" %}
-{% block content %}{% endblock %}
-{% else %}
 <div class="row">
     <div class="add_this_tool">
         {% include "layout/add_this_4.html" %}
@@ -68,7 +66,7 @@
     </div>
     <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
         {% for image in image_list %}
-            <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+        <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
         {% endfor %}
     </div>
     <div>
@@ -77,12 +75,12 @@
         </div>
         <div id="ag-nav" class="ag-nav">
             {% for image in image_list %}
-                <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
+            <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
             {% endfor %}
         </div>
     </div>
 </div>
-{% endif %}
+
 <script>
     $(document).foundation();
     var doc = document.documentElement;

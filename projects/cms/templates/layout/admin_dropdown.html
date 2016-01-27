@@ -1,0 +1,20 @@
+{% if is_admin %}
+<li class="has-dropdown">
+    <a href="#">Admin</a>
+    <ul class="dropdown">
+        <li><a target="_self" onclick="javascript:window.open('/languages/','_self');" href="#">Languages</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/categories/','_self');" href="#">Categories</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/pages/','_self');" href="#">Pages</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/records/','_self');" href="#">Records</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/posts/','_self');" href="#">Posts</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/users/','_self');" href="#">Users</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/user_profiles/','_self');" href="#">User Profiles</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/spreadsheets/','_self');" href="#">Spreadsheets</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/galleries/','_self');" href="#">Galleries</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/images/','_self');" href="#">Images</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/feeds/','_self');" href="#">Feeds</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/advertisements/','_self');" href="#">Advertisements</a></li>
+        <li><a target="_self" onclick="javascript:window.open('/delete_cache/','_self');" href="#">Delete Cache</a></li>
+    </ul>
+</li>
+{% endif %}

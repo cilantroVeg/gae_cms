@@ -5,53 +5,87 @@
 <head>
     {% include "layout/head.html" %}
     {% block js %}{% endblock %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}foundation/arturo/css/app.css"/>
-    <script src="{{ STATIC_URL }}foundation/arturo/js/app.js"></script>
 </head>
 <body>
 {% include "layout/microdata.html" %}
-<div class="fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">Arturo's Homepage</a></h1>
-            </li>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                {% include "layout/social_login_3.html" %}
-                <li class="has-dropdown">
-                    <a href="#">Gallery</a>
-                    <ul class="dropdown">
-                        {% for gallery in gallery_list %}
-                        <li><a href="/{{request_language}}/g/{{gallery.slug}}">{{gallery.name}}</a></li>
-                        {% endfor %}
-                    </ul>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <!-- Title -->
+            <ul class="title-area">
+                <li class="name">
+                    <h2><a href="/en" data-tooltip aria-haspopup="true" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">Arturo's &nbsp;Homepage</a></h2>
                 </li>
+                <!-- Mobile Menu Toggle -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
-        </section>
-    </nav>
-</div>
-{% if is_admin %}
-    {% include "layout/admin.html" %}
-    {% block content %}{% endblock %}
-{% else %}
-<div class="row">
-    <div class="ag-gallery" style="background: black no-repeat center center url('/static/foundation/arturo/images/loading.gif')">
-        {% for image in image_list %}
-        <div class="fullscreen-mode" style="background:black no-repeat center center url('{{ image.picasa_photo_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
-        {% endfor %}
+            <!-- Top Bar Section -->
+            <section class="top-bar-section">
+                <!-- Top Bar Right Nav Elements -->
+                <ul class="right">
+                    <!-- Dropdown -->
+                    {% include "layout/admin_dropdown.html" %}
+                    <li class="divider"></li>
+                    <!-- Button -->
+
+                    <li class="has-form show-for-large-up">
+                        <div id="social">
+                            {% include "layout/social_login_3.html" %}
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <div class="row">
+            <div class="large-3 columns ">
+                <div class="panel">
+                    <h4><a href="/">Admin</a></h4>
+                    <hr />
+                    <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+                        {% include "layout/admin_dropdown.html" %}
+                    </div>
+                </div>
+            </div>
+            <div class="large-9 columns">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <div id="feedback">
+
+                </div>
+
+                {% block content %}{% endblock %}
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul class="pagination">
+                    <li class="current"><a href="#" data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="Page 1">1</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr/>
+                <div class="row">
+                    <div class="large-5 columns">
+                        <span data-tooltip aria-haspopup="true" class="has-tip [radius round]" title="This site is hosted at Google App Engine and Is powered by InterPegasus CMS">&copy; Arturo G&oacute;mez. {% now "Y" %}</span>
+                    </div>
+                    <div class="large-7 columns">
+                        <ul class="inline-list right">
+                            {% for page in page_list %}
+                            <li><a href="#" onclick="scroll_to_anchor_and_show_tip('{{page.title|slugify}}')">{{page.title|safe}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
     </div>
-    <div class="ag-nav">
-        {% for image in image_list %}
-        <div class="thumbnail-mode" style="background: url('{{ image.picasa_thumb_url }}')" title="{{ image.name }}" alt="{{ image.description }}"></div>
-        {% endfor %}
-    </div>
 </div>
-{% endif %}
 <script>
     $(document).foundation();
     var doc = document.documentElement;
