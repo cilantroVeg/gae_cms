@@ -416,7 +416,7 @@ def connect_picasa():
     gd_client = gdata.photos.service.PhotosService()
     gd_client.email = settings.PICASA_KEY
     gd_client.password = settings.PICASA_PASSWORD
-    gd_client.source = 'exampleCo-exampleApp-1'
+    gd_client.source = 'interpegasus'
     gd_client.ProgrammaticLogin()
     return gd_client
 
