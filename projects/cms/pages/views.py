@@ -420,6 +420,14 @@ def connect_picasa():
     gd_client.ProgrammaticLogin()
     return gd_client
 
+# ...
+def connect_picasa_2():
+    gd_client = gdata.photos.service.PhotosService(source=('User-agent', 'Mozilla/5.0'),email=settings.PICASA_KEY,additional_headers={'Authorization' : 'Bearer %s' % 'ya29.eQL1Y-XZHiYjX9OPvRd34qlfAT6_nwxhwl58uUMUuwPtYkgDWKud6Bq_uFetokoXikP4'})
+    gd_client.email = settings.PICASA_KEY
+    gd_client.password = settings.PICASA_PASSWORD
+    gd_client.source = 'interpegasus'
+    gd_client.ProgrammaticLogin()
+    return gd_client
 
 def delete_picasa_photo(instance):
     try:
@@ -436,7 +444,7 @@ def delete_picasa_photo(instance):
 def handle_image_picasa(file, image, description=None,url_slug=''):
     from google.appengine.api import urlfetch
     urlfetch.set_default_fetch_deadline(120)
-    gd_client = connect_picasa()
+    gd_client = connect_picasa_2()
     try:
         current_album = None
         albums = gd_client.GetUserFeed()
