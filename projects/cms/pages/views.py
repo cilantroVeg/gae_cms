@@ -413,24 +413,21 @@ def image_form(request, id=None):
 
 # ...
 def refresh_token():
-    request = Request('https://accounts.google.com/o/oauth2/token',
-                      data=urlencode({
-                          'grant_type':    'refresh_token',
-                          'client_id':     settings.GOOGLE_CLIENT_ID,
-                          'client_secret': settings.GOOGLE_CLIENT_SECRET,
-                          'refresh_token': settings.GOOGLE_REFRESH_TOKEN
-                      }),
-                      headers={
-                          'Content-Type': 'application/x-www-form-urlencoded',
-                          'Accept': 'application/json'
-                      }
-                      )
-    response = json.load(urlopen(request))
-    return response['access_token']
+    scope = 'https://picasaweb.google.com/data/'
+    url = 'https://developers.google.com/oauthplayground/refreshAccessToken'
+    params={'token_uri': "https://www.googleapis.com/oauth2/v3/token",
+            'refresh_token': settings.GOOGLE_REFRESH_TOKEN
+            }
+    response = request_url(url,'POST',params)
+    try:
+        return response.json()['access_token']
+    except:
+        return None
 
 # ...
 def connect_picasa():
-    gd_client = gdata.photos.service.PhotosService(source=('User-agent', 'Mozilla/5.0'),email=settings.PICASA_KEY,additional_headers={'Authorization' : 'Bearer %s' % 'ya29.eQL1Y-XZHiYjX9OPvRd34qlfAT6_nwxhwl58uUMUuwPtYkgDWKud6Bq_uFetokoXikP4'})
+    access_token = refresh_token()
+    gd_client = gdata.photos.service.PhotosService(source=('User-agent', 'Mozilla/5.0'),email=settings.PICASA_KEY,additional_headers={'Authorization' : 'Bearer %s' % access_token})
     gd_client.email = settings.PICASA_KEY
     gd_client.password = settings.PICASA_PASSWORD
     gd_client.source = 'interpegasus'
