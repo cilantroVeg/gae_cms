@@ -23,7 +23,12 @@ from bs4 import BeautifulSoup
 from lxml.html.clean import clean_html
 from django.contrib.humanize.templatetags.humanize import naturalday
 from random import randrange
+from datetime import datetime, timedelta
+from oauth2client.client import flow_from_clientsecrets
+from oauth2client.file import Storage
 import facebook
+import webbrowser
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -412,26 +417,39 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def refresh_token():
-    scope = 'https://picasaweb.google.com/data/'
-    url = 'https://developers.google.com/oauthplayground/refreshAccessToken'
-    params={'token_uri': "https://www.googleapis.com/oauth2/v3/token",
-            'refresh_token': settings.GOOGLE_REFRESH_TOKEN
-            }
-    response = request_url(url,'POST',params)
-    try:
-        return response.json()['access_token']
-    except:
-        return None
+def OAuth2Login(client_secrets, credential_store, email):
+    scope='https://picasaweb.google.com/data/'
+    user_agent='picasawebuploader'
+    storage = Storage(credential_store)
+    credentials = storage.get()
+    if credentials is None or credentials.invalid:
+        flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://arturo.interpegasus.com/oauth2_redirect')
+        uri = flow.step1_get_authorize_url()
+        webbrowser.open(uri)
+        code = raw_input('Enter the authentication code: ').strip()
+        credentials = flow.step2_exchange(code)
+
+    if (credentials.token_expiry - datetime.utcnow()) < timedelta(minutes=5):
+        http = httplib2.Http()
+        http = credentials.authorize(http)
+        credentials.refresh(http)
+
+    storage.put(credentials)
+
+    gd_client = gdata.photos.service.PhotosService(source=user_agent,
+                                                   email=email,
+                                                   additional_headers={'Authorization' : 'Bearer %s' % credentials.access_token})
+
+    return gd_client
 
 # ...
 def connect_picasa():
-    access_token = refresh_token()
-    gd_client = gdata.photos.service.PhotosService(source=('User-agent', 'Mozilla/5.0'),email=settings.PICASA_KEY,additional_headers={'Authorization' : 'Bearer %s' % access_token})
-    gd_client.email = settings.PICASA_KEY
-    gd_client.password = settings.PICASA_PASSWORD
-    gd_client.source = 'interpegasus'
-    gd_client.ProgrammaticLogin()
+    email = settings.PICASA_KEY
+    # options for oauth2 login
+    #client_secrets = os.path.join(configdir, 'julia-5d03e3b361d0.json')
+    client_secrets = os.path.join(settings.BASE_DIR, 'arturopegasus7-clientsecret.json')
+    credential_store = os.path.join(settings.BASE_DIR, 'credentials.dat')
+    gd_client = OAuth2Login(client_secrets, credential_store, email)
     return gd_client
 
 def delete_picasa_photo(instance):
@@ -449,7 +467,7 @@ def delete_picasa_photo(instance):
 def handle_image_picasa(file, image, description=None,url_slug=''):
     from google.appengine.api import urlfetch
     urlfetch.set_default_fetch_deadline(120)
-    gd_client = connect_picasa_2()
+    gd_client = connect_picasa()
     try:
         current_album = None
         albums = gd_client.GetUserFeed()
