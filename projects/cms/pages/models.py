@@ -6,6 +6,11 @@ from django.template.defaultfilters import slugify
 from django.core.exceptions import ValidationError
 from users.models import *
 
+from google.appengine.ext import db
+from oauth2client.appengine import CredentialsProperty
+
+class CredentialsModel(db.Model):
+    credentials = CredentialsProperty()
 
 class Language(models.Model):
     id = models.AutoField(primary_key=True)

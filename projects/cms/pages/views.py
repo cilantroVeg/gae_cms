@@ -417,10 +417,11 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def OAuth2Login(client_secrets, credential_store, email):
+def OAuth2Login(client_secrets, email):
+    from oauth2client.appengine import StorageByKeyName
     scope='https://picasaweb.google.com/data/'
     user_agent='picasawebuploader'
-    storage = Storage(credential_store)
+    storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     credentials = storage.get()
     if credentials is None or credentials.invalid:
         flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://arturo.interpegasus.com/oauth2_redirect')
@@ -433,23 +434,17 @@ def OAuth2Login(client_secrets, credential_store, email):
         http = httplib2.Http()
         http = credentials.authorize(http)
         credentials.refresh(http)
-
     storage.put(credentials)
-
     gd_client = gdata.photos.service.PhotosService(source=user_agent,
                                                    email=email,
                                                    additional_headers={'Authorization' : 'Bearer %s' % credentials.access_token})
-
     return gd_client
 
 # ...
 def connect_picasa():
     email = settings.PICASA_KEY
-    # options for oauth2 login
-    #client_secrets = os.path.join(configdir, 'julia-5d03e3b361d0.json')
     client_secrets = os.path.join(settings.BASE_DIR, 'arturopegasus7-clientsecret.json')
-    credential_store = os.path.join(settings.BASE_DIR, 'credentials.dat')
-    gd_client = OAuth2Login(client_secrets, credential_store, email)
+    gd_client = OAuth2Login(client_secrets, email)
     return gd_client
 
 def delete_picasa_photo(instance):
