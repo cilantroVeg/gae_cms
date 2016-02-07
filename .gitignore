@@ -1,6 +1,10 @@
 # Compiled source #
 ###################
 access_keys.py
+arturopegasus7-oauth2.json
+arturopegasus7-clientsecret.json 
+client_secret_1.json
+client_secret_2.json
 .idea/
 .DS_Store
 projects/.DS_Store
@@ -8,6 +12,9 @@ projects/cms/.DS_Store
 projects/cms/static/.DS_Store
 projects/cms/static/foundation/.DS_Store
 projects/cms/access_keys.py
+projects/cms/arturopegasus7-clientsecret.json
+projects/cms/client_secret_1.json
+projects/cms/client_secret_2.json
 projects/cms/.gaedata/datastore
 .gaedata/datastore
 projects/mobile/ios/bible/bible.xcodeproj/project.xcworkspace/xcshareddata/
