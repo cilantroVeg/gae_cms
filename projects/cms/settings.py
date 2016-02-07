@@ -238,8 +238,9 @@ CAPTCHA_SITE_SECRET = access_keys.CAPTCHA_SITE_SECRET
 OAUTH_2_REDIRECT_DEV = access_keys.OAUTH_2_REDIRECT_DEV
 OAUTH_2_REDIRECT_AG7 = access_keys.OAUTH_2_REDIRECT_AG7
 
-OAUTH_2_CLIENT_JSON_DEV = 'client_secret_2.json'
 OAUTH_2_CLIENT_JSON_AG7 = 'client_secret_1.json'
+OAUTH_2_CLIENT_JSON_DEV = 'client_secret_2.json'
+
 
 LOGGING = {
     'version': 1,
