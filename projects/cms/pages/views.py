@@ -27,7 +27,7 @@ from datetime import datetime, timedelta
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 import facebook
-import webbrowser
+from oauth2client.appengine import StorageByKeyName
 import os
 
 logger = logging.getLogger(__name__)
@@ -417,34 +417,51 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def OAuth2Login(client_secrets, email):
-    from oauth2client.appengine import StorageByKeyName
+def OAuth2Login():
     scope='https://picasaweb.google.com/data/'
-    user_agent='picasawebuploader'
+    client_secrets = os.path.join(settings.BASE_DIR, 'client_secret_2.json')
     storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     credentials = storage.get()
+    response = {}
     if credentials is None or credentials.invalid:
-        flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://arturo.interpegasus.com/oauth2_redirect')
+        flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://127.0.0.1:8080/oauth2_callback')
         uri = flow.step1_get_authorize_url()
-        webbrowser.open(uri)
-        code = raw_input('Enter the authentication code: ').strip()
-        credentials = flow.step2_exchange(code)
-
-    if (credentials.token_expiry - datetime.utcnow()) < timedelta(minutes=5):
+        response["uri"] = uri
+        response["credentials"] = None
+        # code = raw_input('Enter the authentication code: ').strip()
+        # credentials = flow.step2_exchange(code)
+        return response
+    elif ((credentials.token_expiry - datetime.utcnow()) < timedelta(minutes=5)):
         http = httplib2.Http()
         http = credentials.authorize(http)
         credentials.refresh(http)
+        storage.put(credentials)
+    response["uri"] = None
+    response["credentials"] = credentials
+    return response
+
+# ...
+def oauth2_callback(request):
+    code = request.GET.get('code', '')
+    scope='https://picasaweb.google.com/data/'
+    client_secrets = os.path.join(settings.BASE_DIR, 'client_secret_2.json')
+    flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://127.0.0.1:8080/oauth2_callback')
+    credentials = flow.step2_exchange(code)
+    storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     storage.put(credentials)
-    gd_client = gdata.photos.service.PhotosService(source=user_agent,
-                                                   email=email,
-                                                   additional_headers={'Authorization' : 'Bearer %s' % credentials.access_token})
-    return gd_client
+    response = {}
+    response["credentials"] = credentials
+    response["uri"] = None
+    return response
 
 # ...
 def connect_picasa():
     email = settings.PICASA_KEY
-    client_secrets = os.path.join(settings.BASE_DIR, 'arturopegasus7-clientsecret.json')
-    gd_client = OAuth2Login(client_secrets, email)
+    user_agent='picasawebuploader'
+    credentials = OAuth2Login()["credentials"]
+    gd_client = gdata.photos.service.PhotosService(source=user_agent,
+                                                   email=email,
+                                                   additional_headers={'Authorization' : 'Bearer %s' % credentials.access_token})
     return gd_client
 
 def delete_picasa_photo(instance):

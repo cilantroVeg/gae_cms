@@ -71,7 +71,7 @@ urlpatterns = patterns('',
     url(r'^api_documentaion[/]$', 'pages.views.page_api'),
     url(r'^upload_handler[/]$', 'pages.views.upload_handler'),
     url(r'^image_upload[/]$', 'pages.views.image_upload'),
-
+    url(r'^oauth2_callback[/]$', 'pages.views.oauth2_callback'),
 
     # Page - images
     url(r'^image/new[/]$', 'pages.views.image_form'),
