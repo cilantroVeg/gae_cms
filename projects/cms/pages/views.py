@@ -419,17 +419,16 @@ def image_form(request, id=None):
 # ...
 def OAuth2Login():
     scope='https://picasaweb.google.com/data/'
-    client_secrets = os.path.join(settings.BASE_DIR, 'client_secret_2.json')
+    client_secrets = os.path.join(settings.BASE_DIR, settings.OAUTH_2_CLIENT_JSON_DEV)
     storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     credentials = storage.get()
     response = {}
     if credentials is None or credentials.invalid:
-        flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://127.0.0.1:8080/oauth2_callback')
+        flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri=settings.OAUTH_2_REDIRECT_DEV)
+        request.session['flow'] = flow
         uri = flow.step1_get_authorize_url()
         response["uri"] = uri
         response["credentials"] = None
-        # code = raw_input('Enter the authentication code: ').strip()
-        # credentials = flow.step2_exchange(code)
         return response
     elif ((credentials.token_expiry - datetime.utcnow()) < timedelta(minutes=5)):
         http = httplib2.Http()
@@ -444,8 +443,7 @@ def OAuth2Login():
 def oauth2_callback(request):
     code = request.GET.get('code', '')
     scope='https://picasaweb.google.com/data/'
-    client_secrets = os.path.join(settings.BASE_DIR, 'client_secret_2.json')
-    flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri='http://127.0.0.1:8080/oauth2_callback')
+    flow = request.session['flow']
     credentials = flow.step2_exchange(code)
     storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     storage.put(credentials)
@@ -514,7 +512,9 @@ def handle_image_picasa(file, image, description=None,url_slug=''):
 # ...
 def image_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/image_list.html", {"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name'),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        credentials = OAuth2Login()
+        uri = credentials["uri"]
+        return render_to_response("pages/image_list.html", {"uri":uri,"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name'),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
