@@ -133,7 +133,8 @@ def gallery_form(request, id=None):
 # ...
 def gallery_list(request):
     if is_admin(request)['is_admin']:
-        return render_to_response("pages/gallery_list.html", {"gallery_list": Gallery.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
+        uri = OAuth2Login(request)["uri"]
+        return render_to_response("pages/gallery_list.html", {"uri":uri,"gallery_list": Gallery.objects.all(),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
         return redirect('/', False)
 
@@ -417,7 +418,7 @@ def image_form(request, id=None):
         return redirect('/', False)
 
 # ...
-def OAuth2Login():
+def OAuth2Login(request=None):
     scope='https://picasaweb.google.com/data/'
     client_secrets = os.path.join(settings.BASE_DIR, settings.OAUTH_2_CLIENT_JSON_DEV)
     storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
@@ -425,12 +426,13 @@ def OAuth2Login():
     response = {}
     if credentials is None or credentials.invalid:
         flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri=settings.OAUTH_2_REDIRECT_DEV)
-        request.session['flow'] = flow
+        #request.session['flow'] = flow
         uri = flow.step1_get_authorize_url()
         response["uri"] = uri
         response["credentials"] = None
         return response
     elif ((credentials.token_expiry - datetime.utcnow()) < timedelta(minutes=5)):
+        import httplib2
         http = httplib2.Http()
         http = credentials.authorize(http)
         credentials.refresh(http)
@@ -443,14 +445,12 @@ def OAuth2Login():
 def oauth2_callback(request):
     code = request.GET.get('code', '')
     scope='https://picasaweb.google.com/data/'
-    flow = request.session['flow']
+    client_secrets = os.path.join(settings.BASE_DIR, settings.OAUTH_2_CLIENT_JSON_DEV)
+    flow = flow_from_clientsecrets(client_secrets, scope=scope, redirect_uri=settings.OAUTH_2_REDIRECT_DEV)
     credentials = flow.step2_exchange(code)
     storage = StorageByKeyName(CredentialsModel, 'arturopegasus7', 'credentials')
     storage.put(credentials)
-    response = {}
-    response["credentials"] = credentials
-    response["uri"] = None
-    return response
+    return redirect('/', False)
 
 # ...
 def connect_picasa():
@@ -512,7 +512,7 @@ def handle_image_picasa(file, image, description=None,url_slug=''):
 # ...
 def image_list(request):
     if is_admin(request)['is_admin']:
-        credentials = OAuth2Login()
+        credentials = OAuth2Login(request)
         uri = credentials["uri"]
         return render_to_response("pages/image_list.html", {"uri":uri,"image_list": Image.objects.order_by('gallery','order','name'),"gallery_list": Gallery.objects.order_by('name'),'app_name':app_name(request)['app_name']}, context_instance=RequestContext(request))
     else:
